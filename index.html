@@ -8,14 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Outward Builder">
     <title>Outward Build Builder</title>
-
-    <!-- React CDN -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
-    <!-- Babel for JSX -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
     <style>
         :root {
             --bg: #1a1410;
@@ -41,14 +33,14 @@
             height: 100%;
             background: var(--bg);
             color: var(--text);
-            font-family: Georgia, 'Times New Roman', serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Georgia, serif;
             -webkit-font-smoothing: antialiased;
             -webkit-text-size-adjust: 100%;
         }
 
         #root { min-height: 100vh; min-height: 100dvh; }
 
-        /* ===== LOADING SCREEN ===== */
+        /* ===== LOADING ===== */
         .loading-screen {
             position: fixed;
             inset: 0;
@@ -61,176 +53,83 @@
             padding: 20px;
         }
 
-        .loading-logo {
-            font-size: 48px;
-            margin-bottom: 20px;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 0.6; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
-        }
-
-        .loading-title {
-            font-size: 28px;
-            color: var(--gold);
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 10px rgba(201, 162, 39, 0.3);
-        }
-
-        .loading-subtitle {
-            font-size: 14px;
-            color: var(--dim);
-            margin-bottom: 40px;
-            font-style: italic;
-        }
+        .loading-logo { font-size: 56px; margin-bottom: 20px; }
+        .loading-title { font-size: 32px; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; }
+        .loading-subtitle { font-size: 14px; color: var(--dim); margin-bottom: 40px; font-style: italic; }
 
         .loading-bar-container {
-            width: 280px;
-            height: 6px;
-            background: var(--panel2);
-            border-radius: 3px;
-            overflow: hidden;
-            border: 1px solid var(--brown);
+            width: 280px; height: 6px;
+            background: var(--panel2); border-radius: 3px;
+            overflow: hidden; border: 1px solid var(--brown);
         }
-
         .loading-bar {
             height: 100%;
             background: linear-gradient(90deg, var(--brown), var(--gold));
-            border-radius: 3px;
-            transition: width 0.3s ease;
-            box-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+            border-radius: 3px; transition: width 0.3s ease;
         }
+        .loading-status { margin-top: 16px; font-size: 13px; color: var(--dim); }
+        .loading-error { color: var(--red); margin-top: 20px; font-size: 14px; text-align: center; max-width: 300px; }
 
-        .loading-status {
-            margin-top: 16px;
-            font-size: 12px;
-            color: var(--dim);
-        }
-
-        /* ===== HOME SCREEN ===== */
+        /* ===== HOME ===== */
         .home-screen {
-            min-height: 100vh;
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
+            min-height: 100vh; min-height: 100dvh;
+            display: flex; flex-direction: column;
             background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
         }
 
         .home-header {
             text-align: center;
-            padding: 60px 20px 40px;
-            padding-top: calc(60px + var(--sat));
+            padding: 80px 20px 40px;
+            padding-top: calc(80px + var(--sat));
         }
 
-        .home-logo {
-            font-size: 64px;
-            margin-bottom: 16px;
-            filter: drop-shadow(0 4px 20px rgba(201, 162, 39, 0.4));
-        }
-
-        .home-title {
-            font-size: 36px;
-            color: var(--gold);
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 20px rgba(201, 162, 39, 0.3);
-        }
-
-        .home-subtitle {
-            font-size: 16px;
-            color: var(--dim);
-            font-style: italic;
-        }
+        .home-logo { font-size: 64px; margin-bottom: 16px; }
+        .home-title { font-size: 36px; color: var(--gold); letter-spacing: 6px; text-transform: uppercase; margin-bottom: 8px; }
+        .home-subtitle { font-size: 15px; color: var(--dim); font-style: italic; }
 
         .home-menu {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
-            width: 100%;
+            flex: 1; display: flex; flex-direction: column; gap: 14px;
+            padding: 20px; max-width: 420px; margin: 0 auto; width: 100%;
         }
 
         .menu-btn {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            padding: 20px 24px;
+            display: flex; align-items: center; gap: 16px;
+            padding: 18px 20px;
             background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
-            border: 2px solid var(--brown);
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-align: left;
-            color: var(--text);
-            font-family: inherit;
-            -webkit-appearance: none;
+            border: 2px solid var(--brown); border-radius: 12px;
+            cursor: pointer; text-align: left; color: var(--text);
+            font-family: inherit; transition: all 0.2s ease;
         }
-
         .menu-btn:hover, .menu-btn:active {
             border-color: var(--gold);
             background: linear-gradient(135deg, var(--panel2) 0%, #3a2f1e 100%);
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
         }
 
         .menu-btn-icon {
-            font-size: 32px;
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg);
-            border-radius: 8px;
-            border: 1px solid var(--brown);
+            font-size: 28px; width: 48px; height: 48px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--bg); border-radius: 8px; border: 1px solid var(--brown);
         }
-
-        .menu-btn-content h3 {
-            font-size: 18px;
-            color: var(--gold);
-            margin-bottom: 4px;
-        }
-
-        .menu-btn-content p {
-            font-size: 13px;
-            color: var(--dim);
-            line-height: 1.4;
-        }
-
-        .menu-btn-arrow {
-            margin-left: auto;
-            color: var(--brown);
-            font-size: 20px;
-        }
+        .menu-btn-content h3 { font-size: 17px; color: var(--gold); margin-bottom: 3px; }
+        .menu-btn-content p { font-size: 13px; color: var(--dim); }
+        .menu-btn-arrow { margin-left: auto; color: var(--brown); font-size: 20px; }
 
         .home-footer {
-            text-align: center;
-            padding: 20px;
+            text-align: center; padding: 20px;
             padding-bottom: calc(20px + var(--sab));
-            font-size: 12px;
-            color: var(--dim);
+            font-size: 12px; color: var(--dim);
         }
 
-        /* ===== BUILDER SCREEN ===== */
+        /* ===== BUILDER ===== */
         .builder-screen {
-            min-height: 100vh;
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
+            min-height: 100vh; min-height: 100dvh;
+            display: flex; flex-direction: column;
+            background: var(--bg);
         }
 
         .builder-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            display: flex; align-items: center; gap: 12px;
             padding: 12px 16px;
             padding-top: calc(12px + var(--sat));
             background: var(--bg2);
@@ -238,1090 +137,866 @@
         }
 
         .builder-back {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 8px;
-            cursor: pointer;
-            color: var(--text);
-            font-size: 18px;
+            width: 40px; height: 40px;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--panel); border: 1px solid var(--brown);
+            border-radius: 8px; cursor: pointer; color: var(--text); font-size: 18px;
         }
 
-        .builder-title {
-            flex: 1;
-            font-size: 18px;
-            color: var(--gold);
-        }
+        .builder-title { flex: 1; font-size: 17px; color: var(--gold); font-weight: 600; }
 
         .builder-level {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: var(--dim);
+            display: flex; align-items: center; gap: 6px;
+            font-size: 13px; color: var(--dim);
         }
-
         .level-input {
-            width: 60px;
-            padding: 8px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 6px;
-            color: var(--gold);
-            font-size: 16px;
-            text-align: center;
-            font-family: inherit;
+            width: 52px; padding: 6px;
+            background: var(--panel); border: 1px solid var(--brown);
+            border-radius: 6px; color: var(--gold); font-size: 15px;
+            text-align: center; font-family: inherit;
         }
 
         .builder-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            padding-bottom: calc(80px + var(--sab));
+            flex: 1; display: flex; flex-direction: column;
+            padding-bottom: calc(76px + var(--sab));
         }
 
-        /* Tab content */
-        .tab-content {
-            flex: 1;
-            padding: 16px;
-            overflow-y: auto;
-        }
-
-        /* Skills tab */
-        .class-section {
-            margin-bottom: 20px;
-        }
-
-        .class-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 14px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 10px;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .class-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 6px;
-            background: var(--bg);
-            border: 1px solid var(--brown);
-        }
-
-        .class-info h3 {
-            font-size: 16px;
-            color: var(--gold);
-        }
-
-        .class-info p {
-            font-size: 12px;
-            color: var(--dim);
-        }
-
-        .class-dlc {
-            margin-left: auto;
-            padding: 4px 10px;
-            background: var(--brown);
-            color: var(--gold);
-            font-size: 10px;
-            border-radius: 4px;
-            text-transform: uppercase;
-        }
-
-        .skills-list {
-            margin-top: 8px;
-            padding-left: 8px;
-        }
-
-        .skill-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px;
-            margin-top: 6px;
-            background: var(--panel2);
-            border: 1px solid transparent;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
-
-        .skill-item:hover {
-            border-color: var(--brown);
-        }
-
-        .skill-item.selected {
-            border-color: var(--gold);
-            background: #3a2f1e;
-        }
-
-        .skill-item.locked {
-            opacity: 0.5;
-        }
-
-        .skill-icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 6px;
-            background: var(--bg);
-            flex-shrink: 0;
-        }
-
-        .skill-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .skill-name {
-            font-size: 14px;
-            color: var(--text);
-            margin-bottom: 2px;
-        }
-
-        .skill-meta {
-            font-size: 11px;
-            color: var(--dim);
-        }
-
-        .skill-tier {
-            padding: 3px 8px;
-            background: var(--brown);
-            color: var(--gold);
-            font-size: 10px;
-            border-radius: 4px;
-            flex-shrink: 0;
-        }
-
-        .skill-tier.t2 { background: var(--gold); color: var(--bg); }
-        .skill-tier.t3 { background: #7d6608; color: #fff; }
-
-        /* Equipment tab */
-        .equipment-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .equip-slot {
-            aspect-ratio: 1;
-            background: var(--panel);
-            border: 2px dashed var(--brown);
-            border-radius: 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            padding: 8px;
-            text-align: center;
-            position: relative;
-            transition: all 0.2s ease;
-        }
-
-        .equip-slot:hover {
-            border-color: var(--gold);
-        }
-
-        .equip-slot.filled {
-            border-style: solid;
-            border-color: var(--gold);
-            background: var(--panel2);
-        }
-
-        .equip-slot img {
-            width: 48px;
-            height: 48px;
-            border-radius: 6px;
-            margin-bottom: 4px;
-        }
-
-        .slot-label {
-            font-size: 10px;
-            color: var(--dim);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .item-name {
-            font-size: 10px;
-            color: var(--text);
-            margin-top: 2px;
-            line-height: 1.2;
-        }
-
-        /* Stats tab */
-        .stats-section {
-            margin-bottom: 20px;
-        }
-
-        .stats-section h3 {
-            font-size: 12px;
-            color: var(--dim);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            padding-bottom: 6px;
-            border-bottom: 1px solid var(--brown);
-        }
-
-        .stat-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #3a2f1e;
-            font-size: 14px;
-        }
-
-        .stat-value {
-            color: var(--gold);
-            font-weight: bold;
-        }
-
-        .stat-value.negative { color: var(--red); }
-
-        /* Bottom tab bar */
+        /* Tab bar */
         .tab-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            position: fixed; bottom: 0; left: 0; right: 0;
             display: flex;
-            background: rgba(26, 20, 16, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(26, 20, 16, 0.97);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-top: 1px solid var(--brown);
-            padding: 8px 16px calc(8px + var(--sab));
+            padding: 6px 12px calc(6px + var(--sab));
             z-index: 100;
         }
-
         .tab-btn {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-            padding: 8px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--dim);
-            font-family: inherit;
-            font-size: 11px;
-            transition: color 0.2s ease;
+            flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+            padding: 6px; background: none; border: none; cursor: pointer;
+            color: var(--dim); font-family: inherit; font-size: 10px;
         }
-
         .tab-btn.active { color: var(--gold); }
         .tab-btn-icon { font-size: 22px; }
 
-        /* Modal */
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.8);
-            z-index: 200;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-        }
-
-        .modal {
-            background: var(--panel);
-            border: 1px solid var(--gold);
-            border-radius: 16px 16px 0 0;
-            width: 100%;
-            max-height: 80vh;
-            max-height: 80dvh;
-            display: flex;
-            flex-direction: column;
-            animation: slideUp 0.3s ease;
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(100%); }
-            to { transform: translateY(0); }
-        }
-
-        .modal-header {
-            padding: 16px;
-            border-bottom: 1px solid var(--brown);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .modal-title {
-            font-size: 16px;
-            color: var(--gold);
-            flex: 1;
-        }
-
-        .modal-close {
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--panel2);
-            border: 1px solid var(--brown);
-            border-radius: 6px;
-            cursor: pointer;
-            color: var(--text);
-            font-size: 16px;
-        }
-
-        .modal-search {
-            margin: 12px 16px;
-            padding: 12px;
-            background: var(--panel2);
-            border: 1px solid var(--brown);
-            border-radius: 8px;
-            color: var(--text);
-            font-size: 16px;
-            font-family: inherit;
-        }
-
-        .modal-body {
-            flex: 1;
-            overflow-y: auto;
-            padding: 0 16px 16px;
-        }
-
-        .item-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 10px;
-        }
-
-        .item-card {
-            background: var(--panel2);
-            border: 1px solid var(--brown);
-            border-radius: 10px;
-            padding: 12px;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            text-align: center;
-        }
-
-        .item-card:hover { border-color: var(--gold); }
-
-        .item-card img {
-            width: 48px;
-            height: 48px;
-            border-radius: 6px;
-        }
-
-        .item-card-name {
-            font-size: 12px;
-            line-height: 1.3;
-        }
-
-        .item-card-set {
-            font-size: 10px;
-            color: var(--gold);
-        }
+        /* Tab content */
+        .tab-content { flex: 1; padding: 14px; overflow-y: auto; }
+        .tab-pane { display: none; }
+        .tab-pane.active { display: block; }
 
         /* Search */
         .search-bar {
-            width: 100%;
-            padding: 12px 16px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 10px;
-            color: var(--text);
-            font-size: 16px;
-            font-family: inherit;
-            margin-bottom: 16px;
+            width: 100%; padding: 12px 14px;
+            background: var(--panel); border: 1px solid var(--brown);
+            border-radius: 10px; color: var(--text);
+            font-size: 16px; font-family: inherit;
+            margin-bottom: 12px;
         }
 
         /* Filter pills */
-        .filter-pills {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 16px;
-        }
-
+        .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
         .pill {
-            padding: 8px 14px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 12px;
-            color: var(--dim);
-            font-family: inherit;
-            transition: all 0.15s ease;
+            padding: 7px 12px; background: var(--panel);
+            border: 1px solid var(--brown); border-radius: 18px;
+            cursor: pointer; font-size: 12px; color: var(--dim); font-family: inherit;
         }
+        .pill.active { background: var(--gold); color: var(--bg); border-color: var(--gold); }
 
-        .pill:hover { border-color: var(--gold); }
-        .pill.active {
-            background: var(--gold);
-            color: var(--bg);
-            border-color: var(--gold);
-        }
-
-        /* Points display */
+        /* Points bar */
         .points-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 16px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 10px;
-            margin-bottom: 16px;
-            font-size: 13px;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 14px; background: var(--panel);
+            border: 1px solid var(--brown); border-radius: 10px;
+            margin-bottom: 10px; font-size: 13px;
+        }
+        .points-value { color: var(--gold); font-weight: bold; font-size: 15px; }
+
+        /* Class section */
+        .class-section { margin-bottom: 16px; }
+        .class-header {
+            display: flex; align-items: center; gap: 12px;
+            padding: 12px; background: var(--panel);
+            border: 1px solid var(--brown); border-radius: 10px;
+            cursor: pointer; user-select: none;
+        }
+        .class-icon { width: 38px; height: 38px; border-radius: 6px; background: var(--bg); }
+        .class-info h3 { font-size: 15px; color: var(--gold); }
+        .class-info p { font-size: 11px; color: var(--dim); }
+        .class-dlc {
+            margin-left: auto; padding: 3px 8px;
+            background: var(--brown); color: var(--gold);
+            font-size: 9px; border-radius: 4px; text-transform: uppercase;
         }
 
-        .points-value {
-            color: var(--gold);
-            font-weight: bold;
-            font-size: 16px;
+        .skills-list { margin-top: 6px; padding-left: 6px; }
+        .skill-item {
+            display: flex; align-items: center; gap: 10px;
+            padding: 10px; margin-top: 4px;
+            background: var(--panel2); border: 1px solid transparent;
+            border-radius: 8px; cursor: pointer;
         }
+        .skill-item:hover { border-color: var(--brown); }
+        .skill-item.selected { border-color: var(--gold); background: #3a2f1e; }
+        .skill-item.locked { opacity: 0.5; }
+        .skill-icon { width: 40px; height: 40px; border-radius: 6px; background: var(--bg); flex-shrink: 0; }
+        .skill-info { flex: 1; min-width: 0; }
+        .skill-name { font-size: 14px; margin-bottom: 2px; }
+        .skill-meta { font-size: 11px; color: var(--dim); }
+        .skill-tier {
+            padding: 3px 7px; background: var(--brown); color: var(--gold);
+            font-size: 9px; border-radius: 4px; flex-shrink: 0;
+        }
+        .skill-tier.t2 { background: var(--gold); color: var(--bg); }
+        .skill-tier.t3 { background: #7d6608; color: #fff; }
 
-        /* Desktop layout */
+        /* Equipment */
+        .equipment-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 10px; margin-bottom: 16px;
+        }
+        .equip-slot {
+            aspect-ratio: 1; background: var(--panel);
+            border: 2px dashed var(--brown); border-radius: 12px;
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; cursor: pointer; padding: 6px;
+            text-align: center; position: relative;
+        }
+        .equip-slot.filled { border-style: solid; border-color: var(--gold); background: var(--panel2); }
+        .equip-slot img { width: 44px; height: 44px; border-radius: 6px; margin-bottom: 4px; }
+        .slot-label { font-size: 9px; color: var(--dim); text-transform: uppercase; letter-spacing: 1px; }
+        .item-name { font-size: 10px; margin-top: 2px; line-height: 1.2; }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+            z-index: 200; display: flex; align-items: flex-end; justify-content: center;
+        }
+        .modal {
+            background: var(--panel); border: 1px solid var(--gold);
+            border-radius: 16px 16px 0 0; width: 100%;
+            max-height: 80vh; max-height: 80dvh;
+            display: flex; flex-direction: column;
+        }
+        .modal-header {
+            padding: 14px 16px; border-bottom: 1px solid var(--brown);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .modal-title { font-size: 16px; color: var(--gold); flex: 1; }
+        .modal-close {
+            width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+            background: var(--panel2); border: 1px solid var(--brown);
+            border-radius: 6px; cursor: pointer; color: var(--text); font-size: 16px;
+        }
+        .modal-search {
+            margin: 10px 14px; padding: 10px;
+            background: var(--panel2); border: 1px solid var(--brown);
+            border-radius: 8px; color: var(--text); font-size: 16px; font-family: inherit;
+        }
+        .modal-body { flex: 1; overflow-y: auto; padding: 0 14px 14px; }
+        .item-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
+        .item-card {
+            background: var(--panel2); border: 1px solid var(--brown);
+            border-radius: 10px; padding: 10px; cursor: pointer;
+            display: flex; flex-direction: column; align-items: center; gap: 6px;
+            text-align: center;
+        }
+        .item-card:hover { border-color: var(--gold); }
+        .item-card img { width: 44px; height: 44px; border-radius: 6px; }
+        .item-card-name { font-size: 11px; line-height: 1.3; }
+        .item-card-set { font-size: 10px; color: var(--gold); }
+
+        /* Stats */
+        .stats-hero {
+            background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
+            border: 1px solid var(--brown); border-radius: 14px;
+            padding: 18px; margin-bottom: 16px;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat-value { font-size: 28px; font-weight: bold; color: var(--gold); }
+        .hero-stat-label { font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+        .stats-section { margin-bottom: 18px; }
+        .stats-section h3 {
+            font-size: 12px; color: var(--dim); text-transform: uppercase;
+            letter-spacing: 2px; margin-bottom: 8px;
+            padding-bottom: 6px; border-bottom: 1px solid var(--brown);
+        }
+        .stat-row {
+            display: flex; justify-content: space-between;
+            padding: 9px 0; border-bottom: 1px solid #3a2f1e; font-size: 14px;
+        }
+        .stat-value { color: var(--gold); font-weight: 600; }
+        .stat-value.negative { color: var(--red); }
+
+        .resist-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px;
+        }
+        .resist-chip {
+            display: flex; justify-content: space-between;
+            padding: 8px 10px; background: var(--panel);
+            border-radius: 6px; font-size: 12px;
+        }
+        .resist-chip .rv { color: var(--gold); font-weight: 600; }
+
+        /* Desktop */
         @media (min-width: 900px) {
-            .home-menu { max-width: 500px; }
+            .home-menu { max-width: 480px; }
             .builder-content {
-                display: grid;
-                grid-template-columns: 320px 1fr 360px;
-                gap: 16px;
-                padding: 16px;
-                padding-bottom: 16px;
+                display: grid; grid-template-columns: 320px 1fr 340px;
+                gap: 14px; padding: 14px; padding-bottom: 14px;
             }
             .tab-bar { display: none; }
-            .tab-content { display: block !important; padding: 0; }
+            .tab-pane { display: block !important; }
         }
 
-        /* Utility */
-        .hidden { display: none !important; }
+        @media (max-width: 380px) {
+            .equipment-grid { grid-template-columns: repeat(2, 1fr); }
+            .home-title { font-size: 28px; }
+        }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
-    <script type="text/babel" data-presets="react">
-        const { useState, useEffect, useMemo, useCallback } = React;
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
-        // ===== DATA LOADING =====
-        const DATA_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/data/';
-        const IMG_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/';
+    <script>
+    // ===== HELPERS =====
+    var DATA_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/data/';
+    var IMG_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/';
 
-        async function fetchJSON(path) {
-            const res = await fetch(DATA_BASE + path);
-            if (!res.ok) throw new Error('Failed: ' + path);
-            return res.json();
-        }
+    function fetchJSON(path) {
+        return fetch(DATA_BASE + path).then(function(r) {
+            if (!r.ok) throw new Error('Failed: ' + path);
+            return r.json();
+        });
+    }
 
-        function img(path) {
-            if (!path) return null;
-            return IMG_BASE + path;
-        }
+    function imgSrc(path) {
+        if (!path) return null;
+        return IMG_BASE + path;
+    }
 
-        // ===== APP =====
-        function App() {
-            const [screen, setScreen] = useState('loading'); // loading, home, builder
-            const [data, setData] = useState(null);
-            const [loadProgress, setLoadProgress] = useState(0);
-            const [loadStatus, setLoadStatus] = useState('Initializing...');
-            const [activeTab, setActiveTab] = useState('skills');
-            const [build, setBuild] = useState({
-                name: 'New Build',
-                level: 1,
-                theorycraft: false,
-                skills: [],
-                equipment: {},
-                breakthroughsUsed: 0
+    function h(tag, props, children) {
+        return React.createElement(tag, props || {}, children);
+    }
+
+    // ===== LOADING SCREEN =====
+    function LoadingScreen(props) {
+        return h('div', {className: 'loading-screen'},
+            h('div', {className: 'loading-logo'}, '⚔️'),
+            h('div', {className: 'loading-title'}, 'Outward'),
+            h('div', {className: 'loading-subtitle'}, 'Build Builder'),
+            h('div', {className: 'loading-bar-container'},
+                h('div', {className: 'loading-bar', style: {width: props.progress + '%'}})
+            ),
+            h('div', {className: 'loading-status'}, props.status),
+            props.error ? h('div', {className: 'loading-error'}, props.error) : null
+        );
+    }
+
+    // ===== HOME SCREEN =====
+    function HomeScreen(props) {
+        var counts = props.data ? 
+            (props.data.skills.length + ' skills · ' + props.data.weapons.length + ' weapons · ' + props.data.armor.length + ' armor') :
+            'Loading database...';
+
+        return h('div', {className: 'home-screen'},
+            h('div', {className: 'home-header'},
+                h('div', {className: 'home-logo'}, '⚔️'),
+                h('div', {className: 'home-title'}, 'Outward'),
+                h('div', {className: 'home-subtitle'}, 'Definitive Edition Build Builder')
+            ),
+            h('div', {className: 'home-menu'},
+                h('button', {className: 'menu-btn', onClick: props.onStart},
+                    h('div', {className: 'menu-btn-icon'}, '🛠️'),
+                    h('div', {className: 'menu-btn-content'},
+                        h('h3', null, 'Create Build'),
+                        h('p', null, 'Design your character')
+                    ),
+                    h('div', {className: 'menu-btn-arrow'}, '→')
+                ),
+                h('button', {className: 'menu-btn', onClick: props.onStart},
+                    h('div', {className: 'menu-btn-icon'}, '📊'),
+                    h('div', {className: 'menu-btn-content'},
+                        h('h3', null, 'Browse Database'),
+                        h('p', null, counts)
+                    ),
+                    h('div', {className: 'menu-btn-arrow'}, '→')
+                )
+            ),
+            h('div', {className: 'home-footer'}, 'Data from outward.wiki.gg')
+        );
+    }
+
+    // ===== SKILLS TAB =====
+    function SkillsTab(props) {
+        var data = props.data;
+        var build = props.build;
+        var setBuild = props.setBuild;
+
+        var searchState = React.useState('');
+        var search = searchState[0], setSearch = searchState[1];
+
+        var filterState = React.useState(null);
+        var filterClass = filterState[0], setFilterClass = filterState[1];
+
+        var expandedState = React.useState(data.classes[0] ? data.classes[0].name : null);
+        var expandedClass = expandedState[0], setExpandedClass = expandedState[1];
+
+        var filteredSkills = React.useMemo(function() {
+            var list = data.skills;
+            if (filterClass) list = list.filter(function(s) { return s.parent_class === filterClass; });
+            if (search) {
+                var q = search.toLowerCase();
+                list = list.filter(function(s) {
+                    return s.name.toLowerCase().indexOf(q) >= 0 ||
+                           (s.effects && s.effects.toLowerCase().indexOf(q) >= 0);
+                });
+            }
+            return list;
+        }, [data.skills, search, filterClass]);
+
+        var skillsByClass = React.useMemo(function() {
+            var map = {};
+            filteredSkills.forEach(function(s) {
+                if (!map[s.parent_class]) map[s.parent_class] = [];
+                map[s.parent_class].push(s);
             });
-
-            // Load data
-            useEffect(() => {
-                async function load() {
-                    try {
-                        setLoadStatus('Loading skill trees...');
-                        setLoadProgress(10);
-
-                        const [t1, t2, t3, ts, classes] = await Promise.all([
-                            fetchJSON('skills/skills_tier1.json'),
-                            fetchJSON('skills/skills_tier2.json'),
-                            fetchJSON('skills/skills_tier3.json'),
-                            fetchJSON('skills/skills_special.json'),
-                            fetchJSON('skills/classes.json')
-                        ]);
-
-                        setLoadProgress(30);
-                        setLoadStatus('Loading weapons...');
-
-                        const [melee, ranged, magical, shields] = await Promise.all([
-                            fetchJSON('weapons/weapons_melee.json'),
-                            fetchJSON('weapons/weapons_ranged.json'),
-                            fetchJSON('weapons/weapons_magical.json'),
-                            fetchJSON('weapons/shields.json')
-                        ]);
-
-                        setLoadProgress(50);
-                        setLoadStatus('Loading armor...');
-
-                        const armor = await fetchJSON('armor/armor_items.json');
-
-                        setLoadProgress(70);
-                        setLoadStatus('Processing data...');
-
-                        // Simulate processing time for smooth UX
-                        await new Promise(r => setTimeout(r, 500));
-
-                        setData({
-                            skills: [...t1, ...t2, ...t3, ...ts],
-                            classes: classes,
-                            weapons: [...melee.weapons, ...ranged.weapons, ...magical.weapons, ...shields.weapons],
-                            armor: armor
-                        });
-
-                        setLoadProgress(100);
-                        setLoadStatus('Ready!');
-
-                        setTimeout(() => setScreen('home'), 400);
-
-                    } catch (e) {
-                        setLoadStatus('Error: ' + e.message);
-                    }
-                }
-                load();
-            }, []);
-
-            // Load saved build
-            useEffect(() => {
-                const saved = localStorage.getItem('outward-build');
-                if (saved) {
-                    try { setBuild(JSON.parse(saved)); } catch {}
-                }
-            }, []);
-
-            // Save build
-            useEffect(() => {
-                localStorage.setItem('outward-build', JSON.stringify(build));
-            }, [build]);
-
-            if (screen === 'loading') {
-                return <LoadingScreen progress={loadProgress} status={loadStatus} />;
-            }
-
-            if (screen === 'home') {
-                return <HomeScreen onStart={() => setScreen('builder')} data={data} />;
-            }
-
-            return (
-                <BuilderScreen 
-                    data={data} 
-                    build={build} 
-                    setBuild={setBuild}
-                    activeTab={activeTab}
-                    setActiveTab={setActiveTab}
-                    onHome={() => setScreen('home')}
-                />
-            );
-        }
-
-        // ===== LOADING SCREEN =====
-        function LoadingScreen({ progress, status }) {
-            return (
-                <div className="loading-screen">
-                    <div className="loading-logo">⚔️</div>
-                    <div className="loading-title">Outward</div>
-                    <div className="loading-subtitle">Build Builder</div>
-                    <div className="loading-bar-container">
-                        <div className="loading-bar" style={{width: progress + '%'}}></div>
-                    </div>
-                    <div className="loading-status">{status}</div>
-                </div>
-            );
-        }
-
-        // ===== HOME SCREEN =====
-        function HomeScreen({ onStart, data }) {
-            const buildCount = data?.skills?.length || 0;
-            const weaponCount = data?.weapons?.length || 0;
-            const armorCount = data?.armor?.length || 0;
-
-            return (
-                <div className="home-screen">
-                    <div className="home-header">
-                        <div className="home-logo">⚔️</div>
-                        <div className="home-title">Outward</div>
-                        <div className="home-subtitle">Definitive Edition Build Builder</div>
-                    </div>
-
-                    <div className="home-menu">
-                        <button className="menu-btn" onClick={onStart}>
-                            <div className="menu-btn-icon">🛠️</div>
-                            <div className="menu-btn-content">
-                                <h3>Create New Build</h3>
-                                <p>Design your character from scratch</p>
-                            </div>
-                            <div className="menu-btn-arrow">→</div>
-                        </button>
-
-                        <button className="menu-btn" onClick={onStart}>
-                            <div className="menu-btn-icon">📂</div>
-                            <div className="menu-btn-content">
-                                <h3>Continue Building</h3>
-                                <p>Resume your saved build</p>
-                            </div>
-                            <div className="menu-btn-arrow">→</div>
-                        </button>
-
-                        <button className="menu-btn" onClick={onStart}>
-                            <div className="menu-btn-icon">📊</div>
-                            <div className="menu-btn-content">
-                                <h3>Browse Database</h3>
-                                <p>{buildCount} skills, {weaponCount} weapons, {armorCount} armor pieces</p>
-                            </div>
-                            <div className="menu-btn-arrow">→</div>
-                        </button>
-                    </div>
-
-                    <div className="home-footer">
-                        Data from outward.wiki.gg • v1.0
-                    </div>
-                </div>
-            );
-        }
-
-        // ===== BUILDER SCREEN =====
-        function BuilderScreen({ data, build, setBuild, activeTab, setActiveTab, onHome }) {
-            const tabs = [
-                { id: 'skills', icon: '⚡', label: 'Skills' },
-                { id: 'equip', icon: '🛡️', label: 'Equipment' },
-                { id: 'stats', icon: '📊', label: 'Stats' }
-            ];
-
-            return (
-                <div className="builder-screen">
-                    <div className="builder-header">
-                        <button className="builder-back" onClick={onHome}>←</button>
-                        <div className="builder-title">{build.name}</div>
-                        <div className="builder-level">
-                            Lv
-                            <input 
-                                type="number" 
-                                className="level-input"
-                                min="1" 
-                                max="50" 
-                                value={build.level}
-                                onChange={e => setBuild({...build, level: Math.min(50, Math.max(1, parseInt(e.target.value) || 1))})}
-                            />
-                        </div>
-                    </div>
-
-                    <div className="builder-content">
-                        <div className="tab-content" style={{display: activeTab === 'skills' || window.innerWidth >= 900 ? 'block' : 'none'}}>
-                            {activeTab === 'skills' || window.innerWidth >= 900 ? (
-                                <SkillsTab data={data} build={build} setBuild={setBuild} />
-                            ) : null}
-                        </div>
-
-                        <div className="tab-content" style={{display: activeTab === 'equip' || window.innerWidth >= 900 ? 'block' : 'none'}}>
-                            {activeTab === 'equip' || window.innerWidth >= 900 ? (
-                                <EquipmentTab data={data} build={build} setBuild={setBuild} />
-                            ) : null}
-                        </div>
-
-                        <div className="tab-content" style={{display: activeTab === 'stats' || window.innerWidth >= 900 ? 'block' : 'none'}}>
-                            {activeTab === 'stats' || window.innerWidth >= 900 ? (
-                                <StatsTab data={data} build={build} />
-                            ) : null}
-                        </div>
-                    </div>
-
-                    <div className="tab-bar">
-                        {tabs.map(tab => (
-                            <button 
-                                key={tab.id}
-                                className={'tab-btn ' + (activeTab === tab.id ? 'active' : '')}
-                                onClick={() => setActiveTab(tab.id)}
-                            >
-                                <span className="tab-btn-icon">{tab.icon}</span>
-                                <span>{tab.label}</span>
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            );
-        }
-
-        // ===== SKILLS TAB =====
-        function SkillsTab({ data, build, setBuild }) {
-            const [search, setSearch] = useState('');
-            const [filterClass, setFilterClass] = useState(null);
-            const [expandedClass, setExpandedClass] = useState(data.classes[0]?.name);
-
-            const filteredSkills = useMemo(() => {
-                let list = data.skills;
-                if (filterClass) list = list.filter(s => s.parent_class === filterClass);
-                if (search) {
-                    const q = search.toLowerCase();
-                    list = list.filter(s => 
-                        s.name.toLowerCase().includes(q) ||
-                        s.effects?.toLowerCase().includes(q)
-                    );
-                }
-                return list;
-            }, [data.skills, search, filterClass]);
-
-            const skillsByClass = useMemo(() => {
-                const map = {};
-                filteredSkills.forEach(s => {
-                    if (!map[s.parent_class]) map[s.parent_class] = [];
-                    map[s.parent_class].push(s);
+            Object.keys(map).forEach(function(k) {
+                map[k].sort(function(a, b) {
+                    var order = function(t) { return t === 0 ? 4 : t; };
+                    return order(a.tier) - order(b.tier);
                 });
-                Object.values(map).forEach(arr => {
-                    arr.sort((a, b) => {
-                        const order = t => t === 0 ? 4 : t;
-                        return order(a.tier) - order(b.tier);
-                    });
-                });
-                return map;
-            }, [filteredSkills]);
+            });
+            return map;
+        }, [filteredSkills]);
 
-            const pointsUsed = build.skills.length;
-            const pointsLeft = build.theorycraft ? Infinity : build.level - pointsUsed;
+        var pointsUsed = build.skills.length;
+        var pointsLeft = build.theorycraft ? 999 : build.level - pointsUsed;
 
-            const toggleSkill = (skill) => {
-                const isSelected = build.skills.includes(skill.name);
-                const isBreakthrough = skill.costs_breakthrough;
+        function toggleSkill(skill) {
+            var isSelected = build.skills.indexOf(skill.name) >= 0;
+            var isBreakthrough = skill.costs_breakthrough;
 
-                if (isSelected) {
-                    setBuild({
-                        ...build,
-                        skills: build.skills.filter(s => s !== skill.name),
-                        breakthroughsUsed: build.breakthroughsUsed - (isBreakthrough ? 1 : 0)
-                    });
-                } else {
-                    if (!build.theorycraft && pointsLeft <= 0) return;
-                    if (isBreakthrough && !build.theorycraft && build.breakthroughsUsed >= 3) return;
-                    setBuild({
-                        ...build,
-                        skills: [...build.skills, skill.name],
-                        breakthroughsUsed: build.breakthroughsUsed + (isBreakthrough ? 1 : 0)
-                    });
-                }
-            };
-
-            return (
-                <div>
-                    <input 
-                        className="search-bar"
-                        placeholder="Search skills..."
-                        value={search}
-                        onChange={e => setSearch(e.target.value)}
-                    />
-
-                    <div className="filter-pills">
-                        <button 
-                            className={'pill ' + (!filterClass ? 'active' : '')}
-                            onClick={() => setFilterClass(null)}
-                        >
-                            All
-                        </button>
-                        {data.classes.map(c => (
-                            <button 
-                                key={c.name}
-                                className={'pill ' + (filterClass === c.name ? 'active' : '')}
-                                onClick={() => setFilterClass(c.name)}
-                            >
-                                {c.name}
-                            </button>
-                        ))}
-                    </div>
-
-                    <div className="points-bar">
-                        <span>Skill Points</span>
-                        <span className="points-value">
-                            {pointsUsed}{build.theorycraft ? ' / ∞' : ' / ' + build.level}
-                        </span>
-                    </div>
-
-                    <div className="points-bar">
-                        <span>Breakthroughs</span>
-                        <span className="points-value" style={{color: build.breakthroughsUsed >= 3 ? 'var(--red)' : 'var(--gold)'}}>
-                            {build.breakthroughsUsed} / 3
-                        </span>
-                    </div>
-
-                    {data.classes.map(cls => {
-                        const skills = skillsByClass[cls.name];
-                        if (!skills || skills.length === 0) return null;
-                        const isOpen = filterClass === cls.name || expandedClass === cls.name || search.length > 0;
-
-                        return (
-                            <div key={cls.name} className="class-section">
-                                <div className="class-header" onClick={() => setExpandedClass(isOpen ? null : cls.name)}>
-                                    <img className="class-icon" src={img(cls.local_image)} alt="" />
-                                    <div className="class-info">
-                                        <h3>{cls.name}</h3>
-                                        <p>{cls.teacher} — {cls.location}</p>
-                                    </div>
-                                    {cls.is_dlc && <span className="class-dlc">DLC</span>}
-                                </div>
-
-                                {isOpen && (
-                                    <div className="skills-list">
-                                        {skills.map(skill => {
-                                            const isSelected = build.skills.includes(skill.name);
-                                            const canAfford = build.theorycraft || pointsLeft > 0 || isSelected;
-                                            return (
-                                                <div 
-                                                    key={skill.name}
-                                                    className={'skill-item ' + (isSelected ? 'selected' : '') + (!canAfford ? ' locked' : '')}
-                                                    onClick={() => canAfford && toggleSkill(skill)}
-                                                >
-                                                    <img className="skill-icon" src={img(skill.local_image)} alt="" loading="lazy" />
-                                                    <div className="skill-info">
-                                                        <div className="skill-name">{skill.name}</div>
-                                                        <div className="skill-meta">
-                                                            {skill.skill_type}
-                                                            {skill.subtype && ' · ' + skill.subtype}
-                                                            {skill.mana_cost && ' · ' + skill.mana_cost + ' Mana'}
-                                                        </div>
-                                                    </div>
-                                                    <span className={'skill-tier ' + (skill.tier === 2 ? 't2' : skill.tier === 3 ? 't3' : '')}>
-                                                        {skill.tier === 0 ? 'SP' : 'T' + skill.tier}
-                                                    </span>
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                )}
-                            </div>
-                        );
-                    })}
-                </div>
-            );
+            if (isSelected) {
+                setBuild(Object.assign({}, build, {
+                    skills: build.skills.filter(function(s) { return s !== skill.name; }),
+                    breakthroughsUsed: build.breakthroughsUsed - (isBreakthrough ? 1 : 0)
+                }));
+            } else {
+                if (!build.theorycraft && pointsLeft <= 0) return;
+                if (isBreakthrough && !build.theorycraft && build.breakthroughsUsed >= 3) return;
+                setBuild(Object.assign({}, build, {
+                    skills: build.skills.concat([skill.name]),
+                    breakthroughsUsed: build.breakthroughsUsed + (isBreakthrough ? 1 : 0)
+                }));
+            }
         }
 
-        // ===== EQUIPMENT TAB =====
-        function EquipmentTab({ data, build, setBuild }) {
-            const [pickerSlot, setPickerSlot] = useState(null);
-            const [pickerSearch, setPickerSearch] = useState('');
+        return h('div', null,
+            h('input', {
+                className: 'search-bar',
+                placeholder: 'Search skills...',
+                value: search,
+                onChange: function(e) { setSearch(e.target.value); }
+            }),
 
-            const slots = [
-                { id: 'head', label: 'Head', type: 'armor' },
-                { id: 'chest', label: 'Chest', type: 'armor' },
-                { id: 'legs', label: 'Legs', type: 'armor' },
-                { id: 'back', label: 'Back', type: 'armor' },
-                { id: 'weapon_main', label: 'Main Hand', type: 'weapon' },
-                { id: 'weapon_off', label: 'Off Hand', type: 'weapon' },
-                { id: 'acc1', label: 'Acc 1', type: 'armor' },
-                { id: 'acc2', label: 'Acc 2', type: 'armor' },
-                { id: 'acc3', label: 'Acc 3', type: 'armor' },
-                { id: 'acc4', label: 'Acc 4', type: 'armor' }
-            ];
+            h('div', {className: 'filter-pills'},
+                h('button', {
+                    className: 'pill' + (!filterClass ? ' active' : ''),
+                    onClick: function() { setFilterClass(null); }
+                }, 'All'),
+                data.classes.map(function(c) {
+                    return h('button', {
+                        key: c.name,
+                        className: 'pill' + (filterClass === c.name ? ' active' : ''),
+                        onClick: function() { setFilterClass(c.name); }
+                    }, c.name);
+                })
+            ),
 
-            const getItem = (slotId) => {
-                const name = build.equipment[slotId];
-                if (!name) return null;
-                return data.weapons.find(w => w.name === name) || data.armor.find(a => a.name === name);
-            };
+            h('div', {className: 'points-bar'},
+                h('span', null, 'Skill Points'),
+                h('span', {className: 'points-value'}, 
+                    pointsUsed + (build.theorycraft ? ' / ∞' : ' / ' + build.level))
+            ),
 
-            const getPickerItems = () => {
-                if (!pickerSlot) return [];
-                const slot = slots.find(s => s.id === pickerSlot);
-                const q = pickerSearch.toLowerCase();
+            h('div', {className: 'points-bar'},
+                h('span', null, 'Breakthroughs'),
+                h('span', {className: 'points-value', style: {color: build.breakthroughsUsed >= 3 ? 'var(--red)' : 'var(--gold)'}},
+                    build.breakthroughsUsed + ' / 3')
+            ),
 
-                if (slot.type === 'weapon') {
-                    return data.weapons.filter(w => !q || w.name.toLowerCase().includes(q));
-                }
+            data.classes.map(function(cls) {
+                var skills = skillsByClass[cls.name];
+                if (!skills || skills.length === 0) return null;
+                var isOpen = filterClass === cls.name || expandedClass === cls.name || search.length > 0;
 
-                const slotMap = {
-                    head: ['head'], chest: ['chest'], legs: ['legs'], back: ['backpack'],
-                    acc1: ['necklace', 'ring'], acc2: ['necklace', 'ring'],
-                    acc3: ['necklace', 'ring'], acc4: ['necklace', 'ring']
-                };
-                const validSlots = slotMap[pickerSlot] || [];
-                return data.armor.filter(a => validSlots.includes(a.slot) && (!q || a.name.toLowerCase().includes(q)));
-            };
+                return h('div', {key: cls.name, className: 'class-section'},
+                    h('div', {className: 'class-header', onClick: function() { setExpandedClass(isOpen ? null : cls.name); }},
+                        cls.local_image ? h('img', {className: 'class-icon', src: imgSrc(cls.local_image)}) : null,
+                        h('div', {className: 'class-info'},
+                            h('h3', null, cls.name),
+                            h('p', null, cls.teacher + ' — ' + cls.location)
+                        ),
+                        cls.is_dlc ? h('span', {className: 'class-dlc'}, 'DLC') : null
+                    ),
+                    isOpen ? h('div', {className: 'skills-list'},
+                        skills.map(function(skill) {
+                            var isSelected = build.skills.indexOf(skill.name) >= 0;
+                            var canAfford = build.theorycraft || pointsLeft > 0 || isSelected;
+                            var tierClass = 'skill-tier' + (skill.tier === 2 ? ' t2' : skill.tier === 3 ? ' t3' : '');
 
-            return (
-                <div>
-                    <div className="equipment-grid">
-                        {slots.map(slot => {
-                            const item = getItem(slot.id);
-                            return (
-                                <div 
-                                    key={slot.id}
-                                    className={'equip-slot ' + (item ? 'filled' : '')}
-                                    onClick={() => { setPickerSlot(slot.id); setPickerSearch(''); }}
-                                >
-                                    {item && item.local_image && (
-                                        <img src={img(item.local_image)} alt="" loading="lazy" />
-                                    )}
-                                    <div className="slot-label">{slot.label}</div>
-                                    {item && <div className="item-name">{item.name}</div>}
-                                </div>
+                            return h('div', {
+                                key: skill.name,
+                                className: 'skill-item' + (isSelected ? ' selected' : '') + (!canAfford ? ' locked' : ''),
+                                onClick: function() { if (canAfford) toggleSkill(skill); }
+                            },
+                                skill.local_image ? h('img', {className: 'skill-icon', src: imgSrc(skill.local_image), loading: 'lazy'}) : null,
+                                h('div', {className: 'skill-info'},
+                                    h('div', {className: 'skill-name'}, skill.name),
+                                    h('div', {className: 'skill-meta'},
+                                        skill.skill_type +
+                                        (skill.subtype ? ' · ' + skill.subtype : '') +
+                                        (skill.mana_cost ? ' · ' + skill.mana_cost + ' Mana' : '')
+                                    )
+                                ),
+                                h('span', {className: tierClass}, skill.tier === 0 ? 'SP' : 'T' + skill.tier)
                             );
-                        })}
-                    </div>
+                        })
+                    ) : null
+                );
+            })
+        );
+    }
 
-                    {pickerSlot && (
-                        <div className="modal-overlay" onClick={() => setPickerSlot(null)}>
-                            <div className="modal" onClick={e => e.stopPropagation()}>
-                                <div className="modal-header">
-                                    <div className="modal-title">
-                                        {slots.find(s => s.id === pickerSlot)?.label}
-                                    </div>
-                                    <button className="modal-close" onClick={() => setPickerSlot(null)}>✕</button>
-                                </div>
-                                <input 
-                                    className="modal-search"
-                                    placeholder="Search..."
-                                    value={pickerSearch}
-                                    onChange={e => setPickerSearch(e.target.value)}
-                                />
-                                <div className="modal-body">
-                                    <div className="item-grid">
-                                        {getPickerItems().map(item => (
-                                            <div 
-                                                key={item.name}
-                                                className="item-card"
-                                                onClick={() => {
-                                                    setBuild({
-                                                        ...build,
-                                                        equipment: {...build.equipment, [pickerSlot]: item.name}
-                                                    });
-                                                    setPickerSlot(null);
-                                                }}
-                                            >
-                                                {item.local_image && (
-                                                    <img src={img(item.local_image)} alt="" loading="lazy" />
-                                                )}
-                                                <div className="item-card-name">{item.name}</div>
-                                                {item.set_name && <div className="item-card-set">{item.set_name}</div>}
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-            );
+    // ===== EQUIPMENT TAB =====
+    function EquipmentTab(props) {
+        var data = props.data;
+        var build = props.build;
+        var setBuild = props.setBuild;
+
+        var pickerState = React.useState(null);
+        var pickerSlot = pickerState[0], setPickerSlot = pickerState[1];
+
+        var pickerSearchState = React.useState('');
+        var pickerSearch = pickerSearchState[0], setPickerSearch = pickerSearchState[1];
+
+        var slots = [
+            {id: 'head', label: 'Head', type: 'armor'},
+            {id: 'chest', label: 'Chest', type: 'armor'},
+            {id: 'legs', label: 'Legs', type: 'armor'},
+            {id: 'back', label: 'Back', type: 'armor'},
+            {id: 'weapon_main', label: 'Main', type: 'weapon'},
+            {id: 'weapon_off', label: 'Off', type: 'weapon'},
+            {id: 'acc1', label: 'Acc 1', type: 'armor'},
+            {id: 'acc2', label: 'Acc 2', type: 'armor'},
+            {id: 'acc3', label: 'Acc 3', type: 'armor'},
+            {id: 'acc4', label: 'Acc 4', type: 'armor'}
+        ];
+
+        function getItem(slotId) {
+            var name = build.equipment[slotId];
+            if (!name) return null;
+            return data.weapons.find(function(w) { return w.name === name; }) ||
+                   data.armor.find(function(a) { return a.name === name; });
         }
 
-        // ===== STATS TAB =====
-        function StatsTab({ data, build }) {
-            const stats = useMemo(() => {
-                const result = {
-                    health: 100, stamina: 100, mana: 20,
-                    protection: 0, impactResist: 0,
-                    resistances: {}, staminaCost: 0, manaCost: 0,
-                    moveSpeed: 0, coldResist: 0, heatResist: 0, pouch: 0
-                };
+        function getPickerItems() {
+            if (!pickerSlot) return [];
+            var slot = slots.find(function(s) { return s.id === pickerSlot; });
+            var q = pickerSearch.toLowerCase();
 
-                // Equipment stats
-                Object.values(build.equipment).forEach(name => {
-                    if (!name) return;
-                    const armor = data.armor.find(a => a.name === name);
-                    if (armor) {
-                        result.protection += armor.protection || 0;
-                        result.impactResist += armor.resistances?.impact || 0;
-                        result.staminaCost += armor.stamina_cost_reduction || 0;
-                        result.manaCost += armor.mana_cost_reduction || 0;
-                        result.moveSpeed += armor.move_speed || 0;
-                        result.coldResist += armor.cold_resist || 0;
-                        result.heatResist += armor.heat_resist || 0;
-                        result.pouch += armor.pouch || 0;
+            if (slot.type === 'weapon') {
+                return data.weapons.filter(function(w) { return !q || w.name.toLowerCase().indexOf(q) >= 0; });
+            }
 
-                        Object.entries(armor.resistances || {}).forEach(([k, v]) => {
+            var slotMap = {
+                head: ['head'], chest: ['chest'], legs: ['legs'], back: ['backpack'],
+                acc1: ['necklace', 'ring'], acc2: ['necklace', 'ring'],
+                acc3: ['necklace', 'ring'], acc4: ['necklace', 'ring']
+            };
+            var validSlots = slotMap[pickerSlot] || [];
+            return data.armor.filter(function(a) {
+                return validSlots.indexOf(a.slot) >= 0 && (!q || a.name.toLowerCase().indexOf(q) >= 0);
+            });
+        }
+
+        var pickerItems = getPickerItems();
+
+        return h('div', null,
+            h('div', {className: 'equipment-grid'},
+                slots.map(function(slot) {
+                    var item = getItem(slot.id);
+                    return h('div', {
+                        key: slot.id,
+                        className: 'equip-slot' + (item ? ' filled' : ''),
+                        onClick: function() { setPickerSlot(slot.id); setPickerSearch(''); }
+                    },
+                        item && item.local_image ? h('img', {src: imgSrc(item.local_image), loading: 'lazy'}) : null,
+                        h('div', {className: 'slot-label'}, slot.label),
+                        item ? h('div', {className: 'item-name'}, item.name) : null
+                    );
+                })
+            ),
+
+            pickerSlot ? h('div', {className: 'modal-overlay', onClick: function() { setPickerSlot(null); }},
+                h('div', {className: 'modal', onClick: function(e) { e.stopPropagation(); }},
+                    h('div', {className: 'modal-header'},
+                        h('div', {className: 'modal-title'},
+                            slots.find(function(s) { return s.id === pickerSlot; }).label
+                        ),
+                        h('button', {className: 'modal-close', onClick: function() { setPickerSlot(null); }}, '✕')
+                    ),
+                    h('input', {
+                        className: 'modal-search',
+                        placeholder: 'Search...',
+                        value: pickerSearch,
+                        onChange: function(e) { setPickerSearch(e.target.value); }
+                    }),
+                    h('div', {className: 'modal-body'},
+                        h('div', {className: 'item-grid'},
+                            pickerItems.map(function(item) {
+                                return h('div', {
+                                    key: item.name,
+                                    className: 'item-card',
+                                    onClick: function() {
+                                        var newEquip = Object.assign({}, build.equipment);
+                                        newEquip[pickerSlot] = item.name;
+                                        setBuild(Object.assign({}, build, {equipment: newEquip}));
+                                        setPickerSlot(null);
+                                    }
+                                },
+                                    item.local_image ? h('img', {src: imgSrc(item.local_image), loading: 'lazy'}) : null,
+                                    h('div', {className: 'item-card-name'}, item.name),
+                                    item.set_name ? h('div', {className: 'item-card-set'}, item.set_name) : null
+                                );
+                            }),
+                            pickerItems.length === 0 ? h('div', {style: {color: 'var(--dim)', padding: 20}}, 'No items found') : null
+                        )
+                    )
+                )
+            ) : null
+        );
+    }
+
+    // ===== STATS TAB =====
+    function StatsTab(props) {
+        var data = props.data;
+        var build = props.build;
+
+        var stats = React.useMemo(function() {
+            var result = {
+                health: 100, stamina: 100, mana: 20,
+                protection: 0, impactResist: 0,
+                resistances: {}, staminaCost: 0, manaCost: 0,
+                moveSpeed: 0, coldResist: 0, heatResist: 0, pouch: 0
+            };
+
+            Object.keys(build.equipment).forEach(function(slotId) {
+                var name = build.equipment[slotId];
+                if (!name) return;
+
+                var armor = data.armor.find(function(a) { return a.name === name; });
+                if (armor) {
+                    result.protection += armor.protection || 0;
+                    result.impactResist += (armor.resistances && armor.resistances.impact) || 0;
+                    result.staminaCost += armor.stamina_cost_reduction || 0;
+                    result.manaCost += armor.mana_cost_reduction || 0;
+                    result.moveSpeed += armor.move_speed || 0;
+                    result.coldResist += armor.cold_resist || 0;
+                    result.heatResist += armor.heat_resist || 0;
+                    result.pouch += armor.pouch || 0;
+
+                    if (armor.resistances) {
+                        Object.keys(armor.resistances).forEach(function(k) {
+                            var v = armor.resistances[k];
                             if (v && k !== 'impact') {
                                 result.resistances[k] = (result.resistances[k] || 0) + v;
                             }
                         });
                     }
-                });
+                }
+            });
 
-                // Skill effects (simplified parsing)
-                build.skills.forEach(name => {
-                    const skill = data.skills.find(s => s.name === name);
-                    if (skill?.effects) {
-                        const m = skill.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
-                        if (m) {
-                            const key = m[3].toLowerCase();
-                            result[key] += parseInt(m[2]) * (m[1] === '-' ? -1 : 1);
-                        }
+            build.skills.forEach(function(name) {
+                var skill = data.skills.find(function(s) { return s.name === name; });
+                if (skill && skill.effects) {
+                    var m = skill.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
+                    if (m) {
+                        var key = m[3].toLowerCase();
+                        result[key] += parseInt(m[2]) * (m[1] === '-' ? -1 : 1);
                     }
-                });
+                }
+            });
 
-                return result;
-            }, [data, build]);
+            return result;
+        }, [data, build]);
 
-            const StatRow = ({ label, value, suffix = '' }) => (
-                <div className="stat-row">
-                    <span>{label}</span>
-                    <span className={'stat-value ' + (value < 0 ? 'negative' : '')}>
-                        {value > 0 && value}{value}{suffix}
-                    </span>
-                </div>
-            );
-
-            return (
-                <div>
-                    <div className="stats-section">
-                        <h3>Core Stats</h3>
-                        <StatRow label="Health" value={stats.health} />
-                        <StatRow label="Stamina" value={stats.stamina} />
-                        <StatRow label="Mana" value={stats.mana} />
-                    </div>
-
-                    <div className="stats-section">
-                        <h3>Defense</h3>
-                        <StatRow label="Protection" value={stats.protection} />
-                        <StatRow label="Impact Resist" value={stats.impactResist} />
-                        {Object.entries(stats.resistances).map(([k, v]) => (
-                            <StatRow key={k} label={k.charAt(0).toUpperCase() + k.slice(1) + ' Resist'} value={v} />
-                        ))}
-                    </div>
-
-                    <div className="stats-section">
-                        <h3>Modifiers</h3>
-                        <StatRow label="Stamina Cost" value={-stats.staminaCost} suffix="%" />
-                        <StatRow label="Mana Cost" value={-stats.manaCost} suffix="%" />
-                        <StatRow label="Move Speed" value={stats.moveSpeed} suffix="%" />
-                        <StatRow label="Cold Protection" value={stats.coldResist} />
-                        <StatRow label="Heat Protection" value={stats.heatResist} />
-                    </div>
-
-                    <div className="stats-section">
-                        <h3>Selected Skills ({build.skills.length})</h3>
-                        {build.skills.map(name => {
-                            const skill = data.skills.find(s => s.name === name);
-                            return skill ? (
-                                <div key={name} style={{padding: '8px 0', borderBottom: '1px solid #3a2f1e', fontSize: 13}}>
-                                    <span style={{color: 'var(--gold)'}}>{skill.name}</span>
-                                    <span style={{color: 'var(--dim)', marginLeft: 8, fontSize: 11}}>
-                                        {skill.parent_class}
-                                    </span>
-                                </div>
-                            ) : null;
-                        })}
-                    </div>
-                </div>
+        function StatRow(label, value, suffix) {
+            suffix = suffix || '';
+            var cls = 'stat-value' + (value < 0 ? ' negative' : '');
+            var display = (value > 0 ? '+' : '') + value + suffix;
+            return h('div', {className: 'stat-row'},
+                h('span', null, label),
+                h('span', {className: cls}, display)
             );
         }
 
-        // Render
-        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+        var selectedSkillObjs = build.skills.map(function(name) {
+            return data.skills.find(function(s) { return s.name === name; });
+        }).filter(Boolean);
+
+        return h('div', null,
+            // Hero stats
+            h('div', {className: 'stats-hero'},
+                h('div', {className: 'hero-stat'},
+                    h('div', {className: 'hero-stat-value', style: {color: 'var(--red)'}}, stats.health),
+                    h('div', {className: 'hero-stat-label'}, 'Health')
+                ),
+                h('div', {className: 'hero-stat'},
+                    h('div', {className: 'hero-stat-value', style: {color: 'var(--green)'}}, stats.stamina),
+                    h('div', {className: 'hero-stat-label'}, 'Stamina')
+                ),
+                h('div', {className: 'hero-stat'},
+                    h('div', {className: 'hero-stat-value', style: {color: 'var(--blue)'}}, stats.mana),
+                    h('div', {className: 'hero-stat-label'}, 'Mana')
+                )
+            ),
+
+            // Defense
+            h('div', {className: 'stats-section'},
+                h('h3', null, 'Defense'),
+                StatRow('Protection', stats.protection),
+                StatRow('Impact Resist', stats.impactResist),
+                Object.keys(stats.resistances).length > 0 ? h('div', {className: 'resist-grid', style: {marginTop: 8}},
+                    Object.keys(stats.resistances).map(function(k) {
+                        return h('div', {key: k, className: 'resist-chip'},
+                            h('span', null, k.charAt(0).toUpperCase() + k.slice(1)),
+                            h('span', {className: 'rv'}, '+' + stats.resistances[k])
+                        );
+                    })
+                ) : null
+            ),
+
+            // Modifiers
+            h('div', {className: 'stats-section'},
+                h('h3', null, 'Modifiers'),
+                StatRow('Stamina Cost', -stats.staminaCost, '%'),
+                StatRow('Mana Cost', -stats.manaCost, '%'),
+                StatRow('Move Speed', stats.moveSpeed, '%'),
+                StatRow('Cold Protection', stats.coldResist),
+                StatRow('Heat Protection', stats.heatResist),
+                StatRow('Pouch Bonus', stats.pouch)
+            ),
+
+            // Skills summary
+            h('div', {className: 'stats-section'},
+                h('h3', null, 'Skills (' + build.skills.length + ')'),
+                selectedSkillObjs.map(function(skill) {
+                    return h('div', {key: skill.name, style: {padding: '8px 0', borderBottom: '1px solid #3a2f1e'}},
+                        h('div', {style: {display: 'flex', alignItems: 'center', gap: 8}},
+                            skill.local_image ? h('img', {src: imgSrc(skill.local_image), style: {width: 28, height: 28, borderRadius: 4}, loading: 'lazy'}) : null,
+                            h('div', null,
+                                h('div', {style: {fontSize: 13, color: 'var(--gold)'}}, skill.name),
+                                h('div', {style: {fontSize: 11, color: 'var(--dim)'}}, skill.parent_class)
+                            )
+                        )
+                    );
+                }),
+                build.skills.length === 0 ? h('div', {style: {color: 'var(--dim)', fontSize: 13, padding: '10px 0'}}, 'No skills selected') : null
+            )
+        );
+    }
+
+    // ===== BUILDER SCREEN =====
+    function BuilderScreen(props) {
+        var data = props.data;
+        var build = props.build;
+        var setBuild = props.setBuild;
+        var onHome = props.onHome;
+
+        var tabState = React.useState('skills');
+        var activeTab = tabState[0], setActiveTab = tabState[1];
+
+        var isDesktop = window.innerWidth >= 900;
+
+        function updateLevel(e) {
+            var val = parseInt(e.target.value) || 1;
+            val = Math.min(50, Math.max(1, val));
+            setBuild(Object.assign({}, build, {level: val}));
+        }
+
+        var tabs = [
+            {id: 'skills', icon: '⚡', label: 'Skills'},
+            {id: 'equip', icon: '🛡️', label: 'Equipment'},
+            {id: 'stats', icon: '📊', label: 'Stats'}
+        ];
+
+        return h('div', {className: 'builder-screen'},
+            h('div', {className: 'builder-header'},
+                h('button', {className: 'builder-back', onClick: onHome}, '←'),
+                h('div', {className: 'builder-title'}, build.name || 'New Build'),
+                h('div', {className: 'builder-level'},
+                    'Lv',
+                    h('input', {
+                        type: 'number',
+                        className: 'level-input',
+                        min: 1, max: 50,
+                        value: build.level,
+                        onChange: updateLevel
+                    })
+                )
+            ),
+
+            h('div', {className: 'builder-content'},
+                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'skills' ? ' active' : '')},
+                    (isDesktop || activeTab === 'skills') ? SkillsTab({data: data, build: build, setBuild: setBuild}) : null
+                ),
+                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'equip' ? ' active' : '')},
+                    (isDesktop || activeTab === 'equip') ? EquipmentTab({data: data, build: build, setBuild: setBuild}) : null
+                ),
+                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'stats' ? ' active' : '')},
+                    (isDesktop || activeTab === 'stats') ? StatsTab({data: data, build: build}) : null
+                )
+            ),
+
+            !isDesktop ? h('div', {className: 'tab-bar'},
+                tabs.map(function(tab) {
+                    return h('button', {
+                        key: tab.id,
+                        className: 'tab-btn' + (activeTab === tab.id ? ' active' : ''),
+                        onClick: function() { setActiveTab(tab.id); }
+                    },
+                        h('span', {className: 'tab-btn-icon'}, tab.icon),
+                        h('span', null, tab.label)
+                    );
+                })
+            ) : null
+        );
+    }
+
+    // ===== MAIN APP =====
+    function App() {
+        var screenState = React.useState('loading');
+        var screen = screenState[0], setScreen = screenState[1];
+
+        var dataState = React.useState(null);
+        var data = dataState[0], setData = dataState[1];
+
+        var progressState = React.useState(0);
+        var progress = progressState[0], setProgress = progressState[1];
+
+        var statusState = React.useState('Initializing...');
+        var status = statusState[0], setStatus = statusState[1];
+
+        var errorState = React.useState(null);
+        var error = errorState[0], setError = errorState[1];
+
+        var buildState = React.useState({
+            name: 'New Build',
+            level: 1,
+            theorycraft: false,
+            skills: [],
+            equipment: {},
+            breakthroughsUsed: 0
+        });
+        var build = buildState[0], setBuild = buildState[1];
+
+        // Load saved build
+        React.useEffect(function() {
+            try {
+                var saved = localStorage.getItem('outward-build');
+                if (saved) setBuild(JSON.parse(saved));
+            } catch(e) {}
+        }, []);
+
+        // Save build
+        React.useEffect(function() {
+            try {
+                localStorage.setItem('outward-build', JSON.stringify(build));
+            } catch(e) {}
+        }, [build]);
+
+        // Load data
+        React.useEffect(function() {
+            async function load() {
+                try {
+                    setStatus('Loading skills...');
+                    setProgress(15);
+
+                    var results = await Promise.all([
+                        fetchJSON('skills/skills_tier1.json'),
+                        fetchJSON('skills/skills_tier2.json'),
+                        fetchJSON('skills/skills_tier3.json'),
+                        fetchJSON('skills/skills_special.json'),
+                        fetchJSON('skills/classes.json')
+                    ]);
+
+                    setProgress(40);
+                    setStatus('Loading weapons...');
+
+                    var weaponResults = await Promise.all([
+                        fetchJSON('weapons/weapons_melee.json'),
+                        fetchJSON('weapons/weapons_ranged.json'),
+                        fetchJSON('weapons/weapons_magical.json'),
+                        fetchJSON('weapons/shields.json')
+                    ]);
+
+                    setProgress(60);
+                    setStatus('Loading armor...');
+
+                    var armor = await fetchJSON('armor/armor_items.json');
+
+                    setProgress(80);
+                    setStatus('Processing...');
+
+                    await new Promise(function(r) { setTimeout(r, 300); });
+
+                    setData({
+                        skills: results[0].concat(results[1], results[2], results[3]),
+                        classes: results[4],
+                        weapons: weaponResults[0].weapons.concat(weaponResults[1].weapons, weaponResults[2].weapons, weaponResults[3].weapons),
+                        armor: armor
+                    });
+
+                    setProgress(100);
+                    setStatus('Ready!');
+
+                    setTimeout(function() { setScreen('home'); }, 300);
+
+                } catch(e) {
+                    setError(e.message);
+                    setStatus('Failed to load data');
+                }
+            }
+            load();
+        }, []);
+
+        if (screen === 'loading') {
+            return LoadingScreen({progress: progress, status: status, error: error});
+        }
+
+        if (screen === 'home') {
+            return HomeScreen({
+                data: data,
+                onStart: function() { setScreen('builder'); }
+            });
+        }
+
+        return BuilderScreen({
+            data: data,
+            build: build,
+            setBuild: setBuild,
+            onHome: function() { setScreen('home'); }
+        });
+    }
+
+    // Render
+    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
     </script>
 </body>
 </html>
