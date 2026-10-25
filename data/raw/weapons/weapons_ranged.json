@@ -1,0 +1,1721 @@
+{
+  "category": "Ranged Weapons",
+  "count": 42,
+  "weapons": [
+    {
+      "name": "Astral Bow",
+      "description": "",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Astral Bow.png",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Short Handle",
+          "Short Handle",
+          "Waning Tentacle"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Scorched",
+        "Curse"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Astral_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Astral Set",
+      "object_id": "2200110",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 35.0
+        },
+        "impact": 20.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null,
+        "damage_bonuses": {
+          "fire": 10.0,
+          "frost": 10.0,
+          "lightning": 10.0,
+          "ethereal": 10.0,
+          "decay": 10.0
+        }
+      },
+      "image_url": "https://outward.wiki.gg/images/Astral_Bow.png?bd1acb",
+      "local_image": "assets/images/weapons/weapon_Astral_Bow.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Astral Pistol",
+      "description": "Inflicts Scorched and Chill.\n\nGun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Astral Pistol.png",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Trinket Handle",
+          "Blunt Prism",
+          "Waning Tentacle"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Scorched",
+        "Chill"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Astral_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Astral Set",
+      "object_id": "5110230",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 72.0,
+          "decay": 18.0
+        },
+        "impact": 10.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null,
+        "damage_bonuses": {
+          "lightning": 7.0,
+          "ethereal": 7.0
+        }
+      },
+      "image_url": "https://outward.wiki.gg/images/Astral_Pistol.png?f2c0ed",
+      "local_image": "assets/images/weapons/weapon_Astral_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Bone Pistol",
+      "description": "Gun that needs the Fire/Reload skill to shoot an ethereal bullet, inflicting Haunted on enemies.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Bone Pistol.png",
+      "durability": 150.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 100.0,
+        "sell": 30.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Flintlock Pistol",
+          "Occult Remains",
+          "Occult Remains",
+          "Crystal Powder"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Haunted"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Bone_Pistol",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110140",
+      "tags": [
+        "Weapons",
+        "Pistols"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 32.0,
+          "ethereal": 32.0
+        },
+        "impact": 50.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Bone_Pistol.png?31653d",
+      "local_image": "assets/images/weapons/weapon_Bone_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Cage Pistol",
+      "description": "Designed by a madman, with zero safety mechanisms. Inflicts Weaken and Sapped. Needs the Fire/Reload skill to shoot a bullet.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Cage Pistol.png",
+      "durability": 250.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Haunted Memory",
+          "Scourge's Tears",
+          "Flowering Corruption",
+          "Enchanted Mask"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Weaken",
+        "Sapped"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Cage_Pistol",
+      "dlc": "The Soroboreans",
+      "set": "Caged Set",
+      "object_id": "5110190",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 90.0
+        },
+        "impact": 75.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Cage_Pistol.png?af4926",
+      "local_image": "assets/images/weapons/weapon_Cage_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Cannon Pistol",
+      "description": "Heavy gun that needs the Fire/Reload skill to shoot a bullet, inflicting Confusion on enemies.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Cannon Pistol.png",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 200.0,
+        "sell": 60.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Confusion"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Cannon_Pistol",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110110",
+      "tags": [
+        "Weapons",
+        "Pistols"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 59.0
+        },
+        "impact": 100.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Cannon_Pistol.png?4df859",
+      "local_image": "assets/images/weapons/weapon_Cannon_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Ceremonial Bow",
+      "description": "The white feathers adorning this weapon have been ruined...Perhaps replacements could be added?",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Ceremonial Bow.png",
+      "durability": 200.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Ceremonial_Bow",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2200190",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 35.0
+        },
+        "impact": 16.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.99,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Ceremonial_Bow.png?f2fc00",
+      "local_image": "assets/images/weapons/weapon_Ceremonial_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Chalcedony Bow",
+      "description": "Inflicts Chill Hex.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Chalcedony Bow.png",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 375.0,
+        "sell": 112.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Chalcedony",
+          "Chalcedony",
+          "Nephrite Gemstone",
+          "Militia Bow"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Chill"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Chalcedony Set",
+      "object_id": "2200170",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 25.2,
+          "frost": 4.8
+        },
+        "impact": 17.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.875,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Chalcedony_Bow.png?42b189",
+      "local_image": "assets/images/weapons/weapon_Chalcedony_Bow.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Chalcedony Pistol",
+      "description": "Inflicts Slow Down.\n\nGun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Chalcedony Pistol.png",
+      "durability": 150.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 500.0,
+        "sell": 150.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Chalcedony",
+          "Palladium Scrap",
+          "Flintlock Pistol"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Slow Down"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Chalcedony Set",
+      "object_id": "5110260",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 68.4,
+          "frost": 21.6
+        },
+        "impact": 60.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Chalcedony_Pistol.png?4830e2",
+      "local_image": "assets/images/weapons/weapon_Chalcedony_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Chimera Pistol",
+      "description": "Powerful gun that inflicts vulnerability to Fire, Frost, Lightning, Decay and Ethereal damage.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Chimera Pistol.png",
+      "durability": 100.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Elemental Vulnerability"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Chimera_Pistol",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110130",
+      "tags": [
+        "Weapons",
+        "Pistols"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 90.0
+        },
+        "impact": 70.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Chimera_Pistol.png?fd24d3",
+      "local_image": "assets/images/weapons/weapon_Chimera_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Coralhorn Bow",
+      "description": "Bow which inflicts Pain, cursing the enemy to receive more physical damage, made from Coralhorn Antler.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Coralhorn Bow.png",
+      "durability": 200.0,
+      "weight": 4.0,
+      "price": {
+        "buy": 250.0,
+        "sell": 75.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Coralhorn Antler",
+          "Coralhorn Antler",
+          "Recurve Bow",
+          "Crystal Powder"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Pain"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Coralhorn_Bow",
+      "dlc": null,
+      "set": null,
+      "object_id": "2200040",
+      "tags": [
+        " Weapons",
+        " Bows"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 34.0
+        },
+        "impact": 16.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.96,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Coralhorn_Bow.png?92f1f7",
+      "local_image": "assets/images/weapons/weapon_Coralhorn_Bow.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Damascene Bow",
+      "description": "Increases the power of Weapon Skills.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Damascene Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Damascene_Bow.png?9009dd",
+      "durability": 400.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 1125.0,
+        "sell": 337.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Masterpiece Bow"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Increases the damage of weapon skills"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Damascene_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Damascene Set",
+      "object_id": "2200130",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 40.0
+        },
+        "impact": 18.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.105,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Damascene_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Flintlock Pistol",
+      "description": "Basic gun that needs the Fire/Reload skill to shoot.; ; Locking on enemies is vital to hit with pistols.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Flintlock Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Flintlock_Pistol.png?40b9d3",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 50.0,
+        "sell": 15.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Flintlock_Pistol",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110100",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 57.0
+        },
+        "impact": 45.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Flintlock_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Forged Glass Bow",
+      "description": "",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Forged Glass Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Forged_Glass_Bow.png?edc016",
+      "durability": 325.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Forged_Glass_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Forged Glass Set",
+      "object_id": "2200120",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 42.0
+        },
+        "impact": 20.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Forged_Glass_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Forged Glass Pistol",
+      "description": "Gun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Forged Glass Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Forged_Glass_Pistol.png?3d2e51",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Forged_Glass_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Forged Glass Set",
+      "object_id": "5110240",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 87.0
+        },
+        "impact": 50.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Forged_Glass_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Galvanic Bow",
+      "description": "Inflicts Pain",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Galvanic Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Galvanic_Bow.png?69aede",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 1125.0,
+        "sell": 337.5
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Simple Bow",
+          "Shield Golem Scraps",
+          "Crystal Powder",
+          "Palladium Scrap"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Pain"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Galvanic_Bow",
+      "dlc": "The Soroboreans",
+      "set": "Galvanic Set",
+      "object_id": "2200060",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 37.0
+        },
+        "impact": 20.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.105,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Galvanic_Bow.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Galvanic Pistol",
+      "description": "Inflicts Pain. Needs the Fire/Reload skill to shoot a bullet.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Galvanic Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Galvanic_Pistol.png?8056ef",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Flintlock Pistol",
+          "Shield Golem Scraps",
+          "Crystal Powder",
+          "Palladium Scrap"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Pain"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Galvanic_Pistol",
+      "dlc": "The Soroboreans",
+      "set": "Galvanic Set",
+      "object_id": "5110180",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 81.0
+        },
+        "impact": 65.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Galvanic_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Gold Bow",
+      "description": "A gilded Simple Bow, passed down by your ancestors.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Gold Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Gold_Bow.png?e5816d",
+      "durability": 400.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 250.0,
+        "sell": 75.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Gold_Bow",
+      "dlc": null,
+      "set": "Gold Set",
+      "object_id": "2200001",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 32.0
+        },
+        "impact": 22.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.76,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Gold_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Hailfrost Pistol",
+      "description": "Not enchantable and loses Durability over time. Can be repaired by crafting it with a Cold Stone.\n\nGun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Hailfrost Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Hailfrost_Pistol.png?cb943c",
+      "durability": 250.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Cold Stone"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Hailfrost_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Hailfrost Set",
+      "object_id": "5110270",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 43.5,
+          "frost": 43.5
+        },
+        "impact": 65.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Hailfrost_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Horror Bow",
+      "description": "",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Horror Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Horror_Bow.png?ab6a4b",
+      "durability": 200.0,
+      "weight": 4.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Horror Chitin",
+          "Horror Chitin",
+          "War Bow",
+          "Occult Remains"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Poisoned"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Horror_Bow",
+      "dlc": null,
+      "set": "Horror Set",
+      "object_id": "2200030",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 40.0
+        },
+        "impact": 21.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 5.72,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Horror_Bow.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Horror Pistol",
+      "description": "Inflicts Extreme Poison. Needs the Fire/Reload skill to shoot a bullet.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Horror Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Horror_Pistol.png?af035c",
+      "durability": 175.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Extreme Poison"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Horror_Pistol",
+      "dlc": "The Soroboreans",
+      "set": "Horror Set",
+      "object_id": "5110160",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 60.0,
+          "decay": 25.0
+        },
+        "impact": 45.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Horror_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Kazite Bow",
+      "description": "Inflicts Weaken",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Kazite Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Kazite_Bow.png?53d513",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 150.0,
+        "sell": 45.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Weaken"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Kazite_Bow",
+      "dlc": "The Soroboreans",
+      "set": "Kazite Set",
+      "object_id": "2200080",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 33.0
+        },
+        "impact": 18.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.56,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Kazite_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Kazite Pistol",
+      "description": "Inflicts Weaken. Needs the Fire/Reload skill to shoot a bullet.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Kazite Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Kazite_Pistol.png?849f13",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 160.0,
+        "sell": 48.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Weaken"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Kazite_Pistol",
+      "dlc": "The Soroboreans",
+      "set": "Kazite Set",
+      "object_id": "5110200",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 62.0
+        },
+        "impact": 53.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Kazite_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Masterpiece Bow",
+      "description": "A magnificent Damascene Bow passed down by your ancestors. Increases the power of Weapon Skills.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Masterpiece Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Masterpiece_Bow.png?bd698f",
+      "durability": 430.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Increases the damage of weapon skills"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Masterpiece Set",
+      "object_id": "2200135",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 45.0
+        },
+        "impact": 19.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Masterpiece_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Meteoric Bow",
+      "description": "A glowing Obsidian Bow passed down by your ancestors. Inflicts Holy Blaze on burning foes.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Meteoric Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Meteoric_Bow.png?d0d3b8",
+      "durability": 400.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Holy Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Meteoric_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Meteoric Set",
+      "object_id": "2200185",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 24.5,
+          "fire": 24.5
+        },
+        "impact": 21.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Meteoric_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Meteoric Pistol",
+      "description": "A glowing Obsidian Pistol passed down by your ancestors. Inflicts Holy Blaze on burning foes.\n\nGun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Meteoric Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Meteoric_Pistol.png?3adefa",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Holy Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Meteoric_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Meteoric Set",
+      "object_id": "5110310",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 47.5,
+          "fire": 47.5
+        },
+        "impact": 75.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Meteoric_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Militia Bow",
+      "description": "",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Militia Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Militia_Bow.png?7191f6",
+      "durability": 400.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 375.0,
+        "sell": 112.5
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Vigilante Bow"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Militia_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Militia Set",
+      "object_id": "2200150",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 37.0
+        },
+        "impact": 28.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.875,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Militia_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Militia Pistol",
+      "description": "Gun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Militia Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Militia_Pistol.png?81d94c",
+      "durability": 300.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 300.0,
+        "sell": 90.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Vigilante Pistol"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Militia_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Militia Set",
+      "object_id": "5110290",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 72.0
+        },
+        "impact": 66.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Militia_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Murmure",
+      "description": "“The Inside Wind is above all, the Inside Wind is within all. To corrupt or destroy it is the greatest evil”. Reduces your Stamina costs -15%.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Murmure.png",
+      "image_url": "https://outward.wiki.gg/images/Murmure.png?ff784d",
+      "durability": 300.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Ceremonial Bow",
+          "Pearlbird Mask"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "-15%  Stamina costs",
+        "-15% Physical resistance on Player"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Murmure",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2200191",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 55.0
+        },
+        "impact": 16.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Murmure.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Obsidian Bow",
+      "description": "Inflicts Scorched on enemies.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Obsidian Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Obsidian_Bow.png?8f9dde",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 375.0,
+        "sell": 112.5
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Simple Bow",
+          "Obsidian Shard",
+          "Obsidian Shard",
+          "Palladium Scrap"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Meteoric Bow"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Scorched"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Obsidian_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Obsidian Set",
+      "object_id": "2200180",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 25.2,
+          "fire": 4.8
+        },
+        "impact": 17.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.875,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Obsidian_Bow.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Obsidian Pistol",
+      "description": "Gun that needs the Fire/Reload skill to shoot a fiery bullet, inflicting Burning on enemies.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Obsidian Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Obsidian_Pistol.png?1487f8",
+      "durability": 150.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 400.0,
+        "sell": 120.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Flintlock Pistol",
+          "Obsidian Shard",
+          "Palladium Scrap",
+          "Crystal Powder"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Meteoric Pistol"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Burning"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Obsidian_Pistol",
+      "dlc": null,
+      "set": "Obsidian Set",
+      "object_id": "5110150",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 60.34,
+          "fire": 24.64
+        },
+        "impact": 60.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Obsidian_Pistol.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Ornate Pistol",
+      "description": "Gilded gun that needs the Fire/Reload skill to shoot a superior bullet.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Ornate Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Ornate_Pistol.png?9e8efc",
+      "durability": 225.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Ornate_Pistol",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110120",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 86.0
+        },
+        "impact": 65.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Ornate_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Recurve Bow",
+      "description": "Compact bow which inflicts Slow Down on enemies.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Recurve Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Recurve_Bow.png?5c45af",
+      "durability": 275.0,
+      "weight": 4.0,
+      "price": {
+        "buy": 30.0,
+        "sell": 9.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Slow Down"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Recurve_Bow",
+      "dlc": null,
+      "set": null,
+      "object_id": "2200010",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 31.0
+        },
+        "impact": 14.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.64,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Recurve_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Simple Bow",
+      "description": "Beginner's short bow mostly used to hunt small game, due to its lack of power.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Simple Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Simple_Bow.png?b8a9c5",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 13.0,
+        "sell": 3.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Gold Bow"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Simple_Bow",
+      "dlc": null,
+      "set": null,
+      "object_id": "2200000",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 26.0
+        },
+        "impact": 12.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.13,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Simple_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Smoke Bow",
+      "description": "Inflicts Blaze on Burning foes.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Smoke Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Smoke_Bow.png?8b035f",
+      "durability": 300.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 1125.0,
+        "sell": 337.5
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Smoke_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Smoke Set",
+      "object_id": "2200140",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 37.0
+        },
+        "impact": 30.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.105,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Smoke_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Smoke Pistol",
+      "description": "Inflicts Blaze on Burning foes.\n\nGun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Smoke Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Smoke_Pistol.png?d2c990",
+      "durability": 300.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Smoke_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Smoke Set",
+      "object_id": "5110280",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 60.0
+        },
+        "impact": 75.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Smoke_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Tsar Bow",
+      "description": "",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Tsar Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Tsar_Bow.png?19abea",
+      "durability": null,
+      "weight": 7.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Tsar_Bow",
+      "dlc": "The Soroboreans",
+      "set": "Tsar Set",
+      "object_id": "2200100",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 50.0
+        },
+        "impact": 30.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Tsar_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Vampiric Bow",
+      "description": "Inflicts Blood Leech",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Vampiric Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Vampiric_Bow.png?30208a",
+      "durability": 250.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Leeches health on hit"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Vampiric_Bow",
+      "dlc": "The Soroboreans",
+      "set": "Vampiric Set",
+      "object_id": "2200050",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 48.0
+        },
+        "impact": 18.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.99,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Vampiric_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Vigilante Bow",
+      "description": "A bloody Militia Bow passed down by your ancestors.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Vigilante Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Vigilante_Bow.png?aae3d2",
+      "durability": 400.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Vigilante_Bow",
+      "dlc": "The Three Brothers",
+      "set": "Vigilante Set",
+      "object_id": "2200155",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 38.0
+        },
+        "impact": 22.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 3.22,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Vigilante_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Vigilante Pistol",
+      "description": "A bloody Militia Pistol passed down by your ancestors.\n\nGun that needs the Fire/Reload skill to shoot.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Vigilante Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Vigilante_Pistol.png?6166e2",
+      "durability": 200.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Vigilante_Pistol",
+      "dlc": "The Three Brothers",
+      "set": "Vigilante Set",
+      "object_id": "5110300",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 90.0
+        },
+        "impact": 90.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Vigilante_Pistol.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "War Bow",
+      "description": "Immense bow which inflicts Confusion on enemies, making them more vulnerable to Impact.",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "War Bow.png",
+      "image_url": "https://outward.wiki.gg/images/War_Bow.png?6cd0d2",
+      "durability": 350.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Confusion"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/War_Bow",
+      "dlc": null,
+      "set": null,
+      "object_id": "2200020",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 37.0
+        },
+        "impact": 25.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 4.99,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_War_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Wolf Bow",
+      "description": "Inflicts Cripple",
+      "weapon_type": "bow",
+      "category_class": "bow",
+      "handedness": "two_handed",
+      "image": "Wolf Bow.png",
+      "image_url": "https://outward.wiki.gg/images/Wolf_Bow.png?c9fc45",
+      "durability": 325.0,
+      "weight": 4.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Wolf_Bow",
+      "dlc": "The Soroboreans",
+      "set": "Wolf Plate Set",
+      "object_id": "2200090",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 39.0
+        },
+        "impact": 16.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 2.99,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Wolf_Bow.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Wolf Pistol",
+      "description": "Inflicts Cripple. Needs the Fire/Reload skill to shoot a bullet.",
+      "weapon_type": "pistol",
+      "category_class": "pistol",
+      "handedness": "off_handed",
+      "image": "Wolf Pistol.png",
+      "image_url": "https://outward.wiki.gg/images/Wolf_Pistol.png?16b6ad",
+      "durability": 275.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Wolf_Pistol",
+      "dlc": "The Soroboreans",
+      "set": "Wolf Plate Set",
+      "object_id": "5110210",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 87.0
+        },
+        "impact": 53.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Wolf_Pistol.png",
+      "source_category": "loot_or_legacy"
+    }
+  ]
+}

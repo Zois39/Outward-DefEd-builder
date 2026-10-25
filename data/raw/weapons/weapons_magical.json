@@ -1,0 +1,1469 @@
+{
+  "category": "Magical Weapons",
+  "count": 36,
+  "weapons": [
+    {
+      "name": "Ancient Calygrey Staff",
+      "description": "The Staff of an ancient Calygrey passed down by their ancestors.",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Ancient Calygrey Staff.png",
+      "durability": 225.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Ancient_Calygrey_Staff",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2150165",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 30.0,
+          "lightning": 5.0
+        },
+        "impact": 45.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.5,
+        "reach": 2.086002,
+        "damage_bonuses": {
+          "frost": 20.0,
+          "lightning": 20.0
+        },
+        "mana_cost_reduction": -20.0
+      },
+      "image_url": "https://outward.wiki.gg/images/Ancient_Calygrey_Staff.png?d7926f",
+      "local_image": "assets/images/weapons/weapon_Ancient_Calygrey_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Astral Chakram",
+      "description": "Inflicts Doomed and Curse.\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Astral Chakram.png",
+      "durability": 250.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Trinket Handle",
+          "Blade Prism",
+          "Waning Tentacle"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Doomed",
+        "Curse"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Astral_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Astral Set",
+      "object_id": "5110099",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 30.4,
+          "fire": 7.6
+        },
+        "impact": 10.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null,
+        "damage_bonuses": {
+          "frost": 7.0,
+          "ethereal": 7.0
+        }
+      },
+      "image_url": "https://outward.wiki.gg/images/Astral_Chakram.png?721ba8",
+      "local_image": "assets/images/weapons/weapon_Astral_Chakram.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Astral Staff",
+      "description": "Inflicts Doomed.",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Astral Staff.png",
+      "durability": 250.0,
+      "weight": 4.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Shaft Handle",
+          "Long Handle",
+          "Waning Tentacle"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Doomed"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Astral_Staff",
+      "dlc": "The Three Brothers",
+      "set": "Astral Set",
+      "object_id": "2150140",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 20.0,
+          "fire": 20.0
+        },
+        "impact": 15.0,
+        "attack_speed": 1.2,
+        "stamina_cost": 7.0,
+        "reach": 2.086002,
+        "damage_bonuses": {
+          "ethereal": 14.0
+        },
+        "mana_cost_reduction": -20.0
+      },
+      "image_url": "https://outward.wiki.gg/images/Astral_Staff.png?b32f0b",
+      "local_image": "assets/images/weapons/weapon_Astral_Staff.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Calygrey Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Calygrey Staff.png",
+      "durability": 200.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 250.0,
+        "sell": 75.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Ancient Calygrey Staff"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Calygrey_Staff",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2150160",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 27.0,
+          "lightning": 3.0
+        },
+        "impact": 40.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.875,
+        "reach": 2.086002,
+        "damage_bonuses": {
+          "lightning": 20.0
+        },
+        "mana_cost_reduction": -15.0
+      },
+      "image_url": "https://outward.wiki.gg/images/Calygrey_Staff.png?55e2da",
+      "local_image": "assets/images/weapons/weapon_Calygrey_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Chalcedony Chakram",
+      "description": "Inflicts Slow Down.\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Chalcedony Chakram.png",
+      "durability": 250.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 500.0,
+        "sell": 150.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Chalcedony",
+          "Nephrite Gemstone",
+          "Militia Chakram"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Slow Down"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Chalcedony Set",
+      "object_id": "5110102",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 24.5,
+          "frost": 10.5
+        },
+        "impact": 27.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "image_url": "https://outward.wiki.gg/images/Chalcedony_Chakram.png?7e78f7",
+      "local_image": "assets/images/weapons/weapon_Chalcedony_Chakram.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Compasswood Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Compasswood Staff.png",
+      "durability": 225.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Compasswood_Staff",
+      "dlc": null,
+      "set": null,
+      "object_id": "2150030",
+      "tags": [
+        "Weapons",
+        "Polearms"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 12.0,
+          "fire": 12.0
+        },
+        "impact": 41.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.5,
+        "reach": 2.254002,
+        "damage_bonuses": {
+          "fire": 20.0
+        },
+        "mana_cost_reduction": -20.0
+      },
+      "image_url": "https://outward.wiki.gg/images/Compasswood_Staff.png?ccfe51",
+      "local_image": "assets/images/weapons/weapon_Compasswood_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Cracked Red Moon",
+      "description": "Inflicts Blaze. The gemstone atop the Scarlet Avatar's staff has been cracked and should be replaced....",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Cracked Red Moon.png",
+      "durability": 200.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Cracked_Red_Moon",
+      "dlc": "The Three Brothers",
+      "set": "Scarlet Set",
+      "object_id": "2150180",
+      "tags": [],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 25.0
+        },
+        "impact": 40.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.5,
+        "reach": 2.073002,
+        "damage_bonuses": {
+          "fire": 15.0
+        }
+      },
+      "image_url": "https://outward.wiki.gg/images/Cracked_Red_Moon.png?1fa536",
+      "local_image": "assets/images/weapons/weapon_Cracked_Red_Moon.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Crystal Staff",
+      "description": "A Troglodyte Staff whose Mana Stones have matured, passed down by your ancestors.",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Crystal Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Crystal_Staff.png?803452",
+      "durability": 125.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Crystal_Staff",
+      "dlc": null,
+      "set": "Troglodyte Set",
+      "object_id": "2150041",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 15.0,
+          "ethereal": 15.0
+        },
+        "impact": 31.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.5,
+        "reach": 2.347059,
+        "mana_cost_reduction": -10.0
+      },
+      "local_image": "assets/images/weapons/weapon_Crystal_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Distorted Experiment",
+      "description": "A Chakram attuned to... A variety of other places... Dangerously unstable, not meant for human use!\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Distorted Experiment.png",
+      "image_url": "https://outward.wiki.gg/images/Distorted_Experiment.png?501614",
+      "durability": 300.0,
+      "weight": 0.1,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "-10%  Status Resistance"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Distorted_Experiment",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "5110111",
+      "damage_stats": {
+        "base_damage": {
+          "fire": 7.2,
+          "frost": 7.2,
+          "lightning": 7.2,
+          "ethereal": 7.2,
+          "decay": 7.2
+        },
+        "impact": 45.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Distorted_Experiment.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Experimental Chakram",
+      "description": "This strange weapon fell from a strange hole in the air...Perhaps it is attuned to more?\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Experimental Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Experimental_Chakram.png?e93f40",
+      "durability": 200.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Experimental_Chakram",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "5110112",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 45.0
+        },
+        "impact": 45.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Experimental_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Forged Glass Chakram",
+      "description": "Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Forged Glass Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Forged_Glass_Chakram.png?387186",
+      "durability": 350.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Forged_Glass_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Forged Glass Set",
+      "object_id": "5110105",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 48.0
+        },
+        "impact": 40.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Forged_Glass_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Frostburn Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Frostburn Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Frostburn_Staff.png?201790",
+      "durability": 250.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 375.0,
+        "sell": 112.5
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Leyline Figment",
+          "Scarlet Whisper",
+          "Noble's Greed",
+          "Calygrey's Wisdom"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Frostburn_Staff",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2150150",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 40.0
+        },
+        "impact": 40.0,
+        "attack_speed": 1.1,
+        "stamina_cost": 6.875,
+        "reach": 2.086002,
+        "damage_bonuses": {
+          "fire": 20.0,
+          "frost": 20.0
+        },
+        "mana_cost_reduction": -15.0
+      },
+      "local_image": "assets/images/weapons/weapon_Frostburn_Staff.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Frozen Chakram",
+      "description": "Inflicts Vulnerability to all non-physical elements on enemies.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Frozen Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Frozen_Chakram.png?728ae2",
+      "durability": 500.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Elemental Vulnerability"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Frozen_Chakram",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110060",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 22.5,
+          "frost": 22.5
+        },
+        "impact": 44.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Frozen_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Galvanic Chakram",
+      "description": "Inflicts Pain. Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Galvanic Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Galvanic_Chakram.png?50a730",
+      "durability": 350.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Pain"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Galvanic_Chakram",
+      "dlc": "The Soroboreans",
+      "set": "Galvanic Set",
+      "object_id": "5110092",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 35.0
+        },
+        "impact": 41.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Galvanic_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Gold Quarterstaff",
+      "description": "A gilded Quarterstaff, passed down by your ancestors.",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Gold Quarterstaff.png",
+      "image_url": "https://outward.wiki.gg/images/Gold_Quarterstaff.png?9ddb70",
+      "durability": 325.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 250.0,
+        "sell": 75.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Gold_Quarterstaff",
+      "dlc": null,
+      "set": "Gold Set",
+      "object_id": "2130031",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 28.0
+        },
+        "impact": 30.0,
+        "attack_speed": 1.2,
+        "stamina_cost": 6.0,
+        "reach": 1.924502
+      },
+      "local_image": "assets/images/weapons/weapon_Gold_Quarterstaff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Horror Chakram",
+      "description": "Inflicts Extreme Poison. Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Horror Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Horror_Chakram.png?5ae680",
+      "durability": 375.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Thorn Chakram",
+          "Horror Chitin",
+          "Occult Remains",
+          "Palladium Scrap"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Extreme Poison"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Horror_Chakram",
+      "dlc": "The Soroboreans",
+      "set": "Horror Set",
+      "object_id": "5110091",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 34.5,
+          "decay": 11.5
+        },
+        "impact": 45.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Horror_Chakram.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Ivory Master's Staff",
+      "description": "A Master's Staff made by a master artisan, passed down by your ancestors.",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Ivory Master's Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Ivory_Master%27s_Staff.png?ba8aa0",
+      "durability": 350.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Ivory_Master%27s_Staff",
+      "dlc": null,
+      "set": null,
+      "object_id": "2150051",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 33.0
+        },
+        "impact": 43.0,
+        "attack_speed": 1.2,
+        "stamina_cost": 6.5,
+        "reach": 2.024002,
+        "mana_cost_reduction": -20.0
+      },
+      "local_image": "assets/images/weapons/weapon_Ivory_Master_s_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Jade-Lich Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Jade-Lich Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Jade-Lich_Staff.png?848e97",
+      "durability": 225.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Jade-Lich_Staff",
+      "dlc": null,
+      "set": "Jade-Lich Set",
+      "object_id": "2150010",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 12.0,
+          "decay": 12.0
+        },
+        "impact": 41.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.5,
+        "reach": 1.845003,
+        "damage_bonuses": {
+          "decay": 20.0
+        },
+        "mana_cost_reduction": -20.0
+      },
+      "local_image": "assets/images/weapons/weapon_Jade-Lich_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Kazite Chakram",
+      "description": "Chakram skills are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Kazite Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Kazite_Chakram.png?4d4b9d",
+      "durability": 350.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 200.0,
+        "sell": 48.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Kazite_Chakram",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110050",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 34.0
+        },
+        "impact": 47.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Kazite_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Mage's Poking Stick",
+      "description": "The magician using this hook favored magic manipulating fire, shadow, and time.\"",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Mage's Poking Stick.png",
+      "image_url": "https://outward.wiki.gg/images/Mage%E2%80%99s_Poking_Stick.png?bc4a09",
+      "durability": 125.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 375.0,
+        "sell": 113.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Mage%27s_Poking_Stick",
+      "dlc": null,
+      "set": null,
+      "object_id": "2150001",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 13.0
+        },
+        "impact": 37.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.3,
+        "reach": 1.691003
+      },
+      "local_image": "assets/images/weapons/weapon_Mage_s_Poking_Stick.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Master's Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Master's Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Master%E2%80%99s_Staff.png?5cf9f6",
+      "durability": 225.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 1000.0,
+        "sell": 300.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Ivory Master's Staff"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Master%27s_Staff",
+      "dlc": null,
+      "set": null,
+      "object_id": "2150050",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 29.0
+        },
+        "impact": 41.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.5,
+        "reach": 2.024002,
+        "mana_cost_reduction": -20.0
+      },
+      "local_image": "assets/images/weapons/weapon_Master_s_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Meteoric Chakram",
+      "description": "A glowing Obsidian Chakram passed down by your ancestors. Inflicts Holy Blaze on burning foes.; ; Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Meteoric Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Meteoric_Chakram.png?c67632",
+      "durability": 400.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Holy Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Meteoric_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Meteoric Set",
+      "object_id": "5110108",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 21.0,
+          "fire": 21.0
+        },
+        "impact": 35.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Meteoric_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Militia Chakram",
+      "description": "Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Militia Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Militia_Chakram.png?caabcf",
+      "durability": 400.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 300.0,
+        "sell": 90.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Vigilante Chakram"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Militia_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Militia Set",
+      "object_id": "5110106",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 33.0
+        },
+        "impact": 44.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Militia_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Mysterious Chakram",
+      "description": "Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Mysterious Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Mysterious_Chakram.png?fc2416",
+      "durability": 250.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 300.0,
+        "sell": 90.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Mysterious_Chakram",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110070",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 16.0,
+          "fire": 16.0
+        },
+        "impact": 35.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Mysterious_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Obsidian Chakram",
+      "description": "Inflicts Burning on enemies.\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Obsidian Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Obsidian_Chakram.png?f7f3a3",
+      "durability": 250.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 300.0,
+        "sell": 90.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Obsidian Shard",
+          "Palladium Scrap",
+          "Chakram"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Meteoric Chakram"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Burning"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Obsidian_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Obsidian Set",
+      "object_id": "5110101",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 21.0,
+          "fire": 9.0
+        },
+        "impact": 27.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Obsidian_Chakram.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Ornate Chakram",
+      "description": "Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Ornate Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Ornate_Chakram.png?6ca210",
+      "durability": 350.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Glowing (Light Source)"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Ornate_Chakram",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110040",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 40.0
+        },
+        "impact": 41.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Ornate_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Quarterstaff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Quarterstaff.png",
+      "image_url": "https://outward.wiki.gg/images/Quarterstaff.png?e639b5",
+      "durability": 150.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 20.0,
+        "sell": 0.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Wood",
+          "Wood",
+          "Linen Cloth"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Gold Quarterstaff"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Quarterstaff",
+      "dlc": null,
+      "set": null,
+      "object_id": "2130030",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 17.0
+        },
+        "impact": 14.0,
+        "attack_speed": 1.2,
+        "stamina_cost": 4.0,
+        "reach": 1.924502
+      },
+      "local_image": "assets/images/weapons/weapon_Quarterstaff.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Revenant Moon",
+      "description": "A staff humming with the Scarlet Lady's immense power...It hungers for your mana and raises the temperature around you... Inflicts Blaze.",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Revenant Moon.png",
+      "image_url": "https://outward.wiki.gg/images/Revenant_Moon.png?99c16a",
+      "durability": 300.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Cracked Red Moon",
+          "Scarlet Gem"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Revenant_Moon",
+      "dlc": "The Three Brothers",
+      "set": "Scarlet Set",
+      "object_id": "2150185",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 30.0
+        },
+        "impact": 40.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 7.0,
+        "reach": 2.363002,
+        "damage_bonuses": {
+          "fire": 35.0
+        },
+        "mana_cost_reduction": 20.0
+      },
+      "local_image": "assets/images/weapons/weapon_Revenant_Moon.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Rotwood Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Rotwood Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Rotwood_Staff.png?e494ea",
+      "durability": 225.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 2500.0,
+        "sell": 750.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Compasswood Staff",
+          "Blue Sand",
+          "Crystal Powder"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Rotwood_Staff",
+      "dlc": null,
+      "set": null,
+      "object_id": "2150031",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 15.5,
+          "frost": 15.5
+        },
+        "impact": 48.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 7.0,
+        "reach": 2.218002,
+        "damage_bonuses": {
+          "frost": 20.0
+        },
+        "mana_cost_reduction": -25.0
+      },
+      "local_image": "assets/images/weapons/weapon_Rotwood_Staff.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Scholar's Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Scholar's Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Scholar%E2%80%99s_Staff.png?bc4a09",
+      "durability": 225.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 250.0,
+        "sell": 75.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Scholar%27s_Staff",
+      "dlc": null,
+      "set": "Scholar Set",
+      "object_id": "2150000",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 20.0
+        },
+        "impact": 34.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.0,
+        "reach": 1.691003,
+        "damage_bonuses": {
+          "lightning": 20.0
+        },
+        "mana_cost_reduction": -15.0
+      },
+      "local_image": "assets/images/weapons/weapon_Scholar_s_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Smoke Chakram",
+      "description": "Inflicts Blaze on Burning foes.\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Smoke Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Smoke_Chakram.png?a4a5b6",
+      "durability": 350.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Smoke_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Smoke Set",
+      "object_id": "5110104",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 32.0
+        },
+        "impact": 41.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Smoke_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Thorn Chakram",
+      "description": "Inflicts Bleeding on enemies.; ; Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Thorn Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Thorn_Chakram.png?36b01c",
+      "durability": 300.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Bleeding"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Thorn_Chakram",
+      "dlc": null,
+      "set": null,
+      "object_id": "5110090",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 37.0
+        },
+        "impact": 38.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Thorn_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Troglodyte Staff",
+      "description": "",
+      "weapon_type": "staff",
+      "category_class": "polearm",
+      "handedness": "one_handed",
+      "image": "Troglodyte Staff.png",
+      "image_url": "https://outward.wiki.gg/images/Troglodyte_Staff.png?a6fcf5",
+      "durability": 175.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 20.0,
+        "sell": 6.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Crystal Staff"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Troglodyte_Staff",
+      "dlc": null,
+      "set": "Troglodyte Set",
+      "object_id": "2150040",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 5.5,
+          "ethereal": 5.5
+        },
+        "impact": 22.0,
+        "attack_speed": 1.0,
+        "stamina_cost": 5.0,
+        "reach": 2.347059,
+        "mana_cost_reduction": -10.0
+      },
+      "local_image": "assets/images/weapons/weapon_Troglodyte_Staff.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Tsar Chakram",
+      "description": "Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Tsar Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Tsar_Chakram.png?2aa47c",
+      "durability": null,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Tsar_Chakram",
+      "dlc": "The Soroboreans",
+      "set": "Tsar Set",
+      "object_id": "5110097",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 60.0
+        },
+        "impact": 48.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Tsar_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Vigilante Chakram",
+      "description": "A bloody Militia Chakram passed down by your ancestors.\n\nChakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Vigilante Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Vigilante_Chakram.png?d2b406",
+      "durability": 400.0,
+      "weight": 1.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Vigilante_Chakram",
+      "dlc": "The Three Brothers",
+      "set": "Vigilante Set",
+      "object_id": "5110107",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 34.0
+        },
+        "impact": 53.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Vigilante_Chakram.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Wolf Chakram",
+      "description": "Inflicts Cripple. Chakram spells are necessary to use this off-hand weapon.",
+      "weapon_type": "chakram",
+      "category_class": "chakram",
+      "handedness": "off_handed",
+      "image": "Wolf Chakram.png",
+      "image_url": "https://outward.wiki.gg/images/Wolf_Chakram.png?d0497c",
+      "durability": 375.0,
+      "weight": 2.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Wolf_Chakram",
+      "dlc": "The Soroboreans",
+      "set": "Wolf Plate Set",
+      "object_id": "5110096",
+      "damage_stats": {
+        "base_damage": {
+          "physical": 39.0
+        },
+        "impact": 33.0,
+        "attack_speed": 1.0,
+        "stamina_cost": null,
+        "reach": null
+      },
+      "local_image": "assets/images/weapons/weapon_Wolf_Chakram.png",
+      "source_category": "loot_or_legacy"
+    }
+  ]
+}

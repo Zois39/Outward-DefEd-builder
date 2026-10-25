@@ -1,0 +1,1141 @@
+{
+  "type": "special",
+  "count": 25,
+  "items": [
+    {
+      "name": "Arcane Dampener",
+      "source_url": "https://outward.wiki.gg/wiki/Arcane_Dampener",
+      "consumable_type": "special",
+      "description": "For use in Pressure Plate Traps. Weakens foes.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Mana Cost Increase",
+          "value": 50,
+          "duration": 60
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 10,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Arcane_Dampener.png?3f8fcb",
+      "image_file": "Arcane Dampener.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Arcane_Dampener.png"
+    },
+    {
+      "name": "Blazing Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Blazing_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, igniting into a deadly blaze on contact with existing flames.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Scorched",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Blaze",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Bomb Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Obsidian Shard",
+            "quantity": 1
+          },
+          {
+            "item": "Oil Bomb",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Blazing_Bomb.png?dd54a5",
+      "image_file": "Blazing Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Blazing_Bomb.png"
+    },
+    {
+      "name": "Bolt Rag",
+      "source_url": "https://outward.wiki.gg/wiki/Bolt_Rag",
+      "consumable_type": "special",
+      "description": "Soiled Cloth that confers the Lightning element when rubbed on a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Lightning Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Bolt_Rag.png?18fad6",
+      "image_file": "Bolt Rag.png",
+      "compatible_weapons": [
+        "Crossbow"
+      ],
+      "local_image": "assets/images/consumables/special_Bolt_Rag.png"
+    },
+    {
+      "name": "Bolt Varnish",
+      "source_url": "https://outward.wiki.gg/wiki/Bolt_Varnish",
+      "consumable_type": "special",
+      "description": "Thick fluid that confers the Lightning element when applied to a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Greater Lightning Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Firefly Powder",
+            "quantity": 1
+          },
+          {
+            "item": "Mana Stone",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Bolt_Varnish.png?379024",
+      "image_file": "Bolt Varnish.png",
+      "compatible_weapons": [
+        "Crossbow"
+      ],
+      "local_image": "assets/images/consumables/special_Bolt_Varnish.png"
+    },
+    {
+      "name": "Charge – Incendiary",
+      "source_url": "https://outward.wiki.gg/wiki/Charge_%E2%80%93_Incendiary",
+      "consumable_type": "special",
+      "description": "Explosives that, when placed in a Pressure Plate, inflict lingering fire damage to enemies that step on it.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Fire Damage",
+          "value": 40,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 10,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Charge_%E2%80%93_Incendiary.png?34ef52",
+      "image_file": "Charge – Incendiary.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Charge___Incendiary.png"
+    },
+    {
+      "name": "Charge – Nerve Gas",
+      "source_url": "https://outward.wiki.gg/wiki/Charge_%E2%80%93_Nerve_Gas",
+      "consumable_type": "special",
+      "description": "Gas bladder that, when placed in a Pressure Plate, inflicts Ethereal Damage and Pain to enemies that step on it.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Confusion",
+          "value": null,
+          "duration": 30
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Blood Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Livweedi",
+            "quantity": 1
+          },
+          {
+            "item": "Salt",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 10,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Charge_%E2%80%93_Nerve_Gas.png?da4e77",
+      "image_file": "Charge – Nerve Gas.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Charge___Nerve_Gas.png"
+    },
+    {
+      "name": "Charge – Toxic",
+      "source_url": "https://outward.wiki.gg/wiki/Charge_%E2%80%93_Toxic",
+      "consumable_type": "special",
+      "description": "Vials that, when placed in a Pressure Plate, inflict lingering decay damage to enemies that step on it.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Poison",
+          "value": 30,
+          "duration": 60
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 10,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Charge_%E2%80%93_Toxic.png?64e516",
+      "image_file": "Charge – Toxic.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Charge___Toxic.png"
+    },
+    {
+      "name": "Dark Varnish",
+      "source_url": "https://outward.wiki.gg/wiki/Dark_Varnish",
+      "consumable_type": "special",
+      "description": "Thick fluid that confers the Decay element when applied to a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Greater Decay Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Occult Remains",
+            "quantity": 1
+          },
+          {
+            "item": "Mana Stone",
+            "quantity": 1
+          },
+          {
+            "item": "Grilled Crabeye Seed",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Dark_Varnish.png?e5aeb1",
+      "image_file": "Dark Varnish.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Dark_Varnish.png"
+    },
+    {
+      "name": "Fire Rag",
+      "source_url": "https://outward.wiki.gg/wiki/Fire_Rag",
+      "consumable_type": "special",
+      "description": "Soiled Cloth that confers the Fire element when rubbed on a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Fire Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Fire_Rag.png?8fa913",
+      "image_file": "FireRag.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_FireRag.png"
+    },
+    {
+      "name": "Fire Varnish",
+      "source_url": "https://outward.wiki.gg/wiki/Fire_Varnish",
+      "consumable_type": "special",
+      "description": "Thick fluid that confers the Fire element when applied to a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Greater Fire Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Seared Root",
+            "quantity": 1
+          },
+          {
+            "item": "Fire Stone",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Fire_Varnish.png?1d4024",
+      "image_file": "Fire Varnish.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Fire_Varnish.png"
+    },
+    {
+      "name": "Flaming Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Flaming_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Fire Damage and the Burning status.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Burning",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Bomb Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Boreo Blubber",
+            "quantity": 1
+          },
+          {
+            "item": "Charge – Incendiary",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Flaming_Bomb.png?98ae09",
+      "image_file": "Flaming Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Flaming_Bomb.png"
+    },
+    {
+      "name": "Fragment Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Fragment_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Damage and Impact. Guaranteed Bleeding.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Bleeding",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Sulphuric Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Iron Scrap",
+            "quantity": 1
+          },
+          {
+            "item": "Iron Scrap",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.4,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Fragment_Bomb.png?8d9ac1",
+      "image_file": "Fragment Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Fragment_Bomb.png"
+    },
+    {
+      "name": "Frost Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Frost_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Ice Damage and Slow Down.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Slow Down",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Bomb Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Chalcedony",
+            "quantity": 1
+          },
+          {
+            "item": "Sulphuric Mushroom",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Frost_Bomb.png?506a63",
+      "image_file": "Frost Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Frost_Bomb.png"
+    },
+    {
+      "name": "Ice Rag",
+      "source_url": "https://outward.wiki.gg/wiki/Ice_Rag",
+      "consumable_type": "special",
+      "description": "Soiled Cloth that confers the Frost element when rubbed on a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Frost Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Linen Cloth",
+            "quantity": 1
+          },
+          {
+            "item": "Seaweed",
+            "quantity": 1
+          }
+        ],
+        "station": "crafting_menu",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Ice_Rag.png?51acd7",
+      "image_file": "IceRag.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_IceRag.png"
+    },
+    {
+      "name": "Ice Varnish",
+      "source_url": "https://outward.wiki.gg/wiki/Ice_Varnish",
+      "consumable_type": "special",
+      "description": "Thick fluid that confers the Frost element when applied to a melee weapon..",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Greater Frost Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Livweedi",
+            "quantity": 1
+          },
+          {
+            "item": "Cold Stone",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Ice_Varnish.png?2e017b",
+      "image_file": "Ice Varnish.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Ice_Varnish.png"
+    },
+    {
+      "name": "Nerve Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Nerve_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Ethereal Damage and the Confusion status.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Confusion",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Bomb Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Ambraine",
+            "quantity": 1
+          },
+          {
+            "item": "Charge – Nerve Gas",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Nerve_Bomb.png?6b7f46",
+      "image_file": "Nerve Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Nerve_Bomb.png"
+    },
+    {
+      "name": "Oil Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Oil_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Fire Damage and the Scorched Hex.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Scorched",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Sulphuric Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          },
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.4,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Oil_Bomb.png?b6f26e",
+      "image_file": "Oil Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Oil_Bomb.png"
+    },
+    {
+      "name": "Poison Rag",
+      "source_url": "https://outward.wiki.gg/wiki/Poison_Rag",
+      "consumable_type": "special",
+      "description": "Soiled cloth that envenoms a weapon when rubbed on it.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Poison Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Linen Cloth",
+            "quantity": 1
+          },
+          {
+            "item": "Grilled Crabeye Seed",
+            "quantity": 1
+          }
+        ],
+        "station": "crafting_menu",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Poison_Rag.png?f66081",
+      "image_file": "Poison Rag.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Poison_Rag.png"
+    },
+    {
+      "name": "Poison Varnish",
+      "source_url": "https://outward.wiki.gg/wiki/Poison_Varnish",
+      "consumable_type": "special",
+      "description": "Thick fluid that envenoms a weapon when applied to it.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Greater Poison Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Occult Remains",
+            "quantity": 1
+          },
+          {
+            "item": "Miasmapod",
+            "quantity": 1
+          },
+          {
+            "item": "Grilled Crabeye Seed",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Poison_Varnish.png?72898c",
+      "image_file": "Poison Varnish.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Poison_Varnish.png"
+    },
+    {
+      "name": "Spark Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Spark_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Lightning Damage.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Lightning Damage",
+          "value": 35,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Bomb Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Calygrey Hairs",
+            "quantity": 1
+          },
+          {
+            "item": "Sulphuric Mushroom",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Spark_Bomb.png?6cc685",
+      "image_file": "Spark Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Spark_Bomb.png"
+    },
+    {
+      "name": "Spikes – Iron",
+      "source_url": "https://outward.wiki.gg/wiki/Spikes_%E2%80%93_Iron",
+      "consumable_type": "special",
+      "description": "Spikes that must be placed in a Tripwire Trap, inflicting moderate damage to enemies that step on it.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Damage",
+          "value": 25,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 3,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Spikes_%E2%80%93_Iron.png?cad934",
+      "image_file": "Spikes – Iron.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Spikes___Iron.png"
+    },
+    {
+      "name": "Spikes – Palladium",
+      "source_url": "https://outward.wiki.gg/wiki/Spikes_%E2%80%93_Palladium",
+      "consumable_type": "special",
+      "description": "Spikes that must be placed in a Tripwire Trap, inflicting heavy damage to enemies that step on it.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Damage",
+          "value": 35,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 50,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Spikes_%E2%80%93_Palladium.png?6bf471",
+      "image_file": "Spikes – Palladium.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Spikes___Palladium.png"
+    },
+    {
+      "name": "Spikes – Wood",
+      "source_url": "https://outward.wiki.gg/wiki/Spikes_%E2%80%93_Wood",
+      "consumable_type": "special",
+      "description": "Spikes that must be placed in a Tripwire Trap, inflicting low damage to enemies that step on it.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Damage",
+          "value": 15,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 0,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Spikes_%E2%80%93_Wood.png?b0c64e",
+      "image_file": "Spikes - Wood.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Spikes_-_Wood.png"
+    },
+    {
+      "name": "Spiritual Varnish",
+      "source_url": "https://outward.wiki.gg/wiki/Spiritual_Varnish",
+      "consumable_type": "special",
+      "description": "Thick fluid that confers the Ethereal element when applied to a melee weapon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Greater Ethereal Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Ghost's Eye",
+            "quantity": 1
+          },
+          {
+            "item": "Mana Stone",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Spiritual_Varnish.png?d84514",
+      "image_file": "Spiritual Varnish.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Spiritual_Varnish.png"
+    },
+    {
+      "name": "Toxin Bomb",
+      "source_url": "https://outward.wiki.gg/wiki/Toxin_Bomb",
+      "consumable_type": "special",
+      "description": "Explodes after a moment, dealing Decay Damage and the Plague Status.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Plague",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Bomb Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Miasmapod",
+            "quantity": 1
+          },
+          {
+            "item": "Charge – Toxic",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Toxin_Bomb.png?9ae75a",
+      "image_file": "Toxin Bomb.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/special_Toxin_Bomb.png"
+    }
+  ]
+}

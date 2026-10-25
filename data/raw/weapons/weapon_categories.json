@@ -1,0 +1,95 @@
+{
+  "categories": {
+    "melee": {
+      "name": "Melee Weapons",
+      "description": "Close-combat weapons including swords, axes, maces, spears, halberds, daggers, and fist weapons",
+      "types": {
+        "sword": {
+          "name": "Swords",
+          "description": "Bladed weapons with balanced speed and damage",
+          "count": 76
+        },
+        "axe": {
+          "name": "Axes",
+          "description": "Heavy chopping weapons with high impact",
+          "count": 67
+        },
+        "mace": {
+          "name": "Maces",
+          "description": "Blunt weapons with high impact and stagger potential",
+          "count": 70
+        },
+        "spear": {
+          "name": "Spears",
+          "description": "Long-reach thrusting weapons",
+          "count": 39
+        },
+        "halberd": {
+          "name": "Halberds",
+          "description": "Two-handed polearms with extended reach",
+          "count": 39
+        },
+        "dagger": {
+          "name": "Daggers",
+          "description": "Fast, short-range blades often used off-handed",
+          "count": 17
+        },
+        "fist": {
+          "name": "Fist Weapons",
+          "description": "Gauntlets and knuckles for unarmed combat",
+          "count": 30
+        }
+      }
+    },
+    "ranged": {
+      "name": "Ranged Weapons",
+      "description": "Weapons for attacking from distance",
+      "types": {
+        "bow": {
+          "name": "Bows",
+          "description": "Two-handed ranged weapons using arrows",
+          "count": 23
+        },
+        "pistol": {
+          "name": "Pistols",
+          "description": "Off-handed firearms using bullets",
+          "count": 19
+        }
+      }
+    },
+    "magical": {
+      "name": "Magical Weapons",
+      "description": "Weapons imbued with magical properties",
+      "types": {
+        "staff": {
+          "name": "Staves",
+          "description": "Two-handed polearms with magical damage bonuses",
+          "count": 17
+        },
+        "chakram": {
+          "name": "Chakrams",
+          "description": "Off-handed thrown magical weapons",
+          "count": 19
+        }
+      }
+    },
+    "shields": {
+      "name": "Shields",
+      "description": "Defensive off-hand items with block power and protection",
+      "count": 33
+    }
+  },
+  "damage_types": [
+    "physical",
+    "fire",
+    "frost",
+    "lightning",
+    "ethereal",
+    "decay"
+  ],
+  "handedness_types": [
+    "one_handed",
+    "two_handed",
+    "off_handed"
+  ]
+}

@@ -1,0 +1,1181 @@
+{
+  "category": "Shields",
+  "count": 33,
+  "weapons": [
+    {
+      "name": "Angler Shield",
+      "description": "Makes the player immune to Petrification, Plague, and Breathless. Provides light that only the wielder can see.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Angler Shield.png",
+      "durability": 275.0,
+      "weight": 8.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Sapped",
+        "Mild Petrification",
+        "Plague",
+        "Breathless"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Angler_Shield",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2300365",
+      "tags": [],
+      "block_stats": {
+        "block_power": 55.0,
+        "impact": 55.0,
+        "impact_resistance": 19.2
+      },
+      "damage_stats": null,
+      "image_url": "https://outward.wiki.gg/images/Angler_Shield.png?c3d636",
+      "local_image": "assets/images/shields/shield_Angler_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Astral Shield",
+      "description": "Inflicts Scorched and Curse on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Astral Shield.png",
+      "durability": 300.0,
+      "weight": 4.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Trinket Handle",
+          "Flat Prism",
+          "Waning Tentacle"
+        ],
+        "station": "Survival"
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Scorched",
+        "Curse"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Astral_Shield",
+      "dlc": "The Three Brothers",
+      "set": "Astral Set",
+      "object_id": "2300290",
+      "tags": [],
+      "block_stats": {
+        "block_power": 26.4,
+        "impact": 20.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "image_url": "https://outward.wiki.gg/images/Astral_Shield.png?844788",
+      "local_image": "assets/images/shields/shield_Astral_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Crimson Shield",
+      "description": "Blood-red shield used by the leaders of the northern tribes.; Its bold color makes it stand out in the snowy landscape.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Crimson Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Crimson_Shield.png?1736b5",
+      "durability": 260.0,
+      "weight": 7.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Crimson_Shield",
+      "dlc": null,
+      "set": "Crimson Plate Set",
+      "object_id": "2300130",
+      "block_stats": {
+        "block_power": 39.0,
+        "impact": 58.0,
+        "impact_resistance": 19.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Crimson_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Dragon Shield",
+      "description": "Shield depicting a fictional creature of great power; one that is common in street theatre and children's books. Inflicts burning on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Dragon Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Dragon_Shield.png?8230f3",
+      "durability": 175.0,
+      "weight": 8.0,
+      "price": {
+        "buy": 100.0,
+        "sell": 30.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Burning"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Dragon_Shield",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300120",
+      "block_stats": {
+        "block_power": 13.8,
+        "impact": 43.0,
+        "impact_resistance": 15.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Dragon_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Enchanting Table Shield",
+      "description": "You just voided the warranty. Congratulations.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Enchanting Table Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Enchanting_Table_Shield.png?9b0932",
+      "durability": 50.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 50.0,
+        "sell": 15.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Enchanting Pedestal"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Sapped"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Enchanting_Table_Shield",
+      "dlc": "The Soroboreans",
+      "set": null,
+      "object_id": "2300270",
+      "block_stats": {
+        "block_power": 15.0,
+        "impact": 34.0,
+        "impact_resistance": null
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Enchanting_Table_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Fabulous Palladium Shield",
+      "description": "Sometimes, it's not about power, it's about style. Inflicts Elemental Vulnerability on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Fabulous Palladium Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Fabulous_Palladium_Shield.png?1ac05f",
+      "durability": 300.0,
+      "weight": 7.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Elemental Vulnerability"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Fabulous_Palladium_Shield",
+      "dlc": null,
+      "set": "Palladium Set",
+      "object_id": "2300171",
+      "block_stats": {
+        "block_power": 32.0,
+        "impact": 51.0,
+        "impact_resistance": 17.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Fabulous_Palladium_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Fang Shield",
+      "description": "The added fangs do little to improve the shield's toughness, but are telling of the wielder's mental state. Inflicts Bleeding on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Fang Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Fang_Shield.png?87f691",
+      "durability": 175.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 50.0,
+        "sell": 15.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Round Shield",
+          "Predator Bones",
+          "Linen Cloth"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Savage Shield"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Bleeding"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Fang_Shield",
+      "dlc": null,
+      "set": "Fang Set",
+      "object_id": "2300060",
+      "block_stats": {
+        "block_power": 18.0,
+        "impact": 37.0,
+        "impact_resistance": 14.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Fang_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Forged Glass Shield",
+      "description": "",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Forged Glass Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Forged_Glass_Shield.png?481b3c",
+      "durability": 260.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Sapped"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Forged_Glass_Shield",
+      "dlc": "The Three Brothers",
+      "set": "Forged Glass Set",
+      "object_id": "2300300",
+      "block_stats": {
+        "block_power": 33.0,
+        "impact": 51.0,
+        "impact_resistance": 21.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Forged_Glass_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Galvanic Shield",
+      "description": "Inflicts Pain on shield charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Galvanic Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Galvanic_Shield.png?93cc50",
+      "durability": 275.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Round Shield",
+          "Shield Golem Scraps",
+          "Crystal Powder",
+          "Palladium Scrap"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Pain"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Galvanic_Shield",
+      "dlc": "The Soroboreans",
+      "set": "Galvanic Set",
+      "object_id": "2300230",
+      "block_stats": {
+        "block_power": 38.0,
+        "impact": 56.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Galvanic_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Gold-Lich Shield",
+      "description": "A shield seldom used by a lich minions, as they have no regard for their life. Mortal agents can be rewarded with this equipment, however.\n\nInflicts Doomed on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Gold-Lich Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Gold-Lich_Shield.png?2436ee",
+      "durability": 300.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Round Shield",
+          "Gold-Lich Mechanism",
+          "Firefly Powder"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Doomed"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Shield",
+      "dlc": null,
+      "set": "Gold-Lich Set",
+      "object_id": "2300100",
+      "block_stats": {
+        "block_power": 17.5,
+        "impact": 51.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Gold-Lich_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Golden Shield",
+      "description": "A gilded Plank Shield, passed down by your ancestors.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Golden Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Golden_Shield.png?35e377",
+      "durability": 150.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 50.0,
+        "sell": 15.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Golden_Shield",
+      "dlc": null,
+      "set": "Gold Set",
+      "object_id": "2300200",
+      "block_stats": {
+        "block_power": 18.0,
+        "impact": 41.0,
+        "impact_resistance": 14.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Golden_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Horror Shield",
+      "description": "Monstrous shield best used in a deadly combination with a one-handed axe also made of chitin. Inflicts extreme poison on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Horror Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Horror_Shield.png?2803c5",
+      "durability": 250.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Fang Shield",
+          "Horror Chitin",
+          "Palladium Scrap",
+          "Occult Remains"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Extreme Poison"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Horror_Shield",
+      "dlc": null,
+      "set": "Horror Set",
+      "object_id": "2300160",
+      "block_stats": {
+        "block_power": 10.2,
+        "impact": 56.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Horror_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Inner Marble Shield",
+      "description": "A shield that has been masterfully made, being meant for guards within a ruler's inner circle. Inflicts Confusion on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Inner Marble Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Inner_Marble_Shield.png?4fb304",
+      "durability": 300.0,
+      "weight": 8.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Confusion"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Inner_Marble_Shield",
+      "dlc": null,
+      "set": "Marble Set",
+      "object_id": "2300091",
+      "block_stats": {
+        "block_power": 36.0,
+        "impact": 56.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Inner_Marble_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Kazite Scutum",
+      "description": "Inflicts Weaken on shield charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Kazite Scutum.png",
+      "image_url": "https://outward.wiki.gg/images/Kazite_Scutum.png?ddff6f",
+      "durability": 175.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 100.0,
+        "sell": 30.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Weaken"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Kazite_Scutum",
+      "dlc": "The Soroboreans",
+      "set": "Kazite Set",
+      "object_id": "2300260",
+      "block_stats": {
+        "block_power": 23.0,
+        "impact": 43.0,
+        "impact_resistance": 14.4
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Kazite_Scutum.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Marble Shield",
+      "description": "A shield made long ago to be ornamental, due to its weight, but that is still useful in combat. Inflicts Confusion on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Marble Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Marble_Shield.png?4933fe",
+      "durability": 260.0,
+      "weight": 8.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Confusion"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Marble_Shield",
+      "dlc": null,
+      "set": "Marble Set",
+      "object_id": "2300090",
+      "block_stats": {
+        "block_power": 32.0,
+        "impact": 51.0,
+        "impact_resistance": 17.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Marble_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Militia Shield",
+      "description": "",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Militia Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Militia_Shield.png?43ab08",
+      "durability": 260.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 300.0,
+        "sell": 90.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Vigilante Shield"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Militia_Shield",
+      "dlc": "The Three Brothers",
+      "set": "Militia Set",
+      "object_id": "2300350",
+      "block_stats": {
+        "block_power": 33.0,
+        "impact": 51.0,
+        "impact_resistance": 17.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Militia_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Mushroom Shield",
+      "description": "Specially grown fungus used by Troglodytes as offerings to their queen-goddess. It makes for a surprisingly usable shield. Inflicts Poison on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Mushroom Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Mushroom_Shield.png?247641",
+      "durability": 85.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 20.0,
+        "sell": 6.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Spore Shield"
+        }
+      ],
+      "requirements": null,
+      "special_effects": [
+        "Poisoned"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Mushroom_Shield",
+      "dlc": null,
+      "set": "Troglodyte Set",
+      "object_id": "2300150",
+      "block_stats": {
+        "block_power": 8.4,
+        "impact": 33.0,
+        "impact_resistance": 10.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Mushroom_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Old Legion Shield",
+      "description": "Peculiar oval shield used by the warriors of an ancient legion. Inflicts Bleeding on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Old Legion Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Old_Legion_Shield.png?3b46ea",
+      "durability": 175.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 200.0,
+        "sell": 60.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Bleeding"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Old_Legion_Shield",
+      "dlc": null,
+      "set": "Old Legion Set",
+      "object_id": "2300070",
+      "block_stats": {
+        "block_power": 23.0,
+        "impact": 43.0,
+        "impact_resistance": 15.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Old_Legion_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Ornate Bone Shield",
+      "description": "Morbid shield made by the deranged gravekeeper Cremeuh, to reward you for robbing graves.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Ornate Bone Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Ornate_Bone_Shield.png?e5c5d1",
+      "durability": 220.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Haunted"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Ornate_Bone_Shield",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300180",
+      "block_stats": {
+        "block_power": 19.2,
+        "impact": 51.0,
+        "impact_resistance": 17.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Ornate_Bone_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Palladium Shield",
+      "description": "Depicting a sun, this shield is praised for its high durability.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Palladium Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Palladium_Shield.png?1711d2",
+      "durability": 300.0,
+      "weight": 7.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Palladium_Shield",
+      "dlc": null,
+      "set": "Palladium Set",
+      "object_id": "2300170",
+      "block_stats": {
+        "block_power": 25.6,
+        "impact": 56.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Palladium_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Plank Shield",
+      "description": "Hastily built from broken planks, it grants the ability to block arrows, at least.; ; This shield is unlikely to last long in a fight.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Plank Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Plank_Shield.png?332e35",
+      "durability": 85.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 16.0,
+        "sell": 0.0
+      },
+      "crafting_recipe": {
+        "ingredients": [
+          "Wood",
+          "Linen Cloth",
+          "Linen Cloth"
+        ],
+        "station": ""
+      },
+      "upgrade_paths": [
+        {
+          "type": "legacy_chest",
+          "result": "Golden Shield"
+        }
+      ],
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Plank_Shield",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300080",
+      "block_stats": {
+        "block_power": 9.0,
+        "impact": 25.0,
+        "impact_resistance": 10.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Plank_Shield.png",
+      "source_category": "craftable"
+    },
+    {
+      "name": "Round Shield",
+      "description": "",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Round Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Round_Shield.png?2ea995",
+      "durability": 130.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 20.0,
+        "sell": 6.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Round_Shield",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300000",
+      "block_stats": {
+        "block_power": 15.0,
+        "impact": 36.0,
+        "impact_resistance": 12.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Round_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Savage Shield",
+      "description": "A Fang Shield made from the bones of ancient beasts, passed down by your ancestors. Inflicts Extreme Bleeding on shield charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Savage Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Savage_Shield.png?d0d0de",
+      "durability": 300.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 200.0,
+        "sell": 60.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Extreme Bleeding"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Savage_Shield",
+      "dlc": null,
+      "set": "Savage Set",
+      "object_id": "2300210",
+      "block_stats": {
+        "block_power": 18.0,
+        "impact": 43.0,
+        "impact_resistance": 15.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Savage_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Slumbering Shield",
+      "description": "This shield reacts to petrified flesh...What would happen if you and someone very large were covered in it...?",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Slumbering Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Slumbering_Shield.png?2922d4",
+      "durability": 200.0,
+      "weight": 8.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Sapped"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Slumbering_Shield",
+      "dlc": "The Three Brothers",
+      "set": null,
+      "object_id": "2300360",
+      "block_stats": {
+        "block_power": 30.0,
+        "impact": 40.0,
+        "impact_resistance": 16.8
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Slumbering_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Smoke Shield",
+      "description": "Inflicts Blaze on Burning foes on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Smoke Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Smoke_Shield.png?ddefcf",
+      "durability": 260.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 900.0,
+        "sell": 270.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Blaze"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Smoke_Shield",
+      "dlc": "The Three Brothers",
+      "set": "Smoke Set",
+      "object_id": "2300340",
+      "block_stats": {
+        "block_power": 33.0,
+        "impact": 20.0,
+        "impact_resistance": 17.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Smoke_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Spore Shield",
+      "description": "A Mushroom Shield left to mature over several generations, passed down by your ancestors. Inflicts Extreme Poison on shield charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Spore Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Spore_Shield.png?47c5fb",
+      "durability": 150.0,
+      "weight": 3.0,
+      "price": {
+        "buy": 0.0,
+        "sell": 0.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Extreme Poison"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Spore_Shield",
+      "dlc": null,
+      "set": "Troglodyte Set",
+      "object_id": "2300220",
+      "block_stats": {
+        "block_power": 8.4,
+        "impact": 37.0,
+        "impact_resistance": 12.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Spore_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Steel Shield",
+      "description": "Common but high-quality shield used by warriors of the desert.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Steel Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Steel_Shield.png?2b3a36",
+      "durability": 175.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 60.0,
+        "sell": 18.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Steel_Shield",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300140",
+      "block_stats": {
+        "block_power": 25.0,
+        "impact": 46.0,
+        "impact_resistance": 15.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Steel_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "The Will O Wisp",
+      "description": "An ancient shield, enchanted by the ghost of William, in return for completing his mission for him.\n\nInflicts Weaken on Shield Charge.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "The Will O Wisp.png",
+      "image_url": "https://outward.wiki.gg/images/The_Will_O_Wisp.png?588f0a",
+      "durability": 275.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 700.0,
+        "sell": 210.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Weaken"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/The_Will_O_Wisp",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300600",
+      "block_stats": {
+        "block_power": 34.0,
+        "impact": 25.0,
+        "impact_resistance": 16.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_The_Will_O_Wisp.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Tower Shield",
+      "description": "Immense shield that is quite heavy, but that protects from arrows aimed for the wielder's head or legs.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Tower Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Tower_Shield.png?72658f",
+      "durability": 250.0,
+      "weight": 9.0,
+      "price": {
+        "buy": 200.0,
+        "sell": 60.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Tower_Shield",
+      "dlc": null,
+      "set": null,
+      "object_id": "2300040",
+      "block_stats": {
+        "block_power": 18.0,
+        "impact": 56.0,
+        "impact_resistance": 16.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Tower_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Tsar Shield",
+      "description": "A shield of the highest quality, beset with a Tsar Stone that gently emits green light.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Tsar Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Tsar_Shield.png?779616",
+      "durability": null,
+      "weight": 10.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Tsar_Shield",
+      "dlc": null,
+      "set": "Tsar Set",
+      "object_id": "2300190",
+      "block_stats": {
+        "block_power": 41.0,
+        "impact": 66.0,
+        "impact_resistance": 22.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Tsar_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Vigilante Shield",
+      "description": "A bloody Militia Shield passed down by your ancestors.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "off_handed",
+      "image": "Vigilante Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Vigilante_Shield.png?b52970",
+      "durability": 260.0,
+      "weight": 5.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Vigilante_Shield",
+      "dlc": "The Three Brothers",
+      "set": "Vigilante Set",
+      "object_id": "2300355",
+      "block_stats": {
+        "block_power": 35.0,
+        "impact": 55.0,
+        "impact_resistance": 21.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Vigilante_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Wolf Shield",
+      "description": "",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Wolf Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Wolf_Shield.png?42ad6c",
+      "durability": 400.0,
+      "weight": 8.0,
+      "price": {
+        "buy": 800.0,
+        "sell": 240.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": [
+        "Crippled"
+      ],
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Wolf_Shield",
+      "dlc": null,
+      "set": "Wolf Plate Set",
+      "object_id": "2300050",
+      "block_stats": {
+        "block_power": 41.0,
+        "impact": 44.0,
+        "impact_resistance": 18.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Wolf_Shield.png",
+      "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Zhorn's Demon Shield",
+      "description": "An unusual possession of the ancient great hunter.; ; Whatever magic used to enchant this shield is long gone, though it retains its excellent craftsmanship.",
+      "weapon_type": "shield",
+      "category_class": "shield",
+      "handedness": "one_handed",
+      "image": "Zhorn's Demon Shield.png",
+      "image_url": "https://outward.wiki.gg/images/Zhorn%27s_Demon_Shield.png?5b405c",
+      "durability": 325.0,
+      "weight": 6.0,
+      "price": {
+        "buy": 2000.0,
+        "sell": 600.0
+      },
+      "crafting_recipe": null,
+      "upgrade_paths": null,
+      "requirements": null,
+      "special_effects": null,
+      "source": null,
+      "source_url": "https://outward.wiki.gg/wiki/Zhorn%27s_Demon_Shield",
+      "dlc": null,
+      "set": "Zhorn's Set",
+      "object_id": "2300030",
+      "block_stats": {
+        "block_power": 48.0,
+        "impact": 60.0,
+        "impact_resistance": 20.0
+      },
+      "damage_stats": null,
+      "local_image": "assets/images/shields/shield_Zhorn_s_Demon_Shield.png",
+      "source_category": "loot_or_legacy"
+    }
+  ]
+}

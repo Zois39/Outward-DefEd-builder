@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Cabal Hermit",
+    "description": "skill tree.]] Cabal Hermit Skills are trained by Adalbert the Hermit, at Hermit's House in northeastern Chersonese.",
+    "teacher": "Adalbert the Hermit",
+    "location": "Chersonese",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/CabalTreeLogo.png?af5de4",
+    "local_image": "assets/images/skills/class_Cabal_Hermit.png",
+    "source_url": "https://outward.wiki.gg/wiki/Cabal_Hermit",
+    "skill_counts": {
+      "tier1": 4,
+      "tier2": 1,
+      "tier3": 3
+    }
+  },
+  {
+    "name": "Kazite Spellblade",
+    "description": "skills focus on adaptability in combat and the infusion of elements into weapons. Kazite Spellblade skills are trained by Eto Akiyuki in the city of Cierzo.",
+    "teacher": "Eto Akiyuki",
+    "location": "Cierzo",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/SpellbladeTreeLogo.png?b124a2",
+    "local_image": "assets/images/skills/class_Kazite_Spellblade.png",
+    "source_url": "https://outward.wiki.gg/wiki/Kazite_Spellblade",
+    "skill_counts": {
+      "tier1": 3,
+      "tier2": 1,
+      "tier3": 4
+    }
+  },
+  {
+    "name": "Mercenary",
+    "description": "skills are trained by Jaimon in Levant.",
+    "teacher": "Jaimon",
+    "location": "Levant",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/MercenaryTreeLogo.png?52c855",
+    "local_image": "assets/images/skills/class_Mercenary.png",
+    "source_url": "https://outward.wiki.gg/wiki/Mercenary",
+    "skill_counts": {
+      "tier1": 4,
+      "tier2": 1,
+      "tier3": 3
+    }
+  },
+  {
+    "name": "Philosopher",
+    "description": "skills are trained by Alemmon in the city of Monsoon.",
+    "teacher": "Alemmon",
+    "location": "Monsoon",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/PhilosopherTreeLogo.png?16fc53",
+    "local_image": "assets/images/skills/class_Philosopher.png",
+    "source_url": "https://outward.wiki.gg/wiki/Philosopher",
+    "skill_counts": {
+      "tier1": 4,
+      "tier2": 1,
+      "tier3": 3
+    }
+  },
+  {
+    "name": "Rogue Engineer",
+    "description": "skills are taught by Styx in the Slums of Levant.",
+    "teacher": "Styx",
+    "location": "Levant",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/RogueTreeLogo.png?8c722d",
+    "local_image": "assets/images/skills/class_Rogue_Engineer.png",
+    "source_url": "https://outward.wiki.gg/wiki/Rogue_Engineer",
+    "skill_counts": {
+      "tier1": 4,
+      "tier2": 1,
+      "tier3": 3
+    }
+  },
+  {
+    "name": "Rune Sage",
+    "description": "skills are trained by Flase, Sage Trainer in the city of Berg.",
+    "teacher": "Flase",
+    "location": "Berg",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/RuneSageTreeLogo.png?1dc05c",
+    "local_image": "assets/images/skills/class_Rune_Sage.png",
+    "source_url": "https://outward.wiki.gg/wiki/Rune_Sage",
+    "skill_counts": {
+      "tier1": 4,
+      "tier2": 1,
+      "tier3": 3
+    }
+  },
+  {
+    "name": "Warrior Monk",
+    "description": "Skills give both defensive and offensive power in combat, utilising counters to gain the Discipline boon which in turn allows the usage of powerful attacks. Warrior Monk skills are trained by Galira in the city of Monsoon.",
+    "teacher": "Galira",
+    "location": "Monsoon",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/WarriorMonkTreeLogo.png?6adbd1",
+    "local_image": "assets/images/skills/class_Warrior_Monk.png",
+    "source_url": "https://outward.wiki.gg/wiki/Warrior_Monk",
+    "skill_counts": {
+      "tier1": 3,
+      "tier2": 1,
+      "tier3": 4
+    }
+  },
+  {
+    "name": "Wild Hunter",
+    "description": "Skills are trained by Ture in the city of Berg.",
+    "teacher": "Ture",
+    "location": "Berg",
+    "is_dlc": false,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/WildHunterTreeLogo.png?b10de4",
+    "local_image": "assets/images/skills/class_Wild_Hunter.png",
+    "source_url": "https://outward.wiki.gg/wiki/Wild_Hunter",
+    "skill_counts": {
+      "tier1": 4,
+      "tier2": 1,
+      "tier3": 3
+    }
+  },
+  {
+    "name": "Hex Mage",
+    "description": "Skills are trained by Ella Lockwell in the city of Harmattan. These skills are exclusive to The Soroboreans DLC.",
+    "teacher": "Ella Lockwell",
+    "location": "Harmattan",
+    "is_dlc": true,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/HexMageTreeLogo.png?cbf52e",
+    "local_image": "assets/images/skills/class_Hex_Mage.png",
+    "source_url": "https://outward.wiki.gg/wiki/Hex_Mage",
+    "skill_counts": {
+      "tier1": 3,
+      "tier2": 1,
+      "tier3": 4
+    }
+  },
+  {
+    "name": "Primal Ritualist",
+    "description": "Skills are trained by Sinai, the Primal Ritualist at the Ritualist's hut in Caldera. These skills are exclusive to The Three Brothers DLC.",
+    "teacher": "Sinai, the Primal Ritualist",
+    "location": "Ritualist's hut",
+    "is_dlc": true,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/RitualistLogo.png?ef577d",
+    "local_image": "assets/images/skills/class_Primal_Ritualist.png",
+    "source_url": "https://outward.wiki.gg/wiki/Primal_Ritualist",
+    "skill_counts": {
+      "tier1": 3,
+      "tier2": 1,
+      "tier3": 4
+    }
+  },
+  {
+    "name": "Specialist",
+    "description": "Skills trained by Justin Garnet through the Gladiator's Arena in New Sirocco. Exclusive to The Three Brothers DLC. This teacher has NO breakthrough point — all skills are accessible once the teacher is unlocked. Skills are purchased with Conqueror's Medals.",
+    "teacher": "Justin Garnet, Specialist Trainer",
+    "location": "New Sirocco",
+    "is_dlc": true,
+    "has_breakthrough": false,
+    "breakthrough_points": 0,
+    "breakthrough_note": "This class has no Breakthrough skill; all skills available after unlocking the teacher.",
+    "image_url": "https://outward.wiki.gg/images/SpecialistLogo.png?99c087",
+    "local_image": "assets/images/skills/class_Specialist.png",
+    "source_url": "https://outward.wiki.gg/wiki/Specialist",
+    "skill_counts": {
+      "tier1": 6
+    }
+  },
+  {
+    "name": "The Speedster",
+    "description": "Skills are trained by Serge Battleborn in the city of Harmattan. These skills are exclusive to The Soroboreans DLC.",
+    "teacher": "Serge Battleborn",
+    "location": "Harmattan",
+    "is_dlc": true,
+    "has_breakthrough": true,
+    "breakthrough_points": 3,
+    "breakthrough_note": "Breakthrough (Tier 2) costs 1 of 3 Breakthrough Points per character. Choice is permanent.",
+    "image_url": "https://outward.wiki.gg/images/SpeedsterTreeLogo.png?de8abd",
+    "local_image": "assets/images/skills/class_The_Speedster.png",
+    "source_url": "https://outward.wiki.gg/wiki/The_Speedster",
+    "skill_counts": {
+      "tier1": 3,
+      "tier2": 1,
+      "tier3": 4
+    }
+  },
+  {
+    "name": "Weapon Master",
+    "description": "Skills trained by Bea Battleborn through the Gladiator's Arena in New Sirocco. Exclusive to The Three Brothers DLC. This teacher has NO breakthrough point — all skills are accessible once the teacher is unlocked. Skills are purchased with Conqueror's Medals.",
+    "teacher": "Bea Battleborn, Weapons Master",
+    "location": "New Sirocco",
+    "is_dlc": true,
+    "has_breakthrough": false,
+    "breakthrough_points": 0,
+    "breakthrough_note": "This class has no Breakthrough skill; all skills available after unlocking the teacher.",
+    "image_url": "https://outward.wiki.gg/images/ExpertLogo.png?847481",
+    "local_image": "assets/images/skills/class_Weapon_Master.png",
+    "source_url": "https://outward.wiki.gg/wiki/Weapon_Master",
+    "skill_counts": {
+      "tier1": 10
+    }
+  }
+]

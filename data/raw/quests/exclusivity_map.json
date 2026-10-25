@@ -1,0 +1,120 @@
+{
+  "factions": {
+    "The Blue Chamber Collective": {
+      "mutually_exclusive_with": [
+        "The Heroic Kingdom of Levant",
+        "The Holy Mission of Elatt",
+        "Sorobor Academy"
+      ],
+      "exclusive_quests": [
+        "Mixed Legacies",
+        "Ash Giants",
+        "Whispering Bones",
+        "Ancestral Peacemaker"
+      ],
+      "headquarters": "Berg"
+    },
+    "The Heroic Kingdom of Levant": {
+      "mutually_exclusive_with": [
+        "The Blue Chamber Collective",
+        "The Holy Mission of Elatt",
+        "Sorobor Academy"
+      ],
+      "exclusive_quests": [
+        "Tending the Flame",
+        "Sand Corsairs",
+        "Mouths to Feed",
+        "Heroic Peacemaker"
+      ],
+      "headquarters": "Levant"
+    },
+    "The Holy Mission of Elatt": {
+      "mutually_exclusive_with": [
+        "The Blue Chamber Collective",
+        "The Heroic Kingdom of Levant",
+        "Sorobor Academy"
+      ],
+      "exclusive_quests": [
+        "Questions and Corruption",
+        "Doubts and Secrets",
+        "Truth and Purpose",
+        "Hallowed Peacemaker"
+      ],
+      "headquarters": "Monsoon"
+    },
+    "Sorobor Academy": {
+      "mutually_exclusive_with": [
+        "The Blue Chamber Collective",
+        "The Heroic Kingdom of Levant",
+        "The Holy Mission of Elatt"
+      ],
+      "exclusive_quests": [],
+      "headquarters": "Harmattan"
+    }
+  },
+  "faction_quests": {},
+  "faction_rewards": {
+    "The Blue Chamber Collective": {
+      "skills": [
+        "Ancestors' Memories",
+        "Blood of Giants",
+        "Infuse Blood"
+      ],
+      "items": [
+        "Crimson Plate Set",
+        "Lantern of Souls"
+      ],
+      "other": []
+    },
+    "The Heroic Kingdom of Levant": {
+      "skills": [
+        "Alchemical Experiment",
+        "Kirouac's Breakthrough"
+      ],
+      "items": [
+        "Royal Great-Khopesh(can also be obtained byHoly Mission)",
+        "Zagis' Saw",
+        "Zagis' Set"
+      ],
+      "other": []
+    },
+    "The Holy Mission of Elatt": {
+      "skills": [
+        "Acceptance",
+        "Infuse Light",
+        "Purified",
+        "Spiritual Communion,Sanctified AssistanceorDivine Assistance",
+        "Sanctified Protection",
+        "Exalted",
+        "Elatt's Intervention"
+      ],
+      "items": [
+        "Candle Plate Set",
+        "Radiant Wolf Sword",
+        "Royal Great-Khopesh(can also be obtained byHeroic Kingdom)"
+      ],
+      "other": []
+    },
+    "Sorobor Academy": {
+      "skills": [
+        "Logistics Expert",
+        "Preferential Treatment, ORLockwell's private potion stock, OR reduce the buy-price of items in theHarmattanmarket (seePurifier)",
+        "Infuse Mana"
+      ],
+      "items": [
+        "Tsar BoworTsar Chakram"
+      ],
+      "other": []
+    }
+  },
+  "global_rules": {
+    "max_factions_per_playthrough": 1,
+    "faction_choice_permanent": true,
+    "mutually_exclusive_factions": [
+      "The Blue Chamber Collective",
+      "The Heroic Kingdom of Levant",
+      "The Holy Mission of Elatt",
+      "Sorobor Academy"
+    ]
+  }
+}

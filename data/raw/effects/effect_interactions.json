@@ -1,0 +1,71 @@
+{
+  "synergies": [
+    {
+      "effect": "Blessed",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    },
+    {
+      "effect": "Cool",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    },
+    {
+      "effect": "Discipline",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    },
+    {
+      "effect": "Mist",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    },
+    {
+      "effect": "Possessed",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    },
+    {
+      "effect": "Rage",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    },
+    {
+      "effect": "Warm",
+      "synergizes_with": "Shamanic Resonance (passive skill)",
+      "type": "synergy"
+    }
+  ],
+  "conflicts": [
+    {
+      "effect": "Bleeding",
+      "conflicts_with": "Extreme Bleeding",
+      "type": "conflict"
+    },
+    {
+      "effect": "Extreme Bleeding",
+      "conflicts_with": "Bleeding",
+      "type": "conflict"
+    },
+    {
+      "effect": "Extreme Poison",
+      "conflicts_with": "Hive Infestation",
+      "type": "conflict"
+    },
+    {
+      "effect": "Extreme Poison",
+      "conflicts_with": "Poisoned",
+      "type": "conflict"
+    },
+    {
+      "effect": "Poisoned",
+      "conflicts_with": "Hive Infestation",
+      "type": "conflict"
+    },
+    {
+      "effect": "Poisoned",
+      "conflicts_with": "Extreme Poison",
+      "type": "conflict"
+    }
+  ]
+}

@@ -1,0 +1,2542 @@
+{
+  "type": "potion",
+  "count": 46,
+  "items": [
+    {
+      "name": "Alertness Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Alertness_Potion",
+      "consumable_type": "potion",
+      "description": "Raises your Alertness Level by 1.",
+      "effects": [
+        {
+          "effect_type": "restore_stamina",
+          "value": 50.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Alert",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Nightmare Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Stingleaf",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Alertness_Potion.png?997a78",
+      "image_file": "Alertness Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Alertness_Potion.png"
+    },
+    {
+      "name": "Antidote",
+      "source_url": "https://outward.wiki.gg/wiki/Antidote",
+      "consumable_type": "potion",
+      "description": "Brew that neutralizes most poisons.",
+      "effects": [
+        {
+          "effect_type": "remove_effect",
+          "name": "Poison",
+          "value": null,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Common Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          },
+          {
+            "item": "Water",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 7,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Antidote.png?23b4c6",
+      "image_file": "Antidote.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Antidote.png"
+    },
+    {
+      "name": "Assassin Elixir",
+      "source_url": "https://outward.wiki.gg/wiki/Assassin_Elixir",
+      "consumable_type": "potion",
+      "description": "Powerful concoction that temporarily increases your movement speed, stealth and coats your equipped melee weapon with poison.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Speed Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Stealth Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Greater Poison Imbue",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 1.0,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Assassin_Elixir.png?f698ec",
+      "image_file": "Assassin Elixir.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Assassin_Elixir.png"
+    },
+    {
+      "name": "Astral Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Astral_Potion",
+      "consumable_type": "potion",
+      "description": "Potion which instantly restores some mana.",
+      "effects": [
+        {
+          "effect_type": "restore_mana",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_mana",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": [
+        {
+          "ingredients": [
+            {
+              "item": "Star Mushroom",
+              "quantity": 1
+            },
+            {
+              "item": "Turmmip",
+              "quantity": 1
+            },
+            {
+              "item": "Water",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Shark Cartilage",
+              "quantity": 1
+            },
+            {
+              "item": "Thick Oil",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Mantis Granite",
+              "quantity": 1
+            },
+            {
+              "item": "Gaberries",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy",
+          "output_count": 1
+        }
+      ],
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Astral_Potion.png?d5ffe3",
+      "image_file": "Astral Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Astral_Potion.png"
+    },
+    {
+      "name": "Barrier Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Barrier_Potion",
+      "consumable_type": "potion",
+      "description": "Grants Barrier.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Barrier (Effect)",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Peach Seeds",
+            "quantity": 1
+          },
+          {
+            "item": "Crysocolla Beetle",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Barrier_Potion.png?98448b",
+      "image_file": "Barrier Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Barrier_Potion.png"
+    },
+    {
+      "name": "Blessed Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Blessed_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Lightning Damage and Resistances.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Blessed",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Firefly Powder",
+            "quantity": 1
+          },
+          {
+            "item": "Water",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Blessed_Potion.png?e3f7b4",
+      "image_file": "Blessed Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Blessed_Potion.png"
+    },
+    {
+      "name": "Bracing Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Bracing_Potion",
+      "consumable_type": "potion",
+      "description": "Provides resistance to status effects for 60 seconds.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Status Build up Resistance Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Ableroot",
+            "quantity": 1
+          },
+          {
+            "item": "Ableroot",
+            "quantity": 1
+          },
+          {
+            "item": "Peach Seeds",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 50,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Bracing_Potion.png?89ddad",
+      "image_file": "Bracing Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Bracing_Potion.png"
+    },
+    {
+      "name": "Cool Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Cool_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Frost Damage and Resistances.  Starts the process of curing Meeka Fever.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Cool",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Meeka Fever",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Gravel Beetle",
+            "quantity": 1
+          },
+          {
+            "item": "Water",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Cool_Potion.png?631105",
+      "image_file": "Cool Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Cool_Potion.png"
+    },
+    {
+      "name": "Discipline Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Discipline_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Physical Damage.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Discipline",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Ochre Spice Beetle",
+            "quantity": 1
+          },
+          {
+            "item": "Livweedi",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Discipline_Potion.png?ca6bd0",
+      "image_file": "Discipline Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Discipline_Potion.png"
+    },
+    {
+      "name": "Elemental Immunity Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Elemental_Immunity_Potion",
+      "consumable_type": "potion",
+      "description": "Legendary brew that temporarily grants immunity to Fire, Frost, Lightning, Decay and Ethereal damage.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Elemental Immunity",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          },
+          {
+            "item": "Azure Shrimp",
+            "quantity": 1
+          },
+          {
+            "item": "Firefly Powder",
+            "quantity": 1
+          },
+          {
+            "item": "Occult Remains",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy_kit",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Elemental_Immunity_Potion.png?5c2b08",
+      "image_file": "Elemental Immunity Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Elemental_Immunity_Potion.png"
+    },
+    {
+      "name": "Elemental Resistance Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Elemental_Resistance_Potion",
+      "consumable_type": "potion",
+      "description": "Powerful concoction that temporarily grants moderate resistance against Fire, Frost, Lightning, Decay and Ethereal damage.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Elemental Resistance",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Smoke Root",
+            "quantity": 1
+          },
+          {
+            "item": "Occult Remains",
+            "quantity": 1
+          },
+          {
+            "item": "Crystal Powder",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Elemental_Resistance_Potion.png?edd0a3",
+      "image_file": "Elemental Resistance Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Elemental_Resistance_Potion.png"
+    },
+    {
+      "name": "Endurance Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Endurance_Potion",
+      "consumable_type": "potion",
+      "description": "Potion which instantly reinvigorates a tired body.  It restores a bit of max stamina.",
+      "effects": [
+        {
+          "effect_type": "restore_stamina",
+          "value": 70.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_stamina",
+          "value": 10.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "buff",
+          "name": "Stamina Recovery",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": [
+        {
+          "ingredients": [
+            {
+              "item": "Egg",
+              "quantity": 1
+            },
+            {
+              "item": "Krimp Nut",
+              "quantity": 1
+            },
+            {
+              "item": "Water",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Occult Remains",
+              "quantity": 1
+            },
+            {
+              "item": "Turmmip",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Assassin Tongue",
+              "quantity": 1
+            },
+            {
+              "item": "Cactus Fruit",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy",
+          "output_count": 1
+        }
+      ],
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Endurance_Potion.png?3bf07d",
+      "image_file": "Endurance Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Endurance_Potion.png"
+    },
+    {
+      "name": "Energizing Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Energizing_Potion",
+      "consumable_type": "potion",
+      "description": "Temporarily reduces skill cooldowns.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Leyline Water",
+            "quantity": 1
+          },
+          {
+            "item": "Crystal Powder",
+            "quantity": 1
+          },
+          {
+            "item": "Stingleaf",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Energizing_Potion.png?482d0b",
+      "image_file": "Energizing Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Energizing_Potion.png"
+    },
+    {
+      "name": "Gep's Drink",
+      "source_url": "https://outward.wiki.gg/wiki/Gep%27s_Drink",
+      "consumable_type": "potion",
+      "description": "Brew that restores a moderate amount of health, stamina and mana",
+      "effects": [
+        {
+          "effect_type": "restore_health",
+          "value": 30.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_stamina",
+          "value": 60.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_mana",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 0,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Gep%27s_Drink.png?f306a0",
+      "image_file": "Gep's Drink.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Gep_s_Drink.png"
+    },
+    {
+      "name": "Golem Elixir",
+      "source_url": "https://outward.wiki.gg/wiki/Golem_Elixir",
+      "consumable_type": "potion",
+      "description": "Powerful concoction that temporarily increases your weapon's Impact and gives you the Possessed and the Discipline boons.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Impact Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Possessed",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Discipline",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Golem_Elixir.png?b8fea7",
+      "image_file": "Golem Elixir.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Golem_Elixir.png"
+    },
+    {
+      "name": "Great Astral Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Great_Astral_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction which instantly restores mana and max mana.",
+      "effects": [
+        {
+          "effect_type": "restore_mana",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_mana",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Great_Astral_Potion.png?90f539",
+      "image_file": "Great Astral Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Great_Astral_Potion.png"
+    },
+    {
+      "name": "Great Endurance Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Great_Endurance_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction which instantly restores a massive amount of stamina and max stamina. It also grants Stamina Regeneration.",
+      "effects": [
+        {
+          "effect_type": "restore_stamina",
+          "value": 100.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_stamina",
+          "value": 50.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "buff",
+          "name": "Stamina Recovery",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": [
+        {
+          "ingredients": [
+            {
+              "item": "Krimp Nut",
+              "quantity": 1
+            },
+            {
+              "item": "Endurance Potion",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy_kit",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Obsidian Shard",
+              "quantity": 1
+            },
+            {
+              "item": "Common Mushroom",
+              "quantity": 1
+            },
+            {
+              "item": "Water",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy_kit",
+          "output_count": 1
+        }
+      ],
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Great_Endurance_Potion.png?82e345",
+      "image_file": "Great Endurance Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Great_Endurance_Potion.png"
+    },
+    {
+      "name": "Great Life Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Great_Life_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction which instantly restores health and max health.\n\nIt also closes Bleeding wounds.",
+      "effects": [
+        {
+          "effect_type": "restore_health",
+          "value": 300.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_health",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Bleeding",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Extreme Bleeding",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Great_Life_Potion.png?c851fe",
+      "image_file": "Great Life Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Great_Life_Potion.png"
+    },
+    {
+      "name": "Hex Cleaner",
+      "source_url": "https://outward.wiki.gg/wiki/Hex_Cleaner",
+      "consumable_type": "potion",
+      "description": "Strange brew that removes Hexes, Pain, Confusion, and starts the process of curing The Hunch disease.  Also increases the drinker’s protection against negative Status Effects.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Burn",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Chill",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "The Hunch",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "buff",
+          "name": "Status Build up Resistance Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Doomed",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Haunted",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Cursed",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Pain",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Confusion",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Greasy Fern",
+            "quantity": 1
+          },
+          {
+            "item": "Livweedi",
+            "quantity": 1
+          },
+          {
+            "item": "Salt",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 35,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Hex_Cleaner.png?6e13e1",
+      "image_file": "Hex Cleaner.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Hex_Cleaner.png"
+    },
+    {
+      "name": "Horror's Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Horror%27s_Potion",
+      "consumable_type": "potion",
+      "description": "Grants the drinker the Health Regeneration of a Shelled Horror.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_health",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_mana",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_stamina",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Life Potion",
+            "quantity": 1
+          },
+          {
+            "item": "Seaweed",
+            "quantity": 1
+          },
+          {
+            "item": "Rancid Water",
+            "quantity": 1
+          },
+          {
+            "item": "Liquid Corruption",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Horror%27s_Potion.png?cad512",
+      "image_file": "Horror's Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Horror_s_Potion.png"
+    },
+    {
+      "name": "Illuminating Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Illuminating_Potion",
+      "consumable_type": "potion",
+      "description": "Grants the drinker the Mana Regeneration of an Illuminator.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Leyline Water",
+            "quantity": 1
+          },
+          {
+            "item": "Nightmare Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Gaberry Wine",
+            "quantity": 1
+          },
+          {
+            "item": "Liquid Corruption",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Illuminating_Potion.png?349427",
+      "image_file": "Illuminating Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Illuminating_Potion.png"
+    },
+    {
+      "name": "Innocence Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Innocence_Potion",
+      "consumable_type": "potion",
+      "description": "Greatly increases resistance to Corruption.",
+      "effects": [
+        {
+          "effect_type": "remove_effect",
+          "name": "Corruption",
+          "value": 25,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          },
+          {
+            "item": "Purifying Quartz",
+            "quantity": 1
+          },
+          {
+            "item": "Dark Stone",
+            "quantity": 1
+          },
+          {
+            "item": "Boozu's Milk",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 80,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Innocence_Potion.png?4bcb45",
+      "image_file": "Innocence Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Innocence_Potion.png"
+    },
+    {
+      "name": "Invigorating Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Invigorating_Potion",
+      "consumable_type": "potion",
+      "description": "Heals the Sapped and Weaken Debuffs.",
+      "effects": [
+        {
+          "effect_type": "restore_stamina",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Sugar",
+            "quantity": 1
+          },
+          {
+            "item": "Dreamer's Root",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Invigorating_Potion.png?7467d5",
+      "image_file": "Invigorating Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Invigorating_Potion.png"
+    },
+    {
+      "name": "Krimp Nut",
+      "source_url": "https://outward.wiki.gg/wiki/Krimp_Nut",
+      "consumable_type": "potion",
+      "description": "Edible nut that is a main ingredient in stamina-restoring elixirs.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Stamina Recovery",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": 1026000,
+        "spoil_time_text": "11d 21h"
+      },
+      "weight": 0.2,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Krimp_Nut.png?85e7dd",
+      "image_file": "krimpNut.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_krimpNut.png"
+    },
+    {
+      "name": "Life Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Life_Potion",
+      "consumable_type": "potion",
+      "description": "Potion which instantly heals some wounds.",
+      "effects": [
+        {
+          "effect_type": "restore_health",
+          "value": 50.0,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": [
+        {
+          "ingredients": [
+            {
+              "item": "Gravel Beetle",
+              "quantity": 1
+            },
+            {
+              "item": "Blood Mushroom",
+              "quantity": 1
+            },
+            {
+              "item": "Water",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy_kit",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Coralhorn Antler",
+              "quantity": 1
+            },
+            {
+              "item": "Woolshroom",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy_kit",
+          "output_count": 1
+        },
+        {
+          "ingredients": [
+            {
+              "item": "Phytosaur Horn",
+              "quantity": 1
+            },
+            {
+              "item": "Marshmelon",
+              "quantity": 1
+            }
+          ],
+          "station": "alchemy_kit",
+          "output_count": 1
+        }
+      ],
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Life_Potion.png?b103bd",
+      "image_file": "Life Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Life_Potion.png"
+    },
+    {
+      "name": "Mana Belly Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Mana_Belly_Potion",
+      "consumable_type": "potion",
+      "description": "Grants Mana Regeneration, minor Protection, and reduced Mana Cost for a short duration.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Mana Ratio Recovery",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Mana Cost Reduction",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Protection (Effect)",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Pypherfish",
+            "quantity": 1
+          },
+          {
+            "item": "Funnel Beetle",
+            "quantity": 1
+          },
+          {
+            "item": "Hexa Stone",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Mana_Belly_Potion.png?aaa0a4",
+      "image_file": "Mana Belly Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Mana_Belly_Potion.png"
+    },
+    {
+      "name": "Marathon Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Marathon_Potion",
+      "consumable_type": "potion",
+      "description": "Increases movement speed.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Speed Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Crysocolla Beetle",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 30,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Marathon_Potion.png?15ec3f",
+      "image_file": "Marathon Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Marathon_Potion.png"
+    },
+    {
+      "name": "Mist Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Mist_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Ethereal Damage and Resistances.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Mist",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Ghost's Eye",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy_kit",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Mist_Potion.png?37eb6c",
+      "image_file": "Mist Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Mist_Potion.png"
+    },
+    {
+      "name": "Panacea",
+      "source_url": "https://outward.wiki.gg/wiki/Panacea",
+      "consumable_type": "potion",
+      "description": "A miraculous potion that cures all negative effects.",
+      "effects": [
+        {
+          "effect_type": "remove_effect",
+          "name": "All Negative Effects",
+          "value": null,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Sulphuric Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Ableroot",
+            "quantity": 1
+          },
+          {
+            "item": "Peach Seeds",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 150,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Panacea.png?b99b11",
+      "image_file": "Panacea.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Panacea.png"
+    },
+    {
+      "name": "Peacemaker Elixir",
+      "source_url": "https://outward.wiki.gg/wiki/Peacemaker_Elixir",
+      "consumable_type": "potion",
+      "description": "Potion that grants permanent bonuses to the one who drinks it.",
+      "effects": [
+        {
+          "effect_type": "restore_health",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_mana",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "restore_stamina",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 100,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Peacemaker_Elixir.png?6d13fa",
+      "image_file": "Peacemaker Elixir.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Peacemaker_Elixir.png"
+    },
+    {
+      "name": "Possessed Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Possessed_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Decay Damage and Resistances.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Possessed",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Occult Remains",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy_kit",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Possessed_Potion.png?dd23db",
+      "image_file": "Possessed Potion.png",
+      "compatible_weapons": null,
+      "local_image": null
+    },
+    {
+      "name": "Potions",
+      "source_url": "https://outward.wiki.gg/wiki/Potions",
+      "consumable_type": "potion",
+      "description": "Various magical potions.",
+      "effects": [
+        {
+          "effect_type": "restore_health",
+          "value": 30,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 20,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Potions.png",
+      "image_file": "Potions.png",
+      "compatible_weapons": null,
+      "local_image": null
+    },
+    {
+      "name": "Purity Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Purity_Potion",
+      "consumable_type": "potion",
+      "description": "Substantially decreases Corruption.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Sanctifier Potion",
+            "quantity": 1
+          },
+          {
+            "item": "Elemental Particle",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 90,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Purity_Potion.png?c3fb3e",
+      "image_file": "Purity Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Purity_Potion.png"
+    },
+    {
+      "name": "Quartz Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Quartz_Potion",
+      "consumable_type": "potion",
+      "description": "Increases resistance to Corruption.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Resistance",
+          "value": 20,
+          "duration": 180
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Boozu's Hide",
+            "quantity": 1
+          },
+          {
+            "item": "Dreamer's Root",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Quartz_Potion.png?17aa18",
+      "image_file": "Quartz Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Quartz_Potion.png"
+    },
+    {
+      "name": "Rage Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Rage_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Impact",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Rage",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Smoke Root",
+            "quantity": 1
+          },
+          {
+            "item": "Gravel Beetle",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Rage_Potion.png?d19f1e",
+      "image_file": "Rage Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Rage_Potion.png"
+    },
+    {
+      "name": "Sanctifier Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Sanctifier_Potion",
+      "consumable_type": "potion",
+      "description": "Decreases Corruption.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Leyline Water",
+            "quantity": 1
+          },
+          {
+            "item": "Purifying Quartz",
+            "quantity": 1
+          },
+          {
+            "item": "Dreamer's Root",
+            "quantity": 1
+          },
+          {
+            "item": "Occult Remains",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 45,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Sanctifier_Potion.png?8fe2c5",
+      "image_file": "Sanctifier Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Sanctifier_Potion.png"
+    },
+    {
+      "name": "Shimmer Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Shimmer_Potion",
+      "consumable_type": "potion",
+      "description": "Grants Barrier, and 15% buff to elemental attack.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Barrier (Effect)",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Shimmer",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Peach Seeds",
+            "quantity": 1
+          },
+          {
+            "item": "Peach Seeds",
+            "quantity": 1
+          },
+          {
+            "item": "Crysocolla Beetle",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 150,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Shimmer_Potion.png?c7bcfd",
+      "image_file": "Shimmer Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Shimmer_Potion.png"
+    },
+    {
+      "name": "Spiked Alertness Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Spiked_Alertness_Potion",
+      "consumable_type": "potion",
+      "description": "Raises your Alertness Level by 2.",
+      "effects": [
+        {
+          "effect_type": "restore_stamina",
+          "value": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Alertness Potion",
+            "quantity": 1
+          },
+          {
+            "item": "Stingleaf",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Spiked_Alertness_Potion.png?104422",
+      "image_file": "Spiked Alertness Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Spiked_Alertness_Potion.png"
+    },
+    {
+      "name": "Stability Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Stability_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that increases your Impact Resistance.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Impact Resistance Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Insect Husk",
+            "quantity": 1
+          },
+          {
+            "item": "Livweedi",
+            "quantity": 1
+          },
+          {
+            "item": "Water",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Stability_Potion.png?1d5bad",
+      "image_file": "Stability Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Stability_Potion.png"
+    },
+    {
+      "name": "Stealth Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Stealth_Potion",
+      "consumable_type": "potion",
+      "description": "Brew that temporary increases your stealth, making enemies less aware of your presence.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Stealth Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Woolshroom",
+            "quantity": 1
+          },
+          {
+            "item": "Ghost's Eye",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Stealth_Potion.png?a2e4cd",
+      "image_file": "Stealth Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Stealth_Potion.png"
+    },
+    {
+      "name": "Stoneflesh Elixir",
+      "source_url": "https://outward.wiki.gg/wiki/Stoneflesh_Elixir",
+      "consumable_type": "potion",
+      "description": "Powerful concoction that temporarily increases your Impact Resistance and the Physical Damage your attacks deal and grants the Rage Bonus.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Physical Attack Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "buff",
+          "name": "Impact Resistance Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Rage",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Stoneflesh_Elixir.png?79a35f",
+      "image_file": "Stoneflesh Elixir.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Stoneflesh_Elixir.png"
+    },
+    {
+      "name": "Sulphur Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Sulphur_Potion",
+      "consumable_type": "potion",
+      "description": "A bitter potion that offers greater strength, but reduces status resistance.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Physical Attack Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Impact Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "buff",
+          "name": "Status Build up Resistance Down",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Sulphuric Mushroom",
+            "quantity": 1
+          },
+          {
+            "item": "Crysocolla Beetle",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 30,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Sulphur_Potion.png?39098b",
+      "image_file": "Sulphur Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Sulphur_Potion.png"
+    },
+    {
+      "name": "Survivor Elixir",
+      "source_url": "https://outward.wiki.gg/wiki/Survivor_Elixir",
+      "consumable_type": "potion",
+      "description": "Powerful concoction that restores stamina and burnt stamina, and provides protection from hot and freezing environments.",
+      "effects": [
+        {
+          "effect_type": "restore_stamina",
+          "value": 20.0,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Weather Defense",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "buff",
+          "name": "Stamina Recovery",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Survivor_Elixir.png?b55f7f",
+      "image_file": "Survivor Elixir.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Survivor_Elixir.png"
+    },
+    {
+      "name": "Warm Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Warm_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that temporarily increases your Fire Damage and Resistances.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Warm",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          },
+          {
+            "item": "Water",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Warm_Potion.png?c09a51",
+      "image_file": "Warm Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Warm_Potion.png"
+    },
+    {
+      "name": "Warrior Elixir",
+      "source_url": "https://outward.wiki.gg/wiki/Warrior_Elixir",
+      "consumable_type": "potion",
+      "description": "Powerful concoction that temporarily increases the Physical damage and Impact your attacks deal and grants the Discipline boon.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Discipline",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Impact Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        },
+        {
+          "effect_type": "debuff",
+          "name": "Physical Attack Up",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 60,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Warrior_Elixir.png?18996f",
+      "image_file": "Warrior Elixir.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Warrior_Elixir.png"
+    },
+    {
+      "name": "Weather Defense Potion",
+      "source_url": "https://outward.wiki.gg/wiki/Weather_Defense_Potion",
+      "consumable_type": "potion",
+      "description": "Concoction that provides relief from warm and cold temperatures.\n\nNote that it has no effect on Fire and Frost damage.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Weather Defense",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Water",
+            "quantity": 1
+          },
+          {
+            "item": "Greasy Fern",
+            "quantity": 1
+          },
+          {
+            "item": "Crystal Powder",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 40,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Weather_Defense_Potion.png?9b7444",
+      "image_file": "Weather Defense Potion.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/potion_Weather_Defense_Potion.png"
+    }
+  ]
+}

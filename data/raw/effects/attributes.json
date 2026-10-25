@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Health",
+    "category": "vital",
+    "description": "Health (also known as health points, hit points, or HP) is one of three Vitals in Outward, represented by the red circular bar in the bottom left corner of screen.",
+    "base_value": 100,
+    "max_base": 100,
+    "regeneration": "No natural regeneration",
+    "mechanics": [
+      "10% of damage taken in combat is lost as burnt health",
+      "Burnt health cannot be healed until rested",
+      "Maximum health can be permanently increased/decreased through Leyline in Conflux Chambers",
+      "Skills can increase maximum health"
+    ],
+    "restoration_methods": [
+      "Consuming food",
+      "Consuming potions",
+      "Resting (restores burnt health)",
+      "Certain skills and effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Health.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Health"
+  },
+  {
+    "name": "Stamina",
+    "category": "vital",
+    "description": "Stamina is one of three Vitals in Outward, represented by the green circular bar. It is consumed by physically-demanding activities.",
+    "base_value": 100,
+    "max_base": 100,
+    "regeneration": "~2.5 per second (base)",
+    "mechanics": [
+      "3% of consumed stamina is lost as burnt stamina",
+      "Burnt stamina regenerates slowly over time",
+      "Sprinting costs 2 stamina per second",
+      "Dodging costs 6 stamina",
+      "Blocking costs stamina based on damage blocked"
+    ],
+    "consumption": {
+      "sprint": "2 per second",
+      "dodge": "6 per dodge",
+      "attack": "varies by weapon",
+      "block": "based on damage"
+    },
+    "icon_url": "https://outward.wiki.gg/images/Stamina.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Stamina"
+  },
+  {
+    "name": "Mana",
+    "category": "vital",
+    "description": "Mana is one of three Vitals in Outward, represented by the blue circular bar. It is used by magic to cast spells and magic-based skills.",
+    "base_value": 0,
+    "max_base": 0,
+    "regeneration": "No natural regeneration",
+    "mechanics": [
+      "Characters do not start with Mana",
+      "Obtained through Ley Line (sacrifice Health/Stamina)",
+      "Sleeping burns 5% of max mana per hour (max 50% burnt)",
+      "Casting spells restores burnt mana",
+      "Mana Cost modifier capped at -99%, minimum 1 mana per spell"
+    ],
+    "acquisition": "Ley Line in Conflux Chambers (sacrifice 25 Health or Stamina for 5 Mana)",
+    "icon_url": "https://outward.wiki.gg/images/Mana.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Mana"
+  },
+  {
+    "name": "Fire Resistance",
+    "category": "resistance",
+    "description": "Reduces Fire damage taken. One of six elemental damage types.",
+    "base_value": 0,
+    "max_value": 100,
+    "mechanics": [
+      "Percentage reduction of Fire damage",
+      "Can be gained from Equipment, Skills, Effects, Potions"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Fire.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Fire"
+  },
+  {
+    "name": "Frost Resistance",
+    "category": "resistance",
+    "description": "Reduces Frost damage taken. One of six elemental damage types.",
+    "base_value": 0,
+    "max_value": 100,
+    "mechanics": [
+      "Percentage reduction of Frost damage",
+      "Can be gained from Equipment, Skills, Effects, Potions"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Frost.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Frost"
+  },
+  {
+    "name": "Physical Resistance",
+    "category": "resistance",
+    "description": "Reduces Physical damage taken.",
+    "base_value": 0,
+    "max_value": 100,
+    "damage_type": "Physical",
+    "icon_url": "https://outward.wiki.gg/images/Phys.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Physical"
+  },
+  {
+    "name": "Ethereal Resistance",
+    "category": "resistance",
+    "description": "Reduces Ethereal damage taken.",
+    "base_value": 0,
+    "max_value": 100,
+    "damage_type": "Ethereal",
+    "icon_url": "https://outward.wiki.gg/images/Ethereal.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Ethereal"
+  },
+  {
+    "name": "Decay Resistance",
+    "category": "resistance",
+    "description": "Reduces Decay damage taken.",
+    "base_value": 0,
+    "max_value": 100,
+    "damage_type": "Decay",
+    "icon_url": "https://outward.wiki.gg/images/Decay.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Decay"
+  },
+  {
+    "name": "Lightning Resistance",
+    "category": "resistance",
+    "description": "Reduces Lightning damage taken.",
+    "base_value": 0,
+    "max_value": 100,
+    "damage_type": "Lightning",
+    "icon_url": "https://outward.wiki.gg/images/Lightning.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Lightning"
+  },
+  {
+    "name": "Hot Weather Defense",
+    "category": "defense",
+    "description": "Protects against hot weather effects. Stacks with Cold Weather Defense.",
+    "base_value": 0,
+    "icon_url": "https://outward.wiki.gg/images/HotWeather.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Temperature#Weather_Defense_Attributes"
+  },
+  {
+    "name": "Cold Weather Defense",
+    "category": "defense",
+    "description": "Protects against cold weather effects. Stacks with Hot Weather Defense.",
+    "base_value": 0,
+    "icon_url": "https://outward.wiki.gg/images/ColdWeather.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Temperature#Weather_Defense_Attributes"
+  },
+  {
+    "name": "Stealth",
+    "category": "utility",
+    "description": "Determines how easily the player can be detected by enemies. Affected by crouching, armor weight, and skills.",
+    "base_value": 0,
+    "mechanics": [
+      "Crouching increases stealth",
+      "Heavy armor decreases stealth",
+      "Some skills and effects modify stealth"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Stealth.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Stealth"
+  },
+  {
+    "name": "Corruption",
+    "category": "special",
+    "description": "Attribute and gameplay mechanic in The Soroboreans DLC and Definitive Edition. Ranges from 0 to 100%.",
+    "base_value": 0,
+    "max_value": 100,
+    "levels": [
+      {
+        "range": "0-24%",
+        "name": "Pure",
+        "effects": "No negative effects"
+      },
+      {
+        "range": "25-49%",
+        "name": "Tainted",
+        "effects": "Minor negative effects"
+      },
+      {
+        "range": "50-74%",
+        "name": "Corrupted",
+        "effects": "Moderate negative effects"
+      },
+      {
+        "range": "75-100%",
+        "name": "Defiled",
+        "effects": "Severe negative effects, 45 Raw damage at 100%"
+      }
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Corruption.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Corruption"
+  }
+]

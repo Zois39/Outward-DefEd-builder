@@ -1,0 +1,4190 @@
+[
+  {
+    "name": "Aetherbomb",
+    "description": "After 15 seconds, a short animation starts and at its end, it causes severe Ethereal damage: * On enemies: 150 damage and 140 Impact * On players: 90 damage and 140 Impact If aetherbomb is applied again by reaching 100% buildup before the animation starts, the timer resets to 15 seconds. The explosion can easily be mitigated by using Mana Ward before the explosion.",
+    "icon_url": "https://outward.wiki.gg/images/Aetherbomb.png?cfd6ef",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "15 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "After 15 seconds, deals severe ethereal damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Aetherbomb",
+    "icon_local": "assets/images/effects/effect_Aetherbomb.png"
+  },
+  {
+    "name": "Alert",
+    "description": "Per stack (1 to 4): +5% Dodge Invulnerability window -5% all damage resistance",
+    "icon_url": "https://outward.wiki.gg/images/Alert.png?3f3dfa",
+    "icon_file": "Alert.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "240 seconds",
+    "stackable": true,
+    "max_stacks": 4,
+    "stat_modifiers": [
+      {
+        "stat": "Damage",
+        "value": -5.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Dodge Invulnerability window",
+        "value": 5.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Per stack (1 to 4): +5% Dodge Invulnerability window -5% all damage resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Alert",
+    "icon_local": "assets/images/effects/effect_Alert.png"
+  },
+  {
+    "name": "Ambraine Withdrawal",
+    "description": "===Effect=== * -5% Stamina regeneration * -25% Status Resistance",
+    "icon_url": "https://outward.wiki.gg/images/Ambraine_Withdrawal.png?965b71",
+    "icon_file": "Ambraine Withdrawal.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Ambraine",
+      "Saved by stranger with ambraine",
+      "Greasy Tea",
+      "Panacea"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": -5.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Status Resistance",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-5% Stamina regeneration -25% Status Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Ambraine_Withdrawal",
+    "icon_local": "assets/images/effects/effect_Ambraine_Withdrawal.png"
+  },
+  {
+    "name": "Bag Overweight",
+    "description": "Reduced Movement Speed Immobility",
+    "icon_url": "https://outward.wiki.gg/images/BagOverweight.png?4aacd9",
+    "icon_file": "BagOverweight.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Weight",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [],
+    "effects_raw": "Reduced Movement Speed Immobility",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Bag_Overweight",
+    "icon_local": "assets/images/effects/effect_Bag_Overweight.png"
+  },
+  {
+    "name": "Bandages (Effect)",
+    "description": "* Recover 0.5 Health every second for 40 seconds. (20 health total)",
+    "icon_url": "https://outward.wiki.gg/images/Bandages_%28Effect%29.png?259f53",
+    "icon_file": "Bandagesrecovery.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "40 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "Health",
+        "value": 0.5,
+        "unit": "per_sec"
+      }
+    ],
+    "effects_raw": "+0.5 Health per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Bandages_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Bandages_Effect_.png"
+  },
+  {
+    "name": "Barrier (Effect)",
+    "description": "{| class=\"wikitable\" |- ! Level !! Effect |- | 1 || +3 Barrier |- | 2 || +6 Barrier |}",
+    "icon_url": "https://outward.wiki.gg/images/Barrier.png?9c0dd5",
+    "icon_file": "Barrier.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Edit section: Obtained From",
+      "Barrier Potion",
+      "Frosted Delight",
+      "Shimmer Potion",
+      "Vagabond&#39;s Gelatin",
+      "Vagabond&#39;s Tartine",
+      "Cool Rainbow Jam",
+      "Rainbow Peach",
+      "Rainbow Tartine"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Barrier",
+        "value": 6.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+3 to +6 Barrier",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Barrier_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Barrier_Effect_.png"
+  },
+  {
+    "name": "Blaze",
+    "description": "* Deals 1.25 damage every 0.25 seconds (5 per second) * Leaves lingering fire spots which deal 1.5 damage and inflicts Burning by 40%, every 0.5 seconds to anyone who stands in it (3 per second). * Lasts 30 seconds. * Like all DoTs, the main damage is not resisted by Barrier, however the AoE ground damage is affected by it. * Prevents the application of Burning during its duration. * Stops enemy health regeneration.",
+    "icon_url": "https://outward.wiki.gg/images/Blaze.png?748fcb",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "30 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "1.25 damage every 0.25 seconds (5 per second) Leaves fire spots which deal 1.5 damage and inflict Burning every 0.5 seconds (3 per second)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Blaze",
+    "icon_local": "assets/images/effects/effect_Blaze.png"
+  },
+  {
+    "name": "Bleeding",
+    "description": "* -0.5% Health per second for 120 seconds, or until cured. * When inflicted on enemies, this effect is reduced to ~0.29% health per second (35% max health from full effect) * Unlike other damage-over-time Effects, see Effects, bleeding type effects (, Extreme Bleeding, Blood Leech) is not able to stop the enemy's health regeneration. ===Stacking=== * Effect does not stack with Extreme Bleeding. If Extreme Bleeding is active, this effect will do nothing.",
+    "icon_url": "https://outward.wiki.gg/images/Bleeding.png?621b4c",
+    "icon_file": "Bleeding.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "Dragged off by Tuanosaurs",
+      "Bandages",
+      "Great Life Potion",
+      "Panacea",
+      "Assassin Claymore",
+      "Effects",
+      "Assassin Sword",
+      "Beast Golem Axe",
+      "Beast Golem Halberd",
+      "Bleed Trap",
+      "Broad Dagger",
+      "Fang Axe",
+      "Fang Club",
+      "Fang Greataxe",
+      "Fang Greatclub",
+      "Fang Greatsword",
+      "Fang Halberd",
+      "Fang Knuckles",
+      "Fang Shield",
+      "Fang Sword",
+      "Fang Trident",
+      "Flamethrower",
+      "Fragment Bomb",
+      "Old Legion Shield",
+      "Savage Axe"
+    ],
+    "duration": "120 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "health",
+        "value": -0.5,
+        "unit": "%"
+      },
+      {
+        "stat": "health",
+        "value": -0.29,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "On Player: -0.5% health per sec On Enemies: -0.29% health per sec",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [
+      "Extreme Bleeding"
+    ],
+    "source_url": "https://outward.wiki.gg/wiki/Bleeding",
+    "icon_local": "assets/images/effects/effect_Bleeding.png"
+  },
+  {
+    "name": "Blessed",
+    "description": "*+20% Lightning damage bonus *+20% Lightning resistance === Amplified Effect === * Requires Shamanic Resonance *+30% Lightning damage bonus *+30% Lightning resistance",
+    "icon_url": "https://outward.wiki.gg/images/Blessed.png?e5e469",
+    "icon_file": "Blessed.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Blessed (skill)",
+      "Blessed Potion",
+      "Call to Elements",
+      "Mace Infusion",
+      "Saved by Elatt",
+      "Saved by ghost at Cabal of Winds Temple",
+      "Infuse Light",
+      "Edit section: See Also",
+      "Boons"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "lightning",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Lightning damage +20% Lightning resistance",
+    "amplified_effects": "+30% Lightning damage +30% Lightning resistance",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Blessed",
+    "icon_local": "assets/images/effects/effect_Blessed.png"
+  },
+  {
+    "name": "Blood Bullet Imbue",
+    "description": "* Pistol's damage is converted to Decay * Damage multiplier: 0.8x * Impact multiplier: 0.8x",
+    "icon_url": "https://outward.wiki.gg/images/BloodgBulletImbue.png?60b100",
+    "icon_file": "BloodgBulletImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Blood Bullet"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Next shot deals Decay damage. Pistol's damage is converted to Decay Damage multiplier: 0.8x",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Blood_Bullet_Imbue",
+    "icon_local": "assets/images/effects/effect_Blood_Bullet_Imbue.png"
+  },
+  {
+    "name": "Blood Leech",
+    "description": "===Effect=== * Leech -0.41% of Blood Leech Victim's Health per second (~50% of their health over 120 seconds) * Unlike other damage-over-time Effects, see Effects, bleeding type effects (Bleeding, Extreme Bleeding, ) is not able to stop the enemy's health regeneration.",
+    "icon_url": "https://outward.wiki.gg/images/Blood_Leech.png?cb9d01",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "120 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Blood Leech Victim",
+        "value": -0.41,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Leech -0.41% of Blood Leech Victim's Health per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Blood_Leech",
+    "icon_local": "assets/images/effects/effect_Blood_Leech.png"
+  },
+  {
+    "name": "Blood Leech Victim",
+    "description": "===Effect=== * Leeches -0.41% Health per second (total 50% health over 120 seconds) to the source of the effect (the player) * See also: Blood Leech",
+    "icon_url": "https://outward.wiki.gg/images/Blood_Leech_Victim.png?dbded0",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Other Negative",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "120 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "health",
+        "value": -0.41,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Lose -0.41% Health per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Blood_Leech_Victim",
+    "icon_local": "assets/images/effects/effect_Blood_Leech_Victim.png"
+  },
+  {
+    "name": "Breathless",
+    "description": "* -100% Stamina regeneration for 30 seconds (only affects base Stamina Regen, does not affect additional sources)",
+    "icon_url": "https://outward.wiki.gg/images/Breathless.png?644225",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Defeated by Medyse",
+      "Half cooked in the volcano",
+      "Paralyzed by Medyse",
+      "Panacea",
+      "Angler Shield",
+      "Effects",
+      "Djinn",
+      "Giant Hunter",
+      "Matriarch Myrmitaur",
+      "Myrmitaur"
+    ],
+    "duration": "30 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina Cost",
+        "value": -100.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-100% Stamina Regen",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Breathless",
+    "icon_local": "assets/images/effects/effect_Breathless.png"
+  },
+  {
+    "name": "Burning",
+    "description": "* 2 damage per second * When inflicted on enemies, this effect is increased to 3 damage per second, and stops their natural health regeneration.",
+    "icon_url": "https://outward.wiki.gg/images/Burning.png?31f2a9",
+    "icon_file": "Burning.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "40 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "fire_dot",
+        "value": 2.0,
+        "unit": "dps"
+      },
+      {
+        "stat": "fire_dot",
+        "value": 3.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "On Player: 2 damage per sec On Enemies: 3 damage per sec",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Burning",
+    "icon_local": "assets/images/effects/effect_Burning.png"
+  },
+  {
+    "name": "Chill",
+    "description": "*-25% Frost damage bonus *-25% Frost resistance",
+    "icon_url": "https://outward.wiki.gg/images/Chill.png?250d1b",
+    "icon_file": "Chill.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Funnel Beetle",
+      "Hex Cleaner",
+      "Panacea",
+      "Astral Greataxe",
+      "Effects",
+      "Astral Mace",
+      "Astral Pistol",
+      "Astral Spear",
+      "Brand",
+      "Chalcedony Bow",
+      "Chill Hex",
+      "Dispersion",
+      "Jinx",
+      "Musing of a Philosopher",
+      "Rainbow Hex",
+      "Tokebakicit",
+      "Rupture",
+      "Torment",
+      "Accursed Wendigo",
+      "Brand Squire",
+      "Elite Krypteia Witch",
+      "Quartz Beetle",
+      "Quartz Gastrocin",
+      "The First Cannibal",
+      "Wendigo"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Frost",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Frost damage -25% Frost resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Chill",
+    "icon_local": "assets/images/effects/effect_Chill.png"
+  },
+  {
+    "name": "Cold (Disease)",
+    "description": "===Cold=== * Reduces Stamina regeneration by 15%. * Chance to cough, interrupting and preventing the player from performing actions ===Acute Cold=== * Reduces Stamina regeneration by 30%. * Chance to cough, interrupting and preventing the player from performing actions",
+    "icon_url": "https://outward.wiki.gg/images/ColdDisease.png?10a119",
+    "icon_file": "ColdDisease.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Captured and released by Montcalm Tribe",
+      "Boiled Dreamer&#39;s Root",
+      "Fungal Cleanser",
+      "Panacea",
+      "Seared Root",
+      "Soothing Tea",
+      "Turmmip Potage"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Reduces Stamina regeneration by 15% to 30% Chance to cough, interrupting and preventing the player from performing actions",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Cold_%28Disease%29",
+    "icon_local": "assets/images/effects/effect_Cold_Disease_.png"
+  },
+  {
+    "name": "Cold Weather Def Up",
+    "description": "* +15 Cold Weather Def",
+    "icon_url": "https://outward.wiki.gg/images/ColdDefUp.png?6da308",
+    "icon_file": "ColdDefUp.png",
+    "effect_type": "environment",
+    "effect_type_raw": "Weather",
+    "sources": [
+      "Bitter Spicy Tea",
+      "Boiled Dreamer&#39;s Root",
+      "Cipate",
+      "Gaberry Jam",
+      "Gaberry Tartine",
+      "Ochre Spice Beetle",
+      "Pouding Chomeur",
+      "Poutine"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Temperature#Weather_Defense_Attributes",
+        "value": 15.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+15 Cold Weather Def",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Cold_Weather_Def_Up",
+    "icon_local": "assets/images/effects/effect_Cold_Weather_Def_Up.png"
+  },
+  {
+    "name": "Confusion",
+    "description": "*-25% Impact resistance",
+    "icon_url": "https://outward.wiki.gg/images/Confusion.png?15a7d1",
+    "icon_file": "Confusion.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Battered and beaten in a mine",
+      "Blood Mushroom",
+      "Captured by Chersonese bandits",
+      "Chased out of the Ziggurat",
+      "Escaped through The Hole",
+      "Mistaken for dead by Montcalm Tribe",
+      "Rescued by Holy Mission warrior",
+      "Rescued by Levant mercenaries",
+      "Saved by hunter from Berg",
+      "Saved by lone Watcher",
+      "Hex Cleaner",
+      "Panacea",
+      "Caldera Mail Armor",
+      "Effects",
+      "Caldera Mail Boots",
+      "Caldera Mail Helm",
+      "Militia Helm",
+      "Miner Helmet",
+      "Vigilante Helm",
+      "Bludgeon Trap",
+      "Brutal Club",
+      "Brutal Knuckles",
+      "Cannon Pistol",
+      "Flash Onslaught",
+      "Gurg"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Impact",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Impact resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Confusion",
+    "icon_local": "assets/images/effects/effect_Confusion.png"
+  },
+  {
+    "name": "Cool",
+    "description": "*+20% Frost damage bonus *+20% Frost resistance * +8 Hot Weather Defense === Amplified Effect === * Requires Shamanic Resonance *+30% Frost damage bonus *+30% Frost resistance * +16 Hot Weather Defense",
+    "icon_url": "https://outward.wiki.gg/images/Cool_%28Boon%29.png?a0db6a",
+    "icon_file": "CoolBoon.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Call to Elements",
+      "Cool (skill)",
+      "Cool Potion",
+      "Iced Tea",
+      "Mace Infusion",
+      "Frost Bullet",
+      "Infuse Frost"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Frost",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Frost damage +20% Frost resistance +8 Hot Weather Defense",
+    "amplified_effects": "+30% Frost damage +30% Frost resistance +16 Hot Weather Defense",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Cool",
+    "icon_local": "assets/images/effects/effect_Cool.png"
+  },
+  {
+    "name": "Corrupted",
+    "description": "===Effect=== Positive: * +15% Decay damage resistance * +15% Decay and Frost damage bonus Negative: * Hunger increases 100% faster * -50% Lightning damage resistance",
+    "icon_url": "https://outward.wiki.gg/images/Corrupted.png?9f99cc",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "mixed",
+    "effect_type_raw": "Corruption",
+    "sources": [
+      "Corruption",
+      "Corruption#Reducing_Corruption"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay",
+        "value": 15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Positive: +15% Decay resistance +15% Decay and Frost damage bonus Negative: Hunger rate +100% Lightning Resistance -50%",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Corrupted",
+    "icon_local": "assets/images/effects/effect_Corrupted.png"
+  },
+  {
+    "name": "Corruption Recovery",
+    "description": "-0.1% Corruption per second",
+    "icon_url": "https://outward.wiki.gg/images/Corruption_Recovery.png?78177b",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "300 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "corruption",
+        "value": -0.1,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-0.1% Corruption per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Corruption_Recovery",
+    "icon_local": "assets/images/effects/effect_Corruption_Recovery.png"
+  },
+  {
+    "name": "Corruption Resistance",
+    "description": "+20 to 50 Corruption resistance",
+    "icon_url": "https://outward.wiki.gg/images/Corruption_Resistance.png?4010bb",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "300 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "+20 to 50 Corruption resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Corruption_Resistance",
+    "icon_local": "assets/images/effects/effect_Corruption_Resistance.png"
+  },
+  {
+    "name": "Craze",
+    "description": "===Effects=== This effect stacks up to 5 times * +5% all Damage dealt per stack (max +25%) * -10% Impact resistance per stack (max -50%) Taking a hit from an enemy will drop all Craze levels",
+    "icon_url": "https://outward.wiki.gg/images/Craze_1.png?d802bf",
+    "icon_file": "PAGENAME 1.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Crescendo"
+    ],
+    "duration": "240 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "impact",
+        "value": -10.0,
+        "unit": "%"
+      },
+      {
+        "stat": "all Damage dealt",
+        "value": 5.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Per stack (1 to 5): +5% all Damage dealt -10% Impact resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Craze",
+    "icon_local": "assets/images/effects/effect_Craze.png"
+  },
+  {
+    "name": "Crippled",
+    "description": "* -50% Movement Speed",
+    "icon_url": null,
+    "icon_file": "",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Escaped into corrupted cavern",
+      "Fallen down elevator shaft",
+      "Fallen into the Ancient Hive",
+      "Panacea",
+      "Freedom",
+      "Effects",
+      "Evasion Shot",
+      "Frost Bullet Imbue",
+      "Gilded Shiver of Tramontane",
+      "Hailfrost Dagger",
+      "Hailfrost Pistol",
+      "Militia Dagger",
+      "Militia Pistol",
+      "Scarred Dagger",
+      "Talus Cleaver",
+      "Vicious Cycle",
+      "Vigilante Dagger",
+      "Vigilante Pistol",
+      "Wolf Axe",
+      "Wolf Bow",
+      "Wolf Chakram",
+      "Wolf Claymore",
+      "Wolf Dagger",
+      "Wolf Greataxe",
+      "Wolf Greathammer"
+    ],
+    "duration": "10 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Move Speed",
+        "value": -50.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Crippled",
+    "icon_local": null
+  },
+  {
+    "name": "Curse",
+    "description": "*-25% Decay damage bonus *-25% Decay resistance",
+    "icon_url": "https://outward.wiki.gg/images/Curse.png?2f19fd",
+    "icon_file": "Curse.PNG",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Awaken at Vigil Pylon",
+      "Defeated by Immaculate",
+      "Panacea",
+      "Abomination",
+      "Effects",
+      "Astral Axe",
+      "Astral Bow",
+      "Astral Chakram",
+      "Astral Halberd",
+      "Astral Shield",
+      "Astral Sword",
+      "Curse Hex",
+      "Dispersion",
+      "Flamethrower",
+      "Jinx",
+      "Rainbow Hex",
+      "War Memento",
+      "Rupture",
+      "Torment",
+      "Pure Illuminator",
+      "The Last Acolyte",
+      "Virulent Hiveman",
+      "Defeat Scenarios",
+      "Corruption"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Decay damage -25% Decay resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Curse",
+    "icon_local": "assets/images/effects/effect_Curse.png"
+  },
+  {
+    "name": "Decay Shield Imbue",
+    "description": "The damage and impact of this skill is based on the player's equipped Shield. * Deals Decay damage equivalent to 2.0x the equipped Shield damage * Deals Ethereal damage equivalent to 1.3x the equipped Shield damage * Impact of the shield is multiplied by 2.0x ===Effect Sources===",
+    "icon_url": "https://outward.wiki.gg/images/DecayShieldImbue.png?c4e63e",
+    "icon_file": "DecayShieldImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Shield Infusion"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Decay explosion on next blocked Melee attack",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Decay_Shield_Imbue",
+    "icon_local": "assets/images/effects/effect_Decay_Shield_Imbue.png"
+  },
+  {
+    "name": "Defiled",
+    "description": "===Effect=== Positive: * +15% Decay damage resistance * +50% Decay and +15% Frost damage bonus Negative: * Hunger increases 100% faster * -50% Lightning damage resistance and damage dealt * -30% Physical and Impact resistance * -10% Attack Speed * Chance for Corruption Spirit to spawn every 4-5 minutes",
+    "icon_url": "https://outward.wiki.gg/images/Defiled.png?4fce42",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "mixed",
+    "effect_type_raw": "Corruption",
+    "sources": [
+      "Corruption",
+      "Corruption#Reducing_Corruption"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay",
+        "value": 15.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Decay",
+        "value": 50.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Frost",
+        "value": 15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Positive: +15% Decay resistance +50% Decay damage bonus +15% Frost damage bonus Negative: Hunger rate +100% Lightning Resistance -50% Lightning Damage -50% Attack Speed -10% Physical Resistance -30% Impact Resistance -30% Chance for Corruption Spirit to spawn",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Defiled",
+    "icon_local": "assets/images/effects/effect_Defiled.png"
+  },
+  {
+    "name": "Despirited",
+    "description": "* -50% Cooldown Reduction (increases cooldowns)",
+    "icon_url": "https://outward.wiki.gg/images/Despirited.png?acb6ca",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Captured by bandits in Dead Roots",
+      "Captured by Calygreys",
+      "Returned to destroyed Lighthouse",
+      "Panacea",
+      "Accursed Wendigo",
+      "Effects",
+      "Ancient Dweller",
+      "Breath of Darkness",
+      "Elder Medyse",
+      "Grandmother Medyse",
+      "She Who Speaks"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Cooldown",
+        "value": -50.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-50% reduction (increases cooldowns)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Despirited",
+    "icon_local": "assets/images/effects/effect_Despirited.png"
+  },
+  {
+    "name": "Discipline",
+    "description": "*+15% Physical damage bonus === Amplified Effect === * Requires Shamanic Resonance *+30% Physical damage bonus ===Master of Motion=== If the player has learned Master of Motion, Discipline also grants: * +10 resistance to all elements * +10 impact resistance",
+    "icon_url": "https://outward.wiki.gg/images/Discipline.png?8b4e2e",
+    "icon_file": "DisciplineIcon.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Angel Food Cake",
+      "Brace",
+      "Call to Elements",
+      "Discipline Potion",
+      "Focus",
+      "Golem Elixir",
+      "Grog",
+      "Maize Mash",
+      "Warrior Elixir",
+      "Challenger Greathammer",
+      "Effects",
+      "Chakram Arc",
+      "Chakram Dance",
+      "Chakram Pierce",
+      "Flash Onslaught",
+      "Master of Motion",
+      "Perfect Strike",
+      "Moon Swipe",
+      "Edit section: See Also",
+      "Boons"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Physical",
+        "value": 15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+15% Physical damage",
+    "amplified_effects": "+30% Physical damage",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Discipline",
+    "icon_local": "assets/images/effects/effect_Discipline.png"
+  },
+  {
+    "name": "Divine Light Imbue",
+    "description": "Increases base damage by 25% as Lightning damage Grants +6 flat Lightning damage. Emits light",
+    "icon_url": "https://outward.wiki.gg/images/ImbueWeaponLight.png?63580e",
+    "icon_file": "imbueWeaponLight.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Infuse Light"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases base damage by 25% as Lightning damage Grants +6 flat Lightning damage. Emits light",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Divine_Light_Imbue",
+    "icon_local": "assets/images/effects/effect_Divine_Light_Imbue.png"
+  },
+  {
+    "name": "Dizzy",
+    "description": "* -60% Impact Resistance for 60 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Confusion.png?15a7d1",
+    "icon_file": "Confusion.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Awaken at Vigil Pylon",
+      "Panacea",
+      "Golden Specter (Cannon)"
+    ],
+    "duration": "60 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Impact",
+        "value": -60.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-60% Impact Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Dizzy",
+    "icon_local": "assets/images/effects/effect_Dizzy.png"
+  },
+  {
+    "name": "Doomed",
+    "description": "*-25% Lightning damage bonus *-25% Lightning resistance",
+    "icon_url": "https://outward.wiki.gg/images/Doomed.png?f70349",
+    "icon_file": "Doomed.PNG",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Corruption",
+      "Defeated by Light Mender",
+      "Hex Cleaner",
+      "Panacea",
+      "Astral Chakram",
+      "Effects",
+      "Astral Greatmace",
+      "Astral Mace",
+      "Astral Spear",
+      "Astral Staff",
+      "Dispersion",
+      "Doom Hex",
+      "Gold-Lich Claymore",
+      "Gold-Lich Knuckles",
+      "Gold-Lich Mace",
+      "Gold-Lich Shield",
+      "Gold-Lich Spear",
+      "Gold-Lich Sword",
+      "Jinx",
+      "Palladium Arrow",
+      "Rainbow Hex",
+      "Redemption",
+      "Welkin Ring",
+      "Rupture",
+      "Torment"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Lightning",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Lightning damage -25% Lightning resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Doomed",
+    "icon_local": "assets/images/effects/effect_Doomed.png"
+  },
+  {
+    "name": "Drawback",
+    "description": "===Effects=== * Reduces all Damage Resistance stats by 50% for 15 seconds. Does not affect Protection or Barrier.",
+    "icon_url": "https://outward.wiki.gg/images/Drawback.png?dabc3a",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Moment of Truth"
+    ],
+    "duration": "15 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "All Resistances -50%.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Drawback",
+    "icon_local": "assets/images/effects/effect_Drawback.png"
+  },
+  {
+    "name": "Elatt's Barrier",
+    "description": "* +4 Barrier. Lasts for 2 hours (in real-life time), but lost by sleeping or being defeated.",
+    "icon_url": "https://outward.wiki.gg/images/Elatt%27s_Barrier.png?7bd11d",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Owen, Healer"
+    ],
+    "duration": "2 hours",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Barrier",
+        "value": 4.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+4 Barrier",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Elatt%27s_Barrier",
+    "icon_local": "assets/images/effects/effect_Elatt_s_Barrier.png"
+  },
+  {
+    "name": "Elatt's Sanctuary",
+    "description": "* +4 Barrier and +25% Status Resistance. Lasts for 2 hours (in real-life time), but lost by sleeping or being defeated.",
+    "icon_url": "https://outward.wiki.gg/images/Elatt%27s_Sanctuary.png?77708f",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Owen, Healer"
+    ],
+    "duration": "2 hours",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "StatusResist",
+        "value": 25.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Barrier",
+        "value": 4.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+4 Barrier +25% Status Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Elatt%27s_Sanctuary",
+    "icon_local": "assets/images/effects/effect_Elatt_s_Sanctuary.png"
+  },
+  {
+    "name": "Elemental Immunity",
+    "description": "Immune to Frost, Fire, Lightning, Decay and Ethereal Damage",
+    "icon_url": "https://outward.wiki.gg/images/Elemental_Immunity.png?803017",
+    "icon_file": "Elemental_Immunity.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Elemental Immunity Potion"
+    ],
+    "duration": "15 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Immune to Frost, Fire, Lightning, Decay and Ethereal Damage",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Elemental_Immunity",
+    "icon_local": "assets/images/effects/effect_Elemental_Immunity.png"
+  },
+  {
+    "name": "Elemental Resistance",
+    "description": "+20% resistance to Ethereal, Decay, Lightning, Frost and Fire",
+    "icon_url": "https://outward.wiki.gg/images/Elemental_Resistance.png?8deb96",
+    "icon_file": "ElementalResistanceIcon.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Cierzo Ceviche",
+      "Elemental Resistance Potion",
+      "Grilled Rainbow Trout",
+      "Raw Rainbow Trout"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Ethereal",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% resistance to Ethereal, Decay, Lightning, Frost and Fire",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Elemental_Resistance",
+    "icon_local": "assets/images/effects/effect_Elemental_Resistance.png"
+  },
+  {
+    "name": "Elemental Vulnerability",
+    "description": "* -25% damage resistance for Ethereal, Decay, Lightning, Frost and Fire",
+    "icon_url": "https://outward.wiki.gg/images/Elemental_Vulnerability.png?21f4e8",
+    "icon_file": "Elemental Vulnerability.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Ethereal",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% resistance to Ethereal, Decay, Lightning, Frost and Fire",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Elemental_Vulnerability",
+    "icon_local": "assets/images/effects/effect_Elemental_Vulnerability.png"
+  },
+  {
+    "name": "Energized",
+    "description": "===Effect=== * +10% Cooldown Reduction * Lasts for 5 minutes",
+    "icon_url": "https://outward.wiki.gg/images/Energized.png?25f58b",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "300 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "cooldown",
+        "value": 10.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+10% Cooldown Reduction",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Energized",
+    "icon_local": "assets/images/effects/effect_Energized.png"
+  },
+  {
+    "name": "Ethereal Shield Imbue",
+    "description": "The damage and impact of this skill is based on the player's equipped Shield. * Deals Ethereal damage equivalent to 3.3x the equipped Shield damage * Impact of the shield is multiplied by 2.0x ===Effect Sources===",
+    "icon_url": "https://outward.wiki.gg/images/EtherealShieldImbue.png?4757fe",
+    "icon_file": "EtherealShieldImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Shield Infusion"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Ethereal explosion on next blocked Melee attack",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Ethereal_Shield_Imbue",
+    "icon_local": "assets/images/effects/effect_Ethereal_Shield_Imbue.png"
+  },
+  {
+    "name": "Extreme Bleeding",
+    "description": "* -1.0% Health per second for 120 seconds, or until cured. * When inflicted on enemies, this effect is reduced to ~0.41% health per second (50% max health from full effect) * Unlike other damage-over-time Effects, see Effects, bleeding type effects (Bleeding, , Blood Leech) is not able to stop the enemy's health regeneration. ===Stacking=== * Effect does not stack with Bleeding. This effect will always take priority.",
+    "icon_url": "https://outward.wiki.gg/images/Extreme_Bleeding.png?3784c3",
+    "icon_file": "ExtremeBleeding.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "Cleanse",
+      "Warrior&#39;s Vein",
+      "Effects",
+      "Bandages",
+      "Great Life Potion",
+      "Panacea",
+      "Feral Strikes",
+      "Improved Bleed Trap",
+      "Infuse Blood (Imbue)",
+      "Piercing Shot",
+      "Sanguine Cleaver",
+      "Savage Shield",
+      "Serpent&#39;s Parry",
+      "Tuanosaur Axe",
+      "Tuanosaur Greataxe",
+      "Accursed Wendigo",
+      "Assassin Bug",
+      "Bloody Alexis",
+      "Calixa&#39;s Squire",
+      "Elite Alpha Tuanosaur",
+      "Executioner Bug",
+      "Greater Grotesque",
+      "Titanic Guardian Mk-7"
+    ],
+    "duration": "120 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "health",
+        "value": -1.0,
+        "unit": "%"
+      },
+      {
+        "stat": "health",
+        "value": -0.41,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "On Player: -1% health per sec On Enemies: -0.41% health per sec",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [
+      "Bleeding"
+    ],
+    "source_url": "https://outward.wiki.gg/wiki/Extreme_Bleeding",
+    "icon_local": "assets/images/effects/effect_Extreme_Bleeding.png"
+  },
+  {
+    "name": "Extreme Mana Recovery",
+    "description": "+8 Mana per second",
+    "icon_url": "https://outward.wiki.gg/images/Extreme_Mana_Recovery.png?dc2629",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "30 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Mana",
+        "value": 8.0,
+        "unit": "per_sec"
+      }
+    ],
+    "effects_raw": "+8 Mana per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Extreme_Mana_Recovery",
+    "icon_local": "assets/images/effects/effect_Extreme_Mana_Recovery.png"
+  },
+  {
+    "name": "Extreme Poison",
+    "description": "* 3 Decay damage per second for 90 seconds, or until cured * When inflicted on enemies, this effect is increased to 4 per second, and stops their natural health regeneration. * Cures Hive Infestation ===Stacking=== * Effect does not stack with Poisoned. This effect will always take priority.",
+    "icon_url": "https://outward.wiki.gg/images/Extreme_Poison.png?4b9cde",
+    "icon_file": "ExtremePoison.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "Corruption",
+      "Grilled Crabeye Seed",
+      "Miasmapod",
+      "Antidote",
+      "Fungal Cleanser",
+      "Grilled Marshmelon",
+      "Panacea",
+      "Crumbling Anger",
+      "Effects",
+      "Flamethrower",
+      "Gong Strike",
+      "Greater Poison Imbue",
+      "Horror Axe",
+      "Horror Chakram",
+      "Horror Fists",
+      "Horror Greataxe",
+      "Horror Greatmace",
+      "Horror Greatsword",
+      "Horror Halberd",
+      "Horror Mace",
+      "Horror Pistol",
+      "Horror Shield",
+      "Horror Spear",
+      "Horror Sword",
+      "Improved Toxic Trap"
+    ],
+    "duration": "90 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "decay_dot",
+        "value": 3.0,
+        "unit": "dps"
+      },
+      {
+        "stat": "decay_dot",
+        "value": 4.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "On Player: 3 damage per sec On Enemies: 4 damage per sec",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [
+      "Hive Infestation",
+      "Poisoned"
+    ],
+    "source_url": "https://outward.wiki.gg/wiki/Extreme_Poison",
+    "icon_local": "assets/images/effects/effect_Extreme_Poison.png"
+  },
+  {
+    "name": "Fire Imbue",
+    "description": "* Increases damage by 10% as Fire damage, and grants +4 flat Fire damage. * Each hit consumes an extra 1 durability. * Lasts 90 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/Fire_Imbue.png?87cd81",
+    "icon_file": "FireImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Fire Rag"
+    ],
+    "duration": "90 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 10% as Fire damage Grants +4 flat Fire damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Fire_Imbue",
+    "icon_local": "assets/images/effects/effect_Fire_Imbue.png"
+  },
+  {
+    "name": "Fire Shield Imbue",
+    "description": "The damage and impact of this skill is based on the player's equipped Shield. * Deals Fire damage equivalent to 2.0x the equipped Shield damage * Deals Ethereal damage equivalent to 1.3x the equipped Shield damage * Impact of the shield is multiplied by 2.0x ===Effect Sources===",
+    "icon_url": "https://outward.wiki.gg/images/FireShieldImbue.png?7c4327",
+    "icon_file": "FireShieldImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Shield Infusion"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Fire explosion on next blocked Melee attack",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Fire_Shield_Imbue",
+    "icon_local": "assets/images/effects/effect_Fire_Shield_Imbue.png"
+  },
+  {
+    "name": "Force Bubble",
+    "description": "* Immune to all normal Damage for 4 seconds (except for Raw, falling damage, Bleeding and Diseases) * -50% Impact Resistance for the duration of the effect",
+    "icon_url": "https://outward.wiki.gg/images/Force_Bubble.png?6ac5a4",
+    "icon_file": "ForceBubble.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "Mana Ward"
+    ],
+    "duration": "4 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "impact",
+        "value": -50.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Immune to all normal Damage (except for Raw, falling damage, Bleeding and Diseases) -50% Impact Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Force_Bubble",
+    "icon_local": "assets/images/effects/effect_Force_Bubble.png"
+  },
+  {
+    "name": "Frost Bullet Imbue",
+    "description": "Next shot creates a Frost explosion with bonus damage Inflicts Slow Down, Crippled and pistol's effects",
+    "icon_url": "https://outward.wiki.gg/images/FrostBulletImbue.png?dbfdb9",
+    "icon_file": "FrostBulletImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Next shot creates a Frost explosion with bonus damage Inflicts Slow Down, Crippled and pistol's effects",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Frost_Bullet_Imbue",
+    "icon_local": "assets/images/effects/effect_Frost_Bullet_Imbue.png"
+  },
+  {
+    "name": "Frost Imbue",
+    "description": "* Increases damage by 10% as Frost damage, and grants +5 flat Frost damage. * Each hit consumes an extra 1 durability. *Lasts 90 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/FrostImbue.PNG?5e4785",
+    "icon_file": "FrostImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Ice Rag"
+    ],
+    "duration": "90 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 10% as Frost damage Grants +5 flat Frost damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Frost_Imbue",
+    "icon_local": "assets/images/effects/effect_Frost_Imbue.png"
+  },
+  {
+    "name": "Frost Shield Imbue",
+    "description": "The damage and impact of this skill is based on the player's equipped Shield. * Deals Frost damage equivalent to 2.0x the equipped Shield damage * Deals Ethereal damage equivalent to 1.3x the equipped Shield damage * Impact of the shield is multiplied by 2.0x ===Effect Sources===",
+    "icon_url": "https://outward.wiki.gg/images/FrostShieldImbue.png?88b4d0",
+    "icon_file": "FrostShieldImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Shield Infusion"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Frost explosion on next blocked Melee attack",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Frost_Shield_Imbue",
+    "icon_local": "assets/images/effects/effect_Frost_Shield_Imbue.png"
+  },
+  {
+    "name": "Full Petrification",
+    "description": "===Effects=== * If a Player Ally is around, they can revive you back to Mild Petrification. * Otherwise, acts as a defeat.",
+    "icon_url": "https://outward.wiki.gg/images/Full_Petrification.png?c5fdc9",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "n/a",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Counts as if you've been Defeated. Can be revived by an ally to revert back to Mild Petrification.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Full_Petrification",
+    "icon_local": "assets/images/effects/effect_Full_Petrification.png"
+  },
+  {
+    "name": "Gaberry Wine (effect)",
+    "description": "",
+    "icon_url": null,
+    "icon_file": "",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Gaberry Wine"
+    ],
+    "duration": "300 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "mana",
+        "value": -20.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Physical",
+        "value": 15.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Impact",
+        "value": -15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Gaberry_Wine_%28effect%29",
+    "icon_local": null
+  },
+  {
+    "name": "Ghost of Rhythm",
+    "description": "===Effects=== * +5 Protection for 3 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Ghost_of_Rhythm.png?f41a07",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "3 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Protection",
+        "value": 5.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+5 Protection",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Ghost_of_Rhythm",
+    "icon_local": "assets/images/effects/effect_Ghost_of_Rhythm.png"
+  },
+  {
+    "name": "Gift of Blood",
+    "description": "-1 Health per second. Increase Frost, Decay and Physical Damage by 15%.",
+    "icon_url": "https://outward.wiki.gg/images/Gift_of_Blood.png?47e617",
+    "icon_file": "Gift of Blood.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "60 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "-1 Health per second. Increase Frost, Decay and Physical Damage by 15%.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Gift_of_Blood",
+    "icon_local": "assets/images/effects/effect_Gift_of_Blood.png"
+  },
+  {
+    "name": "Gift of Blood Ally",
+    "description": "+2 Health per second for 10 seconds Increases Corruption by 6% (once).",
+    "icon_url": "https://outward.wiki.gg/images/Gift_of_Blood_Ally.png?b68a3a",
+    "icon_file": "Gift of Blood Ally.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "Gift of Blood"
+    ],
+    "duration": "10 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Health",
+        "value": 2.0,
+        "unit": "per_sec"
+      }
+    ],
+    "effects_raw": "+2 Health per second for 10 seconds Increases Corruption by 6% (once).",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Gift_of_Blood_Ally",
+    "icon_local": "assets/images/effects/effect_Gift_of_Blood_Ally.png"
+  },
+  {
+    "name": "Greater Decay Imbue",
+    "description": "* Increases damage by 20% as Decay damage, and grants +15 flat Decay damage. * Each hit consumes an extra 1 durability. * Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/PoisonImbue.PNG?391700",
+    "icon_file": "PoisonImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Dark Varnish",
+      "Mace Infusion"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 20% as Decay damage Grants +15 flat Decay damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Greater_Decay_Imbue",
+    "icon_local": "assets/images/effects/effect_Greater_Decay_Imbue.png"
+  },
+  {
+    "name": "Greater Ethereal Imbue",
+    "description": "* Increases base damage by 10% as Ethereal damage, and grants +15 flat Ethereal damage. * Each hit consumes an extra 1 durability. * Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/EtherealImbue.PNG?9ad0f0",
+    "icon_file": "EtherealImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Mace Infusion",
+      "Spiritual Varnish"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases base damage by 10% as Ethereal damage Grants +15 flat Ethereal damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Greater_Ethereal_Imbue",
+    "icon_local": "assets/images/effects/effect_Greater_Ethereal_Imbue.png"
+  },
+  {
+    "name": "Greater Fire Imbue",
+    "description": "* Increases damage by 10% as Fire damage, and grants +12 flat Fire damage. * Each hit consumes an extra 1 durability. *Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/Fire_Imbue.png?87cd81",
+    "icon_file": "FireImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Fire Varnish"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 10% as Fire damage Grants +12 flat Fire damage. Inflicts Burning (40%)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Greater_Fire_Imbue",
+    "icon_local": "assets/images/effects/effect_Greater_Fire_Imbue.png"
+  },
+  {
+    "name": "Greater Frost Imbue",
+    "description": "* Increases damage by 10% as Frost damage, and grants +15 flat Frost damage. * Each hit consumes an extra 1 durability. *Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/FrostImbue.PNG?5e4785",
+    "icon_file": "FrostImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Ice Varnish"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 10% as Frost damage Grants +15 flat Frost damage. Inflicts Slow Down (40%)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Greater_Frost_Imbue",
+    "icon_local": "assets/images/effects/effect_Greater_Frost_Imbue.png"
+  },
+  {
+    "name": "Greater Lightning Imbue",
+    "description": "*Increases damage by 10% as Lightning damage, and grants +15 flat Lightning damage. * Each hit consumes an extra 1 durability. *Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/LightningImbue.png?7e6e3b",
+    "icon_file": "LightningImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Bolt Varnish",
+      "Mace Infusion"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 10% as Lightning damage Grants +15 flat Lightning damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Greater_Lightning_Imbue",
+    "icon_local": "assets/images/effects/effect_Greater_Lightning_Imbue.png"
+  },
+  {
+    "name": "Greater Poison Imbue",
+    "description": "*Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/PoisonImbue.PNG?391700",
+    "icon_file": "PoisonImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Assassin Elixir",
+      "Poison Varnish"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Weapon inflicts Extreme Poison (40% buildup)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Greater_Poison_Imbue",
+    "icon_local": "assets/images/effects/effect_Greater_Poison_Imbue.png"
+  },
+  {
+    "name": "Hampered",
+    "description": "* -1000% Movement Speed for 6 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Hampered.png?22c30f",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "6 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Reduces movement speed to 0% and cannot perform dodges.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Hampered",
+    "icon_local": "assets/images/effects/effect_Hampered.png"
+  },
+  {
+    "name": "Haunted",
+    "description": "*-25% Ethereal damage bonus *-25% Ethereal resistance",
+    "icon_url": "https://outward.wiki.gg/images/Haunted.png?1fa3f8",
+    "icon_file": "Haunted.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Captured by Ghosts",
+      "Corruption",
+      "Defeated by Ghosts in Corrupted Tombs",
+      "Hex Cleaner",
+      "Panacea",
+      "Astral Claymore",
+      "Effects",
+      "Astral Dagger",
+      "Astral Greatmace",
+      "Astral Halberd",
+      "Astral Knuckles",
+      "Astral Sword",
+      "Bone Pistol",
+      "Dispersion",
+      "Ethereal Trap",
+      "Flamethrower",
+      "Ghost Reaper",
+      "Haunt Hex",
+      "Haunting Beat",
+      "Jinx",
+      "Mana Arrow",
+      "Ornate Bone Shield",
+      "Rainbow Hex",
+      "Rupture",
+      "Torment"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Ethereal",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Ethereal damage -25% Ethereal resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Haunted",
+    "icon_local": "assets/images/effects/effect_Haunted.png"
+  },
+  {
+    "name": "Healing Water (Effect)",
+    "description": "===Effects=== * +0.2 Health per second * +10 Hot Weather defense",
+    "icon_url": "https://outward.wiki.gg/images/Healing_Water_%28Effect%29.png?4c88a1",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Health",
+        "value": 0.2,
+        "unit": "per_sec"
+      }
+    ],
+    "effects_raw": "+0.2 Health per second +10 Hot Weather defense",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Healing_Water_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Healing_Water_Effect_.png"
+  },
+  {
+    "name": "Health Recovery",
+    "description": "{| class=\"wikitable\" |- ! Recovery Level !! Recovery Rate |- | 1 || Recover 0.2 Health per second. |- | 2 || Recover 0.25 Health per second. |- | 3 || Recover 0.3 Health per second. |- | 4 || Recover 0.4 Health per second. |- | 5 || Recover 0.5 Health per second. |}",
+    "icon_url": "https://outward.wiki.gg/images/Health_Recovery.png?6bef48",
+    "icon_file": "Healthrecovery.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "Edit section: Obtained From",
+      "Bread Of The Wild",
+      "Horror&#39;s Potion",
+      "Luxe Lichette",
+      "Alpha Sandwich",
+      "Ragoût du Marais",
+      "Saved by Watchers",
+      "Alpha Jerky",
+      "Cheese Cake",
+      "Cierzo Ceviche",
+      "Cipate",
+      "Cooked Alpha Meat",
+      "Cooked Boozu&#39;s Meat",
+      "Meat Stew",
+      "Pouding Chomeur",
+      "Raw Alpha Meat",
+      "Savage Stew",
+      "Saved by Friendly Immaculate",
+      "Spiny Meringue",
+      "Torcrab Sandwich",
+      "Boozu&#39;s Meat",
+      "Boozu&#39;s Milk",
+      "Boreo Blubber",
+      "Cooked Jewel Meat",
+      "Cooked Larva Egg"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "+0.2 to 0.5 Health per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Health_Recovery",
+    "icon_local": "assets/images/effects/effect_Health_Recovery.png"
+  },
+  {
+    "name": "Hive Infestation",
+    "description": "====== * Status Effect Resistance -15% * Health burn rate +100% (health burns more quickly) * Stamina burn rate +100% (stamina burns more quickly) ===Acute === * Status Effect Resistance -30% * Health burn rate +200% (health burns more quickly) * Stamina burn rate +200% (stamina burns more quickly)",
+    "icon_url": "https://outward.wiki.gg/images/Hive_Infestation_1.png?6c1c29",
+    "icon_file": "PAGENAME 1.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Captured by The Hive",
+      "Extreme Poison",
+      "Fungal Cleanser",
+      "Panacea",
+      "Poisoned",
+      "Hive Lord",
+      "Virulent Hiveman",
+      "Walking Hive"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Status Effect Resistance -15% to -30% Health burn rate +100% to 200% Stamina burn rate +100% to 200%",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Hive_Infestation",
+    "icon_local": "assets/images/effects/effect_Hive_Infestation.png"
+  },
+  {
+    "name": "Holy Blaze",
+    "description": "* Deals 6 Lightning damage per second for 30 seconds. * Prevents the application of Burning during its duration. * Stops enemy health regeneration.",
+    "icon_url": "https://outward.wiki.gg/images/Holy_Blaze.png?b68554",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "30 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Lightning_dot",
+        "value": 6.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "6 damage per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Holy_Blaze",
+    "icon_local": "assets/images/effects/effect_Holy_Blaze.png"
+  },
+  {
+    "name": "Hot Weather Defense",
+    "description": "* +15 Hot Weather Def",
+    "icon_url": "https://outward.wiki.gg/images/HotDefUp.png?e27f1a",
+    "icon_file": "HotDefUp.png",
+    "effect_type": "environment",
+    "effect_type_raw": "Weather",
+    "sources": [
+      "Ambraine",
+      "Angel Food Cake",
+      "Awaken in a garden",
+      "Cactus Fruit",
+      "Cactus Pie",
+      "Cool Rainbow Jam",
+      "Diadème de Gibier",
+      "Frosted Crescent",
+      "Frosted Delight",
+      "Frosted Maize",
+      "Needle Tea",
+      "Rainbow Tartine",
+      "Saved by stranger with ambraine",
+      "Spiny Meringue"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Temperature#Weather_Defense_Attributes",
+        "value": 15.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+15 Hot Weather Def",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Hot_Weather_Defense",
+    "icon_local": "assets/images/effects/effect_Hot_Weather_Defense.png"
+  },
+  {
+    "name": "Immolate",
+    "description": "+30% fire damage bonus Take 0.5 fire damage per second",
+    "icon_url": "https://outward.wiki.gg/images/Immolate.png?4f642c",
+    "icon_file": "Immolate.PNG",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "60 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "fire",
+        "value": 30.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+30% fire damage bonus Take 0.5 fire damage per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Immolate",
+    "icon_local": "assets/images/effects/effect_Immolate.png"
+  },
+  {
+    "name": "Impact Resistance Up",
+    "description": "* +25% Impact Resistance for 240 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Impact_Resistance_Up.png?20ab88",
+    "icon_file": "ImpactResistIcon.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Cipate",
+      "Gravel Beetle",
+      "Grilled Torcrab Meat",
+      "Mineral Tea",
+      "Raw Torcrab Meat",
+      "Savage Stew",
+      "Stability Potion",
+      "Stoneflesh Elixir"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Impact",
+        "value": 25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+25% Impact Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Impact_Resistance_Up",
+    "icon_local": "assets/images/effects/effect_Impact_Resistance_Up.png"
+  },
+  {
+    "name": "Impact Up",
+    "description": "*+20% Impact bonus damage",
+    "icon_url": "https://outward.wiki.gg/images/Impact_Up.png?c69c4f",
+    "icon_file": "ImpactUpIcon.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Boiled Purpkin",
+      "Golem Elixir",
+      "Poutine",
+      "Sulphur Potion",
+      "Warrior Elixir"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Impact",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Impact damage",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Impact_Up",
+    "icon_local": "assets/images/effects/effect_Impact_Up.png"
+  },
+  {
+    "name": "Indigestion",
+    "description": "40% to 80% chance to be sick when eating, nullifying the food's effects.",
+    "icon_url": "https://outward.wiki.gg/images/IndigestionIcon.png?e6d94e",
+    "icon_file": "IndigestionIcon.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Antique Eel",
+      "Azure Shrimp",
+      "Bird Egg",
+      "Boozu&#39;s Meat",
+      "Boreo Blubber",
+      "Crawled to safety in the Electric Lab",
+      "Food Waste",
+      "Larva Egg",
+      "Manaheart Bass",
+      "Pypherfish",
+      "Rancid Water",
+      "Raw Alpha Meat",
+      "Raw Meat",
+      "Raw Rainbow Trout",
+      "Raw Salmon",
+      "Raw Torcrab Meat",
+      "River Water",
+      "Salt Water",
+      "Torcrab Egg",
+      "Veaber&#39;s Egg",
+      "Fungal Cleanser",
+      "Iced Tea",
+      "Mineral Tea",
+      "Needle Tea",
+      "Panacea"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "40% to 80% chance to be sick when eating, nullifying the food's effects.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Indigestion",
+    "icon_local": "assets/images/effects/effect_Indigestion.png"
+  },
+  {
+    "name": "Infection",
+    "description": "Lose 3% to 10% Health per minute Eating restores -15% to -30% less Hunger",
+    "icon_url": "https://outward.wiki.gg/images/InfectionIcon.png?61374a",
+    "icon_file": "InfectionIcon.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Attacked by Hyenas",
+      "Able Tea",
+      "Bitter Spicy Tea",
+      "Boiled Miasmapod",
+      "Fungal Cleanser",
+      "Miasmapod",
+      "Panacea",
+      "Pungent Paste",
+      "Armored Hyena",
+      "Hyena",
+      "Razorhorn Stekosaur",
+      "Stekosaur",
+      "Veaber"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "health",
+        "value": 10.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Hunger",
+        "value": -30.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "Lose 3% to 10% Health per minute Eating restores -15% to -30% less Hunger",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Infection",
+    "icon_local": "assets/images/effects/effect_Infection.png"
+  },
+  {
+    "name": "Infuse Blood (Imbue)",
+    "description": "Adds +10 flat Decay damage Inflicts Extreme Poison (35%) Inflicts Extreme Bleeding (35%) Absorbs 10% of damage dealt as Health",
+    "icon_url": "https://outward.wiki.gg/images/Infuse_Blood_%28Imbue%29.png?f3cbeb",
+    "icon_file": "Infuse Blood (Imbue).png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Infuse Blood"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Adds +10 flat Decay damage Inflicts Extreme Poison (35%) Inflicts Extreme Bleeding (35%) Absorbs 10% of damage dealt as Health",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Infuse_Blood_%28Imbue%29",
+    "icon_local": "assets/images/effects/effect_Infuse_Blood_Imbue_.png"
+  },
+  {
+    "name": "Infuse Mana (Imbue)",
+    "description": "Increases damage by 25% as Ethereal damage Grants +10 flat Ethereal damage.",
+    "icon_url": "https://outward.wiki.gg/images/Infuse_Mana_%28Imbue%29.png?e9cc01",
+    "icon_file": "Infuse Mana (Imbue).png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Infuse Mana"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 25% as Ethereal damage Grants +10 flat Ethereal damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Infuse_Mana_%28Imbue%29",
+    "icon_local": "assets/images/effects/effect_Infuse_Mana_Imbue_.png"
+  },
+  {
+    "name": "Kill Streak",
+    "description": "===Effects=== * Increases all damage dealt by 20% * Increases Movement Speed by 10% * Grants +50% Stability regeneration * -25% Impact dealt",
+    "icon_url": "https://outward.wiki.gg/images/Kill_Streak.png?685ccc",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Scalp Collector"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Movement",
+        "value": 10.0,
+        "unit": "%"
+      },
+      {
+        "stat": "impact",
+        "value": -25.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Stability",
+        "value": 50.0,
+        "unit": "%"
+      },
+      {
+        "stat": "all Damage",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% all Damage +10% Movement Speed +50% Stability regeneration -25% Impact dealt",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Kill_Streak",
+    "icon_local": "assets/images/effects/effect_Kill_Streak.png"
+  },
+  {
+    "name": "Leywilt",
+    "description": "====== * +40% Mana Costs * Barrier +6 ===Receding === * +20% Mana Costs * Barrier +3",
+    "icon_url": "https://outward.wiki.gg/images/Leywilt_1.png?9ca4f3",
+    "icon_file": "PAGENAME 1.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Attacked by dweller",
+      "Collapsed onto a bedroll",
+      "Defeated by Light Mender",
+      "Dragged off by golem",
+      "Resting on a tomb",
+      "Dreamer&#39;s Root",
+      "Fungal Cleanser",
+      "Panacea",
+      "Arcane Elemental (Decay)",
+      "Arcane Elemental (Ethereal)",
+      "Arcane Elemental (Fire)",
+      "Arcane Elemental (Frost)",
+      "Arcane Elemental (Lightning)",
+      "Chromatic Arcane Elemental"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Mana",
+        "value": 20.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Barrier",
+        "value": 3.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+40% to +20% Mana costs +6 to +3 Barrier",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Leywilt",
+    "icon_local": "assets/images/effects/effect_Leywilt.png"
+  },
+  {
+    "name": "Life Drain",
+    "description": "-30% to -90% Maximum Health",
+    "icon_url": "https://outward.wiki.gg/images/LifeDrain.png?ec8f21",
+    "icon_file": "LifeDrain.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Other Negative",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "health",
+        "value": -90.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-30% to -90% Maximum Health",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Life_Drain",
+    "icon_local": "assets/images/effects/effect_Life_Drain.png"
+  },
+  {
+    "name": "Lightning Imbue",
+    "description": "* Increases damage by 10% as Lightning damage and grants +5 flat Lightning damage. * Each hit consumes an extra 1 durability. * Lasts 90 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/LightningImbue.png?7e6e3b",
+    "icon_file": "LightningImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Bolt Rag"
+    ],
+    "duration": "90 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 10% as Lightning damage Grants +5 flat Lightning damage.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Lightning_Imbue",
+    "icon_local": "assets/images/effects/effect_Lightning_Imbue.png"
+  },
+  {
+    "name": "Lightning Shield Imbue",
+    "description": "The damage and impact of this skill is based on the player's equipped Shield. * Deals Lightning damage equivalent to 2.0x the equipped Shield damage * Deals Ethereal damage equivalent to 1.3x the equipped Shield damage * Impact of the shield is multiplied by 2.0x ===Effect Sources===",
+    "icon_url": "https://outward.wiki.gg/images/LightningShieldImbue.png?f77175",
+    "icon_file": "LightningShieldImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Shield Infusion"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Lightning explosion on next blocked Melee attack",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Lightning_Shield_Imbue",
+    "icon_local": "assets/images/effects/effect_Lightning_Shield_Imbue.png"
+  },
+  {
+    "name": "Mana Cost Reduction",
+    "description": "* -15% Mana costs for 240 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Mana_Ratio_Recovery.png?32d136",
+    "icon_file": "Mana Ratio Recovery.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Mana Belly Potion",
+      "Saved by Watchers"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Mana",
+        "value": -15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-15% Mana costs",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Mana_Cost_Reduction",
+    "icon_local": "assets/images/effects/effect_Mana_Cost_Reduction.png"
+  },
+  {
+    "name": "Mana Ratio Recovery",
+    "description": "{| class=\"wikitable\" |- ! Recovery Level !! Recovery Rate |- | 1 || Recover 0.15% Mana per second |- | 2 || Recover 0.2% Mana per second. |- | 3 || Recover 0.25% Mana per second. |} ===Notes=== * The in-game description does not use a percent sign for the value, but it is a percent of your maximum mana restored, not a flat amount.",
+    "icon_url": "https://outward.wiki.gg/images/Mana_Ratio_Recovery.png?32d136",
+    "icon_file": "Manarecovery.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "600 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "mana",
+        "value": 0.25,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+0.15% to 0.25% Mana per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Mana_Ratio_Recovery",
+    "icon_local": "assets/images/effects/effect_Mana_Ratio_Recovery.png"
+  },
+  {
+    "name": "Marsh High Poison",
+    "description": "* 5 Decay damage dealt per second for 2 seconds. * Refreshes constantly if the player stands in deep rancid water.",
+    "icon_url": "https://outward.wiki.gg/images/Poisoned.png?9c48cd",
+    "icon_file": "PoisonIcon.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "2 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay_dot",
+        "value": 5.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "5 damage per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Marsh_High_Poison",
+    "icon_local": "assets/images/effects/effect_Marsh_High_Poison.png"
+  },
+  {
+    "name": "Marsh Poison",
+    "description": "* 1 Decay damage dealt per second for 20 seconds. Refreshes constantly if the player stands inside the rancid water. * If the player stands in deep rancid water, Marsh High Poison will be applied",
+    "icon_url": "https://outward.wiki.gg/images/Poisoned.png?9c48cd",
+    "icon_file": "PoisonIcon.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "20 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay_dot",
+        "value": 1.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "1 damage per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Marsh_Poison",
+    "icon_local": "assets/images/effects/effect_Marsh_Poison.png"
+  },
+  {
+    "name": "Meeka Fever",
+    "description": "====== * Weather protection -10 * Thirst deplete rate +100% (you become thirsty more quickly) ===Acute === * Weather protection -15 * Thirst deplete rate +200% (you become thirsty more quickly)",
+    "icon_url": "https://outward.wiki.gg/images/Meeka_Fever_1.png?2597f3",
+    "icon_file": "Meeka Fever 1.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Awaken in Old Levant",
+      "Chained by Troglodytes",
+      "Half cooked in the volcano",
+      "Lost in the Face of the Ancients",
+      "Stumbled into the Oasis",
+      "Cool Potion",
+      "Fungal Cleanser",
+      "Iced Tea",
+      "Panacea",
+      "Accursed Wendigo",
+      "Fire Beetle",
+      "Quartz Beetle",
+      "Wendigo"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Weather protection -10 to -15 Thirst deplete rate +100% to +200%",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Meeka_Fever",
+    "icon_local": "assets/images/effects/effect_Meeka_Fever.png"
+  },
+  {
+    "name": "Mild Petrification",
+    "description": "===Effects=== * -0.1 Attack Speed * -20% Movement Speed * Becomes Full Petrification if you become Petrified again Required for Angler Shield.",
+    "icon_url": "https://outward.wiki.gg/images/Mild_Petrification.png?1c3352",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Defeat Scenarios"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Movement",
+        "value": -20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-0.1 Attack Speed -20% Movement Speed",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Mild_Petrification",
+    "icon_local": "assets/images/effects/effect_Mild_Petrification.png"
+  },
+  {
+    "name": "Mist",
+    "description": "*+20% Ethereal damage bonus *+20% Ethereal resistance === Amplified Effect === * Requires Shamanic Resonance *+30% Ethereal damage bonus *+30% Ethereal resistance",
+    "icon_url": "https://outward.wiki.gg/images/Mist.png?580099",
+    "icon_file": "Mist.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Mace Infusion",
+      "Mist (skill)",
+      "Mist Potion",
+      "Saved by Ancestral Ghosts"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Ethereal",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Ethereal damage +20% Ethereal resistance",
+    "amplified_effects": "+30% Ethereal damage +30% Ethereal resistance",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Mist",
+    "icon_local": "assets/images/effects/effect_Mist.png"
+  },
+  {
+    "name": "Mystic Fire Imbue",
+    "description": "* Increases damage by 25% as Fire damage, and grants +7 flat Fire damage. * Raises the player's Temperature Stage by 1 (heats the player up). In neutral temperature environments this increases the player's temperature delta by +14 . * Each hit consumes an extra 1 durability. * Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/Fire_Imbue.png?87cd81",
+    "icon_file": "FireImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Infuse Fire",
+      "Mace Infusion"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 25% as Fire damage Grants +7 flat Fire damage. Inflicts Burning (49%)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Mystic_Fire_Imbue",
+    "icon_local": "assets/images/effects/effect_Mystic_Fire_Imbue.png"
+  },
+  {
+    "name": "Mystic Frost Imbue",
+    "description": "* Increases damage by 25% as Frost damage, and grants +10 flat Frost damage. * Each hit consumes an extra 1 durability. *Lasts 180 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/FrostImbue.PNG?5e4785",
+    "icon_file": "FrostImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Infuse Frost",
+      "Mace Infusion"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Increases damage by 25% as Frost damage Grants +10 flat Frost damage. Inflicts Slow Down (49%)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Mystic_Frost_Imbue",
+    "icon_local": "assets/images/effects/effect_Mystic_Frost_Imbue.png"
+  },
+  {
+    "name": "Needs: Cold",
+    "description": "-15% Movement Speed Chance to receive Cold (Disease) Can become more severe",
+    "icon_url": "https://outward.wiki.gg/images/NeedsCold.png?fd65bb",
+    "icon_file": "NeedsCold.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Needs",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Move Speed",
+        "value": -15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-15% Movement Speed Chance to receive Cold (Disease) Can become more severe",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Needs%3A_Cold",
+    "icon_local": "assets/images/effects/effect_Needs_Cold.png"
+  },
+  {
+    "name": "Needs: Hot",
+    "description": "+50% Stamina cost of actions -60% Impact resistance when Very Hot",
+    "icon_url": "https://outward.wiki.gg/images/Hot.png?48c199",
+    "icon_file": "Hot.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Needs",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "stamina",
+        "value": 50.0,
+        "unit": "%"
+      },
+      {
+        "stat": "impact",
+        "value": -60.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+50% Stamina cost of actions -60% Impact resistance when Very Hot",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Needs%3A_Hot",
+    "icon_local": "assets/images/effects/effect_Needs_Hot.png"
+  },
+  {
+    "name": "Needs: Hungry",
+    "description": "Health burns 3x faster",
+    "icon_url": "https://outward.wiki.gg/images/NeedsHungry.png?f42687",
+    "icon_file": "NeedsHungry.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Needs",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Health burns 3x faster",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Needs%3A_Hungry",
+    "icon_local": "assets/images/effects/effect_Needs_Hungry.png"
+  },
+  {
+    "name": "Needs: Thirsty",
+    "description": "Stamina burns 3x faster",
+    "icon_url": "https://outward.wiki.gg/images/NeedsThirsty.png?76b163",
+    "icon_file": "NeedsThirsty.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Needs",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Stamina burns 3x faster",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Needs%3A_Thirsty",
+    "icon_local": "assets/images/effects/effect_Needs_Thirsty.png"
+  },
+  {
+    "name": "Needs: Tired",
+    "description": "===Tired=== * -15% Stamina regeneration. * 0.2 Mana Regen per second. * This activates when the player has less than 50% Sleep ===Very Tired=== * -30% Stamina regeneration. * 0.3 Mana Regen per second. * This activates when the player has less than 25% Sleep * Reaching 0% Rest will cause the player to collapse and receive a Defeat Scenario",
+    "icon_url": null,
+    "icon_file": "",
+    "effect_type": "debuff",
+    "effect_type_raw": "Needs",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "stamina",
+        "value": -30.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Needs%3A_Tired",
+    "icon_local": null
+  },
+  {
+    "name": "Pain",
+    "description": "*-25% Physical resistance",
+    "icon_url": "https://outward.wiki.gg/images/Pain.png?f357a6",
+    "icon_file": "Pain.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Captured by Sand Corsair bandits",
+      "Captured with Soroborean Caravanner",
+      "Dragged into Hive Prison",
+      "Dragged off by Stekosaurs",
+      "Escaped through The Hole",
+      "Fallen into chalcedony shards",
+      "Imprisoned by the Montcalm Tribe",
+      "Mistaken for dead by Montcalm Tribe",
+      "Rescued by Holy Mission warrior",
+      "Rescued by Levant mercenaries",
+      "Saved by Cierzo huntress",
+      "Saved by hunter from Berg",
+      "Saved by lone Watcher",
+      "Saved by stranger at Slums",
+      "Sulphuric Mushroom",
+      "Thrown off a cliff in Ancestor&#39;s Resting Place",
+      "Toyed with by Ash Giants",
+      "Hex Cleaner",
+      "Panacea",
+      "Caldera Mail Armor",
+      "Effects",
+      "Caldera Mail Boots",
+      "Caldera Mail Helm",
+      "Brand",
+      "Coralhorn Bow"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Physical",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Physical resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Pain",
+    "icon_local": "assets/images/effects/effect_Pain.png"
+  },
+  {
+    "name": "Panic",
+    "description": "* All Damage Resistances above 0 are reduced to 0. This does not affect Protection or Barrier",
+    "icon_url": "https://outward.wiki.gg/images/Panic.png?7a3c13",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Captured by The Hive",
+      "Panacea",
+      "Calm Soul",
+      "Effects",
+      "Calygrey Hero",
+      "Djinn",
+      "Elder Calygrey",
+      "Elite Crimson Avatar",
+      "Elite Torcrab",
+      "Scarlet Emissary"
+    ],
+    "duration": "10 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Removes Physical, Elemental and impact resistances.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Panic",
+    "icon_local": "assets/images/effects/effect_Panic.png"
+  },
+  {
+    "name": "Physical Attack Up",
+    "description": "*+20% Physical damage bonus ===Stacking=== * Does not stack with Physical Attack Up (Food)",
+    "icon_url": "https://outward.wiki.gg/images/Physical_Attack_Up.png?541832",
+    "icon_file": "PhysicalAttackUp.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Boiled Crawlberry",
+      "Bouillon du Predateur",
+      "Crawlberry Jam",
+      "Crawlberry Tartine",
+      "Poutine",
+      "Stoneflesh Elixir",
+      "Sulphur Potion",
+      "Torcrab Sandwich",
+      "Warrior Elixir"
+    ],
+    "duration": "240 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "Physical",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Physical damage",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Physical_Attack_Up",
+    "icon_local": "assets/images/effects/effect_Physical_Attack_Up.png"
+  },
+  {
+    "name": "Physical Attack Up (Food)",
+    "description": "*+10% Physical damage bonus ===Stacking=== * Does not stack with Physical Attack Up",
+    "icon_url": "https://outward.wiki.gg/images/Physical_Attack_Up.png?541832",
+    "icon_file": "PhysicalAttackUp.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Torcrab Jerky"
+    ],
+    "duration": "240 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "Physical",
+        "value": 10.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+10% Physical damage",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Physical_Attack_Up_%28Food%29",
+    "icon_local": "assets/images/effects/effect_Physical_Attack_Up_Food_.png"
+  },
+  {
+    "name": "Plague",
+    "description": "* Deals 4 Decay damage per second. * Spreads by 10% buildup per second to nearby targets (ally as well as enemy), in a fairly wide area. Since all buildups decrease by 3% per second, it takes around 14 seconds of continuous exposure for Plague to spread to another target (assuming 0% Status Resistance). * Enemies immune to poison are also immune to plague. * When inflicted on enemies, it will stop their natural health regeneration.",
+    "icon_url": "https://outward.wiki.gg/images/Plague.png?3fe8e9",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "90 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay_dot",
+        "value": 4.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "4 damage per second. Contagious.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Plague",
+    "icon_local": "assets/images/effects/effect_Plague.png"
+  },
+  {
+    "name": "Poison Imbue",
+    "description": "*Lasts 90 seconds.",
+    "icon_url": "https://outward.wiki.gg/images/PoisonImbue.PNG?391700",
+    "icon_file": "PoisonImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Poison Rag"
+    ],
+    "duration": "90 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Weapon inflicts Poisoned (40% buildup)",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Poison_Imbue",
+    "icon_local": "assets/images/effects/effect_Poison_Imbue.png"
+  },
+  {
+    "name": "Poisoned",
+    "description": "* 1 Decay damage per second for 90 seconds, or until cured * When inflicted on enemies, this effect is increased to 1.5 per second, and stops their natural health regeneration. * Cures Hive Infestation ===Stacking=== * Effect does not stack with Extreme Poison. If Extreme Poison is active, this effect will do nothing.",
+    "icon_url": "https://outward.wiki.gg/images/Poisoned.png?9c48cd",
+    "icon_file": "PoisonIcon.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "Boiled Miasmapod",
+      "Crabeye Seed",
+      "Defeated by Hive",
+      "Defeated by Insects",
+      "Food Waste",
+      "Grilled Pypherfish",
+      "Pypherfish",
+      "Shriek",
+      "Effects",
+      "Antidote",
+      "Fungal Cleanser",
+      "Grilled Marshmelon",
+      "Panacea",
+      "Crumbling Anger",
+      "Garg",
+      "Horror Bow",
+      "Mushroom Halberd",
+      "Mushroom Shield",
+      "Phytosaur Spear",
+      "Poison Arrow",
+      "Poison Imbue",
+      "Rot",
+      "Spore Halberd",
+      "Torment",
+      "Toxic Trap"
+    ],
+    "duration": "90 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "decay_dot",
+        "value": 1.0,
+        "unit": "dps"
+      },
+      {
+        "stat": "decay_dot",
+        "value": 1.5,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "On Player: 1 damage per sec On Enemies: 1.5 damage per sec",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [
+      "Hive Infestation",
+      "Extreme Poison"
+    ],
+    "source_url": "https://outward.wiki.gg/wiki/Poisoned",
+    "icon_local": "assets/images/effects/effect_Poisoned.png"
+  },
+  {
+    "name": "Possessed",
+    "description": "*+20% Decay damage bonus *+20% Decay resistance === Amplified Effect === * Requires Shamanic Resonance *+30% Decay damage bonus *+30% Decay resistance",
+    "icon_url": "https://outward.wiki.gg/images/Possessed.png?ae7576",
+    "icon_file": "Possessed.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Bagatelle",
+      "Call to Elements",
+      "Golem Elixir",
+      "Mace Infusion",
+      "Possessed (skill)",
+      "Possessed Potion",
+      "Ragoût du Marais",
+      "Saved by Friendly Immaculate",
+      "Blood Bullet"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Decay damage +20% Decay resistance",
+    "amplified_effects": "+30% Decay damage +30% Decay resistance",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Possessed",
+    "icon_local": "assets/images/effects/effect_Possessed.png"
+  },
+  {
+    "name": "Pouch Overweight",
+    "description": "Reduced Movement Speed",
+    "icon_url": "https://outward.wiki.gg/images/PouchOverweight.png?bf3926",
+    "icon_file": "PouchOverweight.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Weight",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [],
+    "effects_raw": "Reduced Movement Speed",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Pouch_Overweight",
+    "icon_local": "assets/images/effects/effect_Pouch_Overweight.png"
+  },
+  {
+    "name": "Prime (Effect)",
+    "description": "Instantly resets the cooldown of the next skill used in the next 3 minutes",
+    "icon_url": "https://outward.wiki.gg/images/Prime_%28Effect%29.png?389521",
+    "icon_file": "Prime (Effect).png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "Prime"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Instantly resets the cooldown of the next skill used in the next 3 minutes",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Prime_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Prime_Effect_.png"
+  },
+  {
+    "name": "Protection (Effect)",
+    "description": "{| class=\"wikitable\" |- ! Level !! Effect |- | 1 || +3 Protection |- | 2 || +6 Protection |}",
+    "icon_url": "https://outward.wiki.gg/images/Protection_%28Effect%29.png?51dfcd",
+    "icon_file": "Protection (Effect).png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Edit section: Obtained From",
+      "Cured Pypherfish",
+      "Boreo Blubber",
+      "Mana Belly Potion",
+      "Torcrab Sandwich"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Protection",
+        "value": 6.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+3 to +6 Protection",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Protection_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Protection_Effect_.png"
+  },
+  {
+    "name": "Rage",
+    "description": "*+25% Impact bonus damage === Amplified Effect === * Requires Shamanic Resonance *+35% Impact bonus damage",
+    "icon_url": "https://outward.wiki.gg/images/Rage.png?ecdf82",
+    "icon_file": "Rage.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Alpha Jerky",
+      "Alpha Sandwich",
+      "Call to Elements",
+      "Cooked Alpha Meat",
+      "Enrage",
+      "Grog",
+      "Rage Potion",
+      "Raw Alpha Meat",
+      "Savage Stew",
+      "Stoneflesh Elixir",
+      "Challenger Greathammer",
+      "Effects",
+      "Feral Strikes",
+      "Predator Leap",
+      "Moon Swipe"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Impact",
+        "value": 25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+25% Impact bonus damage",
+    "amplified_effects": "+35% Impact bonus damage",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Rage",
+    "icon_local": "assets/images/effects/effect_Rage.png"
+  },
+  {
+    "name": "Sapped",
+    "description": "===Effects=== * -40% Damage dealt for Ethereal, Decay, Lightning, Frost and Fire (reduces damage bonuses by -40)",
+    "icon_url": "https://outward.wiki.gg/images/Sapped.png?191b8b",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "60 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "-40% All Non-Physical Damage dealt",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sapped",
+    "icon_local": "assets/images/effects/effect_Sapped.png"
+  },
+  {
+    "name": "Scorched",
+    "description": "*-25% Fire damage bonus *-25% Fire resistance",
+    "icon_url": "https://outward.wiki.gg/images/Scorched.png?4a6b89",
+    "icon_file": "Scorched.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Hex",
+    "sources": [
+      "Half cooked in the volcano",
+      "Panacea",
+      "Astral Axe",
+      "Effects",
+      "Astral Bow",
+      "Astral Claymore",
+      "Astral Dagger",
+      "Astral Greataxe",
+      "Astral Knuckles",
+      "Astral Pistol",
+      "Astral Shield",
+      "Blazing Bomb",
+      "Dispersion",
+      "Jinx",
+      "Musing of a Philosopher",
+      "Obsidian Bow",
+      "Oil Bomb",
+      "Rainbow Hex",
+      "Scorch Hex",
+      "War Memento",
+      "Rupture",
+      "Torment",
+      "Corruption Spirit",
+      "Elite Burning Man"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Fire",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Fire damage -25% Fire resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Scorched",
+    "icon_local": "assets/images/effects/effect_Scorched.png"
+  },
+  {
+    "name": "Shatter Bullet Imbue",
+    "description": "* Pistol's damage is converted to Physical * Pistol's impact is multiplied by 2.5, and +30 flat impact is added",
+    "icon_url": "https://outward.wiki.gg/images/ShatterBulletImbue.png?5c342e",
+    "icon_file": "ShatterBulletImbue.png",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Next shot deals high Impact Inflicts Pain All damage is converted to Physical.",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Shatter_Bullet_Imbue",
+    "icon_local": "assets/images/effects/effect_Shatter_Bullet_Imbue.png"
+  },
+  {
+    "name": "Shimmer",
+    "description": "===Effects=== * +15% all Elemental (non- Physical) Damage",
+    "icon_url": "https://outward.wiki.gg/images/Shimmer.png?596c53",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "all Elemental Damage",
+        "value": 15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+15% all Elemental Damage",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Shimmer",
+    "icon_local": "assets/images/effects/effect_Shimmer.png"
+  },
+  {
+    "name": "Sky Rhythm",
+    "description": "===Effects=== * +5 Barrier for 3 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Sky_Rhythm.png?2e3066",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "3 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Barrier",
+        "value": 5.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+5 Barrier",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sky_Rhythm",
+    "icon_local": "assets/images/effects/effect_Sky_Rhythm.png"
+  },
+  {
+    "name": "Sleep: Berg",
+    "description": "-20% Stamina costs +10 ethereal Damage resistance",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "Resting",
+      "Berg"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": -20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-20% Stamina costs +10 ethereal Damage resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Berg",
+    "icon_local": "assets/images/effects/effect_Sleep_Berg.png"
+  },
+  {
+    "name": "Sleep: Cierzo",
+    "description": "-20% Stamina costs +5 Cold Weather Def",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "Resting",
+      "Cierzo"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": -20.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Temperature#Weather_Defense_Attributes",
+        "value": 5.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "-20% Stamina costs +5 Cold Weather Def",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Cierzo",
+    "icon_local": "assets/images/effects/effect_Sleep_Cierzo.png"
+  },
+  {
+    "name": "Sleep: City Hall",
+    "description": "-20% Stamina cost of actions",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina Cost",
+        "value": -20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-20% Stamina cost of actions",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_City_Hall",
+    "icon_local": "assets/images/effects/effect_Sleep_City_Hall.png"
+  },
+  {
+    "name": "Sleep: Embassy",
+    "description": "-20% Stamina cost of actions +15% Status Resistance",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina Cost",
+        "value": -20.0,
+        "unit": "%"
+      },
+      {
+        "stat": "StatusResist",
+        "value": 15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-20% Stamina cost of actions +15% Status Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Embassy",
+    "icon_local": "assets/images/effects/effect_Sleep_Embassy.png"
+  },
+  {
+    "name": "Sleep: Giants",
+    "description": "-20% Stamina costs +5 Hot resistance",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": -20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-20% Stamina costs +5 Hot resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Giants",
+    "icon_local": "assets/images/effects/effect_Sleep_Giants.png"
+  },
+  {
+    "name": "Sleep: Harmattan",
+    "description": "10% to 20% reduced Stamina costs 5% to 10% Decay resistance bonus",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "Resting",
+      "Harmattan"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "decay",
+        "value": 10.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Stamina",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "10% to 20% reduced Stamina costs 5% to 10% Decay resistance bonus",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Harmattan",
+    "icon_local": "assets/images/effects/effect_Sleep_Harmattan.png"
+  },
+  {
+    "name": "Sleep: Levant",
+    "description": "-20% Stamina costs +5 Hot Weather Def",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "Resting",
+      "Levant"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": -20.0,
+        "unit": "%"
+      },
+      {
+        "stat": "Temperature#Weather_Defense_Attributes",
+        "value": 5.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "-20% Stamina costs +5 Hot Weather Def",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Levant",
+    "icon_local": "assets/images/effects/effect_Sleep_Levant.png"
+  },
+  {
+    "name": "Sleep: Monsoon",
+    "description": "-20% Stamina costs +5 Impact resistance",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "Resting",
+      "Monsoon"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": -20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-20% Stamina costs +5 Impact resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_Monsoon",
+    "icon_local": "assets/images/effects/effect_Sleep_Monsoon.png"
+  },
+  {
+    "name": "Sleep: New Sirocco",
+    "description": "-20% Stamina cost of actions +5 Hot resistance +5 Cold resistance",
+    "icon_url": "https://outward.wiki.gg/images/Sleep_%28Effect%29.png?dde775",
+    "icon_file": "Sleep (Effect).png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Sleep",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "2400 seconds (40 minutes)",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina Cost",
+        "value": -20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-20% Stamina cost of actions +5 Hot resistance +5 Cold resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sleep%3A_New_Sirocco",
+    "icon_local": "assets/images/effects/effect_Sleep_New_Sirocco.png"
+  },
+  {
+    "name": "Slow Down",
+    "description": "* -25% Movement Speed for 90 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Slow_Down.png?60972d",
+    "icon_file": "Slow Down.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Crysocolla Beetle",
+      "Escaped into corrupted cavern",
+      "Panacea",
+      "Freedom",
+      "Effects",
+      "Assassin Claymore",
+      "Assassin Sword",
+      "Chalcedony Axe",
+      "Chalcedony Chakram",
+      "Chalcedony Claymore",
+      "Chalcedony Greataxe",
+      "Chalcedony Halberd",
+      "Chalcedony Hammer",
+      "Chalcedony Knuckles",
+      "Chalcedony Mace",
+      "Chalcedony Pistol",
+      "Chalcedony Spear",
+      "Chalcedony Sword",
+      "Flamethrower",
+      "Frost Bomb",
+      "Frost Bullet Imbue",
+      "Frost Burst",
+      "Frost Kick",
+      "Frost Push",
+      "Frost Trap"
+    ],
+    "duration": "90 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Move Speed",
+        "value": -25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-25% Movement Speed",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Slow_Down",
+    "icon_local": "assets/images/effects/effect_Slow_Down.png"
+  },
+  {
+    "name": "Sparkling Water (Effect)",
+    "description": "===Effects=== * +0.75 Stamina per second * +10 Hot Weather defense",
+    "icon_url": "https://outward.wiki.gg/images/Sparkling_Water_%28Effect%29.png?5b9ba6",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": 0.75,
+        "unit": "per_sec"
+      }
+    ],
+    "effects_raw": "+0.75 Stamina per second +10 Hot Weather defense",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sparkling_Water_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Sparkling_Water_Effect_.png"
+  },
+  {
+    "name": "Speed Up",
+    "description": "* +15% Movement Speed",
+    "icon_url": "https://outward.wiki.gg/images/Speed_Up.png?3fdc59",
+    "icon_file": "SpeedUp.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Assassin Elixir",
+      "Cooked Jewel Meat",
+      "Diadème de Gibier",
+      "Marathon Potion",
+      "Purpkin Pie",
+      "Raw Jewel Meat"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Move Speed",
+        "value": 15.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+15% Movement Speed",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Speed_Up",
+    "icon_local": "assets/images/effects/effect_Speed_Up.png"
+  },
+  {
+    "name": "Stamina Recovery",
+    "description": "{| class=\"wikitable\" |- ! Recovery Level !! Recovery Rate |- | 1 || Recover 0.4 Stamina per second. |- | 2 || Recover 0.6 Stamina per second. |- | 3 || Recover 0.8 Stamina per second. |- | 4 || Recover 1 Stamina per second. |- | 5 || Recover 1.2 Stamina per second. |}",
+    "icon_url": "https://outward.wiki.gg/images/Stamina_Recovery.png?687c06",
+    "icon_file": "StaminaRecovery.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "Edit section: Obtained From",
+      "Ambraine",
+      "Bagatelle",
+      "Diadème de Gibier",
+      "Great Endurance Potion",
+      "Marshmelon Jelly",
+      "Marshmelon Tartine",
+      "Saved by stranger with ambraine",
+      "Boiled Purpkin",
+      "Bouillon du Predateur",
+      "Marshmelon",
+      "Spiny Meringue",
+      "Vagabond&#39;s Gelatin",
+      "Vagabond&#39;s Tartine",
+      "Angel Food Cake",
+      "Battered Maize",
+      "Cactus Pie",
+      "Crawlberry Jam",
+      "Crawlberry Tartine",
+      "Endurance Potion",
+      "Fresh Cream",
+      "Frosted Delight",
+      "Grilled Marshmelon",
+      "Luxe Lichette",
+      "Miner&#39;s Omelet"
+    ],
+    "duration": "900 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "+0.4 to 1.2 Stamina per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Stamina_Recovery",
+    "icon_local": "assets/images/effects/effect_Stamina_Recovery.png"
+  },
+  {
+    "name": "Status Build up Resistance Down",
+    "description": "* -30% Status Resistance for 120 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Status_Build_up_Resistance_Down.png?198bfd",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "Attacked by dweller",
+      "Sulphur Potion",
+      "Panacea"
+    ],
+    "duration": "120 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "statusResist",
+        "value": -30.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-30% Status Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Status_Build_up_Resistance_Down",
+    "icon_local": "assets/images/effects/effect_Status_Build_up_Resistance_Down.png"
+  },
+  {
+    "name": "Status Build up Resistance Up",
+    "description": "* +75% Status Resistance for 60 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Status_Build_up_Resistance_Up.png?82108c",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Bracing Potion",
+      "Hex Cleaner"
+    ],
+    "duration": "60 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "statusResist",
+        "value": 75.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+75% Status Resistance",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Status_Build_up_Resistance_Up",
+    "icon_local": "assets/images/effects/effect_Status_Build_up_Resistance_Up.png"
+  },
+  {
+    "name": "Stealth Up",
+    "description": "+25% Stealth",
+    "icon_url": "https://outward.wiki.gg/images/Stealth_Up.png?89c8ea",
+    "icon_file": "StealthUp.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Buff",
+    "sources": [
+      "Assassin Elixir",
+      "Battered Maize",
+      "Bread Of The Wild",
+      "Grilled Woolshroom",
+      "Stealth Potion",
+      "Stringy Salad",
+      "Woolshroom"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stealth",
+        "value": 25.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+25% Stealth",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Stealth_Up",
+    "icon_local": "assets/images/effects/effect_Stealth_Up.png"
+  },
+  {
+    "name": "Sulphur Poisoning",
+    "description": "* Deals 1 Decay damage per second.",
+    "icon_url": "https://outward.wiki.gg/images/Poisoned.png?9c48cd",
+    "icon_file": "Poisoned.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "DoT",
+    "sources": [
+      "Sulphuric Caverns",
+      "Antidote",
+      "Fungal Cleanser",
+      "Panacea"
+    ],
+    "duration": "20 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Decay_dot",
+        "value": 1.0,
+        "unit": "dps"
+      }
+    ],
+    "effects_raw": "1 damage per second",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Sulphur_Poisoning",
+    "icon_local": "assets/images/effects/effect_Sulphur_Poisoning.png"
+  },
+  {
+    "name": "Tainted",
+    "description": "===Effect=== * Hunger increases 100% faster * -25% Lightning damage resistance",
+    "icon_url": "https://outward.wiki.gg/images/Tainted.png?1a3b09",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "mixed",
+    "effect_type_raw": "Corruption",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Hunger rate +100% Lightning Resistance -25%",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Tainted",
+    "icon_local": "assets/images/effects/effect_Tainted.png"
+  },
+  {
+    "name": "The Hunch",
+    "description": "====== * -15% Physical damage bonus ===Acute Hunch=== * -15% Physical damage bonus * -15% Physical resistance",
+    "icon_url": "https://outward.wiki.gg/images/The_Hunch_1.png?c7d9a3",
+    "icon_file": "PAGENAME 1.png",
+    "effect_type": "disease",
+    "effect_type_raw": "Disease",
+    "sources": [
+      "Escaped with the Hunch",
+      "Fallen into the Ancient Hive",
+      "Feasted on by Hive larvae",
+      "Pounced on by Myrmitaur",
+      "Used in Troglodyte ritual",
+      "Fungal Cleanser",
+      "Hex Cleaner",
+      "Panacea"
+    ],
+    "duration": "permanent",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Physical damage bonus -15% Physical resistance bonus 0 to -15%",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/The_Hunch",
+    "icon_local": "assets/images/effects/effect_The_Hunch.png"
+  },
+  {
+    "name": "Unerring Read (Effect)",
+    "description": "* Cancels the next hit received in the next 20 seconds",
+    "icon_url": "https://outward.wiki.gg/images/Unerring_Read_%28Effect%29.png?66affc",
+    "icon_file": "Unerring Read (Effect).png",
+    "effect_type": "buff",
+    "effect_type_raw": "Other Positive",
+    "sources": [
+      "Unerring Read"
+    ],
+    "duration": "20 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "Cancels the next hit received in the next 20 seconds",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Unerring_Read_%28Effect%29",
+    "icon_local": "assets/images/effects/effect_Unerring_Read_Effect_.png"
+  },
+  {
+    "name": "Warm",
+    "description": "*+20% Fire damage bonus *+20% Fire resistance * +8 Cold Weather Defense === Amplified Effect === * Requires Shamanic Resonance *+30% Fire damage bonus *+30% Fire resistance * +16 Cold Weather Defense",
+    "icon_url": "https://outward.wiki.gg/images/Warm.png?fe0e9f",
+    "icon_file": "Warm.png",
+    "effect_type": "blessing",
+    "effect_type_raw": "Boon",
+    "sources": [
+      "Bread Of The Wild",
+      "Call to Elements",
+      "Cooked Torcrab Egg",
+      "Mace Infusion",
+      "Rescued by Ash Giants",
+      "Seared Root",
+      "Smoke Root",
+      "Warm (skill)",
+      "Warm Boozu&#39;s Milk",
+      "Warm Potion",
+      "Infuse Fire"
+    ],
+    "duration": "240 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Fire",
+        "value": 20.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "+20% Fire damage +20% Fire resistance +8 Cold Weather Defense",
+    "amplified_effects": "+30% Fire damage +30% Fire resistance +16 Cold Weather Defense",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Warm",
+    "icon_local": "assets/images/effects/effect_Warm.png"
+  },
+  {
+    "name": "Water Effect",
+    "description": "+0.3 Stamina per second +10 Hot Weather Def",
+    "icon_url": "https://outward.wiki.gg/images/Water_Effect.png?d141da",
+    "icon_file": "WaterEffect.png",
+    "effect_type": "buff",
+    "effect_type_raw": "Vital",
+    "sources": [
+      "Edit section: Obtained From",
+      "Clean Water",
+      "Rancid Water",
+      "River Water",
+      "Salt Water"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "Stamina",
+        "value": 0.3,
+        "unit": "per_sec"
+      },
+      {
+        "stat": "Temperature#Weather_Defense_Attributes",
+        "value": 10.0,
+        "unit": "per_sec"
+      }
+    ],
+    "effects_raw": "+0.3 Stamina per second +10 Hot Weather Def",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Water_Effect",
+    "icon_local": "assets/images/effects/effect_Water_Effect.png"
+  },
+  {
+    "name": "Weaken",
+    "description": "===Effects=== * -40% Physical damage dealt * -40% Impact damage dealt",
+    "icon_url": "https://outward.wiki.gg/images/Weaken.png?737745",
+    "icon_file": "PAGENAME.png",
+    "effect_type": "debuff",
+    "effect_type_raw": "Debuff",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "60 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [
+      {
+        "stat": "phys",
+        "value": -40.0,
+        "unit": "%"
+      },
+      {
+        "stat": "impact",
+        "value": -40.0,
+        "unit": "%"
+      }
+    ],
+    "effects_raw": "-40% Physical damage dealt -40% Impact damage dealt",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Weaken",
+    "icon_local": "assets/images/effects/effect_Weaken.png"
+  },
+  {
+    "name": "Weather Defense",
+    "description": "* +20 Hot Weather Def * +20 Cold Weather Def * +10 Decay resist",
+    "icon_url": "https://outward.wiki.gg/images/WeatherDefUp.png?d957f1",
+    "icon_file": "WeatherDefUp.png",
+    "effect_type": "environment",
+    "effect_type_raw": "Weather",
+    "sources": [
+      "Saved by Adalbert the Hermit",
+      "Survivor Elixir",
+      "Vagabond&#39;s Gelatin",
+      "Vagabond&#39;s Tartine",
+      "Weather Defense Potion"
+    ],
+    "duration": "600 seconds",
+    "stackable": true,
+    "max_stacks": 99,
+    "stat_modifiers": [
+      {
+        "stat": "Temperature#Weather_Defense_Attributes",
+        "value": 20.0,
+        "unit": "flat"
+      }
+    ],
+    "effects_raw": "+20 Hot Weather Def +20 Cold Weather Def +10 Decay resist",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Weather_Defense",
+    "icon_local": "assets/images/effects/effect_Weather_Defense.png"
+  },
+  {
+    "name": "Wet",
+    "description": "-2 Cold Weather Def -25 Frost Resist +25 Fire resist",
+    "icon_url": "https://outward.wiki.gg/images/Wet.png?ee45d6",
+    "icon_file": "Weticon.png",
+    "effect_type": "environment",
+    "effect_type_raw": "Weather",
+    "sources": [
+      "environment",
+      "combat"
+    ],
+    "duration": "8 Seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "-2 Cold Weather Def -25 Frost Resist +25 Fire resist",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Wet",
+    "icon_local": "assets/images/effects/effect_Wet.png"
+  },
+  {
+    "name": "Wind Imbue",
+    "description": "1.2x Attack Speed 1.5x Weapon Impact damage 2.0x Stamina Burn rate",
+    "icon_url": "https://outward.wiki.gg/images/WindImbue.PNG?ae2aaf",
+    "icon_file": "WindImbue.PNG",
+    "effect_type": "passive",
+    "effect_type_raw": "Imbue",
+    "sources": [
+      "Infuse Wind"
+    ],
+    "duration": "180 seconds",
+    "stackable": false,
+    "max_stacks": 1,
+    "stat_modifiers": [],
+    "effects_raw": "1.2x Attack Speed 1.5x Weapon Impact damage 2.0x Stamina Burn rate",
+    "amplified_effects": "",
+    "synergizes_with": [],
+    "conflicts_with": [],
+    "source_url": "https://outward.wiki.gg/wiki/Wind_Imbue",
+    "icon_local": "assets/images/effects/effect_Wind_Imbue.png"
+  }
+]

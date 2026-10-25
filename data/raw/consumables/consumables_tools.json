@@ -1,0 +1,50 @@
+{
+  "type": "tool",
+  "count": 1,
+  "items": [
+    {
+      "name": "Bandages",
+      "source_url": "https://outward.wiki.gg/wiki/Bandages",
+      "consumable_type": "tool",
+      "description": "Band of thick Linen Cloth used to stop a bleeding wound and recover a bit of health.",
+      "effects": [
+        {
+          "effect_type": "restore_health",
+          "value": 15,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Linen Cloth",
+            "quantity": 1
+          },
+          {
+            "item": "Linen Cloth",
+            "quantity": 1
+          }
+        ],
+        "station": "crafting_menu",
+        "output_count": 1
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 3,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Bandages.png?911ce6",
+      "image_file": "Bandages.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/tool_Bandages.png"
+    }
+  ]
+}

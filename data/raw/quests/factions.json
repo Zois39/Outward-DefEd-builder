@@ -1,0 +1,162 @@
+[
+  {
+    "id": "blue_chamber_collective",
+    "name": "The Blue Chamber Collective",
+    "description": "The Blue Chamberis formed of smaller clans that mostly try to keep to themselves. The collective is the most powerful political association in Aurai. Though separated in clans, the one value they all share is the importance of family.",
+    "lore": "The Blue Chamber Collective has been the most stable power in Aurai for a great many years.  The overwhelming majority of tribes on the continent claim membership, although the degree to which they participate varies wildly.",
+    "image_url": "https://outward.wiki.gg/images/thumb/Blue_Chamber_Banner.png/150px-Blue_Chamber_Banner.png?c32434",
+    "headquarters": "Berg",
+    "locations": [
+      "Chersonese",
+      "Enmerkar Forest"
+    ],
+    "key_npcs": [
+      "Cyril Turnbull",
+      "Rissa Aberdeen",
+      "Sagard Battleborn",
+      "Gabriella Sullivan"
+    ],
+    "unique_quests": [
+      "Mixed Legacies",
+      "Ash Giants",
+      "Whispering Bones",
+      "Ancestral Peacemaker"
+    ],
+    "unique_rewards": {
+      "skills": [
+        "Ancestors' Memories",
+        "Blood of Giants",
+        "Infuse Blood"
+      ],
+      "items": [
+        "Crimson Plate Set",
+        "Lantern of Souls"
+      ],
+      "other": []
+    },
+    "mutually_exclusive_with": [
+      "The Heroic Kingdom of Levant",
+      "The Holy Mission of Elatt",
+      "Sorobor Academy"
+    ],
+    "faction_exclusive": true,
+    "source_url": "https://outward.wiki.gg/wiki/The_Blue_Chamber_Collective"
+  },
+  {
+    "id": "heroic_kingdom_of_levant",
+    "name": "The Heroic Kingdom of Levant",
+    "description": "The Heroic Kingdom of Levantis a new power that has split off from theBlue Chamber'sways by promising to liberate the population from the harsh obligations of their current lives by creating a new utopia.",
+    "lore": "After the Scourge struckAurai, theAbrassarregion swiftly turned into an inhospitable desert and was overrun by the Beasts of the Scourge.  Worst of all, it was beset by a truly enormous Scourge Beast, theDevourer, that forced the residents of Abrassar to flee for their lives.\nMany years later, a mercenary couple,King SimeonandQueen Calixa, led an army into the Abrassar Desert and purged it of the Scourge, managing to do the impossible and slay the huge Beast.\nThe bounty they reaped for their deeds was enough to found a kingdom.  So, under the advice of their dear friendKirouac, and with the blessing ofElattthat's exactly what they did.  They repurposed one of the ancient fortresses of theOld Levanttribes into a great walled city and set about trying to bring about their vision of a utopia.\nThe Heroic Kingdom of Levant operates outside of the Blue Chamber's authority, and does not recognize the usual tenets of Tribal Law, opting instead for a much more individualistic approach.  Rather than focus on the survival of the group, Levant champions the ideals of progress and personal freedom, believing that if everyone gets the chance to chase their dreams, everyone will eventually benefit.\nLevanthas a standing army that answers to the Royal Family, but also employs many mercenary bands, relying on them to do most of the work to keep the region safe from the many dangerous animals and bandits that make Abrassar their home.\nIn recent times, the Heroic Kingdom has begun to suffer an overpopulation problem as people flock to the city, eager for a new start.  A rugged slum has cropped up in the ruined district to the south of the city as a result.",
+    "image_url": "https://outward.wiki.gg/images/thumb/Heroic_Kingdom_Banner.png/150px-Heroic_Kingdom_Banner.png?e1effc",
+    "headquarters": "Levant",
+    "locations": [
+      "Abrassar"
+    ],
+    "key_npcs": [
+      "Yzan Argenson",
+      "Kirouac",
+      "Cyrene"
+    ],
+    "unique_quests": [
+      "Tending the Flame",
+      "Sand Corsairs",
+      "Mouths to Feed",
+      "Heroic Peacemaker"
+    ],
+    "unique_rewards": {
+      "skills": [
+        "Alchemical Experiment",
+        "Kirouac's Breakthrough"
+      ],
+      "items": [
+        "Royal Great-Khopesh(can also be obtained byHoly Mission)",
+        "Zagis' Saw",
+        "Zagis' Set"
+      ],
+      "other": []
+    },
+    "mutually_exclusive_with": [
+      "The Blue Chamber Collective",
+      "The Holy Mission of Elatt",
+      "Sorobor Academy"
+    ],
+    "faction_exclusive": true,
+    "source_url": "https://outward.wiki.gg/wiki/The_Heroic_Kingdom_of_Levant"
+  },
+  {
+    "id": "holy_mission_of_elatt",
+    "name": "The Holy Mission of Elatt",
+    "description": "The Holy Mission of Elattis a religious power that promotes the importance of achieving your utmost potential in order to better protect and serve your loved ones.",
+    "lore": "The Holy Mission began as theTribe Without Namein the town ofMonsoon, under the guidance of a Philosopher and Mage namedElatt.\nThen came the Scourge, whose beasts rampaged acrossAurai, even attacking the very town of Monsoon.\nHowever, not long later, burning javelins of light rained from the sky above theHallowed Marshand drove the beasts to flee.  Elatt revealed that he had found a way to transcend his mortal flesh and become a \"Living Thought\".  He imbued his followers with pieces of his essence and sent them to defend Aurai's people from the Scourge.\nNow, they play the role of peacekeepers and arbitrators, generally well respected across Aurai.",
+    "image_url": "https://outward.wiki.gg/images/thumb/Holy_Mission_Banner.png/150px-Holy_Mission_Banner.png?450cbe",
+    "headquarters": "Monsoon",
+    "locations": [
+      "Hallowed Marsh"
+    ],
+    "key_npcs": [
+      "Cardinal Bourlamaque",
+      "Oliele Aberdeen"
+    ],
+    "unique_quests": [
+      "Questions and Corruption",
+      "Doubts and Secrets",
+      "Truth and Purpose",
+      "Hallowed Peacemaker"
+    ],
+    "unique_rewards": {
+      "skills": [
+        "Acceptance",
+        "Infuse Light",
+        "Purified",
+        "Spiritual Communion,Sanctified AssistanceorDivine Assistance",
+        "Sanctified Protection",
+        "Exalted",
+        "Elatt's Intervention"
+      ],
+      "items": [
+        "Candle Plate Set",
+        "Radiant Wolf Sword",
+        "Royal Great-Khopesh(can also be obtained byHeroic Kingdom)"
+      ],
+      "other": []
+    },
+    "mutually_exclusive_with": [
+      "The Blue Chamber Collective",
+      "The Heroic Kingdom of Levant",
+      "Sorobor Academy"
+    ],
+    "faction_exclusive": true,
+    "source_url": "https://outward.wiki.gg/wiki/The_Holy_Mission_of_Elatt"
+  },
+  {
+    "id": "sorobor_academy",
+    "name": "Sorobor Academy",
+    "description": "The Sorobor Academy are a very powerful institution, they are the highest authority in academic knowledge throughout the land. They are also deeply involved in commerce, using information as a key resource in their expansion.",
+    "lore": "There was aLore Lettershared prior to the game's release which describes the Sorobor Academy, written byHelen Turnbulland addressed toEto Akiyuki.\n• Lore Letter 3: Helen Turnbull",
+    "image_url": "https://outward.wiki.gg/images/thumb/Sorobor_Academy_Banner.png/150px-Sorobor_Academy_Banner.png?c16353",
+    "headquarters": "Harmattan",
+    "locations": [
+      "Antique Plateau"
+    ],
+    "key_npcs": [],
+    "unique_quests": [],
+    "unique_rewards": {
+      "skills": [
+        "Logistics Expert",
+        "Preferential Treatment, ORLockwell's private potion stock, OR reduce the buy-price of items in theHarmattanmarket (seePurifier)",
+        "Infuse Mana"
+      ],
+      "items": [
+        "Tsar BoworTsar Chakram"
+      ],
+      "other": []
+    },
+    "mutually_exclusive_with": [
+      "The Blue Chamber Collective",
+      "The Heroic Kingdom of Levant",
+      "The Holy Mission of Elatt"
+    ],
+    "faction_exclusive": true,
+    "source_url": "https://outward.wiki.gg/wiki/Sorobor_Academy"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Physical",
+    "type": "physical",
+    "description": "Physical damage is associated with weapons and weapon skills, as well as most enemies.",
+    "resistance_stat": "physical_resistance",
+    "protection_applies": true,
+    "barrier_applies": false,
+    "icon_url": "https://outward.wiki.gg/images/Phys.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Physical"
+  },
+  {
+    "name": "Ethereal",
+    "type": "elemental",
+    "description": "Ethereal is associated with ethereal magic, spiritual enemies, and the immaterial.",
+    "resistance_stat": "ethereal_resistance",
+    "protection_applies": false,
+    "barrier_applies": true,
+    "icon_url": "https://outward.wiki.gg/images/Ethereal.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Ethereal"
+  },
+  {
+    "name": "Decay",
+    "type": "elemental",
+    "description": "Decay is associated with Poison, decay magic, and death/darkness.",
+    "resistance_stat": "decay_resistance",
+    "protection_applies": false,
+    "barrier_applies": true,
+    "icon_url": "https://outward.wiki.gg/images/Decay.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Decay"
+  },
+  {
+    "name": "Lightning",
+    "type": "elemental",
+    "description": "Lightning is associated with lightning magic and light.",
+    "resistance_stat": "lightning_resistance",
+    "protection_applies": false,
+    "barrier_applies": true,
+    "icon_url": "https://outward.wiki.gg/images/Lightning.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Lightning"
+  },
+  {
+    "name": "Frost",
+    "type": "elemental",
+    "description": "Frost is associated with frost magic and natural ice.",
+    "resistance_stat": "frost_resistance",
+    "protection_applies": false,
+    "barrier_applies": true,
+    "icon_url": "https://outward.wiki.gg/images/Frost.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Frost"
+  },
+  {
+    "name": "Fire",
+    "type": "elemental",
+    "description": "Fire is associated with fire magic and natural fire.",
+    "resistance_stat": "fire_resistance",
+    "protection_applies": false,
+    "barrier_applies": true,
+    "icon_url": "https://outward.wiki.gg/images/Fire.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Fire"
+  },
+  {
+    "name": "Raw",
+    "type": "raw",
+    "description": "Raw damage, sometimes called 'true' damage. Cannot be resisted or boosted with any type-specific buffs or elemental buffs.",
+    "resistance_stat": null,
+    "protection_applies": false,
+    "barrier_applies": false,
+    "icon_url": null,
+    "wiki_url": "https://outward.wiki.gg/wiki/Elements/Raw"
+  }
+]

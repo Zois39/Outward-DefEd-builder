@@ -1,0 +1,2493 @@
+{
+  "count": 135,
+  "recipes": [
+    {
+      "result": "Able Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Ableroot",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Alertness Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Nightmare Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Stingleaf",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Angel Food Cake",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Flour",
+          "quantity": 1
+        },
+        {
+          "item": "Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Antidote",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Common Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Iron Scrap",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        }
+      ],
+      "station": "crafting_menu",
+      "output_count": 3
+    },
+    {
+      "result": "Astral Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Star Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Turmmip",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Astral Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Shark Cartilage",
+          "quantity": 1
+        },
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Astral Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Mantis Granite",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberries",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Bagatelle",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Crawlberry Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Crawlberry Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        },
+        {
+          "item": "Fresh Cream",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Baked Crescent",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Bandages",
+      "result_type": "tool",
+      "ingredients": [
+        {
+          "item": "Linen Cloth",
+          "quantity": 1
+        },
+        {
+          "item": "Linen Cloth",
+          "quantity": 1
+        }
+      ],
+      "station": "crafting_menu",
+      "output_count": 1
+    },
+    {
+      "result": "Barrier Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Peach Seeds",
+          "quantity": 1
+        },
+        {
+          "item": "Crysocolla Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Battered Maize",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Maize",
+          "quantity": 1
+        },
+        {
+          "item": "Torcrab Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Bitter Spicy Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Ochre Spice Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Blazing Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Bomb Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Obsidian Shard",
+          "quantity": 1
+        },
+        {
+          "item": "Oil Bomb",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Blessed Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Firefly Powder",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Boiled Azure Shrimp",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Azure Shrimp",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Boiled Cactus Fruit",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Cactus Fruit",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Boiled Crawlberry",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Crawlberry",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Boiled Dreamer's Root",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Dreamer's Root",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Boiled Gaberries",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Gaberries",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Boiled Purpkin",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Purpkin",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Boiled Veaber Egg",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Veaber's Egg",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Bolt Varnish",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Firefly Powder",
+          "quantity": 1
+        },
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Bracing Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Ableroot",
+          "quantity": 1
+        },
+        {
+          "item": "Ableroot",
+          "quantity": 1
+        },
+        {
+          "item": "Peach Seeds",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Bread",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Flour",
+          "quantity": 1
+        },
+        {
+          "item": "Clean Water",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Bullet",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Iron Scrap",
+          "quantity": 1
+        },
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        }
+      ],
+      "station": "crafting_menu",
+      "output_count": 3
+    },
+    {
+      "result": "Charge – Nerve Gas",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Blood Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Livweedi",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Cheese Cake",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Fresh Cream",
+          "quantity": 1
+        },
+        {
+          "item": "Fresh Cream",
+          "quantity": 1
+        },
+        {
+          "item": "Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Cierzo Ceviche",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Raw Rainbow Trout",
+          "quantity": 1
+        },
+        {
+          "item": "Seaweed",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Cipate",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Boozu's Meat",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        },
+        {
+          "item": "Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Flour",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Clean Water",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Cooked Alpha Meat",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Raw Alpha Meat",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Cooked Boozu's Meat",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Boozu's Meat",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Cooked Meat",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Raw Meat",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Cooked Torcrab Egg",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Torcrab Egg",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Cool Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Gravel Beetle",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Cool Rainbow Jam",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Rainbow Peach",
+          "quantity": 1
+        },
+        {
+          "item": "Rainbow Peach",
+          "quantity": 1
+        },
+        {
+          "item": "Frosted Powder",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Crawlberry Jam",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Crawlberry",
+          "quantity": 1
+        },
+        {
+          "item": "Crawlberry",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Crawlberry Tartine",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Bread",
+          "quantity": 1
+        },
+        {
+          "item": "Crawlberry Jam",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Crystal Powder",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        },
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        },
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        },
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Cured Pypherfish",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Vegetable",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Pypherfish",
+          "quantity": 1
+        },
+        {
+          "item": "Peach Seeds",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Dark Varnish",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        },
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        },
+        {
+          "item": "Grilled Crabeye Seed",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Discipline Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Ochre Spice Beetle",
+          "quantity": 1
+        },
+        {
+          "item": "Livweedi",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Elemental Immunity Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        },
+        {
+          "item": "Azure Shrimp",
+          "quantity": 1
+        },
+        {
+          "item": "Firefly Powder",
+          "quantity": 1
+        },
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Elemental Resistance Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Smoke Root",
+          "quantity": 1
+        },
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        },
+        {
+          "item": "Crystal Powder",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Endurance Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Krimp Nut",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Endurance Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        },
+        {
+          "item": "Turmmip",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Endurance Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Assassin Tongue",
+          "quantity": 1
+        },
+        {
+          "item": "Cactus Fruit",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Energizing Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Leyline Water",
+          "quantity": 1
+        },
+        {
+          "item": "Crystal Powder",
+          "quantity": 1
+        },
+        {
+          "item": "Stingleaf",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Fire Varnish",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Seared Root",
+          "quantity": 1
+        },
+        {
+          "item": "Fire Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Flaming Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 5
+    },
+    {
+      "result": "Flaming Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Bomb Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Boreo Blubber",
+          "quantity": 1
+        },
+        {
+          "item": "Charge – Incendiary",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Fragment Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Sulphuric Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Iron Scrap",
+          "quantity": 1
+        },
+        {
+          "item": "Iron Scrap",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Fresh Cream",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        },
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        },
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        },
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Frost Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Bomb Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Chalcedony",
+          "quantity": 1
+        },
+        {
+          "item": "Sulphuric Mushroom",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Frosted Crescent",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        },
+        {
+          "item": "Frosted Powder",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Frosted Delight",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        },
+        {
+          "item": "Cool Rainbow Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Frosted Powder",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Frosted Maize",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Maize",
+          "quantity": 1
+        },
+        {
+          "item": "Frosted Powder",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Gaberry Jam",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Gaberries",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberries",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberries",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberries",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 1
+    },
+    {
+      "result": "Gaberry Tartine",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Bread",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberry Jam",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Golden Jam",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        },
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        },
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        },
+        {
+          "item": "Golden Crescent",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Golden Tartine",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Golden Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Bread",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Greasy Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Crysocolla Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Great Endurance Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Krimp Nut",
+          "quantity": 1
+        },
+        {
+          "item": "Endurance Potion",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Great Endurance Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Obsidian Shard",
+          "quantity": 1
+        },
+        {
+          "item": "Common Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Eel",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Antique Eel",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Manaheart Bass",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Manaheart Bass",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Marshmelon",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Marshmelon",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Mushroom",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Common Mushroom",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Nightmare Mushroom",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Nightmare Mushroom",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Pypherfish",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Pypherfish",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Torcrab Meat",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Raw Torcrab Meat",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Grilled Woolshroom",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Woolshroom",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Hex Cleaner",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Greasy Fern",
+          "quantity": 1
+        },
+        {
+          "item": "Livweedi",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Holy Rage Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Gold-Lich Mechanism",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Horror's Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Life Potion",
+          "quantity": 1
+        },
+        {
+          "item": "Seaweed",
+          "quantity": 1
+        },
+        {
+          "item": "Rancid Water",
+          "quantity": 1
+        },
+        {
+          "item": "Liquid Corruption",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Ice Rag",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Linen Cloth",
+          "quantity": 1
+        },
+        {
+          "item": "Seaweed",
+          "quantity": 1
+        }
+      ],
+      "station": "crafting_menu",
+      "output_count": 1
+    },
+    {
+      "result": "Ice Varnish",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Livweedi",
+          "quantity": 1
+        },
+        {
+          "item": "Cold Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Iced Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Funnel Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Illuminating Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Leyline Water",
+          "quantity": 1
+        },
+        {
+          "item": "Nightmare Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Liquid Corruption",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Innocence Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        },
+        {
+          "item": "Purifying Quartz",
+          "quantity": 1
+        },
+        {
+          "item": "Dark Stone",
+          "quantity": 1
+        },
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Invigorating Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        },
+        {
+          "item": "Dreamer's Root",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Life Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Gravel Beetle",
+          "quantity": 1
+        },
+        {
+          "item": "Blood Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Life Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Coralhorn Antler",
+          "quantity": 1
+        },
+        {
+          "item": "Woolshroom",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Life Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Phytosaur Horn",
+          "quantity": 1
+        },
+        {
+          "item": "Marshmelon",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 1
+    },
+    {
+      "result": "Luxe Lichette",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Larva Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Azure Shrimp",
+          "quantity": 1
+        },
+        {
+          "item": "Raw Rainbow Trout",
+          "quantity": 1
+        },
+        {
+          "item": "Seaweed",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Maize Mash",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Meat",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Maize",
+          "quantity": 1
+        },
+        {
+          "item": "Torcrab Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Torcrab Egg",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Mana Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Ghost's Eye",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 5
+    },
+    {
+      "result": "Mana Belly Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Pypherfish",
+          "quantity": 1
+        },
+        {
+          "item": "Funnel Beetle",
+          "quantity": 1
+        },
+        {
+          "item": "Hexa Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Marathon Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Crysocolla Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Marshmelon Jelly",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Marshmelon",
+          "quantity": 1
+        },
+        {
+          "item": "Marshmelon",
+          "quantity": 1
+        },
+        {
+          "item": "Marshmelon",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberry Jam",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Marshmelon Tartine",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Marshmelon Jelly",
+          "quantity": 1
+        },
+        {
+          "item": "Bread (Any)",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Meat Stew",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Meat",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Vegetable",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Mineral Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Gravel Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 1
+    },
+    {
+      "result": "Mist Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Ghost's Eye",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 3
+    },
+    {
+      "result": "Needle Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Cactus Fruit",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 1
+    },
+    {
+      "result": "Nerve Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Bomb Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Ambraine",
+          "quantity": 1
+        },
+        {
+          "item": "Charge – Nerve Gas",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Oil Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Sulphuric Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        },
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Palladium Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Palladium Scrap",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 5
+    },
+    {
+      "result": "Panacea",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Sulphuric Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Ableroot",
+          "quantity": 1
+        },
+        {
+          "item": "Peach Seeds",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Poison Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Grilled Crabeye Seed",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 5
+    },
+    {
+      "result": "Poison Rag",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Linen Cloth",
+          "quantity": 1
+        },
+        {
+          "item": "Grilled Crabeye Seed",
+          "quantity": 1
+        }
+      ],
+      "station": "crafting_menu",
+      "output_count": 1
+    },
+    {
+      "result": "Poison Varnish",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        },
+        {
+          "item": "Miasmapod",
+          "quantity": 1
+        },
+        {
+          "item": "Grilled Crabeye Seed",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Popped Maize",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Maize",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 3
+    },
+    {
+      "result": "Possessed Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy_kit",
+      "output_count": 3
+    },
+    {
+      "result": "Pouding Chomeur",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Flour",
+          "quantity": 1
+        },
+        {
+          "item": "Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        },
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Purity Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Sanctifier Potion",
+          "quantity": 1
+        },
+        {
+          "item": "Elemental Particle",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Purpkin Pie",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Purpkin",
+          "quantity": 1
+        },
+        {
+          "item": "Flour",
+          "quantity": 1
+        },
+        {
+          "item": "Veaber's Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Sugar",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Quartz Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Boozu's Hide",
+          "quantity": 1
+        },
+        {
+          "item": "Dreamer's Root",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Rage Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Smoke Root",
+          "quantity": 1
+        },
+        {
+          "item": "Gravel Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Rainbow Tartine",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Cool Rainbow Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Bread",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Sanctifier Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Leyline Water",
+          "quantity": 1
+        },
+        {
+          "item": "Purifying Quartz",
+          "quantity": 1
+        },
+        {
+          "item": "Dreamer's Root",
+          "quantity": 1
+        },
+        {
+          "item": "Occult Remains",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Seared Root",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Smoke Root",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Shimmer Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Peach Seeds",
+          "quantity": 1
+        },
+        {
+          "item": "Peach Seeds",
+          "quantity": 1
+        },
+        {
+          "item": "Crysocolla Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Soothing Tea",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Seaweed",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 1
+    },
+    {
+      "result": "Soul Rupture Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Hexa Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Spark Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Bomb Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Calygrey Hairs",
+          "quantity": 1
+        },
+        {
+          "item": "Sulphuric Mushroom",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Spiked Alertness Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Alertness Potion",
+          "quantity": 1
+        },
+        {
+          "item": "Stingleaf",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Spiny Meringue",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Cactus Fruit",
+          "quantity": 1
+        },
+        {
+          "item": "Cactus Fruit",
+          "quantity": 1
+        },
+        {
+          "item": "Egg",
+          "quantity": 1
+        },
+        {
+          "item": "Larva Egg",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Spiritual Varnish",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Gaberry Wine",
+          "quantity": 1
+        },
+        {
+          "item": "Ghost's Eye",
+          "quantity": 1
+        },
+        {
+          "item": "Mana Stone",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Stability Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Insect Husk",
+          "quantity": 1
+        },
+        {
+          "item": "Livweedi",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Stealth Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Woolshroom",
+          "quantity": 1
+        },
+        {
+          "item": "Ghost's Eye",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 3
+    },
+    {
+      "result": "Sulphur Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Sulphuric Mushroom",
+          "quantity": 1
+        },
+        {
+          "item": "Crysocolla Beetle",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Torcrab Jerky",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Raw Torcrab Meat",
+          "quantity": 1
+        },
+        {
+          "item": "Raw Torcrab Meat",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Torcrab Sandwich",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Salt",
+          "quantity": 1
+        },
+        {
+          "item": "Bread",
+          "quantity": 1
+        },
+        {
+          "item": "Raw Torcrab Meat",
+          "quantity": 1
+        },
+        {
+          "item": "Raw Torcrab Meat",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Toxin Bomb",
+      "result_type": "special",
+      "ingredients": [
+        {
+          "item": "Bomb Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Miasmapod",
+          "quantity": 1
+        },
+        {
+          "item": "Charge – Toxic",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Travel Ration",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Ration Ingredient",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Ration Ingredient",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking_pot",
+      "output_count": 3
+    },
+    {
+      "result": "Travel Ration",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Ration Ingredient",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Ration Ingredient",
+          "quantity": 1,
+          "is_category": true
+        },
+        {
+          "item": "Salt",
+          "quantity": 1
+        }
+      ],
+      "station": "crafting_menu",
+      "output_count": 1
+    },
+    {
+      "result": "Vagabond's Gelatin",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Cool Rainbow Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Golden Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Gaberry Jam",
+          "quantity": 1
+        },
+        {
+          "item": "Marshmelon Jelly",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 1
+    },
+    {
+      "result": "Vagabond's Tartine",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Vagabond's Gelatin",
+          "quantity": 1
+        },
+        {
+          "item": "Bread",
+          "quantity": 1
+        }
+      ],
+      "station": "cooking",
+      "output_count": 3
+    },
+    {
+      "result": "Venom Arrow",
+      "result_type": "ammunition",
+      "ingredients": [
+        {
+          "item": "Arrowhead Kit",
+          "quantity": 1
+        },
+        {
+          "item": "Wood",
+          "quantity": 1
+        },
+        {
+          "item": "Miasmapod",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 5
+    },
+    {
+      "result": "Warm Boozu's Milk",
+      "result_type": "food",
+      "ingredients": [
+        {
+          "item": "Boozu's Milk",
+          "quantity": 1
+        }
+      ],
+      "station": "campfire",
+      "output_count": 1
+    },
+    {
+      "result": "Warm Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Thick Oil",
+          "quantity": 1
+        },
+        {
+          "item": "Water",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    },
+    {
+      "result": "Weather Defense Potion",
+      "result_type": "potion",
+      "ingredients": [
+        {
+          "item": "Water",
+          "quantity": 1
+        },
+        {
+          "item": "Greasy Fern",
+          "quantity": 1
+        },
+        {
+          "item": "Crystal Powder",
+          "quantity": 1
+        }
+      ],
+      "station": "alchemy",
+      "output_count": 1
+    }
+  ]
+}

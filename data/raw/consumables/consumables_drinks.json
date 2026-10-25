@@ -1,0 +1,40 @@
+{
+  "type": "drink",
+  "count": 1,
+  "items": [
+    {
+      "name": "Gaberry Wine",
+      "source_url": "https://outward.wiki.gg/wiki/Gaberry_Wine",
+      "consumable_type": "drink",
+      "description": "Alcoholic drink that makes one unstable on their feet, but reduces the mana cost of spells.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Gaberry Wine (effect)",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.5,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Gaberry_Wine.png?9185c7",
+      "image_file": "Gaberry Wine.png",
+      "compatible_weapons": null,
+      "local_image": "assets/images/consumables/drink_Gaberry_Wine.png"
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "type": "ammunition",
+  "count": 11,
+  "items": [
+    {
+      "name": "Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Arrow",
+      "consumable_type": "ammunition",
+      "description": "Standard arrow used with bows.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Damage",
+          "value": 15,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Iron Scrap",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          }
+        ],
+        "station": "crafting_menu",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 2,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Arrow.png?b80844",
+      "image_file": "Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Arrow.png"
+    },
+    {
+      "name": "Bullet",
+      "source_url": "https://outward.wiki.gg/wiki/Bullet",
+      "consumable_type": "ammunition",
+      "description": "Ammunition for pistols, crafted from iron and oil. Pistol skills often still require bullets.*",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Damage",
+          "value": 25,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Iron Scrap",
+            "quantity": 1
+          },
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          }
+        ],
+        "station": "crafting_menu",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 3,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Bullets.png?6ff046",
+      "image_file": "Bullets.png",
+      "compatible_weapons": [
+        "Pistol"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Bullets.png"
+    },
+    {
+      "name": "Explosive Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Explosive_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals high impact and damages an area around the target.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Fire Damage",
+          "value": 30,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 25,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Explosive_Arrow.png?f20a94",
+      "image_file": "Explosive Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Explosive_Arrow.png"
+    },
+    {
+      "name": "Flaming Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Flaming_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals Fire damage, and the Burning Status after a few hits.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Burning",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Thick Oil",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 5
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 3,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Flaming_Arrow.png?a0fb4e",
+      "image_file": "Flaming Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Flaming_Arrow.png"
+    },
+    {
+      "name": "Forged Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Forged_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals high Physical damage, but only 10 will fit in a quiver.",
+      "effects": [
+        {
+          "effect_type": "buff",
+          "name": "Physical Damage",
+          "value": 22,
+          "duration": 0
+        }
+      ],
+      "crafting_recipe": null,
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 15,
+      "requirements": null,
+      "source": [
+        "loot"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Forged_Arrow.png?5900af",
+      "image_file": "Forged Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Forged_Arrow.png"
+    },
+    {
+      "name": "Holy Rage Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Holy_Rage_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Cleanse the flames with this purifying arrow.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Holy Blaze",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Gold-Lich Mechanism",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 10,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Holy_Rage_Arrow.png?fef656",
+      "image_file": "Holy Rage Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Holy_Rage_Arrow.png"
+    },
+    {
+      "name": "Mana Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Mana_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals Ethereal damage, and the Haunt Hex after a few hits.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Haunted",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Ghost's Eye",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 5
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 5,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Mana_Arrow.png?35d99f",
+      "image_file": "Mana Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Mana_Arrow.png"
+    },
+    {
+      "name": "Palladium Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Palladium_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals Lightning damage, and the Doom Hex after a few hits.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Doomed",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Palladium Scrap",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 5
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 5,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Palladium_Arrow.png?e29fe0",
+      "image_file": "Palladium Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Palladium_Arrow.png"
+    },
+    {
+      "name": "Poison Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Poison_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals Physical damage, and the Poison Status after a few hits.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Poisoned",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Grilled Crabeye Seed",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 5
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 3,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Poison_Arrow.png?5639f6",
+      "image_file": "Poison Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Poison_Arrow.png"
+    },
+    {
+      "name": "Soul Rupture Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Soul_Rupture_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Causes an exposed enemy's soul to explode from within.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Aetherbomb",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Hexa Stone",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 3
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.2,
+      "price": 10,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Soul_Rupture_Arrow.png?9b3158",
+      "image_file": "Soul Rupture Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Soul_Rupture_Arrow.png"
+    },
+    {
+      "name": "Venom Arrow",
+      "source_url": "https://outward.wiki.gg/wiki/Venom_Arrow",
+      "consumable_type": "ammunition",
+      "description": "Deals Decay damage, and the Poison Status after a few hits.",
+      "effects": [
+        {
+          "effect_type": "debuff",
+          "name": "Extreme Poison",
+          "value": null,
+          "chance": null,
+          "duration": null,
+          "stat_modifiers": {}
+        }
+      ],
+      "crafting_recipe": {
+        "ingredients": [
+          {
+            "item": "Arrowhead Kit",
+            "quantity": 1
+          },
+          {
+            "item": "Wood",
+            "quantity": 1
+          },
+          {
+            "item": "Miasmapod",
+            "quantity": 1
+          }
+        ],
+        "station": "alchemy",
+        "output_count": 5
+      },
+      "spoilage": {
+        "spoil_time": null,
+        "spoil_time_text": "infinite",
+        "spoils_into": null,
+        "infinite": true
+      },
+      "weight": 0.1,
+      "price": 5,
+      "requirements": null,
+      "source": [
+        "craft"
+      ],
+      "max_stack": null,
+      "image_url": "https://outward.wiki.gg/images/Venom_Arrow.png?d0611c",
+      "image_file": "Venom Arrow.png",
+      "compatible_weapons": [
+        "Bow"
+      ],
+      "local_image": "assets/images/consumables/ammunition_Venom_Arrow.png"
+    }
+  ]
+}

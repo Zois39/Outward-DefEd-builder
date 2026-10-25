@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Protection",
+    "category": "defense",
+    "description": "Defensive stat which only affects Physical damage sources. Reduces damage by a flat amount, before other resistances are applied.",
+    "formula": "flat_reduction_applied_before_resistances",
+    "affects": [
+      "physical_damage"
+    ],
+    "modifiers": [
+      "Armor",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Protection.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Protection"
+  },
+  {
+    "name": "Barrier",
+    "category": "defense",
+    "description": "Defensive stat exclusive to The Three Brothers DLC. Only affects Elemental-type damage (Ethereal, Lightning, Decay, Frost, Fire). Reduces damage by flat amount. Does not work against DoTs.",
+    "formula": "flat_reduction_applied_before_resistances_elemental_only",
+    "affects": [
+      "ethereal_damage",
+      "lightning_damage",
+      "decay_damage",
+      "frost_damage",
+      "fire_damage"
+    ],
+    "modifiers": [
+      "Armor (DLC)",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/BarrierStat.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Barrier"
+  },
+  {
+    "name": "Impact",
+    "category": "combat",
+    "description": "Impact damage affects the stability bar. Reaching 50% of stability bar makes character stagger, 100% leads to knock-down.",
+    "formula": "affects_stability_bar_not_health",
+    "thresholds": {
+      "stagger": "50%",
+      "knockdown": "100%"
+    },
+    "modifiers": [
+      "Weapons",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Impact.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Impact"
+  },
+  {
+    "name": "Movement Speed",
+    "category": "mobility",
+    "description": "Determines how quickly the character moves. At -100% character is completely immobilized.",
+    "formula": "base_speed + modifiers",
+    "base_speed": 100,
+    "modifiers_detail": {
+      "sprint": "+75%",
+      "crouch": "-42.5% (or -25% with Stealth Training)",
+      "blocking": "-30%",
+      "overweight": "-10% to -100%"
+    },
+    "icon_url": "https://outward.wiki.gg/images/Movement.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Movement_Speed"
+  },
+  {
+    "name": "Cooldown Reduction",
+    "category": "magic",
+    "description": "Reduces cooldowns of Active Skills by a percent. Exclusive to The Soroboreans DLC. Capped at -99%.",
+    "formula": "cooldown * (1 - CDR/100)",
+    "cap": "-99%",
+    "modifiers": [
+      "Equipment",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/CooldownIcon.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Cooldown_Reduction"
+  },
+  {
+    "name": "Status Resistance",
+    "category": "defense",
+    "description": "Defensive stat that affects the rate at which Effects are applied to the character. Exclusive to The Three Brothers DLC.",
+    "formula": "reduces_effect_buildup_rate",
+    "modifiers": [
+      "Equipment",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/StatusResistanceStat.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Effects#Status_Resistance"
+  },
+  {
+    "name": "Stamina Regeneration",
+    "category": "vital",
+    "description": "Rate at which Stamina regenerates passively. Base ~2.5 per second. Affected by Weight and Effects.",
+    "formula": "base_2.5_per_sec + modifiers",
+    "base_value": 2.5,
+    "modifiers": [
+      "Weight",
+      "Effects",
+      "Skills",
+      "Equipment"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Stamina.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Stamina#Stamina_Regeneration"
+  },
+  {
+    "name": "Mana Cost",
+    "category": "magic",
+    "description": "Percentage modifier on Mana spent when casting spells. Negative reduces cost, positive increases. Capped at -99%, minimum 1 Mana per spell.",
+    "formula": "spell_cost * (1 + manaCost/100), min 1",
+    "cap": "-99%",
+    "modifiers": [
+      "Equipment",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/ManaCost.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Mana#Mana_Cost_Reduction"
+  },
+  {
+    "name": "Stamina Cost",
+    "category": "vital",
+    "description": "Percentage modifier on Stamina spent for actions. Affects all stamina use including Dodging. Heavy Armor may increase this.",
+    "formula": "action_cost * (1 + staminaCost/100)",
+    "modifiers": [
+      "Equipment",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Stamina_Cost.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Stamina#Stamina_Cost_Modifier"
+  },
+  {
+    "name": "Attack Speed",
+    "category": "combat",
+    "description": "Determines the animation speed of the equipped weapon.",
+    "formula": "weapon_base_speed * modifiers",
+    "modifiers": [
+      "Weapons",
+      "Skills",
+      "Effects"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Attack_Speed.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Attack_Speed"
+  },
+  {
+    "name": "Pouch Bonus",
+    "category": "utility",
+    "description": "Increases the capacity of the player's pouch, allowing more items to be carried.",
+    "modifiers": [
+      "Equipment",
+      "Skills"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/PouchBonus.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Stats#Pouch_Bonus"
+  },
+  {
+    "name": "Durability",
+    "category": "equipment",
+    "description": "Determines how much use an item can withstand before breaking.",
+    "mechanics": [
+      "Decreases with use",
+      "Can be repaired"
+    ],
+    "icon_url": "https://outward.wiki.gg/images/Durability.png",
+    "wiki_url": "https://outward.wiki.gg/wiki/Durability"
+  }
+]

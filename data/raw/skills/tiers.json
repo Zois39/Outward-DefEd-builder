@@ -1,0 +1,27 @@
+[
+  {
+    "tier": 1,
+    "label": "Tier 1 (Basic / Universal Skills)",
+    "mechanics": "No restriction to buying them all. Usually costs 50 or 100 silver. Available from Teachers without learning the class Breakthrough.",
+    "costs_breakthrough": false
+  },
+  {
+    "tier": 2,
+    "label": "Tier 2 (Breakthrough Skill)",
+    "mechanics": "A Breakthrough Point is spent when learning these. Player has only 3 Breakthrough Points per character, and specialization choice is permanent. Required to access Tier 3 skills in that tree.",
+    "costs_breakthrough": true
+  },
+  {
+    "tier": 3,
+    "label": "Tier 3 (Specialization / Advanced Skills)",
+    "mechanics": "Can only be bought from a tree once you've unlocked that tree's Breakthrough skill. Paired skills (side by side in the tree) are mutually exclusive — choosing one locks out the other.",
+    "costs_breakthrough": false,
+    "unlock_requirement": "Requires Tier 2 (Breakthrough) in the same tree"
+  },
+  {
+    "tier": "special",
+    "label": "Special / Quest / Trainer Skills",
+    "mechanics": "Skills learned from Trainers (usually 50 silver), quest rewards, or faction-exclusive rewards. Not part of a class Breakthrough tree.",
+    "costs_breakthrough": false
+  }
+]

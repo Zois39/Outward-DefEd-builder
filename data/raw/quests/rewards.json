@@ -1,0 +1,685 @@
+[
+  {
+    "quest_id": "a_house_divided",
+    "quest_name": "A House Divided",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 200,
+          "name": "+silver"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "a_knife_in_the_back",
+    "quest_name": "A Knife in the Back",
+    "faction": "The Heroic Kingdom of Levant",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xGold Ingot, 1xInnocence Potion, and the recipe for Innocence Potion."
+        },
+        {
+          "quantity": 50,
+          "name": "and 1Wolf Medic Armor."
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "ash_giants",
+    "quest_name": "Ash Giants",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "Bread of the Wild, 3Life Potionand 1recipe forBread of the Wild"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "cloak_and_dagger",
+    "quest_name": "Cloak and Dagger",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 10,
+          "name": "0"
+        },
+        {
+          "quantity": 20,
+          "name": "0"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "from_the_ashes",
+    "quest_name": "From the Ashes",
+    "faction": null,
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 5000,
+          "name": "Funds"
+        },
+        {
+          "quantity": 200,
+          "name": "silver"
+        },
+        {
+          "quantity": 2,
+          "name": "Frosted Delight"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "ledger_to_berg",
+    "quest_name": "Ledger to Berg",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xMedium Ruby"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "ledger_to_cierzo",
+    "quest_name": "Ledger to Cierzo",
+    "faction": "The Heroic Kingdom of Levant",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xLarge Emerald"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "ledger_to_levant",
+    "quest_name": "Ledger to Levant",
+    "faction": "The Heroic Kingdom of Levant",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xLarge Emerald"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "ledger_to_monsoon",
+    "quest_name": "Ledger to Monsoon",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xMedium Ruby"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "lost_merchant_(quest)",
+    "quest_name": "Lost Merchant (quest)",
+    "faction": "The Heroic Kingdom of Levant",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "xPoison Varnish"
+        },
+        {
+          "quantity": 1,
+          "name": "xGold Ingot"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "mixed_legacies",
+    "quest_name": "Mixed Legacies",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 3,
+          "name": "Bouillon du Predateur"
+        },
+        {
+          "quantity": 2,
+          "name": "Life Potion"
+        },
+        {
+          "quantity": 1,
+          "name": "Gold Ingot"
+        }
+      ],
+      "silver": 100,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_angel_food_cake",
+    "quest_name": "Need: Angel Food Cake",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "Stingleaf"
+        },
+        {
+          "quantity": 50,
+          "name": "silver"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_beast_golem_scraps",
+    "quest_name": "Need: Beast Golem Scraps",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "xAssassin Elixir"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_cierzo_ceviche",
+    "quest_name": "Need: Cierzo Ceviche",
+    "faction": null,
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 4,
+          "name": "xOcean Fricassee"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_fire_elemental_particles",
+    "quest_name": "Need: Fire Elemental Particles",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "Palladium Scrap"
+        },
+        {
+          "quantity": 50,
+          "name": "silver"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_manaheart_bass",
+    "quest_name": "Need: Manaheart Bass",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xBoozu's Milk"
+        },
+        {
+          "quantity": 50,
+          "name": "silver"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_manticore_tail",
+    "quest_name": "Need: Manticore Tail",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "xGold Ingot"
+        },
+        {
+          "quantity": 3,
+          "name": "xBread of the Wild"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_shark_cartilage",
+    "quest_name": "Need: Shark Cartilage",
+    "faction": "The Heroic Kingdom of Levant",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 4,
+          "name": "Spiny Meringue"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_shield_golem_scrap",
+    "quest_name": "Need: Shield Golem Scrap",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 50,
+          "name": "silver"
+        },
+        {
+          "quantity": 1,
+          "name": "Iron Wristband"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "need:_tourmaline",
+    "quest_name": "Need: Tourmaline",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 75,
+          "name": "silver"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "purify_the_water",
+    "quest_name": "Purify The Water",
+    "faction": null,
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xCoil Lantern"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "questions_and_corruption",
+    "quest_name": "Questions and Corruption",
+    "faction": "The Holy Mission of Elatt",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "Spiritual Varnishand recipe for Spiritual Varnish"
+        },
+        {
+          "quantity": 2,
+          "name": "Sanctifier Potion"
+        },
+        {
+          "quantity": 1,
+          "name": "Quartz Potion"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "rust_and_vengeance",
+    "quest_name": "Rust and Vengeance",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 500,
+          "name": "silver"
+        },
+        {
+          "quantity": 1,
+          "name": "of eachElemental Particle"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "sand_corsairs",
+    "quest_name": "Sand Corsairs",
+    "faction": "The Heroic Kingdom of Levant",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "Cannon Pistol"
+        },
+        {
+          "quantity": 1,
+          "name": "Gold Ingot"
+        },
+        {
+          "quantity": 12,
+          "name": "Bullet"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "strange_apparitions",
+    "quest_name": "Strange Apparitions",
+    "faction": null,
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xLight Mender's Backpack"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "treasure_hunt",
+    "quest_name": "Treasure Hunt",
+    "faction": null,
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 1,
+          "name": "xTsar Stone"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "up_the_ladder",
+    "quest_name": "Up The Ladder",
+    "faction": "Sorobor Academy",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 3,
+          "name": "xCrawlberry Tartine"
+        },
+        {
+          "quantity": 2,
+          "name": "xGold Ingot"
+        },
+        {
+          "quantity": 3,
+          "name": "xCrawlberry Tartine"
+        },
+        {
+          "quantity": 50,
+          "name": "silver"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "vendavel_quest",
+    "quest_name": "Vendavel Quest",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 3,
+          "name": "Gaberry Wine"
+        },
+        {
+          "quantity": 1,
+          "name": "Fur Tent"
+        },
+        {
+          "quantity": 1,
+          "name": "Power Coil"
+        },
+        {
+          "quantity": 15,
+          "name": "silver"
+        },
+        {
+          "quantity": 1,
+          "name": "Kazite Armor"
+        },
+        {
+          "quantity": 1,
+          "name": "Kazite Boots"
+        },
+        {
+          "quantity": 1,
+          "name": "Power Coil"
+        },
+        {
+          "quantity": 1,
+          "name": "Power Coil"
+        },
+        {
+          "quantity": 1,
+          "name": "Power Coil"
+        },
+        {
+          "quantity": 1,
+          "name": "Preservation Backpack"
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  },
+  {
+    "quest_id": "whispering_bones",
+    "quest_name": "Whispering Bones",
+    "faction": "The Blue Chamber Collective",
+    "outcome_name": "default",
+    "rewards": {
+      "items": [
+        {
+          "quantity": 2,
+          "name": "Great Life Potion"
+        },
+        {
+          "quantity": 2,
+          "name": "Bolt Varnish"
+        },
+        {
+          "quantity": 2,
+          "name": "Gold Ingot"
+        },
+        {
+          "quantity": 2,
+          "name": "Astral Potionsand 2Turmmip Potage."
+        },
+        {
+          "quantity": 2,
+          "name": "Great Life Potion, 1Great Endurance Potion, 1Bolt Varnishand 1Palladium Spikes."
+        }
+      ],
+      "silver": 0,
+      "experience": 0,
+      "reputation": {},
+      "unlocks": [],
+      "unique_items": []
+    }
+  }
+]

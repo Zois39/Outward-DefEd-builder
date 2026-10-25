@@ -1,0 +1,2587 @@
+[
+  {
+    "name": "Adventurer Set",
+    "description": "Adventurer Set is a Set in Outward.",
+    "items": [
+      "Adventurer Armor",
+      "Adventurer Boots",
+      "Adventurer's Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 2,
+      "resistances": {
+        "physical": 36,
+        "fire": 55,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 28
+      },
+      "durability": 870,
+      "weight": 19,
+      "price": {
+        "buy": 575,
+        "sell": 185,
+        "currency": "silver"
+      }
+    },
+    "image": "Adventurer_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Adventurer_Set",
+    "image_url": "https://outward.wiki.gg/images/Adventurer_Set.png?5e6daa",
+    "image_local": "assets/images/armor/set_Adventurer_Set.png"
+  },
+  {
+    "name": "Ammolite Set",
+    "description": "Ammolite Set is a Set in Outward.",
+    "items": [
+      "Ammolite Armor",
+      "Ammolite Boots",
+      "Ammolite Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 3,
+      "resistances": {
+        "physical": 33,
+        "fire": 0,
+        "frost": 60,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 53
+      },
+      "durability": 855,
+      "weight": 19,
+      "price": {
+        "buy": 460,
+        "sell": 148,
+        "currency": "silver"
+      }
+    },
+    "image": "AmmoliteSet_photo.jpg",
+    "source_url": "https://outward.wiki.gg/wiki/Ammolite_Set",
+    "image_url": "https://outward.wiki.gg/images/AmmoliteSet_photo.jpg?b7fc19",
+    "image_local": "assets/images/armor/set_Ammolite_Set.png"
+  },
+  {
+    "name": "Antique Plate Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\n\nAntique Plate Set is a Set in Outward.",
+    "items": [
+      "Antique Plate Boots",
+      "Antique Plate Garb",
+      "Antique Plate Sallet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 9,
+      "resistances": {
+        "physical": 31,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 20
+      },
+      "durability": 585,
+      "weight": 15,
+      "price": {
+        "buy": 760,
+        "sell": 228,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Antique_Plate_Set"
+  },
+  {
+    "name": "Arcane Set",
+    "description": "==Pieces==\n{{set items}}",
+    "items": [
+      "Arcane Hood",
+      "Arcane Robe"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 1,
+      "resistances": {
+        "physical": 16,
+        "fire": 20,
+        "frost": 20,
+        "lightning": 20,
+        "decay": 20,
+        "ethereal": 20,
+        "impact": 7
+      },
+      "durability": 360,
+      "weight": 5,
+      "price": {
+        "buy": 300,
+        "sell": 90,
+        "currency": "silver"
+      }
+    },
+    "image": "Arcane_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Arcane_Set",
+    "image_url": "https://outward.wiki.gg/images/Arcane_set.png?e13273",
+    "image_local": "assets/images/armor/set_Arcane_Set.png"
+  },
+  {
+    "name": "Ash Set",
+    "description": "==Pieces==\n{{set items}}",
+    "items": [
+      "Ash Armor",
+      "Ash Boots",
+      "Ash-Filter Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 27,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 70,
+        "ethereal": 0,
+        "impact": 18
+      },
+      "durability": 615,
+      "weight": 15,
+      "price": {
+        "buy": 425,
+        "sell": 137,
+        "currency": "silver"
+      }
+    },
+    "image": "Ash_Armor_SS1.png",
+    "source_url": "https://outward.wiki.gg/wiki/Ash_Set",
+    "image_url": "https://outward.wiki.gg/images/Ash_Armor_SS1.png?4ef14e",
+    "image_local": "assets/images/armor/set_Ash_Set.png"
+  },
+  {
+    "name": "Barrier Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nBarrier Set is a Set in Outward.",
+    "items": [
+      "Barrier Armor",
+      "Barrier Boots",
+      "Barrier Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 31,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 31
+      },
+      "durability": 1800,
+      "weight": 7,
+      "price": {
+        "buy": 900,
+        "sell": 270,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Barrier_Set"
+  },
+  {
+    "name": "Black Fur Set",
+    "description": "Black Fur Set is a Set in Outward. Each item is the result of the Legacy Chest upgrade of the Fur Set",
+    "items": [
+      "Black Fur Armor",
+      "Black Fur Boots",
+      "Black Fur Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 43,
+        "fire": 0,
+        "frost": 50,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 39
+      },
+      "durability": 1380,
+      "weight": 15,
+      "price": {
+        "buy": 950,
+        "sell": 285,
+        "currency": "silver"
+      }
+    },
+    "image": "Black_Fur_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Black_Fur_Set",
+    "image_url": "https://outward.wiki.gg/images/Black_Fur_Set.png?81bb04",
+    "image_local": "assets/images/armor/set_Black_Fur_Set.png"
+  },
+  {
+    "name": "Black Plate Set",
+    "description": "Black Plate Set is a Set in Outward.",
+    "items": [
+      "Black Plate Armor",
+      "Black Plate Boots",
+      "Black Plate Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 55,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 41
+      },
+      "durability": 975,
+      "weight": 41,
+      "price": {
+        "buy": 1120,
+        "sell": 363,
+        "currency": "silver"
+      }
+    },
+    "image": "Black Plate Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Black_Plate_Set",
+    "image_url": "https://outward.wiki.gg/images/Black_Plate_Set.png?87afd2",
+    "image_local": "assets/images/armor/set_Black_Plate_Set.png"
+  },
+  {
+    "name": "Blue Sand Set",
+    "description": "Blue Sand Set is a Set in Outward, which can be commissioned by Loud-Hammer in Cierzo.",
+    "items": [
+      "Blue Sand Armor",
+      "Blue Sand Boots",
+      "Blue Sand Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 48,
+        "fire": 20,
+        "frost": 20,
+        "lightning": 20,
+        "decay": 20,
+        "ethereal": 20,
+        "impact": 41
+      },
+      "durability": 1050,
+      "weight": 29,
+      "price": {
+        "buy": 1120,
+        "sell": 363,
+        "currency": "silver"
+      }
+    },
+    "image": "Blue_Sand_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Blue_Sand_Set",
+    "image_url": "https://outward.wiki.gg/images/Blue_Sand_Set.png?5dc5d9",
+    "image_local": "assets/images/armor/set_Blue_Sand_Set.png"
+  },
+  {
+    "name": "Brigand Set",
+    "description": "Brigand Set is a Set in Outward.",
+    "items": [
+      "Brigand Coat",
+      "Brigand's Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 25,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 12
+      },
+      "durability": 330,
+      "weight": 15,
+      "price": {
+        "buy": 174,
+        "sell": 56,
+        "currency": "silver"
+      }
+    },
+    "image": "Brigand_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Brigand_Set",
+    "image_url": "https://outward.wiki.gg/images/Brigand_set.png?82271a",
+    "image_local": "assets/images/armor/set_Brigand_Set.png"
+  },
+  {
+    "name": "Caged Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=Cage_Armor_ss1.png}}\n\nCaged Set is a Set in Outward.",
+    "items": [
+      "Caged Armor Boots",
+      "Caged Armor Chestplate",
+      "Caged Armor Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 68,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 20,
+        "ethereal": 20,
+        "impact": 49
+      },
+      "durability": 1275,
+      "weight": 38,
+      "price": {
+        "buy": 2100,
+        "sell": 630.0,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Caged_Set"
+  },
+  {
+    "name": "Caldera Mail Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nCaldera Mail Set is a Set in Outward.",
+    "items": [
+      "Caldera Mail Armor",
+      "Caldera Mail Boots",
+      "Caldera Mail Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 8,
+      "resistances": {
+        "physical": 43,
+        "fire": 0,
+        "frost": 28,
+        "lightning": 28,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 38
+      },
+      "durability": 1050,
+      "weight": 16,
+      "price": {
+        "buy": 1100,
+        "sell": 330,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Caldera_Mail_Set"
+  },
+  {
+    "name": "Candle Plate Set",
+    "description": ".png}}\nCandle Plate Set is a Set in Outward. It is a unique armor set that can be obtained through completion of the Holy Mission faction main storyline quest.\n\nIt is exceptionally heavy, but offers high protection and very high lightning and fire resist.\n\nVisually, the design of the armor resembles an Immaculate, especially the helmet.",
+    "items": [
+      "Candle Plate Armor",
+      "Candle Plate Boots",
+      "Candle Plate Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 68,
+        "fire": 60,
+        "frost": 0,
+        "lightning": 60,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 49
+      },
+      "durability": 1590,
+      "weight": 38,
+      "price": {
+        "buy": 2100,
+        "sell": 681,
+        "currency": "silver"
+      }
+    },
+    "image": "{{PAGENAME",
+    "source_url": "https://outward.wiki.gg/wiki/Candle_Plate_Set"
+  },
+  {
+    "name": "Chalcedony Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nChalcedony Set is a Set in Outward.",
+    "items": [
+      "Chalcedony Armor",
+      "Chalcedony Boots",
+      "Chalcedony Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 14,
+      "resistances": {
+        "physical": 48,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 41
+      },
+      "durability": 1350,
+      "weight": 43,
+      "price": {
+        "buy": 1400,
+        "sell": 420,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Set"
+  },
+  {
+    "name": "Copal Set",
+    "description": "Copal Set is a Set in Outward. It can be commissioned from Quikiza in Berg.",
+    "items": [
+      "Copal Armor",
+      "Copal Boots",
+      "Copal Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 28,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 40,
+        "decay": 0,
+        "ethereal": 60,
+        "impact": 20
+      },
+      "durability": 570,
+      "weight": 18,
+      "price": {
+        "buy": 575,
+        "sell": 185,
+        "currency": "silver"
+      }
+    },
+    "image": "Copal_Armour_Set.jpg",
+    "source_url": "https://outward.wiki.gg/wiki/Copal_Set",
+    "image_url": "https://outward.wiki.gg/images/Copal_Armour_Set.jpg?84e783",
+    "image_local": "assets/images/armor/set_Copal_Set.png"
+  },
+  {
+    "name": "Crimson Plate Set",
+    "description": "Crimson Plate Set is a Set in Outward. It can be rewarded from completing The Blue Chamber Collective faction quest line, and the shield is a drop from Rospa.",
+    "items": [
+      "Crimson Plate Armor",
+      "Crimson Plate Boots",
+      "Crimson Plate Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 59,
+        "fire": 0,
+        "frost": 90,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 49
+      },
+      "durability": 1590,
+      "weight": 44,
+      "price": {
+        "buy": 2100,
+        "sell": 681,
+        "currency": "silver"
+      }
+    },
+    "image": "CrimsonPlateSet.png",
+    "source_url": "https://outward.wiki.gg/wiki/Crimson_Plate_Set",
+    "image_url": "https://outward.wiki.gg/images/CrimsonPlateSet.png?ecaafb",
+    "image_local": "assets/images/armor/set_Crimson_Plate_Set.png"
+  },
+  {
+    "name": "Dancer Set",
+    "description": "Dancer Set is a Set in Outward.",
+    "items": [
+      "Black Dancer Clothes",
+      "Crimson Dancer Clothes",
+      "Dancer Leggings",
+      "Dancer Mask",
+      "Purple Dancer Clothes"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 11,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 17
+      },
+      "durability": 870,
+      "weight": 4.5,
+      "price": {
+        "buy": 645,
+        "sell": 200,
+        "currency": "silver"
+      }
+    },
+    "image": "Dancer_Set_Female.png",
+    "source_url": "https://outward.wiki.gg/wiki/Dancer_Set",
+    "image_url": "https://outward.wiki.gg/images/Dancer_Set_Female.png?c5fdc5",
+    "image_local": "assets/images/armor/set_Dancer_Set.png"
+  },
+  {
+    "name": "Desert Set",
+    "description": "Desert Set is a Set in Outward.",
+    "items": [
+      "Desert Boots",
+      "Desert Tunic",
+      "Desert Veil"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 24,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 17
+      },
+      "durability": 510,
+      "weight": 8,
+      "price": {
+        "buy": 262,
+        "sell": 85,
+        "currency": "silver"
+      }
+    },
+    "image": "Desert_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Desert_Set",
+    "image_url": "https://outward.wiki.gg/images/Desert_set.png?7318bd",
+    "image_local": "assets/images/armor/set_Desert_Set.png"
+  },
+  {
+    "name": "Elite Desert Set",
+    "description": "Elite Desert Set is a Set in Outward.\n\nThe Elite Desert Set does not include any Boots. However, the Desert Set and Master Desert Set do.",
+    "items": [
+      "Elite Desert Tunic",
+      "Elite Desert Veil"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 3,
+      "resistances": {
+        "physical": 33,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 23
+      },
+      "durability": 580,
+      "weight": 10,
+      "price": {
+        "buy": 800,
+        "sell": 258,
+        "currency": "silver"
+      }
+    },
+    "image": "Elite_Desert_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Elite_Desert_Set",
+    "image_url": "https://outward.wiki.gg/images/Elite_Desert_set.png?95e20a",
+    "image_local": "assets/images/armor/set_Elite_Desert_Set.png"
+  },
+  {
+    "name": "Elite Set",
+    "description": "Elite Set is a Set in Outward. The infobox stats and image are with the Elite Plate Helm, and not the Elite Hood.",
+    "items": [
+      "Elite Hood",
+      "Elite Plate Armor",
+      "Elite Plate Boots",
+      "Elite Plate Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 8,
+      "resistances": {
+        "physical": 75,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 30,
+        "ethereal": 0,
+        "impact": 53
+      },
+      "durability": 1580,
+      "weight": 47,
+      "price": {
+        "buy": 1700,
+        "sell": 554,
+        "currency": "silver"
+      }
+    },
+    "image": "Elite plate armor set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Elite_Set",
+    "image_url": "https://outward.wiki.gg/images/Elite_plate_armor_set.png?9c8d94",
+    "image_local": "assets/images/armor/set_Elite_Set.png"
+  },
+  {
+    "name": "Entomber Set",
+    "description": "Entomber Set is a Set in Outward.",
+    "items": [
+      "Entomber Armor",
+      "Entomber Boots",
+      "Entomber Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 45,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 60,
+        "decay": 60,
+        "ethereal": 0,
+        "impact": 34
+      },
+      "durability": 735,
+      "weight": 12,
+      "price": {
+        "buy": 760,
+        "sell": 241,
+        "currency": "silver"
+      }
+    },
+    "image": "Entomber_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Entomber_Set",
+    "image_url": "https://outward.wiki.gg/images/Entomber_set.png?a314f2",
+    "image_local": "assets/images/armor/set_Entomber_Set.png"
+  },
+  {
+    "name": "Festive Set",
+    "description": "Festive Set is a Set in Outward.\n\nThere are 'Red' and 'Purple' versions of this set, both have identical stats.",
+    "items": [
+      "Purple Festive Attire",
+      "Purple Festive Hat",
+      "Red Festive Attire",
+      "Red Festive Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 14,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 10
+      },
+      "durability": 600,
+      "weight": 10,
+      "price": {
+        "buy": 110,
+        "sell": 35,
+        "currency": "silver"
+      }
+    },
+    "image": "Festive_Set_Male.png",
+    "source_url": "https://outward.wiki.gg/wiki/Festive_Set",
+    "image_url": "https://outward.wiki.gg/images/Festive_Set_Male.png?3e2349",
+    "image_local": "assets/images/armor/set_Festive_Set.png"
+  },
+  {
+    "name": "Fur Set",
+    "description": "Fur Set is a Set in Outward.",
+    "items": [
+      "Fur Armor",
+      "Fur Boots",
+      "Fur Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 24,
+        "fire": 0,
+        "frost": 40,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 20
+      },
+      "durability": 540,
+      "weight": 15,
+      "price": {
+        "buy": 425,
+        "sell": 137,
+        "currency": "silver"
+      }
+    },
+    "image": "Fur_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Fur_Set",
+    "image_url": "https://outward.wiki.gg/images/Fur_set.png?eff1bf",
+    "image_local": "assets/images/armor/set_Fur_Set.png"
+  },
+  {
+    "name": "Gold-Lich Set",
+    "description": "Gold-Lich Set is a Set in Outward.",
+    "items": [
+      "Gold-Lich Armor",
+      "Gold-Lich Boots",
+      "Gold-Lich Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 27,
+        "fire": 40,
+        "frost": 0,
+        "lightning": 90,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 18
+      },
+      "durability": 1130,
+      "weight": 9,
+      "price": {
+        "buy": 1000,
+        "sell": 311,
+        "currency": "silver"
+      }
+    },
+    "image": "Gold-lichSet.PNG",
+    "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Set",
+    "image_url": "https://outward.wiki.gg/images/Gold-lichSet.PNG?e7290c",
+    "image_local": "assets/images/armor/set_Gold-Lich_Set.png"
+  },
+  {
+    "name": "Green Copal Set",
+    "description": "Green Copal Set is a Set in Outward.",
+    "items": [
+      "Green Copal Armor",
+      "Green Copal Boots",
+      "Green Copal Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 38,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 40,
+        "decay": 0,
+        "ethereal": 60,
+        "impact": 31
+      },
+      "durability": 1125,
+      "weight": 18,
+      "price": {
+        "buy": 1150,
+        "sell": 345,
+        "currency": "silver"
+      }
+    },
+    "image": "Green_Copal_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Green_Copal_Set",
+    "image_url": "https://outward.wiki.gg/images/Green_Copal_Set.png?da91b4",
+    "image_local": "assets/images/armor/set_Green_Copal_Set.png"
+  },
+  {
+    "name": "Halfplate Set",
+    "description": "Halfplate Set is a Set in Outward.",
+    "items": [
+      "Halfplate Armor",
+      "Halfplate Boots",
+      "Halfplate Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 32,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 25
+      },
+      "durability": 660,
+      "weight": 25,
+      "price": {
+        "buy": 287,
+        "sell": 91,
+        "currency": "silver"
+      }
+    },
+    "image": "Halfplate set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Halfplate_Set",
+    "image_url": "https://outward.wiki.gg/images/Halfplate_set.png?ac914a",
+    "image_local": "assets/images/armor/set_Halfplate_Set.png"
+  },
+  {
+    "name": "Horror Set",
+    "description": "{{Set infobox|DLC=The Soroboreans\n|image = \n}}\nHorror Set is a Set in Outward.\n\nOnly the Bow, Shield and Axe can be found in the base game, the rest is exclusive to The Soroboreans DLC.",
+    "items": [
+      "Horror Armor",
+      "Horror Greaves",
+      "Horror Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 68,
+        "fire": 0,
+        "frost": 0,
+        "lightning": -15,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 49
+      },
+      "durability": 1275,
+      "weight": 38,
+      "price": {
+        "buy": 2100,
+        "sell": 630.0,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Horror_Set"
+  },
+  {
+    "name": "Jade Acolyte Set",
+    "description": "Jade Acolyte Set is a Set in Outward.",
+    "items": [
+      "Jade Acolyte Boots",
+      "Jade Acolyte Cowl",
+      "Jade Acolyte Robes"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 24,
+        "fire": 0,
+        "frost": 0,
+        "lightning": -40,
+        "decay": 40,
+        "ethereal": 0,
+        "impact": 10
+      },
+      "durability": 540,
+      "weight": 7,
+      "price": {
+        "buy": 375,
+        "sell": 121,
+        "currency": "silver"
+      }
+    },
+    "image": "Jade_Lich_Acolyte_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Jade_Acolyte_Set",
+    "image_url": "https://outward.wiki.gg/images/Jade_Lich_Acolyte_set.png?50a9d9",
+    "image_local": "assets/images/armor/set_Jade_Acolyte_Set.png"
+  },
+  {
+    "name": "Jade-Lich Set",
+    "description": "The Jade-Lich Set is a reward for beating Plague Doctor in the Dark Ziggurat found in Hallowed Marsh, and the weapons can be found from various sources.",
+    "items": [
+      "Jade-Lich Boots",
+      "Jade-Lich Mask",
+      "Jade-Lich Robes"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 31,
+        "fire": 0,
+        "frost": 0,
+        "lightning": -40,
+        "decay": 70,
+        "ethereal": 0,
+        "impact": 18
+      },
+      "durability": 945,
+      "weight": 9,
+      "price": {
+        "buy": 1000,
+        "sell": 317,
+        "currency": "silver"
+      }
+    },
+    "image": "Jade-Lich_set.jpg",
+    "source_url": "https://outward.wiki.gg/wiki/Jade-Lich_Set",
+    "image_url": "https://outward.wiki.gg/images/Jade-Lich_set.jpg?9ec0d6",
+    "image_local": "assets/images/armor/set_Jade-Lich_Set.png"
+  },
+  {
+    "name": "Kazite Light Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\nKazite Light Set is a Set in Outward.",
+    "items": [
+      "Kazite Light Armor",
+      "Kazite Light Boots",
+      "Kazite Light Helmet",
+      "Light Kazite Shirt"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 52,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 40
+      },
+      "durability": 960,
+      "weight": 19,
+      "price": {
+        "buy": 850,
+        "sell": 255.0,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Kazite_Light_Set"
+  },
+  {
+    "name": "Kazite Set",
+    "description": "Kazite Set is a Set in Outward.\n\nThe infobox stats are with the Kazite Mask, the other masks have different stats.",
+    "items": [
+      "Kazite Armor",
+      "Kazite Boots",
+      "Kazite Cat Mask",
+      "Kazite Mask",
+      "Kazite Oni Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 61,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 44
+      },
+      "durability": 1075,
+      "weight": 25,
+      "price": {
+        "buy": 875,
+        "sell": 275,
+        "currency": "silver"
+      }
+    },
+    "image": "Kazite_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Kazite_Set",
+    "image_url": "https://outward.wiki.gg/images/Kazite_set.png?8b1f59",
+    "image_local": "assets/images/armor/set_Kazite_Set.png"
+  },
+  {
+    "name": "Kintsugi Set",
+    "description": "Kintsugi Set is a Set in Outward.",
+    "items": [
+      "Kintsugi Armor",
+      "Kintsugi Boots",
+      "Kintsugi Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 62,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 64
+      },
+      "durability": 1200,
+      "weight": 45,
+      "price": {
+        "buy": 1400,
+        "sell": 454,
+        "currency": "silver"
+      }
+    },
+    "image": "Kintsugi_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Kintsugi_Set",
+    "image_url": "https://outward.wiki.gg/images/Kintsugi_set.png?5c3cec",
+    "image_local": "assets/images/armor/set_Kintsugi_Set.png"
+  },
+  {
+    "name": "Krypteia Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nKrypteia Set is a Set in Outward.",
+    "items": [
+      "Krypteia Armor",
+      "Krypteia Boots",
+      "Krypteia Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 57,
+        "fire": 25,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 25,
+        "impact": 26
+      },
+      "durability": 900,
+      "weight": 15,
+      "price": {
+        "buy": 1425,
+        "sell": 426.5,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Krypteia_Set"
+  },
+  {
+    "name": "Light Clothes Set",
+    "description": "Light Clothes Set is a Armor Set in Outward. There are several color variants for each piece, though they all have the same stats.",
+    "items": [
+      "Blue Light Clothes",
+      "Pale Light Clothes",
+      "Red Light Clothes",
+      "Sandals"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 8,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 11
+      },
+      "durability": 600,
+      "weight": 10,
+      "price": {
+        "buy": 125,
+        "sell": 38,
+        "currency": "silver"
+      }
+    },
+    "image": "Light_Clothes_Set_Blue.png",
+    "source_url": "https://outward.wiki.gg/wiki/Light_Clothes_Set",
+    "image_url": "https://outward.wiki.gg/images/Light_Clothes_Set_Blue.png?9b47ad",
+    "image_local": "assets/images/armor/set_Light_Clothes_Set.png"
+  },
+  {
+    "name": "Looter Set",
+    "description": "Looter Set is a Set in Outward.",
+    "items": [
+      "Looter Armor",
+      "Looter Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 10,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 21
+      },
+      "durability": 240,
+      "weight": 5,
+      "price": {
+        "buy": 27,
+        "sell": 8,
+        "currency": "silver"
+      }
+    },
+    "image": "Looter_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Looter_Set",
+    "image_url": "https://outward.wiki.gg/images/Looter_Set.png?358dd5",
+    "image_local": "assets/images/armor/set_Looter_Set.png"
+  },
+  {
+    "name": "Makeshift Leather Set",
+    "description": "Makeshift Leather Set is a Set in Outward.",
+    "items": [
+      "Makeshift Leather Attire",
+      "Makeshift Leather Boots",
+      "Makeshift Leather Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 15,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 20
+      },
+      "durability": 360,
+      "weight": 13,
+      "price": {
+        "buy": 42,
+        "sell": 13,
+        "currency": "silver"
+      }
+    },
+    "image": "Makeshift_Leather_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Makeshift_Leather_Set",
+    "image_url": "https://outward.wiki.gg/images/Makeshift_Leather_set.png?b237d9",
+    "image_local": "assets/images/armor/set_Makeshift_Leather_Set.png"
+  },
+  {
+    "name": "Manawall Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nManawall Set is a Set in Outward.",
+    "items": [
+      "Manawall Armor",
+      "Manawall Boots",
+      "Manawall Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 10,
+      "resistances": {
+        "physical": 31,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 31
+      },
+      "durability": 1800,
+      "weight": 7,
+      "price": {
+        "buy": 1125,
+        "sell": 337.5,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Manawall_Set"
+  },
+  {
+    "name": "Master Desert Set",
+    "description": "Master Desert Set is an armor Set in Outward.\n\nAlthough being an upgraded version of the Desert Set and Elite Desert set, each piece actually has less Hot Weather Defense than their respective Desert set pieces.\n\nThe Master Desert Veil and Master Desert Tunic are Legacy Chest upgrades of their respective Elite Desert set pieces. However, since the Elite Desert set does not include boots, the boots are instead the Legacy Chest upgrade of the Desert Boots.",
+    "items": [
+      "Master Desert Boots",
+      "Master Desert Tunic",
+      "Master Desert Veil"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 50,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 39
+      },
+      "durability": 1020,
+      "weight": 15,
+      "price": {
+        "buy": 1150,
+        "sell": 345,
+        "currency": "silver"
+      }
+    },
+    "image": "Master_Desert_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Master_Desert_Set",
+    "image_url": "https://outward.wiki.gg/images/Master_Desert_Set.png?d20528",
+    "image_local": "assets/images/armor/set_Master_Desert_Set.png"
+  },
+  {
+    "name": "Master Kazite Set",
+    "description": "Master Kazite Set is a Set in Outward.\n\nThe infobox stats are with the Master Kazite Mask, the other masks have different stats.",
+    "items": [
+      "Master Kazite Armor",
+      "Master Kazite Boots",
+      "Master Kazite Cat Mask",
+      "Master Kazite Mask",
+      "Master Kazite Oni Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 69,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 30,
+        "ethereal": 0,
+        "impact": 65
+      },
+      "durability": 1725,
+      "weight": 22,
+      "price": {
+        "buy": 1750,
+        "sell": 525,
+        "currency": "silver"
+      }
+    },
+    "image": "Master_Kazite_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Master_Kazite_Set",
+    "image_url": "https://outward.wiki.gg/images/Master_Kazite_Set.png?c3c439",
+    "image_local": "assets/images/armor/set_Master_Kazite_Set.png"
+  },
+  {
+    "name": "Master Trader Set",
+    "description": "Master Trader Set is a Set in Outward.\n\nThe Master Trader Set offers very low defensive bonuses, but makes up for those with a stamina usage reduction bonus, movement speed bonuses and a pouch max weight increase of 12.",
+    "items": [
+      "Master Trader Boots",
+      "Master Trader Garb",
+      "Master Trader Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 27,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 17
+      },
+      "durability": 735,
+      "weight": 5,
+      "price": {
+        "buy": 900,
+        "sell": 290,
+        "currency": "silver"
+      }
+    },
+    "image": "MTSet.png",
+    "source_url": "https://outward.wiki.gg/wiki/Master_Trader_Set",
+    "image_url": "https://outward.wiki.gg/images/MTSet.png?f49f96",
+    "image_local": "assets/images/armor/set_Master_Trader_Set.png"
+  },
+  {
+    "name": "Merton's Bones",
+    "description": "Merton's Bones is a cosmetic item set obtained from the rooftops of Cierzo. The items are well hidden, and players will need to find a way to exploit the ramps and ledges which lead up to the rooftops.\n\nThe Skull is found above Helen Turnbull's house, and the Ribcage and Shinbones are found above Loud-Hammer.\n\nMerton's Firepoker can be found at Tree Husk, after a lever in Dolmen Crypt has been pulled.",
+    "items": [
+      "Merton's Ribcage",
+      "Merton's Shinbones",
+      "Merton's Skull"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 0,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 0
+      },
+      "durability": 0,
+      "weight": 0,
+      "price": {
+        "buy": 0,
+        "sell": 0,
+        "currency": "silver"
+      }
+    },
+    "image": "Mertons_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Bones",
+    "image_url": "https://outward.wiki.gg/images/Mertons_Set.png?56912f",
+    "image_local": "assets/images/armor/set_Merton_s_Bones.png"
+  },
+  {
+    "name": "Militia Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nMilitia Set is a Set in Outward.",
+    "items": [
+      "Militia Armor",
+      "Militia Boots",
+      "Militia Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 46,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 32
+      },
+      "durability": 900,
+      "weight": 25,
+      "price": {
+        "buy": 1150,
+        "sell": 345,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Militia_Set"
+  },
+  {
+    "name": "Miner Set",
+    "description": "{{Set infobox\n|image= Miner_Set.jpg\n|DLC=The Three Brothers\n}}\n\nMiner Set is an Armor Set in Outward.",
+    "items": [
+      "Miner Armor",
+      "Miner Boots",
+      "Miner Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 20,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 21
+      },
+      "durability": 360,
+      "weight": 7,
+      "price": {
+        "buy": 37,
+        "sell": 11.1,
+        "currency": "silver"
+      }
+    },
+    "image": "Miner_Set.jpg",
+    "source_url": "https://outward.wiki.gg/wiki/Miner_Set",
+    "image_url": "https://outward.wiki.gg/images/Miner_Set.jpg?491daf",
+    "image_local": "assets/images/armor/set_Miner_Set.png"
+  },
+  {
+    "name": "Noble Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nNoble Set is a Set in Outward.",
+    "items": [
+      "Noble Clothes",
+      "Noble Mask",
+      "Noble Shoes"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 17,
+        "fire": 40,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 40,
+        "ethereal": 50,
+        "impact": 11
+      },
+      "durability": 750,
+      "weight": 7,
+      "price": {
+        "buy": 900,
+        "sell": 270,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Noble_Set"
+  },
+  {
+    "name": "Nobleman Set",
+    "description": "Nobleman Set is a Set in Outward.\n\nThere are 'Bright' and 'Dark' versions of this set, both with identical stats.",
+    "items": [
+      "Bright Nobleman Attire",
+      "Bright Nobleman Boots",
+      "Bright Nobleman Hat",
+      "Dark Nobleman Attire",
+      "Dark Nobleman Boots",
+      "Dark Nobleman Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 14,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 20
+      },
+      "durability": 990,
+      "weight": 14,
+      "price": {
+        "buy": 374,
+        "sell": 120,
+        "currency": "silver"
+      }
+    },
+    "image": "Bright_Nobleman_Set_Female.png",
+    "source_url": "https://outward.wiki.gg/wiki/Nobleman_Set",
+    "image_url": "https://outward.wiki.gg/images/Bright_Nobleman_Set_Female.png?5ee60f",
+    "image_local": "assets/images/armor/set_Nobleman_Set.png"
+  },
+  {
+    "name": "Novice Set",
+    "description": "Novice Set is a Set in Outward.",
+    "items": [
+      "Novice Hat",
+      "Novice Robe"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 9,
+        "fire": 50,
+        "frost": 50,
+        "lightning": 0,
+        "decay": 50,
+        "ethereal": 0,
+        "impact": 7
+      },
+      "durability": 330,
+      "weight": 5,
+      "price": {
+        "buy": 137,
+        "sell": 43,
+        "currency": "silver"
+      }
+    },
+    "image": "Novice_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Novice_Set",
+    "image_url": "https://outward.wiki.gg/images/Novice_set.png?2cbf2f",
+    "image_local": "assets/images/armor/set_Novice_Set.png"
+  },
+  {
+    "name": "Orichalcum Set",
+    "description": "Orichalcum Set is a Set in Outward.",
+    "items": [
+      "Orichalcum Armor",
+      "Orichalcum Boots",
+      "Orichalcum Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 62,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 41
+      },
+      "durability": 1290,
+      "weight": 41,
+      "price": {
+        "buy": 1400,
+        "sell": 420,
+        "currency": "silver"
+      }
+    },
+    "image": "Orichalchum_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Orichalcum_Set",
+    "image_url": "https://outward.wiki.gg/images/Orichalchum_Set.png?cd470e",
+    "image_local": "assets/images/armor/set_Orichalcum_Set.png"
+  },
+  {
+    "name": "Padded Set",
+    "description": "Padded Set is a Set in Outward.",
+    "items": [
+      "Padded Armor",
+      "Padded Boots",
+      "Padded Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 19,
+        "fire": 0,
+        "frost": 29,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 31
+      },
+      "durability": 450,
+      "weight": 15,
+      "price": {
+        "buy": 95,
+        "sell": 30,
+        "currency": "silver"
+      }
+    },
+    "image": "Padded_Armor_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Padded_Set",
+    "image_url": "https://outward.wiki.gg/images/Padded_Armor_Set.png?5c5d31",
+    "image_local": "assets/images/armor/set_Padded_Set.png"
+  },
+  {
+    "name": "Palladium Set",
+    "description": "Palladium Set is a Set in Outward. \n\nThe Armor can be obtained by providing Vyzyrinthrix in Monsoon with 9 Palladium Scrap and 1050 {{s}} silver.\n\nThe Palladium weapons are not craftable, they can be purchased from Vyzyrinthrix, or found in Ornate Chests in the Hallowed Marsh region.",
+    "items": [
+      "Palladium Armor",
+      "Palladium Boots",
+      "Palladium Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 62,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 60,
+        "ethereal": 0,
+        "impact": 44
+      },
+      "durability": 1470,
+      "weight": 48,
+      "price": {
+        "buy": 1400,
+        "sell": 454,
+        "currency": "silver"
+      }
+    },
+    "image": "PalladiumFullKnee.png",
+    "source_url": "https://outward.wiki.gg/wiki/Palladium_Set",
+    "image_url": "https://outward.wiki.gg/images/PalladiumFullKnee.png?863263",
+    "image_local": "assets/images/armor/set_Palladium_Set.png"
+  },
+  {
+    "name": "Pathfinder Set",
+    "description": "Pathfinder Set is a Set in Outward.",
+    "items": [
+      "Pathfinder Armor",
+      "Pathfinder Boots",
+      "Pathfinder Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 46,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 45,
+        "ethereal": 0,
+        "impact": 26
+      },
+      "durability": 1125,
+      "weight": 25,
+      "price": {
+        "buy": 1050,
+        "sell": 323,
+        "currency": "silver"
+      }
+    },
+    "image": "Pathfinder_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Pathfinder_Set",
+    "image_url": "https://outward.wiki.gg/images/Pathfinder_set.png?9d4d1d",
+    "image_local": "assets/images/armor/set_Pathfinder_Set.png"
+  },
+  {
+    "name": "Petrified Wood Set",
+    "description": "The Petrified Wood Set can be commissioned from Quikiza in Berg.",
+    "items": [
+      "Petrified Wood Armor",
+      "Petrified Wood Boots",
+      "Petrified Wood Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 42,
+        "fire": 60,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 41
+      },
+      "durability": 705,
+      "weight": 19,
+      "price": {
+        "buy": 920,
+        "sell": 297,
+        "currency": "silver"
+      }
+    },
+    "image": "Petrified_wood_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Petrified_Wood_Set",
+    "image_url": "https://outward.wiki.gg/images/Petrified_wood_set.png?ba4408",
+    "image_local": "assets/images/armor/set_Petrified_Wood_Set.png"
+  },
+  {
+    "name": "Pilgrim Set",
+    "description": "Pilgrim Set is a Set in Outward.",
+    "items": [
+      "Pilgrim Armor",
+      "Pilgrim Boots",
+      "Pilgrim Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 5,
+      "resistances": {
+        "physical": 64,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 40
+      },
+      "durability": 1230,
+      "weight": 36,
+      "price": {
+        "buy": 2100,
+        "sell": 629,
+        "currency": "silver"
+      }
+    },
+    "image": "Pilgrim_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Pilgrim_Set",
+    "image_url": "https://outward.wiki.gg/images/Pilgrim_Set.png?540bc8",
+    "image_local": "assets/images/armor/set_Pilgrim_Set.png"
+  },
+  {
+    "name": "Plate Set",
+    "description": "Plate Set is a Set in Outward.",
+    "items": [
+      "Plate Armor",
+      "Plate Boots",
+      "Plate Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 48,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 37
+      },
+      "durability": 900,
+      "weight": 38,
+      "price": {
+        "buy": 700,
+        "sell": 227,
+        "currency": "silver"
+      }
+    },
+    "image": "Plate_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Plate_Set",
+    "image_url": "https://outward.wiki.gg/images/Plate_set.png?a1367f",
+    "image_local": "assets/images/armor/set_Plate_Set.png"
+  },
+  {
+    "name": "Rich Set",
+    "description": "Rich Set is a Set in Outward.\n\nThere are 'Bright' and 'Dark' versions of this set, both with identical stats.",
+    "items": [
+      "Bright Rich Attire",
+      "Bright Rich Hat",
+      "Dark Rich Attire",
+      "Dark Rich Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 10,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 14
+      },
+      "durability": 660,
+      "weight": 10,
+      "price": {
+        "buy": 274,
+        "sell": 88,
+        "currency": "silver"
+      }
+    },
+    "image": "Rich_Set_Male.png",
+    "source_url": "https://outward.wiki.gg/wiki/Rich_Set",
+    "image_url": "https://outward.wiki.gg/images/Rich_Set_Male.png?fa59ba",
+    "image_local": "assets/images/armor/set_Rich_Set.png"
+  },
+  {
+    "name": "Runic Set",
+    "description": "Runic Set is a Set in Outward. All the set pieces are regularly sold by Quikiza the blacksmith in Berg.\n\nAmong all the armor pieces that provide a mana cost reduction, the Runic Set pieces offer the highest physical damage reduction and along with the Antique Plate Sallet are the only ones that provide protection. Therefore, this set is indicated for melee combat mages, especially when fighting enemies which inflict physical damage. Being a heavy armor set, it slows down the wearer and it taxes the stamina.",
+    "items": [
+      "Runic Armor",
+      "Runic Boots",
+      "Runic Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 44,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 44
+      },
+      "durability": 1125,
+      "weight": 38,
+      "price": {
+        "buy": 1400,
+        "sell": 454,
+        "currency": "silver"
+      }
+    },
+    "image": "RunicArmorset.png",
+    "source_url": "https://outward.wiki.gg/wiki/Runic_Set",
+    "image_url": "https://outward.wiki.gg/images/RunicArmorset.png?ea2ed9",
+    "image_local": "assets/images/armor/set_Runic_Set.png"
+  },
+  {
+    "name": "Rust Lich Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\n\nRust Lich Set is a Set in Outward.",
+    "items": [
+      "Rust Lich Armor",
+      "Rust Lich Boots",
+      "Rust Lich Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 50,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 36
+      },
+      "durability": 1020,
+      "weight": 25,
+      "price": {
+        "buy": 1725,
+        "sell": 517.5,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Rust_Lich_Set"
+  },
+  {
+    "name": "Scaled Leather Set",
+    "description": "Scaled Leather Set is a Set in Outward.",
+    "items": [
+      "Scaled Leather Attire",
+      "Scaled Leather Boots",
+      "Scaled Leather Hat"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 31,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 20,
+        "ethereal": 0,
+        "impact": 35
+      },
+      "durability": 585,
+      "weight": 18,
+      "price": {
+        "buy": 380,
+        "sell": 122,
+        "currency": "silver"
+      }
+    },
+    "image": "Scaled_leather_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Set",
+    "image_url": "https://outward.wiki.gg/images/Scaled_leather_set.png?756419",
+    "image_local": "assets/images/armor/set_Scaled_Leather_Set.png"
+  },
+  {
+    "name": "Scarlet Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nScarlet Set is a Set in Outward.",
+    "items": [
+      "Scarlet Boots",
+      "Scarlet Mask",
+      "Scarlet Robes"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 18,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 13
+      },
+      "durability": 870,
+      "weight": 7,
+      "price": {
+        "buy": 2075,
+        "sell": 622,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Scarlet_Set"
+  },
+  {
+    "name": "Scavenger Set",
+    "description": "Scavenger Set is a Set in Outward.\n\nThe \"Total Stats\" infobox displays the stats with the Scarf. The Scarf has slightly better stats than the Hood or Mask.",
+    "items": [
+      "Scavenger Boots",
+      "Scavenger Coat",
+      "Scavenger Hood",
+      "Scavenger Mask",
+      "Scavenger Scarf"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 30,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 23
+      },
+      "durability": 765,
+      "weight": 21,
+      "price": {
+        "buy": 182,
+        "sell": 59,
+        "currency": "silver"
+      }
+    },
+    "image": "Scavenger_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Scavenger_Set",
+    "image_url": "https://outward.wiki.gg/images/Scavenger_set.png?3f4f74",
+    "image_local": "assets/images/armor/set_Scavenger_Set.png"
+  },
+  {
+    "name": "Scholar Set",
+    "description": "Scholar Set is a Set in Outward.",
+    "items": [
+      "Scholar Attire",
+      "Scholar Boots",
+      "Scholar Circlet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 14,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 10
+      },
+      "durability": 495,
+      "weight": 7,
+      "price": {
+        "buy": 187,
+        "sell": 59,
+        "currency": "silver"
+      }
+    },
+    "image": "Scholar_Set_Female.png",
+    "source_url": "https://outward.wiki.gg/wiki/Scholar_Set",
+    "image_url": "https://outward.wiki.gg/images/Scholar_Set_Female.png?55d64e",
+    "image_local": "assets/images/armor/set_Scholar_Set.png"
+  },
+  {
+    "name": "Shadow Kazite Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\n\nShadow Kazite Set is a Set in Outward.",
+    "items": [
+      "Shadow Kazite Light Armor",
+      "Shadow Kazite Light Boots",
+      "Shadow Kazite Light Helmet",
+      "Shadow Light Kazite Shirt"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 6,
+      "resistances": {
+        "physical": 66,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 46
+      },
+      "durability": 1200,
+      "weight": 19,
+      "price": {
+        "buy": 1700,
+        "sell": 510,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Shadow_Kazite_Set"
+  },
+  {
+    "name": "Shock Set",
+    "description": "Shock Set is a Set in Outward.",
+    "items": [
+      "Shock Armor",
+      "Shock Boots",
+      "Shock Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 3,
+      "resistances": {
+        "physical": 47,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 90,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 55
+      },
+      "durability": 1500,
+      "weight": 24,
+      "price": {
+        "buy": 1725,
+        "sell": 517,
+        "currency": "silver"
+      }
+    },
+    "image": "Shock_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Shock_Set",
+    "image_url": "https://outward.wiki.gg/images/Shock_Set.png?45f419",
+    "image_local": "assets/images/armor/set_Shock_Set.png"
+  },
+  {
+    "name": "Silver Set",
+    "description": "Silver Set is a Set in Outward.",
+    "items": [
+      "Silver Armor",
+      "Silver Boots",
+      "Silver Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 45,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 60,
+        "ethereal": 0,
+        "impact": 29
+      },
+      "durability": 780,
+      "weight": 25,
+      "price": {
+        "buy": 920,
+        "sell": 297,
+        "currency": "silver"
+      }
+    },
+    "image": "Silver_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Silver_Set",
+    "image_url": "https://outward.wiki.gg/images/Silver_set.png?74262e",
+    "image_local": "assets/images/armor/set_Silver_Set.png"
+  },
+  {
+    "name": "Slayer's Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nSlayer's Set is a Set in Outward.",
+    "items": [
+      "Slayer's Armor",
+      "Slayer's Boots",
+      "Slayer's Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 52,
+        "fire": 15,
+        "frost": 15,
+        "lightning": 10,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 23
+      },
+      "durability": 750,
+      "weight": 15,
+      "price": {
+        "buy": 950,
+        "sell": 285,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Slayer%27s_Set"
+  },
+  {
+    "name": "Squire Set",
+    "description": "Squire Set is a Set in Outward.",
+    "items": [
+      "Squire Attire",
+      "Squire Boots",
+      "Squire Headband"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 40,
+        "fire": 15,
+        "frost": 15,
+        "lightning": 15,
+        "decay": 15,
+        "ethereal": 15,
+        "impact": 35
+      },
+      "durability": 1410,
+      "weight": 16,
+      "price": {
+        "buy": 1425,
+        "sell": 426,
+        "currency": "silver"
+      }
+    },
+    "image": "Squire_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Squire_Set",
+    "image_url": "https://outward.wiki.gg/images/Squire_Set.png?c33b46",
+    "image_local": "assets/images/armor/set_Squire_Set.png"
+  },
+  {
+    "name": "Tattered Set",
+    "description": "Tattered Set is a Set in Outward. There are a number of color variants for the set items, though they all have the same names and stats.",
+    "items": [
+      "Tattered Attire",
+      "Tattered Boots",
+      "Tattered Hood"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 4,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 4
+      },
+      "durability": 270,
+      "weight": 6,
+      "price": {
+        "buy": 22,
+        "sell": 7,
+        "currency": "silver"
+      }
+    },
+    "image": "Tattered_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Tattered_Set",
+    "image_url": "https://outward.wiki.gg/images/Tattered_set.png?32214b",
+    "image_local": "assets/images/armor/set_Tattered_Set.png"
+  },
+  {
+    "name": "Tenebrous Set",
+    "description": "Tenebrous Set is a Set in Outward. It can be commissioned at Tokuga in Levant.",
+    "items": [
+      "Tenebrous Armor",
+      "Tenebrous Boots",
+      "Tenebrous Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 35,
+        "fire": 29,
+        "frost": 29,
+        "lightning": 29,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 24
+      },
+      "durability": 780,
+      "weight": 12,
+      "price": {
+        "buy": 950,
+        "sell": 307,
+        "currency": "silver"
+      }
+    },
+    "image": "Tenebrous_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Tenebrous_Set",
+    "image_url": "https://outward.wiki.gg/images/Tenebrous_set.png?b56cec",
+    "image_local": "assets/images/armor/set_Tenebrous_Set.png"
+  },
+  {
+    "name": "Trader Set",
+    "description": "Trader Set is a Set in Outward.",
+    "items": [
+      "Straw Hat",
+      "Trader Boots",
+      "Trader Garb"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 16,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 7
+      },
+      "durability": 600,
+      "weight": 7,
+      "price": {
+        "buy": 75,
+        "sell": 23,
+        "currency": "silver"
+      }
+    },
+    "image": "Trader_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Trader_Set",
+    "image_url": "https://outward.wiki.gg/images/Trader_set.png?b8000b",
+    "image_local": "assets/images/armor/set_Trader_Set.png"
+  },
+  {
+    "name": "Tsar Set",
+    "description": "The Tsar Set is a heavy armor set which can be commissioned from Tokuga in Levant for a total price of 11x Tsar Stone and 1800 {{s}}.\n\nThe Tsar weapons can be commissioned by The Plague Doctor at Dark Ziggurat.",
+    "items": [
+      "Tsar Armor",
+      "Tsar Boots",
+      "Tsar Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 14,
+      "resistances": {
+        "physical": 68,
+        "fire": 80,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 49
+      },
+      "durability": 0,
+      "weight": 53,
+      "price": {
+        "buy": 2100,
+        "sell": 681,
+        "currency": "silver"
+      }
+    },
+    "image": "Tsar_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Tsar_Set",
+    "image_url": "https://outward.wiki.gg/images/Tsar_set.png?e567a3",
+    "image_local": "assets/images/armor/set_Tsar_Set.png"
+  },
+  {
+    "name": "Vigilante Set",
+    "description": "{{Set infobox\n|image=\n|DLC=The Three Brothers\n}}\nVigilante Set is a Set in Outward. These items are Legacy Chest upgrades of the Militia Set.",
+    "items": [
+      "Vigilante Armor",
+      "Vigilante Boots",
+      "Vigilante Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 50,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 36
+      },
+      "durability": 1020,
+      "weight": 25,
+      "price": {
+        "buy": 1500,
+        "sell": 450,
+        "currency": "silver"
+      }
+    },
+    "image": "",
+    "source_url": "https://outward.wiki.gg/wiki/Vigilante_Set"
+  },
+  {
+    "name": "Virgin Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\n\nVirgin Set is a Set in Outward.",
+    "items": [
+      "Virgin Armor",
+      "Virgin Boots",
+      "Virgin Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 42,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 36
+      },
+      "durability": 900,
+      "weight": 25,
+      "price": {
+        "buy": 1150,
+        "sell": 345,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Virgin_Set"
+  },
+  {
+    "name": "White Arcane Set",
+    "description": "White Arcane Set is a Set in Outward.",
+    "items": [
+      "White Arcane Hood",
+      "White Arcane Robe"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 1,
+      "resistances": {
+        "physical": 24,
+        "fire": 20,
+        "frost": 20,
+        "lightning": 20,
+        "decay": 20,
+        "ethereal": 20,
+        "impact": 7
+      },
+      "durability": 640,
+      "weight": 5,
+      "price": {
+        "buy": 550,
+        "sell": 165,
+        "currency": "silver"
+      }
+    },
+    "image": "White_Arcane_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/White_Arcane_Set",
+    "image_url": "https://outward.wiki.gg/images/White_Arcane_Set.png?181fe9",
+    "image_local": "assets/images/armor/set_White_Arcane_Set.png"
+  },
+  {
+    "name": "White Kintsugi Set",
+    "description": "White Kintsugi Set is a Set in Outward.",
+    "items": [
+      "White Kintsugi Armor",
+      "White Kintsugi Boots",
+      "White Kintsugi Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 68,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 64
+      },
+      "durability": 1440,
+      "weight": 45,
+      "price": {
+        "buy": 1400,
+        "sell": 420,
+        "currency": "silver"
+      }
+    },
+    "image": "White_Kintsugi_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/White_Kintsugi_Set",
+    "image_url": "https://outward.wiki.gg/images/White_Kintsugi_Set.png?3353e3",
+    "image_local": "assets/images/armor/set_White_Kintsugi_Set.png"
+  },
+  {
+    "name": "White Priest Set",
+    "description": "White Priest Set is one of the Armor Sets in Outward with multiple head piece combinations. It protects the wearer with massive elemental resistances against fire, frost and decay, at the price of a moderate physical resistance and mediocre impact resistance.\n\nThe White Priest Hood offers a cheaper variant (100 silvers discount), the regular set uses the White Priest Mitre. The stats shown in the infobox are with the Mitre, not the Hood.\n\nAll the set pieces are regularly sold by Laine the Alchemist in Monsoon.",
+    "items": [
+      "White Priest Boots",
+      "White Priest Hood",
+      "White Priest Mitre",
+      "White Priest Robes"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 30,
+        "fire": 80,
+        "frost": 80,
+        "lightning": 0,
+        "decay": 80,
+        "ethereal": 0,
+        "impact": 11
+      },
+      "durability": 1100,
+      "weight": 9,
+      "price": {
+        "buy": 1175,
+        "sell": 351,
+        "currency": "silver"
+      }
+    },
+    "image": "White_Priest_Set.png",
+    "source_url": "https://outward.wiki.gg/wiki/White_Priest_Set",
+    "image_url": "https://outward.wiki.gg/images/White_Priest_Set.png?13186e",
+    "image_local": "assets/images/armor/set_White_Priest_Set.png"
+  },
+  {
+    "name": "Wolf Mage Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\n\nWolf Mage Set is a Set in Outward.",
+    "items": [
+      "Wolf Mage Armor",
+      "Wolf Mage Boots",
+      "Wolf Mage Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 3,
+      "resistances": {
+        "physical": 17,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 42
+      },
+      "durability": 675,
+      "weight": 7,
+      "price": {
+        "buy": 750,
+        "sell": 225,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Wolf_Mage_Set"
+  },
+  {
+    "name": "Wolf Medic Set",
+    "description": "{{Set infobox|DLC=The Soroboreans|image=}}\n\nWolf Medic Set is a Set in Outward. {{StatSource|sourceType=Item |stat=health |valueType=restore|value= 0.05 to 0.1 per second |duration=permanent |notes= |dlc=The Soroboreans }}",
+    "items": [
+      "Wolf Medic Armor",
+      "Wolf Medic Boots",
+      "Wolf Medic Helmet"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 4,
+      "resistances": {
+        "physical": 46,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 32
+      },
+      "durability": 900,
+      "weight": 25,
+      "price": {
+        "buy": 1150,
+        "sell": 345,
+        "currency": "silver"
+      }
+    },
+    "image": null,
+    "source_url": "https://outward.wiki.gg/wiki/Wolf_Medic_Set"
+  },
+  {
+    "name": "Wolf Plate Set",
+    "description": "Wolf Plate Set is a Set in Outward.\n\nThere are two alternate Helmets for the set, the stats in the infobox are with the Plate Full-Helm, not the Plate Helm.",
+    "items": [
+      "Wolf Plate Armor",
+      "Wolf Plate Boots",
+      "Wolf Plate Full-Helm",
+      "Wolf Plate Helm"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 9,
+      "resistances": {
+        "physical": 83,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 75,
+        "impact": 56
+      },
+      "durability": 1840,
+      "weight": 38,
+      "price": {
+        "buy": 1750,
+        "sell": 581,
+        "currency": "silver"
+      }
+    },
+    "image": "Wolf_plate_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Wolf_Plate_Set",
+    "image_url": "https://outward.wiki.gg/images/Wolf_plate_set.png?2037de",
+    "image_local": "assets/images/armor/set_Wolf_Plate_Set.png"
+  },
+  {
+    "name": "Worker Set",
+    "description": "Worker Set is a Armor Set in Outward. There are several color variants for each piece, though they all have the same stats.",
+    "items": [
+      "Black Worker Boots",
+      "Dark Worker Attire",
+      "Dark Worker Hood",
+      "Green Worker Attire",
+      "Pale Worker's Hood",
+      "Patterned Worker Attire",
+      "Patterned Worker Hood",
+      "Worker Boots"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 0,
+      "resistances": {
+        "physical": 14,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 11
+      },
+      "durability": 720,
+      "weight": 14,
+      "price": {
+        "buy": 60,
+        "sell": 19,
+        "currency": "silver"
+      }
+    },
+    "image": "Worker_Set_Female.png",
+    "source_url": "https://outward.wiki.gg/wiki/Worker_Set",
+    "image_url": "https://outward.wiki.gg/images/Worker_Set_Female.png?cc5fb5",
+    "image_local": "assets/images/armor/set_Worker_Set.png"
+  },
+  {
+    "name": "Zagis' Set",
+    "description": "Zagis' Set is a Set in Outward.",
+    "items": [
+      "Zagis' Boots",
+      "Zagis' Armor",
+      "Zagis' Mask"
+    ],
+    "set_bonus": null,
+    "total_stats": {
+      "protection": 7,
+      "resistances": {
+        "physical": 55,
+        "fire": 0,
+        "frost": 0,
+        "lightning": 0,
+        "decay": 0,
+        "ethereal": 0,
+        "impact": 43
+      },
+      "durability": 1680,
+      "weight": 48,
+      "price": {
+        "buy": 1575,
+        "sell": 507,
+        "currency": "silver"
+      }
+    },
+    "image": "Zagis_set.png",
+    "source_url": "https://outward.wiki.gg/wiki/Zagis%27_Set",
+    "image_url": "https://outward.wiki.gg/images/Zagis_set.png?c8f0aa",
+    "image_local": "assets/images/armor/set_Zagis__Set.png"
+  }
+]
