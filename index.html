@@ -1,1618 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta name="theme-color" content="#1a1410">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Outward Builder">
-    <title>Outward Build Builder</title>
-    <style>
-        :root {
-            --bg: #1a1410;
-            --bg2: #241c12;
-            --bg3: #2a2118;
-            --panel: #2a2118;
-            --panel2: #33291d;
-            --panel3: #3a2f1e;
-            --gold: #c9a227;
-            --gold2: #e8c547;
-            --gold3: #f0d060;
-            --brown: #8b4513;
-            --brown2: #a0522d;
-            --text: #e8dcc8;
-            --dim: #a89878;
-            --dim2: #7a6a55;
-            --red: #c0392b;
-            --red2: #e74c3c;
-            --green: #27ae60;
-            --green2: #2ecc71;
-            --blue: #2980b9;
-            --blue2: #3498db;
-            --purple: #8e44ad;
-            --sat: env(safe-area-inset-top, 0px);
-            --sab: env(safe-area-inset-bottom, 0px);
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-
-        html, body {
-            height: 100%;
-            background: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-size-adjust: 100%;
-            overscroll-behavior-y: none;
-        }
-
-        #root { min-height: 100vh; min-height: 100dvh; }
-
-        /* ===== SCROLLBAR ===== */
-        ::-webkit-scrollbar { width: 0; height: 0; }
-
-        /* ===== LOADING SCREEN ===== */
-        .loading-screen {
-            position: fixed;
-            inset: 0;
-            background: linear-gradient(160deg, #1a1410 0%, #241c12 40%, #1a1410 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            padding: 24px;
-        }
-
-        .logo-container {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 24px;
-            position: relative;
-        }
-
-        .logo-sword {
-            position: absolute;
-            width: 8px;
-            height: 80px;
-            background: linear-gradient(180deg, var(--gold3) 0%, var(--gold) 50%, var(--brown) 100%);
-            border-radius: 4px;
-            top: 10px;
-            left: 46px;
-            transform-origin: center 70%;
-        }
-
-        .logo-sword:before {
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 6px;
-            background: var(--brown);
-            border-radius: 3px;
-            top: 52px;
-            left: -8px;
-        }
-
-        .logo-sword:after {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            background: var(--gold);
-            border-radius: 50%;
-            top: 62px;
-            left: -2px;
-        }
-
-        .logo-sword.left { transform: rotate(-45deg); }
-        .logo-sword.right { transform: rotate(45deg); }
-
-        .loading-title {
-            font-size: 32px;
-            color: var(--gold);
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 6px;
-            text-shadow: 0 2px 20px rgba(201, 162, 39, 0.3);
-        }
-
-        .loading-subtitle {
-            font-size: 14px;
-            color: var(--dim);
-            margin-bottom: 48px;
-            font-style: italic;
-            letter-spacing: 1px;
-        }
-
-        .loading-bar-wrap {
-            width: 260px;
-            height: 4px;
-            background: var(--panel2);
-            border-radius: 2px;
-            overflow: hidden;
-            border: 1px solid var(--brown);
-        }
-
-        .loading-bar {
-            height: 100%;
-            background: linear-gradient(90deg, var(--brown), var(--gold), var(--gold2));
-            border-radius: 2px;
-            transition: width 0.4s ease;
-            box-shadow: 0 0 12px rgba(201, 162, 39, 0.4);
-        }
-
-        .loading-status {
-            margin-top: 16px;
-            font-size: 13px;
-            color: var(--dim);
-            letter-spacing: 0.5px;
-        }
-
-        .loading-error {
-            margin-top: 24px;
-            padding: 14px 18px;
-            background: rgba(192, 57, 43, 0.15);
-            border: 1px solid var(--red);
-            border-radius: 10px;
-            color: var(--red2);
-            font-size: 14px;
-            text-align: center;
-            max-width: 300px;
-            line-height: 1.5;
-        }
-
-        .retry-btn {
-            margin-top: 16px;
-            padding: 12px 28px;
-            background: var(--brown);
-            border: 1px solid var(--gold);
-            border-radius: 8px;
-            color: var(--text);
-            font-size: 15px;
-            cursor: pointer;
-            font-family: inherit;
-        }
-
-        /* ===== HOME SCREEN ===== */
-        .home-screen {
-            min-height: 100vh;
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%);
-        }
-
-        .home-hero {
-            text-align: center;
-            padding: 100px 24px 48px;
-            padding-top: calc(100px + var(--sat));
-        }
-
-        .home-logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            position: relative;
-        }
-
-        .home-title {
-            font-size: 38px;
-            color: var(--gold);
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 30px rgba(201, 162, 39, 0.25);
-        }
-
-        .home-subtitle {
-            font-size: 15px;
-            color: var(--dim);
-            font-style: italic;
-            letter-spacing: 1px;
-        }
-
-        .home-stats-row {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin-top: 28px;
-        }
-
-        .home-stat-pill {
-            text-align: center;
-            padding: 10px 16px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 10px;
-        }
-
-        .home-stat-num {
-            font-size: 20px;
-            color: var(--gold);
-            font-weight: 700;
-        }
-
-        .home-stat-label {
-            font-size: 10px;
-            color: var(--dim);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 2px;
-        }
-
-        .home-menu {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .menu-btn {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 18px 20px;
-            background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
-            border: 2px solid var(--brown);
-            border-radius: 14px;
-            cursor: pointer;
-            text-align: left;
-            color: var(--text);
-            font-family: inherit;
-            transition: all 0.2s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .menu-btn:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .menu-btn:hover:before, .menu-btn:active:before {
-            opacity: 1;
-        }
-
-        .menu-btn:hover, .menu-btn:active {
-            border-color: var(--gold);
-            background: linear-gradient(135deg, var(--panel2) 0%, var(--panel3) 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-        }
-
-        .menu-icon {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg);
-            border-radius: 10px;
-            border: 1px solid var(--brown);
-            font-size: 24px;
-            flex-shrink: 0;
-        }
-
-        .menu-content { flex: 1; }
-        .menu-content h3 {
-            font-size: 16px;
-            color: var(--gold);
-            margin-bottom: 3px;
-            font-weight: 600;
-        }
-        .menu-content p {
-            font-size: 13px;
-            color: var(--dim);
-            line-height: 1.4;
-        }
-
-        .menu-arrow {
-            color: var(--brown);
-            font-size: 18px;
-            flex-shrink: 0;
-        }
-
-        .home-footer {
-            text-align: center;
-            padding: 24px;
-            padding-bottom: calc(24px + var(--sab));
-            font-size: 12px;
-            color: var(--dim2);
-        }
-
-        /* ===== BUILDER ===== */
-        .builder-screen {
-            min-height: 100vh;
-            min-height: 100dvh;
-            display: flex;
-            flex-direction: column;
-            background: var(--bg);
-        }
-
-        .builder-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 14px;
-            padding-top: calc(10px + var(--sat));
-            background: var(--bg2);
-            border-bottom: 1px solid var(--brown);
-            position: sticky;
-            top: 0;
-            z-index: 50;
-        }
-
-        .header-btn {
-            width: 38px;
-            height: 38px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 8px;
-            cursor: pointer;
-            color: var(--text);
-            font-size: 16px;
-            flex-shrink: 0;
-        }
-
-        .header-title {
-            flex: 1;
-            font-size: 16px;
-            color: var(--gold);
-            font-weight: 600;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .header-level {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 12px;
-            color: var(--dim);
-        }
-
-        .level-input {
-            width: 48px;
-            padding: 6px 4px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 6px;
-            color: var(--gold);
-            font-size: 14px;
-            text-align: center;
-            font-family: inherit;
-            font-weight: 600;
-        }
-
-        .theory-toggle {
-            padding: 6px 10px;
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 6px;
-            color: var(--dim);
-            font-size: 11px;
-            cursor: pointer;
-            font-family: inherit;
-            white-space: nowrap;
-        }
-
-        .theory-toggle.active {
-            background: var(--gold);
-            color: var(--bg);
-            border-color: var(--gold);
-            font-weight: 600;
-        }
-
-        /* Content area */
-        .builder-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            padding-bottom: calc(72px + var(--sab));
-        }
-
-        /* Tab bar */
-        .tab-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            background: rgba(26, 20, 16, 0.97);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-top: 1px solid var(--brown);
-            padding: 6px 8px calc(6px + var(--sab));
-            z-index: 100;
-        }
-
-        .tab-btn {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 3px;
-            padding: 6px 4px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--dim);
-            font-family: inherit;
-            font-size: 10px;
-            letter-spacing: 0.5px;
-            border-radius: 8px;
-            transition: all 0.15s;
-        }
-
-        .tab-btn.active {
-            color: var(--gold);
-            background: rgba(201, 162, 39, 0.1);
-        }
-
-        .tab-icon { font-size: 22px; line-height: 1; }
-
-        /* Tab panes */
-        .tab-pane { display: none; flex: 1; overflow-y: auto; }
-        .tab-pane.active { display: block; }
-
-        /* ===== STATS TAB ===== */
-        .stats-container {
-            padding: 14px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        /* Hero stats card */
-        .stats-hero {
-            background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
-            border: 1px solid var(--brown);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 14px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stats-hero:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--red), var(--gold), var(--green), var(--blue));
-        }
-
-        .hero-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-
-        .hero-stat {
-            text-align: center;
-            padding: 12px 8px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 12px;
-        }
-
-        .hero-icon {
-            font-size: 24px;
-            margin-bottom: 6px;
-        }
-
-        .hero-value {
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 1;
-        }
-
-        .hero-value.health { color: var(--red2); }
-        .hero-value.stamina { color: var(--green2); }
-        .hero-value.mana { color: var(--blue2); }
-
-        .hero-label {
-            font-size: 10px;
-            color: var(--dim);
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-top: 6px;
-        }
-
-        /* Points summary */
-        .points-summary {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 14px;
-        }
-
-        .point-card {
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 12px;
-            padding: 14px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .point-icon {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--bg);
-            border-radius: 10px;
-            font-size: 20px;
-            flex-shrink: 0;
-        }
-
-        .point-info h4 {
-            font-size: 11px;
-            color: var(--dim);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .point-info .val {
-            font-size: 18px;
-            color: var(--gold);
-            font-weight: 700;
-        }
-
-        .point-info .val.warning { color: var(--red); }
-
-        /* Section cards */
-        .section-card {
-            background: var(--panel);
-            border: 1px solid var(--brown);
-            border-radius: 14px;
-            margin-bottom: 12px;
-            overflow: hidden;
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 16px;
-            background: var(--panel2);
-            border-bottom: 1px solid var(--brown);
-        }
-
-        .section-icon {
-            font-size: 18px;
-        }
-
-        .section-title {
-            font-size: 13px;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-        }
-
-        .section-body {
-            padding: 4px 16px 12px;
-        }
-
-        /* Stat rows */
-        .stat-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 11px 0;
-            border-bottom: 1px solid rgba(139, 69, 19, 0.2);
-            font-size: 14px;
-        }
-
-        .stat-row:last-child { border-bottom: none; }
-
-        .stat-name {
-            color: var(--text);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .stat-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            flex-shrink: 0;
-        }
-
-        .stat-dot.physical { background: #95a5a6; }
-        .stat-dot.fire { background: #e74c3c; }
-        .stat-dot.frost { background: #3498db; }
-        .stat-dot.lightning { background: #f1c40f; }
-        .stat-dot.decay { background: #2ecc71; }
-        .stat-dot.ethereal { background: #9b59b6; }
-        .stat-dot.impact { background: #e67e22; }
-
-        .stat-val {
-            color: var(--gold);
-            font-weight: 600;
-            font-size: 15px;
-        }
-
-        .stat-val.positive { color: var(--green2); }
-        .stat-val.negative { color: var(--red2); }
-
-        /* Resistance grid */
-        .resist-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            padding: 12px 0;
-        }
-
-        .resist-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 12px;
-            background: var(--panel2);
-            border-radius: 8px;
-        }
-
-        .resist-label {
-            font-size: 12px;
-            color: var(--dim);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .resist-val {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        /* Equipment summary */
-        .equip-summary {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            padding: 12px 0;
-        }
-
-        .equip-chip {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 10px;
-            background: var(--panel2);
-            border-radius: 6px;
-            font-size: 11px;
-        }
-
-        .equip-chip img {
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-        }
-
-        .equip-chip span {
-            color: var(--text);
-        }
-
-        .equip-empty {
-            color: var(--dim2);
-            font-size: 13px;
-            padding: 16px 0;
-            text-align: center;
-            font-style: italic;
-        }
-
-        /* Skills list */
-        .skill-list {
-            padding: 8px 0;
-        }
-
-        .skill-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 10px;
-            margin: 3px;
-            background: var(--panel2);
-            border: 1px solid var(--brown);
-            border-radius: 6px;
-            font-size: 12px;
-        }
-
-        .skill-tag img {
-            width: 18px;
-            height: 18px;
-            border-radius: 3px;
-        }
-
-        /* Set bonuses */
-        .set-bonus {
-            padding: 10px 12px;
-            margin: 6px 0;
-            background: rgba(201, 162, 39, 0.08);
-            border: 1px solid rgba(201, 162, 39, 0.3);
-            border-radius: 8px;
-            font-size: 12px;
-        }
-
-        .set-bonus-name {
-            color: var(--gold);
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        /* Desktop */
-        @media (min-width: 900px) {
-            .home-menu { max-width: 440px; }
-            .builder-content {
-                display: grid;
-                grid-template-columns: 300px 1fr 340px;
-                gap: 0;
-                padding-bottom: 0;
-            }
-            .tab-pane { display: block !important; border-right: 1px solid var(--brown); }
-            .tab-pane:last-child { border-right: none; }
-            .tab-bar { display: none; }
-            .stats-container { max-width: none; }
-        }
-
-        @media (max-width: 380px) {
-            .home-title { font-size: 28px; letter-spacing: 4px; }
-            .hero-value { font-size: 26px; }
-            .points-summary { grid-template-columns: 1fr; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1a1410">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Outward Build Builder</title>
+<style>
+:root {
+  --bg:#1a1410; --bg2:#241c12; --panel:#2a2118; --panel2:#33291d; --panel3:#3a2f1e;
+  --gold:#c9a227; --gold2:#e8c547; --brown:#8b4513; --text:#e8dcc8; --dim:#a89878; --dim2:#7a6a55;
+  --red:#c0392b; --green:#27ae60; --blue:#2980b9; --purple:#8e44ad;
+  --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior-y:none}
+#root{min-height:100vh;min-height:100dvh}
+::-webkit-scrollbar{width:0;height:0}
+
+/* LOADING */
+.loading-screen{position:fixed;inset:0;background:linear-gradient(160deg,#1a1410,#241c12,#1a1410);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;padding:24px}
+.logo-svg{width:90px;height:90px;margin-bottom:24px}
+.loading-title{font-size:30px;color:var(--gold);letter-spacing:6px;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.loading-sub{font-size:13px;color:var(--dim);margin-bottom:44px;font-style:italic}
+.loading-bar-wrap{width:240px;height:4px;background:var(--panel2);border-radius:2px;overflow:hidden;border:1px solid var(--brown)}
+.loading-bar{height:100%;background:linear-gradient(90deg,var(--brown),var(--gold));border-radius:2px;transition:width .4s}
+.loading-status{margin-top:14px;font-size:12px;color:var(--dim)}
+.loading-error{margin-top:20px;padding:12px 16px;background:rgba(192,57,43,.15);border:1px solid var(--red);border-radius:10px;color:#e74c3c;font-size:13px;text-align:center;max-width:280px}
+.retry-btn{margin-top:14px;padding:10px 24px;background:var(--brown);border:1px solid var(--gold);border-radius:8px;color:var(--text);font-size:14px;cursor:pointer;font-family:inherit}
+
+/* HOME */
+.home-screen{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:linear-gradient(180deg,var(--bg),var(--bg2),var(--bg))}
+.home-hero{text-align:center;padding:90px 24px 40px;padding-top:calc(90px + var(--sat))}
+.home-logo{width:70px;height:70px;margin:0 auto 18px}
+.home-title{font-size:34px;color:var(--gold);letter-spacing:7px;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.home-sub{font-size:14px;color:var(--dim);font-style:italic}
+.home-stats{display:flex;justify-content:center;gap:16px;margin-top:24px;flex-wrap:wrap}
+.home-stat-pill{text-align:center;padding:8px 14px;background:var(--panel);border:1px solid var(--brown);border-radius:10px}
+.home-stat-num{font-size:18px;color:var(--gold);font-weight:700}
+.home-stat-lbl{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+.home-menu{flex:1;display:flex;flex-direction:column;gap:10px;padding:16px;max-width:380px;margin:0 auto;width:100%}
+.menu-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;background:linear-gradient(135deg,var(--panel),var(--panel2));border:2px solid var(--brown);border-radius:12px;cursor:pointer;text-align:left;color:var(--text);font-family:inherit;transition:all .2s}
+.menu-btn:active{border-color:var(--gold);transform:scale(.98)}
+.menu-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:10px;border:1px solid var(--brown);font-size:22px;flex-shrink:0}
+.menu-content{flex:1}
+.menu-content h3{font-size:15px;color:var(--gold);margin-bottom:2px}
+.menu-content p{font-size:12px;color:var(--dim)}
+.menu-arrow{color:var(--brown);font-size:18px}
+.home-footer{text-align:center;padding:20px;padding-bottom:calc(20px + var(--sab));font-size:11px;color:var(--dim2)}
+
+/* BUILDER */
+.builder-screen{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--bg)}
+.builder-header{display:flex;align-items:center;gap:8px;padding:8px 12px;padding-top:calc(8px + var(--sat));background:var(--bg2);border-bottom:1px solid var(--brown);position:sticky;top:0;z-index:50}
+.header-btn{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--brown);border-radius:8px;cursor:pointer;color:var(--text);font-size:15px;flex-shrink:0}
+.header-title{flex:1;font-size:15px;color:var(--gold);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.header-lvl{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--dim)}
+.lvl-input{width:44px;padding:5px 3px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;color:var(--gold);font-size:13px;text-align:center;font-family:inherit;font-weight:600}
+.theory-btn{padding:5px 8px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;color:var(--dim);font-size:10px;cursor:pointer;font-family:inherit;white-space:nowrap}
+.theory-btn.active{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:600}
+
+.builder-content{flex:1;display:flex;flex-direction:column;padding-bottom:calc(68px + var(--sab))}
+
+/* TAB BAR */
+.tab-bar{position:fixed;bottom:0;left:0;right:0;display:flex;background:rgba(26,20,16,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--brown);padding:4px 2px calc(4px + var(--sab));z-index:100}
+.tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 2px;background:none;border:none;cursor:pointer;color:var(--dim);font-family:inherit;font-size:8px;letter-spacing:.3px;border-radius:6px}
+.tab-btn.active{color:var(--gold);background:rgba(201,162,39,.12)}
+.tab-icon{font-size:20px;line-height:1}
+
+/* TAB PANES */
+.tab-pane{display:none;flex:1;overflow-y:auto}
+.tab-pane.active{display:block}
+.tab-inner{padding:12px;max-width:480px;margin:0 auto}
+
+/* SECTION CARDS */
+.sec-card{background:var(--panel);border:1px solid var(--brown);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.sec-hdr{display:flex;align-items:center;gap:8px;padding:12px 14px;background:var(--panel2);border-bottom:1px solid var(--brown)}
+.sec-icon{font-size:16px}
+.sec-title{font-size:12px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:600}
+.sec-body{padding:2px 14px 10px}
+
+/* STAT ROWS */
+.srow{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(139,69,19,.2);font-size:13px}
+.srow:last-child{border-bottom:none}
+.sname{color:var(--text);display:flex;align-items:center;gap:6px}
+.sdot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.sdot.physical{background:#95a5a6}.sdot.fire{background:#e74c3c}.sdot.frost{background:#3498db}
+.sdot.lightning{background:#f1c40f}.sdot.decay{background:#2ecc71}.sdot.ethereal{background:#9b59b6}.sdot.impact{background:#e67e22}
+.sval{color:var(--gold);font-weight:600;font-size:14px}
+.sval.pos{color:var(--green)}.sval.neg{color:var(--red)}
+
+/* HERO STATS */
+.hero-card{background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--brown);border-radius:16px;padding:18px;margin-bottom:12px;position:relative;overflow:hidden}
+.hero-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold),var(--green),var(--blue))}
+.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.hero-stat{text-align:center;padding:10px 6px;background:rgba(0,0,0,.2);border-radius:10px}
+.hero-ico{font-size:22px;margin-bottom:4px}
+.hero-val{font-size:28px;font-weight:700;line-height:1}
+.hero-val.health{color:#e74c3c}.hero-val.stamina{color:#2ecc71}.hero-val.mana{color:#3498db}
+.hero-lbl{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:1.5px;margin-top:4px}
+
+/* POINTS */
+.pts-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.pts-card{background:var(--panel);border:1px solid var(--brown);border-radius:12px;padding:12px;display:flex;align-items:center;gap:10px}
+.pts-ico{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:8px;font-size:18px;flex-shrink:0}
+.pts-info h4{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.pts-val{font-size:16px;color:var(--gold);font-weight:700}
+.pts-val.warn{color:var(--red)}
+
+/* RESIST GRID */
+.resist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding:10px 0}
+.resist-item{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--panel2);border-radius:6px}
+.resist-lbl{font-size:11px;color:var(--dim);display:flex;align-items:center;gap:5px}
+.resist-val{font-size:13px;font-weight:700;color:var(--gold)}
+
+/* EQUIP SLOTS */
+.equip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 0}
+.equip-slot{aspect-ratio:1;background:var(--panel2);border:2px dashed var(--brown);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:4px;text-align:center;position:relative}
+.equip-slot.filled{border-style:solid;border-color:var(--gold)}
+.equip-slot img{width:36px;height:36px;border-radius:4px;margin-bottom:2px}
+.slot-lbl{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+.slot-item{font-size:9px;margin-top:1px;line-height:1.1}
+
+/* ITEM CARDS */
+.item-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;padding:8px 0}
+.item-card{background:var(--panel2);border:1px solid var(--brown);border-radius:10px;padding:10px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center}
+.item-card.sel{border-color:var(--gold);background:var(--panel3)}
+.item-card img{width:40px;height:40px;border-radius:4px}
+.ic-name{font-size:11px;line-height:1.2}
+.ic-meta{font-size:9px;color:var(--dim)}
+.ic-set{font-size:9px;color:var(--gold)}
+
+/* SEARCH & FILTERS */
+.search-bar{width:100%;padding:10px 12px;background:var(--panel);border:1px solid var(--brown);border-radius:10px;color:var(--text);font-size:16px;font-family:inherit;margin-bottom:10px}
+.filter-pills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px}
+.pill{padding:6px 10px;background:var(--panel);border:1px solid var(--brown);border-radius:16px;cursor:pointer;font-size:11px;color:var(--dim);font-family:inherit}
+.pill.active{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:200;display:flex;align-items:flex-end;justify-content:center}
+.modal{background:var(--panel);border:1px solid var(--gold);border-radius:16px 16px 0 0;width:100%;max-height:80vh;max-height:80dvh;display:flex;flex-direction:column}
+.modal-hdr{padding:12px 14px;border-bottom:1px solid var(--brown);display:flex;align-items:center;gap:8px}
+.modal-title{font-size:15px;color:var(--gold);flex:1}
+.modal-close{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:var(--panel2);border:1px solid var(--brown);border-radius:6px;cursor:pointer;color:var(--text);font-size:14px}
+.modal-search{margin:8px 12px;padding:9px;background:var(--panel2);border:1px solid var(--brown);border-radius:8px;color:var(--text);font-size:16px;font-family:inherit}
+.modal-body{flex:1;overflow-y:auto;padding:0 12px 12px}
+
+/* SKILL ITEMS */
+.skill-item{display:flex;align-items:center;gap:10px;padding:10px;margin-top:4px;background:var(--panel2);border:1px solid transparent;border-radius:8px;cursor:pointer}
+.skill-item.sel{border-color:var(--gold);background:var(--panel3)}
+.skill-item.locked{opacity:.5}
+.skill-item img{width:36px;height:36px;border-radius:4px;flex-shrink:0}
+.skill-info{flex:1;min-width:0}
+.skill-name{font-size:13px}
+.skill-meta{font-size:10px;color:var(--dim)}
+.skill-tier{padding:2px 6px;background:var(--brown);color:var(--gold);font-size:8px;border-radius:3px;flex-shrink:0}
+.skill-tier.t2{background:var(--gold);color:var(--bg)}
+.skill-tier.t3{background:#7d6608;color:#fff}
+
+/* FACTION CARD */
+.faction-card{background:var(--panel2);border:1px solid var(--brown);border-radius:12px;padding:14px;margin-bottom:10px;cursor:pointer}
+.faction-card.sel{border-color:var(--gold);background:var(--panel3)}
+.faction-name{font-size:15px;color:var(--gold);font-weight:600;margin-bottom:4px}
+.faction-desc{font-size:12px;color:var(--dim);line-height:1.4}
+
+/* CONSUMABLE */
+.cons-item{display:flex;align-items:center;gap:10px;padding:10px;background:var(--panel2);border:1px solid transparent;border-radius:8px;margin-bottom:6px;cursor:pointer}
+.cons-item.sel{border-color:var(--gold);background:var(--panel3)}
+.cons-item img{width:36px;height:36px;border-radius:4px;flex-shrink:0}
+.cons-info{flex:1;min-width:0}
+.cons-name{font-size:13px}
+.cons-type{font-size:10px;color:var(--dim)}
+.cons-effects{font-size:10px;color:var(--dim);margin-top:2px}
+
+/* SUMMARY CHIPS */
+.chip-row{display:flex;flex-wrap:wrap;gap:5px;padding:8px 0}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;background:var(--panel2);border-radius:5px;font-size:10px}
+.chip img{width:16px;height:16px;border-radius:3px}
+.chip-empty{color:var(--dim2);font-size:12px;padding:10px 0;text-align:center;font-style:italic}
+
+/* DESKTOP */
+@media(min-width:900px){
+  .home-menu{max-width:400px}
+  .builder-content{display:grid;grid-template-columns:280px 1fr 320px;gap:0;padding-bottom:0}
+  .tab-pane{display:block!important;border-right:1px solid var(--brown)}
+  .tab-bar{display:none}
+  .tab-inner{max-width:none}
+}
+@media(max-width:380px){
+  .home-title{font-size:26px;letter-spacing:4px}
+  .hero-val{font-size:24px}
+  .pts-row{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-    <div id="root"></div>
-
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
-    <script>
-    // ===== DATA =====
-    var DATA_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/data/';
-    var IMG_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/';
-
-    function fetchJSON(path) {
-        return fetch(DATA_BASE + path).then(function(r) {
-            if (!r.ok) throw new Error('HTTP ' + r.status + ': ' + path);
-            return r.json();
-        });
-    }
-
-    function imgSrc(path) {
-        if (!path) return null;
-        return IMG_BASE + path;
-    }
-
-    function h(tag, props, children) {
-        return React.createElement(tag, props || {}, children);
-    }
-
-    // ===== SVG LOGO =====
-    function Logo(props) {
-        var size = props.size || 80;
-        return h('svg', {
-            width: size, height: size, viewBox: '0 0 100 100',
-            style: { display: 'block', margin: '0 auto' }
-        },
-            // Left sword
-            h('g', { transform: 'rotate(-45, 50, 60)'},
-                h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: 'url(#goldGrad)'}),
-                h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
-                h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
-            ),
-            // Right sword
-            h('g', { transform: 'rotate(45, 50, 60)'},
-                h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: 'url(#goldGrad)'}),
-                h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
-                h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
-            ),
-            h('defs', null,
-                h('linearGradient', {id: 'goldGrad', x1: '0%', y1: '0%', x2: '0%', y2: '100%'},
-                    h('stop', {offset: '0%', stopColor: '#f0d060'}),
-                    h('stop', {offset: '50%', stopColor: '#c9a227'}),
-                    h('stop', {offset: '100%', stopColor: '#8b4513'})
-                )
-            )
-        );
-    }
-
-    // ===== LOADING =====
-    function LoadingScreen(props) {
-        return h('div', {className: 'loading-screen'},
-            h('div', {className: 'logo-container'},
-                h(Logo, {size: 100})
-            ),
-            h('div', {className: 'loading-title'}, 'Outward'),
-            h('div', {className: 'loading-subtitle'}, 'Build Builder'),
-            h('div', {className: 'loading-bar-wrap'},
-                h('div', {className: 'loading-bar', style: {width: props.progress + '%'}})
-            ),
-            h('div', {className: 'loading-status'}, props.status),
-            props.error ? h('div', {className: 'loading-error'}, props.error) : null,
-            props.error ? h('button', {className: 'retry-btn', onClick: props.onRetry}, 'Retry') : null
-        );
-    }
-
-    // ===== HOME =====
-    function HomeScreen(props) {
-        var data = props.data;
-        var skillCount = data ? data.skills.length : 0;
-        var weaponCount = data ? data.weapons.length : 0;
-        var armorCount = data ? data.armor.length : 0;
-
-        return h('div', {className: 'home-screen'},
-            h('div', {className: 'home-hero'},
-                h('div', {className: 'home-logo'},
-                    h(Logo, {size: 80})
-                ),
-                h('div', {className: 'home-title'}, 'Outward'),
-                h('div', {className: 'home-subtitle'}, 'Definitive Edition Build Builder'),
-                h('div', {className: 'home-stats-row'},
-                    h('div', {className: 'home-stat-pill'},
-                        h('div', {className: 'home-stat-num'}, skillCount),
-                        h('div', {className: 'home-stat-label'}, 'Skills')
-                    ),
-                    h('div', {className: 'home-stat-pill'},
-                        h('div', {className: 'home-stat-num'}, weaponCount),
-                        h('div', {className: 'home-stat-label'}, 'Weapons')
-                    ),
-                    h('div', {className: 'home-stat-pill'},
-                        h('div', {className: 'home-stat-num'}, armorCount),
-                        h('div', {className: 'home-stat-label'}, 'Armor')
-                    )
-                )
-            ),
-            h('div', {className: 'home-menu'},
-                h('button', {className: 'menu-btn', onClick: props.onStart},
-                    h('div', {className: 'menu-icon'}, '⚔️'),
-                    h('div', {className: 'menu-content'},
-                        h('h3', null, 'Create Build'),
-                        h('p', null, 'Design your perfect character')
-                    ),
-                    h('div', {className: 'menu-arrow'}, '›')
-                ),
-                h('button', {className: 'menu-btn', onClick: props.onStart},
-                    h('div', {className: 'menu-icon'}, '🛡️'),
-                    h('div', {className: 'menu-content'},
-                        h('h3', null, 'Equipment'),
-                        h('p', null, 'Browse weapons and armor')
-                    ),
-                    h('div', {className: 'menu-arrow'}, '›')
-                ),
-                h('button', {className: 'menu-btn', onClick: props.onStart},
-                    h('div', {className: 'menu-icon'}, '📊'),
-                    h('div', {className: 'menu-content'},
-                        h('h3', null, 'Database'),
-                        h('p', null, 'Explore all game data')
-                    ),
-                    h('div', {className: 'menu-arrow'}, '›')
-                )
-            ),
-            h('div', {className: 'home-footer'}, 'Data from outward.wiki.gg')
-        );
-    }
-
-    // ===== STATS TAB =====
-    function StatsTab(props) {
-        var data = props.data;
-        var build = props.build;
-
-        var stats = React.useMemo(function() {
-            var result = {
-                health: 100, stamina: 100, mana: 20,
-                protection: 0, impactResist: 0,
-                resistances: {physical: 0, fire: 0, frost: 0, lightning: 0, decay: 0, ethereal: 0},
-                staminaCost: 0, manaCost: 0,
-                moveSpeed: 0, coldResist: 0, heatResist: 0, pouch: 0
-            };
-
-            // Equipment
-            Object.keys(build.equipment).forEach(function(slotId) {
-                var name = build.equipment[slotId];
-                if (!name) return;
-
-                var armor = data.armor.find(function(a) { return a.name === name; });
-                if (armor) {
-                    result.protection += armor.protection || 0;
-                    result.impactResist += (armor.resistances && armor.resistances.impact) || 0;
-                    result.staminaCost += armor.stamina_cost_reduction || 0;
-                    result.manaCost += armor.mana_cost_reduction || 0;
-                    result.moveSpeed += armor.move_speed || 0;
-                    result.coldResist += armor.cold_resist || 0;
-                    result.heatResist += armor.heat_resist || 0;
-                    result.pouch += armor.pouch || 0;
-
-                    if (armor.resistances) {
-                        ['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k) {
-                            if (armor.resistances[k]) {
-                                result.resistances[k] = (result.resistances[k] || 0) + armor.resistances[k];
-                            }
-                        });
-                    }
-                }
-            });
-
-            // Skills
-            build.skills.forEach(function(name) {
-                var skill = data.skills.find(function(s) { return s.name === name; });
-                if (skill && skill.effects) {
-                    var m = skill.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
-                    if (m) {
-                        var key = m[3].toLowerCase();
-                        result[key] += parseInt(m[2]) * (m[1] === '-' ? -1 : 1);
-                    }
-                }
-            });
-
-            return result;
-        }, [data, build]);
-
-        var pointsUsed = build.skills.length;
-        var pointsLeft = build.theorycraft ? '∞' : (build.level - pointsUsed);
-        var breakthroughsLeft = 3 - build.breakthroughsUsed;
-
-        // Equipment names for display
-        var equippedItems = Object.keys(build.equipment)
-            .map(function(slotId) {
-                var name = build.equipment[slotId];
-                if (!name) return null;
-                var item = data.armor.find(function(a) { return a.name === name; }) ||
-                           data.weapons.find(function(w) { return w.name === name; });
-                return item ? {slot: slotId, item: item} : null;
-            })
-            .filter(Boolean);
-
-        // Selected skills
-        var selectedSkills = build.skills.map(function(name) {
-            return data.skills.find(function(s) { return s.name === name; });
-        }).filter(Boolean);
-
-        function StatRow(label, value, opts) {
-            opts = opts || {};
-            var cls = 'stat-val';
-            if (value > 0 && !opts.noPlus) cls += ' positive';
-            if (value < 0) cls += ' negative';
-            var display = (value > 0 && !opts.noPlus ? '+' : '') + value + (opts.suffix || '');
-            if (opts.noPlus && value > 0) display = value + (opts.suffix || '');
-
-            return h('div', {className: 'stat-row'},
-                h('span', {className: 'stat-name'},
-                    opts.dot ? h('span', {className: 'stat-dot ' + opts.dot}) : null,
-                    label
-                ),
-                h('span', {className: cls}, display)
-            );
-        }
-
-        return h('div', {className: 'stats-container'},
-            // Hero stats
-            h('div', {className: 'stats-hero'},
-                h('div', {className: 'hero-row'},
-                    h('div', {className: 'hero-stat'},
-                        h('div', {className: 'hero-icon'}, '❤️'),
-                        h('div', {className: 'hero-value health'}, stats.health),
-                        h('div', {className: 'hero-label'}, 'Health')
-                    ),
-                    h('div', {className: 'hero-stat'},
-                        h('div', {className: 'hero-icon'}, '⚡'),
-                        h('div', {className: 'hero-value stamina'}, stats.stamina),
-                        h('div', {className: 'hero-label'}, 'Stamina')
-                    ),
-                    h('div', {className: 'hero-stat'},
-                        h('div', {className: 'hero-icon'}, '🔮'),
-                        h('div', {className: 'hero-value mana'}, stats.mana),
-                        h('div', {className: 'hero-label'}, 'Mana')
-                    )
-                )
-            ),
-
-            // Points summary
-            h('div', {className: 'points-summary'},
-                h('div', {className: 'point-card'},
-                    h('div', {className: 'point-icon'}, '⚡'),
-                    h('div', {className: 'point-info'},
-                        h('h4', null, 'Skill Points'),
-                        h('div', {className: 'val' + (pointsLeft < 0 ? ' warning' : '')}, 
-                            pointsUsed + ' / ' + (build.theorycraft ? '∞' : build.level))
-                    )
-                ),
-                h('div', {className: 'point-card'},
-                    h('div', {className: 'point-icon'}, '💫'),
-                    h('div', {className: 'point-info'},
-                        h('h4', null, 'Breakthroughs'),
-                        h('div', {className: 'val' + (breakthroughsLeft <= 0 ? ' warning' : '')},
-                            build.breakthroughsUsed + ' / 3')
-                    )
-                )
-            ),
-
-            // Defense
-            h('div', {className: 'section-card'},
-                h('div', {className: 'section-header'},
-                    h('span', {className: 'section-icon'}, '🛡️'),
-                    h('span', {className: 'section-title'}, 'Defense')
-                ),
-                h('div', {className: 'section-body'},
-                    StatRow('Protection', stats.protection, {noPlus: true}),
-                    StatRow('Impact Resistance', stats.impactResist, {noPlus: true}),
-
-                    h('div', {className: 'resist-grid'},
-                        h('div', {className: 'resist-item'},
-                            h('span', {className: 'resist-label'},
-                                h('span', {className: 'stat-dot physical'}),
-                                'Physical'
-                            ),
-                            h('span', {className: 'resist-val'}, stats.resistances.physical || 0)
-                        ),
-                        h('div', {className: 'resist-item'},
-                            h('span', {className: 'resist-label'},
-                                h('span', {className: 'stat-dot fire'}),
-                                'Fire'
-                            ),
-                            h('span', {className: 'resist-val'}, stats.resistances.fire || 0)
-                        ),
-                        h('div', {className: 'resist-item'},
-                            h('span', {className: 'resist-label'},
-                                h('span', {className: 'stat-dot frost'}),
-                                'Frost'
-                            ),
-                            h('span', {className: 'resist-val'}, stats.resistances.frost || 0)
-                        ),
-                        h('div', {className: 'resist-item'},
-                            h('span', {className: 'resist-label'},
-                                h('span', {className: 'stat-dot lightning'}),
-                                'Lightning'
-                            ),
-                            h('span', {className: 'resist-val'}, stats.resistances.lightning || 0)
-                        ),
-                        h('div', {className: 'resist-item'},
-                            h('span', {className: 'resist-label'},
-                                h('span', {className: 'stat-dot decay'}),
-                                'Decay'
-                            ),
-                            h('span', {className: 'resist-val'}, stats.resistances.decay || 0)
-                        ),
-                        h('div', {className: 'resist-item'},
-                            h('span', {className: 'resist-label'},
-                                h('span', {className: 'stat-dot ethereal'}),
-                                'Ethereal'
-                            ),
-                            h('span', {className: 'resist-val'}, stats.resistances.ethereal || 0)
-                        )
-                    )
-                )
-            ),
-
-            // Modifiers
-            h('div', {className: 'section-card'},
-                h('div', {className: 'section-header'},
-                    h('span', {className: 'section-icon'}, '⚙️'),
-                    h('span', {className: 'section-title'}, 'Modifiers')
-                ),
-                h('div', {className: 'section-body'},
-                    StatRow('Stamina Cost', -stats.staminaCost, {suffix: '%'}),
-                    StatRow('Mana Cost', -stats.manaCost, {suffix: '%'}),
-                    StatRow('Movement Speed', stats.moveSpeed, {suffix: '%'}),
-                    StatRow('Cold Protection', stats.coldResist, {noPlus: true}),
-                    StatRow('Heat Protection', stats.heatResist, {noPlus: true}),
-                    StatRow('Pouch Bonus', stats.pouch, {noPlus: true})
-                )
-            ),
-
-            // Equipment summary
-            h('div', {className: 'section-card'},
-                h('div', {className: 'section-header'},
-                    h('span', {className: 'section-icon'}, '🎒'),
-                    h('span', {className: 'section-title'}, 'Equipment')
-                ),
-                h('div', {className: 'section-body'},
-                    equippedItems.length > 0 ?
-                        h('div', {className: 'equip-summary'},
-                            equippedItems.map(function(eq) {
-                                return h('div', {key: eq.slot, className: 'equip-chip'},
-                                    eq.item.local_image ? 
-                                        h('img', {src: imgSrc(eq.item.local_image), loading: 'lazy'}) : null,
-                                    h('span', null, eq.item.name)
-                                );
-                            })
-                        ) :
-                        h('div', {className: 'equip-empty'}, 'No equipment selected')
-                )
-            ),
-
-            // Skills summary
-            h('div', {className: 'section-card'},
-                h('div', {className: 'section-header'},
-                    h('span', {className: 'section-icon'}, '⚡'),
-                    h('span', {className: 'section-title'}, 'Skills (' + selectedSkills.length + ')')
-                ),
-                h('div', {className: 'section-body'},
-                    selectedSkills.length > 0 ?
-                        h('div', {className: 'skill-list'},
-                            selectedSkills.map(function(skill) {
-                                return h('span', {key: skill.name, className: 'skill-tag'},
-                                    skill.local_image ?
-                                        h('img', {src: imgSrc(skill.local_image), loading: 'lazy'}) : null,
-                                    skill.name
-                                );
-                            })
-                        ) :
-                        h('div', {className: 'equip-empty'}, 'No skills selected')
-                )
-            )
-        );
-    }
-
-    // ===== SKILLS TAB =====
-    function SkillsTab(props) {
-        var data = props.data;
-        var build = props.build;
-        var setBuild = props.setBuild;
-
-        var searchState = React.useState('');
-        var search = searchState[0], setSearch = searchState[1];
-
-        var filterState = React.useState(null);
-        var filterClass = filterState[0], setFilterClass = filterState[1];
-
-        var expandedState = React.useState(data.classes[0] ? data.classes[0].name : null);
-        var expandedClass = expandedState[0], setExpandedClass = expandedState[1];
-
-        var filteredSkills = React.useMemo(function() {
-            var list = data.skills;
-            if (filterClass) list = list.filter(function(s) { return s.parent_class === filterClass; });
-            if (search) {
-                var q = search.toLowerCase();
-                list = list.filter(function(s) {
-                    return s.name.toLowerCase().indexOf(q) >= 0 ||
-                           (s.effects && s.effects.toLowerCase().indexOf(q) >= 0);
-                });
-            }
-            return list;
-        }, [data.skills, search, filterClass]);
-
-        var skillsByClass = React.useMemo(function() {
-            var map = {};
-            filteredSkills.forEach(function(s) {
-                if (!map[s.parent_class]) map[s.parent_class] = [];
-                map[s.parent_class].push(s);
-            });
-            Object.keys(map).forEach(function(k) {
-                map[k].sort(function(a, b) {
-                    var order = function(t) { return t === 0 ? 4 : t; };
-                    return order(a.tier) - order(b.tier);
-                });
-            });
-            return map;
-        }, [filteredSkills]);
-
-        var pointsUsed = build.skills.length;
-        var pointsLeft = build.theorycraft ? 999 : build.level - pointsUsed;
-
-        function toggleSkill(skill) {
-            var isSelected = build.skills.indexOf(skill.name) >= 0;
-            var isBreakthrough = skill.costs_breakthrough;
-
-            if (isSelected) {
-                setBuild(Object.assign({}, build, {
-                    skills: build.skills.filter(function(s) { return s !== skill.name; }),
-                    breakthroughsUsed: build.breakthroughsUsed - (isBreakthrough ? 1 : 0)
-                }));
-            } else {
-                if (!build.theorycraft && pointsLeft <= 0) return;
-                if (isBreakthrough && !build.theorycraft && build.breakthroughsUsed >= 3) return;
-                setBuild(Object.assign({}, build, {
-                    skills: build.skills.concat([skill.name]),
-                    breakthroughsUsed: build.breakthroughsUsed + (isBreakthrough ? 1 : 0)
-                }));
-            }
-        }
-
-        return h('div', {style: {padding: '14px'}},
-            h('input', {
-                className: 'search-bar',
-                placeholder: 'Search skills...',
-                value: search,
-                onChange: function(e) { setSearch(e.target.value); }
-            }),
-
-            h('div', {className: 'filter-pills'},
-                h('button', {
-                    className: 'pill' + (!filterClass ? ' active' : ''),
-                    onClick: function() { setFilterClass(null); }
-                }, 'All'),
-                data.classes.map(function(c) {
-                    return h('button', {
-                        key: c.name,
-                        className: 'pill' + (filterClass === c.name ? ' active' : ''),
-                        onClick: function() { setFilterClass(c.name); }
-                    }, c.name);
-                })
-            ),
-
-            data.classes.map(function(cls) {
-                var skills = skillsByClass[cls.name];
-                if (!skills || skills.length === 0) return null;
-                var isOpen = filterClass === cls.name || expandedClass === cls.name || search.length > 0;
-
-                return h('div', {key: cls.name, className: 'class-section'},
-                    h('div', {
-                        className: 'class-header',
-                        onClick: function() { setExpandedClass(isOpen ? null : cls.name); }
-                    },
-                        cls.local_image ? h('img', {className: 'class-icon', src: imgSrc(cls.local_image)}) : null,
-                        h('div', {className: 'class-info'},
-                            h('h3', null, cls.name),
-                            h('p', null, cls.teacher + ' — ' + cls.location)
-                        ),
-                        cls.is_dlc ? h('span', {className: 'class-dlc'}, 'DLC') : null
-                    ),
-                    isOpen ? h('div', {className: 'skills-list'},
-                        skills.map(function(skill) {
-                            var isSelected = build.skills.indexOf(skill.name) >= 0;
-                            var canAfford = build.theorycraft || pointsLeft > 0 || isSelected;
-                            var tierClass = 'skill-tier' + (skill.tier === 2 ? ' t2' : skill.tier === 3 ? ' t3' : '');
-
-                            return h('div', {
-                                key: skill.name,
-                                className: 'skill-item' + (isSelected ? ' selected' : '') + (!canAfford ? ' locked' : ''),
-                                onClick: function() { if (canAfford) toggleSkill(skill); }
-                            },
-                                skill.local_image ? h('img', {className: 'skill-icon', src: imgSrc(skill.local_image), loading: 'lazy'}) : null,
-                                h('div', {className: 'skill-info'},
-                                    h('div', {className: 'skill-name'}, skill.name),
-                                    h('div', {className: 'skill-meta'},
-                                        skill.skill_type +
-                                        (skill.subtype ? ' · ' + skill.subtype : '') +
-                                        (skill.mana_cost ? ' · ' + skill.mana_cost + ' Mana' : '')
-                                    )
-                                ),
-                                h('span', {className: tierClass}, skill.tier === 0 ? 'SP' : 'T' + skill.tier)
-                            );
-                        })
-                    ) : null
-                );
-            })
-        );
-    }
-
-    // ===== EQUIPMENT TAB =====
-    function EquipmentTab(props) {
-        var data = props.data;
-        var build = props.build;
-        var setBuild = props.setBuild;
-
-        var pickerState = React.useState(null);
-        var pickerSlot = pickerState[0], setPickerSlot = pickerState[1];
-
-        var pickerSearchState = React.useState('');
-        var pickerSearch = pickerSearchState[0], setPickerSearch = pickerSearchState[1];
-
-        var slots = [
-            {id: 'head', label: 'Head', type: 'armor'},
-            {id: 'chest', label: 'Chest', type: 'armor'},
-            {id: 'legs', label: 'Legs', type: 'armor'},
-            {id: 'back', label: 'Back', type: 'armor'},
-            {id: 'weapon_main', label: 'Main', type: 'weapon'},
-            {id: 'weapon_off', label: 'Off', type: 'weapon'},
-            {id: 'acc1', label: 'Acc 1', type: 'armor'},
-            {id: 'acc2', label: 'Acc 2', type: 'armor'},
-            {id: 'acc3', label: 'Acc 3', type: 'armor'},
-            {id: 'acc4', label: 'Acc 4', type: 'armor'}
-        ];
-
-        function getItem(slotId) {
-            var name = build.equipment[slotId];
-            if (!name) return null;
-            return data.weapons.find(function(w) { return w.name === name; }) ||
-                   data.armor.find(function(a) { return a.name === name; });
-        }
-
-        function getPickerItems() {
-            if (!pickerSlot) return [];
-            var slot = slots.find(function(s) { return s.id === pickerSlot; });
-            var q = pickerSearch.toLowerCase();
-
-            if (slot.type === 'weapon') {
-                return data.weapons.filter(function(w) { return !q || w.name.toLowerCase().indexOf(q) >= 0; });
-            }
-
-            var slotMap = {
-                head: ['head'], chest: ['chest'], legs: ['legs'], back: ['backpack'],
-                acc1: ['necklace', 'ring'], acc2: ['necklace', 'ring'],
-                acc3: ['necklace', 'ring'], acc4: ['necklace', 'ring']
-            };
-            var validSlots = slotMap[pickerSlot] || [];
-            return data.armor.filter(function(a) {
-                return validSlots.indexOf(a.slot) >= 0 && (!q || a.name.toLowerCase().indexOf(q) >= 0);
-            });
-        }
-
-        var pickerItems = getPickerItems();
-
-        return h('div', {style: {padding: '14px'}},
-            h('div', {className: 'equipment-grid'},
-                slots.map(function(slot) {
-                    var item = getItem(slot.id);
-                    return h('div', {
-                        key: slot.id,
-                        className: 'equip-slot' + (item ? ' filled' : ''),
-                        onClick: function() { setPickerSlot(slot.id); setPickerSearch(''); }
-                    },
-                        item && item.local_image ? h('img', {src: imgSrc(item.local_image), loading: 'lazy'}) : null,
-                        h('div', {className: 'slot-label'}, slot.label),
-                        item ? h('div', {className: 'item-name'}, item.name) : null
-                    );
-                })
-            ),
-
-            pickerSlot ? h('div', {className: 'modal-overlay', onClick: function() { setPickerSlot(null); }},
-                h('div', {className: 'modal', onClick: function(e) { e.stopPropagation(); }},
-                    h('div', {className: 'modal-header'},
-                        h('div', {className: 'modal-title'},
-                            slots.find(function(s) { return s.id === pickerSlot; }).label
-                        ),
-                        h('button', {className: 'modal-close', onClick: function() { setPickerSlot(null); }}, '✕')
-                    ),
-                    h('input', {
-                        className: 'modal-search',
-                        placeholder: 'Search...',
-                        value: pickerSearch,
-                        onChange: function(e) { setPickerSearch(e.target.value); }
-                    }),
-                    h('div', {className: 'modal-body'},
-                        h('div', {className: 'item-grid'},
-                            pickerItems.map(function(item) {
-                                return h('div', {
-                                    key: item.name,
-                                    className: 'item-card',
-                                    onClick: function() {
-                                        var newEquip = Object.assign({}, build.equipment);
-                                        newEquip[pickerSlot] = item.name;
-                                        setBuild(Object.assign({}, build, {equipment: newEquip}));
-                                        setPickerSlot(null);
-                                    }
-                                },
-                                    item.local_image ? h('img', {src: imgSrc(item.local_image), loading: 'lazy'}) : null,
-                                    h('div', {className: 'item-card-name'}, item.name),
-                                    item.set_name ? h('div', {className: 'item-card-set'}, item.set_name) : null
-                                );
-                            }),
-                            pickerItems.length === 0 ? h('div', {style: {color: 'var(--dim)', padding: 20}}, 'No items found') : null
-                        )
-                    )
-                )
-            ) : null
-        );
-    }
-
-    // ===== BUILDER =====
-    function BuilderScreen(props) {
-        var data = props.data;
-        var build = props.build;
-        var setBuild = props.setBuild;
-        var onHome = props.onHome;
-
-        var tabState = React.useState('stats');
-        var activeTab = tabState[0], setActiveTab = tabState[1];
-
-        var isDesktop = window.innerWidth >= 900;
-
-        function updateLevel(e) {
-            var val = parseInt(e.target.value) || 1;
-            val = Math.min(50, Math.max(1, val));
-            setBuild(Object.assign({}, build, {level: val}));
-        }
-
-        function toggleTheorycraft() {
-            setBuild(Object.assign({}, build, {theorycraft: !build.theorycraft}));
-        }
-
-        var tabs = [
-            {id: 'stats', icon: '📊', label: 'Stats'},
-            {id: 'skills', icon: '⚡', label: 'Skills'},
-            {id: 'equip', icon: '🛡️', label: 'Gear'}
-        ];
-
-        return h('div', {className: 'builder-screen'},
-            h('div', {className: 'builder-header'},
-                h('button', {className: 'header-btn', onClick: onHome}, '←'),
-                h('div', {className: 'header-title'}, build.name || 'New Build'),
-                h('button', {
-                    className: 'theory-toggle' + (build.theorycraft ? ' active' : ''),
-                    onClick: toggleTheorycraft
-                }, 'Theory'),
-                h('div', {className: 'header-level'},
-                    'Lv',
-                    h('input', {
-                        type: 'number',
-                        className: 'level-input',
-                        min: 1, max: 50,
-                        value: build.level,
-                        onChange: updateLevel
-                    })
-                )
-            ),
-
-            h('div', {className: 'builder-content'},
-                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'stats' ? ' active' : '')},
-                    (isDesktop || activeTab === 'stats') ? StatsTab({data: data, build: build}) : null
-                ),
-                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'skills' ? ' active' : '')},
-                    (isDesktop || activeTab === 'skills') ? SkillsTab({data: data, build: build, setBuild: setBuild}) : null
-                ),
-                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'equip' ? ' active' : '')},
-                    (isDesktop || activeTab === 'equip') ? EquipmentTab({data: data, build: build, setBuild: setBuild}) : null
-                )
-            ),
-
-            !isDesktop ? h('div', {className: 'tab-bar'},
-                tabs.map(function(tab) {
-                    return h('button', {
-                        key: tab.id,
-                        className: 'tab-btn' + (activeTab === tab.id ? ' active' : ''),
-                        onClick: function() { setActiveTab(tab.id); }
-                    },
-                        h('span', {className: 'tab-icon'}, tab.icon),
-                        h('span', null, tab.label)
-                    );
-                })
-            ) : null
-        );
-    }
-
-    // ===== APP =====
-    function App() {
-        var screenState = React.useState('loading');
-        var screen = screenState[0], setScreen = screenState[1];
-
-        var dataState = React.useState(null);
-        var data = dataState[0], setData = dataState[1];
-
-        var progressState = React.useState(0);
-        var progress = progressState[0], setProgress = progressState[1];
-
-        var statusState = React.useState('Initializing...');
-        var status = statusState[0], setStatus = statusState[1];
-
-        var errorState = React.useState(null);
-        var error = errorState[0], setError = errorState[1];
-
-        var buildState = React.useState({
-            name: 'New Build',
-            level: 1,
-            theorycraft: false,
-            skills: [],
-            equipment: {},
-            breakthroughsUsed: 0
-        });
-        var build = buildState[0], setBuild = buildState[1];
-
-        // Load saved build
-        React.useEffect(function() {
-            try {
-                var saved = localStorage.getItem('outward-build');
-                if (saved) setBuild(JSON.parse(saved));
-            } catch(e) {}
-        }, []);
-
-        // Save build
-        React.useEffect(function() {
-            try {
-                localStorage.setItem('outward-build', JSON.stringify(build));
-            } catch(e) {}
-        }, [build]);
-
-        // Load data
-        React.useEffect(function() {
-            loadData();
-        }, []);
-
-        async function loadData() {
-            try {
-                setError(null);
-                setStatus('Loading skills...');
-                setProgress(15);
-
-                var results = await Promise.all([
-                    fetchJSON('skills/skills_tier1.json'),
-                    fetchJSON('skills/skills_tier2.json'),
-                    fetchJSON('skills/skills_tier3.json'),
-                    fetchJSON('skills/skills_special.json'),
-                    fetchJSON('skills/classes.json')
-                ]);
-
-                setProgress(40);
-                setStatus('Loading weapons...');
-
-                var weaponResults = await Promise.all([
-                    fetchJSON('weapons/weapons_melee.json'),
-                    fetchJSON('weapons/weapons_ranged.json'),
-                    fetchJSON('weapons/weapons_magical.json'),
-                    fetchJSON('weapons/shields.json')
-                ]);
-
-                setProgress(60);
-                setStatus('Loading armor...');
-
-                var armor = await fetchJSON('armor/armor_items.json');
-
-                setProgress(80);
-                setStatus('Processing...');
-
-                await new Promise(function(r) { setTimeout(r, 300); });
-
-                setData({
-                    skills: results[0].concat(results[1], results[2], results[3]),
-                    classes: results[4],
-                    weapons: weaponResults[0].weapons.concat(weaponResults[1].weapons, weaponResults[2].weapons, weaponResults[3].weapons),
-                    armor: armor
-                });
-
-                setProgress(100);
-                setStatus('Ready!');
-
-                setTimeout(function() { setScreen('home'); }, 400);
-
-            } catch(e) {
-                setError(e.message || 'Failed to load data. Check your connection.');
-                setStatus('Error');
-            }
-        }
-
-        if (screen === 'loading') {
-            return LoadingScreen({
-                progress: progress,
-                status: status,
-                error: error,
-                onRetry: function() { loadData(); }
-            });
-        }
-
-        if (screen === 'home') {
-            return HomeScreen({
-                data: data,
-                onStart: function() { setScreen('builder'); }
-            });
-        }
-
-        return BuilderScreen({
-            data: data,
-            build: build,
-            setBuild: setBuild,
-            onHome: function() { setScreen('home'); }
-        });
-    }
-
-    // Render
-    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
-    </script>
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script>
+var DATA_BASE='https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/data/';
+var IMG_BASE='https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/';
+function fetchJSON(p){return fetch(DATA_BASE+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})}
+function imgSrc(p){return p?IMG_BASE+p:null}
+function h(t,p,c){return React.createElement(t,p||{},c)}
+
+function Logo(props){var s=props.size||80;return h('svg',{width:s,height:s,viewBox:'0 0 100 100',style:{display:'block',margin:'0 auto'}},
+h('defs',null,h('linearGradient',{id:'gg',x1:'0%',y1:'0%',x2:'0%',y2:'100%'},h('stop',{offset:'0%',stopColor:'#f0d060'}),h('stop',{offset:'50%',stopColor:'#c9a227'}),h('stop',{offset:'100%',stopColor:'#8b4513'}))),
+h('g',{transform:'rotate(-45,50,60)'},h('rect',{x:46,y:15,width:8,height:55,rx:3,fill:'url(#gg)'}),h('rect',{x:38,y:62,width:24,height:6,rx:3,fill:'#8b4513'}),h('circle',{cx:50,cy:74,r:5,fill:'#c9a227'})),
+h('g',{transform:'rotate(45,50,60)'},h('rect',{x:46,y:15,width:8,height:55,rx:3,fill:'url(#gg)'}),h('rect',{x:38,y:62,width:24,height:6,rx:3,fill:'#8b4513'}),h('circle',{cx:50,cy:74,r:5,fill:'#c9a227'})))}
+
+function LoadingScreen(props){return h('div',{className:'loading-screen'},
+h('div',{className:'logo-svg'},h(Logo,{size:90})),
+h('div',{className:'loading-title'},'Outward'),
+h('div',{className:'loading-sub'},'Build Builder'),
+h('div',{className:'loading-bar-wrap'},h('div',{className:'loading-bar',style:{width:props.progress+'%'}})),
+h('div',{className:'loading-status'},props.status),
+props.error?h('div',{className:'loading-error'},props.error):null,
+props.error?h('button',{className:'retry-btn',onClick:props.onRetry},'Retry'):null)}
+
+function HomeScreen(props){var d=props.data;return h('div',{className:'home-screen'},
+h('div',{className:'home-hero'},
+h('div',{className:'home-logo'},h(Logo,{size:70})),
+h('div',{className:'home-title'},'Outward'),
+h('div',{className:'home-sub'},'Definitive Edition Build Builder'),
+h('div',{className:'home-stats'},
+h('div',{className:'home-stat-pill'},h('div',{className:'home-stat-num'},d.skills.length),h('div',{className:'home-stat-lbl'},'Skills')),
+h('div',{className:'home-stat-pill'},h('div',{className:'home-stat-num'},d.weapons.length),h('div',{className:'home-stat-lbl'},'Weapons')),
+h('div',{className:'home-stat-pill'},h('div',{className:'home-stat-num'},d.armor.length),h('div',{className:'home-stat-lbl'},'Armor')),
+h('div',{className:'home-stat-pill'},h('div',{className:'home-stat-num'},d.consumables.length),h('div',{className:'home-stat-lbl'},'Items')))),
+h('div',{className:'home-menu'},
+h('button',{className:'menu-btn',onClick:props.onStart},h('div',{className:'menu-icon'},'⚔️'),h('div',{className:'menu-content'},h('h3',null,'Create Build'),h('p',null,'Design your character')),h('div',{className:'menu-arrow'},'›'))),
+h('div',{className:'home-footer'},'outward.wiki.gg'))}
+
+/* ===== TAB 1: STATS ===== */
+function StatsTab(props){
+var data=props.data,build=props.build;
+var stats=React.useMemo(function(){
+var r={health:100,stamina:100,mana:20,protection:0,impactResist:0,resistances:{physical:0,fire:0,frost:0,lightning:0,decay:0,ethereal:0},staminaCost:0,manaCost:0,moveSpeed:0,coldResist:0,heatResist:0,pouch:0};
+
+/* armor */
+Object.keys(build.armor||{}).forEach(function(slot){
+var name=build.armor[slot];if(!name)return;
+var a=data.armor.find(function(x){return x.name===name});
+if(a){r.protection+=a.protection||0;r.impactResist+=(a.resistances&&a.resistances.impact)||0;
+r.staminaCost+=a.stamina_cost_reduction||0;r.manaCost+=a.mana_cost_reduction||0;
+r.moveSpeed+=a.move_speed||0;r.coldResist+=a.cold_resist||0;r.heatResist+=a.heat_resist||0;r.pouch+=a.pouch||0;
+if(a.resistances){['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){if(a.resistances[k])r.resistances[k]=(r.resistances[k]||0)+a.resistances[k]})}}});
+
+/* weapons */
+['weapon_main','weapon_off'].forEach(function(slot){
+var name=build.weapons&&build.weapons[slot];if(!name)return;
+var w=data.weapons.find(function(x){return x.name===name});
+if(w&&w.damage_stats&&w.damage_stats.base_damage){
+Object.keys(w.damage_stats.base_damage).forEach(function(k){
+var v=w.damage_stats.base_damage[k];
+if(k==='impact')r.impactResist+=v;
+else r.resistances[k]=(r.resistances[k]||0)+v;
+})}});
+
+/* skills */
+(build.skills||[]).forEach(function(name){
+var s=data.skills.find(function(x){return x.name===name});
+if(s&&s.effects){
+var m=s.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
+if(m){var key=m[3].toLowerCase();r[key]+=parseInt(m[2])*(m[1]==='-'?-1:1)}}});
+
+/* consumables (active buffs) */
+(build.consumables||[]).forEach(function(name){
+var c=data.consumables.find(function(x){return x.name===name});
+if(c&&c.effects){c.effects.forEach(function(e){
+if(e.effect_type==='buff'&&e.stat_modifiers){
+Object.keys(e.stat_modifiers).forEach(function(k){
+var v=e.stat_modifiers[k];
+if(k==='health')r.health+=v;if(k==='stamina')r.stamina+=v;if(k==='mana')r.mana+=v;
+if(k==='protection')r.protection+=v;
+if(k.indexOf('resist')>=0){var rk=k.replace('_resist','');if(r.resistances[rk]!==undefined)r.resistances[rk]+=v}
+})}})}});
+
+return r},[data,build]);
+
+var ptsUsed=(build.skills||[]).length;
+var ptsLeft=build.theorycraft?'∞':(build.level-ptsUsed);
+var btLeft=3-(build.breakthroughsUsed||0);
+
+/* equipped items for display */
+var equippedArmor=Object.keys(build.armor||{}).map(function(s){var n=build.armor[s];if(!n)return null;var i=data.armor.find(function(x){return x.name===n});return i?{slot:s,item:i}:null}).filter(Boolean);
+var equippedWeapons=Object.keys(build.weapons||{}).map(function(s){var n=build.weapons[s];if(!n)return null;var i=data.weapons.find(function(x){return x.name===n});return i?{slot:s,item:i}:null}).filter(Boolean);
+var equippedCons=(build.consumables||[]).map(function(n){return data.consumables.find(function(x){return x.name===n})}).filter(Boolean);
+var selFaction=build.faction?data.factions.find(function(f){return f.id===build.faction}):null;
+var selSkills=(build.skills||[]).map(function(n){return data.skills.find(function(s){return s.name===n})}).filter(Boolean);
+
+function SR(lbl,val,opts){opts=opts||{};var cls='sval';if(val>0&&!opts.noPlus)cls+=' pos';if(val<0)cls+=' neg';
+var d=(val>0&&!opts.noPlus?'+':'')+val+(opts.suffix||'');
+return h('div',{className:'srow'},h('span',{className:'sname'},opts.dot?h('span',{className:'sdot '+opts.dot}):null,lbl),h('span',{className:cls},d))}
+
+return h('div',{className:'tab-inner'},
+/* Hero */
+h('div',{className:'hero-card'},h('div',{className:'hero-grid'},
+h('div',{className:'hero-stat'},h('div',{className:'hero-ico'},'❤️'),h('div',{className:'hero-val health'},stats.health),h('div',{className:'hero-lbl'},'Health')),
+h('div',{className:'hero-stat'},h('div',{className:'hero-ico'},'⚡'),h('div',{className:'hero-val stamina'},stats.stamina),h('div',{className:'hero-lbl'},'Stamina')),
+h('div',{className:'hero-stat'},h('div',{className:'hero-ico'},'🔮'),h('div',{className:'hero-val mana'},stats.mana),h('div',{className:'hero-lbl'},'Mana')))),
+
+/* Points */
+h('div',{className:'pts-row'},
+h('div',{className:'pts-card'},h('div',{className:'pts-ico'},'⚡'),h('div',{className:'pts-info'},h('h4',null,'Skill Points'),h('div',{className:'pts-val'+(ptsLeft<0?' warn':'')},ptsUsed+' / '+(build.theorycraft?'∞':build.level)))),
+h('div',{className:'pts-card'},h('div',{className:'pts-ico'},'💫'),h('div',{className:'pts-info'},h('h4',null,'Breakthroughs'),h('div',{className:'pts-val'+(btLeft<=0?' warn':'')},(build.breakthroughsUsed||0)+' / 3')))),
+
+/* Defense */
+h('div',{className:'sec-card'},
+h('div',{className:'sec-hdr'},h('span',{className:'sec-icon'},'🛡️'),h('span',{className:'sec-title'},'Defense')),
+h('div',{className:'sec-body'},
+SR('Protection',stats.protection,{noPlus:true}),
+SR('Impact Resist',stats.impactResist,{noPlus:true}),
+h('div',{className:'resist-grid'},
+h('div',{className:'resist-item'},h('span',{className:'resist-lbl'},h('span',{className:'sdot physical'}),'Physical'),h('span',{className:'resist-val'},stats.resistances.physical||0)),
+h('div',{className:'resist-item'},h('span',{className:'resist-lbl'},h('span',{className:'sdot fire'}),'Fire'),h('span',{className:'resist-val'},stats.resistances.fire||0)),
+h('div',{className:'resist-item'},h('span',{className:'resist-lbl'},h('span',{className:'sdot frost'}),'Frost'),h('span',{className:'resist-val'},stats.resistances.frost||0)),
+h('div',{className:'resist-item'},h('span',{className:'resist-lbl'},h('span',{className:'sdot lightning'}),'Lightning'),h('span',{className:'resist-val'},stats.resistances.lightning||0)),
+h('div',{className:'resist-item'},h('span',{className:'resist-lbl'},h('span',{className:'sdot decay'}),'Decay'),h('span',{className:'resist-val'},stats.resistances.decay||0)),
+h('div',{className:'resist-item'},h('span',{className:'resist-lbl'},h('span',{className:'sdot ethereal'}),'Ethereal'),h('span',{className:'resist-val'},stats.resistances.ethereal||0))))),
+
+/* Modifiers */
+h('div',{className:'sec-card'},
+h('div',{className:'sec-hdr'},h('span',{className:'sec-icon'},'⚙️'),h('span',{className:'sec-title'},'Modifiers')),
+h('div',{className:'sec-body'},
+SR('Stamina Cost',-stats.staminaCost,{suffix:'%'}),
+SR('Mana Cost',-stats.manaCost,{suffix:'%'}),
+SR('Move Speed',stats.moveSpeed,{suffix:'%'}),
+SR('Cold Protection',stats.coldResist,{noPlus:true}),
+SR('Heat Protection',stats.heatResist,{noPlus:true}),
+SR('Pouch Bonus',stats.pouch,{noPlus:true}))),
+
+/* Faction */
+selFaction?h('div',{className:'sec-card'},
+h('div',{className:'sec-hdr'},h('span',{className:'sec-icon'},'🏰'),h('span',{className:'sec-title'},'Faction')),
+h('div',{className:'sec-body'},h('div',{style:{padding:'8px 0'}},h('div',{style:{fontSize:14,color:'var(--gold)',fontWeight:600}},selFaction.name),h('div',{style:{fontSize:12,color:'var(--dim)',marginTop:4,lineHeight:1.4}},selFaction.description)))):null,
+
+/* Equipment summary */
+h('div',{className:'sec-card'},
+h('div',{className:'sec-hdr'},h('span',{className:'sec-icon'},'🎒'),h('span',{className:'sec-title'},'Equipment')),
+h('div',{className:'sec-body'},
+equippedArmor.length+equippedWeapons.length>0?
+h('div',{className:'chip-row'},
+equippedArmor.map(function(eq){return h('span',{key:eq.slot,className:'chip'},eq.item.local_image?h('img',{src:imgSrc(eq.item.local_image)}):null,eq.item.name)}),
+equippedWeapons.map(function(eq){return h('span',{key:eq.slot,className:'chip'},eq.item.local_image?h('img',{src:imgSrc(eq.item.local_image)}):null,eq.item.name)})):
+h('div',{className:'chip-empty'},'No equipment selected'))),
+
+/* Consumables */
+equippedCons.length>0?h('div',{className:'sec-card'},
+h('div',{className:'sec-hdr'},h('span',{className:'sec-icon'},'🧪'),h('span',{className:'sec-title'},'Consumables')),
+h('div',{className:'sec-body'},h('div',{className:'chip-row'},
+equippedCons.map(function(c){return h('span',{key:c.name,className:'chip'},c.local_image?h('img',{src:imgSrc(c.local_image)}):null,c.name)})))):null,
+
+/* Skills */
+selSkills.length>0?h('div',{className:'sec-card'},
+h('div',{className:'sec-hdr'},h('span',{className:'sec-icon'},'⚡'),h('span',{className:'sec-title'},'Skills ('+selSkills.length+')')),
+h('div',{className:'sec-body'},h('div',{className:'chip-row'},
+selSkills.map(function(s){return h('span',{key:s.name,className:'chip'},s.local_image?h('img',{src:imgSrc(s.local_image)}):null,s.name)})))):null
+)}
+
+/* ===== TAB 2: ARMOR ===== */
+function ArmorTab(props){
+var data=props.data,build=props.build,setBuild=props.setBuild;
+var pickerState=React.useState(null);var pickerSlot=pickerState[0],setPickerSlot=pickerState[1];
+var searchState=React.useState('');var search=searchState[0],setSearch=searchState[1];
+var slotFilterState=React.useState('all');var slotFilter=slotFilterState[0],setSlotFilter=slotFilterState[1];
+
+var slots=[
+{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},
+{id:'back',label:'Back'},{id:'acc1',label:'Acc 1'},{id:'acc2',label:'Acc 2'},
+{id:'acc3',label:'Acc 3'},{id:'acc4',label:'Acc 4'}];
+
+var slotMap={head:['head'],chest:['chest'],legs:['legs'],back:['backpack'],
+acc1:['necklace','ring'],acc2:['necklace','ring'],acc3:['necklace','ring'],acc4:['necklace','ring']};
+
+function getItem(slotId){var name=(build.armor||{})[slotId];if(!name)return null;return data.armor.find(function(a){return a.name===name})}
+
+function getPickerItems(){
+if(!pickerSlot)return[];
+var valid=slotMap[pickerSlot]||[];
+var q=search.toLowerCase();
+return data.armor.filter(function(a){
+if(valid.indexOf(a.slot)<0)return false;
+if(slotFilter!=='all'&&a.slot!==slotFilter)return false;
+if(q&&a.name.toLowerCase().indexOf(q)<0)return false;
+return true})}
+
+var pickerItems=getPickerItems();
+
+return h('div',{className:'tab-inner'},
+h('div',{className:'equip-grid'},
+slots.map(function(slot){
+var item=getItem(slot.id);
+return h('div',{key:slot.id,className:'equip-slot'+(item?' filled':''),onClick:function(){setPickerSlot(slot.id);setSearch('')}},
+item&&item.local_image?h('img',{src:imgSrc(item.local_image),loading:'lazy'}):null,
+h('div',{className:'slot-lbl'},slot.label),
+item?h('div',{className:'slot-item'},item.name):null)})),
+
+pickerSlot?h('div',{className:'modal-overlay',onClick:function(){setPickerSlot(null)}},
+h('div',{className:'modal',onClick:function(e){e.stopPropagation()}},
+h('div',{className:'modal-hdr'},
+h('div',{className:'modal-title'},slots.find(function(s){return s.id===pickerSlot}).label),
+h('button',{className:'modal-close',onClick:function(){setPickerSlot(null)}},'✕')),
+h('input',{className:'modal-search',placeholder:'Search armor...',value:search,onChange:function(e){setSearch(e.target.value)}}),
+h('div',{className:'modal-body'},
+h('div',{className:'item-grid'},
+pickerItems.map(function(a){
+return h('div',{key:a.name,className:'item-card',onClick:function(){
+var newArmor=Object.assign({},build.armor||{});newArmor[pickerSlot]=a.name;
+setBuild(Object.assign({},build,{armor:newArmor}));setPickerSlot(null)}},
+a.local_image?h('img',{src:imgSrc(a.local_image),loading:'lazy'}):null,
+h('div',{className:'ic-name'},a.name),
+a.set_name?h('div',{className:'ic-set'},a.set_name):null,
+h('div',{className:'ic-meta'},'Prot: '+(a.protection||0)+' | W: '+(a.weight||0)))}),
+pickerItems.length===0?h('div',{style:{color:'var(--dim)',padding:20,textAlign:'center'}},'No items found'):null)))):null)}
+
+/* ===== TAB 3: WEAPONS ===== */
+function WeaponsTab(props){
+var data=props.data,build=props.build,setBuild=props.setBuild;
+var pickerState=React.useState(null);var pickerSlot=pickerState[0],setPickerSlot=pickerState[1];
+var searchState=React.useState('');var search=searchState[0],setSearch=searchState[1];
+var typeFilterState=React.useState('all');var typeFilter=typeFilterState[0],setTypeFilter=typeFilterState[1];
+
+var slots=[{id:'weapon_main',label:'Main Hand'},{id:'weapon_off',label:'Off Hand'}];
+
+function getItem(slotId){var name=(build.weapons||{})[slotId];if(!name)return null;return data.weapons.find(function(w){return w.name===name})}
+
+var weaponTypes=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield'];
+
+function getPickerItems(){
+if(!pickerSlot)return[];
+var q=search.toLowerCase();
+return data.weapons.filter(function(w){
+if(typeFilter!=='all'&&w.weapon_type!==typeFilter)return false;
+if(q&&w.name.toLowerCase().indexOf(q)<0)return false;
+return true})}
+
+var pickerItems=getPickerItems();
+
+return h('div',{className:'tab-inner'},
+h('div',{className:'equip-grid'},
+slots.map(function(slot){
+var item=getItem(slot.id);
+return h('div',{key:slot.id,className:'equip-slot'+(item?' filled':''),onClick:function(){setPickerSlot(slot.id);setSearch('')}},
+item&&item.local_image?h('img',{src:imgSrc(item.local_image),loading:'lazy'}):null,
+h('div',{className:'slot-lbl'},slot.label),
+item?h('div',{className:'slot-item'},item.name):null)})),
+
+pickerSlot?h('div',{className:'modal-overlay',onClick:function(){setPickerSlot(null)}},
+h('div',{className:'modal',onClick:function(e){e.stopPropagation()}},
+h('div',{className:'modal-hdr'},
+h('div',{className:'modal-title'},slots.find(function(s){return s.id===pickerSlot}).label),
+h('button',{className:'modal-close',onClick:function(){setPickerSlot(null)}},'✕')),
+h('input',{className:'modal-search',placeholder:'Search weapons...',value:search,onChange:function(e){setSearch(e.target.value)}}),
+h('div',{className:'filter-pills'},
+weaponTypes.map(function(t){return h('button',{key:t,className:'pill'+(typeFilter===t?' active':''),onClick:function(){setTypeFilter(t)}},t)})),
+h('div',{className:'modal-body'},
+h('div',{className:'item-grid'},
+pickerItems.map(function(w){
+return h('div',{key:w.name,className:'item-card',onClick:function(){
+var newW=Object.assign({},build.weapons||{});newW[pickerSlot]=w.name;
+setBuild(Object.assign({},build,{weapons:newW}));setPickerSlot(null)}},
+w.local_image?h('img',{src:imgSrc(w.local_image),loading:'lazy'}):null,
+h('div',{className:'ic-name'},w.name),
+h('div',{className:'ic-meta'},w.weapon_type+(w.handedness?' · '+w.handedness:'')))}),
+pickerItems.length===0?h('div',{style:{color:'var(--dim)',padding:20,textAlign:'center'}},'No weapons found'):null)))):null)}
+
+/* ===== TAB 4: SKILLS ===== */
+function SkillsTab(props){
+var data=props.data,build=props.build,setBuild=props.setBuild;
+var searchState=React.useState('');var search=searchState[0],setSearch=searchState[1];
+var filterState=React.useState(null);var filterClass=filterState[0],setFilterClass=filterState[1];
+var expandedState=React.useState(data.classes[0]?data.classes[0].name:null);var expandedClass=expandedState[0],setExpandedClass=expandedState[1];
+
+var filtered=React.useMemo(function(){
+var list=data.skills;
+if(filterClass)list=list.filter(function(s){return s.parent_class===filterClass});
+if(search){var q=search.toLowerCase();list=list.filter(function(s){return s.name.toLowerCase().indexOf(q)>=0||(s.effects&&s.effects.toLowerCase().indexOf(q)>=0)})}
+return list},[data.skills,search,filterClass]);
+
+var byClass=React.useMemo(function(){
+var map={};filtered.forEach(function(s){if(!map[s.parent_class])map[s.parent_class]=[];map[s.parent_class].push(s)});
+Object.keys(map).forEach(function(k){map[k].sort(function(a,b){var o=function(t){return t===0?4:t};return o(a.tier)-o(b.tier)})});
+return map},[filtered]);
+
+var ptsUsed=(build.skills||[]).length;
+var ptsLeft=build.theorycraft?999:build.level-ptsUsed;
+
+function toggleSkill(skill){
+var isSel=(build.skills||[]).indexOf(skill.name)>=0;
+var isBT=skill.costs_breakthrough;
+if(isSel){setBuild(Object.assign({},build,{skills:(build.skills||[]).filter(function(s){return s!==skill.name}),breakthroughsUsed:(build.breakthroughsUsed||0)-(isBT?1:0)}))}
+else{if(!build.theorycraft&&ptsLeft<=0)return;
+if(isBT&&!build.theorycraft&&(build.breakthroughsUsed||0)>=3)return;
+setBuild(Object.assign({},build,{skills:(build.skills||[]).concat([skill.name]),breakthroughsUsed:(build.breakthroughsUsed||0)+(isBT?1:0)}))}}
+
+return h('div',{className:'tab-inner'},
+h('input',{className:'search-bar',placeholder:'Search skills...',value:search,onChange:function(e){setSearch(e.target.value)}}),
+h('div',{className:'filter-pills'},
+h('button',{className:'pill'+(!filterClass?' active':''),onClick:function(){setFilterClass(null)}},'All'),
+data.classes.map(function(c){return h('button',{key:c.name,className:'pill'+(filterClass===c.name?' active':''),onClick:function(){setFilterClass(c.name)}},c.name)})),
+
+data.classes.map(function(cls){
+var skills=byClass[cls.name];if(!skills||!skills.length)return null;
+var isOpen=filterClass===cls.name||expandedClass===cls.name||search.length>0;
+return h('div',{key:cls.name,style:{marginBottom:14}},
+h('div',{className:'class-header',onClick:function(){setExpandedClass(isOpen?null:cls.name)}},
+cls.local_image?h('img',{className:'class-icon',src:imgSrc(cls.local_image)}):null,
+h('div',{className:'class-info'},h('h3',null,cls.name),h('p',null,cls.teacher+' — '+cls.location)),
+cls.is_dlc?h('span',{className:'class-dlc'},'DLC'):null),
+isOpen?h('div',{className:'skills-list'},
+skills.map(function(skill){
+var isSel=(build.skills||[]).indexOf(skill.name)>=0;
+var canAfford=build.theorycraft||ptsLeft>0||isSel;
+return h('div',{key:skill.name,className:'skill-item'+(isSel?' sel':'')+(!canAfford?' locked':''),onClick:function(){if(canAfford)toggleSkill(skill)}},
+skill.local_image?h('img',{src:imgSrc(skill.local_image),loading:'lazy'}):null,
+h('div',{className:'skill-info'},
+h('div',{className:'skill-name'},skill.name),
+h('div',{className:'skill-meta'},skill.skill_type+(skill.subtype?' · '+skill.subtype:'')+(skill.mana_cost?' · '+skill.mana_cost+' Mana':''))),
+h('span',{className:'skill-tier'+(skill.tier===2?' t2':skill.tier===3?' t3':'')},skill.tier===0?'SP':'T'+skill.tier))})):null)})}
+
+/* ===== TAB 5: FACTIONS ===== */
+function FactionsTab(props){
+var data=props.data,build=props.build,setBuild=props.setBuild;
+
+return h('div',{className:'tab-inner'},
+h('div',{style:{fontSize:12,color:'var(--dim)',marginBottom:12,padding:'0 2px'}},'Choose your faction. This affects available quests and story.'),
+data.factions.map(function(f){
+var isSel=build.faction===f.id;
+return h('div',{key:f.id,className:'faction-card'+(isSel?' sel':''),onClick:function(){
+setBuild(Object.assign({},build,{faction:isSel?null:f.id}))}},
+h('div',{className:'faction-name'},f.name),
+h('div',{className:'faction-desc'},f.description),
+f.local_image?h('img',{src:imgSrc(f.local_image),style:{width:40,height:40,marginTop:8,borderRadius:6}}):null)})})}
+
+/* ===== TAB 6: CONSUMABLES ===== */
+function ConsumablesTab(props){
+var data=props.data,build=props.build,setBuild=props.setBuild;
+var searchState=React.useState('');var search=searchState[0],setSearch=searchState[1];
+var typeState=React.useState('all');var typeFilter=typeState[0],setTypeFilter=typeState[1];
+
+var types=['all','food','drink','potion','tool','ammunition','special'];
+
+var filtered=React.useMemo(function(){
+var list=data.consumables;
+if(typeFilter!=='all')list=list.filter(function(c){return c.consumable_type===typeFilter});
+if(search){var q=search.toLowerCase();list=list.filter(function(c){return c.name.toLowerCase().indexOf(q)>=0||(c.description&&c.description.toLowerCase().indexOf(q)>=0)})}
+return list},[data.consumables,search,typeFilter]);
+
+function toggleCons(c){
+var cur=build.consumables||[];
+var idx=cur.indexOf(c.name);
+if(idx>=0){setBuild(Object.assign({},build,{consumables:cur.filter(function(n){return n!==c.name})}))}
+else{setBuild(Object.assign({},build,{consumables:cur.concat([c.name])}))}}
+
+return h('div',{className:'tab-inner'},
+h('input',{className:'search-bar',placeholder:'Search items...',value:search,onChange:function(e){setSearch(e.target.value)}}),
+h('div',{className:'filter-pills'},
+types.map(function(t){return h('button',{key:t,className:'pill'+(typeFilter===t?' active':''),onClick:function(){setTypeFilter(t)}},t.charAt(0).toUpperCase()+t.slice(1))})),
+
+filtered.map(function(c){
+var isSel=(build.consumables||[]).indexOf(c.name)>=0;
+return h('div',{key:c.name,className:'cons-item'+(isSel?' sel':''),onClick:function(){toggleCons(c)}},
+c.local_image?h('img',{src:imgSrc(c.local_image),loading:'lazy'}):null,
+h('div',{className:'cons-info'},
+h('div',{className:'cons-name'},c.name),
+h('div',{className:'cons-type'},c.consumable_type+(c.weight?' · '+c.weight+'kg':'')+(c.price?' · '+c.price+'s':'')),
+c.description?h('div',{className:'cons-effects'},c.description.substring(0,80)+(c.description.length>80?'...':'')):null))})}
+
+/* ===== BUILDER ===== */
+function BuilderScreen(props){
+var data=props.data,build=props.build,setBuild=props.setBuild,onHome=props.onHome;
+var tabState=React.useState('stats');var activeTab=tabState[0],setActiveTab=tabState[1];
+var isDesktop=window.innerWidth>=900;
+
+function updateLevel(e){var v=parseInt(e.target.value)||1;v=Math.min(50,Math.max(1,v));setBuild(Object.assign({},build,{level:v}))}
+
+var tabs=[
+{id:'stats',icon:'📊',label:'Stats'},
+{id:'armor',icon:'🛡️',label:'Armor'},
+{id:'weapons',icon:'⚔️',label:'Weapons'},
+{id:'skills',icon:'⚡',label:'Skills'},
+{id:'factions',icon:'🏰',label:'Factions'},
+{id:'consumables',icon:'🧪',label:'Items'}];
+
+function renderTab(id){
+if(id==='stats')return StatsTab({data:data,build:build});
+if(id==='armor')return ArmorTab({data:data,build:build,setBuild:setBuild});
+if(id==='weapons')return WeaponsTab({data:data,build:build,setBuild:setBuild});
+if(id==='skills')return SkillsTab({data:data,build:build,setBuild:setBuild});
+if(id==='factions')return FactionsTab({data:data,build:build,setBuild:setBuild});
+if(id==='consumables')return ConsumablesTab({data:data,build:build,setBuild:setBuild});
+return null}
+
+return h('div',{className:'builder-screen'},
+h('div',{className:'builder-header'},
+h('button',{className:'header-btn',onClick:onHome},'←'),
+h('div',{className:'header-title'},build.name||'New Build'),
+h('button',{className:'theory-btn'+(build.theorycraft?' active':''),onClick:function(){setBuild(Object.assign({},build,{theorycraft:!build.theorycraft}))}},'Theory'),
+h('div',{className:'header-lvl'},'Lv',h('input',{type:'number',className:'lvl-input',min:1,max:50,value:build.level,onChange:updateLevel}))),
+
+h('div',{className:'builder-content'},
+tabs.map(function(tab){
+return h('div',{key:tab.id,className:'tab-pane'+(isDesktop||activeTab===tab.id?' active':'')},
+(isDesktop||activeTab===tab.id)?renderTab(tab.id):null)})),
+
+!isDesktop?h('div',{className:'tab-bar'},
+tabs.map(function(tab){
+return h('button',{key:tab.id,className:'tab-btn'+(activeTab===tab.id?' active':''),onClick:function(){setActiveTab(tab.id)}},
+h('span',{className:'tab-icon'},tab.icon),
+h('span',null,tab.label))})):null)}
+
+/* ===== APP ===== */
+function App(){
+var screenState=React.useState('loading');var screen=screenState[0],setScreen=screenState[1];
+var dataState=React.useState(null);var data=dataState[0],setData=dataState[1];
+var progState=React.useState(0);var progress=progState[0],setProgress=progState[1];
+var statusState=React.useState('Loading...');var status=statusState[0],setStatus=statusState[1];
+var errorState=React.useState(null);var error=errorState[0],setError=errorState[1];
+var buildState=React.useState({name:'New Build',level:1,theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0});
+var build=buildState[0],setBuild=buildState[1];
+
+React.useEffect(function(){try{var s=localStorage.getItem('outward-build');if(s)setBuild(JSON.parse(s))}catch(e){}},[]);
+React.useEffect(function(){try{localStorage.setItem('outward-build',JSON.stringify(build))}catch(e){}},[build]);
+React.useEffect(function(){loadData()},[]);
+
+async function loadData(){
+try{
+setError(null);setStatus('Loading skills...');setProgress(10);
+var r=await Promise.all([
+fetchJSON('skills/skills_tier1.json'),fetchJSON('skills/skills_tier2.json'),
+fetchJSON('skills/skills_tier3.json'),fetchJSON('skills/skills_special.json'),
+fetchJSON('skills/classes.json')]);
+setProgress(30);setStatus('Loading weapons...');
+var w=await Promise.all([
+fetchJSON('weapons/weapons_melee.json'),fetchJSON('weapons/weapons_ranged.json'),
+fetchJSON('weapons/weapons_magical.json'),fetchJSON('weapons/shields.json')]);
+setProgress(50);setStatus('Loading armor...');
+var a=await fetchJSON('armor/armor_items.json');
+setProgress(60);setStatus('Loading consumables...');
+var c=await fetchJSON('consumables/data.json');
+setProgress(75);setStatus('Loading factions...');
+var f=await fetchJSON('quests/factions.json');
+setProgress(85);setStatus('Processing...');
+await new Promise(function(r){setTimeout(r,300)});
+setData({
+skills:r[0].concat(r[1],r[2],r[3]),classes:r[4],
+weapons:w[0].weapons.concat(w[1].weapons,w[2].weapons,w[3].weapons),
+armor:a,consumables:c.items||c,factions:f});
+setProgress(100);setStatus('Ready!');
+setTimeout(function(){setScreen('home')},400);
+}catch(e){setError(e.message||'Failed to load');setStatus('Error')}}
+
+if(screen==='loading')return LoadingScreen({progress:progress,status:status,error:error,onRetry:function(){loadData()}});
+if(screen==='home')return HomeScreen({data:data,onStart:function(){setScreen('builder')}});
+return BuilderScreen({data:data,build:build,setBuild:setBuild,onHome:function(){setScreen('home')}})}
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
+</script>
 </body>
 </html>
