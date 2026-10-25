@@ -12,17 +12,25 @@
         :root {
             --bg: #1a1410;
             --bg2: #241c12;
+            --bg3: #2a2118;
             --panel: #2a2118;
             --panel2: #33291d;
+            --panel3: #3a2f1e;
             --gold: #c9a227;
             --gold2: #e8c547;
+            --gold3: #f0d060;
             --brown: #8b4513;
             --brown2: #a0522d;
             --text: #e8dcc8;
             --dim: #a89878;
+            --dim2: #7a6a55;
             --red: #c0392b;
+            --red2: #e74c3c;
             --green: #27ae60;
+            --green2: #2ecc71;
             --blue: #2980b9;
+            --blue2: #3498db;
+            --purple: #8e44ad;
             --sat: env(safe-area-inset-top, 0px);
             --sab: env(safe-area-inset-bottom, 0px);
         }
@@ -33,343 +41,766 @@
             height: 100%;
             background: var(--bg);
             color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Georgia, serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
             -webkit-text-size-adjust: 100%;
+            overscroll-behavior-y: none;
         }
 
         #root { min-height: 100vh; min-height: 100dvh; }
 
-        /* ===== LOADING ===== */
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar { width: 0; height: 0; }
+
+        /* ===== LOADING SCREEN ===== */
         .loading-screen {
             position: fixed;
             inset: 0;
-            background: linear-gradient(135deg, #1a1410 0%, #2a2118 50%, #1a1410 100%);
+            background: linear-gradient(160deg, #1a1410 0%, #241c12 40%, #1a1410 100%);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             z-index: 9999;
-            padding: 20px;
+            padding: 24px;
         }
 
-        .loading-logo { font-size: 56px; margin-bottom: 20px; }
-        .loading-title { font-size: 32px; color: var(--gold); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 8px; }
-        .loading-subtitle { font-size: 14px; color: var(--dim); margin-bottom: 40px; font-style: italic; }
-
-        .loading-bar-container {
-            width: 280px; height: 6px;
-            background: var(--panel2); border-radius: 3px;
-            overflow: hidden; border: 1px solid var(--brown);
+        .logo-container {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 24px;
+            position: relative;
         }
+
+        .logo-sword {
+            position: absolute;
+            width: 8px;
+            height: 80px;
+            background: linear-gradient(180deg, var(--gold3) 0%, var(--gold) 50%, var(--brown) 100%);
+            border-radius: 4px;
+            top: 10px;
+            left: 46px;
+            transform-origin: center 70%;
+        }
+
+        .logo-sword:before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 6px;
+            background: var(--brown);
+            border-radius: 3px;
+            top: 52px;
+            left: -8px;
+        }
+
+        .logo-sword:after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--gold);
+            border-radius: 50%;
+            top: 62px;
+            left: -2px;
+        }
+
+        .logo-sword.left { transform: rotate(-45deg); }
+        .logo-sword.right { transform: rotate(45deg); }
+
+        .loading-title {
+            font-size: 32px;
+            color: var(--gold);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 20px rgba(201, 162, 39, 0.3);
+        }
+
+        .loading-subtitle {
+            font-size: 14px;
+            color: var(--dim);
+            margin-bottom: 48px;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .loading-bar-wrap {
+            width: 260px;
+            height: 4px;
+            background: var(--panel2);
+            border-radius: 2px;
+            overflow: hidden;
+            border: 1px solid var(--brown);
+        }
+
         .loading-bar {
             height: 100%;
-            background: linear-gradient(90deg, var(--brown), var(--gold));
-            border-radius: 3px; transition: width 0.3s ease;
-        }
-        .loading-status { margin-top: 16px; font-size: 13px; color: var(--dim); }
-        .loading-error { color: var(--red); margin-top: 20px; font-size: 14px; text-align: center; max-width: 300px; }
-
-        /* ===== HOME ===== */
-        .home-screen {
-            min-height: 100vh; min-height: 100dvh;
-            display: flex; flex-direction: column;
-            background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+            background: linear-gradient(90deg, var(--brown), var(--gold), var(--gold2));
+            border-radius: 2px;
+            transition: width 0.4s ease;
+            box-shadow: 0 0 12px rgba(201, 162, 39, 0.4);
         }
 
-        .home-header {
+        .loading-status {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--dim);
+            letter-spacing: 0.5px;
+        }
+
+        .loading-error {
+            margin-top: 24px;
+            padding: 14px 18px;
+            background: rgba(192, 57, 43, 0.15);
+            border: 1px solid var(--red);
+            border-radius: 10px;
+            color: var(--red2);
+            font-size: 14px;
             text-align: center;
-            padding: 80px 20px 40px;
-            padding-top: calc(80px + var(--sat));
+            max-width: 300px;
+            line-height: 1.5;
         }
 
-        .home-logo { font-size: 64px; margin-bottom: 16px; }
-        .home-title { font-size: 36px; color: var(--gold); letter-spacing: 6px; text-transform: uppercase; margin-bottom: 8px; }
-        .home-subtitle { font-size: 15px; color: var(--dim); font-style: italic; }
+        .retry-btn {
+            margin-top: 16px;
+            padding: 12px 28px;
+            background: var(--brown);
+            border: 1px solid var(--gold);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 15px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        /* ===== HOME SCREEN ===== */
+        .home-screen {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%);
+        }
+
+        .home-hero {
+            text-align: center;
+            padding: 100px 24px 48px;
+            padding-top: calc(100px + var(--sat));
+        }
+
+        .home-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+
+        .home-title {
+            font-size: 38px;
+            color: var(--gold);
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 30px rgba(201, 162, 39, 0.25);
+        }
+
+        .home-subtitle {
+            font-size: 15px;
+            color: var(--dim);
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .home-stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 28px;
+        }
+
+        .home-stat-pill {
+            text-align: center;
+            padding: 10px 16px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 10px;
+        }
+
+        .home-stat-num {
+            font-size: 20px;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .home-stat-label {
+            font-size: 10px;
+            color: var(--dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 2px;
+        }
 
         .home-menu {
-            flex: 1; display: flex; flex-direction: column; gap: 14px;
-            padding: 20px; max-width: 420px; margin: 0 auto; width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            width: 100%;
         }
 
         .menu-btn {
-            display: flex; align-items: center; gap: 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
             padding: 18px 20px;
             background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
-            border: 2px solid var(--brown); border-radius: 12px;
-            cursor: pointer; text-align: left; color: var(--text);
-            font-family: inherit; transition: all 0.2s ease;
+            border: 2px solid var(--brown);
+            border-radius: 14px;
+            cursor: pointer;
+            text-align: left;
+            color: var(--text);
+            font-family: inherit;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
         }
+
+        .menu-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .menu-btn:hover:before, .menu-btn:active:before {
+            opacity: 1;
+        }
+
         .menu-btn:hover, .menu-btn:active {
             border-color: var(--gold);
-            background: linear-gradient(135deg, var(--panel2) 0%, #3a2f1e 100%);
+            background: linear-gradient(135deg, var(--panel2) 0%, var(--panel3) 100%);
             transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
         }
 
-        .menu-btn-icon {
-            font-size: 28px; width: 48px; height: 48px;
-            display: flex; align-items: center; justify-content: center;
-            background: var(--bg); border-radius: 8px; border: 1px solid var(--brown);
+        .menu-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            border-radius: 10px;
+            border: 1px solid var(--brown);
+            font-size: 24px;
+            flex-shrink: 0;
         }
-        .menu-btn-content h3 { font-size: 17px; color: var(--gold); margin-bottom: 3px; }
-        .menu-btn-content p { font-size: 13px; color: var(--dim); }
-        .menu-btn-arrow { margin-left: auto; color: var(--brown); font-size: 20px; }
+
+        .menu-content { flex: 1; }
+        .menu-content h3 {
+            font-size: 16px;
+            color: var(--gold);
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+        .menu-content p {
+            font-size: 13px;
+            color: var(--dim);
+            line-height: 1.4;
+        }
+
+        .menu-arrow {
+            color: var(--brown);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
 
         .home-footer {
-            text-align: center; padding: 20px;
-            padding-bottom: calc(20px + var(--sab));
-            font-size: 12px; color: var(--dim);
+            text-align: center;
+            padding: 24px;
+            padding-bottom: calc(24px + var(--sab));
+            font-size: 12px;
+            color: var(--dim2);
         }
 
         /* ===== BUILDER ===== */
         .builder-screen {
-            min-height: 100vh; min-height: 100dvh;
-            display: flex; flex-direction: column;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
             background: var(--bg);
         }
 
         .builder-header {
-            display: flex; align-items: center; gap: 12px;
-            padding: 12px 16px;
-            padding-top: calc(12px + var(--sat));
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            padding-top: calc(10px + var(--sat));
             background: var(--bg2);
-            border-bottom: 2px solid var(--brown);
+            border-bottom: 1px solid var(--brown);
+            position: sticky;
+            top: 0;
+            z-index: 50;
         }
 
-        .builder-back {
-            width: 40px; height: 40px;
-            display: flex; align-items: center; justify-content: center;
-            background: var(--panel); border: 1px solid var(--brown);
-            border-radius: 8px; cursor: pointer; color: var(--text); font-size: 18px;
+        .header-btn {
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 8px;
+            cursor: pointer;
+            color: var(--text);
+            font-size: 16px;
+            flex-shrink: 0;
         }
 
-        .builder-title { flex: 1; font-size: 17px; color: var(--gold); font-weight: 600; }
-
-        .builder-level {
-            display: flex; align-items: center; gap: 6px;
-            font-size: 13px; color: var(--dim);
+        .header-title {
+            flex: 1;
+            font-size: 16px;
+            color: var(--gold);
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+
+        .header-level {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: var(--dim);
+        }
+
         .level-input {
-            width: 52px; padding: 6px;
-            background: var(--panel); border: 1px solid var(--brown);
-            border-radius: 6px; color: var(--gold); font-size: 15px;
-            text-align: center; font-family: inherit;
+            width: 48px;
+            padding: 6px 4px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 6px;
+            color: var(--gold);
+            font-size: 14px;
+            text-align: center;
+            font-family: inherit;
+            font-weight: 600;
         }
 
+        .theory-toggle {
+            padding: 6px 10px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 6px;
+            color: var(--dim);
+            font-size: 11px;
+            cursor: pointer;
+            font-family: inherit;
+            white-space: nowrap;
+        }
+
+        .theory-toggle.active {
+            background: var(--gold);
+            color: var(--bg);
+            border-color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Content area */
         .builder-content {
-            flex: 1; display: flex; flex-direction: column;
-            padding-bottom: calc(76px + var(--sab));
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: calc(72px + var(--sab));
         }
 
         /* Tab bar */
         .tab-bar {
-            position: fixed; bottom: 0; left: 0; right: 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
             display: flex;
             background: rgba(26, 20, 16, 0.97);
-            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-top: 1px solid var(--brown);
-            padding: 6px 12px calc(6px + var(--sab));
+            padding: 6px 8px calc(6px + var(--sab));
             z-index: 100;
         }
-        .tab-btn {
-            flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
-            padding: 6px; background: none; border: none; cursor: pointer;
-            color: var(--dim); font-family: inherit; font-size: 10px;
-        }
-        .tab-btn.active { color: var(--gold); }
-        .tab-btn-icon { font-size: 22px; }
 
-        /* Tab content */
-        .tab-content { flex: 1; padding: 14px; overflow-y: auto; }
-        .tab-pane { display: none; }
+        .tab-btn {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            padding: 6px 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--dim);
+            font-family: inherit;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            border-radius: 8px;
+            transition: all 0.15s;
+        }
+
+        .tab-btn.active {
+            color: var(--gold);
+            background: rgba(201, 162, 39, 0.1);
+        }
+
+        .tab-icon { font-size: 22px; line-height: 1; }
+
+        /* Tab panes */
+        .tab-pane { display: none; flex: 1; overflow-y: auto; }
         .tab-pane.active { display: block; }
 
-        /* Search */
-        .search-bar {
-            width: 100%; padding: 12px 14px;
-            background: var(--panel); border: 1px solid var(--brown);
-            border-radius: 10px; color: var(--text);
-            font-size: 16px; font-family: inherit;
-            margin-bottom: 12px;
+        /* ===== STATS TAB ===== */
+        .stats-container {
+            padding: 14px;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
-        /* Filter pills */
-        .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
-        .pill {
-            padding: 7px 12px; background: var(--panel);
-            border: 1px solid var(--brown); border-radius: 18px;
-            cursor: pointer; font-size: 12px; color: var(--dim); font-family: inherit;
-        }
-        .pill.active { background: var(--gold); color: var(--bg); border-color: var(--gold); }
-
-        /* Points bar */
-        .points-bar {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 10px 14px; background: var(--panel);
-            border: 1px solid var(--brown); border-radius: 10px;
-            margin-bottom: 10px; font-size: 13px;
-        }
-        .points-value { color: var(--gold); font-weight: bold; font-size: 15px; }
-
-        /* Class section */
-        .class-section { margin-bottom: 16px; }
-        .class-header {
-            display: flex; align-items: center; gap: 12px;
-            padding: 12px; background: var(--panel);
-            border: 1px solid var(--brown); border-radius: 10px;
-            cursor: pointer; user-select: none;
-        }
-        .class-icon { width: 38px; height: 38px; border-radius: 6px; background: var(--bg); }
-        .class-info h3 { font-size: 15px; color: var(--gold); }
-        .class-info p { font-size: 11px; color: var(--dim); }
-        .class-dlc {
-            margin-left: auto; padding: 3px 8px;
-            background: var(--brown); color: var(--gold);
-            font-size: 9px; border-radius: 4px; text-transform: uppercase;
-        }
-
-        .skills-list { margin-top: 6px; padding-left: 6px; }
-        .skill-item {
-            display: flex; align-items: center; gap: 10px;
-            padding: 10px; margin-top: 4px;
-            background: var(--panel2); border: 1px solid transparent;
-            border-radius: 8px; cursor: pointer;
-        }
-        .skill-item:hover { border-color: var(--brown); }
-        .skill-item.selected { border-color: var(--gold); background: #3a2f1e; }
-        .skill-item.locked { opacity: 0.5; }
-        .skill-icon { width: 40px; height: 40px; border-radius: 6px; background: var(--bg); flex-shrink: 0; }
-        .skill-info { flex: 1; min-width: 0; }
-        .skill-name { font-size: 14px; margin-bottom: 2px; }
-        .skill-meta { font-size: 11px; color: var(--dim); }
-        .skill-tier {
-            padding: 3px 7px; background: var(--brown); color: var(--gold);
-            font-size: 9px; border-radius: 4px; flex-shrink: 0;
-        }
-        .skill-tier.t2 { background: var(--gold); color: var(--bg); }
-        .skill-tier.t3 { background: #7d6608; color: #fff; }
-
-        /* Equipment */
-        .equipment-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 10px; margin-bottom: 16px;
-        }
-        .equip-slot {
-            aspect-ratio: 1; background: var(--panel);
-            border: 2px dashed var(--brown); border-radius: 12px;
-            display: flex; flex-direction: column; align-items: center;
-            justify-content: center; cursor: pointer; padding: 6px;
-            text-align: center; position: relative;
-        }
-        .equip-slot.filled { border-style: solid; border-color: var(--gold); background: var(--panel2); }
-        .equip-slot img { width: 44px; height: 44px; border-radius: 6px; margin-bottom: 4px; }
-        .slot-label { font-size: 9px; color: var(--dim); text-transform: uppercase; letter-spacing: 1px; }
-        .item-name { font-size: 10px; margin-top: 2px; line-height: 1.2; }
-
-        /* Modal */
-        .modal-overlay {
-            position: fixed; inset: 0; background: rgba(0,0,0,0.85);
-            z-index: 200; display: flex; align-items: flex-end; justify-content: center;
-        }
-        .modal {
-            background: var(--panel); border: 1px solid var(--gold);
-            border-radius: 16px 16px 0 0; width: 100%;
-            max-height: 80vh; max-height: 80dvh;
-            display: flex; flex-direction: column;
-        }
-        .modal-header {
-            padding: 14px 16px; border-bottom: 1px solid var(--brown);
-            display: flex; align-items: center; gap: 10px;
-        }
-        .modal-title { font-size: 16px; color: var(--gold); flex: 1; }
-        .modal-close {
-            width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
-            background: var(--panel2); border: 1px solid var(--brown);
-            border-radius: 6px; cursor: pointer; color: var(--text); font-size: 16px;
-        }
-        .modal-search {
-            margin: 10px 14px; padding: 10px;
-            background: var(--panel2); border: 1px solid var(--brown);
-            border-radius: 8px; color: var(--text); font-size: 16px; font-family: inherit;
-        }
-        .modal-body { flex: 1; overflow-y: auto; padding: 0 14px 14px; }
-        .item-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 8px; }
-        .item-card {
-            background: var(--panel2); border: 1px solid var(--brown);
-            border-radius: 10px; padding: 10px; cursor: pointer;
-            display: flex; flex-direction: column; align-items: center; gap: 6px;
-            text-align: center;
-        }
-        .item-card:hover { border-color: var(--gold); }
-        .item-card img { width: 44px; height: 44px; border-radius: 6px; }
-        .item-card-name { font-size: 11px; line-height: 1.3; }
-        .item-card-set { font-size: 10px; color: var(--gold); }
-
-        /* Stats */
+        /* Hero stats card */
         .stats-hero {
             background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
-            border: 1px solid var(--brown); border-radius: 14px;
-            padding: 18px; margin-bottom: 16px;
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+            border: 1px solid var(--brown);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 14px;
+            position: relative;
+            overflow: hidden;
         }
-        .hero-stat { text-align: center; }
-        .hero-stat-value { font-size: 28px; font-weight: bold; color: var(--gold); }
-        .hero-stat-label { font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
 
-        .stats-section { margin-bottom: 18px; }
-        .stats-section h3 {
-            font-size: 12px; color: var(--dim); text-transform: uppercase;
-            letter-spacing: 2px; margin-bottom: 8px;
-            padding-bottom: 6px; border-bottom: 1px solid var(--brown);
+        .stats-hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--red), var(--gold), var(--green), var(--blue));
         }
+
+        .hero-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .hero-stat {
+            text-align: center;
+            padding: 12px 8px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+        }
+
+        .hero-icon {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .hero-value {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .hero-value.health { color: var(--red2); }
+        .hero-value.stamina { color: var(--green2); }
+        .hero-value.mana { color: var(--blue2); }
+
+        .hero-label {
+            font-size: 10px;
+            color: var(--dim);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 6px;
+        }
+
+        /* Points summary */
+        .points-summary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .point-card {
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 12px;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .point-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            border-radius: 10px;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .point-info h4 {
+            font-size: 11px;
+            color: var(--dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .point-info .val {
+            font-size: 18px;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .point-info .val.warning { color: var(--red); }
+
+        /* Section cards */
+        .section-card {
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 14px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 16px;
+            background: var(--panel2);
+            border-bottom: 1px solid var(--brown);
+        }
+
+        .section-icon {
+            font-size: 18px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .section-body {
+            padding: 4px 16px 12px;
+        }
+
+        /* Stat rows */
         .stat-row {
-            display: flex; justify-content: space-between;
-            padding: 9px 0; border-bottom: 1px solid #3a2f1e; font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(139, 69, 19, 0.2);
+            font-size: 14px;
         }
-        .stat-value { color: var(--gold); font-weight: 600; }
-        .stat-value.negative { color: var(--red); }
 
+        .stat-row:last-child { border-bottom: none; }
+
+        .stat-name {
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .stat-dot.physical { background: #95a5a6; }
+        .stat-dot.fire { background: #e74c3c; }
+        .stat-dot.frost { background: #3498db; }
+        .stat-dot.lightning { background: #f1c40f; }
+        .stat-dot.decay { background: #2ecc71; }
+        .stat-dot.ethereal { background: #9b59b6; }
+        .stat-dot.impact { background: #e67e22; }
+
+        .stat-val {
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .stat-val.positive { color: var(--green2); }
+        .stat-val.negative { color: var(--red2); }
+
+        /* Resistance grid */
         .resist-grid {
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            padding: 12px 0;
         }
-        .resist-chip {
-            display: flex; justify-content: space-between;
-            padding: 8px 10px; background: var(--panel);
-            border-radius: 6px; font-size: 12px;
+
+        .resist-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 12px;
+            background: var(--panel2);
+            border-radius: 8px;
         }
-        .resist-chip .rv { color: var(--gold); font-weight: 600; }
+
+        .resist-label {
+            font-size: 12px;
+            color: var(--dim);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .resist-val {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--gold);
+        }
+
+        /* Equipment summary */
+        .equip-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+
+        .equip-chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            background: var(--panel2);
+            border-radius: 6px;
+            font-size: 11px;
+        }
+
+        .equip-chip img {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        .equip-chip span {
+            color: var(--text);
+        }
+
+        .equip-empty {
+            color: var(--dim2);
+            font-size: 13px;
+            padding: 16px 0;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Skills list */
+        .skill-list {
+            padding: 8px 0;
+        }
+
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            margin: 3px;
+            background: var(--panel2);
+            border: 1px solid var(--brown);
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        .skill-tag img {
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+        }
+
+        /* Set bonuses */
+        .set-bonus {
+            padding: 10px 12px;
+            margin: 6px 0;
+            background: rgba(201, 162, 39, 0.08);
+            border: 1px solid rgba(201, 162, 39, 0.3);
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        .set-bonus-name {
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
 
         /* Desktop */
         @media (min-width: 900px) {
-            .home-menu { max-width: 480px; }
+            .home-menu { max-width: 440px; }
             .builder-content {
-                display: grid; grid-template-columns: 320px 1fr 340px;
-                gap: 14px; padding: 14px; padding-bottom: 14px;
+                display: grid;
+                grid-template-columns: 300px 1fr 340px;
+                gap: 0;
+                padding-bottom: 0;
             }
+            .tab-pane { display: block !important; border-right: 1px solid var(--brown); }
+            .tab-pane:last-child { border-right: none; }
             .tab-bar { display: none; }
-            .tab-pane { display: block !important; }
+            .stats-container { max-width: none; }
         }
 
         @media (max-width: 380px) {
-            .equipment-grid { grid-template-columns: repeat(2, 1fr); }
-            .home-title { font-size: 28px; }
+            .home-title { font-size: 28px; letter-spacing: 4px; }
+            .hero-value { font-size: 26px; }
+            .points-summary { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div id="root"></div>
 
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
     <script>
-    // ===== HELPERS =====
+    // ===== DATA =====
     var DATA_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/data/';
     var IMG_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/';
 
     function fetchJSON(path) {
         return fetch(DATA_BASE + path).then(function(r) {
-            if (!r.ok) throw new Error('Failed: ' + path);
+            if (!r.ok) throw new Error('HTTP ' + r.status + ': ' + path);
             return r.json();
         });
     }
@@ -383,51 +814,359 @@
         return React.createElement(tag, props || {}, children);
     }
 
-    // ===== LOADING SCREEN =====
-    function LoadingScreen(props) {
-        return h('div', {className: 'loading-screen'},
-            h('div', {className: 'loading-logo'}, '⚔️'),
-            h('div', {className: 'loading-title'}, 'Outward'),
-            h('div', {className: 'loading-subtitle'}, 'Build Builder'),
-            h('div', {className: 'loading-bar-container'},
-                h('div', {className: 'loading-bar', style: {width: props.progress + '%'}})
+    // ===== SVG LOGO =====
+    function Logo(props) {
+        var size = props.size || 80;
+        return h('svg', {
+            width: size, height: size, viewBox: '0 0 100 100',
+            style: { display: 'block', margin: '0 auto' }
+        },
+            // Left sword
+            h('g', { transform: 'rotate(-45, 50, 60)'},
+                h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: 'url(#goldGrad)'}),
+                h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
+                h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
             ),
-            h('div', {className: 'loading-status'}, props.status),
-            props.error ? h('div', {className: 'loading-error'}, props.error) : null
+            // Right sword
+            h('g', { transform: 'rotate(45, 50, 60)'},
+                h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: 'url(#goldGrad)'}),
+                h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
+                h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
+            ),
+            h('defs', null,
+                h('linearGradient', {id: 'goldGrad', x1: '0%', y1: '0%', x2: '0%', y2: '100%'},
+                    h('stop', {offset: '0%', stopColor: '#f0d060'}),
+                    h('stop', {offset: '50%', stopColor: '#c9a227'}),
+                    h('stop', {offset: '100%', stopColor: '#8b4513'})
+                )
+            )
         );
     }
 
-    // ===== HOME SCREEN =====
+    // ===== LOADING =====
+    function LoadingScreen(props) {
+        return h('div', {className: 'loading-screen'},
+            h('div', {className: 'logo-container'},
+                h(Logo, {size: 100})
+            ),
+            h('div', {className: 'loading-title'}, 'Outward'),
+            h('div', {className: 'loading-subtitle'}, 'Build Builder'),
+            h('div', {className: 'loading-bar-wrap'},
+                h('div', {className: 'loading-bar', style: {width: props.progress + '%'}})
+            ),
+            h('div', {className: 'loading-status'}, props.status),
+            props.error ? h('div', {className: 'loading-error'}, props.error) : null,
+            props.error ? h('button', {className: 'retry-btn', onClick: props.onRetry}, 'Retry') : null
+        );
+    }
+
+    // ===== HOME =====
     function HomeScreen(props) {
-        var counts = props.data ? 
-            (props.data.skills.length + ' skills · ' + props.data.weapons.length + ' weapons · ' + props.data.armor.length + ' armor') :
-            'Loading database...';
+        var data = props.data;
+        var skillCount = data ? data.skills.length : 0;
+        var weaponCount = data ? data.weapons.length : 0;
+        var armorCount = data ? data.armor.length : 0;
 
         return h('div', {className: 'home-screen'},
-            h('div', {className: 'home-header'},
-                h('div', {className: 'home-logo'}, '⚔️'),
+            h('div', {className: 'home-hero'},
+                h('div', {className: 'home-logo'},
+                    h(Logo, {size: 80})
+                ),
                 h('div', {className: 'home-title'}, 'Outward'),
-                h('div', {className: 'home-subtitle'}, 'Definitive Edition Build Builder')
+                h('div', {className: 'home-subtitle'}, 'Definitive Edition Build Builder'),
+                h('div', {className: 'home-stats-row'},
+                    h('div', {className: 'home-stat-pill'},
+                        h('div', {className: 'home-stat-num'}, skillCount),
+                        h('div', {className: 'home-stat-label'}, 'Skills')
+                    ),
+                    h('div', {className: 'home-stat-pill'},
+                        h('div', {className: 'home-stat-num'}, weaponCount),
+                        h('div', {className: 'home-stat-label'}, 'Weapons')
+                    ),
+                    h('div', {className: 'home-stat-pill'},
+                        h('div', {className: 'home-stat-num'}, armorCount),
+                        h('div', {className: 'home-stat-label'}, 'Armor')
+                    )
+                )
             ),
             h('div', {className: 'home-menu'},
                 h('button', {className: 'menu-btn', onClick: props.onStart},
-                    h('div', {className: 'menu-btn-icon'}, '🛠️'),
-                    h('div', {className: 'menu-btn-content'},
+                    h('div', {className: 'menu-icon'}, '⚔️'),
+                    h('div', {className: 'menu-content'},
                         h('h3', null, 'Create Build'),
-                        h('p', null, 'Design your character')
+                        h('p', null, 'Design your perfect character')
                     ),
-                    h('div', {className: 'menu-btn-arrow'}, '→')
+                    h('div', {className: 'menu-arrow'}, '›')
                 ),
                 h('button', {className: 'menu-btn', onClick: props.onStart},
-                    h('div', {className: 'menu-btn-icon'}, '📊'),
-                    h('div', {className: 'menu-btn-content'},
-                        h('h3', null, 'Browse Database'),
-                        h('p', null, counts)
+                    h('div', {className: 'menu-icon'}, '🛡️'),
+                    h('div', {className: 'menu-content'},
+                        h('h3', null, 'Equipment'),
+                        h('p', null, 'Browse weapons and armor')
                     ),
-                    h('div', {className: 'menu-btn-arrow'}, '→')
+                    h('div', {className: 'menu-arrow'}, '›')
+                ),
+                h('button', {className: 'menu-btn', onClick: props.onStart},
+                    h('div', {className: 'menu-icon'}, '📊'),
+                    h('div', {className: 'menu-content'},
+                        h('h3', null, 'Database'),
+                        h('p', null, 'Explore all game data')
+                    ),
+                    h('div', {className: 'menu-arrow'}, '›')
                 )
             ),
             h('div', {className: 'home-footer'}, 'Data from outward.wiki.gg')
+        );
+    }
+
+    // ===== STATS TAB =====
+    function StatsTab(props) {
+        var data = props.data;
+        var build = props.build;
+
+        var stats = React.useMemo(function() {
+            var result = {
+                health: 100, stamina: 100, mana: 20,
+                protection: 0, impactResist: 0,
+                resistances: {physical: 0, fire: 0, frost: 0, lightning: 0, decay: 0, ethereal: 0},
+                staminaCost: 0, manaCost: 0,
+                moveSpeed: 0, coldResist: 0, heatResist: 0, pouch: 0
+            };
+
+            // Equipment
+            Object.keys(build.equipment).forEach(function(slotId) {
+                var name = build.equipment[slotId];
+                if (!name) return;
+
+                var armor = data.armor.find(function(a) { return a.name === name; });
+                if (armor) {
+                    result.protection += armor.protection || 0;
+                    result.impactResist += (armor.resistances && armor.resistances.impact) || 0;
+                    result.staminaCost += armor.stamina_cost_reduction || 0;
+                    result.manaCost += armor.mana_cost_reduction || 0;
+                    result.moveSpeed += armor.move_speed || 0;
+                    result.coldResist += armor.cold_resist || 0;
+                    result.heatResist += armor.heat_resist || 0;
+                    result.pouch += armor.pouch || 0;
+
+                    if (armor.resistances) {
+                        ['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k) {
+                            if (armor.resistances[k]) {
+                                result.resistances[k] = (result.resistances[k] || 0) + armor.resistances[k];
+                            }
+                        });
+                    }
+                }
+            });
+
+            // Skills
+            build.skills.forEach(function(name) {
+                var skill = data.skills.find(function(s) { return s.name === name; });
+                if (skill && skill.effects) {
+                    var m = skill.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
+                    if (m) {
+                        var key = m[3].toLowerCase();
+                        result[key] += parseInt(m[2]) * (m[1] === '-' ? -1 : 1);
+                    }
+                }
+            });
+
+            return result;
+        }, [data, build]);
+
+        var pointsUsed = build.skills.length;
+        var pointsLeft = build.theorycraft ? '∞' : (build.level - pointsUsed);
+        var breakthroughsLeft = 3 - build.breakthroughsUsed;
+
+        // Equipment names for display
+        var equippedItems = Object.keys(build.equipment)
+            .map(function(slotId) {
+                var name = build.equipment[slotId];
+                if (!name) return null;
+                var item = data.armor.find(function(a) { return a.name === name; }) ||
+                           data.weapons.find(function(w) { return w.name === name; });
+                return item ? {slot: slotId, item: item} : null;
+            })
+            .filter(Boolean);
+
+        // Selected skills
+        var selectedSkills = build.skills.map(function(name) {
+            return data.skills.find(function(s) { return s.name === name; });
+        }).filter(Boolean);
+
+        function StatRow(label, value, opts) {
+            opts = opts || {};
+            var cls = 'stat-val';
+            if (value > 0 && !opts.noPlus) cls += ' positive';
+            if (value < 0) cls += ' negative';
+            var display = (value > 0 && !opts.noPlus ? '+' : '') + value + (opts.suffix || '');
+            if (opts.noPlus && value > 0) display = value + (opts.suffix || '');
+
+            return h('div', {className: 'stat-row'},
+                h('span', {className: 'stat-name'},
+                    opts.dot ? h('span', {className: 'stat-dot ' + opts.dot}) : null,
+                    label
+                ),
+                h('span', {className: cls}, display)
+            );
+        }
+
+        return h('div', {className: 'stats-container'},
+            // Hero stats
+            h('div', {className: 'stats-hero'},
+                h('div', {className: 'hero-row'},
+                    h('div', {className: 'hero-stat'},
+                        h('div', {className: 'hero-icon'}, '❤️'),
+                        h('div', {className: 'hero-value health'}, stats.health),
+                        h('div', {className: 'hero-label'}, 'Health')
+                    ),
+                    h('div', {className: 'hero-stat'},
+                        h('div', {className: 'hero-icon'}, '⚡'),
+                        h('div', {className: 'hero-value stamina'}, stats.stamina),
+                        h('div', {className: 'hero-label'}, 'Stamina')
+                    ),
+                    h('div', {className: 'hero-stat'},
+                        h('div', {className: 'hero-icon'}, '🔮'),
+                        h('div', {className: 'hero-value mana'}, stats.mana),
+                        h('div', {className: 'hero-label'}, 'Mana')
+                    )
+                )
+            ),
+
+            // Points summary
+            h('div', {className: 'points-summary'},
+                h('div', {className: 'point-card'},
+                    h('div', {className: 'point-icon'}, '⚡'),
+                    h('div', {className: 'point-info'},
+                        h('h4', null, 'Skill Points'),
+                        h('div', {className: 'val' + (pointsLeft < 0 ? ' warning' : '')}, 
+                            pointsUsed + ' / ' + (build.theorycraft ? '∞' : build.level))
+                    )
+                ),
+                h('div', {className: 'point-card'},
+                    h('div', {className: 'point-icon'}, '💫'),
+                    h('div', {className: 'point-info'},
+                        h('h4', null, 'Breakthroughs'),
+                        h('div', {className: 'val' + (breakthroughsLeft <= 0 ? ' warning' : '')},
+                            build.breakthroughsUsed + ' / 3')
+                    )
+                )
+            ),
+
+            // Defense
+            h('div', {className: 'section-card'},
+                h('div', {className: 'section-header'},
+                    h('span', {className: 'section-icon'}, '🛡️'),
+                    h('span', {className: 'section-title'}, 'Defense')
+                ),
+                h('div', {className: 'section-body'},
+                    StatRow('Protection', stats.protection, {noPlus: true}),
+                    StatRow('Impact Resistance', stats.impactResist, {noPlus: true}),
+
+                    h('div', {className: 'resist-grid'},
+                        h('div', {className: 'resist-item'},
+                            h('span', {className: 'resist-label'},
+                                h('span', {className: 'stat-dot physical'}),
+                                'Physical'
+                            ),
+                            h('span', {className: 'resist-val'}, stats.resistances.physical || 0)
+                        ),
+                        h('div', {className: 'resist-item'},
+                            h('span', {className: 'resist-label'},
+                                h('span', {className: 'stat-dot fire'}),
+                                'Fire'
+                            ),
+                            h('span', {className: 'resist-val'}, stats.resistances.fire || 0)
+                        ),
+                        h('div', {className: 'resist-item'},
+                            h('span', {className: 'resist-label'},
+                                h('span', {className: 'stat-dot frost'}),
+                                'Frost'
+                            ),
+                            h('span', {className: 'resist-val'}, stats.resistances.frost || 0)
+                        ),
+                        h('div', {className: 'resist-item'},
+                            h('span', {className: 'resist-label'},
+                                h('span', {className: 'stat-dot lightning'}),
+                                'Lightning'
+                            ),
+                            h('span', {className: 'resist-val'}, stats.resistances.lightning || 0)
+                        ),
+                        h('div', {className: 'resist-item'},
+                            h('span', {className: 'resist-label'},
+                                h('span', {className: 'stat-dot decay'}),
+                                'Decay'
+                            ),
+                            h('span', {className: 'resist-val'}, stats.resistances.decay || 0)
+                        ),
+                        h('div', {className: 'resist-item'},
+                            h('span', {className: 'resist-label'},
+                                h('span', {className: 'stat-dot ethereal'}),
+                                'Ethereal'
+                            ),
+                            h('span', {className: 'resist-val'}, stats.resistances.ethereal || 0)
+                        )
+                    )
+                )
+            ),
+
+            // Modifiers
+            h('div', {className: 'section-card'},
+                h('div', {className: 'section-header'},
+                    h('span', {className: 'section-icon'}, '⚙️'),
+                    h('span', {className: 'section-title'}, 'Modifiers')
+                ),
+                h('div', {className: 'section-body'},
+                    StatRow('Stamina Cost', -stats.staminaCost, {suffix: '%'}),
+                    StatRow('Mana Cost', -stats.manaCost, {suffix: '%'}),
+                    StatRow('Movement Speed', stats.moveSpeed, {suffix: '%'}),
+                    StatRow('Cold Protection', stats.coldResist, {noPlus: true}),
+                    StatRow('Heat Protection', stats.heatResist, {noPlus: true}),
+                    StatRow('Pouch Bonus', stats.pouch, {noPlus: true})
+                )
+            ),
+
+            // Equipment summary
+            h('div', {className: 'section-card'},
+                h('div', {className: 'section-header'},
+                    h('span', {className: 'section-icon'}, '🎒'),
+                    h('span', {className: 'section-title'}, 'Equipment')
+                ),
+                h('div', {className: 'section-body'},
+                    equippedItems.length > 0 ?
+                        h('div', {className: 'equip-summary'},
+                            equippedItems.map(function(eq) {
+                                return h('div', {key: eq.slot, className: 'equip-chip'},
+                                    eq.item.local_image ? 
+                                        h('img', {src: imgSrc(eq.item.local_image), loading: 'lazy'}) : null,
+                                    h('span', null, eq.item.name)
+                                );
+                            })
+                        ) :
+                        h('div', {className: 'equip-empty'}, 'No equipment selected')
+                )
+            ),
+
+            // Skills summary
+            h('div', {className: 'section-card'},
+                h('div', {className: 'section-header'},
+                    h('span', {className: 'section-icon'}, '⚡'),
+                    h('span', {className: 'section-title'}, 'Skills (' + selectedSkills.length + ')')
+                ),
+                h('div', {className: 'section-body'},
+                    selectedSkills.length > 0 ?
+                        h('div', {className: 'skill-list'},
+                            selectedSkills.map(function(skill) {
+                                return h('span', {key: skill.name, className: 'skill-tag'},
+                                    skill.local_image ?
+                                        h('img', {src: imgSrc(skill.local_image), loading: 'lazy'}) : null,
+                                    skill.name
+                                );
+                            })
+                        ) :
+                        h('div', {className: 'equip-empty'}, 'No skills selected')
+                )
+            )
         );
     }
 
@@ -496,7 +1235,7 @@
             }
         }
 
-        return h('div', null,
+        return h('div', {style: {padding: '14px'}},
             h('input', {
                 className: 'search-bar',
                 placeholder: 'Search skills...',
@@ -518,25 +1257,16 @@
                 })
             ),
 
-            h('div', {className: 'points-bar'},
-                h('span', null, 'Skill Points'),
-                h('span', {className: 'points-value'}, 
-                    pointsUsed + (build.theorycraft ? ' / ∞' : ' / ' + build.level))
-            ),
-
-            h('div', {className: 'points-bar'},
-                h('span', null, 'Breakthroughs'),
-                h('span', {className: 'points-value', style: {color: build.breakthroughsUsed >= 3 ? 'var(--red)' : 'var(--gold)'}},
-                    build.breakthroughsUsed + ' / 3')
-            ),
-
             data.classes.map(function(cls) {
                 var skills = skillsByClass[cls.name];
                 if (!skills || skills.length === 0) return null;
                 var isOpen = filterClass === cls.name || expandedClass === cls.name || search.length > 0;
 
                 return h('div', {key: cls.name, className: 'class-section'},
-                    h('div', {className: 'class-header', onClick: function() { setExpandedClass(isOpen ? null : cls.name); }},
+                    h('div', {
+                        className: 'class-header',
+                        onClick: function() { setExpandedClass(isOpen ? null : cls.name); }
+                    },
                         cls.local_image ? h('img', {className: 'class-icon', src: imgSrc(cls.local_image)}) : null,
                         h('div', {className: 'class-info'},
                             h('h3', null, cls.name),
@@ -627,7 +1357,7 @@
 
         var pickerItems = getPickerItems();
 
-        return h('div', null,
+        return h('div', {style: {padding: '14px'}},
             h('div', {className: 'equipment-grid'},
                 slots.map(function(slot) {
                     var item = getItem(slot.id);
@@ -683,143 +1413,14 @@
         );
     }
 
-    // ===== STATS TAB =====
-    function StatsTab(props) {
-        var data = props.data;
-        var build = props.build;
-
-        var stats = React.useMemo(function() {
-            var result = {
-                health: 100, stamina: 100, mana: 20,
-                protection: 0, impactResist: 0,
-                resistances: {}, staminaCost: 0, manaCost: 0,
-                moveSpeed: 0, coldResist: 0, heatResist: 0, pouch: 0
-            };
-
-            Object.keys(build.equipment).forEach(function(slotId) {
-                var name = build.equipment[slotId];
-                if (!name) return;
-
-                var armor = data.armor.find(function(a) { return a.name === name; });
-                if (armor) {
-                    result.protection += armor.protection || 0;
-                    result.impactResist += (armor.resistances && armor.resistances.impact) || 0;
-                    result.staminaCost += armor.stamina_cost_reduction || 0;
-                    result.manaCost += armor.mana_cost_reduction || 0;
-                    result.moveSpeed += armor.move_speed || 0;
-                    result.coldResist += armor.cold_resist || 0;
-                    result.heatResist += armor.heat_resist || 0;
-                    result.pouch += armor.pouch || 0;
-
-                    if (armor.resistances) {
-                        Object.keys(armor.resistances).forEach(function(k) {
-                            var v = armor.resistances[k];
-                            if (v && k !== 'impact') {
-                                result.resistances[k] = (result.resistances[k] || 0) + v;
-                            }
-                        });
-                    }
-                }
-            });
-
-            build.skills.forEach(function(name) {
-                var skill = data.skills.find(function(s) { return s.name === name; });
-                if (skill && skill.effects) {
-                    var m = skill.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
-                    if (m) {
-                        var key = m[3].toLowerCase();
-                        result[key] += parseInt(m[2]) * (m[1] === '-' ? -1 : 1);
-                    }
-                }
-            });
-
-            return result;
-        }, [data, build]);
-
-        function StatRow(label, value, suffix) {
-            suffix = suffix || '';
-            var cls = 'stat-value' + (value < 0 ? ' negative' : '');
-            var display = (value > 0 ? '+' : '') + value + suffix;
-            return h('div', {className: 'stat-row'},
-                h('span', null, label),
-                h('span', {className: cls}, display)
-            );
-        }
-
-        var selectedSkillObjs = build.skills.map(function(name) {
-            return data.skills.find(function(s) { return s.name === name; });
-        }).filter(Boolean);
-
-        return h('div', null,
-            // Hero stats
-            h('div', {className: 'stats-hero'},
-                h('div', {className: 'hero-stat'},
-                    h('div', {className: 'hero-stat-value', style: {color: 'var(--red)'}}, stats.health),
-                    h('div', {className: 'hero-stat-label'}, 'Health')
-                ),
-                h('div', {className: 'hero-stat'},
-                    h('div', {className: 'hero-stat-value', style: {color: 'var(--green)'}}, stats.stamina),
-                    h('div', {className: 'hero-stat-label'}, 'Stamina')
-                ),
-                h('div', {className: 'hero-stat'},
-                    h('div', {className: 'hero-stat-value', style: {color: 'var(--blue)'}}, stats.mana),
-                    h('div', {className: 'hero-stat-label'}, 'Mana')
-                )
-            ),
-
-            // Defense
-            h('div', {className: 'stats-section'},
-                h('h3', null, 'Defense'),
-                StatRow('Protection', stats.protection),
-                StatRow('Impact Resist', stats.impactResist),
-                Object.keys(stats.resistances).length > 0 ? h('div', {className: 'resist-grid', style: {marginTop: 8}},
-                    Object.keys(stats.resistances).map(function(k) {
-                        return h('div', {key: k, className: 'resist-chip'},
-                            h('span', null, k.charAt(0).toUpperCase() + k.slice(1)),
-                            h('span', {className: 'rv'}, '+' + stats.resistances[k])
-                        );
-                    })
-                ) : null
-            ),
-
-            // Modifiers
-            h('div', {className: 'stats-section'},
-                h('h3', null, 'Modifiers'),
-                StatRow('Stamina Cost', -stats.staminaCost, '%'),
-                StatRow('Mana Cost', -stats.manaCost, '%'),
-                StatRow('Move Speed', stats.moveSpeed, '%'),
-                StatRow('Cold Protection', stats.coldResist),
-                StatRow('Heat Protection', stats.heatResist),
-                StatRow('Pouch Bonus', stats.pouch)
-            ),
-
-            // Skills summary
-            h('div', {className: 'stats-section'},
-                h('h3', null, 'Skills (' + build.skills.length + ')'),
-                selectedSkillObjs.map(function(skill) {
-                    return h('div', {key: skill.name, style: {padding: '8px 0', borderBottom: '1px solid #3a2f1e'}},
-                        h('div', {style: {display: 'flex', alignItems: 'center', gap: 8}},
-                            skill.local_image ? h('img', {src: imgSrc(skill.local_image), style: {width: 28, height: 28, borderRadius: 4}, loading: 'lazy'}) : null,
-                            h('div', null,
-                                h('div', {style: {fontSize: 13, color: 'var(--gold)'}}, skill.name),
-                                h('div', {style: {fontSize: 11, color: 'var(--dim)'}}, skill.parent_class)
-                            )
-                        )
-                    );
-                }),
-                build.skills.length === 0 ? h('div', {style: {color: 'var(--dim)', fontSize: 13, padding: '10px 0'}}, 'No skills selected') : null
-            )
-        );
-    }
-
-    // ===== BUILDER SCREEN =====
+    // ===== BUILDER =====
     function BuilderScreen(props) {
         var data = props.data;
         var build = props.build;
         var setBuild = props.setBuild;
         var onHome = props.onHome;
 
-        var tabState = React.useState('skills');
+        var tabState = React.useState('stats');
         var activeTab = tabState[0], setActiveTab = tabState[1];
 
         var isDesktop = window.innerWidth >= 900;
@@ -830,17 +1431,25 @@
             setBuild(Object.assign({}, build, {level: val}));
         }
 
+        function toggleTheorycraft() {
+            setBuild(Object.assign({}, build, {theorycraft: !build.theorycraft}));
+        }
+
         var tabs = [
+            {id: 'stats', icon: '📊', label: 'Stats'},
             {id: 'skills', icon: '⚡', label: 'Skills'},
-            {id: 'equip', icon: '🛡️', label: 'Equipment'},
-            {id: 'stats', icon: '📊', label: 'Stats'}
+            {id: 'equip', icon: '🛡️', label: 'Gear'}
         ];
 
         return h('div', {className: 'builder-screen'},
             h('div', {className: 'builder-header'},
-                h('button', {className: 'builder-back', onClick: onHome}, '←'),
-                h('div', {className: 'builder-title'}, build.name || 'New Build'),
-                h('div', {className: 'builder-level'},
+                h('button', {className: 'header-btn', onClick: onHome}, '←'),
+                h('div', {className: 'header-title'}, build.name || 'New Build'),
+                h('button', {
+                    className: 'theory-toggle' + (build.theorycraft ? ' active' : ''),
+                    onClick: toggleTheorycraft
+                }, 'Theory'),
+                h('div', {className: 'header-level'},
                     'Lv',
                     h('input', {
                         type: 'number',
@@ -853,14 +1462,14 @@
             ),
 
             h('div', {className: 'builder-content'},
+                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'stats' ? ' active' : '')},
+                    (isDesktop || activeTab === 'stats') ? StatsTab({data: data, build: build}) : null
+                ),
                 h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'skills' ? ' active' : '')},
                     (isDesktop || activeTab === 'skills') ? SkillsTab({data: data, build: build, setBuild: setBuild}) : null
                 ),
                 h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'equip' ? ' active' : '')},
                     (isDesktop || activeTab === 'equip') ? EquipmentTab({data: data, build: build, setBuild: setBuild}) : null
-                ),
-                h('div', {className: 'tab-pane' + (isDesktop || activeTab === 'stats' ? ' active' : '')},
-                    (isDesktop || activeTab === 'stats') ? StatsTab({data: data, build: build}) : null
                 )
             ),
 
@@ -871,7 +1480,7 @@
                         className: 'tab-btn' + (activeTab === tab.id ? ' active' : ''),
                         onClick: function() { setActiveTab(tab.id); }
                     },
-                        h('span', {className: 'tab-btn-icon'}, tab.icon),
+                        h('span', {className: 'tab-icon'}, tab.icon),
                         h('span', null, tab.label)
                     );
                 })
@@ -879,7 +1488,7 @@
         );
     }
 
-    // ===== MAIN APP =====
+    // ===== APP =====
     function App() {
         var screenState = React.useState('loading');
         var screen = screenState[0], setScreen = screenState[1];
@@ -923,61 +1532,68 @@
 
         // Load data
         React.useEffect(function() {
-            async function load() {
-                try {
-                    setStatus('Loading skills...');
-                    setProgress(15);
-
-                    var results = await Promise.all([
-                        fetchJSON('skills/skills_tier1.json'),
-                        fetchJSON('skills/skills_tier2.json'),
-                        fetchJSON('skills/skills_tier3.json'),
-                        fetchJSON('skills/skills_special.json'),
-                        fetchJSON('skills/classes.json')
-                    ]);
-
-                    setProgress(40);
-                    setStatus('Loading weapons...');
-
-                    var weaponResults = await Promise.all([
-                        fetchJSON('weapons/weapons_melee.json'),
-                        fetchJSON('weapons/weapons_ranged.json'),
-                        fetchJSON('weapons/weapons_magical.json'),
-                        fetchJSON('weapons/shields.json')
-                    ]);
-
-                    setProgress(60);
-                    setStatus('Loading armor...');
-
-                    var armor = await fetchJSON('armor/armor_items.json');
-
-                    setProgress(80);
-                    setStatus('Processing...');
-
-                    await new Promise(function(r) { setTimeout(r, 300); });
-
-                    setData({
-                        skills: results[0].concat(results[1], results[2], results[3]),
-                        classes: results[4],
-                        weapons: weaponResults[0].weapons.concat(weaponResults[1].weapons, weaponResults[2].weapons, weaponResults[3].weapons),
-                        armor: armor
-                    });
-
-                    setProgress(100);
-                    setStatus('Ready!');
-
-                    setTimeout(function() { setScreen('home'); }, 300);
-
-                } catch(e) {
-                    setError(e.message);
-                    setStatus('Failed to load data');
-                }
-            }
-            load();
+            loadData();
         }, []);
 
+        async function loadData() {
+            try {
+                setError(null);
+                setStatus('Loading skills...');
+                setProgress(15);
+
+                var results = await Promise.all([
+                    fetchJSON('skills/skills_tier1.json'),
+                    fetchJSON('skills/skills_tier2.json'),
+                    fetchJSON('skills/skills_tier3.json'),
+                    fetchJSON('skills/skills_special.json'),
+                    fetchJSON('skills/classes.json')
+                ]);
+
+                setProgress(40);
+                setStatus('Loading weapons...');
+
+                var weaponResults = await Promise.all([
+                    fetchJSON('weapons/weapons_melee.json'),
+                    fetchJSON('weapons/weapons_ranged.json'),
+                    fetchJSON('weapons/weapons_magical.json'),
+                    fetchJSON('weapons/shields.json')
+                ]);
+
+                setProgress(60);
+                setStatus('Loading armor...');
+
+                var armor = await fetchJSON('armor/armor_items.json');
+
+                setProgress(80);
+                setStatus('Processing...');
+
+                await new Promise(function(r) { setTimeout(r, 300); });
+
+                setData({
+                    skills: results[0].concat(results[1], results[2], results[3]),
+                    classes: results[4],
+                    weapons: weaponResults[0].weapons.concat(weaponResults[1].weapons, weaponResults[2].weapons, weaponResults[3].weapons),
+                    armor: armor
+                });
+
+                setProgress(100);
+                setStatus('Ready!');
+
+                setTimeout(function() { setScreen('home'); }, 400);
+
+            } catch(e) {
+                setError(e.message || 'Failed to load data. Check your connection.');
+                setStatus('Error');
+            }
+        }
+
         if (screen === 'loading') {
-            return LoadingScreen({progress: progress, status: status, error: error});
+            return LoadingScreen({
+                progress: progress,
+                status: status,
+                error: error,
+                onRetry: function() { loadData(); }
+            });
         }
 
         if (screen === 'home') {
