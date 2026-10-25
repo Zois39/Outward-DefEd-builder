@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#1a1410">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Outward Builder">
+    <title>Outward Build Builder</title>
+
+    <!-- React CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        :root {
+            --bg: #1a1410;
+            --bg2: #241c12;
+            --panel: #2a2118;
+            --panel2: #33291d;
+            --gold: #c9a227;
+            --gold2: #e8c547;
+            --brown: #8b4513;
+            --brown2: #a0522d;
+            --text: #e8dcc8;
+            --dim: #a89878;
+            --red: #c0392b;
+            --green: #27ae60;
+            --blue: #2980b9;
+            --sat: env(safe-area-inset-top, 0px);
+            --sab: env(safe-area-inset-bottom, 0px);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+        html, body {
+            height: 100%;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Georgia, 'Times New Roman', serif;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        #root { min-height: 100vh; min-height: 100dvh; }
+
+        /* ===== LOADING SCREEN ===== */
+        .loading-screen {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, #1a1410 0%, #2a2118 50%, #1a1410 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            padding: 20px;
+        }
+
+        .loading-logo {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .loading-title {
+            font-size: 28px;
+            color: var(--gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(201, 162, 39, 0.3);
+        }
+
+        .loading-subtitle {
+            font-size: 14px;
+            color: var(--dim);
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .loading-bar-container {
+            width: 280px;
+            height: 6px;
+            background: var(--panel2);
+            border-radius: 3px;
+            overflow: hidden;
+            border: 1px solid var(--brown);
+        }
+
+        .loading-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--brown), var(--gold));
+            border-radius: 3px;
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px rgba(201, 162, 39, 0.5);
+        }
+
+        .loading-status {
+            margin-top: 16px;
+            font-size: 12px;
+            color: var(--dim);
+        }
+
+        /* ===== HOME SCREEN ===== */
+        .home-screen {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+        }
+
+        .home-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            padding-top: calc(60px + var(--sat));
+        }
+
+        .home-logo {
+            font-size: 64px;
+            margin-bottom: 16px;
+            filter: drop-shadow(0 4px 20px rgba(201, 162, 39, 0.4));
+        }
+
+        .home-title {
+            font-size: 36px;
+            color: var(--gold);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 20px rgba(201, 162, 39, 0.3);
+        }
+
+        .home-subtitle {
+            font-size: 16px;
+            color: var(--dim);
+            font-style: italic;
+        }
+
+        .home-menu {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .menu-btn {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 24px;
+            background: linear-gradient(135deg, var(--panel) 0%, var(--panel2) 100%);
+            border: 2px solid var(--brown);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            color: var(--text);
+            font-family: inherit;
+            -webkit-appearance: none;
+        }
+
+        .menu-btn:hover, .menu-btn:active {
+            border-color: var(--gold);
+            background: linear-gradient(135deg, var(--panel2) 0%, #3a2f1e 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        .menu-btn-icon {
+            font-size: 32px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg);
+            border-radius: 8px;
+            border: 1px solid var(--brown);
+        }
+
+        .menu-btn-content h3 {
+            font-size: 18px;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+
+        .menu-btn-content p {
+            font-size: 13px;
+            color: var(--dim);
+            line-height: 1.4;
+        }
+
+        .menu-btn-arrow {
+            margin-left: auto;
+            color: var(--brown);
+            font-size: 20px;
+        }
+
+        .home-footer {
+            text-align: center;
+            padding: 20px;
+            padding-bottom: calc(20px + var(--sab));
+            font-size: 12px;
+            color: var(--dim);
+        }
+
+        /* ===== BUILDER SCREEN ===== */
+        .builder-screen {
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .builder-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            padding-top: calc(12px + var(--sat));
+            background: var(--bg2);
+            border-bottom: 2px solid var(--brown);
+        }
+
+        .builder-back {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 8px;
+            cursor: pointer;
+            color: var(--text);
+            font-size: 18px;
+        }
+
+        .builder-title {
+            flex: 1;
+            font-size: 18px;
+            color: var(--gold);
+        }
+
+        .builder-level {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--dim);
+        }
+
+        .level-input {
+            width: 60px;
+            padding: 8px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 6px;
+            color: var(--gold);
+            font-size: 16px;
+            text-align: center;
+            font-family: inherit;
+        }
+
+        .builder-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: calc(80px + var(--sab));
+        }
+
+        /* Tab content */
+        .tab-content {
+            flex: 1;
+            padding: 16px;
+            overflow-y: auto;
+        }
+
+        /* Skills tab */
+        .class-section {
+            margin-bottom: 20px;
+        }
+
+        .class-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .class-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            background: var(--bg);
+            border: 1px solid var(--brown);
+        }
+
+        .class-info h3 {
+            font-size: 16px;
+            color: var(--gold);
+        }
+
+        .class-info p {
+            font-size: 12px;
+            color: var(--dim);
+        }
+
+        .class-dlc {
+            margin-left: auto;
+            padding: 4px 10px;
+            background: var(--brown);
+            color: var(--gold);
+            font-size: 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .skills-list {
+            margin-top: 8px;
+            padding-left: 8px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            margin-top: 6px;
+            background: var(--panel2);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .skill-item:hover {
+            border-color: var(--brown);
+        }
+
+        .skill-item.selected {
+            border-color: var(--gold);
+            background: #3a2f1e;
+        }
+
+        .skill-item.locked {
+            opacity: 0.5;
+        }
+
+        .skill-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 6px;
+            background: var(--bg);
+            flex-shrink: 0;
+        }
+
+        .skill-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .skill-name {
+            font-size: 14px;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+
+        .skill-meta {
+            font-size: 11px;
+            color: var(--dim);
+        }
+
+        .skill-tier {
+            padding: 3px 8px;
+            background: var(--brown);
+            color: var(--gold);
+            font-size: 10px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .skill-tier.t2 { background: var(--gold); color: var(--bg); }
+        .skill-tier.t3 { background: #7d6608; color: #fff; }
+
+        /* Equipment tab */
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .equip-slot {
+            aspect-ratio: 1;
+            background: var(--panel);
+            border: 2px dashed var(--brown);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding: 8px;
+            text-align: center;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .equip-slot:hover {
+            border-color: var(--gold);
+        }
+
+        .equip-slot.filled {
+            border-style: solid;
+            border-color: var(--gold);
+            background: var(--panel2);
+        }
+
+        .equip-slot img {
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+        }
+
+        .slot-label {
+            font-size: 10px;
+            color: var(--dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item-name {
+            font-size: 10px;
+            color: var(--text);
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+
+        /* Stats tab */
+        .stats-section {
+            margin-bottom: 20px;
+        }
+
+        .stats-section h3 {
+            font-size: 12px;
+            color: var(--dim);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--brown);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #3a2f1e;
+            font-size: 14px;
+        }
+
+        .stat-value {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        .stat-value.negative { color: var(--red); }
+
+        /* Bottom tab bar */
+        .tab-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            background: rgba(26, 20, 16, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid var(--brown);
+            padding: 8px 16px calc(8px + var(--sab));
+            z-index: 100;
+        }
+
+        .tab-btn {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding: 8px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--dim);
+            font-family: inherit;
+            font-size: 11px;
+            transition: color 0.2s ease;
+        }
+
+        .tab-btn.active { color: var(--gold); }
+        .tab-btn-icon { font-size: 22px; }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 200;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .modal {
+            background: var(--panel);
+            border: 1px solid var(--gold);
+            border-radius: 16px 16px 0 0;
+            width: 100%;
+            max-height: 80vh;
+            max-height: 80dvh;
+            display: flex;
+            flex-direction: column;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        .modal-header {
+            padding: 16px;
+            border-bottom: 1px solid var(--brown);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .modal-title {
+            font-size: 16px;
+            color: var(--gold);
+            flex: 1;
+        }
+
+        .modal-close {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--panel2);
+            border: 1px solid var(--brown);
+            border-radius: 6px;
+            cursor: pointer;
+            color: var(--text);
+            font-size: 16px;
+        }
+
+        .modal-search {
+            margin: 12px 16px;
+            padding: 12px;
+            background: var(--panel2);
+            border: 1px solid var(--brown);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .modal-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 16px 16px;
+        }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+        }
+
+        .item-card {
+            background: var(--panel2);
+            border: 1px solid var(--brown);
+            border-radius: 10px;
+            padding: 12px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .item-card:hover { border-color: var(--gold); }
+
+        .item-card img {
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+        }
+
+        .item-card-name {
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        .item-card-set {
+            font-size: 10px;
+            color: var(--gold);
+        }
+
+        /* Search */
+        .search-bar {
+            width: 100%;
+            padding: 12px 16px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 16px;
+            font-family: inherit;
+            margin-bottom: 16px;
+        }
+
+        /* Filter pills */
+        .filter-pills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .pill {
+            padding: 8px 14px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            color: var(--dim);
+            font-family: inherit;
+            transition: all 0.15s ease;
+        }
+
+        .pill:hover { border-color: var(--gold); }
+        .pill.active {
+            background: var(--gold);
+            color: var(--bg);
+            border-color: var(--gold);
+        }
+
+        /* Points display */
+        .points-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: var(--panel);
+            border: 1px solid var(--brown);
+            border-radius: 10px;
+            margin-bottom: 16px;
+            font-size: 13px;
+        }
+
+        .points-value {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Desktop layout */
+        @media (min-width: 900px) {
+            .home-menu { max-width: 500px; }
+            .builder-content {
+                display: grid;
+                grid-template-columns: 320px 1fr 360px;
+                gap: 16px;
+                padding: 16px;
+                padding-bottom: 16px;
+            }
+            .tab-bar { display: none; }
+            .tab-content { display: block !important; padding: 0; }
+        }
+
+        /* Utility */
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" data-presets="react">
+        const { useState, useEffect, useMemo, useCallback } = React;
+
+        // ===== DATA LOADING =====
+        const DATA_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/data/';
+        const IMG_BASE = 'https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/app/public/';
+
+        async function fetchJSON(path) {
+            const res = await fetch(DATA_BASE + path);
+            if (!res.ok) throw new Error('Failed: ' + path);
+            return res.json();
+        }
+
+        function img(path) {
+            if (!path) return null;
+            return IMG_BASE + path;
+        }
+
+        // ===== APP =====
+        function App() {
+            const [screen, setScreen] = useState('loading'); // loading, home, builder
+            const [data, setData] = useState(null);
+            const [loadProgress, setLoadProgress] = useState(0);
+            const [loadStatus, setLoadStatus] = useState('Initializing...');
+            const [activeTab, setActiveTab] = useState('skills');
+            const [build, setBuild] = useState({
+                name: 'New Build',
+                level: 1,
+                theorycraft: false,
+                skills: [],
+                equipment: {},
+                breakthroughsUsed: 0
+            });
+
+            // Load data
+            useEffect(() => {
+                async function load() {
+                    try {
+                        setLoadStatus('Loading skill trees...');
+                        setLoadProgress(10);
+
+                        const [t1, t2, t3, ts, classes] = await Promise.all([
+                            fetchJSON('skills/skills_tier1.json'),
+                            fetchJSON('skills/skills_tier2.json'),
+                            fetchJSON('skills/skills_tier3.json'),
+                            fetchJSON('skills/skills_special.json'),
+                            fetchJSON('skills/classes.json')
+                        ]);
+
+                        setLoadProgress(30);
+                        setLoadStatus('Loading weapons...');
+
+                        const [melee, ranged, magical, shields] = await Promise.all([
+                            fetchJSON('weapons/weapons_melee.json'),
+                            fetchJSON('weapons/weapons_ranged.json'),
+                            fetchJSON('weapons/weapons_magical.json'),
+                            fetchJSON('weapons/shields.json')
+                        ]);
+
+                        setLoadProgress(50);
+                        setLoadStatus('Loading armor...');
+
+                        const armor = await fetchJSON('armor/armor_items.json');
+
+                        setLoadProgress(70);
+                        setLoadStatus('Processing data...');
+
+                        // Simulate processing time for smooth UX
+                        await new Promise(r => setTimeout(r, 500));
+
+                        setData({
+                            skills: [...t1, ...t2, ...t3, ...ts],
+                            classes: classes,
+                            weapons: [...melee.weapons, ...ranged.weapons, ...magical.weapons, ...shields.weapons],
+                            armor: armor
+                        });
+
+                        setLoadProgress(100);
+                        setLoadStatus('Ready!');
+
+                        setTimeout(() => setScreen('home'), 400);
+
+                    } catch (e) {
+                        setLoadStatus('Error: ' + e.message);
+                    }
+                }
+                load();
+            }, []);
+
+            // Load saved build
+            useEffect(() => {
+                const saved = localStorage.getItem('outward-build');
+                if (saved) {
+                    try { setBuild(JSON.parse(saved)); } catch {}
+                }
+            }, []);
+
+            // Save build
+            useEffect(() => {
+                localStorage.setItem('outward-build', JSON.stringify(build));
+            }, [build]);
+
+            if (screen === 'loading') {
+                return <LoadingScreen progress={loadProgress} status={loadStatus} />;
+            }
+
+            if (screen === 'home') {
+                return <HomeScreen onStart={() => setScreen('builder')} data={data} />;
+            }
+
+            return (
+                <BuilderScreen 
+                    data={data} 
+                    build={build} 
+                    setBuild={setBuild}
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                    onHome={() => setScreen('home')}
+                />
+            );
+        }
+
+        // ===== LOADING SCREEN =====
+        function LoadingScreen({ progress, status }) {
+            return (
+                <div className="loading-screen">
+                    <div className="loading-logo">⚔️</div>
+                    <div className="loading-title">Outward</div>
+                    <div className="loading-subtitle">Build Builder</div>
+                    <div className="loading-bar-container">
+                        <div className="loading-bar" style={{width: progress + '%'}}></div>
+                    </div>
+                    <div className="loading-status">{status}</div>
+                </div>
+            );
+        }
+
+        // ===== HOME SCREEN =====
+        function HomeScreen({ onStart, data }) {
+            const buildCount = data?.skills?.length || 0;
+            const weaponCount = data?.weapons?.length || 0;
+            const armorCount = data?.armor?.length || 0;
+
+            return (
+                <div className="home-screen">
+                    <div className="home-header">
+                        <div className="home-logo">⚔️</div>
+                        <div className="home-title">Outward</div>
+                        <div className="home-subtitle">Definitive Edition Build Builder</div>
+                    </div>
+
+                    <div className="home-menu">
+                        <button className="menu-btn" onClick={onStart}>
+                            <div className="menu-btn-icon">🛠️</div>
+                            <div className="menu-btn-content">
+                                <h3>Create New Build</h3>
+                                <p>Design your character from scratch</p>
+                            </div>
+                            <div className="menu-btn-arrow">→</div>
+                        </button>
+
+                        <button className="menu-btn" onClick={onStart}>
+                            <div className="menu-btn-icon">📂</div>
+                            <div className="menu-btn-content">
+                                <h3>Continue Building</h3>
+                                <p>Resume your saved build</p>
+                            </div>
+                            <div className="menu-btn-arrow">→</div>
+                        </button>
+
+                        <button className="menu-btn" onClick={onStart}>
+                            <div className="menu-btn-icon">📊</div>
+                            <div className="menu-btn-content">
+                                <h3>Browse Database</h3>
+                                <p>{buildCount} skills, {weaponCount} weapons, {armorCount} armor pieces</p>
+                            </div>
+                            <div className="menu-btn-arrow">→</div>
+                        </button>
+                    </div>
+
+                    <div className="home-footer">
+                        Data from outward.wiki.gg • v1.0
+                    </div>
+                </div>
+            );
+        }
+
+        // ===== BUILDER SCREEN =====
+        function BuilderScreen({ data, build, setBuild, activeTab, setActiveTab, onHome }) {
+            const tabs = [
+                { id: 'skills', icon: '⚡', label: 'Skills' },
+                { id: 'equip', icon: '🛡️', label: 'Equipment' },
+                { id: 'stats', icon: '📊', label: 'Stats' }
+            ];
+
+            return (
+                <div className="builder-screen">
+                    <div className="builder-header">
+                        <button className="builder-back" onClick={onHome}>←</button>
+                        <div className="builder-title">{build.name}</div>
+                        <div className="builder-level">
+                            Lv
+                            <input 
+                                type="number" 
+                                className="level-input"
+                                min="1" 
+                                max="50" 
+                                value={build.level}
+                                onChange={e => setBuild({...build, level: Math.min(50, Math.max(1, parseInt(e.target.value) || 1))})}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="builder-content">
+                        <div className="tab-content" style={{display: activeTab === 'skills' || window.innerWidth >= 900 ? 'block' : 'none'}}>
+                            {activeTab === 'skills' || window.innerWidth >= 900 ? (
+                                <SkillsTab data={data} build={build} setBuild={setBuild} />
+                            ) : null}
+                        </div>
+
+                        <div className="tab-content" style={{display: activeTab === 'equip' || window.innerWidth >= 900 ? 'block' : 'none'}}>
+                            {activeTab === 'equip' || window.innerWidth >= 900 ? (
+                                <EquipmentTab data={data} build={build} setBuild={setBuild} />
+                            ) : null}
+                        </div>
+
+                        <div className="tab-content" style={{display: activeTab === 'stats' || window.innerWidth >= 900 ? 'block' : 'none'}}>
+                            {activeTab === 'stats' || window.innerWidth >= 900 ? (
+                                <StatsTab data={data} build={build} />
+                            ) : null}
+                        </div>
+                    </div>
+
+                    <div className="tab-bar">
+                        {tabs.map(tab => (
+                            <button 
+                                key={tab.id}
+                                className={'tab-btn ' + (activeTab === tab.id ? 'active' : '')}
+                                onClick={() => setActiveTab(tab.id)}
+                            >
+                                <span className="tab-btn-icon">{tab.icon}</span>
+                                <span>{tab.label}</span>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        // ===== SKILLS TAB =====
+        function SkillsTab({ data, build, setBuild }) {
+            const [search, setSearch] = useState('');
+            const [filterClass, setFilterClass] = useState(null);
+            const [expandedClass, setExpandedClass] = useState(data.classes[0]?.name);
+
+            const filteredSkills = useMemo(() => {
+                let list = data.skills;
+                if (filterClass) list = list.filter(s => s.parent_class === filterClass);
+                if (search) {
+                    const q = search.toLowerCase();
+                    list = list.filter(s => 
+                        s.name.toLowerCase().includes(q) ||
+                        s.effects?.toLowerCase().includes(q)
+                    );
+                }
+                return list;
+            }, [data.skills, search, filterClass]);
+
+            const skillsByClass = useMemo(() => {
+                const map = {};
+                filteredSkills.forEach(s => {
+                    if (!map[s.parent_class]) map[s.parent_class] = [];
+                    map[s.parent_class].push(s);
+                });
+                Object.values(map).forEach(arr => {
+                    arr.sort((a, b) => {
+                        const order = t => t === 0 ? 4 : t;
+                        return order(a.tier) - order(b.tier);
+                    });
+                });
+                return map;
+            }, [filteredSkills]);
+
+            const pointsUsed = build.skills.length;
+            const pointsLeft = build.theorycraft ? Infinity : build.level - pointsUsed;
+
+            const toggleSkill = (skill) => {
+                const isSelected = build.skills.includes(skill.name);
+                const isBreakthrough = skill.costs_breakthrough;
+
+                if (isSelected) {
+                    setBuild({
+                        ...build,
+                        skills: build.skills.filter(s => s !== skill.name),
+                        breakthroughsUsed: build.breakthroughsUsed - (isBreakthrough ? 1 : 0)
+                    });
+                } else {
+                    if (!build.theorycraft && pointsLeft <= 0) return;
+                    if (isBreakthrough && !build.theorycraft && build.breakthroughsUsed >= 3) return;
+                    setBuild({
+                        ...build,
+                        skills: [...build.skills, skill.name],
+                        breakthroughsUsed: build.breakthroughsUsed + (isBreakthrough ? 1 : 0)
+                    });
+                }
+            };
+
+            return (
+                <div>
+                    <input 
+                        className="search-bar"
+                        placeholder="Search skills..."
+                        value={search}
+                        onChange={e => setSearch(e.target.value)}
+                    />
+
+                    <div className="filter-pills">
+                        <button 
+                            className={'pill ' + (!filterClass ? 'active' : '')}
+                            onClick={() => setFilterClass(null)}
+                        >
+                            All
+                        </button>
+                        {data.classes.map(c => (
+                            <button 
+                                key={c.name}
+                                className={'pill ' + (filterClass === c.name ? 'active' : '')}
+                                onClick={() => setFilterClass(c.name)}
+                            >
+                                {c.name}
+                            </button>
+                        ))}
+                    </div>
+
+                    <div className="points-bar">
+                        <span>Skill Points</span>
+                        <span className="points-value">
+                            {pointsUsed}{build.theorycraft ? ' / ∞' : ' / ' + build.level}
+                        </span>
+                    </div>
+
+                    <div className="points-bar">
+                        <span>Breakthroughs</span>
+                        <span className="points-value" style={{color: build.breakthroughsUsed >= 3 ? 'var(--red)' : 'var(--gold)'}}>
+                            {build.breakthroughsUsed} / 3
+                        </span>
+                    </div>
+
+                    {data.classes.map(cls => {
+                        const skills = skillsByClass[cls.name];
+                        if (!skills || skills.length === 0) return null;
+                        const isOpen = filterClass === cls.name || expandedClass === cls.name || search.length > 0;
+
+                        return (
+                            <div key={cls.name} className="class-section">
+                                <div className="class-header" onClick={() => setExpandedClass(isOpen ? null : cls.name)}>
+                                    <img className="class-icon" src={img(cls.local_image)} alt="" />
+                                    <div className="class-info">
+                                        <h3>{cls.name}</h3>
+                                        <p>{cls.teacher} — {cls.location}</p>
+                                    </div>
+                                    {cls.is_dlc && <span className="class-dlc">DLC</span>}
+                                </div>
+
+                                {isOpen && (
+                                    <div className="skills-list">
+                                        {skills.map(skill => {
+                                            const isSelected = build.skills.includes(skill.name);
+                                            const canAfford = build.theorycraft || pointsLeft > 0 || isSelected;
+                                            return (
+                                                <div 
+                                                    key={skill.name}
+                                                    className={'skill-item ' + (isSelected ? 'selected' : '') + (!canAfford ? ' locked' : '')}
+                                                    onClick={() => canAfford && toggleSkill(skill)}
+                                                >
+                                                    <img className="skill-icon" src={img(skill.local_image)} alt="" loading="lazy" />
+                                                    <div className="skill-info">
+                                                        <div className="skill-name">{skill.name}</div>
+                                                        <div className="skill-meta">
+                                                            {skill.skill_type}
+                                                            {skill.subtype && ' · ' + skill.subtype}
+                                                            {skill.mana_cost && ' · ' + skill.mana_cost + ' Mana'}
+                                                        </div>
+                                                    </div>
+                                                    <span className={'skill-tier ' + (skill.tier === 2 ? 't2' : skill.tier === 3 ? 't3' : '')}>
+                                                        {skill.tier === 0 ? 'SP' : 'T' + skill.tier}
+                                                    </span>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+                            </div>
+                        );
+                    })}
+                </div>
+            );
+        }
+
+        // ===== EQUIPMENT TAB =====
+        function EquipmentTab({ data, build, setBuild }) {
+            const [pickerSlot, setPickerSlot] = useState(null);
+            const [pickerSearch, setPickerSearch] = useState('');
+
+            const slots = [
+                { id: 'head', label: 'Head', type: 'armor' },
+                { id: 'chest', label: 'Chest', type: 'armor' },
+                { id: 'legs', label: 'Legs', type: 'armor' },
+                { id: 'back', label: 'Back', type: 'armor' },
+                { id: 'weapon_main', label: 'Main Hand', type: 'weapon' },
+                { id: 'weapon_off', label: 'Off Hand', type: 'weapon' },
+                { id: 'acc1', label: 'Acc 1', type: 'armor' },
+                { id: 'acc2', label: 'Acc 2', type: 'armor' },
+                { id: 'acc3', label: 'Acc 3', type: 'armor' },
+                { id: 'acc4', label: 'Acc 4', type: 'armor' }
+            ];
+
+            const getItem = (slotId) => {
+                const name = build.equipment[slotId];
+                if (!name) return null;
+                return data.weapons.find(w => w.name === name) || data.armor.find(a => a.name === name);
+            };
+
+            const getPickerItems = () => {
+                if (!pickerSlot) return [];
+                const slot = slots.find(s => s.id === pickerSlot);
+                const q = pickerSearch.toLowerCase();
+
+                if (slot.type === 'weapon') {
+                    return data.weapons.filter(w => !q || w.name.toLowerCase().includes(q));
+                }
+
+                const slotMap = {
+                    head: ['head'], chest: ['chest'], legs: ['legs'], back: ['backpack'],
+                    acc1: ['necklace', 'ring'], acc2: ['necklace', 'ring'],
+                    acc3: ['necklace', 'ring'], acc4: ['necklace', 'ring']
+                };
+                const validSlots = slotMap[pickerSlot] || [];
+                return data.armor.filter(a => validSlots.includes(a.slot) && (!q || a.name.toLowerCase().includes(q)));
+            };
+
+            return (
+                <div>
+                    <div className="equipment-grid">
+                        {slots.map(slot => {
+                            const item = getItem(slot.id);
+                            return (
+                                <div 
+                                    key={slot.id}
+                                    className={'equip-slot ' + (item ? 'filled' : '')}
+                                    onClick={() => { setPickerSlot(slot.id); setPickerSearch(''); }}
+                                >
+                                    {item && item.local_image && (
+                                        <img src={img(item.local_image)} alt="" loading="lazy" />
+                                    )}
+                                    <div className="slot-label">{slot.label}</div>
+                                    {item && <div className="item-name">{item.name}</div>}
+                                </div>
+                            );
+                        })}
+                    </div>
+
+                    {pickerSlot && (
+                        <div className="modal-overlay" onClick={() => setPickerSlot(null)}>
+                            <div className="modal" onClick={e => e.stopPropagation()}>
+                                <div className="modal-header">
+                                    <div className="modal-title">
+                                        {slots.find(s => s.id === pickerSlot)?.label}
+                                    </div>
+                                    <button className="modal-close" onClick={() => setPickerSlot(null)}>✕</button>
+                                </div>
+                                <input 
+                                    className="modal-search"
+                                    placeholder="Search..."
+                                    value={pickerSearch}
+                                    onChange={e => setPickerSearch(e.target.value)}
+                                />
+                                <div className="modal-body">
+                                    <div className="item-grid">
+                                        {getPickerItems().map(item => (
+                                            <div 
+                                                key={item.name}
+                                                className="item-card"
+                                                onClick={() => {
+                                                    setBuild({
+                                                        ...build,
+                                                        equipment: {...build.equipment, [pickerSlot]: item.name}
+                                                    });
+                                                    setPickerSlot(null);
+                                                }}
+                                            >
+                                                {item.local_image && (
+                                                    <img src={img(item.local_image)} alt="" loading="lazy" />
+                                                )}
+                                                <div className="item-card-name">{item.name}</div>
+                                                {item.set_name && <div className="item-card-set">{item.set_name}</div>}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        // ===== STATS TAB =====
+        function StatsTab({ data, build }) {
+            const stats = useMemo(() => {
+                const result = {
+                    health: 100, stamina: 100, mana: 20,
+                    protection: 0, impactResist: 0,
+                    resistances: {}, staminaCost: 0, manaCost: 0,
+                    moveSpeed: 0, coldResist: 0, heatResist: 0, pouch: 0
+                };
+
+                // Equipment stats
+                Object.values(build.equipment).forEach(name => {
+                    if (!name) return;
+                    const armor = data.armor.find(a => a.name === name);
+                    if (armor) {
+                        result.protection += armor.protection || 0;
+                        result.impactResist += armor.resistances?.impact || 0;
+                        result.staminaCost += armor.stamina_cost_reduction || 0;
+                        result.manaCost += armor.mana_cost_reduction || 0;
+                        result.moveSpeed += armor.move_speed || 0;
+                        result.coldResist += armor.cold_resist || 0;
+                        result.heatResist += armor.heat_resist || 0;
+                        result.pouch += armor.pouch || 0;
+
+                        Object.entries(armor.resistances || {}).forEach(([k, v]) => {
+                            if (v && k !== 'impact') {
+                                result.resistances[k] = (result.resistances[k] || 0) + v;
+                            }
+                        });
+                    }
+                });
+
+                // Skill effects (simplified parsing)
+                build.skills.forEach(name => {
+                    const skill = data.skills.find(s => s.name === name);
+                    if (skill?.effects) {
+                        const m = skill.effects.match(/([+-])([0-9]+)[\s]*(health|stamina|mana)/i);
+                        if (m) {
+                            const key = m[3].toLowerCase();
+                            result[key] += parseInt(m[2]) * (m[1] === '-' ? -1 : 1);
+                        }
+                    }
+                });
+
+                return result;
+            }, [data, build]);
+
+            const StatRow = ({ label, value, suffix = '' }) => (
+                <div className="stat-row">
+                    <span>{label}</span>
+                    <span className={'stat-value ' + (value < 0 ? 'negative' : '')}>
+                        {value > 0 && value}{value}{suffix}
+                    </span>
+                </div>
+            );
+
+            return (
+                <div>
+                    <div className="stats-section">
+                        <h3>Core Stats</h3>
+                        <StatRow label="Health" value={stats.health} />
+                        <StatRow label="Stamina" value={stats.stamina} />
+                        <StatRow label="Mana" value={stats.mana} />
+                    </div>
+
+                    <div className="stats-section">
+                        <h3>Defense</h3>
+                        <StatRow label="Protection" value={stats.protection} />
+                        <StatRow label="Impact Resist" value={stats.impactResist} />
+                        {Object.entries(stats.resistances).map(([k, v]) => (
+                            <StatRow key={k} label={k.charAt(0).toUpperCase() + k.slice(1) + ' Resist'} value={v} />
+                        ))}
+                    </div>
+
+                    <div className="stats-section">
+                        <h3>Modifiers</h3>
+                        <StatRow label="Stamina Cost" value={-stats.staminaCost} suffix="%" />
+                        <StatRow label="Mana Cost" value={-stats.manaCost} suffix="%" />
+                        <StatRow label="Move Speed" value={stats.moveSpeed} suffix="%" />
+                        <StatRow label="Cold Protection" value={stats.coldResist} />
+                        <StatRow label="Heat Protection" value={stats.heatResist} />
+                    </div>
+
+                    <div className="stats-section">
+                        <h3>Selected Skills ({build.skills.length})</h3>
+                        {build.skills.map(name => {
+                            const skill = data.skills.find(s => s.name === name);
+                            return skill ? (
+                                <div key={name} style={{padding: '8px 0', borderBottom: '1px solid #3a2f1e', fontSize: 13}}>
+                                    <span style={{color: 'var(--gold)'}}>{skill.name}</span>
+                                    <span style={{color: 'var(--dim)', marginLeft: 8, fontSize: 11}}>
+                                        {skill.parent_class}
+                                    </span>
+                                </div>
+                            ) : null;
+                        })}
+                    </div>
+                </div>
+            );
+        }
+
+        // Render
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>
