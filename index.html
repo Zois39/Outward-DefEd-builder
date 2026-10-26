@@ -274,6 +274,8 @@ var CONS_SEARCH='';
 var CONS_TYPE_FILTER=null;
 var EFFECT_SEARCH='';
 var QUEST_SELECTIONS={};
+var ARMOR_SEARCH='';
+var WEAPON_SEARCH='';
 
 function setProgress(pct,status){
   var bar=document.getElementById('loading-bar');
@@ -303,7 +305,6 @@ function fetchJSON(path){
   });
 }
 
-// Safe click handler using data attributes
 function makeClick(fn,arg){
   return 'data-fn="'+fn+'" data-arg="'+encodeURIComponent(arg)+'" onclick="handleClick(event)"';
 }
@@ -348,7 +349,18 @@ function imgHtml(src,cls){
   if(!src){
     return '<div class="'+cls+'" style="background:var(--panel3);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:16px;min-width:48px;min-height:64px;">?</div>';
   }
-  return '<img class="'+cls+'" src="'+escHtml(src)+'" loading="lazy" onerror="this.outerHTML=\'<div class=&quot;'+cls+'&quot; style=&quot;background:var(--panel3);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:16px;min-width:48px;min-height:64px;&quot;>?</div>\'">';
+  var img=document.createElement('img');
+  img.className=cls;
+  img.src=src;
+  img.loading='lazy';
+  img.onerror=function(){
+    var div=document.createElement('div');
+    div.className=cls;
+    div.style.cssText='background:var(--panel3);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:16px;min-width:48px;min-height:64px;';
+    div.textContent='?';
+    this.replaceWith(div);
+  };
+  return img.outerHTML;
 }
 
 function escHtml(s){
@@ -361,17 +373,7 @@ function cleanDesc(text){
   text=String(text);
   text=text.replace(/<[^>]*>?/g,'');
   text=text.replace(/\b(function|var|let|const|return|if|else|for|while|new|typeof)\b/gi,'');
-  text=text.replace(/\{[^}]*\}/g,'');
-  text=text.replace(/\w+\s*:\s*[^;{}]+;?/g,'');
-  text=text.replace(/\S+\.(png|jpg|jpeg|gif|svg|json|html|css|js|ts|tsx|jsx)/gi,'');
-  text=text.replace(/https?:\/\/\S+/g,'');
-  text=text.replace(/outward\.wiki\.gg\S*/g,'');
-  text=text.replace(/File:[^\s|]+/g,'');
-  text=text.replace(/\[\[|\]\]/g,'');
-  text=text.replace(/\s+/g,' ').trim();
-  text=text.replace(/^[\s,;:|\-]+|[\s,;:|\-]+$/g,'');
-  return text;
-}
+  text=text.replace(/\{[^}]*\}
 
 function loadData(){
   hideError();
@@ -891,7 +893,7 @@ function findUpgradedFromWeapon(itemName){
   }
   return null;
 }
-// ARMOR TAB
+
 function getArmorRarityClass(a){
   if(a.set_name)return 'rarity-set';
   var desc=(a.description||'').toLowerCase();
@@ -946,15 +948,14 @@ function renderArmorTab(pane){
   renderArmorList();
 }
 
-
 function clearArmorFilters(){
   ARMOR_FILTER={slot:'all',rarity:'all',sort:'name'};
   ARMOR_SEARCH='';
   renderArmorTab(document.getElementById('pane-armor'));
 }
 
-var ARMOR_SEARCH='';
 function armorSearch(val){ARMOR_SEARCH=val;renderArmorList();}
+
 function setArmorFilter(key,val){ARMOR_FILTER[key]=val;renderArmorList();}
 
 function renderArmorList(){
@@ -1069,6 +1070,7 @@ function renderArmorList(){
   html+='</div>';
   container.innerHTML=html;
 }
+}
 
 function equipArmor(name){
   var a=findArmor(name);
@@ -1090,7 +1092,6 @@ function unequipArmor(name){
     renderBuilder();
   }
 }
-
 
 function findEffectByName(name){
   if(!DATA.effects)return null;
@@ -1120,7 +1121,6 @@ function getEffectImage(effect){
   return 'assets/images/effects/effect_'+effect.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
 }
 
-// WEAPONS TAB
 function getWeaponRarityClass(w){
   var desc=(w.description||'').toLowerCase();
   if(desc.indexOf('unique')>=0)return 'rarity-unique';
@@ -1186,15 +1186,14 @@ function renderWeaponsTab(pane){
   renderWeaponList();
 }
 
-
 function clearWeaponFilters(){
   WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
   WEAPON_SEARCH='';
   renderWeaponsTab(document.getElementById('pane-weapons'));
 }
 
-var WEAPON_SEARCH='';
 function weaponSearch(val){WEAPON_SEARCH=val;renderWeaponList();}
+
 function setWeaponFilter(key,val){WEAPON_FILTER[key]=val;renderWeaponList();}
 
 function renderWeaponList(){
@@ -1394,7 +1393,6 @@ function unequipWeapon(name){
   renderBuilder();
 }
 
-// SKILLS TAB
 function renderSkillsTab(pane){
   var html='';
   html+='<input class="search-bar" placeholder="Search skills..." oninput="skillSearch(this.value)">';
@@ -1654,7 +1652,6 @@ function toggleSkill(name){
   renderBuilder();
 }
 
-// FACTIONS TAB - REWORKED
 function renderFactionsTab(pane){
   var html='';
 
@@ -1848,7 +1845,6 @@ function selectFaction(id){
   renderBuilder();
 }
 
-// CONSUMABLES TAB
 function renderConsumablesTab(pane){
   var html='';
   html+='<input class="search-bar" placeholder="Search items..." oninput="consSearch(this.value)">';
@@ -1957,7 +1953,6 @@ function toggleCons(name){
   renderBuilder();
 }
 
-// EFFECTS TAB
 function renderEffectsTab(pane){
   var html='';
   html+='<input class="search-bar" placeholder="Search effects..." oninput="effectSearch(this.value)">';
@@ -2006,7 +2001,6 @@ function renderEffectsList(){
   container.innerHTML=html;
 }
 
-// UTILITY FUNCTIONS
 function saveBuild(){
   try{localStorage.setItem('outward-build',JSON.stringify(BUILD));}catch(e){}
 }
@@ -2063,7 +2057,6 @@ function importBuild(){
   input.click();
 }
 
-// Initialize
 loadData();
 </script>
 </body>
