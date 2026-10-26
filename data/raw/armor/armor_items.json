@@ -599,7 +599,7 @@
   {
     "name": "Barrier Boots",
     "description": "Barrier Boots is a type of Equipment in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 8,
       "fire": null,
@@ -789,7 +789,7 @@
   {
     "name": "Black Fur Boots",
     "description": "Black Fur Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 11,
       "fire": null,
@@ -1500,7 +1500,7 @@
   {
     "name": "Caged Armor Boots",
     "description": "Caged Armor Boots is a type of Equipment in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 20,
       "fire": null,
@@ -3807,7 +3807,7 @@
   {
     "name": "Green Copal Boots",
     "description": "Green Copal Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 8,
       "fire": null,
@@ -5289,7 +5289,7 @@
   {
     "name": "Manawall Boots",
     "description": "Manawall Boots is a type of Equipment in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 8,
       "fire": null,
@@ -5365,7 +5365,7 @@
   {
     "name": "Master Desert Boots",
     "description": "Master Desert Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 14,
       "fire": null,
@@ -5517,7 +5517,7 @@
   {
     "name": "Master Kazite Boots",
     "description": "Master Kazite Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 12,
       "fire": null,
@@ -6353,7 +6353,7 @@
   {
     "name": "Orichalcum Boots",
     "description": "Orichalcum Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 18,
       "fire": null,
@@ -7205,7 +7205,7 @@
   {
     "name": "Pilgrim Boots",
     "description": "Pilgrim Boots  is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 17,
       "fire": null,
@@ -8725,7 +8725,7 @@
   {
     "name": "Shock Boots",
     "description": "Shock Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 12,
       "fire": null,
@@ -9105,7 +9105,7 @@
   {
     "name": "Squire Boots",
     "description": "Squire Boots  is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 9,
       "fire": 15,
@@ -9898,7 +9898,7 @@
   {
     "name": "Virgin Boots",
     "description": "Virgin Boots is a type of Equipment in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 12,
       "fire": null,
@@ -10088,7 +10088,7 @@
   {
     "name": "White Kintsugi Boots",
     "description": "White Kintsugi Boots is a type of Armor in Outward.",
-    "slot": "boots",
+    "slot": "legs",
     "resistances": {
       "physical": 20,
       "fire": null,
@@ -10958,5 +10958,257 @@
     "source_url": "https://outward.wiki.gg/wiki/Zagis%27_Mask",
     "image_url": "https://outward.wiki.gg/images/Zagis%27_Mask.png?5d0e31",
     "image_local": "assets/images/armor/armor_Zagis__Mask.png"
+  },
+  {
+    "name": "Adventurer Backpack",
+    "slot": "backpack",
+    "weight": 1.0,
+    "buy": 60,
+    "sell": 18,
+    "set": "Adventurer Set",
+    "description": "Bag with small carrying capacity, specially made to not interfere with the dodge",
+    "local_image": "assets/images/armor/armor_Adventurer_Backpack.png"
+  },
+  {
+    "name": "Alchemist Backpack",
+    "slot": "backpack",
+    "weight": 3.0,
+    "buy": 130,
+    "sell": 39,
+    "description": "Advanced bag that slows down the decay of the food it contains.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Alchemist_Backpack.png"
+  },
+  {
+    "name": "Boozu Hide Backpack",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 100,
+    "sell": 30,
+    "description": "Does not interfere with the user's roll. Protects against Corruption.",
+    "local_image": "assets/images/armor/armor_Boozu_Hide_Backpack.png"
+  },
+  {
+    "name": "Brass-Wolf Backpack",
+    "slot": "backpack",
+    "protection": 2,
+    "weight": 4.0,
+    "buy": 200,
+    "sell": 60,
+    "description": "Exquisite bag, used by northern Wolf-Knights. It protects the items it carries and its wearer.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Brass-Wolf_Backpack.png"
+  },
+  {
+    "name": "Brigand's Backpack",
+    "slot": "backpack",
+    "weight": 1.0,
+    "buy": 350,
+    "sell": 105,
+    "description": "Increases your Physical Damage by 15%.\nDoes not impede rolling.",
+    "local_image": "assets/images/armor/armor_Brigand's_Backpack.png"
+  },
+  {
+    "name": "Chalcedony Backpack",
+    "slot": "backpack",
+    "weight": 3.0,
+    "buy": 350,
+    "sell": 105,
+    "description": "Provides 15 resistance to heat when worn.",
+    "local_image": "assets/images/armor/armor_Chalcedony_Backpack.png"
+  },
+  {
+    "name": "Dusk Backpack",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 300,
+    "sell": 90,
+    "description": "Provides 5 Barrier.",
+    "local_image": "assets/images/armor/armor_Dusk_Backpack.png"
+  },
+  {
+    "name": "Glowstone Backpack",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 300,
+    "sell": 90,
+    "local_image": "assets/images/armor/armor_Glowstone_Backpack.png"
+  },
+  {
+    "name": "Large Chalcedony Stone",
+    "slot": "backpack",
+    "weight": 150.0,
+    "buy": 50,
+    "sell": 15,
+    "description": "Must be charged in the depths of a Volcano's basin. It's too heavy to carry inside another backpack!",
+    "local_image": "assets/images/armor/armor_Large_Chalcedony_Stone.png"
+  },
+  {
+    "name": "Light Mender's Backpack",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 200,
+    "sell": 60,
+    "set": "Gold-Lich Set",
+    "description": "Bag containing the arcane tailsmans collected long ago by an undead wizard.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Light_Mender's_Backpack.png"
+  },
+  {
+    "name": "Mefino's Trade Backpack",
+    "slot": "backpack",
+    "weight": 5.0,
+    "buy": 85,
+    "sell": 26,
+    "description": "Needlessly ornate bag with an enormous carrying capacity, once used by the spice merchant Mefino.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Mefino's_Trade_Backpack.png"
+  },
+  {
+    "name": "Nomad Backpack",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 25,
+    "sell": 8,
+    "description": "Balanced backpack commonly used by travelers.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Nomad_Backpack.png"
+  },
+  {
+    "name": "Preservation Backpack",
+    "slot": "backpack",
+    "weight": 3.0,
+    "buy": 200,
+    "sell": 60,
+    "description": "Elite bag that strongly slows down the decay of the food it contains.<br><br>Equipping this backpack slows your dodge and removes your dodge invincibility",
+    "local_image": "assets/images/armor/armor_Preservation_Backpack.png"
+  },
+  {
+    "name": "Primitive Satchel",
+    "slot": "backpack",
+    "weight": 1.0,
+    "buy": 30,
+    "sell": 9,
+    "description": "Basic craftable bag used to store items, though it lacks a spot to hang a lantern from.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Primitive_Satchel.png"
+  },
+  {
+    "name": "Prospector Backpack",
+    "slot": "backpack",
+    "weight": 3.0,
+    "buy": 100,
+    "sell": 30,
+    "description": "Large professional backpack used by explorers.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Prospector_Backpack.png"
+  },
+  {
+    "name": "Scaled Satchel",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 100,
+    "sell": 30,
+    "set": "Scaled Leather Set",
+    "description": "Craftable bag with improved carrying capacity, a lantern slot and which does not restrict your dodge.",
+    "local_image": "assets/images/armor/armor_Scaled_Satchel.png"
+  },
+  {
+    "name": "Strongbox Backpack",
+    "slot": "backpack",
+    "protection": 2,
+    "weight": 4.0,
+    "buy": 100,
+    "sell": 30,
+    "description": "Tough box that protect both the wearer and what's carried in it.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Strongbox_Backpack.png"
+  },
+  {
+    "name": "Trader Backpack",
+    "slot": "backpack",
+    "weight": 8.0,
+    "buy": 250,
+    "sell": 75,
+    "set": "Trader Set",
+    "description": "Cavernous bag with a large carrying capacty, but which slows you down.<br><br>'''Equipping this backpack slows your dodge.'''",
+    "local_image": "assets/images/armor/armor_Trader_Backpack.png"
+  },
+  {
+    "name": "Weaver's Backpack",
+    "slot": "backpack",
+    "weight": 2.0,
+    "buy": 300,
+    "sell": 90,
+    "local_image": "assets/images/armor/armor_Weaver's_Backpack.png"
+  },
+  {
+    "name": "Zhorn's Hunting Backpack",
+    "slot": "backpack",
+    "weight": 4.0,
+    "buy": 400,
+    "sell": 120,
+    "set": "Zhorn's Set",
+    "local_image": "assets/images/armor/armor_Zhorn's_Hunting_Backpack.png"
+  },
+  {
+    "name": "Coil Lantern",
+    "slot": "lantern",
+    "weight": 1.0,
+    "buy": 300,
+    "sell": 90,
+    "local_image": "assets/images/armor/armor_Coil_Lantern.png"
+  },
+  {
+    "name": "Djinn's Lamp",
+    "slot": "lantern",
+    "weight": 1.0,
+    "buy": 25,
+    "sell": 7,
+    "description": "When held in hand, helps protect the wielder from Status Ailments. Can be refilled with thick oil.",
+    "local_image": "assets/images/armor/armor_Djinn's_Lamp.png"
+  },
+  {
+    "name": "Explorer Lantern",
+    "slot": "lantern",
+    "weight": 1.0,
+    "buy": 25,
+    "sell": 8,
+    "description": "Oil Lantern that shines brightly.",
+    "local_image": "assets/images/armor/armor_Explorer_Lantern.png"
+  },
+  {
+    "name": "Ice-Flame Torch",
+    "slot": "lantern",
+    "weight": 0.4,
+    "buy": 20,
+    "sell": 6,
+    "local_image": "assets/images/armor/armor_Ice-Flame_Torch.png"
+  },
+  {
+    "name": "Lantern of Souls",
+    "slot": "lantern",
+    "weight": 1.0,
+    "buy": 0,
+    "sell": 0,
+    "local_image": "assets/images/armor/armor_Lantern_of_Souls.png"
+  },
+  {
+    "name": "Makeshift Torch",
+    "slot": "lantern",
+    "weight": 0.4,
+    "buy": 0,
+    "sell": 0,
+    "local_image": "assets/images/armor/armor_Makeshift_Torch.png"
+  },
+  {
+    "name": "Old Lantern",
+    "slot": "lantern",
+    "weight": 0.6,
+    "buy": 15,
+    "sell": 4,
+    "local_image": "assets/images/armor/armor_Old_Lantern.png"
+  },
+  {
+    "name": "Virgin Lantern",
+    "slot": "lantern",
+    "weight": 1.0,
+    "buy": 25,
+    "sell": 7,
+    "set": "Virgin Set",
+    "description": "A mage's enchantable lantern.",
+    "local_image": "assets/images/armor/armor_Virgin_Lantern.png"
   }
 ]
