@@ -600,7 +600,7 @@ function renderStatsTab(pane){
   html+='</div>';
   html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDF92</span><span class="sec-title">Equipment</span></div><div class="sec-body">';
   html+='<div class="inventory-grid">';
-  var armorSlots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'backpack',label:'Backpack'},{id:'lantern',label:'Lantern'},{id:'offhand',label:'Off-Hand'}];
+  var armorSlots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'backpack',label:'Backpack'},{id:'lantern',label:'Lantern'}];
   for(var i=0;i<armorSlots.length;i++){
     var slot=armorSlots[i];
     var itemName=(BUILD.armor||{})[slot.id];
@@ -730,7 +730,7 @@ function renderArmorTab(pane){
   var html='';
   html+='<input class="search-bar" placeholder="Search armor..." oninput="armorSearch(this.value)">';
   html+='<div class="filter-section"><div class="filter-label">Slot</div><div class="filter-pills">';
-  var slots=['all','head','chest','legs','backpack','lantern','offhand'];
+  var slots=['all','head','chest','legs','backpack','lantern'];
   for(var i=0;i<slots.length;i++){
     var s=slots[i];
     html+='<button class="pill'+(ARMOR_FILTER.slot===s?' active':'')+'" '+makeClick('setArmorFilter','slot|'+s)+'>'+(s==='all'?'All':s.charAt(0).toUpperCase()+s.slice(1))+'</button>';
@@ -893,7 +893,7 @@ function renderWeaponsTab(pane){
   var html='';
   html+='<input class="search-bar" placeholder="Search weapons..." oninput="weaponSearch(this.value)">';
   html+='<div class="filter-section"><div class="filter-label">Type</div><div class="filter-pills">';
-  var types=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield'];
+  var types=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield','Torch'];
   for(var i=0;i<types.length;i++){
     var t=types[i];
     html+='<button class="pill'+(WEAPON_FILTER.type===t?' active':'')+'" '+makeClick('setWeaponFilter','type|'+t)+'>'+t+'</button>';
