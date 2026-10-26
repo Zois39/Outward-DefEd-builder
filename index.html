@@ -124,13 +124,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .item-set{font-size:10px;color:var(--gold);margin-top:4px}
 .effects-section{margin-top:8px;padding:8px;background:rgba(192,57,43,.1);border-radius:6px;border:1px solid rgba(192,57,43,.3)}
 .effects-title{font-size:10px;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
-.effect-line{font-size:11px;color:var(--text);padding:2px 0}
-.effect-detail{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid rgba(139,69,19,.2)}
-.effect-detail:last-child{border-bottom:none}
-.effect-detail img{width:32px;height:32px;object-fit:contain;border-radius:50%}
-.effect-detail-info{flex:1}
-.effect-detail-name{font-size:12px;font-weight:600}
-.effect-detail-desc{font-size:10px;color:var(--dim);margin-top:2px}
+.effect-tags{display:flex;flex-wrap:wrap;gap:4px}
+.effect-tag{padding:3px 8px;background:var(--panel);border-radius:4px;font-size:10px;color:var(--text)}
 .craft-section{margin-top:8px;padding:8px;background:rgba(39,174,96,.1);border-radius:6px;border:1px solid rgba(39,174,96,.3)}
 .craft-title{font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
 .craft-ing{font-size:11px;color:var(--text);padding:2px 0}
@@ -181,12 +176,22 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .quest-item{background:var(--panel2);border:1px solid var(--brown);border-radius:10px;padding:12px;margin-bottom:8px}
 .quest-name{font-size:14px;color:var(--gold);font-weight:600;margin-bottom:4px}
 .quest-desc{font-size:11px;color:var(--dim);line-height:1.4;margin-bottom:8px}
-.quest-rewards{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.reward-chip{padding:4px 8px;background:var(--panel);border-radius:4px;font-size:10px;color:var(--gold)}
-.quest-outcome{padding:8px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;margin-top:6px;cursor:pointer}
-.quest-outcome.selected{border-color:var(--gold);background:var(--panel3)}
-.outcome-name{font-size:12px;color:var(--text)}
-.outcome-locks{font-size:10px;color:var(--red);margin-top:4px}
+.reward-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:8px}
+@media(min-width:600px){.reward-cards{grid-template-columns:repeat(3,1fr)}}
+.reward-card{background:var(--panel);border:1px solid var(--brown);border-radius:8px;padding:10px;cursor:pointer;text-align:center;transition:all .2s}
+.reward-card:hover{border-color:var(--gold)}
+.reward-card.selected{border-color:var(--gold);background:var(--panel3);box-shadow:0 0 10px rgba(201,162,39,.3)}
+.reward-card.locked{opacity:.5;cursor:not-allowed}
+.reward-card img{width:40px;height:52px;object-fit:cover;border-radius:4px;margin-bottom:6px}
+.reward-card-name{font-size:11px;font-weight:600;line-height:1.2}
+.reward-card-type{font-size:9px;color:var(--dim);margin-top:2px}
+.reward-card-desc{font-size:9px;color:var(--dim);margin-top:4px;line-height:1.3}
+.reward-check{position:absolute;top:4px;right:4px;width:20px;height:20px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--bg);font-size:12px;font-weight:700}
+.reward-card{position:relative}
+.locks-warning{font-size:10px;color:var(--red);margin-top:6px;padding:4px 8px;background:rgba(192,57,43,.1);border-radius:4px}
+.total-rewards{margin-top:16px;padding:12px;background:var(--panel);border:1px solid var(--gold);border-radius:8px;text-align:center}
+.total-rewards-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:1px}
+.total-rewards-value{font-size:14px;color:var(--text);margin-top:4px}
 .cons-item{display:flex;gap:12px;padding:14px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px;cursor:pointer}
 .cons-item.selected{border-color:var(--gold);background:var(--panel3)}
 .cons-item img{width:44px;height:56px;object-fit:cover;border-radius:4px;flex-shrink:0}
@@ -244,7 +249,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       <button class="theory-btn" id="theory-btn" onclick="toggleTheorycraft()">Theory</button>
       <button class="header-btn" onclick="exportBuild()" title="Export">&#x2B07;</button>
       <button class="header-btn" onclick="importBuild()" title="Import">&#x2B06;</button>
-      <button class="header-btn" onclick="resetBuild()" title="Reset">&#x2715;</button>
+      <button class="header-btn" onclick="newBuild()" title="New Build">&#x2715;</button>
     </div>
     <div class="builder-content" id="builder-content">
       <div class="tab-pane" id="pane-stats"></div>
@@ -259,7 +264,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
   </div>
 </div>
 <script>
-// FIXED: Empty initial BUILD
 var DATA=null;
 var BUILD={
   name:'New Build',
@@ -275,7 +279,7 @@ var BUILD={
 };
 var CURRENT_TAB='stats';
 var ARMOR_FILTER={slot:'all',rarity:'all',sort:'name'};
-var WEAPON_FILTER={type:'all',hand:'all',rarity:'all',dmg:'all',sort:'name'};
+var WEAPON_FILTER={type:'all',hand:'all',rarity:'all',dmg:'all',effect:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
 var CONS_SEARCH='';
@@ -288,39 +292,64 @@ function showError(msg){var err=document.getElementById('loading-error');var btn
 function hideError(){var err=document.getElementById('loading-error');var btn=document.getElementById('retry-btn');if(err)err.style.display='none';if(btn)btn.style.display='none';}
 function fetchJSON(path){return fetch('data/raw/'+path).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+': '+path);return r.json();});}
 
-// Get image path for item type
+// CRITICAL FIX: Safe onclick attribute builder
+// This prevents the broken HTML issue with quotes
+function makeOnClick(fnName,arg){
+  // Use data attribute approach instead of inline onclick
+  return 'data-fn="'+fnName+'" data-arg="'+encodeURIComponent(arg)+'" onclick="handleClick(this)"';
+}
+
+// Global click handler using event delegation
+function handleClick(el){
+  var fn=el.getAttribute('data-fn');
+  var arg=decodeURIComponent(el.getAttribute('data-arg')||'');
+  if(fn==='equipArmor')equipArmor(arg);
+  else if(fn==='unequipArmor')unequipArmor(arg);
+  else if(fn==='equipWeapon')equipWeapon(arg);
+  else if(fn==='unequipWeapon')unequipWeapon(arg);
+  else if(fn==='toggleSkill')toggleSkill(arg);
+  else if(fn==='selectFaction')selectFaction(arg);
+  else if(fn==='selectOutcome'){var args=arg.split('|');selectOutcome(args[0],args[1]);}
+  else if(fn==='toggleCons')toggleCons(arg);
+  else if(fn==='switchTab')switchTab(arg);
+  else if(fn==='setArmorFilter'){var f=arg.split('|');setArmorFilter(f[0],f[1]);}
+  else if(fn==='setWeaponFilter'){var f=arg.split('|');setWeaponFilter(f[0],f[1]);}
+  else if(fn==='filterSkillsByClass')filterSkillsByClass(arg==='null'?null:arg);
+  else if(fn==='filterConsByType')filterConsByType(arg==='null'?null:arg);
+}
+
 function getItemImage(item,type){
   if(!item)return null;
   var path=item.local_image||item.image_local||item.image;
   if(path)return path;
   if(type==='armor'){
-    var name=item.name.replace(/[^a-zA-Z0-9]/g,'_');
-    return 'assets/images/armor/armor_'+name+'.png';
+    return 'assets/images/armor/armor_'+item.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
   }
   if(type==='weapon'){
-    var wname=item.name.replace(/[^a-zA-Z0-9]/g,'_');
-    return 'assets/images/weapons/weapon_'+wname+'.png';
+    return 'assets/images/weapons/weapon_'+item.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
   }
   if(type==='skill'){
-    var sname=item.name.replace(/[^a-zA-Z0-9]/g,'_');
-    return 'assets/images/skills/skill_'+sname+'.png';
+    return 'assets/images/skills/skill_'+item.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
   }
   if(type==='consumable'){
-    var cname=item.name.replace(/[^a-zA-Z0-9]/g,'_');
-    return 'assets/images/consumables/'+cname+'.png';
+    return 'assets/images/consumables/'+item.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
   }
   if(type==='effect'){
-    var ename=item.name.replace(/[^a-zA-Z0-9]/g,'_');
-    return 'assets/images/effects/effect_'+ename+'.png';
+    return 'assets/images/effects/effect_'+item.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
   }
   return null;
 }
 
-var FALLBACK_IMG='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="64"><rect fill="%2333291d" width="48" height="64" rx="6"/><text fill="%23a89878" font-size="10" x="24" y="34" text-anchor="middle">?</text></svg>';
+// Simple placeholder - just a colored div, no SVG data URI
+function imgTag(src,className){
+  if(!src){
+    return '<div class="'+(className||'item-icon')+'" style="background:var(--panel3);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:16px;">?</div>';
+  }
+  return '<img class="'+(className||'item-icon')+'" src="'+escHtml(src)+'" loading="lazy" onerror="this.outerHTML=\'<div class=&quot;'+(className||'item-icon')+'&quot; style=&quot;background:var(--panel3);display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:16px;&quot;>?</div>\'">';
+}
 
 function escHtml(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
-// Clean description text
 function cleanDesc(text){
   if(!text)return '';
   text=String(text);
@@ -330,12 +359,6 @@ function cleanDesc(text){
   text=text.replace(/https?:\/\/\S+/g,'');
   text=text.replace(/\s+/g,' ').trim();
   return text;
-}
-
-// FIXED: Escape string for use in onclick attribute
-function escAttr(s){
-  if(!s)return '';
-  return String(s).replace(/'/g,"\\'").replace(/"/g,'&quot;');
 }
 
 function loadData(){
@@ -375,17 +398,8 @@ exclusivityMap:em,
 effects:e
 };
 setProgress(100,'Ready!');
-// FIXED: Clear old build on first load
-try{
-  var saved=localStorage.getItem('outward-build');
-  if(saved){
-    var parsed=JSON.parse(saved);
-    // Only restore if it has valid structure
-    if(parsed && typeof parsed==='object' && parsed.skills){
-      BUILD=Object.assign({},BUILD,parsed);
-    }
-  }
-}catch(e){}
+// FIXED: Clear old build on load to ensure empty start
+try{localStorage.removeItem('outward-build');}catch(e){}
 setTimeout(function(){showScreen('home-screen');renderHome();},300);
 }).catch(function(e){showError(e.message||'Failed to load data');setProgress(0,'Error');});
 }
@@ -558,8 +572,8 @@ var slot=armorSlots[i];
 var itemName=(BUILD.armor||{})[slot.id];
 var item=itemName?findArmor(itemName):null;
 var imgPath=item?getItemImage(item,'armor'):null;
-html+='<div class="inv-slot'+(item?' filled':'')+'" onclick="switchTab(\'armor\')">';
-if(imgPath){html+='<img src="'+escHtml(imgPath)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';}
+html+='<div class="inv-slot'+(item?' filled':'')+'" '+makeOnClick('switchTab','armor')+'>';
+html+=imgTag(imgPath,'');
 html+='<div class="inv-lbl">'+slot.label+'</div>';
 if(item){html+='<div class="inv-item">'+escHtml(item.name)+'</div>';}
 html+='</div>';
@@ -573,8 +587,8 @@ var wslot=weaponSlots[j];
 var wName=(BUILD.weapons||{})[wslot.id];
 var wItem=wName?findWeapon(wName):null;
 var wImgPath=wItem?getItemImage(wItem,'weapon'):null;
-html+='<div class="inv-slot weapon'+(wItem?' filled':'')+'" onclick="switchTab(\'weapons\')">';
-if(wImgPath){html+='<img src="'+escHtml(wImgPath)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';}
+html+='<div class="inv-slot weapon'+(wItem?' filled':'')+'" '+makeOnClick('switchTab','weapons')+'>';
+html+=imgTag(wImgPath,'');
 html+='<div class="inv-lbl">'+wslot.label+'</div>';
 if(wItem){html+='<div class="inv-item">'+escHtml(wItem.name)+'</div>';}
 html+='</div>';
@@ -587,8 +601,8 @@ for(var q=0;q<4;q++){
 var qsName=(BUILD.quickSlots||[])[q];
 var qsItem=qsName?findConsumable(qsName):null;
 var qsImg=qsItem?getItemImage(qsItem,'consumable'):null;
-html+='<div class="quick-slot" onclick="switchTab(\'consumables\')">';
-if(qsImg){html+='<img src="'+escHtml(qsImg)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';}
+html+='<div class="quick-slot" '+makeOnClick('switchTab','consumables')+'>';
+html+=imgTag(qsImg,'');
 html+='<div class="inv-lbl">Slot '+(q+1)+'</div>';
 html+='</div>';
 }
@@ -646,7 +660,7 @@ pane.innerHTML=html;
 
 function statRow(lbl,val,opts){opts=opts||{};var cls='sval';if(val>0&&!opts.noPlus)cls+=' pos';if(val<0)cls+=' neg';var d=(val>0&&!opts.noPlus?'+':'')+val+(opts.suffix||'');var dot=opts.dot?'<span class="sdot '+opts.dot+'"></span>':'';return '<div class="srow"><span class="sname">'+dot+lbl+'</span><span class="'+cls+'">'+d+'</span></div>';}
 function resistItem(dot,lbl,val){return '<div class="resist-item"><span class="resist-lbl"><span class="sdot '+dot+'"></span>'+lbl+'</span><span class="resist-val">'+val+'</span></div>';}
-function chipHtml(item){var imgPath=getItemImage(item,'skill');var img=imgPath?'<img src="'+escHtml(imgPath)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">':'';return '<span class="chip">'+img+escHtml(item.name)+'</span>';}
+function chipHtml(item){var imgPath=getItemImage(item,'skill');var img=imgPath?'<img src="'+escHtml(imgPath)+'" loading="lazy" onerror="this.style.display=\'none\'">':'';return '<span class="chip">'+img+escHtml(item.name)+'</span>';}
 
 // ARMOR TAB
 function getArmorRarityClass(a){
@@ -677,7 +691,7 @@ html+='<div class="filter-section"><div class="filter-label">Slot</div><div clas
 var slots=['all','head','chest','legs','back','boots'];
 for(var i=0;i<slots.length;i++){
 var s=slots[i];
-html+='<button class="pill'+(ARMOR_FILTER.slot===s?' active':'')+'" onclick="setArmorFilter(\'slot\',\''+s+'\')">'+(s==='all'?'All':s.charAt(0).toUpperCase()+s.slice(1))+'</button>';
+html+='<button class="pill'+(ARMOR_FILTER.slot===s?' active':'')+'" '+makeOnClick('setArmorFilter','slot|'+s)+'>'+(s==='all'?'All':s.charAt(0).toUpperCase()+s.slice(1))+'</button>';
 }
 html+='</div></div>';
 
@@ -685,7 +699,7 @@ html+='<div class="filter-section"><div class="filter-label">Rarity</div><div cl
 var rarities=['all','Common','Unique','Crafted','Legacy','Set','Quest'];
 for(var r=0;r<rarities.length;r++){
 var ra=rarities[r];
-html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" onclick="setArmorFilter(\'rarity\',\''+ra+'\')">'+ra+'</button>';
+html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" '+makeOnClick('setArmorFilter','rarity|'+ra)+'>'+ra+'</button>';
 }
 html+='</div></div>';
 
@@ -742,7 +756,7 @@ var imgPath=getItemImage(a,'armor');
 
 html+='<div class="item-card '+rarityClass+(isEquipped?' selected':'')+'">';
 html+='<div class="item-header">';
-html+='<img class="item-icon" src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
+html+=imgTag(imgPath,'item-icon');
 html+='<div class="item-title">';
 html+='<div class="item-name">'+escHtml(a.name)+'</div>';
 html+='<div class="item-type">'+escHtml(a.slot||'')+' | '+rarityName+'</div>';
@@ -772,7 +786,6 @@ if(a.description){
 html+='<div class="item-desc">'+escHtml(cleanDesc(a.description))+'</div>';
 }
 
-// Crafting recipe
 if(a.crafting_recipe&&a.crafting_recipe.length>0){
 html+='<div class="craft-section">';
 html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
@@ -781,14 +794,12 @@ html+='<div class="craft-ing">- '+escHtml(ing.item||ing.name||'Unknown')+' x'+(i
 });
 html+='</div>';
 }else if(a.source){
-// FIXED: Show source instead of "cannot be crafted"
 html+='<div class="source-section">';
 html+='<div class="source-title">\uD83D\uDCE6 Source:</div>';
 html+='<div class="source-text">'+escHtml(a.source)+'</div>';
 html+='</div>';
 }
 
-// Legacy upgrade
 if(a.blacksmith_upgrade){
 html+='<div class="legacy-section">';
 html+='<div class="legacy-title">\uD83D\uDD04 Legacy Upgrade:</div>';
@@ -798,9 +809,9 @@ html+='</div>';
 
 html+='<div class="item-actions">';
 if(isEquipped){
-html+='<button class="equip-btn equipped" onclick="unequipArmor(\''+escAttr(a.name)+'\')">Unequip</button>';
+html+='<button class="equip-btn equipped" '+makeOnClick('unequipArmor',a.name)+'>Unequip</button>';
 }else{
-html+='<button class="equip-btn" onclick="equipArmor(\''+escAttr(a.name)+'\')">Equip to '+escHtml(a.slot||'slot')+'</button>';
+html+='<button class="equip-btn" '+makeOnClick('equipArmor',a.name)+'>Equip to '+escHtml(a.slot||'slot')+'</button>';
 }
 html+='</div></div>';
 }
@@ -859,13 +870,13 @@ html+='<div class="filter-section"><div class="filter-label">Type</div><div clas
 var types=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield'];
 for(var i=0;i<types.length;i++){
 var t=types[i];
-html+='<button class="pill'+(WEAPON_FILTER.type===t?' active':'')+'" onclick="setWeaponFilter(\'type\',\''+t+'\')">'+t+'</button>';
+html+='<button class="pill'+(WEAPON_FILTER.type===t?' active':'')+'" '+makeOnClick('setWeaponFilter','type|'+t)+'>'+t+'</button>';
 }
 html+='</div></div>';
 
 html+='<div class="filter-section"><div class="filter-label">Handedness</div><div class="filter-pills">';
 ['all','1H','2H'].forEach(function(h){
-html+='<button class="pill'+(WEAPON_FILTER.hand===h?' active':'')+'" onclick="setWeaponFilter(\'hand\',\''+h+'\')">'+h+'</button>';
+html+='<button class="pill'+(WEAPON_FILTER.hand===h?' active':'')+'" '+makeOnClick('setWeaponFilter','hand|'+h)+'>'+h+'</button>';
 });
 html+='</div></div>';
 
@@ -873,7 +884,16 @@ html+='<div class="filter-section"><div class="filter-label">Damage Type</div><d
 var dmgs=['all','physical','fire','frost','lightning','decay','ethereal','impact'];
 for(var d=0;d<dmgs.length;d++){
 var dt=dmgs[d];
-html+='<button class="pill'+(WEAPON_FILTER.dmg===dt?' active':'')+'" onclick="setWeaponFilter(\'dmg\',\''+dt+'\')">'+(dt==='all'?'All':dt.charAt(0).toUpperCase()+dt.slice(1))+'</button>';
+html+='<button class="pill'+(WEAPON_FILTER.dmg===dt?' active':'')+'" '+makeOnClick('setWeaponFilter','dmg|'+dt)+'>'+(dt==='all'?'All':dt.charAt(0).toUpperCase()+dt.slice(1))+'</button>';
+}
+html+='</div></div>';
+
+// FIXED: Effect filter
+html+='<div class="filter-section"><div class="filter-label">Effect</div><div class="filter-pills">';
+var effects=['all','Poison','Bleeding','Burning','Slow','Cripple','Confusion','Doom'];
+for(var e=0;e<effects.length;e++){
+var ef=effects[e];
+html+='<button class="pill'+(WEAPON_FILTER.effect===ef?' active':'')+'" '+makeOnClick('setWeaponFilter','effect|'+ef)+'>'+ef+'</button>';
 }
 html+='</div></div>';
 
@@ -907,6 +927,16 @@ if(w.damage_stats.base_damage[WEAPON_FILTER.dmg]>0)hasDmg=true;
 }
 if(!hasDmg)return false;
 }
+// FIXED: Effect filter
+if(WEAPON_FILTER.effect!=='all'){
+var hasEffect=false;
+if(w.special_effects&&w.special_effects.length>0){
+w.special_effects.forEach(function(fx){
+if(fx.toLowerCase().indexOf(WEAPON_FILTER.effect.toLowerCase())>=0)hasEffect=true;
+});
+}
+if(!hasEffect)return false;
+}
 if(WEAPON_SEARCH){
 var q=WEAPON_SEARCH.toLowerCase();
 if(w.name.toLowerCase().indexOf(q)<0)return false;
@@ -938,7 +968,7 @@ var imgPath=getItemImage(w,'weapon');
 
 html+='<div class="item-card '+rarityClass+(isEquipped?' selected':'')+'">';
 html+='<div class="item-header">';
-html+='<img class="item-icon" src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
+html+=imgTag(imgPath,'item-icon');
 html+='<div class="item-title">';
 html+='<div class="item-name">'+escHtml(w.name)+'</div>';
 html+='<div class="item-type">'+escHtml(w.weapon_type||'')+' | '+(w.handedness||'')+' | '+rarityName+'</div>';
@@ -968,35 +998,21 @@ html+='<div class="stat-line"><span class="stat-label">Durability</span><span cl
 }
 html+='</div>';
 
-// FIXED: Special effects with details
+// FIXED: Short effect tags instead of detailed descriptions
 if(w.special_effects&&w.special_effects.length>0){
 html+='<div class="effects-section">';
-html+='<div class="effects-title">\u2694\uFE0F Effects on Hit:</div>';
+html+='<div class="effects-title">\u2694\uFE0F Effects:</div>';
+html+='<div class="effect-tags">';
 w.special_effects.forEach(function(fx){
-// Try to find effect details from effects data
-var effectDetail=findEffectByName(fx);
-if(effectDetail){
-html+='<div class="effect-detail">';
-var fxImg=getItemImage(effectDetail,'effect');
-html+='<img src="'+escHtml(fxImg||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
-html+='<div class="effect-detail-info">';
-html+='<div class="effect-detail-name">'+escHtml(fx)+'</div>';
-if(effectDetail.description){
-html+='<div class="effect-detail-desc">'+escHtml(cleanDesc(effectDetail.description))+'</div>';
-}
-html+='</div></div>';
-}else{
-html+='<div class="effect-line">- '+escHtml(fx)+'</div>';
-}
+html+='<span class="effect-tag">'+escHtml(fx)+'</span>';
 });
-html+='</div>';
+html+='</div></div>';
 }
 
 if(w.description){
 html+='<div class="item-desc">'+escHtml(cleanDesc(w.description))+'</div>';
 }
 
-// Crafting recipe
 if(w.crafting_recipe&&w.crafting_recipe.ingredients){
 html+='<div class="craft-section">';
 html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
@@ -1008,7 +1024,6 @@ html+='<div class="craft-station">Station: '+escHtml(w.crafting_recipe.station)+
 }
 html+='</div>';
 }else if(w.source_category){
-// FIXED: Loot vs Legacy, not "loot_or_legacy"
 var sourceText='';
 if(w.upgrade_paths&&w.upgrade_paths.length>0){
 sourceText='Legacy Item';
@@ -1023,7 +1038,6 @@ html+='<div class="source-text">'+escHtml(sourceText)+'</div>';
 html+='</div>';
 }
 
-// Legacy upgrade
 if(w.upgrade_paths&&w.upgrade_paths.length>0){
 html+='<div class="legacy-section">';
 html+='<div class="legacy-title">\uD83D\uDD04 Legacy Upgrade:</div>';
@@ -1035,9 +1049,9 @@ html+='</div>';
 
 html+='<div class="item-actions">';
 if(isEquipped){
-html+='<button class="equip-btn equipped" onclick="unequipWeapon(\''+escAttr(w.name)+'\')">Unequip</button>';
+html+='<button class="equip-btn equipped" '+makeOnClick('unequipWeapon',w.name)+'>Unequip</button>';
 }else{
-html+='<button class="equip-btn" onclick="equipWeapon(\''+escAttr(w.name)+'\')">Equip</button>';
+html+='<button class="equip-btn" '+makeOnClick('equipWeapon',w.name)+'>Equip</button>';
 }
 html+='</div></div>';
 }
@@ -1046,17 +1060,6 @@ html+='<div style="color:var(--dim);padding:20px;text-align:center;grid-column:1
 }
 html+='</div>';
 container.innerHTML=html;
-}
-
-function findEffectByName(name){
-if(!DATA.effects)return null;
-for(var i=0;i<DATA.effects.length;i++){
-var e=DATA.effects[i];
-if(e.name&&e.name.toLowerCase()===name.toLowerCase())return e;
-// Also check partial match
-if(e.name&&name.toLowerCase().indexOf(e.name.toLowerCase())>=0)return e;
-}
-return null;
 }
 
 function equipWeapon(name){
@@ -1091,14 +1094,14 @@ renderWeaponList();
 renderBuilder();
 }
 
-// SKILLS TAB - CRITICAL FIX for requires_skill === 'None'
+// SKILLS TAB
 function renderSkillsTab(pane){
 var html='';
 html+='<input class="search-bar" placeholder="Search skills..." oninput="skillSearch(this.value)">';
 html+='<div class="filter-pills" id="skill-class-filters">';
 html+='<button class="pill active" onclick="filterSkillsByClass(null)">All</button>';
 for(var i=0;i<DATA.classes.length;i++){
-html+='<button class="pill" onclick="filterSkillsByClass(\''+escAttr(DATA.classes[i].name)+'\')">'+escHtml(DATA.classes[i].name)+'</button>';
+html+='<button class="pill" onclick="filterSkillsByClass(\''+DATA.classes[i].name.replace(/'/g,"\\'")+'\')">'+escHtml(DATA.classes[i].name)+'</button>';
 }
 html+='</div>';
 html+='<div id="skills-list"></div>';
@@ -1109,7 +1112,6 @@ renderSkillsList();
 function skillSearch(val){SKILL_SEARCH=val;renderSkillsList();}
 function filterSkillsByClass(cls){SKILL_CLASS_FILTER=cls;var pills=document.querySelectorAll('#skill-class-filters .pill');var labels=['All'];for(var i=0;i<DATA.classes.length;i++)labels.push(DATA.classes[i].name);for(var j=0;j<pills.length;j++){pills[j].className='pill'+(labels[j]===cls?' active':'');}renderSkillsList();}
 
-// CRITICAL FIX: Check for 'None' string
 function hasRequirement(skill){
 return skill.requires_skill && skill.requires_skill !== 'None' && skill.requires_skill !== null && skill.requires_skill !== '';
 }
@@ -1123,7 +1125,6 @@ var isSelected=(BUILD.skills||[]).indexOf(skill.name)>=0;
 if(isSelected)return 'selected';
 if(BUILD.theorycraft)return 'available';
 
-// Check if excluded by another selected skill
 for(var i=0;i<(BUILD.skills||[]).length;i++){
 var selSkill=findSkill(BUILD.skills[i]);
 if(selSkill&&hasExclusion(selSkill)&&selSkill.excludes_skill===skill.name){
@@ -1131,7 +1132,6 @@ return 'excluded:'+selSkill.name;
 }
 }
 
-// Check requirements - CRITICAL FIX
 if(hasRequirement(skill)){
 var reqIdx=(BUILD.skills||[]).indexOf(skill.requires_skill);
 if(reqIdx<0){
@@ -1139,7 +1139,6 @@ return 'requires:'+skill.requires_skill;
 }
 }
 
-// Check breakthrough limit
 if(skill.costs_breakthrough&&(BUILD.breakthroughsUsed||0)>=3){
 return 'no-bt';
 }
@@ -1183,7 +1182,7 @@ if(!skills||skills.length===0)continue;
 html+='<div class="class-section">';
 html+='<div class="class-header">';
 var clsImg=getItemImage(cls,'skill');
-if(clsImg){html+='<img class="class-icon" src="'+escHtml(clsImg)+'" onerror="this.src=\''+FALLBACK_IMG+'\'">';}
+html+=imgTag(clsImg,'class-icon');
 html+='<div class="class-info"><h3>'+escHtml(cls.name)+'</h3><p>'+escHtml(cls.teacher)+' \u2014 '+escHtml(cls.location)+'</p></div>';
 if(cls.is_dlc)html+='<span class="class-dlc">DLC</span>';
 html+='</div>';
@@ -1214,8 +1213,8 @@ if(isSel)cardClass+=' selected';
 if(isLocked)cardClass+=' locked';
 if(isBreakthrough&&isSel)cardClass+=' breakthrough';
 
-html+='<div class="'+cardClass+'" onclick="toggleSkill(\''+escAttr(skill.name)+'\')">';
-html+='<img src="'+escHtml(skillImg||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
+html+='<div class="'+cardClass+'" '+makeOnClick('toggleSkill',skill.name)+'>';
+html+=imgTag(skillImg,'');
 html+='<div class="skill-info">';
 html+='<div class="skill-name">'+escHtml(skill.name)+'</div>';
 
@@ -1237,7 +1236,6 @@ html+='<div class="skill-excl">\uD83D\uDEAB Excluded by: '+escHtml(exclName)+'</
 html+='<div class="skill-excl">\uD83D\uDEAB No breakthrough points left</div>';
 }
 
-// Full description
 if(skill.description){
 html+='<div class="skill-desc">'+escHtml(cleanDesc(skill.description))+'</div>';
 }
@@ -1311,15 +1309,15 @@ renderSkillsList();
 renderBuilder();
 }
 
-// FACTIONS TAB - FIXED rewards parsing
+// FACTIONS TAB - REWORKED
 function renderFactionsTab(pane){
 var html='';
 
 if(!BUILD.faction){
-html+='<div style="font-size:12px;color:var(--dim);margin-bottom:12px;padding:0 4px">Choose your faction to view quests.</div>';
+html+='<div style="font-size:12px;color:var(--dim);margin-bottom:12px;padding:0 4px">Choose your faction:</div>';
 for(var i=0;i<DATA.factions.length;i++){
 var f=DATA.factions[i];
-html+='<div class="faction-card" onclick="selectFaction(\''+f.id+'\')">';
+html+='<div class="faction-card" '+makeOnClick('selectFaction',f.id)+'>';
 html+='<div class="faction-name">'+escHtml(f.name)+'</div>';
 html+='<div class="faction-desc">'+escHtml(cleanDesc(f.description||''))+'</div>';
 html+='</div>';
@@ -1331,9 +1329,8 @@ if(DATA.factions[j].id===BUILD.faction){selFaction=DATA.factions[j];break;}
 }
 
 if(selFaction){
-html+='<div class="faction-card selected" onclick="selectFaction(\''+selFaction.id+'\')">';
+html+='<div class="faction-card selected" '+makeOnClick('selectFaction',selFaction.id)+'>';
 html+='<div class="faction-name">'+escHtml(selFaction.name)+' \u2713</div>';
-html+='<div class="faction-desc">'+escHtml(cleanDesc(selFaction.description||''))+'</div>';
 html+='</div>';
 
 var factionQuests=DATA.quests.filter(function(q){
@@ -1343,22 +1340,33 @@ return q.faction===BUILD.faction||q.faction===selFaction.name;
 if(factionQuests.length>0){
 html+='<div class="filter-label" style="margin-top:12px">Quests ('+factionQuests.length+')</div>';
 
-var mainQuests=factionQuests.filter(function(q){return q.quest_type==='main'||q.type==='main';});
-var sideQuests=factionQuests.filter(function(q){return q.quest_type!=='main'&&q.type!=='main';});
-
-if(mainQuests.length>0){
-html+='<div class="tier-label">Main Quests</div>';
-for(var m=0;m<mainQuests.length;m++){
-html+=renderQuestCard(mainQuests[m]);
-}
+for(var m=0;m<factionQuests.length;m++){
+html+=renderQuestCard(factionQuests[m]);
 }
 
-if(sideQuests.length>0){
-html+='<div class="tier-label" style="margin-top:12px">Side Quests</div>';
-for(var s=0;s<sideQuests.length;s++){
-html+=renderQuestCard(sideQuests[s]);
+// Total rewards summary
+var totalSkills=0;
+var totalItems=0;
+factionQuests.forEach(function(q){
+var sel=QUEST_SELECTIONS[q.name];
+var rewardsToCount=[];
+if(sel&&q.outcomes){
+q.outcomes.forEach(function(o){
+if(o.name===sel&&o.rewards)rewardsToCount.push(o.rewards);
+});
+}else if(q.rewards){
+rewardsToCount.push(q.rewards);
 }
-}
+rewardsToCount.forEach(function(r){
+if(r.skills)totalSkills+=r.skills.length;
+if(r.items)totalItems+=r.items.length;
+});
+});
+
+html+='<div class="total-rewards">';
+html+='<div class="total-rewards-title">Total Rewards</div>';
+html+='<div class="total-rewards-value">'+totalSkills+' skills, '+totalItems+' items</div>';
+html+='</div>';
 }else{
 html+='<div style="color:var(--dim);padding:16px;text-align:center">No quests found for this faction</div>';
 }
@@ -1367,7 +1375,7 @@ html+='<div style="color:var(--dim);padding:16px;text-align:center">No quests fo
 html+='<div class="filter-label" style="margin-top:16px">Other Factions</div>';
 for(var k=0;k<DATA.factions.length;k++){
 if(DATA.factions[k].id!==BUILD.faction){
-html+='<div class="faction-card" onclick="selectFaction(\''+DATA.factions[k].id+'\')">';
+html+='<div class="faction-card" '+makeOnClick('selectFaction',DATA.factions[k].id)+'>';
 html+='<div class="faction-name" style="font-size:14px">'+escHtml(DATA.factions[k].name)+'</div>';
 html+='</div>';
 }
@@ -1377,7 +1385,7 @@ html+='</div>';
 pane.innerHTML=html;
 }
 
-// FIXED: Proper rewards parsing
+// REWORKED: Quest card with reward cards
 function renderQuestCard(quest){
 var html='<div class="quest-item">';
 html+='<div class="quest-name">'+escHtml(quest.name||'Unknown Quest')+'</div>';
@@ -1386,102 +1394,95 @@ if(quest.description){
 html+='<div class="quest-desc">'+escHtml(cleanDesc(quest.description))+'</div>';
 }
 
-// FIXED: Parse rewards properly
-if(quest.rewards){
-var r=quest.rewards;
-var hasRewards=false;
-var rewardsHtml='<div class="quest-rewards">';
-
-// Silver
-if(r.silver&&r.silver>0){
-rewardsHtml+='<span class="reward-chip">\uD83D\uDCB0 '+r.silver+' Silver</span>';
-hasRewards=true;
-}
-
-// Items - can be array of strings or objects
-if(r.items&&r.items.length>0){
-r.items.forEach(function(item){
-if(typeof item==='string'){
-rewardsHtml+='<span class="reward-chip">\uD83D\uDCE6 '+escHtml(item)+'</span>';
-hasRewards=true;
-}else if(item&&typeof item==='object'){
-var itemName=item.name||item.item||'Unknown';
-var qty=item.qty||item.quantity||'';
-rewardsHtml+='<span class="reward-chip">\uD83D\uDCE6 '+escHtml(itemName)+(qty?' x'+qty:'')+'</span>';
-hasRewards=true;
-}
-});
-}
-
-// Skills - active and passive
-if(r.skills&&r.skills.length>0){
-r.skills.forEach(function(skill){
-if(typeof skill==='string'){
-rewardsHtml+='<span class="reward-chip">\u26A1 '+escHtml(skill)+'</span>';
-hasRewards=true;
-}else if(skill&&typeof skill==='object'){
-var skillName=skill.name||'Unknown';
-var skillType=skill.type||'';
-var typeLabel=skillType==='passive'?'(Passive)':skillType==='active'?'(Active)':'';
-rewardsHtml+='<span class="reward-chip">\u26A1 '+escHtml(skillName)+' '+typeLabel+'</span>';
-hasRewards=true;
-}
-});
-}
-
-// Reputation
-if(r.reputation){
-var repVal=typeof r.reputation==='object'?r.reputation.value||r.reputation.amount:r.reputation;
-if(repVal){
-rewardsHtml+='<span class="reward-chip">\u2B50 Reputation: +'+repVal+'</span>';
-hasRewards=true;
-}
-}
-
-// Unlocks
-if(r.unlocks&&r.unlocks.length>0){
-r.unlocks.forEach(function(u){
-rewardsHtml+='<span class="reward-chip">\uD83D\uDD13 Unlocks: '+escHtml(u)+'</span>';
-hasRewards=true;
-});
-}
-
-rewardsHtml+='</div>';
-if(hasRewards){
-html+=rewardsHtml;
-}
-}
-
-// Outcomes
-if(quest.outcomes&&quest.outcomes.length>1){
-html+='<div class="filter-label" style="margin-top:8px">Choose one:</div>';
+// Check if quest has outcomes (choices)
+if(quest.outcomes&&quest.outcomes.length>0){
+html+='<div class="filter-label" style="margin-top:8px">Choose your reward:</div>';
 var selectedOutcome=QUEST_SELECTIONS[quest.name];
+
 for(var o=0;o<quest.outcomes.length;o++){
 var outcome=quest.outcomes[o];
 var isSel=selectedOutcome===outcome.name;
-html+='<div class="quest-outcome'+(isSel?' selected':'')+'" onclick="selectOutcome(\''+escAttr(quest.name)+'\',\''+escAttr(outcome.name)+'\')">';
+html+='<div class="quest-outcome'+(isSel?' selected':'')+'" '+makeOnClick('selectOutcome',quest.name+'|'+outcome.name)+'>';
 html+='<div class="outcome-name">'+escHtml(outcome.name)+'</div>';
+
+// Show rewards as cards
 if(outcome.rewards){
-var orHtml='<div style="font-size:10px;color:var(--gold);margin-top:4px">';
-if(outcome.rewards.silver)orHtml+=outcome.rewards.silver+'s ';
-if(outcome.rewards.items){
-if(Array.isArray(outcome.rewards.items)){
-outcome.rewards.items.forEach(function(item){
-if(typeof item==='string')orHtml+=escHtml(item)+' ';
-});
-}
-}
-orHtml+='</div>';
-html+=orHtml;
-}
-if(outcome.locks){
-html+='<div class="outcome-locks">\uD83D\uDD12 Locks: '+escHtml(outcome.locks.join(', '))+'</div>';
-}
+html+='<div class="reward-cards">';
+html+=renderRewardCards(outcome.rewards,isSel);
 html+='</div>';
 }
+
+if(outcome.locks){
+html+='<div class="locks-warning">\u26A0\uFE0F Locks: '+escHtml(outcome.locks.join(', '))+'</div>';
 }
 
 html+='</div>';
+}
+}else if(quest.rewards){
+// Single reward set
+html+='<div class="reward-cards">';
+html+=renderRewardCards(quest.rewards,true);
+html+='</div>';
+}
+
+html+='</div>';
+return html;
+}
+
+// Helper: Render reward cards
+function renderRewardCards(rewards,isSelected){
+var html='';
+
+// Skills
+if(rewards.skills&&rewards.skills.length>0){
+rewards.skills.forEach(function(skill){
+var skillName=typeof skill==='string'?skill.name||'Unknown';
+var skillType=typeof skill==='object'?(skill.type||''):'';
+var typeLabel=skillType==='passive'?'(Passive)':skillType==='active'?'(Active)':'';
+var skillData=findSkill(skillName);
+var skillImg=skillData?getItemImage(skillData,'skill'):null;
+
+html+='<div class="reward-card'+(isSelected?' selected':'')+'">';
+if(isSelected)html+='<div class="reward-check">\u2713</div>';
+html+=imgTag(skillImg,'');
+html+='<div class="reward-card-name">'+escHtml(skillName)+'</div>';
+html+='<div class="reward-card-type">\u26A1 Skill '+typeLabel+'</div>';
+if(skillData&&skillData.description){
+html+='<div class="reward-card-desc">'+escHtml(cleanDesc(skillData.description).substring(0,60))+'...</div>';
+}
+html+='</div>';
+});
+}
+
+// Items
+if(rewards.items&&rewards.items.length>0){
+rewards.items.forEach(function(item){
+var itemName=typeof item==='string'?item:(item.name||item.item||'Unknown');
+var qty=typeof item==='object'?(item.qty||item.quantity||''):'';
+var itemData=findWeapon(itemName)||findArmor(itemName)||findConsumable(itemName);
+var itemImg=itemData?getItemImage(itemData,itemData.weapon_type?'weapon':itemData.slot?'armor':'consumable'):null;
+
+html+='<div class="reward-card'+(isSelected?' selected':'')+'">';
+if(isSelected)html+='<div class="reward-check">\u2713</div>';
+html+=imgTag(itemImg,'');
+html+='<div class="reward-card-name">'+escHtml(itemName)+(qty?' x'+qty:'')+'</div>';
+html+='<div class="reward-card-type">\uD83D\uDCE6 Item</div>';
+if(itemData){
+var stats='';
+if(itemData.damage_stats&&itemData.damage_stats.base_damage){
+var dmg=Object.values(itemData.damage_stats.base_damage).reduce(function(a,b){return a+b;},0);
+stats='DMG: '+dmg;
+}else if(itemData.protection){
+stats='PROT: '+itemData.protection;
+}
+if(stats){
+html+='<div class="reward-card-desc">'+escHtml(stats)+'</div>';
+}
+}
+html+='</div>';
+});
+}
+
 return html;
 }
 
@@ -1541,8 +1542,8 @@ var c=filtered[i];
 var isSel=(BUILD.consumables||[]).indexOf(c.name)>=0;
 var imgPath=getItemImage(c,'consumable');
 
-html+='<div class="cons-item'+(isSel?' selected':'')+'" onclick="toggleCons(\''+escAttr(c.name)+'\')">';
-html+='<img src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
+html+='<div class="cons-item'+(isSel?' selected':'')+'" '+makeOnClick('toggleCons',c.name)+'>';
+html+=imgTag(imgPath,'');
 html+='<div class="cons-info">';
 html+='<div class="cons-name">'+escHtml(c.name)+'</div>';
 html+='<div class="cons-type">'+escHtml(c.consumable_type||'');
@@ -1554,7 +1555,6 @@ if(c.description){
 html+='<div class="cons-desc">'+escHtml(cleanDesc(c.description))+'</div>';
 }
 
-// Crafting recipe
 if(c.crafting_recipe){
 html+='<div class="craft-section">';
 html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
@@ -1605,7 +1605,7 @@ renderConsList();
 renderBuilder();
 }
 
-// EFFECTS TAB - with details
+// EFFECTS TAB
 function renderEffectsTab(pane){
 var html='';
 html+='<input class="search-bar" placeholder="Search effects..." oninput="effectSearch(this.value)">';
@@ -1634,11 +1634,10 @@ var e=filtered[i];
 var imgPath=getItemImage(e,'effect');
 
 html+='<div class="effect-item">';
-html+='<img src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
+html+=imgTag(imgPath,'');
 html+='<div class="effect-info">';
 html+='<div class="effect-name">'+escHtml(e.name||'Unknown')+'</div>';
 
-// Stats with numbers
 var statsHtml='';
 if(e.damage)statsHtml+='\uD83D\uDCA5 Damage: '+escHtml(e.damage)+' ';
 if(e.duration)statsHtml+='\u23F1\uFE0F Duration: '+escHtml(e.duration)+' ';
@@ -1657,14 +1656,18 @@ container.innerHTML=html;
 // UTILITY FUNCTIONS
 function saveBuild(){try{localStorage.setItem('outward-build',JSON.stringify(BUILD));}catch(e){}}
 function toggleTheorycraft(){BUILD.theorycraft=!BUILD.theorycraft;saveBuild();renderBuilder();}
-function resetBuild(){
-if(confirm('Reset build?')){
+
+// FIXED: New Build button - completely resets everything
+function newBuild(){
+if(confirm('Start new build? All selections will be cleared.')){
 BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
 QUEST_SELECTIONS={};
+try{localStorage.removeItem('outward-build');}catch(e){}
 saveBuild();
 renderBuilder();
 }
 }
+
 function exportBuild(){var json=JSON.stringify(BUILD,null,2);var blob=new Blob([json],{type:'application/json'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download=(BUILD.name||'build').replace(/\s+/g,'_')+'.json';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);}
 function importBuild(){var input=document.createElement('input');input.type='file';input.accept='.json';input.onchange=function(){var f=input.files[0];if(!f)return;var reader=new FileReader();reader.onload=function(){try{var d=JSON.parse(reader.result);BUILD=Object.assign({},BUILD,d);saveBuild();renderBuilder();}catch(e){alert('Invalid build file');}};reader.readAsText(f);};input.click();}
 
