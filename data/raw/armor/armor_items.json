@@ -457,7 +457,8 @@
     "special_effects": [
       "+3 Cold Protection",
       "1 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "White Arcane Hood"
   },
   {
     "name": "Arcane Robe",
@@ -498,7 +499,8 @@
     "image_local": "assets/images/armor/armor_Arcane_Robe.png",
     "special_effects": [
       "+6 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "White Arcane Robe"
   },
   {
     "name": "Ash Armor",
@@ -873,7 +875,8 @@
     "image_local": "assets/images/armor/armor_Black_Fur_Armor.png",
     "special_effects": [
       "+24 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_from": "Fur Armor"
   },
   {
     "name": "Black Fur Boots",
@@ -914,7 +917,8 @@
     "image_local": "assets/images/armor/armor_Black_Fur_Boots.png",
     "special_effects": [
       "+12 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_from": "Fur Boots"
   },
   {
     "name": "Black Fur Helmet",
@@ -955,7 +959,8 @@
     "image_local": "assets/images/armor/armor_Black_Fur_Helmet.png",
     "special_effects": [
       "+12 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_from": "Fur Helmet"
   },
   {
     "name": "Black Pearlbird Mask",
@@ -1042,7 +1047,8 @@
       "-6% Stamina Cost",
       "+10 Cold Protection",
       "3 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Orichalcum Armor"
   },
   {
     "name": "Black Plate Boots",
@@ -1086,7 +1092,8 @@
       "-4% Stamina Cost",
       "+5 Cold Protection",
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Orichalcum Boots"
   },
   {
     "name": "Black Plate Helm",
@@ -1131,7 +1138,8 @@
       "-40% Mana Cost",
       "+5 Cold Protection",
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Orichalcum Helmet"
   },
   {
     "name": "Black Worker Boots",
@@ -2301,7 +2309,8 @@
     "image_local": "assets/images/armor/armor_Clansage_Robe.png",
     "special_effects": [
       "+15 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Red Clansage Robe"
   },
   {
     "name": "Copal Armor",
@@ -2351,7 +2360,8 @@
     "image_local": "assets/images/armor/armor_Copal_Armor.png",
     "special_effects": [
       "3 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Green Copal Armor"
   },
   {
     "name": "Copal Boots",
@@ -2401,7 +2411,8 @@
     "image_local": "assets/images/armor/armor_Copal_Boots.png",
     "special_effects": [
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Green Copal Boots"
   },
   {
     "name": "Copal Helm",
@@ -2452,7 +2463,8 @@
     "special_effects": [
       "-15% Mana Cost",
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Green Copal Helmet"
   },
   {
     "name": "Coralhorn Mask",
@@ -3159,7 +3171,8 @@
     "special_effects": [
       "+10% Move Speed",
       "+10 Heat Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Master Desert Boots"
   },
   {
     "name": "Desert Tunic",
@@ -3283,7 +3296,8 @@
     "special_effects": [
       "+16 Heat Protection",
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Master Desert Tunic"
   },
   {
     "name": "Elite Desert Veil",
@@ -3326,7 +3340,8 @@
       "-5% Mana Cost",
       "+8 Heat Protection",
       "1 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Master Desert Veil"
   },
   {
     "name": "Elite Hood",
@@ -3705,7 +3720,8 @@
     "image_local": "assets/images/armor/armor_Fur_Armor.png",
     "special_effects": [
       "+20 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Black Fur Armor"
   },
   {
     "name": "Fur Boots",
@@ -3746,7 +3762,8 @@
     "image_local": "assets/images/armor/armor_Fur_Boots.png",
     "special_effects": [
       "+10 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Black Fur Boots"
   },
   {
     "name": "Fur Helm",
@@ -3787,7 +3804,8 @@
     "image_local": "assets/images/armor/armor_Fur_Helm.png",
     "special_effects": [
       "+10 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Black Fur Helmet"
   },
   {
     "name": "Gar'Ga'Nak",
@@ -4969,7 +4987,8 @@
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Armor",
     "image_url": "https://outward.wiki.gg/images/Kazite_Armor.png?5958ae",
     "image_local": "assets/images/armor/armor_Kazite_Armor.png",
-    "special_effects": []
+    "special_effects": [],
+    "legacy_upgrade_to": "Master Kazite Armor"
   },
   {
     "name": "Kazite Boots",
@@ -5008,7 +5027,8 @@
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Boots",
     "image_url": "https://outward.wiki.gg/images/Kazite_Boots.png?bc5cac",
     "image_local": "assets/images/armor/armor_Kazite_Boots.png",
-    "special_effects": []
+    "special_effects": [],
+    "legacy_upgrade_to": "Master Kazite Boots"
   },
   {
     "name": "Kazite Cat Mask",
@@ -5049,7 +5069,8 @@
     "image_local": "assets/images/armor/armor_Kazite_Cat_Mask.png",
     "special_effects": [
       "-15% Mana Cost"
-    ]
+    ],
+    "legacy_upgrade_to": "Master Kazite Cat Mask"
   },
   {
     "name": "Kazite Light Armor",
@@ -5090,7 +5111,8 @@
     "image_local": "assets/images/armor/armor_Kazite_Light_Armor.png",
     "special_effects": [
       "+10 Cold Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Shadow Kazite Light Armor"
   },
   {
     "name": "Kazite Light Boots",
@@ -5129,7 +5151,8 @@
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Light_Boots",
     "image_url": "https://outward.wiki.gg/images/Kazite_Light_Boots.png?655b5a",
     "image_local": "assets/images/armor/armor_Kazite_Light_Boots.png",
-    "special_effects": []
+    "special_effects": [],
+    "legacy_upgrade_to": "Shadow Kazite Light Boots"
   },
   {
     "name": "Kazite Light Helmet",
@@ -5170,7 +5193,8 @@
     "image_local": "assets/images/armor/armor_Kazite_Light_Helmet.png",
     "special_effects": [
       "-15% Mana Cost"
-    ]
+    ],
+    "legacy_upgrade_to": "Shadow Kazite Light Helmet"
   },
   {
     "name": "Kazite Mask",
@@ -5211,7 +5235,8 @@
     "image_local": "assets/images/armor/armor_Kazite_Mask.png",
     "special_effects": [
       "-15% Mana Cost"
-    ]
+    ],
+    "legacy_upgrade_to": "Master Kazite Mask"
   },
   {
     "name": "Kazite Oni Mask",
@@ -5252,7 +5277,8 @@
     "image_local": "assets/images/armor/armor_Kazite_Oni_Mask.png",
     "special_effects": [
       "-15% Mana Cost"
-    ]
+    ],
+    "legacy_upgrade_to": "Master Kazite Oni Mask"
   },
   {
     "name": "Kintsugi Armor",
@@ -5295,7 +5321,8 @@
       "-11% Move Speed",
       "-8% Stamina Cost",
       "3 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "White Kintsugi Armor"
   },
   {
     "name": "Kintsugi Boots",
@@ -5338,7 +5365,8 @@
       "-9% Move Speed",
       "-4% Stamina Cost",
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "White Kintsugi Boots"
   },
   {
     "name": "Kintsugi Helm",
@@ -5382,7 +5410,8 @@
       "-4% Stamina Cost",
       "-50% Mana Cost",
       "2 Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "White Kintsugi Helmet"
   },
   {
     "name": "Krypteia Armor",
@@ -5540,7 +5569,8 @@
     "image_local": "assets/images/armor/armor_Light_Kazite_Shirt.png",
     "special_effects": [
       "+10 Heat Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Shadow Light Kazite Shirt"
   },
   {
     "name": "Looter Armor",
@@ -11427,7 +11457,8 @@
     "special_effects": [
       "+5% Move Speed",
       "+10 Heat Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "White Wide Hat"
   },
   {
     "name": "Wide Blue Hat",
@@ -11468,7 +11499,8 @@
     "image_local": "assets/images/armor/armor_Wide_Blue_Hat.png",
     "special_effects": [
       "+10 Heat Protection"
-    ]
+    ],
+    "legacy_upgrade_to": "Red Wide Hat"
   },
   {
     "name": "Wolf Mage Armor",
