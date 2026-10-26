@@ -383,11 +383,10 @@ function cleanDesc(text){
   text=text.replace(/File:[^\s|]+/g,'');
   // Remove wiki brackets
   text=text.replace(/\[\[|\]\]/g,'');
-  // Remove wiki template artifacts: everything from }} to end
-  text=text.replace(/\s*\}\}.*$/g,'');
-  // Remove pipe-separated key-value pairs at end
-  text=text.replace(/\s*\|\s*\w+\s*=.*$/g,'');
-  // Remove trailing {{ or }}
+  // Remove wiki template artifacts: } | key = value patterns (single or double })
+  text=text.replace(/\s*\}*\s*\|\s*\w+\s*=.*$/g,'');
+  // Remove trailing }} or {{
+  text=text.replace(/\s*\}\}\s*$/g,'');
   text=text.replace(/\s*\{\{\s*$/g,'');
   // Remove object id
   text=text.replace(/object\s+id\s*=\s*\d+/gi,'');
