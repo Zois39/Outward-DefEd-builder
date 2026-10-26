@@ -713,7 +713,7 @@ function findUpgradedFromWeapon(itemName){
 function getArmorRarityClass(a){
   var desc=(a.description||'').toLowerCase();
   if(a.crafting_recipe&&a.crafting_recipe.length>0)return 'rarity-crafted';
-  if(a.blacksmith_upgrade)return 'rarity-legacy';
+  if(a.legacy_upgrade_to || a.legacy_upgrade_from)return 'rarity-legacy';
   if(desc.indexOf('unique')>=0)return 'rarity-unique';
   if(desc.indexOf('quest')>=0)return 'rarity-quest';
   return 'rarity-common';
@@ -744,8 +744,7 @@ function renderArmorTab(pane){
     var ra=rarities[r];
     html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" '+makeClick('setArmorFilter','rarity|'+ra)+'>'+ra+'</button>';
   }
-  // Legacy filter button
-  html+='<button class="pill'+(ARMOR_FILTER.legacy?' active':'')+'" '+makeClick('setArmorFilter','legacy|'+!ARMOR_FILTER.legacy)+'>Legacy Only</button>';
+
   html+='</div></div>';
   html+='<select class="sort-select" onchange="setArmorFilter(\'sort\',this.value)">';
   html+='<option value="name"'+(ARMOR_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
@@ -828,10 +827,19 @@ function renderArmorList(){
       html+='<div class="source-text">'+escHtml(a.source)+'</div>';
       html+='</div>';
     }
+    // Armor legacy upgrades
     var legacyHtml='';
-    if(a.blacksmith_upgrade){legacyHtml+='<div class="legacy-path">\u2192 Upgrades at: '+escHtml(a.blacksmith_upgrade)+'</div>';}
-    var upgradedFrom=findUpgradedFromArmor(a.name);
-    if(upgradedFrom){legacyHtml+='<div class="legacy-path">\u2190 Upgraded from: '+escHtml(upgradedFrom)+'</div>';}
+
+    // Show legacy upgrade FROM
+    if(a.legacy_upgrade_from){
+      legacyHtml+='<div class="legacy-path">\u2190 Upgraded from: '+escHtml(a.legacy_upgrade_from)+'</div>';
+    }
+
+    // Show legacy upgrade TO
+    if(a.legacy_upgrade_to){
+      legacyHtml+='<div class="legacy-path">\u2192 Upgrades to: '+escHtml(a.legacy_upgrade_to)+'</div>';
+    }
+
     if(legacyHtml){
       html+='<div class="legacy-section">';
       html+='<div class="legacy-title">\uD83D\uDD04 Legacy:</div>';
