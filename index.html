@@ -339,7 +339,13 @@ function getItemImage(item,type){
   if(type==='weapon')return 'assets/images/weapons/weapon_'+name+'.png';
   if(type==='skill')return 'assets/images/skills/skill_'+name+'.png';
   if(type==='consumable')return 'assets/images/consumables/'+name+'.png';
-  if(type==='effect')return 'assets/images/effects/effect_'+name+'.png';
+  if(type==='effect'){
+    var base=item.name.replace(/[^a-zA-Z0-9]/g,'_');
+    while(base.indexOf('__')>=0){base=base.replace(/__/g,'_');}
+    base=base.replace(/_+$/,'');
+    if(item.name.charAt(item.name.length-1)===')'){base+='_';}
+    return 'assets/images/effects/effect_'+base+'.png';
+  }
   return null;
 }
 
@@ -830,9 +836,12 @@ function findEffectByName(name){
 function getEffectImage(effect){
   if(!effect)return null;
   if(effect.icon_local)return effect.icon_local;
-  var manualMap={'Crippled':'assets/images/effects/effect_Crippled.png','Gaberry Wine (effect)':'assets/images/effects/effect_Gaberry_Wine_effect_.png','Needs: Tired':'assets/images/effects/effect_Needs_Tired.png'};
-  if(manualMap[effect.name])return manualMap[effect.name];
-  return 'assets/images/effects/effect_'+effect.name.replace(/[^a-zA-Z0-9]/g,'_')+'.png';
+  // Generate filename matching the actual file naming convention
+  var base=effect.name.replace(/[^a-zA-Z0-9]/g,'_');
+  while(base.indexOf('__')>=0){base=base.replace(/__/g,'_');}
+  base=base.replace(/_+$/,'');
+  if(effect.name.charAt(effect.name.length-1)===')'){base+='_';}
+  return 'assets/images/effects/effect_'+base+'.png';
 }
 
 function getWeaponRarityClass(w){
