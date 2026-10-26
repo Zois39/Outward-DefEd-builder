@@ -801,6 +801,17 @@ function renderArmorList(){
     if(a.resistances){['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){var v=a.resistances[k]||0;if(v>0){html+='<div class="stat-line"><span class="stat-label">'+k.charAt(0).toUpperCase()+k.slice(1)+'</span><span class="stat-value">'+v+'</span></div>';}});if(a.resistances.impact){html+='<div class="stat-line"><span class="stat-label">Impact</span><span class="stat-value">'+a.resistances.impact+'</span></div>';}}
     html+='<div class="stat-line"><span class="stat-label">Weight</span><span class="stat-value">'+(a.weight||0)+'</span></div>';
     html+='</div>';
+
+    // Armor effects (like weapon effects)
+    if(a.special_effects && a.special_effects.length>0){
+      html+='<div class="effects-section" style="background:rgba(39,174,96,.15);border:none">';
+      html+='<div class="effects-title" style="color:#fff">Effects:</div>';
+      html+='<div class="effect-tags">';
+      a.special_effects.forEach(function(fx){
+        html+='<span class="effect-tag" style="color:#fff">'+escHtml(fx)+'</span>';
+      });
+      html+='</div></div>';
+    }
     if(a.set_name){html+='<div class="item-set">Set: '+escHtml(a.set_name)+'</div>';}
     if(a.description){html+='<div class="item-desc">'+escHtml(cleanDesc(a.description))+'</div>';}
     if(a.crafting_recipe&&a.crafting_recipe.length>0){
