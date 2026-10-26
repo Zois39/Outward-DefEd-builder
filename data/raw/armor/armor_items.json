@@ -2504,7 +2504,7 @@
     "image_url": "https://outward.wiki.gg/images/Coralhorn_Mask.png?be9b80",
     "image_local": "assets/images/armor/armor_Coralhorn_Mask.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost"
     ]
   },
   {
@@ -3849,7 +3849,7 @@
     "image_url": "https://outward.wiki.gg/images/Gar%27Ga%27Nak.png?f2da2d",
     "image_local": "assets/images/armor/armor_Gar_Ga_Nak.png",
     "special_effects": [
-      "| coldresist ="
+      "-35% Mana Cost"
     ]
   },
   {
@@ -3973,7 +3973,7 @@
     "image_url": "https://outward.wiki.gg/images/Gold-Lich_Armor.png?6d9db4",
     "image_local": "assets/images/armor/armor_Gold-Lich_Armor.png",
     "special_effects": [
-      "| coldresist ="
+      "-20% Mana Cost"
     ]
   },
   {
@@ -4014,7 +4014,7 @@
     "image_url": "https://outward.wiki.gg/images/Gold-Lich_Boots.png?3e45a3",
     "image_local": "assets/images/armor/armor_Gold-Lich_Boots.png",
     "special_effects": [
-      "| coldresist ="
+      "-15% Mana Cost"
     ]
   },
   {
@@ -4055,7 +4055,7 @@
     "image_url": "https://outward.wiki.gg/images/Gold-Lich_Mask.png?c2ebe1",
     "image_local": "assets/images/armor/armor_Gold-Lich_Mask.png",
     "special_effects": [
-      "| coldresist ="
+      "-25% Mana Cost"
     ]
   },
   {
@@ -4684,9 +4684,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Hound_Mask",
     "image_url": "https://outward.wiki.gg/images/Hound_Mask.png?fdb669",
     "image_local": "assets/images/armor/armor_Hound_Mask.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Jade Acolyte Boots",
@@ -4726,7 +4724,7 @@
     "image_url": "https://outward.wiki.gg/images/Jade_Acolyte_Boots.png?19bcd4",
     "image_local": "assets/images/armor/armor_Jade_Acolyte_Boots.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost"
     ]
   },
   {
@@ -4767,7 +4765,7 @@
     "image_url": "https://outward.wiki.gg/images/Jade_Acolyte_Cowl.png?fdd9f4",
     "image_local": "assets/images/armor/armor_Jade_Acolyte_Cowl.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost"
     ]
   },
   {
@@ -4808,7 +4806,7 @@
     "image_url": "https://outward.wiki.gg/images/Jade_Acolyte_Robes.png?f53bd6",
     "image_local": "assets/images/armor/armor_Jade_Acolyte_Robes.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost"
     ]
   },
   {
@@ -4849,7 +4847,7 @@
     "image_url": "https://outward.wiki.gg/images/Jade-Lich_Boots.png?947b10",
     "image_local": "assets/images/armor/armor_Jade-Lich_Boots.png",
     "special_effects": [
-      "| coldresist ="
+      "-15% Mana Cost"
     ]
   },
   {
@@ -4890,7 +4888,7 @@
     "image_url": "https://outward.wiki.gg/images/Jade-Lich_Mask.png?e24c2d",
     "image_local": "assets/images/armor/armor_Jade-Lich_Mask.png",
     "special_effects": [
-      "| coldresist ="
+      "-25% Mana Cost"
     ]
   },
   {
@@ -4931,7 +4929,7 @@
     "image_url": "https://outward.wiki.gg/images/Jade-Lich_Robes.png?82de9e",
     "image_local": "assets/images/armor/armor_Jade-Lich_Robes.png",
     "special_effects": [
-      "| coldresist ="
+      "-15% Mana Cost"
     ]
   },
   {
@@ -5014,7 +5012,7 @@
     "image_url": "https://outward.wiki.gg/images/Kazite_Armor.png?5958ae",
     "image_local": "assets/images/armor/armor_Kazite_Armor.png",
     "special_effects": [
-      "| coldresist ="
+      "-7% Stamina Cost"
     ],
     "legacy_upgrade_to": "Master Kazite Armor"
   },
@@ -5056,7 +5054,7 @@
     "image_url": "https://outward.wiki.gg/images/Kazite_Boots.png?bc5cac",
     "image_local": "assets/images/armor/armor_Kazite_Boots.png",
     "special_effects": [
-      "| coldresist ="
+      "-8% Stamina Cost"
     ],
     "legacy_upgrade_to": "Master Kazite Boots"
   },
@@ -5181,9 +5179,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Light_Boots",
     "image_url": "https://outward.wiki.gg/images/Kazite_Light_Boots.png?655b5a",
     "image_local": "assets/images/armor/armor_Kazite_Light_Boots.png",
-    "special_effects": [
-      "| cooldown = 3"
-    ],
+    "special_effects": [],
     "legacy_upgrade_to": "Shadow Kazite Light Boots"
   },
   {
@@ -6451,9 +6447,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Ribcage",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Ribcage.png?e0e310",
     "image_local": "assets/images/armor/armor_Merton_s_Ribcage.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Merton's Shinbones",
@@ -6492,9 +6486,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Shinbones",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Shinbones.png?94d0c9",
     "image_local": "assets/images/armor/armor_Merton_s_Shinbones.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Merton's Skull",
@@ -6533,9 +6525,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Skull",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Skull.png?7b78e0",
     "image_local": "assets/images/armor/armor_Merton_s_Skull.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Militia Armor",
@@ -6956,7 +6946,8 @@
     "image_url": "https://outward.wiki.gg/images/Novice_Hat.png?65efb3",
     "image_local": "assets/images/armor/armor_Novice_Hat.png",
     "special_effects": [
-      "| corruptresist = 10"
+      "-5% Mana Cost",
+      "+10 Corruption Resistance"
     ]
   },
   {
@@ -6997,7 +6988,8 @@
     "image_url": "https://outward.wiki.gg/images/Novice_Robe.png?30f2b7",
     "image_local": "assets/images/armor/armor_Novice_Robe.png",
     "special_effects": [
-      "| coldresist ="
+      "-5% Mana Cost",
+      "+15 Corruption Resistance"
     ]
   },
   {
@@ -8932,9 +8924,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Boots",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Boots.png?5ef732",
     "image_local": "assets/images/armor/armor_Scaled_Leather_Boots.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Scaled Leather Hat",
@@ -8973,9 +8963,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Hat",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Hat.png?57ef2e",
     "image_local": "assets/images/armor/armor_Scaled_Leather_Hat.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Scarab Mask",
@@ -9014,9 +9002,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Scarab_Mask",
     "image_url": "https://outward.wiki.gg/images/Scarab_Mask.png?85b99f",
     "image_local": "assets/images/armor/armor_Scarab_Mask.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Scarlet Boots",
@@ -9055,9 +9041,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Boots",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Boots.png?9cb154",
     "image_local": "assets/images/armor/armor_Scarlet_Boots.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Scarlet Mask",
@@ -9096,9 +9080,7 @@
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Mask",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Mask.png?cd6c6b",
     "image_local": "assets/images/armor/armor_Scarlet_Mask.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "Scarlet Robes",
@@ -9138,7 +9120,7 @@
     "image_url": "https://outward.wiki.gg/images/Scarlet_Robes.png?60e9d2",
     "image_local": "assets/images/armor/armor_Scarlet_Robes.png",
     "special_effects": [
-      "| coldresist ="
+      "-20% Mana Cost"
     ]
   },
   {
@@ -10805,7 +10787,7 @@
     "image_url": "https://outward.wiki.gg/images/Tuanosaur_Mask.png?e34845",
     "image_local": "assets/images/armor/armor_Tuanosaur_Mask.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Stamina Cost"
     ]
   },
   {
@@ -11319,7 +11301,7 @@
     "image_url": "https://outward.wiki.gg/images/White_Priest_Boots.png?f35d32",
     "image_local": "assets/images/armor/armor_White_Priest_Boots.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost"
     ]
   },
   {
@@ -11360,7 +11342,8 @@
     "image_url": "https://outward.wiki.gg/images/White_Priest_Hood.png?913a1e",
     "image_local": "assets/images/armor/armor_White_Priest_Hood.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost",
+      "+15 Corruption Resistance"
     ]
   },
   {
@@ -11400,9 +11383,7 @@
     "source_url": "https://outward.wiki.gg/wiki/White_Priest_Mitre",
     "image_url": "https://outward.wiki.gg/images/White_Priest_Mitre.png?f4ae89",
     "image_local": "assets/images/armor/armor_White_Priest_Mitre.png",
-    "special_effects": [
-      "| coldresist ="
-    ]
+    "special_effects": []
   },
   {
     "name": "White Priest Robes",
@@ -11442,7 +11423,7 @@
     "image_url": "https://outward.wiki.gg/images/White_Priest_Robes.png?8123e5",
     "image_local": "assets/images/armor/armor_White_Priest_Robes.png",
     "special_effects": [
-      "| coldresist ="
+      "-10% Mana Cost"
     ]
   },
   {
@@ -12191,7 +12172,7 @@
     "local_image": "assets/images/armor/armor_Adventurer_Backpack.png",
     "special_effects": [
       "No dodge interference",
-      "35.0 Capacity"
+      "35 Capacity"
     ]
   },
   {
@@ -12203,7 +12184,7 @@
     "description": "Advanced bag that slows down the decay of the food it contains.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Alchemist_Backpack.png",
     "special_effects": [
-      "60.0 Capacity"
+      "60 Capacity"
     ]
   },
   {
@@ -12216,7 +12197,7 @@
     "local_image": "assets/images/armor/armor_Boozu_Hide_Backpack.png",
     "special_effects": [
       "No dodge interference",
-      "75.0 Capacity"
+      "75 Capacity"
     ]
   },
   {
@@ -12229,7 +12210,7 @@
     "description": "Exquisite bag, used by northern Wolf-Knights. It protects the items it carries and its wearer.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Brass-Wolf_Backpack.png",
     "special_effects": [
-      "75.0 Capacity"
+      "75 Capacity"
     ]
   },
   {
@@ -12242,7 +12223,7 @@
     "local_image": "assets/images/armor/armor_Brigand's_Backpack.png",
     "special_effects": [
       "No dodge interference, Cannot attach lanterns",
-      "70.0 Capacity"
+      "70 Capacity"
     ]
   },
   {
@@ -12255,7 +12236,7 @@
     "local_image": "assets/images/armor/armor_Chalcedony_Backpack.png",
     "special_effects": [
       "+15 [[Weather",
-      "80.0 Capacity"
+      "80 Capacity"
     ]
   },
   {
@@ -12268,7 +12249,7 @@
     "local_image": "assets/images/armor/armor_Dusk_Backpack.png",
     "special_effects": [
       "+5 Barrier",
-      "80.0 Capacity"
+      "80 Capacity"
     ]
   },
   {
@@ -12280,7 +12261,7 @@
     "local_image": "assets/images/armor/armor_Glowstone_Backpack.png",
     "special_effects": [
       "Acts as a light source",
-      "75.0 Capacity"
+      "75 Capacity"
     ]
   },
   {
@@ -12291,9 +12272,7 @@
     "sell": 15,
     "description": "Must be charged in the depths of a Volcano's basin. It's too heavy to carry inside another backpack!",
     "local_image": "assets/images/armor/armor_Large_Chalcedony_Stone.png",
-    "special_effects": [
-      "| corruptresist="
-    ]
+    "special_effects": []
   },
   {
     "name": "Light Mender's Backpack",
@@ -12306,7 +12285,7 @@
     "local_image": "assets/images/armor/armor_Light_Mender's_Backpack.png",
     "special_effects": [
       "Acts as a faint light source",
-      "75.0 Capacity"
+      "75 Capacity"
     ]
   },
   {
@@ -12318,7 +12297,7 @@
     "description": "Needlessly ornate bag with an enormous carrying capacity, once used by the spice merchant Mefino.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Mefino's_Trade_Backpack.png",
     "special_effects": [
-      "110.0 Capacity"
+      "110 Capacity"
     ]
   },
   {
@@ -12330,7 +12309,7 @@
     "description": "Balanced backpack commonly used by travelers.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Nomad_Backpack.png",
     "special_effects": [
-      "50.0 Capacity"
+      "50 Capacity"
     ]
   },
   {
@@ -12342,7 +12321,7 @@
     "description": "Elite bag that strongly slows down the decay of the food it contains.<br><br>Equipping this backpack slows your dodge and removes your dodge invincibility",
     "local_image": "assets/images/armor/armor_Preservation_Backpack.png",
     "special_effects": [
-      "75.0 Capacity"
+      "75 Capacity"
     ]
   },
   {
@@ -12354,7 +12333,7 @@
     "description": "Basic craftable bag used to store items, though it lacks a spot to hang a lantern from.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Primitive_Satchel.png",
     "special_effects": [
-      "25.0 Capacity"
+      "25 Capacity"
     ]
   },
   {
@@ -12367,7 +12346,7 @@
     "local_image": "assets/images/armor/armor_Prospector_Backpack.png",
     "special_effects": [
       "Overhead Lantern Slot",
-      "75.0 Capacity"
+      "75 Capacity"
     ]
   },
   {
@@ -12381,7 +12360,7 @@
     "local_image": "assets/images/armor/armor_Scaled_Satchel.png",
     "special_effects": [
       "No dodge interference",
-      "60.0 Capacity"
+      "60 Capacity"
     ]
   },
   {
@@ -12394,7 +12373,7 @@
     "description": "Tough box that protect both the wearer and what's carried in it.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Strongbox_Backpack.png",
     "special_effects": [
-      "60.0 Capacity"
+      "60 Capacity"
     ]
   },
   {
@@ -12407,7 +12386,7 @@
     "description": "Cavernous bag with a large carrying capacty, but which slows you down.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Trader_Backpack.png",
     "special_effects": [
-      "100.0 Capacity",
+      "100 Capacity",
       "-10% Move Speed"
     ]
   },
@@ -12420,7 +12399,7 @@
     "local_image": "assets/images/armor/armor_Weaver's_Backpack.png",
     "special_effects": [
       "+20% Status Resistance",
-      "80.0 Capacity"
+      "80 Capacity"
     ]
   },
   {
@@ -12432,7 +12411,7 @@
     "set": "Zhorn's Set",
     "local_image": "assets/images/armor/armor_Zhorn's_Hunting_Backpack.png",
     "special_effects": [
-      "85.0 Capacity"
+      "85 Capacity"
     ]
   },
   {
