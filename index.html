@@ -10,306 +10,614 @@
 <style>
 :root{--bg:#1a1410;--bg2:#241c12;--panel:#2a2118;--panel2:#33291d;--panel3:#3a2f1e;--gold:#c9a227;--gold2:#e8c547;--brown:#8b4513;--text:#e8dcc8;--dim:#a89878;--dim2:#7a6a55;--red:#c0392b;--green:#27ae60;--blue:#2980b9;--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-#root{min-height:100vh;min-height:100dvh}
-.loading-screen{position:fixed;inset:0;background:linear-gradient(160deg,#1a1410,#241c12,#1a1410);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;padding:24px}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior-y:none}
+#app{min-height:100vh;min-height:100dvh}
+.screen{display:none;min-height:100vh;min-height:100dvh}
+.screen.active{display:block}
+::-webkit-scrollbar{width:0;height:0}
+.loading-screen{background:linear-gradient(160deg,#1a1410,#241c12,#1a1410);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
 .logo-svg{width:70px;height:70px;margin-bottom:18px}
 .loading-title{font-size:26px;color:var(--gold);letter-spacing:5px;text-transform:uppercase;font-weight:700;margin-bottom:5px}
 .loading-sub{font-size:11px;color:var(--dim);margin-bottom:32px;font-style:italic}
-.loading-bar-wrap{width:200px;height:4px;background:var(--panel2);border-radius:2px;overflow:hidden;border:1px solid var(--brown)}
-.loading-bar{height:100%;background:linear-gradient(90deg,var(--brown),var(--gold));border-radius:2px;transition:width .4s}
+.loading-bar-wrap{width:200px;height:4px;background:var(--panel2);border-radius:2px;overflow:hidden;border:1px solid var(--brown);margin:0 auto}
+.loading-bar{height:100%;background:linear-gradient(90deg,var(--brown),var(--gold));border-radius:2px;transition:width .3s;width:0%}
 .loading-status{margin-top:10px;font-size:10px;color:var(--dim)}
-.loading-error{margin-top:14px;padding:9px 12px;background:rgba(192,57,43,.15);border:1px solid var(--red);border-radius:7px;color:#e74c3c;font-size:11px;text-align:center;max-width:240px}
+.loading-error{margin-top:14px;padding:9px 12px;background:rgba(192,57,43,.15);border:1px solid var(--red);border-radius:7px;color:#e74c3c;font-size:11px;max-width:260px}
 .retry-btn{margin-top:10px;padding:7px 18px;background:var(--brown);border:1px solid var(--gold);border-radius:5px;color:var(--text);font-size:12px;cursor:pointer;font-family:inherit}
+#home-screen{background:linear-gradient(180deg,var(--bg),var(--bg2),var(--bg))}
+.home-hero{text-align:center;padding:70px 24px 28px;padding-top:calc(70px + var(--sat))}
+.home-logo{width:56px;height:56px;margin:0 auto 14px}
+.home-title{font-size:28px;color:var(--gold);letter-spacing:5px;text-transform:uppercase;font-weight:700;margin-bottom:4px}
+.home-sub{font-size:12px;color:var(--dim);font-style:italic}
+.home-stats{display:flex;justify-content:center;gap:8px;margin-top:16px;flex-wrap:wrap}
+.home-stat-pill{text-align:center;padding:5px 9px;background:var(--panel);border:1px solid var(--brown);border-radius:7px}
+.home-stat-num{font-size:15px;color:var(--gold);font-weight:700}
+.home-stat-lbl{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+.home-menu{max-width:320px;margin:0 auto;padding:12px}
+.menu-btn{display:flex;align-items:center;gap:9px;width:100%;padding:12px;margin-bottom:8px;background:linear-gradient(135deg,var(--panel),var(--panel2));border:2px solid var(--brown);border-radius:10px;cursor:pointer;text-align:left;color:var(--text);font-family:inherit}
+.menu-btn:active{border-color:var(--gold);transform:scale(.98)}
+.menu-icon{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:7px;border:1px solid var(--brown);font-size:19px;flex-shrink:0}
+.menu-content{flex:1}
+.menu-content h3{font-size:13px;color:var(--gold);margin-bottom:2px}
+.menu-content p{font-size:10px;color:var(--dim)}
+.menu-arrow{color:var(--brown);font-size:15px}
+.home-footer{text-align:center;padding:14px;padding-bottom:calc(14px + var(--sab));font-size:9px;color:var(--dim2)}
+#builder-screen{background:var(--bg);display:flex;flex-direction:column}
+.builder-header{display:flex;align-items:center;gap:4px;padding:6px 8px;padding-top:calc(6px + var(--sat));background:var(--bg2);border-bottom:1px solid var(--brown);position:sticky;top:0;z-index:50}
+.header-btn{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--brown);border-radius:5px;cursor:pointer;color:var(--text);font-size:12px;flex-shrink:0}
+.header-title{flex:1;font-size:12px;color:var(--gold);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.header-lvl{display:flex;align-items:center;gap:2px;font-size:9px;color:var(--dim)}
+.lvl-input{width:36px;padding:3px 2px;background:var(--panel);border:1px solid var(--brown);border-radius:4px;color:var(--gold);font-size:11px;text-align:center;font-family:inherit;font-weight:600}
+.theory-btn{padding:3px 5px;background:var(--panel);border:1px solid var(--brown);border-radius:4px;color:var(--dim);font-size:8px;cursor:pointer;font-family:inherit;white-space:nowrap}
+.theory-btn.active{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:600}
+.builder-content{flex:1;padding-bottom:calc(58px + var(--sab))}
+.tab-bar{position:fixed;bottom:0;left:0;right:0;display:flex;background:rgba(26,20,16,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--brown);padding:2px 0 calc(2px + var(--sab));z-index:100}
+.tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:3px 1px;background:none;border:none;cursor:pointer;color:var(--dim);font-family:inherit;font-size:6px;border-radius:3px}
+.tab-btn.active{color:var(--gold);background:rgba(201,162,39,.12)}
+.tab-icon{font-size:16px;line-height:1}
+.tab-pane{display:none;padding:8px;max-width:420px;margin:0 auto}
+.tab-pane.active{display:block}
+.sec-card{background:var(--panel);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px;overflow:hidden}
+.sec-hdr{display:flex;align-items:center;gap:5px;padding:8px 10px;background:var(--panel2);border-bottom:1px solid var(--brown)}
+.sec-icon{font-size:12px}
+.sec-title{font-size:9px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:600}
+.sec-body{padding:2px 10px 6px}
+.hero-card{background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--brown);border-radius:12px;padding:10px;margin-bottom:8px;position:relative;overflow:hidden}
+.hero-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold),var(--green),var(--blue))}
+.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.hero-stat{text-align:center;padding:6px 3px;background:rgba(0,0,0,.2);border-radius:6px}
+.hero-ico{font-size:14px;margin-bottom:1px}
+.hero-val{font-size:20px;font-weight:700;line-height:1}
+.hero-val.health{color:#e74c3c}.hero-val.stamina{color:#2ecc71}.hero-val.mana{color:#3498db}
+.hero-lbl{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+.pts-row{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:8px}
+.pts-card{background:var(--panel);border:1px solid var(--brown);border-radius:8px;padding:8px;display:flex;align-items:center;gap:6px}
+.pts-ico{width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:5px;font-size:14px;flex-shrink:0}
+.pts-info h4{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.pts-val{font-size:12px;color:var(--gold);font-weight:700}
+.pts-val.warn{color:var(--red)}
+.resist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px;padding:6px 0}
+.resist-item{display:flex;align-items:center;justify-content:space-between;padding:4px 6px;background:var(--panel2);border-radius:4px}
+.resist-lbl{font-size:8px;color:var(--dim);display:flex;align-items:center;gap:3px}
+.resist-val{font-size:10px;font-weight:700;color:var(--gold)}
+.srow{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(139,69,19,.2);font-size:10px}
+.srow:last-child{border-bottom:none}
+.sname{color:var(--text);display:flex;align-items:center;gap:4px}
+.sdot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.sdot.physical{background:#95a5a6}.sdot.fire{background:#e74c3c}.sdot.frost{background:#3498db}.sdot.lightning{background:#f1c40f}.sdot.decay{background:#2ecc71}.sdot.ethereal{background:#9b59b6}.sdot.impact{background:#e67e22}
+.sval{color:var(--gold);font-weight:600;font-size:11px}
+.sval.pos{color:var(--green)}.sval.neg{color:var(--red)}
+.equip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px 0}
+.equip-grid.weapons{grid-template-columns:repeat(2,1fr)}
+.equip-slot{aspect-ratio:1;background:var(--panel2);border:2px dashed var(--brown);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:2px;text-align:center;position:relative}
+.equip-slot.filled{border-style:solid;border-color:var(--gold)}
+.equip-slot img{width:28px;height:36px;object-fit:cover;border-radius:3px;margin-bottom:1px}
+.slot-lbl{font-size:6px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+.slot-item{font-size:7px;margin-top:1px;line-height:1.1}
+.item-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:4px;padding:4px 0}
+.item-card{background:var(--panel2);border:1px solid var(--brown);border-radius:6px;padding:6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.item-card.selected{border-color:var(--gold);background:var(--panel3)}
+.item-card img{width:32px;height:42px;object-fit:cover;border-radius:3px}
+.ic-name{font-size:9px;line-height:1.2}
+.ic-meta{font-size:7px;color:var(--dim)}
+.ic-set{font-size:7px;color:var(--gold)}
+.rarity-common{border-color:#95a5a6!important}
+.rarity-unique{border-color:var(--gold)!important}
+.rarity-crafted{border-color:var(--blue)!important}
+.rarity-legacy{border-color:var(--purple)!important}
+.rarity-set{border-color:var(--green)!important}
+.rarity-quest{border-color:var(--orange)!important}
+.search-bar{width:100%;padding:7px 9px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;color:var(--text);font-size:16px;font-family:inherit;margin-bottom:6px}
+.filter-pills{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:8px}
+.pill{padding:4px 6px;background:var(--panel);border:1px solid var(--brown);border-radius:12px;cursor:pointer;font-size:8px;color:var(--dim);font-family:inherit}
+.pill.active{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.pill-group{margin-bottom:5px}
+.pill-group-label{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:200;display:flex;align-items:flex-end;justify-content:center}
+.modal{background:var(--panel);border:1px solid var(--gold);border-radius:12px 12px 0 0;width:100%;max-height:85vh;max-height:85dvh;display:flex;flex-direction:column}
+.modal-hdr{padding:8px 10px;border-bottom:1px solid var(--brown);display:flex;align-items:center;gap:5px}
+.modal-title{font-size:12px;color:var(--gold);flex:1}
+.modal-close{width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--panel2);border:1px solid var(--brown);border-radius:4px;cursor:pointer;color:var(--text);font-size:11px}
+.modal-search{margin:4px 8px;padding:6px;background:var(--panel2);border:1px solid var(--brown);border-radius:5px;color:var(--text);font-size:16px;font-family:inherit}
+.modal-body{flex:1;overflow-y:auto;padding:0 8px 8px}
+.skill-item{display:flex;align-items:center;gap:6px;padding:6px;margin-top:2px;background:var(--panel2);border:1px solid transparent;border-radius:4px;cursor:pointer}
+.skill-item.selected{border-color:var(--gold);background:var(--panel3)}
+.skill-item.locked{opacity:.5}
+.skill-item img{width:28px;height:36px;object-fit:cover;border-radius:3px;flex-shrink:0}
+.skill-info{flex:1;min-width:0}
+.skill-name{font-size:10px}
+.skill-meta{font-size:7px;color:var(--dim)}
+.skill-tier{padding:1px 4px;background:var(--brown);color:var(--gold);font-size:6px;border-radius:2px;flex-shrink:0}
+.skill-tier.t2{background:var(--gold);color:var(--bg)}
+.skill-tier.t3{background:#7d6608;color:#fff}
+.class-header{display:flex;align-items:center;gap:8px;padding:8px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;cursor:pointer;user-select:none;margin-bottom:4px}
+.class-icon{width:28px;height:36px;object-fit:cover;border-radius:3px}
+.class-info h3{font-size:11px;color:var(--gold)}
+.class-info p{font-size:8px;color:var(--dim)}
+.class-dlc{margin-left:auto;padding:1px 4px;background:var(--brown);color:var(--gold);font-size:6px;border-radius:2px;text-transform:uppercase}
+.faction-card{background:var(--panel2);border:1px solid var(--brown);border-radius:8px;padding:10px;margin-bottom:6px;cursor:pointer}
+.faction-card.selected{border-color:var(--gold);background:var(--panel3)}
+.faction-name{font-size:12px;color:var(--gold);font-weight:600;margin-bottom:2px}
+.faction-desc{font-size:9px;color:var(--dim);line-height:1.4}
+.cons-item{display:flex;align-items:center;gap:6px;padding:6px;background:var(--panel2);border:1px solid transparent;border-radius:4px;margin-bottom:3px;cursor:pointer}
+.cons-item.selected{border-color:var(--gold);background:var(--panel3)}
+.cons-item img{width:28px;height:36px;object-fit:cover;border-radius:3px;flex-shrink:0}
+.cons-info{flex:1;min-width:0}
+.cons-name{font-size:10px}
+.cons-type{font-size:7px;color:var(--dim)}
+.cons-effects{font-size:7px;color:var(--dim);margin-top:1px}
+.effect-item{display:flex;align-items:center;gap:7px;padding:7px;background:var(--panel2);border:1px solid transparent;border-radius:5px;margin-bottom:3px}
+.effect-item img{width:32px;height:32px;object-fit:contain;border-radius:50%;flex-shrink:0}
+.effect-info{flex:1}
+.effect-name{font-size:10px;color:var(--gold)}
+.effect-desc{font-size:8px;color:var(--dim);margin-top:1px}
+.effect-cat{font-size:6px;padding:1px 3px;background:var(--brown);color:var(--gold);border-radius:2px;text-transform:uppercase}
+.chip-row{display:flex;flex-wrap:wrap;gap:3px;padding:4px 0}
+.chip{display:inline-flex;align-items:center;gap:2px;padding:2px 4px;background:var(--panel2);border-radius:3px;font-size:7px}
+.chip img{width:12px;height:15px;object-fit:cover;border-radius:2px}
+.chip-empty{color:var(--dim2);font-size:9px;padding:6px 0;text-align:center;font-style:italic}
+@media(min-width:900px){.home-menu{max-width:340px}.builder-content{display:grid;grid-template-columns:240px 1fr 280px;gap:0;padding-bottom:0}.tab-pane{display:block!important;border-right:1px solid var(--brown);max-width:none}.tab-bar{display:none}}
+@media(max-width:380px){.home-title{font-size:20px;letter-spacing:3px}.hero-val{font-size:17px}.pts-row{grid-template-columns:1fr}.equip-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
-<div id="root">
-<!-- Immediate loading UI before React loads -->
-<div class="loading-screen">
-<div class="logo-svg">
-<svg width="70" height="70" viewBox="0 0 100 100" style="display:block;margin:0 auto">
-<defs><linearGradient id="gg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f0d060"/><stop offset="50%" stop-color="#c9a227"/><stop offset="100%" stop-color="#8b4513"/></linearGradient></defs>
-<g transform="rotate(-45,50,60)"><rect x="46" y="15" width="8" height="55" rx="3" fill="url(#gg)"/><rect x="38" y="62" width="24" height="6" rx="3" fill="#8b4513"/><circle cx="50" cy="74" r="5" fill="#c9a227"/></g>
-<g transform="rotate(45,50,60)"><rect x="46" y="15" width="8" height="55" rx="3" fill="url(#gg)"/><rect x="38" y="62" width="24" height="6" rx="3" fill="#8b4513"/><circle cx="50" cy="74" r="5" fill="#c9a227"/></g>
-</svg>
+<div id="app">
+  <div id="loading-screen" class="screen active">
+    <div class="logo-svg"><svg width="70" height="70" viewBox="0 0 100 100" style="display:block;margin:0 auto"><defs><linearGradient id="gg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f0d060"/><stop offset="50%" stop-color="#c9a227"/><stop offset="100%" stop-color="#8b4513"/></linearGradient></defs><g transform="rotate(-45,50,60)"><rect x="46" y="15" width="8" height="55" rx="3" fill="url(#gg)"/><rect x="38" y="62" width="24" height="6" rx="3" fill="#8b4513"/><circle cx="50" cy="74" r="5" fill="#c9a227"/></g><g transform="rotate(45,50,60)"><rect x="46" y="15" width="8" height="55" rx="3" fill="url(#gg)"/><rect x="38" y="62" width="24" height="6" rx="3" fill="#8b4513"/><circle cx="50" cy="74" r="5" fill="#c9a227"/></g></svg></div>
+    <div class="loading-title">Outward</div>
+    <div class="loading-sub">Build Builder</div>
+    <div class="loading-bar-wrap"><div class="loading-bar" id="loading-bar"></div></div>
+    <div class="loading-status" id="loading-status">Initializing...</div>
+    <div class="loading-error" id="loading-error" style="display:none"></div>
+    <button class="retry-btn" id="retry-btn" style="display:none" onclick="loadData()">Retry</button>
+  </div>
+  <div id="home-screen" class="screen">
+    <div class="home-hero">
+      <div class="home-logo"><svg width="56" height="56" viewBox="0 0 100 100" style="display:block;margin:0 auto"><defs><linearGradient id="gg2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f0d060"/><stop offset="50%" stop-color="#c9a227"/><stop offset="100%" stop-color="#8b4513"/></linearGradient></defs><g transform="rotate(-45,50,60)"><rect x="46" y="15" width="8" height="55" rx="3" fill="url(#gg2)"/><rect x="38" y="62" width="24" height="6" rx="3" fill="#8b4513"/><circle cx="50" cy="74" r="5" fill="#c9a227"/></g><g transform="rotate(45,50,60)"><rect x="46" y="15" width="8" height="55" rx="3" fill="url(#gg2)"/><rect x="38" y="62" width="24" height="6" rx="3" fill="#8b4513"/><circle cx="50" cy="74" r="5" fill="#c9a227"/></g></svg></div>
+      <div class="home-title">Outward</div>
+      <div class="home-sub">Definitive Edition Build Builder</div>
+      <div class="home-stats" id="home-stats"></div>
+    </div>
+    <div class="home-menu">
+      <button class="menu-btn" onclick="showScreen('builder-screen');renderBuilder();">
+        <div class="menu-icon">&#x2694;&#xFE0F;</div>
+        <div class="menu-content"><h3>Create Build</h3><p>Design your character</p></div>
+        <div class="menu-arrow">&#x203A;</div>
+      </button>
+    </div>
+    <div class="home-footer">outward.wiki.gg</div>
+  </div>
+  <div id="builder-screen" class="screen">
+    <div class="builder-header">
+      <button class="header-btn" onclick="showScreen('home-screen')">&#x2190;</button>
+      <div class="header-title" id="build-name">New Build</div>
+      <button class="theory-btn" id="theory-btn" onclick="toggleTheorycraft()">Theory</button>
+      <button class="header-btn" onclick="exportBuild()" title="Export">&#x2B07;</button>
+      <button class="header-btn" onclick="importBuild()" title="Import">&#x2B06;</button>
+      <button class="header-btn" onclick="resetBuild()" title="Reset">&#x2715;</button>
+      <div class="header-lvl">Lv<input type="number" class="lvl-input" id="lvl-input" min="1" max="50" value="1" onchange="updateLevel(this.value)"></div>
+    </div>
+    <div class="builder-content" id="builder-content">
+      <div class="tab-pane" id="pane-stats"></div>
+      <div class="tab-pane" id="pane-armor"></div>
+      <div class="tab-pane" id="pane-weapons"></div>
+      <div class="tab-pane" id="pane-skills"></div>
+      <div class="tab-pane" id="pane-factions"></div>
+      <div class="tab-pane" id="pane-consumables"></div>
+      <div class="tab-pane" id="pane-effects"></div>
+    </div>
+    <div class="tab-bar" id="tab-bar"></div>
+  </div>
 </div>
-<div class="loading-title">Outward</div>
-<div class="loading-sub">Build Builder</div>
-<div class="loading-bar-wrap"><div class="loading-bar" style="width:10%"></div></div>
-<div class="loading-status">Loading React...</div>
-</div>
-</div>
-
-<!-- Load React without crossorigin for iOS compatibility -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 
 <script>
-// Check if React loaded
-if (typeof React === 'undefined' || typeof ReactDOM === 'undefined') {
-    document.getElementById('root').innerHTML = 
-        '<div style="padding:40px;text-align:center;color:#c9a227;font-family:sans-serif">' +
-        '<h2>Failed to load React</h2>' +
-        '<p style="color:#a89878;margin-top:10px;font-size:14px">Check your internet connection</p>' +
-        '<button onclick="location.reload()" style="margin-top:20px;padding:12px 24px;' +
-        'background:#8b4513;border:1px solid #c9a227;border-radius:8px;color:#e8dcc8;' +
-        'cursor:pointer;font-size:16px">Retry</button></div>';
-} else {
-    // React loaded, run the app
-    (function(){
-        'use strict';
+var DATA=null;
+var BUILD={name:'New Build',level:1,theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,controller:{}};
+var CURRENT_TAB='stats';
+var MODAL_SLOT=null;
+var MODAL_SEARCH='';
+var MODAL_FILTERS={};
+var SKILL_SEARCH='';
+var SKILL_CLASS_FILTER=null;
+var CONS_SEARCH='';
+var CONS_TYPE_FILTER=null;
+var EFFECT_SEARCH='';
 
-        var DATA_BASE = 'data/raw/';
-        var IMG_BASE = '';
+function setProgress(pct,status){var bar=document.getElementById('loading-bar');var txt=document.getElementById('loading-status');if(bar)bar.style.width=pct+'%';if(txt)txt.textContent=status;}
+function showError(msg){var err=document.getElementById('loading-error');var btn=document.getElementById('retry-btn');if(err){err.textContent=msg;err.style.display='block';}if(btn)btn.style.display='block';}
+function hideError(){var err=document.getElementById('loading-error');var btn=document.getElementById('retry-btn');if(err)err.style.display='none';if(btn)btn.style.display='none';}
+function fetchJSON(path){return fetch('data/raw/'+path).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+': '+path);return r.json();});}
+function imgSrc(path){return path?path:null;}
+function escHtml(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
-        function fetchJSON(p) {
-            return fetch(DATA_BASE + p).then(function(r) {
-                if (!r.ok) throw new Error('HTTP ' + r.status);
-                return r.json();
-            });
-        }
-
-        function imgSrc(p) { return p ? IMG_BASE + p : null; }
-        function h(t, p, c) { return React.createElement(t, p || {}, c); }
-
-        // Update loading bar
-        var loadingBar = document.querySelector('.loading-bar');
-        var loadingStatus = document.querySelector('.loading-status');
-
-        function setProgress(pct, status) {
-            if (loadingBar) loadingBar.style.width = pct + '%';
-            if (loadingStatus) loadingStatus.textContent = status;
-        }
-
-        // Simple App component
-        function App() {
-            var screenState = React.useState('loading');
-            var screen = screenState[0];
-            var setScreen = screenState[1];
-
-            var dataState = React.useState(null);
-            var data = dataState[0];
-            var setData = dataState[1];
-
-            var errorState = React.useState(null);
-            var error = errorState[0];
-            var setError = errorState[1];
-
-            var buildState = React.useState({
-                name: 'New Build',
-                level: 1,
-                theorycraft: false,
-                skills: [],
-                armor: {},
-                weapons: {},
-                consumables: [],
-                faction: null,
-                breakthroughsUsed: 0,
-                controller: {}
-            });
-            var build = buildState[0];
-            var setBuild = buildState[1];
-
-            // Load saved build
-            React.useEffect(function() {
-                try {
-                    var s = localStorage.getItem('outward-build');
-                    if (s) setBuild(JSON.parse(s));
-                } catch(e) {}
-            }, []);
-
-            // Save build
-            React.useEffect(function() {
-                try {
-                    localStorage.setItem('outward-build', JSON.stringify(build));
-                } catch(e) {}
-            }, [build]);
-
-            // Load data
-            React.useEffect(function() {
-                loadData();
-            }, []);
-
-            function loadData() {
-                setError(null);
-                setProgress(20, 'Loading skills...');
-
-                Promise.all([
-                    fetchJSON('skills/skills_tier1.json'),
-                    fetchJSON('skills/skills_tier2.json'),
-                    fetchJSON('skills/skills_tier3.json'),
-                    fetchJSON('skills/skills_special.json'),
-                    fetchJSON('skills/classes.json')
-                ]).then(function(r) {
-                    setProgress(40, 'Loading weapons...');
-                    return Promise.all([
-                        Promise.resolve(r),
-                        Promise.all([
-                            fetchJSON('weapons/weapons_melee.json'),
-                            fetchJSON('weapons/weapons_ranged.json'),
-                            fetchJSON('weapons/weapons_magical.json'),
-                            fetchJSON('weapons/shields.json')
-                        ])
-                    ]);
-                }).then(function(results) {
-                    var r = results[0];
-                    var w = results[1];
-                    setProgress(60, 'Loading armor...');
-                    return Promise.all([
-                        Promise.resolve(r),
-                        Promise.resolve(w),
-                        fetchJSON('armor/armor_items.json')
-                    ]);
-                }).then(function(results) {
-                    var r = results[0];
-                    var w = results[1];
-                    var a = results[2];
-                    setProgress(75, 'Loading items...');
-                    return Promise.all([
-                        Promise.resolve(r),
-                        Promise.resolve(w),
-                        Promise.resolve(a),
-                        fetchJSON('consumables/data.json')
-                    ]);
-                }).then(function(results) {
-                    var r = results[0];
-                    var w = results[1];
-                    var a = results[2];
-                    var c = results[3];
-                    setProgress(90, 'Loading factions...');
-                    return Promise.all([
-                        Promise.resolve(r),
-                        Promise.resolve(w),
-                        Promise.resolve(a),
-                        Promise.resolve(c),
-                        fetchJSON('quests/factions.json')
-                    ]);
-                }).then(function(results) {
-                    var r = results[0];
-                    var w = results[1];
-                    var a = results[2];
-                    var c = results[3];
-                    var f = results[4];
-
-                    setProgress(100, 'Ready!');
-
-                    setData({
-                        skills: r[0].concat(r[1], r[2], r[3]),
-                        classes: r[4],
-                        weapons: w[0].weapons.concat(w[1].weapons, w[2].weapons, w[3].weapons),
-                        armor: a,
-                        consumables: c.items || c,
-                        factions: f
-                    });
-
-                    setTimeout(function() { setScreen('home'); }, 300);
-                }).catch(function(e) {
-                    setError(e.message || 'Failed to load data');
-                    setProgress(0, 'Error');
-                });
-            }
-
-            // Render loading screen with progress
-            if (screen === 'loading') {
-                return h('div', {className: 'loading-screen'},
-                    h('div', {className: 'logo-svg'},
-                        h('svg', {width: 70, height: 70, viewBox: '0 0 100 100', style: {display: 'block', margin: '0 auto'}},
-                            h('defs', null,
-                                h('linearGradient', {id: 'gg', x1: '0%', y1: '0%', x2: '0%', y2: '100%'},
-                                    h('stop', {offset: '0%', stopColor: '#f0d060'}),
-                                    h('stop', {offset: '50%', stopColor: '#c9a227'}),
-                                    h('stop', {offset: '100%', stopColor: '#8b4513'})
-                                )
-                            ),
-                            h('g', {transform: 'rotate(-45,50,60)'},
-                                h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: 'url(#gg)'}),
-                                h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
-                                h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
-                            ),
-                            h('g', {transform: 'rotate(45,50,60)'},
-                                h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: 'url(#gg)'}),
-                                h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
-                                h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
-                            )
-                        )
-                    ),
-                    h('div', {className: 'loading-title'}, 'Outward'),
-                    h('div', {className: 'loading-sub'}, 'Build Builder'),
-                    h('div', {className: 'loading-bar-wrap'},
-                        h('div', {className: 'loading-bar', style: {width: '10%'}})
-                    ),
-                    h('div', {className: 'loading-status'}, 'Loading...'),
-                    error ? h('div', {className: 'loading-error'}, error) : null,
-                    error ? h('button', {className: 'retry-btn', onClick: function() { loadData(); }}, 'Retry') : null
-                );
-            }
-
-            // Render home screen
-            if (screen === 'home') {
-                return h('div', {style: {minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'linear-gradient(180deg, #1a1410, #241c12, #1a1410)'}},
-                    h('div', {style: {textAlign: 'center', padding: '80px 24px 40px', paddingTop: 'calc(80px + env(safe-area-inset-top, 0px))'}},
-                        h('div', {style: {width: 60, height: 60, margin: '0 auto 16px'}},
-                            h('svg', {width: 60, height: 60, viewBox: '0 0 100 100'},
-                                h('g', {transform: 'rotate(-45,50,60)'},
-                                    h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: '#c9a227'}),
-                                    h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
-                                    h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
-                                ),
-                                h('g', {transform: 'rotate(45,50,60)'},
-                                    h('rect', {x: 46, y: 15, width: 8, height: 55, rx: 3, fill: '#c9a227'}),
-                                    h('rect', {x: 38, y: 62, width: 24, height: 6, rx: 3, fill: '#8b4513'}),
-                                    h('circle', {cx: 50, cy: 74, r: 5, fill: '#c9a227'})
-                                )
-                            )
-                        ),
-                        h('div', {style: {fontSize: 28, color: '#c9a227', letterSpacing: 5, textTransform: 'uppercase', fontWeight: 700, marginBottom: 4}}, 'Outward'),
-                        h('div', {style: {fontSize: 12, color: '#a89878', fontStyle: 'italic'}}, 'Definitive Edition Build Builder'),
-                        h('div', {style: {display: 'flex', justifyContent: 'center', gap: 8, marginTop: 20, flexWrap: 'wrap'}},
-                            h('div', {style: {textAlign: 'center', padding: '5px 10px', background: '#2a2118', border: '1px solid #8b4513', borderRadius: 8}},
-                                h('div', {style: {fontSize: 16, color: '#c9a227', fontWeight: 700}}, data.skills.length),
-                                h('div', {style: {fontSize: 8, color: '#a89878', textTransform: 'uppercase', letterSpacing: 1, marginTop: 2}}, 'Skills')
-                            ),
-                            h('div', {style: {textAlign: 'center', padding: '5px 10px', background: '#2a2118', border: '1px solid #8b4513', borderRadius: 8}},
-                                h('div', {style: {fontSize: 16, color: '#c9a227', fontWeight: 700}}, data.weapons.length),
-                                h('div', {style: {fontSize: 8, color: '#a89878', textTransform: 'uppercase', letterSpacing: 1, marginTop: 2}}, 'Weapons')
-                            ),
-                            h('div', {style: {textAlign: 'center', padding: '5px 10px', background: '#2a2118', border: '1px solid #8b4513', borderRadius: 8}},
-                                h('div', {style: {fontSize: 16, color: '#c9a227', fontWeight: 700}}, data.armor.length),
-                                h('div', {style: {fontSize: 8, color: '#a89878', textTransform: 'uppercase', letterSpacing: 1, marginTop: 2}}, 'Armor')
-                            )
-                        )
-                    ),
-                    h('div', {style: {flex: 1, display: 'flex', flexDirection: 'column', gap: 8, padding: 14, maxWidth: 320, margin: '0 auto', width: '100%'}},
-                        h('button', {
-                            style: {display: 'flex', alignItems: 'center', gap: 10, padding: 14, background: 'linear-gradient(135deg, #2a2118, #33291d)', border: '2px solid #8b4513', borderRadius: 10, cursor: 'pointer', textAlign: 'left', color: '#e8dcc8', fontFamily: 'inherit'},
-                            onClick: function() { setScreen('builder'); }
-                        },
-                            h('div', {style: {width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#1a1410', borderRadius: 8, border: '1px solid #8b4513', fontSize: 20}}, '⚔️'),
-                            h('div', {style: {flex: 1}},
-                                h('h3', {style: {fontSize: 14, color: '#c9a227', marginBottom: 2}}, 'Create Build'),
-                                h('p', {style: {fontSize: 11, color: '#a89878'}}, 'Design your character')
-                            ),
-                            h('div', {style: {color: '#8b4513', fontSize: 16}}, '›')
-                        )
-                    ),
-                    h('div', {style: {textAlign: 'center', padding: 16, paddingBottom: 'calc(16px + env(safe-area-inset-bottom, 0px))', fontSize: 10, color: '#7a6a55'}}, 'outward.wiki.gg')
-                );
-            }
-
-            // Simple builder placeholder
-            return h('div', {style: {minHeight: '100vh', background: '#1a1410', color: '#e8dcc8', padding: 20}},
-                h('button', {onClick: function() { setScreen('home'); }, style: {padding: '8px 16px', background: '#8b4513', border: '1px solid #c9a227', borderRadius: 6, color: '#e8dcc8', cursor: 'pointer', marginBottom: 20}}, '← Back'),
-                h('h2', {style: {color: '#c9a227', marginBottom: 20}}, 'Builder'),
-                h('p', {style: {color: '#a89878'}}, 'Builder UI loading... Data loaded: ' + data.skills.length + ' skills, ' + data.weapons.length + ' weapons, ' + data.armor.length + ' armor pieces')
-            );
-        }
-
-        // Render app
-        ReactDOM.createRoot(document.getElementById('root')).render(h(App));
-
-    })();
+function loadData(){
+hideError();
+setProgress(5,'Loading skills...');
+Promise.all([fetchJSON('skills/skills_tier1.json'),fetchJSON('skills/skills_tier2.json'),fetchJSON('skills/skills_tier3.json'),fetchJSON('skills/skills_special.json'),fetchJSON('skills/classes.json')]).then(function(r){
+setProgress(25,'Loading weapons...');
+return Promise.all([Promise.resolve(r),Promise.all([fetchJSON('weapons/weapons_melee.json'),fetchJSON('weapons/weapons_ranged.json'),fetchJSON('weapons/weapons_magical.json'),fetchJSON('weapons/shields.json')])]);
+}).then(function(results){
+var r=results[0];var w=results[1];
+setProgress(45,'Loading armor...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),fetchJSON('armor/armor_items.json')]);
+}).then(function(results){
+var r=results[0];var w=results[1];var a=results[2];
+setProgress(60,'Loading items...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),fetchJSON('consumables/data.json')]);
+}).then(function(results){
+var r=results[0];var w=results[1];var a=results[2];var c=results[3];
+setProgress(75,'Loading factions...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(c),fetchJSON('quests/factions.json')]);
+}).then(function(results){
+var r=results[0];var w=results[1];var a=results[2];var c=results[3];var f=results[4];
+setProgress(90,'Loading effects...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(c),Promise.resolve(f),fetchJSON('effects/status_effects.json')]);
+}).then(function(results){
+var r=results[0];var w=results[1];var a=results[2];var c=results[3];var f=results[4];var e=results[5];
+DATA={skills:r[0].concat(r[1],r[2],r[3]),classes:r[4],weapons:w[0].weapons.concat(w[1].weapons,w[2].weapons,w[3].weapons),armor:a,consumables:c.items||c,factions:f,effects:e};
+setProgress(100,'Ready!');
+try{var saved=localStorage.getItem('outward-build');if(saved)BUILD=JSON.parse(saved);}catch(e){}
+setTimeout(function(){showScreen('home-screen');renderHome();},300);
+}).catch(function(e){showError(e.message||'Failed to load data');setProgress(0,'Error');});
 }
+
+function showScreen(id){var screens=document.querySelectorAll('.screen');for(var i=0;i<screens.length;i++){screens[i].classList.remove('active');}var el=document.getElementById(id);if(el)el.classList.add('active');}
+function renderHome(){var stats=document.getElementById('home-stats');if(!stats||!DATA)return;stats.innerHTML='<div class="home-stat-pill"><div class="home-stat-num">'+DATA.skills.length+'</div><div class="home-stat-lbl">Skills</div></div><div class="home-stat-pill"><div class="home-stat-num">'+DATA.weapons.length+'</div><div class="home-stat-lbl">Weapons</div></div><div class="home-stat-pill"><div class="home-stat-num">'+DATA.armor.length+'</div><div class="home-stat-lbl">Armor</div></div><div class="home-stat-pill"><div class="home-stat-num">'+DATA.consumables.length+'</div><div class="home-stat-lbl">Items</div></div>';}
+
+function renderBuilder(){
+if(!DATA)return;
+document.getElementById('build-name').textContent=BUILD.name||'New Build';
+document.getElementById('lvl-input').value=BUILD.level;
+document.getElementById('theory-btn').className='theory-btn'+(BUILD.theorycraft?' active':'');
+var tabs=[{id:'stats',icon:'\uD83D\uDCCA',label:'Stats'},{id:'armor',icon:'\uD83D\uDEE1\uFE0F',label:'Armor'},{id:'weapons',icon:'\u2694\uFE0F',label:'Weapons'},{id:'skills',icon:'\u26A1',label:'Skills'},{id:'factions',icon:'\uD83C\uDFF0',label:'Factions'},{id:'consumables',icon:'\uD83E\uDDEA',label:'Items'},{id:'effects',icon:'\uD83D\uDCD6',label:'Effects'}];
+var tabBar=document.getElementById('tab-bar');
+tabBar.innerHTML='';
+for(var i=0;i<tabs.length;i++){
+var btn=document.createElement('button');
+btn.className='tab-btn'+(CURRENT_TAB===tabs[i].id?' active':'');
+btn.innerHTML='<span class="tab-icon">'+tabs[i].icon+'</span><span>'+tabs[i].label+'</span>';
+btn.onclick=(function(tabId){return function(){switchTab(tabId);};})(tabs[i].id);
+tabBar.appendChild(btn);
+}
+renderTab(CURRENT_TAB);
+}
+
+function switchTab(tabId){CURRENT_TAB=tabId;var btns=document.querySelectorAll('.tab-btn');var tabs=['stats','armor','weapons','skills','factions','consumables','effects'];for(var i=0;i<btns.length;i++){btns[i].className='tab-btn'+(tabs[i]===tabId?' active':'');}renderTab(tabId);}
+
+function renderTab(tabId){
+var pane=document.getElementById('pane-'+tabId);
+if(!pane)return;
+var panes=document.querySelectorAll('.tab-pane');
+for(var i=0;i<panes.length;i++){panes[i].classList.remove('active');}
+pane.classList.add('active');
+if(tabId==='stats')renderStatsTab(pane);
+else if(tabId==='armor')renderArmorTab(pane);
+else if(tabId==='weapons')renderWeaponsTab(pane);
+else if(tabId==='skills')renderSkillsTab(pane);
+else if(tabId==='factions')renderFactionsTab(pane);
+else if(tabId==='consumables')renderConsumablesTab(pane);
+else if(tabId==='effects')renderEffectsTab(pane);
+}
+
+function calculateStats(){
+var r={health:100,stamina:100,mana:20,protection:0,impactResist:0,resistances:{physical:0,fire:0,frost:0,lightning:0,decay:0,ethereal:0},staminaCost:0,manaCost:0,moveSpeed:0,coldResist:0,heatResist:0,pouch:0};
+Object.keys(BUILD.armor||{}).forEach(function(slot){var name=BUILD.armor[slot];if(!name)return;var a=findArmor(name);if(a){r.protection+=a.protection||0;r.impactResist+=(a.resistances&&a.resistances.impact)||0;r.staminaCost+=a.stamina_cost_reduction||0;r.manaCost+=a.mana_cost_reduction||0;r.moveSpeed+=a.move_speed||0;r.coldResist+=a.cold_resist||0;r.heatResist+=a.heat_resist||0;r.pouch+=a.pouch||0;if(a.resistances){['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){if(a.resistances[k])r.resistances[k]=(r.resistances[k]||0)+a.resistances[k];});}}});
+['weapon_main','weapon_off'].forEach(function(slot){var name=BUILD.weapons&&BUILD.weapons[slot];if(!name)return;var w=findWeapon(name);if(w&&w.damage_stats&&w.damage_stats.base_damage){Object.keys(w.damage_stats.base_damage).forEach(function(k){var v=w.damage_stats.base_damage[k];if(k==='impact')r.impactResist+=v;else r.resistances[k]=(r.resistances[k]||0)+v;});}});
+(BUILD.skills||[]).forEach(function(name){var s=findSkill(name);if(s&&s.effects){var m=s.effects.match(/([+-])([0-9]+)\s*(health|stamina|mana)/i);if(m){var key=m[3].toLowerCase();r[key]+=parseInt(m[2])*(m[1]==='-'?-1:1);}}});
+return r;
+}
+
+function findArmor(name){for(var i=0;i<DATA.armor.length;i++){if(DATA.armor[i].name===name)return DATA.armor[i];}return null;}
+function findWeapon(name){for(var i=0;i<DATA.weapons.length;i++){if(DATA.weapons[i].name===name)return DATA.weapons[i];}return null;}
+function findSkill(name){for(var i=0;i<DATA.skills.length;i++){if(DATA.skills[i].name===name)return DATA.skills[i];}return null;}
+
+function renderStatsTab(pane){
+var stats=calculateStats();
+var ptsUsed=(BUILD.skills||[]).length;
+var ptsLeft=BUILD.theorycraft?'\u221E':(BUILD.level-ptsUsed);
+var btLeft=3-(BUILD.breakthroughsUsed||0);
+var equippedArmor=[];var equippedWeapons=[];var selFaction=null;var selSkills=[];var equippedCons=[];
+Object.keys(BUILD.armor||{}).forEach(function(slot){var name=BUILD.armor[slot];if(!name)return;var item=findArmor(name);if(item)equippedArmor.push({slot:slot,item:item});});
+Object.keys(BUILD.weapons||{}).forEach(function(slot){var name=BUILD.weapons[slot];if(!name)return;var item=findWeapon(name);if(item)equippedWeapons.push({slot:slot,item:item});});
+if(BUILD.faction){for(var i=0;i<DATA.factions.length;i++){if(DATA.factions[i].id===BUILD.faction){selFaction=DATA.factions[i];break;}}}
+(BUILD.skills||[]).forEach(function(name){var s=findSkill(name);if(s)selSkills.push(s);});
+(BUILD.consumables||[]).forEach(function(name){for(var i=0;i<DATA.consumables.length;i++){if(DATA.consumables[i].name===name){equippedCons.push(DATA.consumables[i]);break;}}});
+
+var html='';
+html+='<div class="hero-card"><div class="hero-grid">';
+html+='<div class="hero-stat"><div class="hero-ico">\u2764\uFE0F</div><div class="hero-val health">'+stats.health+'</div><div class="hero-lbl">Health</div></div>';
+html+='<div class="hero-stat"><div class="hero-ico">\u26A1</div><div class="hero-val stamina">'+stats.stamina+'</div><div class="hero-lbl">Stamina</div></div>';
+html+='<div class="hero-stat"><div class="hero-ico">\uD83D\uDD2E</div><div class="hero-val mana">'+stats.mana+'</div><div class="hero-lbl">Mana</div></div>';
+html+='</div></div>';
+html+='<div class="pts-row">';
+html+='<div class="pts-card"><div class="pts-ico">\u26A1</div><div class="pts-info"><h4>Skill Points</h4><div class="pts-val'+(ptsLeft<0?' warn':'')+'">'+ptsUsed+' / '+(BUILD.theorycraft?'\u221E':BUILD.level)+'</div></div></div>';
+html+='<div class="pts-card"><div class="pts-ico">\uD83D\uDCAB</div><div class="pts-info"><h4>Breakthroughs</h4><div class="pts-val'+(btLeft<=0?' warn':'')+'">'+(BUILD.breakthroughsUsed||0)+' / 3</div></div></div>';
+html+='</div>';
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83D\uDEE1\uFE0F</span><span class="sec-title">Defense</span></div><div class="sec-body">';
+html+=statRow('Protection',stats.protection,{noPlus:true});
+html+=statRow('Impact Resist',stats.impactResist,{noPlus:true});
+html+='<div class="resist-grid">';
+html+=resistItem('physical','Physical',stats.resistances.physical||0);
+html+=resistItem('fire','Fire',stats.resistances.fire||0);
+html+=resistItem('frost','Frost',stats.resistances.frost||0);
+html+=resistItem('lightning','Lightning',stats.resistances.lightning||0);
+html+=resistItem('decay','Decay',stats.resistances.decay||0);
+html+=resistItem('ethereal','Ethereal',stats.resistances.ethereal||0);
+html+='</div></div></div>';
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\u2699\uFE0F</span><span class="sec-title">Modifiers</span></div><div class="sec-body">';
+html+=statRow('Stamina Cost',-stats.staminaCost,{suffix:'%'});
+html+=statRow('Mana Cost',-stats.manaCost,{suffix:'%'});
+html+=statRow('Move Speed',stats.moveSpeed,{suffix:'%'});
+html+=statRow('Cold Protection',stats.coldResist,{noPlus:true});
+html+=statRow('Heat Protection',stats.heatResist,{noPlus:true});
+html+=statRow('Pouch Bonus',stats.pouch,{noPlus:true});
+html+='</div></div>';
+if(selFaction){html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDFF0</span><span class="sec-title">Faction</span></div><div class="sec-body"><div style="padding:4px 0"><div style="font-size:11px;color:var(--gold);font-weight:600">'+escHtml(selFaction.name)+'</div><div style="font-size:9px;color:var(--dim);margin-top:2px;line-height:1.4">'+escHtml(selFaction.description||'')+'</div></div></div></div>';}
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDF92</span><span class="sec-title">Equipment</span></div><div class="sec-body">';
+if(equippedArmor.length+equippedWeapons.length>0){html+='<div class="chip-row">';for(var i=0;i<equippedArmor.length;i++){html+=chipHtml(equippedArmor[i].item);}for(var j=0;j<equippedWeapons.length;j++){html+=chipHtml(equippedWeapons[j].item);}html+='</div>';}else{html+='<div class="chip-empty">No equipment selected</div>';}
+html+='</div></div>';
+if(equippedCons.length>0){html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83E\uDDEA</span><span class="sec-title">Consumables</span></div><div class="sec-body"><div class="chip-row">';for(var k=0;k<equippedCons.length;k++){html+=chipHtml(equippedCons[k]);}html+='</div></div></div>';}
+if(selSkills.length>0){html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\u26A1</span><span class="sec-title">Skills ('+selSkills.length+')</span></div><div class="sec-body"><div class="chip-row">';for(var m=0;m<selSkills.length;m++){html+=chipHtml(selSkills[m]);}html+='</div></div></div>';}
+pane.innerHTML=html;
+}
+
+function statRow(lbl,val,opts){opts=opts||{};var cls='sval';if(val>0&&!opts.noPlus)cls+=' pos';if(val<0)cls+=' neg';var d=(val>0&&!opts.noPlus?'+':'')+val+(opts.suffix||'');var dot=opts.dot?'<span class="sdot '+opts.dot+'"></span>':'';return '<div class="srow"><span class="sname">'+dot+lbl+'</span><span class="'+cls+'">'+d+'</span></div>';}
+function resistItem(dot,lbl,val){return '<div class="resist-item"><span class="resist-lbl"><span class="sdot '+dot+'"></span>'+lbl+'</span><span class="resist-val">'+val+'</span></div>';}
+function chipHtml(item){var img=item.local_image?'<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">':'';return '<span class="chip">'+img+escHtml(item.name)+'</span>';}
+
+function renderArmorTab(pane){
+var slots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'back',label:'Back'},{id:'acc1',label:'Acc 1'},{id:'acc2',label:'Acc 2'},{id:'acc3',label:'Acc 3'},{id:'acc4',label:'Acc 4'}];
+var html='<div class="equip-grid">';
+for(var i=0;i<slots.length;i++){
+var slot=slots[i];
+var itemName=(BUILD.armor||{})[slot.id];
+var item=itemName?findArmor(itemName):null;
+html+='<div class="equip-slot'+(item?' filled':'')+'" onclick="openArmorPicker(\''+slot.id+'\')">';
+if(item&&item.local_image){html+='<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">';}
+html+='<div class="slot-lbl">'+slot.label+'</div>';
+if(item)html+='<div class="slot-item">'+escHtml(item.name)+'</div>';
+html+='</div>';
+}
+html+='</div>';
+pane.innerHTML=html;
+}
+
+function openArmorPicker(slotId){MODAL_SLOT=slotId;MODAL_SEARCH='';MODAL_FILTERS={type:[],rarity:[]};showArmorModal();}
+
+function showArmorModal(){
+var overlay=document.createElement('div');
+overlay.className='modal-overlay';
+overlay.id='modal-overlay';
+overlay.onclick=function(e){if(e.target===overlay)closeModal();};
+var slotLabels={head:'Head',chest:'Chest',legs:'Legs',back:'Back',acc1:'Accessory 1',acc2:'Accessory 2',acc3:'Accessory 3',acc4:'Accessory 4'};
+var slotMap={head:['head'],chest:['chest'],legs:['legs'],back:['backpack'],acc1:['necklace','ring'],acc2:['necklace','ring'],acc3:['necklace','ring'],acc4:['necklace','ring']};
+var validSlots=slotMap[MODAL_SLOT]||[];
+var q=MODAL_SEARCH.toLowerCase();
+var filtered=DATA.armor.filter(function(a){if(validSlots.indexOf(a.slot)<0)return false;if(q&&a.name.toLowerCase().indexOf(q)<0)return false;if(MODAL_FILTERS.type.length>0&&MODAL_FILTERS.type.indexOf(a.slot)<0)return false;return true;});
+var html='<div class="modal" onclick="event.stopPropagation()"><div class="modal-hdr"><div class="modal-title">'+(slotLabels[MODAL_SLOT]||MODAL_SLOT)+'</div><button class="modal-close" onclick="closeModal()">\u2715</button></div>';
+html+='<input class="modal-search" placeholder="Search armor..." value="'+escHtml(MODAL_SEARCH)+'" oninput="modalSearch(this.value)">';
+html+='<div class="modal-body">';
+html+='<div class="pill-group"><div class="pill-group-label">Type</div><div class="filter-pills">';
+['head','chest','legs','backpack','necklace','ring'].forEach(function(t){var active=MODAL_FILTERS.type.indexOf(t)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'type\',\''+t+'\')">'+t.charAt(0).toUpperCase()+t.slice(1)+'</button>';});
+html+='</div></div>';
+html+='<div class="pill-group"><div class="pill-group-label">Rarity</div><div class="filter-pills">';
+['Common','Unique','Crafted','Legacy','Set','Quest'].forEach(function(r){var active=MODAL_FILTERS.rarity.indexOf(r)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'rarity\',\''+r+'\')">'+r+'</button>';});
+html+='</div></div>';
+html+='<div class="item-grid">';
+for(var i=0;i<filtered.length;i++){var a=filtered[i];var rarityClass=getArmorRarityClass(a);html+='<div class="item-card '+rarityClass+'" onclick="selectArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">';if(a.local_image)html+='<img src="'+escHtml(imgSrc(a.local_image))+'" loading="lazy">';html+='<div class="ic-name">'+escHtml(a.name)+'</div>';if(a.set_name)html+='<div class="ic-set">'+escHtml(a.set_name)+'</div>';html+='<div class="ic-meta">Prot: '+(a.protection||0)+' | W: '+(a.weight||0)+'</div>';html+='</div>';}
+if(filtered.length===0){html+='<div style="color:var(--dim);padding:20px;text-align:center">No items found</div>';}
+html+='</div></div></div>';
+overlay.innerHTML=html;
+document.body.appendChild(overlay);
+}
+
+function getArmorRarityClass(a){if(a.set_name)return 'rarity-set';var desc=(a.description||'').toLowerCase();if(desc.indexOf('unique')>=0)return 'rarity-unique';if(desc.indexOf('craft')>=0)return 'rarity-crafted';if(desc.indexOf('legacy')>=0)return 'rarity-legacy';if(desc.indexOf('quest')>=0)return 'rarity-quest';return 'rarity-common';}
+function modalSearch(val){MODAL_SEARCH=val;refreshModal();}
+function toggleModalFilter(type,val){if(!MODAL_FILTERS[type])MODAL_FILTERS[type]=[];var idx=MODAL_FILTERS[type].indexOf(val);if(idx>=0)MODAL_FILTERS[type].splice(idx,1);else MODAL_FILTERS[type].push(val);refreshModal();}
+function refreshModal(){closeModal();showArmorModal();}
+function selectArmor(name){if(!BUILD.armor)BUILD.armor={};BUILD.armor[MODAL_SLOT]=name;saveBuild();closeModal();renderTab('armor');}
+function closeModal(){var overlay=document.getElementById('modal-overlay');if(overlay)overlay.parentNode.removeChild(overlay);}
+
+function renderWeaponsTab(pane){
+var slots=[{id:'weapon_main',label:'Main Hand'},{id:'weapon_off',label:'Off Hand'}];
+var html='<div class="equip-grid weapons">';
+for(var i=0;i<slots.length;i++){
+var slot=slots[i];
+var itemName=(BUILD.weapons||{})[slot.id];
+var item=itemName?findWeapon(itemName):null;
+html+='<div class="equip-slot'+(item?' filled':'')+'" onclick="openWeaponPicker(\''+slot.id+'\')">';
+if(item&&item.local_image){html+='<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">';}
+html+='<div class="slot-lbl">'+slot.label+'</div>';
+if(item)html+='<div class="slot-item">'+escHtml(item.name)+'</div>';
+html+='</div>';
+}
+html+='</div>';
+pane.innerHTML=html;
+}
+
+function openWeaponPicker(slotId){MODAL_SLOT=slotId;MODAL_SEARCH='';MODAL_FILTERS={type:[],rarity:[],dmg:[]};showWeaponModal();}
+
+function showWeaponModal(){
+var overlay=document.createElement('div');
+overlay.className='modal-overlay';
+overlay.id='modal-overlay';
+overlay.onclick=function(e){if(e.target===overlay)closeModal();};
+var q=MODAL_SEARCH.toLowerCase();
+var filtered=DATA.weapons.filter(function(w){if(q&&w.name.toLowerCase().indexOf(q)<0)return false;if(MODAL_FILTERS.type.length>0&&MODAL_FILTERS.type.indexOf(w.weapon_type)<0)return false;if(MODAL_FILTERS.dmg.length>0){var hasDmg=false;if(w.damage_stats&&w.damage_stats.base_damage){MODAL_FILTERS.dmg.forEach(function(dt){if(w.damage_stats.base_damage[dt]>0)hasDmg=true;});}if(!hasDmg)return false;}return true;});
+var html='<div class="modal" onclick="event.stopPropagation()"><div class="modal-hdr"><div class="modal-title">'+(MODAL_SLOT==='weapon_main'?'Main Hand':'Off Hand')+'</div><button class="modal-close" onclick="closeModal()">\u2715</button></div>';
+html+='<input class="modal-search" placeholder="Search weapons..." value="'+escHtml(MODAL_SEARCH)+'" oninput="modalSearch(this.value)">';
+html+='<div class="modal-body">';
+html+='<div class="pill-group"><div class="pill-group-label">Type</div><div class="filter-pills">';
+['Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield'].forEach(function(t){var active=MODAL_FILTERS.type.indexOf(t)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'type\',\''+t+'\')">'+t+'</button>';});
+html+='</div></div>';
+html+='<div class="pill-group"><div class="pill-group-label">Damage Type</div><div class="filter-pills">';
+['physical','fire','frost','lightning','decay','ethereal','impact'].forEach(function(dt){var active=MODAL_FILTERS.dmg.indexOf(dt)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'dmg\',\''+dt+'\')">'+dt.charAt(0).toUpperCase()+dt.slice(1)+'</button>';});
+html+='</div></div>';
+html+='<div class="item-grid">';
+for(var i=0;i<filtered.length;i++){var w=filtered[i];var rarityClass=getWeaponRarityClass(w);html+='<div class="item-card '+rarityClass+'" onclick="selectWeapon(\''+escHtml(w.name).replace(/'/g,"\\'")+'\')">';if(w.local_image)html+='<img src="'+escHtml(imgSrc(w.local_image))+'" loading="lazy">';html+='<div class="ic-name">'+escHtml(w.name)+'</div>';html+='<div class="ic-meta">'+(w.weapon_type||'')+(w.handedness?' \u00B7 '+w.handedness:'')+'</div>';if(w.damage_stats&&w.damage_stats.base_damage){var dmgStr=Object.keys(w.damage_stats.base_damage).filter(function(k){return w.damage_stats.base_damage[k]>0;}).slice(0,3).map(function(k){return k.substring(0,3)+': '+w.damage_stats.base_damage[k];}).join(' | ');html+='<div class="ic-meta">'+dmgStr+'</div>';}html+='</div>';}
+if(filtered.length===0){html+='<div style="color:var(--dim);padding:20px;text-align:center">No weapons found</div>';}
+html+='</div></div></div>';
+overlay.innerHTML=html;
+document.body.appendChild(overlay);
+}
+
+function getWeaponRarityClass(w){var desc=(w.description||'').toLowerCase();if(desc.indexOf('unique')>=0)return 'rarity-unique';if(desc.indexOf('craft')>=0)return 'rarity-crafted';if(desc.indexOf('legacy')>=0)return 'rarity-legacy';if(desc.indexOf('quest')>=0)return 'rarity-quest';return 'rarity-common';}
+function selectWeapon(name){if(!BUILD.weapons)BUILD.weapons={};BUILD.weapons[MODAL_SLOT]=name;saveBuild();closeModal();renderTab('weapons');}
+
+function renderSkillsTab(pane){
+var html='';
+html+='<input class="search-bar" placeholder="Search skills..." oninput="skillSearch(this.value)">';
+html+='<div class="filter-pills" id="skill-class-filters">';
+html+='<button class="pill active" onclick="filterSkillsByClass(null)">All</button>';
+for(var i=0;i<DATA.classes.length;i++){html+='<button class="pill" onclick="filterSkillsByClass(\''+escHtml(DATA.classes[i].name).replace(/'/g,"\\'")+'\')">'+escHtml(DATA.classes[i].name)+'</button>';}
+html+='</div>';
+html+='<div id="skills-list"></div>';
+pane.innerHTML=html;
+renderSkillsList();
+}
+
+function skillSearch(val){SKILL_SEARCH=val;renderSkillsList();}
+function filterSkillsByClass(cls){SKILL_CLASS_FILTER=cls;var pills=document.querySelectorAll('#skill-class-filters .pill');var labels=['All'];for(var i=0;i<DATA.classes.length;i++)labels.push(DATA.classes[i].name);for(var j=0;j<pills.length;j++){pills[j].className='pill'+(labels[j]===cls?' active':'');}renderSkillsList();}
+
+function renderSkillsList(){
+var container=document.getElementById('skills-list');
+if(!container)return;
+var filtered=DATA.skills.filter(function(s){if(SKILL_CLASS_FILTER&&s.parent_class!==SKILL_CLASS_FILTER)return false;if(SKILL_SEARCH){var q=SKILL_SEARCH.toLowerCase();if(s.name.toLowerCase().indexOf(q)<0&&(!s.effects||s.effects.toLowerCase().indexOf(q)<0))return false;}return true;});
+var byClass={};
+filtered.forEach(function(s){if(!byClass[s.parent_class])byClass[s.parent_class]=[];byClass[s.parent_class].push(s);});
+Object.keys(byClass).forEach(function(k){byClass[k].sort(function(a,b){var order=function(t){return t===0?4:t;};return order(a.tier)-order(b.tier);});});
+var html='';
+var ptsUsed=(BUILD.skills||[]).length;
+var ptsLeft=BUILD.theorycraft?999:BUILD.level-ptsUsed;
+for(var i=0;i<DATA.classes.length;i++){
+var cls=DATA.classes[i];
+var skills=byClass[cls.name];
+if(!skills||skills.length===0)continue;
+html+='<div style="margin-bottom:10px">';
+html+='<div class="class-header" onclick="toggleClassSkills(\''+escHtml(cls.name).replace(/'/g,"\\'")+'\')">';
+if(cls.local_image)html+='<img class="class-icon" src="'+escHtml(imgSrc(cls.local_image))+'">';
+html+='<div class="class-info"><h3>'+escHtml(cls.name)+'</h3><p>'+escHtml(cls.teacher)+' \u2014 '+escHtml(cls.location)+'</p></div>';
+if(cls.is_dlc)html+='<span class="class-dlc">DLC</span>';
+html+='</div>';
+html+='<div class="skills-list" id="skills-'+escHtml(cls.name).replace(/\s+/g,'-')+'" style="display:none">';
+for(var j=0;j<skills.length;j++){
+var skill=skills[j];
+var isSel=(BUILD.skills||[]).indexOf(skill.name)>=0;
+var locked=isSkillLocked(skill,ptsLeft);
+html+='<div class="skill-item'+(isSel?' selected':'')+(locked?' locked':'')+'" onclick="toggleSkill(\''+escHtml(skill.name).replace(/'/g,"\\'")+'\')">';
+if(skill.local_image)html+='<img src="'+escHtml(imgSrc(skill.local_image))+'" loading="lazy">';
+html+='<div class="skill-info">';
+html+='<div class="skill-name">'+escHtml(skill.name)+'</div>';
+html+='<div class="skill-meta">'+(skill.skill_type||'');
+if(skill.subtype)html+=' \u00B7 '+escHtml(skill.subtype);
+if(skill.mana_cost)html+=' \u00B7 '+escHtml(skill.mana_cost)+' Mana';
+if(skill.stamina_cost)html+=' \u00B7 '+escHtml(skill.stamina_cost)+' Stam';
+html+='</div>';
+if(skill.effects)html+='<div class="skill-meta" style="margin-top:2px">'+escHtml(skill.effects.substring(0,70))+(skill.effects.length>70?'...':'')+'</div>';
+html+='</div>';
+html+='<span class="skill-tier'+(skill.tier===2?' t2':skill.tier===3?' t3':'')+'">'+(skill.tier===0?'SP':(skill.costs_breakthrough?'BT T'+skill.tier:'T'+skill.tier))+'</span>';
+html+='</div>';
+}
+html+='</div></div>';
+}
+container.innerHTML=html;
+}
+
+function toggleClassSkills(clsName){var id='skills-'+clsName.replace(/\s+/g,'-');var el=document.getElementById(id);if(el){el.style.display=el.style.display==='none'?'block':'none';}}
+function isSkillLocked(skill,ptsLeft){if(BUILD.theorycraft)return false;if((BUILD.skills||[]).indexOf(skill.name)>=0)return false;if(skill.costs_breakthrough&&(BUILD.breakthroughsUsed||0)>=3)return true;if(ptsLeft<=0)return true;return false;}
+function toggleSkill(name){var idx=(BUILD.skills||[]).indexOf(name);var skill=findSkill(name);var isBT=skill&&skill.costs_breakthrough;if(idx>=0){BUILD.skills.splice(idx,1);if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)-1;}else{var ptsUsed=(BUILD.skills||[]).length;var ptsLeft=BUILD.theorycraft?999:BUILD.level-ptsUsed;if(!BUILD.theorycraft&&ptsLeft<=0)return;if(isBT&&!BUILD.theorycraft&&(BUILD.breakthroughsUsed||0)>=3)return;BUILD.skills.push(name);if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)+1;}saveBuild();renderSkillsList();renderBuilder();}
+
+function renderFactionsTab(pane){
+var html='<div style="font-size:10px;color:var(--dim);margin-bottom:8px;padding:0 2px">Choose your faction.</div>';
+for(var i=0;i<DATA.factions.length;i++){
+var f=DATA.factions[i];
+var isSel=BUILD.faction===f.id;
+html+='<div class="faction-card'+(isSel?' selected':'')+'" onclick="selectFaction(\''+f.id+'\')">';
+html+='<div class="faction-name">'+escHtml(f.name)+'</div>';
+html+='<div class="faction-desc">'+escHtml(f.description||'')+'</div>';
+if(f.local_image)html+='<img src="'+escHtml(imgSrc(f.local_image))+'" style="width:32px;height:32px;margin-top:5px;border-radius:4px">';
+html+='</div>';
+}
+pane.innerHTML=html;
+}
+
+function selectFaction(id){BUILD.faction=BUILD.faction===id?null:id;saveBuild();renderTab('factions');renderBuilder();}
+
+function renderConsumablesTab(pane){
+var html='';
+html+='<input class="search-bar" placeholder="Search items..." oninput="consSearch(this.value)">';
+html+='<div class="filter-pills" id="cons-type-filters">';
+html+='<button class="pill active" onclick="filterConsByType(null)">All</button>';
+['food','drink','potion','tool','ammunition','special'].forEach(function(t){html+='<button class="pill" onclick="filterConsByType(\''+t+'\')">'+t.charAt(0).toUpperCase()+t.slice(1)+'</button>';});
+html+='</div>';
+html+='<div id="cons-list"></div>';
+pane.innerHTML=html;
+renderConsList();
+}
+
+function consSearch(val){CONS_SEARCH=val;renderConsList();}
+function filterConsByType(type){CONS_TYPE_FILTER=type;var pills=document.querySelectorAll('#cons-type-filters .pill');var labels=['All','food','drink','potion','tool','ammunition','special'];for(var i=0;i<pills.length;i++){pills[i].className='pill'+(labels[i]===type?' active':'');}renderConsList();}
+
+function renderConsList(){
+var container=document.getElementById('cons-list');
+if(!container)return;
+var filtered=DATA.consumables.filter(function(c){if(CONS_TYPE_FILTER&&c.consumable_type!==CONS_TYPE_FILTER)return false;if(CONS_SEARCH){var q=CONS_SEARCH.toLowerCase();if(c.name.toLowerCase().indexOf(q)<0&&(!c.description||c.description.toLowerCase().indexOf(q)<0))return false;}return true;});
+var html='';
+for(var i=0;i<filtered.length;i++){
+var c=filtered[i];
+var isSel=(BUILD.consumables||[]).indexOf(c.name)>=0;
+html+='<div class="cons-item'+(isSel?' selected':'')+'" onclick="toggleCons(\''+escHtml(c.name).replace(/'/g,"\\'")+'\')">';
+if(c.local_image)html+='<img src="'+escHtml(imgSrc(c.local_image))+'" loading="lazy">';
+html+='<div class="cons-info">';
+html+='<div class="cons-name">'+escHtml(c.name)+'</div>';
+html+='<div class="cons-type">'+escHtml(c.consumable_type||'')+(c.weight?' \u00B7 '+c.weight+'kg':'')+(c.price?' \u00B7 '+c.price+'s':'')+'</div>';
+if(c.description)html+='<div class="cons-effects">'+escHtml(c.description.substring(0,50))+(c.description.length>50?'...':'')+'</div>';
+html+='</div></div>';
+}
+container.innerHTML=html;
+}
+
+function toggleCons(name){var idx=(BUILD.consumables||[]).indexOf(name);if(idx>=0){BUILD.consumables.splice(idx,1);}else{BUILD.consumables.push(name);}saveBuild();renderConsList();renderBuilder();}
+
+function renderEffectsTab(pane){
+var html='';
+html+='<input class="search-bar" placeholder="Search effects..." oninput="effectSearch(this.value)">';
+html+='<div id="effects-list"></div>';
+pane.innerHTML=html;
+renderEffectsList();
+}
+
+function effectSearch(val){EFFECT_SEARCH=val;renderEffectsList();}
+
+function renderEffectsList(){
+var container=document.getElementById('effects-list');
+if(!container)return;
+var filtered=DATA.effects.filter(function(e){if(EFFECT_SEARCH){var q=EFFECT_SEARCH.toLowerCase();if((e.name||'').toLowerCase().indexOf(q)<0&&(!e.description||e.description.toLowerCase().indexOf(q)<0))return false;}return true;});
+var html='';
+for(var i=0;i<filtered.length;i++){
+var e=filtered[i];
+html+='<div class="effect-item">';
+if(e.local_image)html+='<img src="'+escHtml(imgSrc(e.local_image))+'" loading="lazy">';
+html+='<div class="effect-info">';
+html+='<div style="display:flex;align-items:center;gap:5px">';
+html+='<span class="effect-name">'+escHtml(e.name||'Unknown')+'</span>';
+if(e.category)html+='<span class="effect-cat">'+escHtml(e.category)+'</span>';
+html+='</div>';
+if(e.description)html+='<div class="effect-desc">'+escHtml(e.description)+'</div>';
+if(e.duration)html+='<div class="effect-desc">Duration: '+escHtml(e.duration)+'</div>';
+html+='</div></div>';
+}
+container.innerHTML=html;
+}
+
+function saveBuild(){try{localStorage.setItem('outward-build',JSON.stringify(BUILD));}catch(e){}}
+function updateLevel(val){BUILD.level=Math.min(50,Math.max(1,parseInt(val)||1));saveBuild();renderBuilder();}
+function toggleTheorycraft(){BUILD.theorycraft=!BUILD.theorycraft;saveBuild();renderBuilder();}
+function resetBuild(){if(confirm('Reset build?')){BUILD={name:'New Build',level:1,theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,controller:{}};saveBuild();renderBuilder();}}
+function exportBuild(){var json=JSON.stringify(BUILD,null,2);var blob=new Blob([json],{type:'application/json'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download=(BUILD.name||'build').replace(/\s+/g,'_')+'.json';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);}
+function importBuild(){var input=document.createElement('input');input.type='file';input.accept='.json';input.onchange=function(){var f=input.files[0];if(!f)return;var reader=new FileReader();reader.onload=function(){try{var d=JSON.parse(reader.result);BUILD=Object.assign({},BUILD,d);saveBuild();renderBuilder();}catch(e){alert('Invalid build file');}};reader.readAsText(f);};input.click();}
+
+loadData();
 </script>
 </body>
 </html>
