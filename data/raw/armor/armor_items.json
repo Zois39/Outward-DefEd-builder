@@ -12171,7 +12171,6 @@
     "description": "Bag with small carrying capacity, specially made to not interfere with the dodge",
     "local_image": "assets/images/armor/armor_Adventurer_Backpack.png",
     "special_effects": [
-      "No dodge interference",
       "35 Capacity"
     ]
   },
@@ -12427,9 +12426,7 @@
     "description": "When held in hand, helps protect the wielder from Status Ailments. Can be refilled with thick oil.",
     "local_image": "assets/images/armor/armor_Djinn's_Lamp.png",
     "special_effects": [
-      "Provides light",
-      "No fuel required",
-      "Cannot be extinguished"
+      "Grants +15 Status Resistance"
     ]
   },
   {
@@ -12483,9 +12480,7 @@
     "description": "A mage's enchantable lantern.",
     "local_image": "assets/images/armor/armor_Virgin_Lantern.png",
     "special_effects": [
-      "Provides light",
-      "Passively regains Fuel over time",
-      "Requires no fuel"
+      "If the lantern is Enchanted, it will passively gain Fuel over time, but <b>only</b> if it is equipped in your Hand or visible on your Backpack, and not lit."
     ]
   }
 ]
