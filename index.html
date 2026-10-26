@@ -263,6 +263,28 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
   </div>
 </div>
 <script>
+console.log('Script starting...');
+window.onerror = function(msg, url, line, col, error) {
+  console.error('GLOBAL ERROR:', msg, 'at line', line);
+  var errDiv = document.getElementById('loading-error');
+  var errBtn = document.getElementById('retry-btn');
+  if (errDiv) {
+    errDiv.textContent = 'Error: ' + msg + ' (line ' + line + ')';
+    errDiv.style.display = 'block';
+  }
+  if (errBtn) errBtn.style.display = 'block';
+  return false;
+};
+window.addEventListener('unhandledrejection', function(event) {
+  console.error('UNHANDLED PROMISE REJECTION:', event.reason);
+  var errDiv = document.getElementById('loading-error');
+  if (errDiv) {
+    errDiv.textContent = 'Promise Error: ' + (event.reason && event.reason.message ? event.reason.message : event.reason);
+    errDiv.style.display = 'block';
+  }
+});
+console.log('Error handlers set up');
+
 window.onerror = function(msg, url, line, col, error) {
   var errDiv = document.getElementById('loading-error');
   var errBtn = document.getElementById('retry-btn');
@@ -388,6 +410,7 @@ function cleanDesc(text){
   text=text.replace(/\{[^}]*\}
 
 function loadData(){
+  console.log('loadData called');
   hideError();
   setProgress(5,'Loading skills...');
 
@@ -493,6 +516,7 @@ function loadData(){
       effects:e
     };
 
+    console.log('Data loaded successfully');
     setProgress(100,'Ready!');
 
     // Clear old build to ensure empty start
@@ -503,7 +527,8 @@ function loadData(){
       renderHome();
     },300);
   }).catch(function(e){
-    showError(e.message||'Failed to load data');
+    console.error('LOAD ERROR:', e);
+    showError(e.message||'Failed to load data: ' + e);
     setProgress(0,'Error');
   });
 }
