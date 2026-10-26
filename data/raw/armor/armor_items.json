@@ -12499,7 +12499,9 @@
     "description": "A mage's enchantable lantern.",
     "local_image": "assets/images/armor/armor_Virgin_Lantern.png",
     "special_effects": [
-      "If the lantern is Enchanted, it will passively gain Fuel over time, but <b>only</b> if it is equipped in your Hand or visible on your Backpack, and not lit."
+      "Passively gains Fuel over time when Enchanted",
+      "Must be equipped in Hand or on Backpack",
+      "Must not be lit"
     ]
   }
 ]
