@@ -13523,6 +13523,36 @@
       },
       "local_image": "assets/images/weapons/weapon_Zhorn_s_Glowstone_Dagger.png",
       "source_category": "loot_or_legacy"
+    },
+    {
+      "name": "Great Runic Blade",
+      "class": "Sword",
+      "type": "Two-Handed",
+      "ethereal": 39,
+      "impact": 19,
+      "stamcost": 6.3,
+      "attackspeed": 1.0,
+      "weight": 0.0,
+      "buy": 0,
+      "sell": 0,
+      "weapon_type": "sword",
+      "handedness": "two_handed",
+      "damage_stats": {
+        "base_damage": {
+          "ethereal": 39,
+          "impact": 19
+        },
+        "impact": 19,
+        "attack_speed": 1.0,
+        "stamina_cost": 6.3
+      },
+      "description": "Summoned magical sword that lasts for a limited amount of time.",
+      "special_effects": [
+        "Acts as a [[Lexicon]]"
+      ],
+      "source_category": "skill_summon",
+      "dlc": "",
+      "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png"
     }
   ]
 }
