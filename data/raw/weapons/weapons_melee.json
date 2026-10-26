@@ -13553,6 +13553,46 @@
       "source_category": "skill_summon",
       "dlc": "",
       "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png"
+    },
+    {
+      "name": "Ice-Flame Torch",
+      "class": "Lantern",
+      "type": "Torch",
+      "weight": 0.4,
+      "buy": 20,
+      "sell": 6,
+      "weapon_type": "torch",
+      "handedness": "torch",
+      "damage_stats": {
+        "base_damage": {},
+        "impact": 0,
+        "attack_speed": 1,
+        "stamina_cost": 0
+      },
+      "special_effects": [],
+      "source_category": "loot_or_legacy",
+      "dlc": "",
+      "local_image": "assets/images/weapons/weapon_Ice-Flame_Torch.png"
+    },
+    {
+      "name": "Makeshift Torch",
+      "class": "Lantern",
+      "type": "Torch",
+      "weight": 0.4,
+      "buy": 0,
+      "sell": 0,
+      "weapon_type": "torch",
+      "handedness": "torch",
+      "damage_stats": {
+        "base_damage": {},
+        "impact": 0,
+        "attack_speed": 1,
+        "stamina_cost": 0
+      },
+      "special_effects": [],
+      "source_category": "loot_or_legacy",
+      "dlc": "",
+      "local_image": "assets/images/weapons/weapon_Makeshift_Torch.png"
     }
   ]
 }
