@@ -1030,14 +1030,30 @@ function renderWeaponList(){
       if(w.crafting_recipe.station){html+='<div class="craft-station">Station: '+escHtml(w.crafting_recipe.station)+'</div>';}
       html+='</div>';
     }else if(w.source_category){
-      var sourceText='';
-      if(w.upgrade_paths&&w.upgrade_paths.length>0){sourceText='Legacy Item';}
-      else if(w.source_category==='loot_or_legacy'){sourceText='Loot';}
-      else{sourceText=w.source_category;}
-      html+='<div class="source-section">';
-      html+='<div class="source-title">\uD83D\uDCE6 Source:</div>';
-      html+='<div class="source-text">'+escHtml(sourceText)+'</div>';
-      html+='</div>';
+      // Runic summon weapons show rune requirements
+      if(w.source_category==='runic_summon' && w.summon_requirements){
+        html+='<div class="craft-section" style="background:rgba(142,68,173,.1);border-color:rgba(142,68,173,.3)">';
+        html+='<div class="craft-title" style="color:var(--purple)">\uD83D\uDD2E Summon Requirements:</div>';
+        w.summon_requirements.forEach(function(req){
+          html+='<div class="craft-ing" style="display:flex;align-items:center;gap:8px">';
+          if(req.image){
+            html+='<img src="'+escHtml(req.image)+'" style="width:24px;height:24px;object-fit:contain" onerror="this.style.display=\'none\'">';
+          }
+          html+='<span>'+escHtml(req.rune||req.runic||'Unknown')+'</span>';
+          html+='</div>';
+        });
+        html+='</div>';
+      }
+      else{
+        var sourceText='';
+        if(w.upgrade_paths&&w.upgrade_paths.length>0){sourceText='Legacy Item';}
+        else if(w.source_category==='loot_or_legacy'){sourceText='Loot';}
+        else{sourceText=w.source_category;}
+        html+='<div class="source-section">';
+        html+='<div class="source-title">\uD83D\uDCE6 Source:</div>';
+        html+='<div class="source-text">'+escHtml(sourceText)+'</div>';
+        html+='</div>';
+      }
     }
     var legacyHtmlW='';
     if(w.upgrade_paths&&w.upgrade_paths.length>0){
