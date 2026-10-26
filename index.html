@@ -266,7 +266,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 var DATA=null;
 var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
 var CURRENT_TAB='stats';
-var ARMOR_FILTER={slot:'all',rarity:'all',sort:'name'};
+var ARMOR_FILTER={slot:'all',rarity:'all',legacy:false,sort:'name'};
 var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
@@ -721,8 +721,8 @@ function getArmorRarityClass(a){
 
 function getArmorRarityName(a){
   var desc=(a.description||'').toLowerCase();
+  if(a.legacy_upgrade_to || a.legacy_upgrade_from)return 'Legacy';
   if(a.crafting_recipe&&a.crafting_recipe.length>0)return 'Crafted';
-  if(a.blacksmith_upgrade)return 'Legacy';
   if(desc.indexOf('unique')>=0)return 'Unique';
   if(desc.indexOf('quest')>=0)return 'Quest';
   return 'Common';
@@ -744,6 +744,8 @@ function renderArmorTab(pane){
     var ra=rarities[r];
     html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" '+makeClick('setArmorFilter','rarity|'+ra)+'>'+ra+'</button>';
   }
+  // Legacy filter button
+  html+='<button class="pill'+(ARMOR_FILTER.legacy?' active':'')+'" '+makeClick('setArmorFilter','legacy|'+!ARMOR_FILTER.legacy)+'>Legacy Only</button>';
   html+='</div></div>';
   html+='<select class="sort-select" onchange="setArmorFilter(\'sort\',this.value)">';
   html+='<option value="name"'+(ARMOR_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
@@ -758,7 +760,7 @@ function renderArmorTab(pane){
 }
 
 function clearArmorFilters(){
-  ARMOR_FILTER={slot:'all',rarity:'all',sort:'name'};
+  ARMOR_FILTER={slot:'all',rarity:'all',legacy:false,sort:'name'};
   ARMOR_SEARCH='';
   renderArmorTab(document.getElementById('pane-armor'));
 }
@@ -775,6 +777,7 @@ function renderArmorList(){
   var filtered=DATA.armor.filter(function(a){
     if(ARMOR_FILTER.slot!=='all'&&a.slot!==ARMOR_FILTER.slot)return false;
     if(ARMOR_FILTER.rarity!=='all'){var rClass=getArmorRarityName(a);if(rClass!==ARMOR_FILTER.rarity)return false;}
+    if(ARMOR_FILTER.legacy && !a.legacy_upgrade_to && !a.legacy_upgrade_from)return false;
     if(ARMOR_SEARCH){var q=ARMOR_SEARCH.toLowerCase();if(a.name.toLowerCase().indexOf(q)<0)return false;}
     return true;
   });
