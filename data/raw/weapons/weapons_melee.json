@@ -9695,38 +9695,38 @@
     },
     {
       "name": "Runic Blade",
-      "description": "Summoned magical sword that lasts for a limited amount of time.",
       "weapon_type": "sword",
-      "category_class": "sword",
       "handedness": "one_handed",
-      "image": "Runic Blade.png",
-      "image_url": "https://outward.wiki.gg/images/Runic_Blade.png?5e70b7",
-      "durability": null,
-      "weight": 0.0,
-      "price": {
-        "buy": 0.0,
-        "sell": 0.0
-      },
-      "crafting_recipe": null,
-      "upgrade_paths": null,
-      "requirements": null,
-      "special_effects": null,
-      "source": null,
-      "source_url": "https://outward.wiki.gg/wiki/Runic_Blade",
-      "dlc": null,
-      "set": null,
-      "object_id": "2000100",
       "damage_stats": {
         "base_damage": {
-          "ethereal": 31.0
+          "ethereal": 31
         },
-        "impact": 12.0,
+        "impact": 12,
         "attack_speed": 1.0,
         "stamina_cost": 4.0,
         "reach": 1.09
       },
-      "local_image": "assets/images/weapons/weapon_Runic_Blade.png",
-      "source_category": "loot_or_legacy"
+      "description": "Summoned magical sword that lasts for a limited amount of time. Acts as a Lexicon when held.",
+      "special_effects": [
+        "Acts as a Lexicon",
+        "Temporary summon (180 seconds)"
+      ],
+      "weight": 0.0,
+      "buy": 0,
+      "sell": 0,
+      "source_category": "runic_summon",
+      "summon_requirements": [
+        {
+          "rune": "Rune of the Runic Blade",
+          "image": "assets/images/skills/skill_Rune_of_the_Runic_Blade.png"
+        },
+        {
+          "runic": "Runic Magic",
+          "image": "assets/images/skills/skill_Runic_Magic.png"
+        }
+      ],
+      "dlc": "",
+      "local_image": "assets/images/weapons/weapon_Runic_Blade.png"
     },
     {
       "name": "Rusted Spear",
@@ -13526,31 +13526,35 @@
     },
     {
       "name": "Great Runic Blade",
-      "class": "Sword",
-      "type": "Two-Handed",
-      "ethereal": 39,
-      "impact": 19,
-      "stamcost": 6.3,
-      "attackspeed": 1.0,
-      "weight": 0.0,
-      "buy": 0,
-      "sell": 0,
       "weapon_type": "sword",
       "handedness": "two_handed",
       "damage_stats": {
         "base_damage": {
-          "ethereal": 39,
-          "impact": 19
+          "ethereal": 39
         },
         "impact": 19,
         "attack_speed": 1.0,
         "stamina_cost": 6.3
       },
-      "description": "Summoned magical sword that lasts for a limited amount of time.",
+      "description": "Summoned magical sword that lasts for a limited amount of time. Acts as a Lexicon when held.",
       "special_effects": [
-        "Acts as a [[Lexicon]]"
+        "Acts as a Lexicon",
+        "Temporary summon (180 seconds)"
       ],
-      "source_category": "skill_summon",
+      "weight": 0.0,
+      "buy": 0,
+      "sell": 0,
+      "source_category": "runic_summon",
+      "summon_requirements": [
+        {
+          "rune": "Rune of the Great Runic Blade",
+          "image": "assets/images/skills/skill_Rune_of_the_Great_Runic_Blade.png"
+        },
+        {
+          "rune": "Runic Magic",
+          "image": "assets/images/skills/skill_Runic_Magic.png"
+        }
+      ],
       "dlc": "",
       "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png"
     },
