@@ -1034,14 +1034,32 @@ function renderWeaponList(){
       if(w.source_category==='runic_summon' && w.summon_requirements){
         html+='<div class="craft-section" style="background:rgba(142,68,173,.1);border-color:rgba(142,68,173,.3)">';
         html+='<div class="craft-title" style="color:var(--purple)">\uD83D\uDD2E Summon Requirements:</div>';
+
+        // Show rune combination if available
+        if(w.rune_combination){
+          html+='<div class="craft-ing" style="color:var(--gold);font-weight:600;margin-bottom:8px">';
+          html+=escHtml(w.rune_combination);
+          html+='</div>';
+        }
+
+        // Show prerequisite if any
+        if(w.prerequisite){
+          html+='<div class="craft-ing" style="color:var(--dim);font-size:10px;margin-bottom:8px">';
+          html+='Requires: '+escHtml(w.prerequisite);
+          html+='</div>';
+        }
+
+        // Show rune icons
+        html+='<div style="display:flex;gap:12px;flex-wrap:wrap">';
         w.summon_requirements.forEach(function(req){
-          html+='<div class="craft-ing" style="display:flex;align-items:center;gap:8px">';
+          html+='<div style="display:flex;flex-direction:column;align-items:center;gap:4px">';
           if(req.image){
-            html+='<img src="'+escHtml(req.image)+'" style="width:24px;height:24px;object-fit:contain" onerror="this.style.display=\'none\'">';
+            html+='<img src="'+escHtml(req.image)+'" style="width:32px;height:32px;object-fit:contain;border-radius:4px;background:var(--panel)" onerror="this.style.display=\'none\'">';
           }
-          html+='<span>'+escHtml(req.rune||req.runic||'Unknown')+'</span>';
+          html+='<span style="font-size:9px;color:var(--dim)">'+escHtml(req.rune||'Unknown')+'</span>';
           html+='</div>';
         });
+        html+='</div>';
         html+='</div>';
       }
       else{
