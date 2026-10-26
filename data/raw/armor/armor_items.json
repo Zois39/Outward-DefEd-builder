@@ -11197,7 +11197,7 @@
   },
   {
     "name": "Ice-Flame Torch",
-    "slot": "lantern",
+    "slot": "offhand",
     "description": "Alchemical torch that cools the wielder even in sweltering temperatures.",
     "effects": "Lowers Temperature Stage by 1 (cools player). Decreases temperature delta by -14. Must be held in off-hand.",
     "special_effects": [
@@ -11229,7 +11229,7 @@
   },
   {
     "name": "Makeshift Torch",
-    "slot": "lantern",
+    "slot": "offhand",
     "description": "Torch that shines weakly, held in the off hand. It burns out quickly, but warms up the wielder.",
     "effects": "Raises Temperature Stage by 1 (heats player). Increases temperature delta by +14. Must be held in off-hand.",
     "special_effects": [
