@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Outward Build Builder</title>
 <style>
-:root{--bg:#1a1410;--bg2:#241c12;--panel:#2a2118;--panel2:#33291d;--panel3:#3a2f1e;--gold:#c9a227;--gold2:#e8c547;--brown:#8b4513;--text:#e8dcc8;--dim:#a89878;--dim2:#7a6a55;--red:#c0392b;--green:#27ae60;--blue:#2980b9;--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px)}
+:root{--bg:#1a1410;--bg2:#241c12;--panel:#2a2118;--panel2:#33291d;--panel3:#3a2f1e;--gold:#c9a227;--gold2:#e8c547;--brown:#8b4513;--text:#e8dcc8;--dim:#a89878;--dim2:#7a6a55;--red:#c0392b;--green:#27ae60;--blue:#2980b9;--purple:#8e44ad;--orange:#e67e22;--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px)}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior-y:none}
 #app{min-height:100vh;min-height:100dvh}
@@ -46,8 +46,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .builder-header{display:flex;align-items:center;gap:4px;padding:6px 8px;padding-top:calc(6px + var(--sat));background:var(--bg2);border-bottom:1px solid var(--brown);position:sticky;top:0;z-index:50}
 .header-btn{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--brown);border-radius:5px;cursor:pointer;color:var(--text);font-size:12px;flex-shrink:0}
 .header-title{flex:1;font-size:12px;color:var(--gold);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.header-lvl{display:flex;align-items:center;gap:2px;font-size:9px;color:var(--dim)}
-.lvl-input{width:36px;padding:3px 2px;background:var(--panel);border:1px solid var(--brown);border-radius:4px;color:var(--gold);font-size:11px;text-align:center;font-family:inherit;font-weight:600}
+.silver-display{padding:3px 8px;background:var(--panel);border:1px solid var(--gold);border-radius:4px;color:var(--gold);font-size:10px;font-weight:600}
 .theory-btn{padding:3px 5px;background:var(--panel);border:1px solid var(--brown);border-radius:4px;color:var(--dim);font-size:8px;cursor:pointer;font-family:inherit;white-space:nowrap}
 .theory-btn.active{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:600}
 .builder-content{flex:1;padding-bottom:calc(58px + var(--sab))}
@@ -55,109 +54,142 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:3px 1px;background:none;border:none;cursor:pointer;color:var(--dim);font-family:inherit;font-size:6px;border-radius:3px}
 .tab-btn.active{color:var(--gold);background:rgba(201,162,39,.12)}
 .tab-icon{font-size:16px;line-height:1}
-.tab-pane{display:none;padding:8px;max-width:420px;margin:0 auto}
+.tab-pane{display:none;padding:10px;max-width:500px;margin:0 auto}
 .tab-pane.active{display:block}
-.sec-card{background:var(--panel);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px;overflow:hidden}
-.sec-hdr{display:flex;align-items:center;gap:5px;padding:8px 10px;background:var(--panel2);border-bottom:1px solid var(--brown)}
-.sec-icon{font-size:12px}
-.sec-title{font-size:9px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:600}
-.sec-body{padding:2px 10px 6px}
-.hero-card{background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--brown);border-radius:12px;padding:10px;margin-bottom:8px;position:relative;overflow:hidden}
+.sec-card{background:var(--panel);border:1px solid var(--brown);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.sec-hdr{display:flex;align-items:center;gap:6px;padding:10px 12px;background:var(--panel2);border-bottom:1px solid var(--brown)}
+.sec-icon{font-size:14px}
+.sec-title{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-weight:600}
+.sec-body{padding:4px 12px 8px}
+.hero-card{background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--brown);border-radius:14px;padding:14px;margin-bottom:10px;position:relative;overflow:hidden}
 .hero-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),var(--gold),var(--green),var(--blue))}
-.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
-.hero-stat{text-align:center;padding:6px 3px;background:rgba(0,0,0,.2);border-radius:6px}
-.hero-ico{font-size:14px;margin-bottom:1px}
-.hero-val{font-size:20px;font-weight:700;line-height:1}
+.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.hero-stat{text-align:center;padding:10px 4px;background:rgba(0,0,0,.2);border-radius:8px}
+.hero-ico{font-size:20px;margin-bottom:4px}
+.hero-val{font-size:26px;font-weight:700;line-height:1}
 .hero-val.health{color:#e74c3c}.hero-val.stamina{color:#2ecc71}.hero-val.mana{color:#3498db}
-.hero-lbl{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
-.pts-row{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:8px}
-.pts-card{background:var(--panel);border:1px solid var(--brown);border-radius:8px;padding:8px;display:flex;align-items:center;gap:6px}
-.pts-ico{width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:5px;font-size:14px;flex-shrink:0}
-.pts-info h4{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
-.pts-val{font-size:12px;color:var(--gold);font-weight:700}
+.hero-lbl{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.leyline-controls{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px;padding:8px;background:rgba(0,0,0,.15);border-radius:8px}
+.leyline-btn{width:36px;height:36px;border-radius:6px;background:var(--panel2);border:1px solid var(--brown);color:var(--text);font-size:18px;cursor:pointer;font-family:inherit}
+.leyline-btn:active{background:var(--gold);color:var(--bg)}
+.leyline-val{font-size:14px;font-weight:700;min-width:50px;text-align:center}
+.leyline-val.health{color:#e74c3c}.leyline-val.mana{color:#3498db}
+.pts-row{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+.pts-card{background:var(--panel);border:1px solid var(--brown);border-radius:10px;padding:10px;display:flex;align-items:center;gap:8px}
+.pts-ico{width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:6px;font-size:16px;flex-shrink:0}
+.pts-info h4{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.pts-val{font-size:14px;color:var(--gold);font-weight:700}
 .pts-val.warn{color:var(--red)}
-.resist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px;padding:6px 0}
-.resist-item{display:flex;align-items:center;justify-content:space-between;padding:4px 6px;background:var(--panel2);border-radius:4px}
-.resist-lbl{font-size:8px;color:var(--dim);display:flex;align-items:center;gap:3px}
-.resist-val{font-size:10px;font-weight:700;color:var(--gold)}
-.srow{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(139,69,19,.2);font-size:10px}
+.inventory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:8px 0}
+.inv-slot{aspect-ratio:1;background:var(--panel2);border:2px dashed var(--brown);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:4px;text-align:center;position:relative;min-height:70px}
+.inv-slot.filled{border-style:solid;border-color:var(--gold)}
+.inv-slot img{width:36px;height:48px;object-fit:cover;border-radius:4px;margin-bottom:2px}
+.inv-slot.weapon img{width:40px;height:52px}
+.inv-lbl{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+.inv-item{font-size:8px;margin-top:2px;line-height:1.2;max-height:20px;overflow:hidden}
+.quick-slots{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:8px 0}
+.quick-slot{aspect-ratio:1;background:var(--panel2);border:2px solid var(--blue);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:4px;min-height:60px}
+.quick-slot img{width:32px;height:40px;object-fit:cover;border-radius:3px}
+.resist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding:8px 0}
+.resist-item{display:flex;align-items:center;justify-content:space-between;padding:6px 8px;background:var(--panel2);border-radius:6px}
+.resist-lbl{font-size:10px;color:var(--dim);display:flex;align-items:center;gap:4px}
+.resist-val{font-size:12px;font-weight:700;color:var(--gold)}
+.srow{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(139,69,19,.2);font-size:12px}
 .srow:last-child{border-bottom:none}
-.sname{color:var(--text);display:flex;align-items:center;gap:4px}
-.sdot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.sname{color:var(--text);display:flex;align-items:center;gap:5px}
+.sdot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 .sdot.physical{background:#95a5a6}.sdot.fire{background:#e74c3c}.sdot.frost{background:#3498db}.sdot.lightning{background:#f1c40f}.sdot.decay{background:#2ecc71}.sdot.ethereal{background:#9b59b6}.sdot.impact{background:#e67e22}
-.sval{color:var(--gold);font-weight:600;font-size:11px}
+.sval{color:var(--gold);font-weight:600;font-size:13px}
 .sval.pos{color:var(--green)}.sval.neg{color:var(--red)}
-.equip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px 0}
-.equip-grid.weapons{grid-template-columns:repeat(2,1fr)}
-.equip-slot{aspect-ratio:1;background:var(--panel2);border:2px dashed var(--brown);border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:2px;text-align:center;position:relative}
-.equip-slot.filled{border-style:solid;border-color:var(--gold)}
-.equip-slot img{width:28px;height:36px;object-fit:cover;border-radius:3px;margin-bottom:1px}
-.slot-lbl{font-size:6px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
-.slot-item{font-size:7px;margin-top:1px;line-height:1.1}
-.item-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:4px;padding:4px 0}
-.item-card{background:var(--panel2);border:1px solid var(--brown);border-radius:6px;padding:6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.item-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:8px 0}
+@media(min-width:700px){.item-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.item-grid{grid-template-columns:repeat(4,1fr)}}
+.item-card{background:var(--panel2);border:1px solid var(--brown);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:6px;min-height:200px}
 .item-card.selected{border-color:var(--gold);background:var(--panel3)}
-.item-card img{width:32px;height:42px;object-fit:cover;border-radius:3px}
-.ic-name{font-size:9px;line-height:1.2}
-.ic-meta{font-size:7px;color:var(--dim)}
-.ic-set{font-size:7px;color:var(--gold)}
-.rarity-common{border-color:#95a5a6!important}
-.rarity-unique{border-color:var(--gold)!important}
-.rarity-crafted{border-color:var(--blue)!important}
-.rarity-legacy{border-color:var(--purple)!important}
-.rarity-set{border-color:var(--green)!important}
-.rarity-quest{border-color:var(--orange)!important}
-.search-bar{width:100%;padding:7px 9px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;color:var(--text);font-size:16px;font-family:inherit;margin-bottom:6px}
-.filter-pills{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:8px}
-.pill{padding:4px 6px;background:var(--panel);border:1px solid var(--brown);border-radius:12px;cursor:pointer;font-size:8px;color:var(--dim);font-family:inherit}
+.item-card.rarity-unique{border-color:var(--gold)}
+.item-card.rarity-crafted{border-color:var(--blue)}
+.item-card.rarity-legacy{border-color:var(--purple)}
+.item-card.rarity-set{border-color:var(--green)}
+.item-card.rarity-quest{border-color:var(--orange)}
+.item-header{display:flex;gap:10px;align-items:flex-start}
+.item-icon{width:48px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.item-title{flex:1;min-width:0}
+.item-name{font-size:14px;font-weight:600;line-height:1.3}
+.item-type{font-size:10px;color:var(--dim);margin-top:2px}
+.item-stats{display:flex;flex-direction:column;gap:4px;font-size:12px}
+.stat-line{display:flex;justify-content:space-between;padding:2px 0}
+.stat-label{color:var(--dim)}
+.stat-value{color:var(--gold);font-weight:600}
+.item-desc{font-size:11px;color:var(--dim);line-height:1.5;margin-top:4px}
+.item-set{font-size:10px;color:var(--gold);margin-top:4px}
+.item-actions{margin-top:auto;padding-top:8px}
+.equip-btn{width:100%;padding:10px;background:var(--brown);border:1px solid var(--gold);border-radius:6px;color:var(--text);font-size:12px;cursor:pointer;font-family:inherit}
+.equip-btn:hover{background:var(--gold);color:var(--bg)}
+.equip-btn.equipped{background:var(--gold);color:var(--bg)}
+.search-bar{width:100%;padding:10px 12px;background:var(--panel);border:1px solid var(--brown);border-radius:8px;color:var(--text);font-size:16px;font-family:inherit;margin-bottom:8px}
+.filter-section{margin-bottom:10px}
+.filter-label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.filter-pills{display:flex;gap:4px;flex-wrap:wrap}
+.pill{padding:6px 10px;background:var(--panel);border:1px solid var(--brown);border-radius:14px;cursor:pointer;font-size:10px;color:var(--dim);font-family:inherit}
 .pill.active{background:var(--gold);color:var(--bg);border-color:var(--gold)}
-.pill-group{margin-bottom:5px}
-.pill-group-label{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px}
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:200;display:flex;align-items:flex-end;justify-content:center}
-.modal{background:var(--panel);border:1px solid var(--gold);border-radius:12px 12px 0 0;width:100%;max-height:85vh;max-height:85dvh;display:flex;flex-direction:column}
-.modal-hdr{padding:8px 10px;border-bottom:1px solid var(--brown);display:flex;align-items:center;gap:5px}
-.modal-title{font-size:12px;color:var(--gold);flex:1}
-.modal-close{width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--panel2);border:1px solid var(--brown);border-radius:4px;cursor:pointer;color:var(--text);font-size:11px}
-.modal-search{margin:4px 8px;padding:6px;background:var(--panel2);border:1px solid var(--brown);border-radius:5px;color:var(--text);font-size:16px;font-family:inherit}
-.modal-body{flex:1;overflow-y:auto;padding:0 8px 8px}
-.skill-item{display:flex;align-items:center;gap:6px;padding:6px;margin-top:2px;background:var(--panel2);border:1px solid transparent;border-radius:4px;cursor:pointer}
+.sort-select{width:100%;padding:8px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;color:var(--text);font-size:12px;font-family:inherit;margin-bottom:8px}
+.class-section{margin-bottom:16px}
+.class-header{display:flex;align-items:center;gap:10px;padding:10px;background:var(--panel);border:1px solid var(--brown);border-radius:8px;margin-bottom:6px}
+.class-icon{width:36px;height:48px;object-fit:cover;border-radius:4px}
+.class-info h3{font-size:14px;color:var(--gold)}
+.class-info p{font-size:10px;color:var(--dim)}
+.tier-section{margin-bottom:8px}
+.tier-label{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;padding:6px 0;border-bottom:1px solid var(--brown);margin-bottom:4px}
+.skill-item{display:flex;align-items:center;gap:8px;padding:10px;margin-top:4px;background:var(--panel2);border:1px solid transparent;border-radius:8px;cursor:pointer;min-height:70px}
 .skill-item.selected{border-color:var(--gold);background:var(--panel3)}
 .skill-item.locked{opacity:.5}
-.skill-item img{width:28px;height:36px;object-fit:cover;border-radius:3px;flex-shrink:0}
+.skill-item.breakthrough{border-color:var(--gold);background:rgba(201,162,39,.1)}
+.skill-item img{width:36px;height:48px;object-fit:cover;border-radius:4px;flex-shrink:0}
 .skill-info{flex:1;min-width:0}
-.skill-name{font-size:10px}
-.skill-meta{font-size:7px;color:var(--dim)}
-.skill-tier{padding:1px 4px;background:var(--brown);color:var(--gold);font-size:6px;border-radius:2px;flex-shrink:0}
-.skill-tier.t2{background:var(--gold);color:var(--bg)}
-.skill-tier.t3{background:#7d6608;color:#fff}
-.class-header{display:flex;align-items:center;gap:8px;padding:8px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;cursor:pointer;user-select:none;margin-bottom:4px}
-.class-icon{width:28px;height:36px;object-fit:cover;border-radius:3px}
-.class-info h3{font-size:11px;color:var(--gold)}
-.class-info p{font-size:8px;color:var(--dim)}
-.class-dlc{margin-left:auto;padding:1px 4px;background:var(--brown);color:var(--gold);font-size:6px;border-radius:2px;text-transform:uppercase}
-.faction-card{background:var(--panel2);border:1px solid var(--brown);border-radius:8px;padding:10px;margin-bottom:6px;cursor:pointer}
+.skill-name{font-size:13px;font-weight:600}
+.skill-meta{font-size:10px;color:var(--dim);margin-top:2px}
+.skill-req{font-size:9px;color:var(--orange);margin-top:2px}
+.skill-excl{font-size:9px;color:var(--red);margin-top:2px}
+.skill-cost{font-size:11px;color:var(--gold);font-weight:600;margin-top:2px}
+.skill-tier-badge{padding:3px 6px;background:var(--brown);color:var(--gold);font-size:8px;border-radius:3px;flex-shrink:0}
+.skill-tier-badge.t2{background:var(--gold);color:var(--bg);font-weight:700}
+.skill-tier-badge.t3{background:#7d6608;color:#fff}
+.faction-card{background:var(--panel2);border:1px solid var(--brown);border-radius:12px;padding:14px;margin-bottom:10px;cursor:pointer}
 .faction-card.selected{border-color:var(--gold);background:var(--panel3)}
-.faction-name{font-size:12px;color:var(--gold);font-weight:600;margin-bottom:2px}
-.faction-desc{font-size:9px;color:var(--dim);line-height:1.4}
-.cons-item{display:flex;align-items:center;gap:6px;padding:6px;background:var(--panel2);border:1px solid transparent;border-radius:4px;margin-bottom:3px;cursor:pointer}
+.faction-name{font-size:16px;color:var(--gold);font-weight:700;margin-bottom:4px}
+.faction-desc{font-size:12px;color:var(--dim);line-height:1.5}
+.quest-item{background:var(--panel2);border:1px solid var(--brown);border-radius:10px;padding:12px;margin-bottom:8px}
+.quest-name{font-size:14px;color:var(--gold);font-weight:600;margin-bottom:4px}
+.quest-desc{font-size:11px;color:var(--dim);line-height:1.4;margin-bottom:8px}
+.quest-rewards{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.reward-chip{padding:4px 8px;background:var(--panel);border-radius:4px;font-size:10px;color:var(--gold)}
+.quest-outcome{padding:8px;background:var(--panel);border:1px solid var(--brown);border-radius:6px;margin-top:6px;cursor:pointer}
+.quest-outcome.selected{border-color:var(--gold);background:var(--panel3)}
+.outcome-name{font-size:12px;color:var(--text)}
+.outcome-locks{font-size:10px;color:var(--red);margin-top:4px}
+.cons-item{display:flex;gap:10px;padding:12px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px;cursor:pointer}
 .cons-item.selected{border-color:var(--gold);background:var(--panel3)}
-.cons-item img{width:28px;height:36px;object-fit:cover;border-radius:3px;flex-shrink:0}
+.cons-item img{width:40px;height:52px;object-fit:cover;border-radius:4px;flex-shrink:0}
 .cons-info{flex:1;min-width:0}
-.cons-name{font-size:10px}
-.cons-type{font-size:7px;color:var(--dim)}
-.cons-effects{font-size:7px;color:var(--dim);margin-top:1px}
-.effect-item{display:flex;align-items:center;gap:7px;padding:7px;background:var(--panel2);border:1px solid transparent;border-radius:5px;margin-bottom:3px}
-.effect-item img{width:32px;height:32px;object-fit:contain;border-radius:50%;flex-shrink:0}
+.cons-name{font-size:14px;font-weight:600}
+.cons-type{font-size:10px;color:var(--dim);margin-top:2px}
+.cons-desc{font-size:11px;color:var(--dim);line-height:1.4;margin-top:4px}
+.craft-section{margin-top:8px;padding:8px;background:var(--panel);border-radius:6px}
+.craft-title{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.craft-ingredients{font-size:11px;color:var(--text)}
+.craft-station{font-size:10px;color:var(--dim);margin-top:4px}
+.effect-item{display:flex;gap:10px;padding:12px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px}
+.effect-item img{width:48px;height:48px;object-fit:contain;border-radius:50%;flex-shrink:0}
 .effect-info{flex:1}
-.effect-name{font-size:10px;color:var(--gold)}
-.effect-desc{font-size:8px;color:var(--dim);margin-top:1px}
-.effect-cat{font-size:6px;padding:1px 3px;background:var(--brown);color:var(--gold);border-radius:2px;text-transform:uppercase}
-.chip-row{display:flex;flex-wrap:wrap;gap:3px;padding:4px 0}
-.chip{display:inline-flex;align-items:center;gap:2px;padding:2px 4px;background:var(--panel2);border-radius:3px;font-size:7px}
-.chip img{width:12px;height:15px;object-fit:cover;border-radius:2px}
-.chip-empty{color:var(--dim2);font-size:9px;padding:6px 0;text-align:center;font-style:italic}
-@media(min-width:900px){.home-menu{max-width:340px}.builder-content{display:grid;grid-template-columns:240px 1fr 280px;gap:0;padding-bottom:0}.tab-pane{display:block!important;border-right:1px solid var(--brown);max-width:none}.tab-bar{display:none}}
-@media(max-width:380px){.home-title{font-size:20px;letter-spacing:3px}.hero-val{font-size:17px}.pts-row{grid-template-columns:1fr}.equip-grid{grid-template-columns:repeat(3,1fr)}}
+.effect-name{font-size:14px;color:var(--gold);font-weight:600}
+.effect-desc{font-size:12px;color:var(--dim);line-height:1.4;margin-top:4px}
+.effect-cat{font-size:9px;padding:2px 6px;background:var(--brown);color:var(--gold);border-radius:3px;text-transform:uppercase;display:inline-block;margin-top:4px}
+.chip-row{display:flex;flex-wrap:wrap;gap:4px;padding:6px 0}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;background:var(--panel2);border-radius:4px;font-size:10px}
+.chip img{width:16px;height:20px;object-fit:cover;border-radius:2px}
+.chip-empty{color:var(--dim2);font-size:11px;padding:8px 0;text-align:center;font-style:italic}
+@media(min-width:900px){.home-menu{max-width:340px}.builder-content{display:grid;grid-template-columns:280px 1fr 320px;gap:0;padding-bottom:0}.tab-pane{display:block!important;border-right:1px solid var(--brown);max-width:none}.tab-bar{display:none}}
+@media(max-width:380px){.home-title{font-size:20px;letter-spacing:3px}.hero-val{font-size:20px}.item-grid{grid-template-columns:1fr}.inventory-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -191,11 +223,11 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
     <div class="builder-header">
       <button class="header-btn" onclick="showScreen('home-screen')">&#x2190;</button>
       <div class="header-title" id="build-name">New Build</div>
+      <div class="silver-display" id="silver-display">0s</div>
       <button class="theory-btn" id="theory-btn" onclick="toggleTheorycraft()">Theory</button>
       <button class="header-btn" onclick="exportBuild()" title="Export">&#x2B07;</button>
       <button class="header-btn" onclick="importBuild()" title="Import">&#x2B06;</button>
       <button class="header-btn" onclick="resetBuild()" title="Reset">&#x2715;</button>
-      <div class="header-lvl">Lv<input type="number" class="lvl-input" id="lvl-input" min="1" max="50" value="1" onchange="updateLevel(this.value)"></div>
     </div>
     <div class="builder-content" id="builder-content">
       <div class="tab-pane" id="pane-stats"></div>
@@ -209,19 +241,29 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
     <div class="tab-bar" id="tab-bar"></div>
   </div>
 </div>
-
 <script>
 var DATA=null;
-var BUILD={name:'New Build',level:1,theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,controller:{}};
+var BUILD={
+  name:'New Build',
+  theorycraft:false,
+  skills:[],
+  armor:{},
+  weapons:{},
+  consumables:[],
+  faction:null,
+  breakthroughsUsed:0,
+  leylines:{health:100,mana:20},
+  quickSlots:[null,null,null,null]
+};
 var CURRENT_TAB='stats';
-var MODAL_SLOT=null;
-var MODAL_SEARCH='';
-var MODAL_FILTERS={};
+var ARMOR_FILTER={slot:'all',rarity:'all',set:'all',sort:'name'};
+var WEAPON_FILTER={type:'all',hand:'all',rarity:'all',dmg:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
 var CONS_SEARCH='';
 var CONS_TYPE_FILTER=null;
 var EFFECT_SEARCH='';
+var QUEST_SELECTIONS={};
 
 function setProgress(pct,status){var bar=document.getElementById('loading-bar');var txt=document.getElementById('loading-status');if(bar)bar.style.width=pct+'%';if(txt)txt.textContent=status;}
 function showError(msg){var err=document.getElementById('loading-error');var btn=document.getElementById('retry-btn');if(err){err.textContent=msg;err.style.display='block';}if(btn)btn.style.display='block';}
@@ -234,29 +276,40 @@ function loadData(){
 hideError();
 setProgress(5,'Loading skills...');
 Promise.all([fetchJSON('skills/skills_tier1.json'),fetchJSON('skills/skills_tier2.json'),fetchJSON('skills/skills_tier3.json'),fetchJSON('skills/skills_special.json'),fetchJSON('skills/classes.json')]).then(function(r){
-setProgress(25,'Loading weapons...');
+setProgress(20,'Loading weapons...');
 return Promise.all([Promise.resolve(r),Promise.all([fetchJSON('weapons/weapons_melee.json'),fetchJSON('weapons/weapons_ranged.json'),fetchJSON('weapons/weapons_magical.json'),fetchJSON('weapons/shields.json')])]);
 }).then(function(results){
 var r=results[0];var w=results[1];
-setProgress(45,'Loading armor...');
-return Promise.all([Promise.resolve(r),Promise.resolve(w),fetchJSON('armor/armor_items.json')]);
+setProgress(35,'Loading armor...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),fetchJSON('armor/armor_items.json'),fetchJSON('armor/armor_sets.json')]);
 }).then(function(results){
-var r=results[0];var w=results[1];var a=results[2];
-setProgress(60,'Loading items...');
-return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),fetchJSON('consumables/data.json')]);
+var r=results[0];var w=results[1];var a=results[2];var sets=results[3];
+setProgress(50,'Loading items...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(sets),fetchJSON('consumables/data.json')]);
 }).then(function(results){
-var r=results[0];var w=results[1];var a=results[2];var c=results[3];
-setProgress(75,'Loading factions...');
-return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(c),fetchJSON('quests/factions.json')]);
+var r=results[0];var w=results[1];var a=results[2];var sets=results[3];var c=results[4];
+setProgress(65,'Loading factions...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(sets),Promise.resolve(c),fetchJSON('quests/factions.json'),fetchJSON('quests/quests.json'),fetchJSON('quests/exclusivity_map.json')]);
 }).then(function(results){
-var r=results[0];var w=results[1];var a=results[2];var c=results[3];var f=results[4];
-setProgress(90,'Loading effects...');
-return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(c),Promise.resolve(f),fetchJSON('effects/status_effects.json')]);
+var r=results[0];var w=results[1];var a=results[2];var sets=results[3];var c=results[4];var f=results[5];var q=results[6];var em=results[7];
+setProgress(85,'Loading effects...');
+return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(sets),Promise.resolve(c),Promise.resolve(f),Promise.resolve(q),Promise.resolve(em),fetchJSON('effects/status_effects.json')]);
 }).then(function(results){
-var r=results[0];var w=results[1];var a=results[2];var c=results[3];var f=results[4];var e=results[5];
-DATA={skills:r[0].concat(r[1],r[2],r[3]),classes:r[4],weapons:w[0].weapons.concat(w[1].weapons,w[2].weapons,w[3].weapons),armor:a,consumables:c.items||c,factions:f,effects:e};
+var r=results[0];var w=results[1];var a=results[2];var sets=results[3];var c=results[4];var f=results[5];var q=results[6];var em=results[7];var e=results[8];
+DATA={
+skills:r[0].concat(r[1],r[2],r[3]),
+classes:r[4],
+weapons:w[0].weapons.concat(w[1].weapons,w[2].weapons,w[3].weapons),
+armor:a,
+armorSets:sets,
+consumables:c.items||c,
+factions:f,
+quests:q,
+exclusivityMap:em,
+effects:e
+};
 setProgress(100,'Ready!');
-try{var saved=localStorage.getItem('outward-build');if(saved)BUILD=JSON.parse(saved);}catch(e){}
+try{var saved=localStorage.getItem('outward-build');if(saved)BUILD=Object.assign({},BUILD,JSON.parse(saved));}catch(e){}
 setTimeout(function(){showScreen('home-screen');renderHome();},300);
 }).catch(function(e){showError(e.message||'Failed to load data');setProgress(0,'Error');});
 }
@@ -267,8 +320,9 @@ function renderHome(){var stats=document.getElementById('home-stats');if(!stats|
 function renderBuilder(){
 if(!DATA)return;
 document.getElementById('build-name').textContent=BUILD.name||'New Build';
-document.getElementById('lvl-input').value=BUILD.level;
 document.getElementById('theory-btn').className='theory-btn'+(BUILD.theorycraft?' active':'');
+var totalCost=calculateTotalCost();
+document.getElementById('silver-display').textContent=totalCost+'s';
 var tabs=[{id:'stats',icon:'\uD83D\uDCCA',label:'Stats'},{id:'armor',icon:'\uD83D\uDEE1\uFE0F',label:'Armor'},{id:'weapons',icon:'\u2694\uFE0F',label:'Weapons'},{id:'skills',icon:'\u26A1',label:'Skills'},{id:'factions',icon:'\uD83C\uDFF0',label:'Factions'},{id:'consumables',icon:'\uD83E\uDDEA',label:'Items'},{id:'effects',icon:'\uD83D\uDCD6',label:'Effects'}];
 var tabBar=document.getElementById('tab-bar');
 tabBar.innerHTML='';
@@ -280,6 +334,18 @@ btn.onclick=(function(tabId){return function(){switchTab(tabId);};})(tabs[i].id)
 tabBar.appendChild(btn);
 }
 renderTab(CURRENT_TAB);
+}
+
+function calculateTotalCost(){
+var total=0;
+(BUILD.skills||[]).forEach(function(name){
+var s=findSkill(name);
+if(s&&s.cost){
+var cost=parseInt(String(s.cost).replace(/[^0-9]/g,''))||0;
+total+=cost;
+}
+});
+return total;
 }
 
 function switchTab(tabId){CURRENT_TAB=tabId;var btns=document.querySelectorAll('.tab-btn');var tabs=['stats','armor','weapons','skills','factions','consumables','effects'];for(var i=0;i<btns.length;i++){btns[i].className='tab-btn'+(tabs[i]===tabId?' active':'');}renderTab(tabId);}
@@ -299,40 +365,162 @@ else if(tabId==='consumables')renderConsumablesTab(pane);
 else if(tabId==='effects')renderEffectsTab(pane);
 }
 
-function calculateStats(){
-var r={health:100,stamina:100,mana:20,protection:0,impactResist:0,resistances:{physical:0,fire:0,frost:0,lightning:0,decay:0,ethereal:0},staminaCost:0,manaCost:0,moveSpeed:0,coldResist:0,heatResist:0,pouch:0};
-Object.keys(BUILD.armor||{}).forEach(function(slot){var name=BUILD.armor[slot];if(!name)return;var a=findArmor(name);if(a){r.protection+=a.protection||0;r.impactResist+=(a.resistances&&a.resistances.impact)||0;r.staminaCost+=a.stamina_cost_reduction||0;r.manaCost+=a.mana_cost_reduction||0;r.moveSpeed+=a.move_speed||0;r.coldResist+=a.cold_resist||0;r.heatResist+=a.heat_resist||0;r.pouch+=a.pouch||0;if(a.resistances){['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){if(a.resistances[k])r.resistances[k]=(r.resistances[k]||0)+a.resistances[k];});}}});
-['weapon_main','weapon_off'].forEach(function(slot){var name=BUILD.weapons&&BUILD.weapons[slot];if(!name)return;var w=findWeapon(name);if(w&&w.damage_stats&&w.damage_stats.base_damage){Object.keys(w.damage_stats.base_damage).forEach(function(k){var v=w.damage_stats.base_damage[k];if(k==='impact')r.impactResist+=v;else r.resistances[k]=(r.resistances[k]||0)+v;});}});
-(BUILD.skills||[]).forEach(function(name){var s=findSkill(name);if(s&&s.effects){var m=s.effects.match(/([+-])([0-9]+)\s*(health|stamina|mana)/i);if(m){var key=m[3].toLowerCase();r[key]+=parseInt(m[2])*(m[1]==='-'?-1:1);}}});
-return r;
-}
-
 function findArmor(name){for(var i=0;i<DATA.armor.length;i++){if(DATA.armor[i].name===name)return DATA.armor[i];}return null;}
 function findWeapon(name){for(var i=0;i<DATA.weapons.length;i++){if(DATA.weapons[i].name===name)return DATA.weapons[i];}return null;}
 function findSkill(name){for(var i=0;i<DATA.skills.length;i++){if(DATA.skills[i].name===name)return DATA.skills[i];}return null;}
+function findConsumable(name){for(var i=0;i<DATA.consumables.length;i++){if(DATA.consumables[i].name===name)return DATA.consumables[i];}return null;}
+
+function calculateStats(){
+var r={
+health:BUILD.leylines?BUILD.leylines.health:100,
+stamina:100,
+mana:BUILD.leylines?BUILD.leylines.mana:20,
+protection:0,impactResist:0,
+resistances:{physical:0,fire:0,frost:0,lightning:0,decay:0,ethereal:0},
+staminaCost:0,manaCost:0,
+moveSpeed:0,coldResist:0,heatResist:0,pouch:0
+};
+Object.keys(BUILD.armor||{}).forEach(function(slot){
+var name=BUILD.armor[slot];if(!name)return;
+var a=findArmor(name);
+if(a){
+r.protection+=a.protection||0;
+r.impactResist+=(a.resistances&&a.resistances.impact)||0;
+r.staminaCost+=a.stamina_cost_reduction||0;
+r.manaCost+=a.mana_cost_reduction||0;
+r.moveSpeed+=a.move_speed||0;
+r.coldResist+=a.cold_resist||0;
+r.heatResist+=a.heat_resist||0;
+r.pouch+=a.pouch||0;
+if(a.resistances){
+['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){
+if(a.resistances[k])r.resistances[k]=(r.resistances[k]||0)+a.resistances[k];
+});
+}
+}
+});
+['weapon_main','weapon_off'].forEach(function(slot){
+var name=BUILD.weapons&&BUILD.weapons[slot];if(!name)return;
+var w=findWeapon(name);
+if(w&&w.damage_stats&&w.damage_stats.base_damage){
+Object.keys(w.damage_stats.base_damage).forEach(function(k){
+var v=w.damage_stats.base_damage[k];
+if(k==='impact')r.impactResist+=v;
+else r.resistances[k]=(r.resistances[k]||0)+v;
+});
+}
+});
+(BUILD.skills||[]).forEach(function(name){
+var s=findSkill(name);
+if(s&&s.effects){
+var m=s.effects.match(/([+-])([0-9]+)\s*(health|stamina|mana)/i);
+if(m){
+var key=m[3].toLowerCase();
+r[key]+=parseInt(m[2])*(m[1]==='-'?-1:1);
+}
+}
+});
+return r;
+}
+
+function adjustLeyline(stat,amount){
+if(!BUILD.leylines)BUILD.leylines={health:100,mana:20};
+var h=BUILD.leylines.health;
+var m=BUILD.leylines.mana;
+if(stat==='health'){
+var newH=h+amount;
+var newM=m-amount;
+if(newH>=25&&newH<=200&&newM>=0&&newM<=100){
+BUILD.leylines.health=newH;
+BUILD.leylines.mana=newM;
+}
+}else{
+var newM2=m+amount;
+var newH2=h-amount;
+if(newM2>=0&&newM2<=100&&newH2>=25&&newH2<=200){
+BUILD.leylines.mana=newM2;
+BUILD.leylines.health=newH2;
+}
+}
+saveBuild();
+renderTab('stats');
+renderBuilder();
+}
 
 function renderStatsTab(pane){
 var stats=calculateStats();
-var ptsUsed=(BUILD.skills||[]).length;
-var ptsLeft=BUILD.theorycraft?'\u221E':(BUILD.level-ptsUsed);
 var btLeft=3-(BUILD.breakthroughsUsed||0);
-var equippedArmor=[];var equippedWeapons=[];var selFaction=null;var selSkills=[];var equippedCons=[];
-Object.keys(BUILD.armor||{}).forEach(function(slot){var name=BUILD.armor[slot];if(!name)return;var item=findArmor(name);if(item)equippedArmor.push({slot:slot,item:item});});
-Object.keys(BUILD.weapons||{}).forEach(function(slot){var name=BUILD.weapons[slot];if(!name)return;var item=findWeapon(name);if(item)equippedWeapons.push({slot:slot,item:item});});
-if(BUILD.faction){for(var i=0;i<DATA.factions.length;i++){if(DATA.factions[i].id===BUILD.faction){selFaction=DATA.factions[i];break;}}}
-(BUILD.skills||[]).forEach(function(name){var s=findSkill(name);if(s)selSkills.push(s);});
-(BUILD.consumables||[]).forEach(function(name){for(var i=0;i<DATA.consumables.length;i++){if(DATA.consumables[i].name===name){equippedCons.push(DATA.consumables[i]);break;}}});
+var totalCost=calculateTotalCost();
 
 var html='';
+
+// Hero stats with Ley Lines
 html+='<div class="hero-card"><div class="hero-grid">';
 html+='<div class="hero-stat"><div class="hero-ico">\u2764\uFE0F</div><div class="hero-val health">'+stats.health+'</div><div class="hero-lbl">Health</div></div>';
 html+='<div class="hero-stat"><div class="hero-ico">\u26A1</div><div class="hero-val stamina">'+stats.stamina+'</div><div class="hero-lbl">Stamina</div></div>';
 html+='<div class="hero-stat"><div class="hero-ico">\uD83D\uDD2E</div><div class="hero-val mana">'+stats.mana+'</div><div class="hero-lbl">Mana</div></div>';
+html+='</div>';
+html+='<div class="leyline-controls">';
+html+='<button class="leyline-btn" onclick="adjustLeyline(\'health\',-5)">-</button>';
+html+='<span class="leyline-val health">'+BUILD.leylines.health+' HP</span>';
+html+='<button class="leyline-btn" onclick="adjustLeyline(\'health\',5)">+</button>';
+html+='<span style="color:var(--dim);font-size:12px;margin:0 8px">\u2194</span>';
+html+='<button class="leyline-btn" onclick="adjustLeyline(\'mana\',-5)">-</button>';
+html+='<span class="leyline-val mana">'+BUILD.leylines.mana+' MP</span>';
+html+='<button class="leyline-btn" onclick="adjustLeyline(\'mana\',5)">+</button>';
 html+='</div></div>';
+
+// Points summary
 html+='<div class="pts-row">';
-html+='<div class="pts-card"><div class="pts-ico">\u26A1</div><div class="pts-info"><h4>Skill Points</h4><div class="pts-val'+(ptsLeft<0?' warn':'')+'">'+ptsUsed+' / '+(BUILD.theorycraft?'\u221E':BUILD.level)+'</div></div></div>';
+html+='<div class="pts-card"><div class="pts-ico">\uD83D\uDCB0</div><div class="pts-info"><h4>Total Cost</h4><div class="pts-val">'+totalCost+'s</div></div></div>';
 html+='<div class="pts-card"><div class="pts-ico">\uD83D\uDCAB</div><div class="pts-info"><h4>Breakthroughs</h4><div class="pts-val'+(btLeft<=0?' warn':'')+'">'+(BUILD.breakthroughsUsed||0)+' / 3</div></div></div>';
 html+='</div>';
+
+// Inventory slots
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDF92</span><span class="sec-title">Equipment</span></div><div class="sec-body">';
+html+='<div class="inventory-grid">';
+var armorSlots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'back',label:'Back'},{id:'acc1',label:'Acc 1'},{id:'acc2',label:'Acc 2'},{id:'acc3',label:'Acc 3'},{id:'acc4',label:'Acc 4'}];
+for(var i=0;i<armorSlots.length;i++){
+var slot=armorSlots[i];
+var itemName=(BUILD.armor||{})[slot.id];
+var item=itemName?findArmor(itemName):null;
+html+='<div class="inv-slot'+(item?' filled':'')+'" onclick="switchTab(\'armor\')">';
+if(item&&item.local_image){html+='<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">';}
+html+='<div class="inv-lbl">'+slot.label+'</div>';
+if(item){html+='<div class="inv-item">'+escHtml(item.name)+'</div>';}
+html+='</div>';
+}
+html+='</div>';
+
+// Weapon slots
+html+='<div class="inventory-grid" style="grid-template-columns:repeat(2,1fr)">';
+var weaponSlots=[{id:'weapon_main',label:'Main Hand'},{id:'weapon_off',label:'Off Hand'}];
+for(var j=0;j<weaponSlots.length;j++){
+var wslot=weaponSlots[j];
+var wName=(BUILD.weapons||{})[wslot.id];
+var wItem=wName?findWeapon(wName):null;
+html+='<div class="inv-slot weapon'+(wItem?' filled':'')+'" onclick="switchTab(\'weapons\')">';
+if(wItem&&wItem.local_image){html+='<img src="'+escHtml(imgSrc(wItem.local_image))+'" loading="lazy">';}
+html+='<div class="inv-lbl">'+wslot.label+'</div>';
+if(wItem){html+='<div class="inv-item">'+escHtml(wItem.name)+'</div>';}
+html+='</div>';
+}
+html+='</div>';
+
+// Quick slots
+html+='<div class="filter-label" style="margin-top:8px">Quick Slots</div>';
+html+='<div class="quick-slots">';
+for(var q=0;q<4;q++){
+var qsName=(BUILD.quickSlots||[])[q];
+var qsItem=qsName?findConsumable(qsName):null;
+html+='<div class="quick-slot" onclick="switchTab(\'consumables\')">';
+if(qsItem&&qsItem.local_image){html+='<img src="'+escHtml(imgSrc(qsItem.local_image))+'" loading="lazy">';}
+html+='<div class="inv-lbl">Slot '+(q+1)+'</div>';
+html+='</div>';
+}
+html+='</div></div></div>';
+
+// Defense
 html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83D\uDEE1\uFE0F</span><span class="sec-title">Defense</span></div><div class="sec-body">';
 html+=statRow('Protection',stats.protection,{noPlus:true});
 html+=statRow('Impact Resist',stats.impactResist,{noPlus:true});
@@ -344,6 +532,8 @@ html+=resistItem('lightning','Lightning',stats.resistances.lightning||0);
 html+=resistItem('decay','Decay',stats.resistances.decay||0);
 html+=resistItem('ethereal','Ethereal',stats.resistances.ethereal||0);
 html+='</div></div></div>';
+
+// Modifiers
 html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\u2699\uFE0F</span><span class="sec-title">Modifiers</span></div><div class="sec-body">';
 html+=statRow('Stamina Cost',-stats.staminaCost,{suffix:'%'});
 html+=statRow('Mana Cost',-stats.manaCost,{suffix:'%'});
@@ -352,12 +542,34 @@ html+=statRow('Cold Protection',stats.coldResist,{noPlus:true});
 html+=statRow('Heat Protection',stats.heatResist,{noPlus:true});
 html+=statRow('Pouch Bonus',stats.pouch,{noPlus:true});
 html+='</div></div>';
-if(selFaction){html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDFF0</span><span class="sec-title">Faction</span></div><div class="sec-body"><div style="padding:4px 0"><div style="font-size:11px;color:var(--gold);font-weight:600">'+escHtml(selFaction.name)+'</div><div style="font-size:9px;color:var(--dim);margin-top:2px;line-height:1.4">'+escHtml(selFaction.description||'')+'</div></div></div></div>';}
-html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDF92</span><span class="sec-title">Equipment</span></div><div class="sec-body">';
-if(equippedArmor.length+equippedWeapons.length>0){html+='<div class="chip-row">';for(var i=0;i<equippedArmor.length;i++){html+=chipHtml(equippedArmor[i].item);}for(var j=0;j<equippedWeapons.length;j++){html+=chipHtml(equippedWeapons[j].item);}html+='</div>';}else{html+='<div class="chip-empty">No equipment selected</div>';}
+
+// Selected items summary
+var selFaction=null;
+if(BUILD.faction){for(var fi=0;fi<DATA.factions.length;fi++){if(DATA.factions[fi].id===BUILD.faction){selFaction=DATA.factions[fi];break;}}}
+
+if(selFaction){
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDFF0</span><span class="sec-title">Faction</span></div><div class="sec-body">';
+html+='<div style="padding:6px 0"><div style="font-size:13px;color:var(--gold);font-weight:600">'+escHtml(selFaction.name)+'</div>';
+html+='<div style="font-size:11px;color:var(--dim);margin-top:4px;line-height:1.5">'+escHtml(selFaction.description||'')+'</div></div>';
 html+='</div></div>';
-if(equippedCons.length>0){html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83E\uDDEA</span><span class="sec-title">Consumables</span></div><div class="sec-body"><div class="chip-row">';for(var k=0;k<equippedCons.length;k++){html+=chipHtml(equippedCons[k]);}html+='</div></div></div>';}
-if(selSkills.length>0){html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\u26A1</span><span class="sec-title">Skills ('+selSkills.length+')</span></div><div class="sec-body"><div class="chip-row">';for(var m=0;m<selSkills.length;m++){html+=chipHtml(selSkills[m]);}html+='</div></div></div>';}
+}
+
+var selSkills=[];
+(BUILD.skills||[]).forEach(function(name){var s=findSkill(name);if(s)selSkills.push(s);});
+if(selSkills.length>0){
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\u26A1</span><span class="sec-title">Skills ('+selSkills.length+')</span></div><div class="sec-body"><div class="chip-row">';
+for(var si=0;si<selSkills.length;si++){html+=chipHtml(selSkills[si]);}
+html+='</div></div></div>';
+}
+
+var equippedCons=[];
+(BUILD.consumables||[]).forEach(function(name){var c=findConsumable(name);if(c)equippedCons.push(c);});
+if(equippedCons.length>0){
+html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83E\uDDEA</span><span class="sec-title">Consumables</span></div><div class="sec-body"><div class="chip-row">';
+for(var ci=0;ci<equippedCons.length;ci++){html+=chipHtml(equippedCons[ci]);}
+html+='</div></div></div>';
+}
+
 pane.innerHTML=html;
 }
 
@@ -365,111 +577,372 @@ function statRow(lbl,val,opts){opts=opts||{};var cls='sval';if(val>0&&!opts.noPl
 function resistItem(dot,lbl,val){return '<div class="resist-item"><span class="resist-lbl"><span class="sdot '+dot+'"></span>'+lbl+'</span><span class="resist-val">'+val+'</span></div>';}
 function chipHtml(item){var img=item.local_image?'<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">':'';return '<span class="chip">'+img+escHtml(item.name)+'</span>';}
 
+function getArmorRarityClass(a){
+if(a.set_name)return 'rarity-set';
+var desc=(a.description||'').toLowerCase();
+if(desc.indexOf('unique')>=0)return 'rarity-unique';
+if(desc.indexOf('craft')>=0)return 'rarity-crafted';
+if(desc.indexOf('legacy')>=0)return 'rarity-legacy';
+if(desc.indexOf('quest')>=0)return 'rarity-quest';
+return 'rarity-common';
+}
+
+function getArmorRarityName(a){
+if(a.set_name)return 'Set';
+var desc=(a.description||'').toLowerCase();
+if(desc.indexOf('unique')>=0)return 'Unique';
+if(desc.indexOf('craft')>=0)return 'Crafted';
+if(desc.indexOf('legacy')>=0)return 'Legacy';
+if(desc.indexOf('quest')>=0)return 'Quest';
+return 'Common';
+}
+
 function renderArmorTab(pane){
-var slots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'back',label:'Back'},{id:'acc1',label:'Acc 1'},{id:'acc2',label:'Acc 2'},{id:'acc3',label:'Acc 3'},{id:'acc4',label:'Acc 4'}];
-var html='<div class="equip-grid">';
+var html='';
+
+// Search
+html+='<input class="search-bar" placeholder="Search armor..." oninput="armorSearch(this.value)">';
+
+// Filters
+html+='<div class="filter-section"><div class="filter-label">Slot</div><div class="filter-pills">';
+var slots=['all','head','chest','legs','back','necklace','ring'];
 for(var i=0;i<slots.length;i++){
-var slot=slots[i];
-var itemName=(BUILD.armor||{})[slot.id];
-var item=itemName?findArmor(itemName):null;
-html+='<div class="equip-slot'+(item?' filled':'')+'" onclick="openArmorPicker(\''+slot.id+'\')">';
-if(item&&item.local_image){html+='<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">';}
-html+='<div class="slot-lbl">'+slot.label+'</div>';
-if(item)html+='<div class="slot-item">'+escHtml(item.name)+'</div>';
-html+='</div>';
+var s=slots[i];
+html+='<button class="pill'+(ARMOR_FILTER.slot===s?' active':'')+'" onclick="setArmorFilter(\'slot\',\''+s+'\')">'+(s==='all'?'All':s.charAt(0).toUpperCase()+s.slice(1))+'</button>';
 }
-html+='</div>';
+html+='</div></div>';
+
+html+='<div class="filter-section"><div class="filter-label">Rarity</div><div class="filter-pills">';
+var rarities=['all','Common','Unique','Crafted','Legacy','Set','Quest'];
+for(var r=0;r<rarities.length;r++){
+var ra=rarities[r];
+html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" onclick="setArmorFilter(\'rarity\',\''+ra+'\')">'+ra+'</button>';
+}
+html+='</div></div>';
+
+// Sort
+html+='<select class="sort-select" onchange="setArmorFilter(\'sort\',this.value)">';
+html+='<option value="name"'+(ARMOR_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
+html+='<option value="protection-desc"'+(ARMOR_FILTER.sort==='protection-desc'?' selected':'')+'>Protection (High to Low)</option>';
+html+='<option value="protection-asc"'+(ARMOR_FILTER.sort==='protection-asc'?' selected':'')+'>Protection (Low to High)</option>';
+html+='<option value="weight"'+(ARMOR_FILTER.sort==='weight'?' selected':'')+'>Weight</option>';
+html+='</select>';
+
+// Items
+html+='<div id="armor-list"></div>';
 pane.innerHTML=html;
+renderArmorList();
 }
 
-function openArmorPicker(slotId){MODAL_SLOT=slotId;MODAL_SEARCH='';MODAL_FILTERS={type:[],rarity:[]};showArmorModal();}
+var ARMOR_SEARCH='';
+function armorSearch(val){ARMOR_SEARCH=val;renderArmorList();}
 
-function showArmorModal(){
-var overlay=document.createElement('div');
-overlay.className='modal-overlay';
-overlay.id='modal-overlay';
-overlay.onclick=function(e){if(e.target===overlay)closeModal();};
-var slotLabels={head:'Head',chest:'Chest',legs:'Legs',back:'Back',acc1:'Accessory 1',acc2:'Accessory 2',acc3:'Accessory 3',acc4:'Accessory 4'};
-var slotMap={head:['head'],chest:['chest'],legs:['legs'],back:['backpack'],acc1:['necklace','ring'],acc2:['necklace','ring'],acc3:['necklace','ring'],acc4:['necklace','ring']};
-var validSlots=slotMap[MODAL_SLOT]||[];
-var q=MODAL_SEARCH.toLowerCase();
-var filtered=DATA.armor.filter(function(a){if(validSlots.indexOf(a.slot)<0)return false;if(q&&a.name.toLowerCase().indexOf(q)<0)return false;if(MODAL_FILTERS.type.length>0&&MODAL_FILTERS.type.indexOf(a.slot)<0)return false;return true;});
-var html='<div class="modal" onclick="event.stopPropagation()"><div class="modal-hdr"><div class="modal-title">'+(slotLabels[MODAL_SLOT]||MODAL_SLOT)+'</div><button class="modal-close" onclick="closeModal()">\u2715</button></div>';
-html+='<input class="modal-search" placeholder="Search armor..." value="'+escHtml(MODAL_SEARCH)+'" oninput="modalSearch(this.value)">';
-html+='<div class="modal-body">';
-html+='<div class="pill-group"><div class="pill-group-label">Type</div><div class="filter-pills">';
-['head','chest','legs','backpack','necklace','ring'].forEach(function(t){var active=MODAL_FILTERS.type.indexOf(t)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'type\',\''+t+'\')">'+t.charAt(0).toUpperCase()+t.slice(1)+'</button>';});
-html+='</div></div>';
-html+='<div class="pill-group"><div class="pill-group-label">Rarity</div><div class="filter-pills">';
-['Common','Unique','Crafted','Legacy','Set','Quest'].forEach(function(r){var active=MODAL_FILTERS.rarity.indexOf(r)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'rarity\',\''+r+'\')">'+r+'</button>';});
-html+='</div></div>';
-html+='<div class="item-grid">';
-for(var i=0;i<filtered.length;i++){var a=filtered[i];var rarityClass=getArmorRarityClass(a);html+='<div class="item-card '+rarityClass+'" onclick="selectArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">';if(a.local_image)html+='<img src="'+escHtml(imgSrc(a.local_image))+'" loading="lazy">';html+='<div class="ic-name">'+escHtml(a.name)+'</div>';if(a.set_name)html+='<div class="ic-set">'+escHtml(a.set_name)+'</div>';html+='<div class="ic-meta">Prot: '+(a.protection||0)+' | W: '+(a.weight||0)+'</div>';html+='</div>';}
-if(filtered.length===0){html+='<div style="color:var(--dim);padding:20px;text-align:center">No items found</div>';}
-html+='</div></div></div>';
-overlay.innerHTML=html;
-document.body.appendChild(overlay);
+function setArmorFilter(key,val){ARMOR_FILTER[key]=val;renderArmorList();}
+
+function renderArmorList(){
+var container=document.getElementById('armor-list');
+if(!container)return;
+
+var filtered=DATA.armor.filter(function(a){
+if(ARMOR_FILTER.slot!=='all'&&a.slot!==ARMOR_FILTER.slot)return false;
+if(ARMOR_FILTER.rarity!=='all'){
+var rClass=getArmorRarityName(a);
+if(rClass!==ARMOR_FILTER.rarity)return false;
+}
+if(ARMOR_SEARCH){
+var q=ARMOR_SEARCH.toLowerCase();
+if(a.name.toLowerCase().indexOf(q)<0)return false;
+}
+return true;
+});
+
+// Sort
+if(ARMOR_FILTER.sort==='protection-desc'){
+filtered.sort(function(a,b){return (b.protection||0)-(a.protection||0);});
+}else if(ARMOR_FILTER.sort==='protection-asc'){
+filtered.sort(function(a,b){return (a.protection||0)-(b.protection||0);});
+}else if(ARMOR_FILTER.sort==='weight'){
+filtered.sort(function(a,b){return (a.weight||0)-(b.weight||0);});
+}else{
+filtered.sort(function(a,b){return a.name.localeCompare(b.name);});
 }
 
-function getArmorRarityClass(a){if(a.set_name)return 'rarity-set';var desc=(a.description||'').toLowerCase();if(desc.indexOf('unique')>=0)return 'rarity-unique';if(desc.indexOf('craft')>=0)return 'rarity-crafted';if(desc.indexOf('legacy')>=0)return 'rarity-legacy';if(desc.indexOf('quest')>=0)return 'rarity-quest';return 'rarity-common';}
-function modalSearch(val){MODAL_SEARCH=val;refreshModal();}
-function toggleModalFilter(type,val){if(!MODAL_FILTERS[type])MODAL_FILTERS[type]=[];var idx=MODAL_FILTERS[type].indexOf(val);if(idx>=0)MODAL_FILTERS[type].splice(idx,1);else MODAL_FILTERS[type].push(val);refreshModal();}
-function refreshModal(){closeModal();showArmorModal();}
-function selectArmor(name){if(!BUILD.armor)BUILD.armor={};BUILD.armor[MODAL_SLOT]=name;saveBuild();closeModal();renderTab('armor');}
-function closeModal(){var overlay=document.getElementById('modal-overlay');if(overlay)overlay.parentNode.removeChild(overlay);}
+var html='<div class="item-grid">';
+for(var i=0;i<filtered.length;i++){
+var a=filtered[i];
+var rarityClass=getArmorRarityClass(a);
+var rarityName=getArmorRarityName(a);
+var isEquipped=Object.values(BUILD.armor||{}).indexOf(a.name)>=0;
+
+html+='<div class="item-card '+rarityClass+(isEquipped?' selected':'')+'">';
+html+='<div class="item-header">';
+if(a.local_image){html+='<img class="item-icon" src="'+escHtml(imgSrc(a.local_image))+'" loading="lazy">';}
+html+='<div class="item-title">';
+html+='<div class="item-name">'+escHtml(a.name)+'</div>';
+html+='<div class="item-type">'+escHtml(a.slot||'')+' | '+rarityName+'</div>';
+html+='</div></div>';
+
+html+='<div class="item-stats">';
+html+='<div class="stat-line"><span class="stat-label">Protection</span><span class="stat-value">'+(a.protection||0)+'</span></div>';
+if(a.resistances){
+['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){
+var v=a.resistances[k]||0;
+if(v>0){
+html+='<div class="stat-line"><span class="stat-label">'+k.charAt(0).toUpperCase()+k.slice(1)+'</span><span class="stat-value">'+v+'</span></div>';
+}
+});
+if(a.resistances.impact){
+html+='<div class="stat-line"><span class="stat-label">Impact</span><span class="stat-value">'+a.resistances.impact+'</span></div>';
+}
+}
+html+='<div class="stat-line"><span class="stat-label">Weight</span><span class="stat-value">'+(a.weight||0)+'</span></div>';
+html+='</div>';
+
+if(a.set_name){
+html+='<div class="item-set">Set: '+escHtml(a.set_name)+'</div>';
+}
+
+if(a.description){
+html+='<div class="item-desc">'+escHtml(a.description)+'</div>';
+}
+
+html+='<div class="item-actions">';
+if(isEquipped){
+html+='<button class="equip-btn equipped" onclick="unequipArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">Unequip</button>';
+}else{
+html+='<button class="equip-btn" onclick="equipArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">Equip</button>';
+}
+html+='</div></div>';
+}
+if(filtered.length===0){
+html+='<div style="color:var(--dim);padding:20px;text-align:center;grid-column:1/-1">No armor found</div>';
+}
+html+='</div>';
+container.innerHTML=html;
+}
+
+function equipArmor(name){
+var a=findArmor(name);
+if(!a)return;
+if(!BUILD.armor)BUILD.armor={};
+BUILD.armor[a.slot]=name;
+saveBuild();
+renderArmorList();
+renderBuilder();
+}
+
+function unequipArmor(name){
+var a=findArmor(name);
+if(!a)return;
+if(BUILD.armor&&BUILD.armor[a.slot]===name){
+delete BUILD.armor[a.slot];
+saveBuild();
+renderArmorList();
+renderBuilder();
+}
+}
+
+// WEAPONS TAB
+function getWeaponRarityClass(w){
+var desc=(w.description||'').toLowerCase();
+if(desc.indexOf('unique')>=0)return 'rarity-unique';
+if(desc.indexOf('craft')>=0)return 'rarity-crafted';
+if(desc.indexOf('legacy')>=0)return 'rarity-legacy';
+if(desc.indexOf('quest')>=0)return 'rarity-quest';
+return 'rarity-common';
+}
+
+function getWeaponRarityName(w){
+var desc=(w.description||'').toLowerCase();
+if(desc.indexOf('unique')>=0)return 'Unique';
+if(desc.indexOf('craft')>=0)return 'Crafted';
+if(desc.indexOf('legacy')>=0)return 'Legacy';
+if(desc.indexOf('quest')>=0)return 'Quest';
+return 'Common';
+}
 
 function renderWeaponsTab(pane){
-var slots=[{id:'weapon_main',label:'Main Hand'},{id:'weapon_off',label:'Off Hand'}];
-var html='<div class="equip-grid weapons">';
-for(var i=0;i<slots.length;i++){
-var slot=slots[i];
-var itemName=(BUILD.weapons||{})[slot.id];
-var item=itemName?findWeapon(itemName):null;
-html+='<div class="equip-slot'+(item?' filled':'')+'" onclick="openWeaponPicker(\''+slot.id+'\')">';
-if(item&&item.local_image){html+='<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">';}
-html+='<div class="slot-lbl">'+slot.label+'</div>';
-if(item)html+='<div class="slot-item">'+escHtml(item.name)+'</div>';
-html+='</div>';
+var html='';
+
+html+='<input class="search-bar" placeholder="Search weapons..." oninput="weaponSearch(this.value)">';
+
+html+='<div class="filter-section"><div class="filter-label">Type</div><div class="filter-pills">';
+var types=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield'];
+for(var i=0;i<types.length;i++){
+var t=types[i];
+html+='<button class="pill'+(WEAPON_FILTER.type===t?' active':'')+'" onclick="setWeaponFilter(\'type\',\''+t+'\')">'+t+'</button>';
 }
-html+='</div>';
+html+='</div></div>';
+
+html+='<div class="filter-section"><div class="filter-label">Handedness</div><div class="filter-pills">';
+['all','1H','2H'].forEach(function(h){
+html+='<button class="pill'+(WEAPON_FILTER.hand===h?' active':'')+'" onclick="setWeaponFilter(\'hand\',\''+h+'\')">'+h+'</button>';
+});
+html+='</div></div>';
+
+html+='<div class="filter-section"><div class="filter-label">Damage Type</div><div class="filter-pills">';
+var dmgs=['all','physical','fire','frost','lightning','decay','ethereal','impact'];
+for(var d=0;d<dmgs.length;d++){
+var dt=dmgs[d];
+html+='<button class="pill'+(WEAPON_FILTER.dmg===dt?' active':'')+'" onclick="setWeaponFilter(\'dmg\',\''+dt+'\')">'+(dt==='all'?'All':dt.charAt(0).toUpperCase()+dt.slice(1))+'</button>';
+}
+html+='</div></div>';
+
+html+='<select class="sort-select" onchange="setWeaponFilter(\'sort\',this.value)">';
+html+='<option value="name"'+(WEAPON_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
+html+='<option value="damage"'+(WEAPON_FILTER.sort==='damage'?' selected':'')+'>Damage</option>';
+html+='<option value="speed"'+(WEAPON_FILTER.sort==='speed'?' selected':'')+'>Attack Speed</option>';
+html+='<option value="weight"'+(WEAPON_FILTER.sort==='weight'?' selected':'')+'>Weight</option>';
+html+='</select>';
+
+html+='<div id="weapon-list"></div>';
 pane.innerHTML=html;
+renderWeaponList();
 }
 
-function openWeaponPicker(slotId){MODAL_SLOT=slotId;MODAL_SEARCH='';MODAL_FILTERS={type:[],rarity:[],dmg:[]};showWeaponModal();}
+var WEAPON_SEARCH='';
+function weaponSearch(val){WEAPON_SEARCH=val;renderWeaponList();}
+function setWeaponFilter(key,val){WEAPON_FILTER[key]=val;renderWeaponList();}
 
-function showWeaponModal(){
-var overlay=document.createElement('div');
-overlay.className='modal-overlay';
-overlay.id='modal-overlay';
-overlay.onclick=function(e){if(e.target===overlay)closeModal();};
-var q=MODAL_SEARCH.toLowerCase();
-var filtered=DATA.weapons.filter(function(w){if(q&&w.name.toLowerCase().indexOf(q)<0)return false;if(MODAL_FILTERS.type.length>0&&MODAL_FILTERS.type.indexOf(w.weapon_type)<0)return false;if(MODAL_FILTERS.dmg.length>0){var hasDmg=false;if(w.damage_stats&&w.damage_stats.base_damage){MODAL_FILTERS.dmg.forEach(function(dt){if(w.damage_stats.base_damage[dt]>0)hasDmg=true;});}if(!hasDmg)return false;}return true;});
-var html='<div class="modal" onclick="event.stopPropagation()"><div class="modal-hdr"><div class="modal-title">'+(MODAL_SLOT==='weapon_main'?'Main Hand':'Off Hand')+'</div><button class="modal-close" onclick="closeModal()">\u2715</button></div>';
-html+='<input class="modal-search" placeholder="Search weapons..." value="'+escHtml(MODAL_SEARCH)+'" oninput="modalSearch(this.value)">';
-html+='<div class="modal-body">';
-html+='<div class="pill-group"><div class="pill-group-label">Type</div><div class="filter-pills">';
-['Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield'].forEach(function(t){var active=MODAL_FILTERS.type.indexOf(t)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'type\',\''+t+'\')">'+t+'</button>';});
-html+='</div></div>';
-html+='<div class="pill-group"><div class="pill-group-label">Damage Type</div><div class="filter-pills">';
-['physical','fire','frost','lightning','decay','ethereal','impact'].forEach(function(dt){var active=MODAL_FILTERS.dmg.indexOf(dt)>=0;html+='<button class="pill'+(active?' active':'')+'" onclick="toggleModalFilter(\'dmg\',\''+dt+'\')">'+dt.charAt(0).toUpperCase()+dt.slice(1)+'</button>';});
-html+='</div></div>';
-html+='<div class="item-grid">';
-for(var i=0;i<filtered.length;i++){var w=filtered[i];var rarityClass=getWeaponRarityClass(w);html+='<div class="item-card '+rarityClass+'" onclick="selectWeapon(\''+escHtml(w.name).replace(/'/g,"\\'")+'\')">';if(w.local_image)html+='<img src="'+escHtml(imgSrc(w.local_image))+'" loading="lazy">';html+='<div class="ic-name">'+escHtml(w.name)+'</div>';html+='<div class="ic-meta">'+(w.weapon_type||'')+(w.handedness?' \u00B7 '+w.handedness:'')+'</div>';if(w.damage_stats&&w.damage_stats.base_damage){var dmgStr=Object.keys(w.damage_stats.base_damage).filter(function(k){return w.damage_stats.base_damage[k]>0;}).slice(0,3).map(function(k){return k.substring(0,3)+': '+w.damage_stats.base_damage[k];}).join(' | ');html+='<div class="ic-meta">'+dmgStr+'</div>';}html+='</div>';}
-if(filtered.length===0){html+='<div style="color:var(--dim);padding:20px;text-align:center">No weapons found</div>';}
-html+='</div></div></div>';
-overlay.innerHTML=html;
-document.body.appendChild(overlay);
+function renderWeaponList(){
+var container=document.getElementById('weapon-list');
+if(!container)return;
+
+var filtered=DATA.weapons.filter(function(w){
+if(WEAPON_FILTER.type!=='all'&&w.weapon_type!==WEAPON_FILTER.type)return false;
+if(WEAPON_FILTER.hand!=='all'&&w.handedness!==WEAPON_FILTER.hand)return false;
+if(WEAPON_FILTER.dmg!=='all'){
+var hasDmg=false;
+if(w.damage_stats&&w.damage_stats.base_damage){
+if(w.damage_stats.base_damage[WEAPON_FILTER.dmg]>0)hasDmg=true;
+}
+if(!hasDmg)return false;
+}
+if(WEAPON_SEARCH){
+var q=WEAPON_SEARCH.toLowerCase();
+if(w.name.toLowerCase().indexOf(q)<0)return false;
+}
+return true;
+});
+
+if(WEAPON_FILTER.sort==='damage'){
+filtered.sort(function(a,b){
+var dmgA=a.damage_stats&&a.damage_stats.base_damage?Object.values(a.damage_stats.base_damage).reduce(function(x,y){return x+y;},0):0;
+var dmgB=b.damage_stats&&b.damage_stats.base_damage?Object.values(b.damage_stats.base_damage).reduce(function(x,y){return x+y;},0):0;
+return dmgB-dmgA;
+});
+}else if(WEAPON_FILTER.sort==='speed'){
+filtered.sort(function(a,b){return (b.damage_stats&&b.damage_stats.attack_speed||0)-(a.damage_stats&&a.damage_stats.attack_speed||0);});
+}else if(WEAPON_FILTER.sort==='weight'){
+filtered.sort(function(a,b){return (a.weight||0)-(b.weight||0);});
+}else{
+filtered.sort(function(a,b){return a.name.localeCompare(b.name);});
 }
 
-function getWeaponRarityClass(w){var desc=(w.description||'').toLowerCase();if(desc.indexOf('unique')>=0)return 'rarity-unique';if(desc.indexOf('craft')>=0)return 'rarity-crafted';if(desc.indexOf('legacy')>=0)return 'rarity-legacy';if(desc.indexOf('quest')>=0)return 'rarity-quest';return 'rarity-common';}
-function selectWeapon(name){if(!BUILD.weapons)BUILD.weapons={};BUILD.weapons[MODAL_SLOT]=name;saveBuild();closeModal();renderTab('weapons');}
+var html='<div class="item-grid">';
+for(var i=0;i<filtered.length;i++){
+var w=filtered[i];
+var rarityClass=getWeaponRarityClass(w);
+var rarityName=getWeaponRarityName(w);
+var isEquipped=Object.values(BUILD.weapons||{}).indexOf(w.name)>=0;
 
+html+='<div class="item-card '+rarityClass+(isEquipped?' selected':'')+'">';
+html+='<div class="item-header">';
+if(w.local_image){html+='<img class="item-icon" src="'+escHtml(imgSrc(w.local_image))+'" loading="lazy">';}
+html+='<div class="item-title">';
+html+='<div class="item-name">'+escHtml(w.name)+'</div>';
+html+='<div class="item-type">'+escHtml(w.weapon_type||'')+' | '+(w.handedness||'')+' | '+rarityName+'</div>';
+html+='</div></div>';
+
+html+='<div class="item-stats">';
+if(w.damage_stats&&w.damage_stats.base_damage){
+Object.keys(w.damage_stats.base_damage).forEach(function(k){
+var v=w.damage_stats.base_damage[k];
+if(v>0){
+html+='<div class="stat-line"><span class="stat-label">'+k.charAt(0).toUpperCase()+k.slice(1)+'</span><span class="stat-value">'+v+'</span></div>';
+}
+});
+if(w.damage_stats.impact){
+html+='<div class="stat-line"><span class="stat-label">Impact</span><span class="stat-value">'+w.damage_stats.impact+'</span></div>';
+}
+if(w.damage_stats.attack_speed){
+html+='<div class="stat-line"><span class="stat-label">Speed</span><span class="stat-value">'+w.damage_stats.attack_speed+'</span></div>';
+}
+if(w.damage_stats.stamina_cost){
+html+='<div class="stat-line"><span class="stat-label">Stam Cost</span><span class="stat-value">'+w.damage_stats.stamina_cost+'</span></div>';
+}
+}
+html+='<div class="stat-line"><span class="stat-label">Weight</span><span class="stat-value">'+(w.weight||0)+'</span></div>';
+if(w.durability){
+html+='<div class="stat-line"><span class="stat-label">Durability</span><span class="stat-value">'+w.durability+'</span></div>';
+}
+html+='</div>';
+
+if(w.special_effects){
+html+='<div class="item-desc">'+escHtml(w.special_effects)+'</div>';
+}
+
+if(w.description){
+html+='<div class="item-desc">'+escHtml(w.description)+'</div>';
+}
+
+html+='<div class="item-actions">';
+if(isEquipped){
+html+='<button class="equip-btn equipped" onclick="unequipWeapon(\''+escHtml(w.name).replace(/'/g,"\\'")+'\')">Unequip</button>';
+}else{
+html+='<button class="equip-btn" onclick="equipWeapon(\''+escHtml(w.name).replace(/'/g,"\\'")+'\')">Equip</button>';
+}
+html+='</div></div>';
+}
+if(filtered.length===0){
+html+='<div style="color:var(--dim);padding:20px;text-align:center;grid-column:1/-1">No weapons found</div>';
+}
+html+='</div>';
+container.innerHTML=html;
+}
+
+function equipWeapon(name){
+var w=findWeapon(name);
+if(!w)return;
+if(!BUILD.weapons)BUILD.weapons={};
+// Default to main hand, or off-hand if already equipped in main
+if(w.handedness==='2H'){
+BUILD.weapons['weapon_main']=name;
+delete BUILD.weapons['weapon_off'];
+}else{
+if(!BUILD.weapons['weapon_main']){
+BUILD.weapons['weapon_main']=name;
+}else if(!BUILD.weapons['weapon_off']){
+BUILD.weapons['weapon_off']=name;
+}else{
+BUILD.weapons['weapon_main']=name;
+}
+}
+saveBuild();
+renderWeaponList();
+renderBuilder();
+}
+
+function unequipWeapon(name){
+Object.keys(BUILD.weapons||{}).forEach(function(slot){
+if(BUILD.weapons[slot]===name){
+delete BUILD.weapons[slot];
+}
+});
+saveBuild();
+renderWeaponList();
+renderBuilder();
+}
+
+// SKILLS TAB
 function renderSkillsTab(pane){
 var html='';
 html+='<input class="search-bar" placeholder="Search skills..." oninput="skillSearch(this.value)">';
 html+='<div class="filter-pills" id="skill-class-filters">';
 html+='<button class="pill active" onclick="filterSkillsByClass(null)">All</button>';
-for(var i=0;i<DATA.classes.length;i++){html+='<button class="pill" onclick="filterSkillsByClass(\''+escHtml(DATA.classes[i].name).replace(/'/g,"\\'")+'\')">'+escHtml(DATA.classes[i].name)+'</button>';}
+for(var i=0;i<DATA.classes.length;i++){
+html+='<button class="pill" onclick="filterSkillsByClass(\''+escHtml(DATA.classes[i].name).replace(/'/g,"\\'")+'\')">'+escHtml(DATA.classes[i].name)+'</button>';
+}
 html+='</div>';
 html+='<div id="skills-list"></div>';
 pane.innerHTML=html;
@@ -479,76 +952,343 @@ renderSkillsList();
 function skillSearch(val){SKILL_SEARCH=val;renderSkillsList();}
 function filterSkillsByClass(cls){SKILL_CLASS_FILTER=cls;var pills=document.querySelectorAll('#skill-class-filters .pill');var labels=['All'];for(var i=0;i<DATA.classes.length;i++)labels.push(DATA.classes[i].name);for(var j=0;j<pills.length;j++){pills[j].className='pill'+(labels[j]===cls?' active':'');}renderSkillsList();}
 
+function getSkillStatus(skill){
+var isSelected=(BUILD.skills||[]).indexOf(skill.name)>=0;
+if(isSelected)return 'selected';
+
+if(BUILD.theorycraft)return 'available';
+
+// Check if excluded by another selected skill
+for(var i=0;i<(BUILD.skills||[]).length;i++){
+var selSkill=findSkill(BUILD.skills[i]);
+if(selSkill&&selSkill.excludes_skill===skill.name){
+return 'excluded:'+selSkill.name;
+}
+}
+
+// Check requirements
+if(skill.requires_skill){
+var reqIdx=(BUILD.skills||[]).indexOf(skill.requires_skill);
+if(reqIdx<0){
+return 'requires:'+skill.requires_skill;
+}
+}
+
+// Check breakthrough limit
+if(skill.costs_breakthrough&&(BUILD.breakthroughsUsed||0)>=3){
+return 'no-bt';
+}
+
+return 'available';
+}
+
 function renderSkillsList(){
 var container=document.getElementById('skills-list');
 if(!container)return;
-var filtered=DATA.skills.filter(function(s){if(SKILL_CLASS_FILTER&&s.parent_class!==SKILL_CLASS_FILTER)return false;if(SKILL_SEARCH){var q=SKILL_SEARCH.toLowerCase();if(s.name.toLowerCase().indexOf(q)<0&&(!s.effects||s.effects.toLowerCase().indexOf(q)<0))return false;}return true;});
+
+var filtered=DATA.skills.filter(function(s){
+if(SKILL_CLASS_FILTER&&s.parent_class!==SKILL_CLASS_FILTER)return false;
+if(SKILL_SEARCH){
+var q=SKILL_SEARCH.toLowerCase();
+if(s.name.toLowerCase().indexOf(q)<0&&(!s.effects||s.effects.toLowerCase().indexOf(q)<0))return false;
+}
+return true;
+});
+
 var byClass={};
-filtered.forEach(function(s){if(!byClass[s.parent_class])byClass[s.parent_class]=[];byClass[s.parent_class].push(s);});
-Object.keys(byClass).forEach(function(k){byClass[k].sort(function(a,b){var order=function(t){return t===0?4:t;};return order(a.tier)-order(b.tier);});});
+filtered.forEach(function(s){
+if(!byClass[s.parent_class])byClass[s.parent_class]=[];
+byClass[s.parent_class].push(s);
+});
+
+// Sort within classes by tier
+Object.keys(byClass).forEach(function(k){
+byClass[k].sort(function(a,b){
+var order=function(t){return t===0?4:t;};
+return order(a.tier)-order(b.tier);
+});
+});
+
 var html='';
-var ptsUsed=(BUILD.skills||[]).length;
-var ptsLeft=BUILD.theorycraft?999:BUILD.level-ptsUsed;
+var btUsed=BUILD.breakthroughsUsed||0;
+
 for(var i=0;i<DATA.classes.length;i++){
 var cls=DATA.classes[i];
 var skills=byClass[cls.name];
 if(!skills||skills.length===0)continue;
-html+='<div style="margin-bottom:10px">';
-html+='<div class="class-header" onclick="toggleClassSkills(\''+escHtml(cls.name).replace(/'/g,"\\'")+'\')">';
+
+html+='<div class="class-section">';
+html+='<div class="class-header">';
 if(cls.local_image)html+='<img class="class-icon" src="'+escHtml(imgSrc(cls.local_image))+'">';
 html+='<div class="class-info"><h3>'+escHtml(cls.name)+'</h3><p>'+escHtml(cls.teacher)+' \u2014 '+escHtml(cls.location)+'</p></div>';
 if(cls.is_dlc)html+='<span class="class-dlc">DLC</span>';
 html+='</div>';
-html+='<div class="skills-list" id="skills-'+escHtml(cls.name).replace(/\s+/g,'-')+'" style="display:none">';
-for(var j=0;j<skills.length;j++){
-var skill=skills[j];
-var isSel=(BUILD.skills||[]).indexOf(skill.name)>=0;
-var locked=isSkillLocked(skill,ptsLeft);
-html+='<div class="skill-item'+(isSel?' selected':'')+(locked?' locked':'')+'" onclick="toggleSkill(\''+escHtml(skill.name).replace(/'/g,"\\'")+'\')">';
+
+// Group by tier
+var tiers={1:[],2:[],3:[],0:[]};
+skills.forEach(function(s){
+var t=s.tier||1;
+if(!tiers[t])tiers[t]=[];
+tiers[t].push(s);
+});
+
+// Render tiers
+var tierNames={1:'Tier 1',2:'Tier 2 (Breakthrough)',3:'Tier 3',0:'Special'};
+[1,2,3,0].forEach(function(t){
+if(tiers[t].length===0)return;
+html+='<div class="tier-section">';
+html+='<div class="tier-label">'+tierNames[t]+'</div>';
+
+for(var j=0;j<tiers[t].length;j++){
+var skill=tiers[t][j];
+var status=getSkillStatus(skill);
+var isSel=status==='selected';
+var isLocked=status.indexOf('requires:')===0||status.indexOf('excluded:')===0||status==='no-bt';
+var isBreakthrough=skill.costs_breakthrough;
+
+var cardClass='skill-item';
+if(isSel)cardClass+=' selected';
+if(isLocked)cardClass+=' locked';
+if(isBreakthrough&&isSel)cardClass+=' breakthrough';
+
+html+='<div class="'+cardClass+'" onclick="toggleSkill(\''+escHtml(skill.name).replace(/'/g,"\\'")+'\')">';
 if(skill.local_image)html+='<img src="'+escHtml(imgSrc(skill.local_image))+'" loading="lazy">';
 html+='<div class="skill-info">';
 html+='<div class="skill-name">'+escHtml(skill.name)+'</div>';
-html+='<div class="skill-meta">'+(skill.skill_type||'');
-if(skill.subtype)html+=' \u00B7 '+escHtml(skill.subtype);
-if(skill.mana_cost)html+=' \u00B7 '+escHtml(skill.mana_cost)+' Mana';
-if(skill.stamina_cost)html+=' \u00B7 '+escHtml(skill.stamina_cost)+' Stam';
+
+var meta=[];
+if(skill.skill_type)meta.push(skill.skill_type);
+if(skill.subtype)meta.push(skill.subtype);
+if(skill.mana_cost)meta.push(skill.mana_cost+' Mana');
+if(skill.stamina_cost)meta.push(skill.stamina_cost+' Stam');
+if(skill.cooldown)meta.push('CD '+skill.cooldown);
+html+='<div class="skill-meta">'+escHtml(meta.join(' \u00B7 '))+'</div>';
+
+// Status messages
+if(status.indexOf('requires:')===0){
+var reqName=status.substring(9);
+html+='<div class="skill-req">Requires: '+escHtml(reqName)+'</div>';
+}else if(status.indexOf('excluded:')===0){
+var exclName=status.substring(9);
+html+='<div class="skill-excl">Excluded by: '+escHtml(exclName)+'</div>';
+}else if(status==='no-bt'){
+html+='<div class="skill-excl">No breakthrough points left</div>';
+}
+
+if(skill.effects){
+html+='<div class="skill-meta" style="margin-top:4px">'+escHtml(skill.effects)+'</div>';
+}
+
+if(skill.cost){
+html+='<div class="skill-cost">Cost: '+escHtml(skill.cost)+'</div>';
+}
+
 html+='</div>';
-if(skill.effects)html+='<div class="skill-meta" style="margin-top:2px">'+escHtml(skill.effects.substring(0,70))+(skill.effects.length>70?'...':'')+'</div>';
-html+='</div>';
-html+='<span class="skill-tier'+(skill.tier===2?' t2':skill.tier===3?' t3':'')+'">'+(skill.tier===0?'SP':(skill.costs_breakthrough?'BT T'+skill.tier:'T'+skill.tier))+'</span>';
+html+='<span class="skill-tier-badge'+(t===2?' t2':t===3?' t3':'')+'">'+(t===0?'SP':(isBreakthrough?'BT T'+t:'T'+t))+'</span>';
 html+='</div>';
 }
-html+='</div></div>';
+
+html+='</div>';
+});
+
+html+='</div>';
 }
+
 container.innerHTML=html;
 }
 
-function toggleClassSkills(clsName){var id='skills-'+clsName.replace(/\s+/g,'-');var el=document.getElementById(id);if(el){el.style.display=el.style.display==='none'?'block':'none';}}
-function isSkillLocked(skill,ptsLeft){if(BUILD.theorycraft)return false;if((BUILD.skills||[]).indexOf(skill.name)>=0)return false;if(skill.costs_breakthrough&&(BUILD.breakthroughsUsed||0)>=3)return true;if(ptsLeft<=0)return true;return false;}
-function toggleSkill(name){var idx=(BUILD.skills||[]).indexOf(name);var skill=findSkill(name);var isBT=skill&&skill.costs_breakthrough;if(idx>=0){BUILD.skills.splice(idx,1);if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)-1;}else{var ptsUsed=(BUILD.skills||[]).length;var ptsLeft=BUILD.theorycraft?999:BUILD.level-ptsUsed;if(!BUILD.theorycraft&&ptsLeft<=0)return;if(isBT&&!BUILD.theorycraft&&(BUILD.breakthroughsUsed||0)>=3)return;BUILD.skills.push(name);if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)+1;}saveBuild();renderSkillsList();renderBuilder();}
+function toggleSkill(name){
+var idx=(BUILD.skills||[]).indexOf(name);
+var skill=findSkill(name);
+var isBT=skill&&skill.costs_breakthrough;
 
+if(idx>=0){
+// Deselect
+BUILD.skills.splice(idx,1);
+if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)-1;
+
+// Also deselect skills that require this one
+var toRemove=[];
+(BUILD.skills||[]).forEach(function(sName){
+var s=findSkill(sName);
+if(s&&s.requires_skill===name){
+toRemove.push(sName);
+}
+});
+toRemove.forEach(function(sName){
+var rIdx=BUILD.skills.indexOf(sName);
+if(rIdx>=0){
+var rSkill=findSkill(sName);
+if(rSkill&&rSkill.costs_breakthrough){
+BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)-1;
+}
+BUILD.skills.splice(rIdx,1);
+}
+});
+}else{
+// Select
+var status=getSkillStatus(skill);
+if(status.indexOf('requires:')===0||status.indexOf('excluded:')===0||status==='no-bt'){
+return;
+}
+
+BUILD.skills.push(name);
+if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)+1;
+}
+
+saveBuild();
+renderSkillsList();
+renderBuilder();
+}
+
+// FACTIONS TAB
 function renderFactionsTab(pane){
-var html='<div style="font-size:10px;color:var(--dim);margin-bottom:8px;padding:0 2px">Choose your faction.</div>';
+var html='';
+
+if(!BUILD.faction){
+html+='<div style="font-size:12px;color:var(--dim);margin-bottom:12px;padding:0 4px">Choose your faction to view quests.</div>';
 for(var i=0;i<DATA.factions.length;i++){
 var f=DATA.factions[i];
-var isSel=BUILD.faction===f.id;
-html+='<div class="faction-card'+(isSel?' selected':'')+'" onclick="selectFaction(\''+f.id+'\')">';
+html+='<div class="faction-card" onclick="selectFaction(\''+f.id+'\')">';
 html+='<div class="faction-name">'+escHtml(f.name)+'</div>';
 html+='<div class="faction-desc">'+escHtml(f.description||'')+'</div>';
-if(f.local_image)html+='<img src="'+escHtml(imgSrc(f.local_image))+'" style="width:32px;height:32px;margin-top:5px;border-radius:4px">';
+if(f.local_image)html+='<img src="'+escHtml(imgSrc(f.local_image))+'" style="width:40px;height:40px;margin-top:8px;border-radius:6px">';
 html+='</div>';
 }
+}else{
+var selFaction=null;
+for(var j=0;j<DATA.factions.length;j++){
+if(DATA.factions[j].id===BUILD.faction){selFaction=DATA.factions[j];break;}
+}
+
+if(selFaction){
+html+='<div class="faction-card selected" onclick="selectFaction(\''+selFaction.id+'\')">';
+html+='<div class="faction-name">'+escHtml(selFaction.name)+' \u2713</div>';
+html+='<div class="faction-desc">'+escHtml(selFaction.description||'')+'</div>';
+html+='</div>';
+
+// Show quests
+var factionQuests=DATA.quests.filter(function(q){
+return q.faction===BUILD.faction||q.faction===selFaction.name;
+});
+
+if(factionQuests.length>0){
+html+='<div class="filter-label" style="margin-top:12px">Quests ('+factionQuests.length+')</div>';
+
+var mainQuests=factionQuests.filter(function(q){return q.quest_type==='main'||q.type==='main';});
+var sideQuests=factionQuests.filter(function(q){return q.quest_type!=='main'&&q.type!=='main';});
+
+if(mainQuests.length>0){
+html+='<div class="tier-label">Main Quests</div>';
+for(var m=0;m<mainQuests.length;m++){
+html+=renderQuestCard(mainQuests[m]);
+}
+}
+
+if(sideQuests.length>0){
+html+='<div class="tier-label" style="margin-top:12px">Side Quests</div>';
+for(var s=0;s<sideQuests.length;s++){
+html+=renderQuestCard(sideQuests[s]);
+}
+}
+}else{
+html+='<div style="color:var(--dim);padding:16px;text-align:center">No quests found for this faction</div>';
+}
+}
+
+// Other factions
+html+='<div class="filter-label" style="margin-top:16px">Other Factions</div>';
+for(var k=0;k<DATA.factions.length;k++){
+if(DATA.factions[k].id!==BUILD.faction){
+html+='<div class="faction-card" onclick="selectFaction(\''+DATA.factions[k].id+'\')">';
+html+='<div class="faction-name" style="font-size:13px">'+escHtml(DATA.factions[k].name)+'</div>';
+html+='</div>';
+}
+}
+}
+
 pane.innerHTML=html;
 }
 
-function selectFaction(id){BUILD.faction=BUILD.faction===id?null:id;saveBuild();renderTab('factions');renderBuilder();}
+function renderQuestCard(quest){
+var html='<div class="quest-item">';
+html+='<div class="quest-name">'+escHtml(quest.name||'Unknown Quest')+'</div>';
 
+if(quest.description){
+html+='<div class="quest-desc">'+escHtml(quest.description)+'</div>';
+}
+
+// Rewards
+if(quest.rewards){
+html+='<div class="quest-rewards">';
+if(quest.rewards.silver){
+html+='<span class="reward-chip">'+quest.rewards.silver+' Silver</span>';
+}
+if(quest.rewards.items){
+quest.rewards.items.forEach(function(item){
+html+='<span class="reward-chip">'+escHtml(item)+'</span>';
+});
+}
+if(quest.rewards.reputation){
+html+='<span class="reward-chip">Rep: '+quest.rewards.reputation+'</span>';
+}
+html+='</div>';
+}
+
+// Outcomes (mutually exclusive choices)
+if(quest.outcomes&&quest.outcomes.length>1){
+html+='<div class="filter-label" style="margin-top:8px">Choose one:</div>';
+var selectedOutcome=QUEST_SELECTIONS[quest.name];
+for(var o=0;o<quest.outcomes.length;o++){
+var outcome=quest.outcomes[o];
+var isSel=selectedOutcome===outcome.name;
+html+='<div class="quest-outcome'+(isSel?' selected':'')+'" onclick="selectOutcome(\''+escHtml(quest.name).replace(/'/g,"\\'")+'\',\''+escHtml(outcome.name).replace(/'/g,"\\'")+'\')">';
+html+='<div class="outcome-name">'+escHtml(outcome.name)+'</div>';
+if(outcome.rewards){
+html+='<div style="font-size:10px;color:var(--gold);margin-top:4px">';
+if(outcome.rewards.silver)html+=outcome.rewards.silver+'s ';
+if(outcome.rewards.items)html+=outcome.rewards.items.join(', ');
+html+='</div>';
+}
+if(outcome.locks){
+html+='<div class="outcome-locks">Locks: '+escHtml(outcome.locks.join(', '))+'</div>';
+}
+html+='</div>';
+}
+}
+
+html+='</div>';
+return html;
+}
+
+function selectOutcome(questName,outcomeName){
+QUEST_SELECTIONS[questName]=outcomeName;
+saveBuild();
+renderTab('factions');
+}
+
+function selectFaction(id){
+if(BUILD.faction===id){
+BUILD.faction=null;
+QUEST_SELECTIONS={};
+}else{
+BUILD.faction=id;
+QUEST_SELECTIONS={};
+}
+saveBuild();
+renderTab('factions');
+renderBuilder();
+}
+
+// CONSUMABLES TAB
 function renderConsumablesTab(pane){
 var html='';
 html+='<input class="search-bar" placeholder="Search items..." oninput="consSearch(this.value)">';
 html+='<div class="filter-pills" id="cons-type-filters">';
 html+='<button class="pill active" onclick="filterConsByType(null)">All</button>';
-['food','drink','potion','tool','ammunition','special'].forEach(function(t){html+='<button class="pill" onclick="filterConsByType(\''+t+'\')">'+t.charAt(0).toUpperCase()+t.slice(1)+'</button>';});
+['food','drink','potion','tool','ammunition','special'].forEach(function(t){
+html+='<button class="pill" onclick="filterConsByType(\''+t+'\')">'+t.charAt(0).toUpperCase()+t.slice(1)+'</button>';
+});
 html+='</div>';
 html+='<div id="cons-list"></div>';
 pane.innerHTML=html;
@@ -561,24 +1301,93 @@ function filterConsByType(type){CONS_TYPE_FILTER=type;var pills=document.querySe
 function renderConsList(){
 var container=document.getElementById('cons-list');
 if(!container)return;
-var filtered=DATA.consumables.filter(function(c){if(CONS_TYPE_FILTER&&c.consumable_type!==CONS_TYPE_FILTER)return false;if(CONS_SEARCH){var q=CONS_SEARCH.toLowerCase();if(c.name.toLowerCase().indexOf(q)<0&&(!c.description||c.description.toLowerCase().indexOf(q)<0))return false;}return true;});
+
+var filtered=DATA.consumables.filter(function(c){
+if(CONS_TYPE_FILTER&&c.consumable_type!==CONS_TYPE_FILTER)return false;
+if(CONS_SEARCH){
+var q=CONS_SEARCH.toLowerCase();
+if(c.name.toLowerCase().indexOf(q)<0&&(!c.description||c.description.toLowerCase().indexOf(q)<0))return false;
+}
+return true;
+});
+
 var html='';
 for(var i=0;i<filtered.length;i++){
 var c=filtered[i];
 var isSel=(BUILD.consumables||[]).indexOf(c.name)>=0;
+
 html+='<div class="cons-item'+(isSel?' selected':'')+'" onclick="toggleCons(\''+escHtml(c.name).replace(/'/g,"\\'")+'\')">';
 if(c.local_image)html+='<img src="'+escHtml(imgSrc(c.local_image))+'" loading="lazy">';
 html+='<div class="cons-info">';
 html+='<div class="cons-name">'+escHtml(c.name)+'</div>';
-html+='<div class="cons-type">'+escHtml(c.consumable_type||'')+(c.weight?' \u00B7 '+c.weight+'kg':'')+(c.price?' \u00B7 '+c.price+'s':'')+'</div>';
-if(c.description)html+='<div class="cons-effects">'+escHtml(c.description.substring(0,50))+(c.description.length>50?'...':'')+'</div>';
+html+='<div class="cons-type">'+escHtml(c.consumable_type||'');
+if(c.weight)html+=' \u00B7 '+c.weight+'kg';
+if(c.price)html+=' \u00B7 '+c.price+'s';
+html+='</div>';
+
+if(c.description){
+html+='<div class="cons-desc">'+escHtml(c.description)+'</div>';
+}
+
+// Crafting recipe
+if(c.crafting_recipe){
+html+='<div class="craft-section">';
+html+='<div class="craft-title">Crafting Recipe</div>';
+if(c.crafting_recipe.ingredients){
+html+='<div class="craft-ingredients">';
+for(var ing=0;ing<c.crafting_recipe.ingredients.length;ing++){
+var ingredient=c.crafting_recipe.ingredients[ing];
+html+='<div>'+escHtml(ingredient.item||ingredient.name||ingredient)+' x'+(ingredient.quantity||ingredient.qty||1)+'</div>';
+}
+html+='</div>';
+}
+if(c.crafting_recipe.station){
+html+='<div class="craft-station">Station: '+escHtml(c.crafting_recipe.station)+'</div>';
+}
+html+='</div>';
+}else{
+html+='<div class="craft-section">';
+html+='<div class="craft-title" style="color:var(--dim)">Cannot be crafted</div>';
+if(c.source){
+html+='<div class="craft-station">Source: '+escHtml(c.source)+'</div>';
+}
+html+='</div>';
+}
+
 html+='</div></div>';
 }
+
 container.innerHTML=html;
 }
 
-function toggleCons(name){var idx=(BUILD.consumables||[]).indexOf(name);if(idx>=0){BUILD.consumables.splice(idx,1);}else{BUILD.consumables.push(name);}saveBuild();renderConsList();renderBuilder();}
+function toggleCons(name){
+var idx=(BUILD.consumables||[]).indexOf(name);
+if(idx>=0){
+BUILD.consumables.splice(idx,1);
+// Remove from quick slots
+if(BUILD.quickSlots){
+for(var i=0;i<BUILD.quickSlots.length;i++){
+if(BUILD.quickSlots[i]===name)BUILD.quickSlots[i]=null;
+}
+}
+}else{
+BUILD.consumables.push(name);
+// Add to first empty quick slot
+if(BUILD.quickSlots){
+for(var j=0;j<BUILD.quickSlots.length;j++){
+if(!BUILD.quickSlots[j]){
+BUILD.quickSlots[j]=name;
+break;
+}
+}
+}
+}
+saveBuild();
+renderConsList();
+renderBuilder();
+}
 
+// EFFECTS TAB
 function renderEffectsTab(pane){
 var html='';
 html+='<input class="search-bar" placeholder="Search effects..." oninput="effectSearch(this.value)">';
@@ -592,28 +1401,34 @@ function effectSearch(val){EFFECT_SEARCH=val;renderEffectsList();}
 function renderEffectsList(){
 var container=document.getElementById('effects-list');
 if(!container)return;
-var filtered=DATA.effects.filter(function(e){if(EFFECT_SEARCH){var q=EFFECT_SEARCH.toLowerCase();if((e.name||'').toLowerCase().indexOf(q)<0&&(!e.description||e.description.toLowerCase().indexOf(q)<0))return false;}return true;});
+
+var filtered=DATA.effects.filter(function(e){
+if(EFFECT_SEARCH){
+var q=EFFECT_SEARCH.toLowerCase();
+if((e.name||'').toLowerCase().indexOf(q)<0&&(!e.description||e.description.toLowerCase().indexOf(q)<0))return false;
+}
+return true;
+});
+
 var html='';
 for(var i=0;i<filtered.length;i++){
 var e=filtered[i];
 html+='<div class="effect-item">';
 if(e.local_image)html+='<img src="'+escHtml(imgSrc(e.local_image))+'" loading="lazy">';
 html+='<div class="effect-info">';
-html+='<div style="display:flex;align-items:center;gap:5px">';
-html+='<span class="effect-name">'+escHtml(e.name||'Unknown')+'</span>';
-if(e.category)html+='<span class="effect-cat">'+escHtml(e.category)+'</span>';
-html+='</div>';
+html+='<div class="effect-name">'+escHtml(e.name||'Unknown')+'</div>';
 if(e.description)html+='<div class="effect-desc">'+escHtml(e.description)+'</div>';
 if(e.duration)html+='<div class="effect-desc">Duration: '+escHtml(e.duration)+'</div>';
+if(e.category)html+='<span class="effect-cat">'+escHtml(e.category)+'</span>';
 html+='</div></div>';
 }
 container.innerHTML=html;
 }
 
+// UTILITY FUNCTIONS
 function saveBuild(){try{localStorage.setItem('outward-build',JSON.stringify(BUILD));}catch(e){}}
-function updateLevel(val){BUILD.level=Math.min(50,Math.max(1,parseInt(val)||1));saveBuild();renderBuilder();}
 function toggleTheorycraft(){BUILD.theorycraft=!BUILD.theorycraft;saveBuild();renderBuilder();}
-function resetBuild(){if(confirm('Reset build?')){BUILD={name:'New Build',level:1,theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,controller:{}};saveBuild();renderBuilder();}}
+function resetBuild(){if(confirm('Reset build?')){BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};QUEST_SELECTIONS={};saveBuild();renderBuilder();}}
 function exportBuild(){var json=JSON.stringify(BUILD,null,2);var blob=new Blob([json],{type:'application/json'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download=(BUILD.name||'build').replace(/\s+/g,'_')+'.json';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url);}
 function importBuild(){var input=document.createElement('input');input.type='file';input.accept='.json';input.onchange=function(){var f=input.files[0];if(!f)return;var reader=new FileReader();reader.onload=function(){try{var d=JSON.parse(reader.result);BUILD=Object.assign({},BUILD,d);saveBuild();renderBuilder();}catch(e){alert('Invalid build file');}};reader.readAsText(f);};input.click();}
 
