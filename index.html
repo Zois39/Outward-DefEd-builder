@@ -299,7 +299,9 @@ function hideError(){
 }
 
 function fetchJSON(path){
-  return fetch('data/raw/'+path).then(function(r){
+  // Add cache-buster to force fresh data
+  var url='data/raw/'+path+'?v='+new Date().getTime();
+  return fetch(url).then(function(r){
     if(!r.ok)throw new Error('HTTP '+r.status+': '+path);
     return r.json();
   });
@@ -893,7 +895,7 @@ function renderWeaponsTab(pane){
   var html='';
   html+='<input class="search-bar" placeholder="Search weapons..." oninput="weaponSearch(this.value)">';
   html+='<div class="filter-section"><div class="filter-label">Type</div><div class="filter-pills">';
-  var types=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Wand','Shield','Torch'];
+  var types=['all','Sword','Axe','Mace','Spear','Halberd','Bow','Pistol','Dagger','Staff','Chakram','Shield','Torch'];
   for(var i=0;i<types.length;i++){
     var t=types[i];
     html+='<button class="pill'+(WEAPON_FILTER.type===t?' active':'')+'" '+makeClick('setWeaponFilter','type|'+t)+'>'+t+'</button>';
