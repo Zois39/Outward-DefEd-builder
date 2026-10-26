@@ -229,7 +229,7 @@
   },
   {
     "name": "Antique Plate Boots",
-    "description": "blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 4\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100252 \n}}\nThe Antique Plate Boots are boots made from Shield Golem Scraps.",
+    "description": "The Antique Plate Boots are boots made from Shield Golem Scraps.",
     "slot": "legs",
     "resistances": {
       "physical": 8,
@@ -276,7 +276,7 @@
   },
   {
     "name": "Antique Plate Garb",
-    "description": "blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 8\n| buy          = 360\n| sell         = 108\n| related      = \n| object id    = 3100250 \n}}\nThe Antique Plate Garb is a chest piece made from Shield Golem Scraps.",
+    "description": "The Antique Plate Garb is a chest piece made from Shield Golem Scraps.",
     "slot": "chest",
     "resistances": {
       "physical": 15,
@@ -323,7 +323,7 @@
   },
   {
     "name": "Antique Plate Sallet",
-    "description": "blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 3\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100251 \n}}\nThe Antique Plate Sallet is a helmet made from Shield Golem Scraps.",
+    "description": "The Antique Plate Sallet is a helmet made from Shield Golem Scraps.",
     "slot": "head",
     "resistances": {
       "physical": 8,
@@ -712,7 +712,7 @@
   },
   {
     "name": "Black Dancer Clothes",
-    "description": ".png\n| size            = 84px\n| class           = Body Armor\n| type            = \n| protection      = \n| physical        = 3\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 4\n| effects         = \n| coldresist      = \n| heatresist      = 14\n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = -25\n| movespeed       = \n| pouch           = \n| durability      = 180\n| set             = Dancer Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 1.0\n| buy             = 175\n| sell            = 53\n| related         = \n| object id       = 3000181\n| object name     = DancerArmorB\n}}\t\nBlack Dancer Clothes is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Black Dancer Clothes is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 3,
@@ -1092,7 +1092,7 @@
   },
   {
     "name": "Blue Sand Armor",
-    "description": "| blacksmith      = Loud-Hammer\n| location        = Cierzo\n| weight          = 15.0\n| buy             = 560\n| sell            = 186\n| related         = \n| object id       = 3100080\n| object name     = BlueSandArmor\n}}\t\nBlue Sand Armor is a chest piece made from Blue Sand. It boasts exceptional defenses, outclassing even the Half-plate armor early game, though it is quite heavy and inhibits movement as well as stamina regeneration in exchange for its defensive capabilities.",
+    "description": "Blue Sand Armor is a chest piece made from Blue Sand. It boasts exceptional defenses, outclassing even the Half-plate armor early game, though it is quite heavy and inhibits movement as well as stamina regeneration in exchange for its defensive capabilities.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -1139,7 +1139,7 @@
   },
   {
     "name": "Blue Sand Boots",
-    "description": "| blacksmith      = Loud-Hammer\n| location        = Cierzo\n| weight          = 9.0\n| buy             = 280\n| sell            = 93\n| related         = \n| object id       = 3100082\n| object name     = BlueSandArmorBoots\n}}\t\nThe Blue Sand Boots are a pair of boots made from Blue Sand. They provide excellent physical defenses, as well as Ethereal resistance, though they are quite heavy and inhibit movement and increase the stamina cost of actions.",
+    "description": "The Blue Sand Boots are a pair of boots made from Blue Sand. They provide excellent physical defenses, as well as Ethereal resistance, though they are quite heavy and inhibit movement and increase the stamina cost of actions.",
     "slot": "legs",
     "resistances": {
       "physical": 14,
@@ -1186,7 +1186,7 @@
   },
   {
     "name": "Blue Sand Helm",
-    "description": "| blacksmith      = Loud-Hammer\n| location        = Cierzo\n| weight          = 5.0\n| buy             = 280\n| sell            = 84\n| related         = \n| object id       = 3100081\n| object name     = BlueSandArmorHelm\n}}\t\nThe Blue Sand Helm is a helmet made from Blue Sand. It provides fair defenses, and resistance to fire and cold, though it also inhibits movement speed as well as increasing the stamina cost of actions.",
+    "description": "The Blue Sand Helm is a helmet made from Blue Sand. It provides fair defenses, and resistance to fire and cold, though it also inhibits movement speed as well as increasing the stamina cost of actions.",
     "slot": "head",
     "resistances": {
       "physical": 14,
@@ -2069,7 +2069,7 @@
   },
   {
     "name": "Copal Armor",
-    "description": "| blacksmith      = Quikiza\n| location        = Berg\n| weight          = 9.0\n| buy             = 275\n| sell            = 91\n| related         = \n| object id       = 3000160\n| object name     = CopalArmorYellow\n}}\t\nCopal Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Copal Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 14,
@@ -2116,7 +2116,7 @@
   },
   {
     "name": "Copal Boots",
-    "description": "| blacksmith      = Quikiza\n| location        = Berg\n| weight          = 6.0\n| buy             = 150\n| sell            = 49\n| related         = \n| object id       = 3000162\n| object name     = CopalArmorBootsYellow\n}}\t\nCopal Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Copal Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 7,
@@ -2163,7 +2163,7 @@
   },
   {
     "name": "Copal Helm",
-    "description": "| blacksmith      = Quikiza\n| location        = Berg\n| weight          = 3.0\n| buy             = 150\n| sell            = 45\n| related         = \n| object id       = 3000161\n| object name     = CopalArmorHelmYellow\n}}\t\nCopal Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Copal Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 7,
@@ -2248,7 +2248,7 @@
   },
   {
     "name": "Crimson Dancer Clothes",
-    "description": ".png\n| size            = 84px\n| class           = Body Armor\n| type            = \n| protection      = \n| physical        = 3\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 4\n| effects         = \n| coldresist      = \n| heatresist      = 14\n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = -25\n| movespeed       = \n| pouch           = \n| durability      = 180\n| set             = Dancer Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 1.0\n| buy             = 175\n| sell            = 53\n| related         = \n| object id       = 3000182\n| object name     = DancerArmorC\n}}\t\nCrimson Dancer Clothes is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Crimson Dancer Clothes is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 3,
@@ -3008,7 +3008,7 @@
   },
   {
     "name": "Elite Hood",
-    "description": ".png\n| size            = 84px\n| class           = Head\n| type            = \n| protection      = 1\n| physical        = 13\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = 30\n| impact          = 9\n| effects         = \n| coldresist      = \n| heatresist      = 8\n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = -10\n| movespeed       = \n| pouch           = \n| durability      = 290\n| crafting        = \n| set             = Elite Set\n| blacksmith      = \n| location        = \n| weight          = 3.0\n| buy             = 300\n| sell            = 100\n| related         = \n| object id       = 3000037\n| object name     = GeirnhartHoodSkull\n}}\t\nElite Hood is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Elite Hood is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 13,
@@ -3046,7 +3046,7 @@
   },
   {
     "name": "Elite Plate Armor",
-    "description": ".png\n| size            = 84px\n| class           = Chest\n| type            = \n| protection      = 3\n| physical        = 26\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 20\n| effects         = \n| coldresist      = \n| heatresist      = -10\n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = 6\n| movespeed       = -6\n| pouch           = 4\n| durability      = 430\n| set             = Elite Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 20.0\n| buy             = 700\n| sell            = 233\n| related         = \n| object id       = 3100000\n| object name     = ElitePlateArmor\n}}\t\nElite Plate Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Elite Plate Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 26,
@@ -3084,7 +3084,7 @@
   },
   {
     "name": "Elite Plate Boots",
-    "description": ".png\n| size            = 84px\n| class           = Legs\n| type            = \n| protection      = 2\n| physical        = 18\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 12\n| effects         = \n| coldresist      = \n| heatresist      = \n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = 4\n| movespeed       = -4\n| pouch           = \n| durability      = 430\n| set             = Elite Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 14.0\n| buy             = 350\n| sell            = 116\n| related         = \n| object id       = 3100002\n| object name     = ElitePlateArmorBoots\n}}\t\nElite Plate Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Elite Plate Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 18,
@@ -3122,7 +3122,7 @@
   },
   {
     "name": "Elite Plate Helm",
-    "description": ".png\n| size            = 84px\n| class           = Head\n| type            = \n| protection      = 2\n| physical        = 18\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 12\n| effects         = \n| coldresist      = \n| heatresist      = \n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = 50\n| staminaCostReduction     = 4\n| movespeed       = -4\n| pouch           = \n| durability      = 430\n| set             = Elite Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 10.0\n| buy             = 350\n| sell            = 105\n| related         = \n| object id       = 3100001\n| object name     = ElitePlateArmorHelm\n}}\t\nElite Plate Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Elite Plate Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 18,
@@ -3274,7 +3274,7 @@
   },
   {
     "name": "Ergagr'Uk!",
-    "description": ".png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = \n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 0\n| effects      = +0.1 {{mana}} Mana restored per second\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = 50\n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -50\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = {{infinite}}\n| corruptresist= \n| set          = \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 20\n| sell         = 6\n| related      = \n| DLC = \n| object id    = 3900000 \n}}\nErgagr'Uk! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
+    "description": "Ergagr'Uk! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
     "slot": "head",
     "resistances": {
       "physical": null,
@@ -3426,7 +3426,7 @@
   },
   {
     "name": "Gar'Ga'Nak",
-    "description": ".png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = \n| ethereal     = \n| fire         = -40\n| frost        = -40\n| lightning    = \n| decay        = \n| impact       = 0\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = 35\n| frostBonus     = 35\n| lightningBonus = 35\n| decayBonus     = \n| manaCostReduction     = -35\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = {{infinite}}\n| corruptresist= \n| set          = \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 20\n| sell         = 6\n| related      = \n| DLC = \n| object id    = 3900005\n}}\nGar'Ga'Nak is a type of Equipment in Outward, which can only be used by Troglodyte players.",
+    "description": "Gar'Ga'Nak is a type of Equipment in Outward, which can only be used by Troglodyte players.",
     "slot": "head",
     "resistances": {
       "physical": null,
@@ -3464,7 +3464,7 @@
   },
   {
     "name": "Gargargar!",
-    "description": ".png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 33\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 33\n| effects      = 25% Impact bonus\n| coldresist   = \n| heatresist   = \n| physicalBonus  = 60\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = 10\n| durability   = {{infinite}}\n| corruptresist= \n| set          = \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 20\n| sell         = 6\n| related      = \n| DLC = \n| object id    = 3900002 \n}}\nGargargar! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
+    "description": "Gargargar! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
     "slot": "head",
     "resistances": {
       "physical": 33,
@@ -3502,7 +3502,7 @@
   },
   {
     "name": "Go'gO",
-    "description": ".png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = \n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 0\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      =\n| frostBonus     =\n| lightningBonus =\n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = -20\n| movespeed    = 17\n| pouch        = 5 \n| durability   = {{infinite}}\n| corruptresist= \n| set          = \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 20\n| sell         = 6\n| related      = \n| DLC = \n| object id    = 3900004\n}}\nGo'gO is a type of Equipment in Outward, which can only be used by Troglodyte players.",
+    "description": "Go'gO is a type of Equipment in Outward, which can only be used by Troglodyte players.",
     "slot": "head",
     "resistances": {
       "physical": null,
@@ -3654,7 +3654,7 @@
   },
   {
     "name": "GorkKrog!",
-    "description": ".png\n| size         = \n| class        = Head\n| type         = \n| protection   = 10\n| barrier      = \n| statusResist = \n| physical     = 50\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 60\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = 25\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = {{infinite}}\n| corruptresist= \n| set          = \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 20\n| sell         = 6\n| related      = \n| DLC =\n| object id    = 3900001 \n}}\nGorkKrog! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
+    "description": "GorkKrog! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
     "slot": "head",
     "resistances": {
       "physical": 50,
@@ -3692,7 +3692,7 @@
   },
   {
     "name": "GoulgGalog!",
-    "description": ".png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 15\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = 60\n| impact       = 0\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = 100\n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = 15\n| durability   = {{infinite}}\n| corruptresist= \n| set          = \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 20\n| sell         = 6\n| related      = \n| DLC = \n| object id    = 3900003 \n}}\nGoulgGalog! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
+    "description": "GoulgGalog! is a type of Equipment in Outward, which can only be used by Troglodyte players.",
     "slot": "head",
     "resistances": {
       "physical": 15,
@@ -5136,7 +5136,7 @@
   },
   {
     "name": "Makeshift Leather Attire",
-    "description": ".png\n| size            = 84px\n| class           = Chest\n| type            = \n| protection      = \n| physical        = 7\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 8\n| effects         = \n| coldresist      = 10\n| heatresist      = \n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = \n| movespeed       = \n| pouch           = 5\n| durability      = 120\n| set             = Makeshift Leather Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 6.0\n| buy             = 22\n| sell            = 7\n| related         = \n| object id       = 3000280\n| object name     = MakeshiftLeatherArmor\n}}\t\nMakeshift Leather Attire is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Makeshift Leather Attire is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 7,
@@ -5212,7 +5212,7 @@
   },
   {
     "name": "Makeshift Leather Hat",
-    "description": ".png\n| size            = 84px\n| class           = Head\n| type            = \n| protection      = \n| physical        = 4\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 6\n| effects         = \n| coldresist      = 5\n| heatresist      = \n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = \n| movespeed       = \n| pouch           = \n| durability      = 120\n| set             = Makeshift Leather Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 3.0\n| buy             = 10\n| sell            = 3\n| related         = \n| object id       = 3000281\n| object name     = MakeshiftLeatherArmorHelm\n}}\t\nMakeshift Leather Hat is a type of craftable Armor in Outward.\n\nThis item can only be obtained with Crafting.",
+    "description": "Makeshift Leather Hat is a type of craftable Armor in Outward.\n\nThis item can only be obtained with Crafting.",
     "slot": "head",
     "resistances": {
       "physical": 4,
@@ -5782,7 +5782,7 @@
   },
   {
     "name": "Merton's Ribcage",
-    "description": "| set             = Merton's Bones\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 0.0\n| buy             = 0\n| sell            = 0\n| related         = \n| object id       = 3200030\n| object name     = Skeleton\n}}\t\nMerton's Ribcage is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Merton's Ribcage is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": null,
@@ -5820,7 +5820,7 @@
   },
   {
     "name": "Merton's Shinbones",
-    "description": "| set             = Merton's Bones\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 0.0\n| buy             = 0\n| sell            = 0\n| related         = \n| object id       = 3200032\n| object name     = SkeletonBoots\n}}\t\nMerton's Shinbones is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Merton's Shinbones is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": null,
@@ -5858,7 +5858,7 @@
   },
   {
     "name": "Merton's Skull",
-    "description": "| set             = Merton's Bones\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 0.0\n| buy             = 0\n| sell            = 0\n| related         = \n| object id       = 3200031\n| object name     = SkeletonHelm\n}}\t\nMerton's Skull is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Merton's Skull is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": null,
@@ -6314,7 +6314,7 @@
   },
   {
     "name": "Orichalcum Armor",
-    "description": "| image        = Orichalcum Armor.png\n| size            = 84px\n| class           = Chest\n| type            = \n| set             = Orichalcum Set\n| protection      = 3\n| physical        = 26\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 19\n| effects         = \n| coldresist      = 15\n| heatresist      = -15\n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = 5\n| movespeed       = -6\n| pouch           = \n| durability   = 430\n| weight       = 19.0\n| buy          = 700\n| sell         = 210\n| related      =\n| object id    = 3100180\n| object name  = BlackPlateArmorLegacy\n}}\nOrichalcum Armor is a type of Armor in Outward.",
+    "description": "Orichalcum Armor is a type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 26,
@@ -6542,7 +6542,7 @@
   },
   {
     "name": "Pale Light Clothes",
-    "description": ".png\n| size            = 175\n| class           = Body Armor\n| type            = \n| protection      = \n| physical        = 2\n| fire            = \n| frost           = \n| lightning       = \n| ethereal        = \n| decay           = \n| impact          = 3\n| effects         = \n| coldresist      = \n| heatresist      = 15\n| physicalBonus   = \n| fireBonus       = \n| frostBonus      = \n| lightningBonus  = \n| etherealBonus   = \n| decayBonus      = \n| manaCostReduction        = \n| staminaCostReduction     = \n| movespeed       = \n| pouch           = \n| durability      = 150\n| set             = Light Clothes Set\n| crafting        = \n| blacksmith      = \n| location        = \n| weight          = 3.0\n| buy             = 35\n| sell            = 10\n| related         = \n| object id       = 3000172\n| object name     = LightClothesArmorC\n}}\t\nPale Light Clothes is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Pale Light Clothes is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 2,
@@ -6618,7 +6618,7 @@
   },
   {
     "name": "Palladium Armor",
-    "description": "| blacksmith      = Vyzyrinthrix\n| location        = Monsoon\n| weight          = 22.0\n| buy             = 700\n| sell            = 233\n| related         = \n| object id       = 3100060\n| object name     = PalladiumArmor\n}}\t\nPalladium Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Palladium Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 26,
@@ -6665,7 +6665,7 @@
   },
   {
     "name": "Palladium Boots",
-    "description": "silver\n| blacksmith      = Vyzyrinthrix\n| location        = \n| weight          = 15.0\n| buy             = 350\n| sell            = 116\n| related         = \n| object id       = 3100062\n| object name     = PalladiumArmorBoots\n}}\t\nPalladium Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Palladium Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 18,
@@ -6712,7 +6712,7 @@
   },
   {
     "name": "Palladium Helm",
-    "description": "silver\n| blacksmith      = Vyzyrinthrix\n| location        = \n| weight          = 11.0\n| buy             = 350\n| sell            = 105\n| related         = \n| object id       = 3100061\n| object name     = PalladiumArmorHelm\n}}\t\nPalladium Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Palladium Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 18,
@@ -7025,7 +7025,7 @@
   },
   {
     "name": "Petrified Wood Armor",
-    "description": "| blacksmith      = Quikiza\n| location        = Berg\n| weight          = 10.0\n| buy             = 440\n| sell            = 146\n| related         = \n| object id       = 3100020\n| object name     = PetrifiedArmor\n}}\t\nPetrified Wood Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Petrified Wood Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 18,
@@ -7072,7 +7072,7 @@
   },
   {
     "name": "Petrified Wood Boots",
-    "description": "| blacksmith      = Quikiza\n| location        = Berg\n| weight          = 6.0\n| buy             = 240\n| sell            = 79\n| related         = \n| object id       = 3100022\n| object name     = PetrifiedBoots\n}}\t\nPetrified Wood Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Petrified Wood Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 12,
@@ -7119,7 +7119,7 @@
   },
   {
     "name": "Petrified Wood Helm",
-    "description": "| blacksmith      = Quikiza\n| location        = Berg\n| weight          = 3.0\n| buy             = 240\n| sell            = 72\n| related         = \n| object id       = 3100021\n| object name     = PetrifiedHelm\n}}\t\nPetrified Wood Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Petrified Wood Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 12,
@@ -9370,7 +9370,7 @@
   },
   {
     "name": "Tenebrous Armor",
-    "description": "| weight          = 7.0\n| buy             = 450\n| sell            = 149\n| related         = \n| object id       = 3000140\n| object name     = TenebrousArmor\n}}\t\nTenebrous Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Tenebrous Armor is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 17,
@@ -9413,7 +9413,7 @@
   },
   {
     "name": "Tenebrous Boots",
-    "description": "| location        = Levant\n| weight          = 3.0\n| buy             = 250\n| sell            = 83\n| related         = \n| object id       = 3000142\n| object name     = TenebrousArmorBoots\n}}\t\nTenebrous Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Tenebrous Boots is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 9,
@@ -9456,7 +9456,7 @@
   },
   {
     "name": "Tenebrous Helm",
-    "description": "| weight          = 2.0\n| buy             = 250\n| sell            = 75\n| related         = \n| object id       = 3000141\n| object name     = TenebrousArmorHelm\n}}\t\nTenebrous Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Tenebrous Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 9,
@@ -9575,7 +9575,7 @@
   },
   {
     "name": "Tsar Armor",
-    "description": "| set             = Tsar Set\n| crafting        = \n| blacksmith      = Tokuga\n| location        = Levant\n| weight          = 23.0\n| buy             = 1050\n| sell            = 349\n| related         = \n| object id       = 3100140\n| object name     = TsarArmor\n}}\t\nTsar Armor is a type of Armor in Outward",
+    "description": "Tsar Armor is a type of Armor in Outward",
     "slot": "chest",
     "resistances": {
       "physical": 28,
@@ -9613,7 +9613,7 @@
   },
   {
     "name": "Tsar Boots",
-    "description": "| set             = Tsar Set\n| crafting        = 2x Tsar Stone <br> 300 {{s}}\n| blacksmith      = Tokuga\n| location        = Levant\n| weight          = 17.0\n| buy             = 525\n| sell            = 174\n| related         = \n| object id       = 3100142\n| object name     = TsarArmorBoots\n}}\nTsar Boots is a type of Boots in Outward.",
+    "description": "Tsar Boots is a type of Boots in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 20,
@@ -9660,7 +9660,7 @@
   },
   {
     "name": "Tsar Helm",
-    "description": "| set             = Tsar Set\n| crafting        = 3x Tsar Stone <br> 500 {{s}}\n| blacksmith      = Tokuga\n| location        = Levant\n| weight          = 13.0\n| buy             = 525\n| sell            = 158\n| related         = \n| object id       = 3100141\n| object name     = TsarArmorHelm\n}}\nTsar Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
+    "description": "Tsar Helm is a <!-- maybe name type of an item with link to aggregate page? --> type of Armor in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 20,
@@ -10543,7 +10543,7 @@
   },
   {
     "name": "Wolf Medic Armor",
-    "description": "Health per second\n| coldresist   = 10\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 3\n| movespeed    = -3\n| pouch        = \n| durability   = 300\n| corruptresist= 16\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 550\n| sell         = 165\n| related      = \n| object id    = 3100220 \n}}\nWolf Medic Armor is a type of Equipment in Outward.",
+    "description": "Wolf Medic Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -10581,7 +10581,7 @@
   },
   {
     "name": "Wolf Medic Boots",
-    "description": "Health per second\n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= 7\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100222 \n}}\nWolf Medic Boots is a type of Equipment in Outward.",
+    "description": "Wolf Medic Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 13,
@@ -10619,7 +10619,7 @@
   },
   {
     "name": "Wolf Medic Helmet",
-    "description": "Health per second\n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= 7\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100221 \n}}\nWolf Medic Helmet is a type of Equipment in Outward.",
+    "description": "Wolf Medic Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 13,
