@@ -12183,6 +12183,8 @@
     "description": "Advanced bag that slows down the decay of the food it contains.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Alchemist_Backpack.png",
     "special_effects": [
+      "Slows down the decay of perishable items by 75%.",
+      "Provides 1 Protection to the Durability of items in the backpack when hit by enemies",
       "60 Capacity"
     ]
   },
@@ -12195,7 +12197,6 @@
     "description": "Does not interfere with the user's roll. Protects against Corruption.",
     "local_image": "assets/images/armor/armor_Boozu_Hide_Backpack.png",
     "special_effects": [
-      "No dodge interference",
       "75 Capacity"
     ]
   },
@@ -12209,6 +12210,8 @@
     "description": "Exquisite bag, used by northern Wolf-Knights. It protects the items it carries and its wearer.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Brass-Wolf_Backpack.png",
     "special_effects": [
+      "Provides 15 Protection to the Durability of items in the backpack when hit by enemies",
+      "Provides 2 Protection, much like plate armor.",
       "75 Capacity"
     ]
   },
@@ -12221,8 +12224,9 @@
     "description": "Increases your Physical Damage by 15%.\nDoes not impede rolling.",
     "local_image": "assets/images/armor/armor_Brigand's_Backpack.png",
     "special_effects": [
-      "No dodge interference",
-      "Cannot attach lanterns",
+      "+15% Physical Damage Bonus",
+      "Unrestricted Dodge",
+      "Not able to attach lanterns.",
       "70 Capacity"
     ]
   },
@@ -12235,7 +12239,7 @@
     "description": "Provides 15 resistance to heat when worn.",
     "local_image": "assets/images/armor/armor_Chalcedony_Backpack.png",
     "special_effects": [
-      "+15 Weather Resistance",
+      "+15 Hot Weather protection",
       "80 Capacity"
     ]
   },
@@ -12260,7 +12264,6 @@
     "sell": 90,
     "local_image": "assets/images/armor/armor_Glowstone_Backpack.png",
     "special_effects": [
-      "Acts as a light source",
       "75 Capacity"
     ]
   },
@@ -12274,7 +12277,10 @@
     "description": "Bag containing the arcane tailsmans collected long ago by an undead wizard.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Light_Mender's_Backpack.png",
     "special_effects": [
-      "Acts as a faint light source",
+      "This bag acts as a faint light source",
+      "Increase Lightning damage by 10%.",
+      "Slows down the decay of perishable items by 25%.",
+      "Provides a small amount of protection to the Durability of items in the Backpack when hit by enemies",
       "75 Capacity"
     ]
   },
@@ -12287,6 +12293,7 @@
     "description": "Needlessly ornate bag with an enormous carrying capacity, once used by the spice merchant Mefino.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Mefino's_Trade_Backpack.png",
     "special_effects": [
+      "Provides 3 Protection to the Durability of items in the backpack when hit by enemies",
       "110 Capacity"
     ]
   },
@@ -12299,6 +12306,8 @@
     "description": "Balanced backpack commonly used by travelers.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Nomad_Backpack.png",
     "special_effects": [
+      "Slows down the decay of perishable items by 2%.",
+      "Provides 1 Protection to the Durability of items in the backpack when hit by enemies",
       "50 Capacity"
     ]
   },
@@ -12311,6 +12320,8 @@
     "description": "Elite bag that strongly slows down the decay of the food it contains.<br><br>Equipping this backpack slows your dodge and removes your dodge invincibility",
     "local_image": "assets/images/armor/armor_Preservation_Backpack.png",
     "special_effects": [
+      "Slows down the decay of perishable items by 75%",
+      "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "75 Capacity"
     ]
   },
@@ -12335,7 +12346,8 @@
     "description": "Large professional backpack used by explorers.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Prospector_Backpack.png",
     "special_effects": [
-      "Overhead Lantern Slot",
+      "Slows down the decay of perishable items by 4%.",
+      "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "75 Capacity"
     ]
   },
@@ -12350,6 +12362,7 @@
     "local_image": "assets/images/armor/armor_Scaled_Satchel.png",
     "special_effects": [
       "No dodge interference",
+      "Slows down the decay of perishable items by 4%.",
       "60 Capacity"
     ]
   },
@@ -12363,6 +12376,8 @@
     "description": "Tough box that protect both the wearer and what's carried in it.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Strongbox_Backpack.png",
     "special_effects": [
+      "Slows down the decay of perishable items by 4%.",
+      "Provides 9 Protection to the Durability of items in the backpack when hit by enemies",
       "60 Capacity"
     ]
   },
@@ -12376,8 +12391,9 @@
     "description": "Cavernous bag with a large carrying capacty, but which slows you down.<br><br>'''Equipping this backpack slows your dodge.'''",
     "local_image": "assets/images/armor/armor_Trader_Backpack.png",
     "special_effects": [
-      "100 Capacity",
-      "-10% Move Speed"
+      "Slows down the decay of perishable items by 6%.",
+      "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
+      "100 Capacity"
     ]
   },
   {
@@ -12401,6 +12417,9 @@
     "set": "Zhorn's Set",
     "local_image": "assets/images/armor/armor_Zhorn's_Hunting_Backpack.png",
     "special_effects": [
+      "Stamina cost -10%",
+      "Slows down the decay of perishable items by 50%.",
+      "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "85 Capacity"
     ]
   },
