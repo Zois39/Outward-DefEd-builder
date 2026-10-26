@@ -80,7 +80,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .pts-info h4{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
 .pts-val{font-size:14px;color:var(--gold);font-weight:700}
 .pts-val.warn{color:var(--red)}
-.inventory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:8px 0}
+.inventory-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding:8px 0}
 .inv-slot{aspect-ratio:1;background:var(--panel2);border:2px dashed var(--brown);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:4px;text-align:center;position:relative;min-height:70px}
 .inv-slot.filled{border-style:solid;border-color:var(--gold)}
 .inv-slot img{width:36px;height:48px;object-fit:cover;border-radius:4px;margin-bottom:2px}
@@ -101,18 +101,18 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .sdot.physical{background:#95a5a6}.sdot.fire{background:#e74c3c}.sdot.frost{background:#3498db}.sdot.lightning{background:#f1c40f}.sdot.decay{background:#2ecc71}.sdot.ethereal{background:#9b59b6}.sdot.impact{background:#e67e22}
 .sval{color:var(--gold);font-weight:600;font-size:13px}
 .sval.pos{color:var(--green)}.sval.neg{color:var(--red)}
-.item-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:8px 0}
+.item-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:8px 0}
 @media(min-width:700px){.item-grid{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1000px){.item-grid{grid-template-columns:repeat(4,1fr)}}
-.item-card{background:var(--panel2);border:1px solid var(--brown);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:6px;min-height:200px}
+.item-card{background:var(--panel2);border:1px solid var(--brown);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;min-height:220px}
 .item-card.selected{border-color:var(--gold);background:var(--panel3)}
 .item-card.rarity-unique{border-color:var(--gold)}
 .item-card.rarity-crafted{border-color:var(--blue)}
 .item-card.rarity-legacy{border-color:var(--purple)}
 .item-card.rarity-set{border-color:var(--green)}
 .item-card.rarity-quest{border-color:var(--orange)}
-.item-header{display:flex;gap:10px;align-items:flex-start}
-.item-icon{width:48px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.item-header{display:flex;gap:12px;align-items:flex-start}
+.item-icon{width:48px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;background:var(--bg)}
 .item-title{flex:1;min-width:0}
 .item-name{font-size:14px;font-weight:600;line-height:1.3}
 .item-type{font-size:10px;color:var(--dim);margin-top:2px}
@@ -122,8 +122,21 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .stat-value{color:var(--gold);font-weight:600}
 .item-desc{font-size:11px;color:var(--dim);line-height:1.5;margin-top:4px}
 .item-set{font-size:10px;color:var(--gold);margin-top:4px}
+.effects-section{margin-top:8px;padding:8px;background:rgba(192,57,43,.1);border-radius:6px;border:1px solid rgba(192,57,43,.3)}
+.effects-title{font-size:10px;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.effect-line{font-size:11px;color:var(--text);padding:2px 0}
+.craft-section{margin-top:8px;padding:8px;background:rgba(39,174,96,.1);border-radius:6px;border:1px solid rgba(39,174,96,.3)}
+.craft-title{font-size:10px;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.craft-ing{font-size:11px;color:var(--text);padding:2px 0}
+.craft-station{font-size:10px;color:var(--dim);margin-top:4px}
+.source-section{margin-top:8px;padding:8px;background:rgba(169,152,120,.1);border-radius:6px}
+.source-title{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+.source-text{font-size:11px;color:var(--text);margin-top:4px}
+.legacy-section{margin-top:8px;padding:8px;background:rgba(142,68,173,.1);border-radius:6px;border:1px solid rgba(142,68,173,.3)}
+.legacy-title{font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.legacy-path{font-size:11px;color:var(--text);padding:2px 0}
 .item-actions{margin-top:auto;padding-top:8px}
-.equip-btn{width:100%;padding:10px;background:var(--brown);border:1px solid var(--gold);border-radius:6px;color:var(--text);font-size:12px;cursor:pointer;font-family:inherit}
+.equip-btn{width:100%;padding:12px;background:var(--brown);border:1px solid var(--gold);border-radius:6px;color:var(--text);font-size:13px;cursor:pointer;font-family:inherit;min-height:44px}
 .equip-btn:hover{background:var(--gold);color:var(--bg)}
 .equip-btn.equipped{background:var(--gold);color:var(--bg)}
 .search-bar{width:100%;padding:10px 12px;background:var(--panel);border:1px solid var(--brown);border-radius:8px;color:var(--text);font-size:16px;font-family:inherit;margin-bottom:8px}
@@ -140,17 +153,18 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .class-info p{font-size:10px;color:var(--dim)}
 .tier-section{margin-bottom:8px}
 .tier-label{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;padding:6px 0;border-bottom:1px solid var(--brown);margin-bottom:4px}
-.skill-item{display:flex;align-items:center;gap:8px;padding:10px;margin-top:4px;background:var(--panel2);border:1px solid transparent;border-radius:8px;cursor:pointer;min-height:70px}
+.skill-item{display:flex;align-items:flex-start;gap:10px;padding:12px;margin-top:4px;background:var(--panel2);border:1px solid transparent;border-radius:8px;cursor:pointer;min-height:80px}
 .skill-item.selected{border-color:var(--gold);background:var(--panel3)}
 .skill-item.locked{opacity:.5}
 .skill-item.breakthrough{border-color:var(--gold);background:rgba(201,162,39,.1)}
-.skill-item img{width:36px;height:48px;object-fit:cover;border-radius:4px;flex-shrink:0}
+.skill-item img{width:40px;height:52px;object-fit:cover;border-radius:4px;flex-shrink:0}
 .skill-info{flex:1;min-width:0}
 .skill-name{font-size:13px;font-weight:600}
 .skill-meta{font-size:10px;color:var(--dim);margin-top:2px}
 .skill-req{font-size:9px;color:var(--orange);margin-top:2px}
 .skill-excl{font-size:9px;color:var(--red);margin-top:2px}
-.skill-cost{font-size:11px;color:var(--gold);font-weight:600;margin-top:2px}
+.skill-cost{font-size:11px;color:var(--gold);font-weight:600;margin-top:4px}
+.skill-desc{font-size:11px;color:var(--text);line-height:1.4;margin-top:6px;padding-top:6px;border-top:1px solid rgba(139,69,19,.2)}
 .skill-tier-badge{padding:3px 6px;background:var(--brown);color:var(--gold);font-size:8px;border-radius:3px;flex-shrink:0}
 .skill-tier-badge.t2{background:var(--gold);color:var(--bg);font-weight:700}
 .skill-tier-badge.t3{background:#7d6608;color:#fff}
@@ -167,18 +181,14 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .quest-outcome.selected{border-color:var(--gold);background:var(--panel3)}
 .outcome-name{font-size:12px;color:var(--text)}
 .outcome-locks{font-size:10px;color:var(--red);margin-top:4px}
-.cons-item{display:flex;gap:10px;padding:12px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px;cursor:pointer}
+.cons-item{display:flex;gap:12px;padding:14px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px;cursor:pointer}
 .cons-item.selected{border-color:var(--gold);background:var(--panel3)}
-.cons-item img{width:40px;height:52px;object-fit:cover;border-radius:4px;flex-shrink:0}
+.cons-item img{width:44px;height:56px;object-fit:cover;border-radius:4px;flex-shrink:0}
 .cons-info{flex:1;min-width:0}
 .cons-name{font-size:14px;font-weight:600}
 .cons-type{font-size:10px;color:var(--dim);margin-top:2px}
 .cons-desc{font-size:11px;color:var(--dim);line-height:1.4;margin-top:4px}
-.craft-section{margin-top:8px;padding:8px;background:var(--panel);border-radius:6px}
-.craft-title{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
-.craft-ingredients{font-size:11px;color:var(--text)}
-.craft-station{font-size:10px;color:var(--dim);margin-top:4px}
-.effect-item{display:flex;gap:10px;padding:12px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px}
+.effect-item{display:flex;gap:12px;padding:14px;background:var(--panel2);border:1px solid var(--brown);border-radius:10px;margin-bottom:8px}
 .effect-item img{width:48px;height:48px;object-fit:contain;border-radius:50%;flex-shrink:0}
 .effect-info{flex:1}
 .effect-name{font-size:14px;color:var(--gold);font-weight:600}
@@ -256,7 +266,7 @@ var BUILD={
   quickSlots:[null,null,null,null]
 };
 var CURRENT_TAB='stats';
-var ARMOR_FILTER={slot:'all',rarity:'all',set:'all',sort:'name'};
+var ARMOR_FILTER={slot:'all',rarity:'all',sort:'name'};
 var WEAPON_FILTER={type:'all',hand:'all',rarity:'all',dmg:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
@@ -269,8 +279,58 @@ function setProgress(pct,status){var bar=document.getElementById('loading-bar');
 function showError(msg){var err=document.getElementById('loading-error');var btn=document.getElementById('retry-btn');if(err){err.textContent=msg;err.style.display='block';}if(btn)btn.style.display='block';}
 function hideError(){var err=document.getElementById('loading-error');var btn=document.getElementById('retry-btn');if(err)err.style.display='none';if(btn)btn.style.display='none';}
 function fetchJSON(path){return fetch('data/raw/'+path).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status+': '+path);return r.json();});}
-function imgSrc(path){return path?path:null;}
+
+// Get image path for item type
+function getItemImage(item,type){
+  if(!item)return null;
+  // Check various field names
+  var path=item.local_image||item.image_local||item.image;
+  if(path)return path;
+  // Generate from name
+  if(type==='armor'){
+    var name=item.name.replace(/[^a-zA-Z0-9]/g,'_');
+    return 'assets/images/armor/armor_'+name+'.png';
+  }
+  if(type==='weapon'){
+    var wname=item.name.replace(/[^a-zA-Z0-9]/g,'_');
+    return 'assets/images/weapons/weapon_'+wname+'.png';
+  }
+  if(type==='skill'){
+    var sname=item.name.replace(/[^a-zA-Z0-9]/g,'_');
+    return 'assets/images/skills/skill_'+sname+'.png';
+  }
+  if(type==='consumable'){
+    var cname=item.name.replace(/[^a-zA-Z0-9]/g,'_');
+    return 'assets/images/consumables/'+cname+'.png';
+  }
+  if(type==='effect'){
+    var ename=item.name.replace(/[^a-zA-Z0-9]/g,'_');
+    return 'assets/images/effects/effect_'+ename+'.png';
+  }
+  return null;
+}
+
+// Fallback image SVG
+var FALLBACK_IMG='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="64"><rect fill="%2333291d" width="48" height="64" rx="6"/><text fill="%23a89878" font-size="10" x="24" y="34" text-anchor="middle">?</text></svg>';
+
 function escHtml(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+// Clean description text
+function cleanDesc(text){
+  if(!text)return '';
+  text=String(text);
+  // Remove HTML tags
+  text=text.replace(/<[^>]*>/g,'');
+  // Remove JSON objects
+  text=text.replace(/\{[^}]*\}/g,'');
+  // Remove file references
+  text=text.replace(/\S+\.(png|jpg|jpeg|json|html|css|js)/gi,'');
+  // Remove URLs
+  text=text.replace(/https?:\/\/\S+/g,'');
+  // Clean up extra whitespace
+  text=text.replace(/\s+/g,' ').trim();
+  return text;
+}
 
 function loadData(){
 hideError();
@@ -476,16 +536,17 @@ html+='<div class="pts-card"><div class="pts-ico">\uD83D\uDCB0</div><div class="
 html+='<div class="pts-card"><div class="pts-ico">\uD83D\uDCAB</div><div class="pts-info"><h4>Breakthroughs</h4><div class="pts-val'+(btLeft<=0?' warn':'')+'">'+(BUILD.breakthroughsUsed||0)+' / 3</div></div></div>';
 html+='</div>';
 
-// Inventory slots
+// Inventory slots - FIXED: head, chest, legs, back, boots
 html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDF92</span><span class="sec-title">Equipment</span></div><div class="sec-body">';
 html+='<div class="inventory-grid">';
-var armorSlots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'back',label:'Back'},{id:'acc1',label:'Acc 1'},{id:'acc2',label:'Acc 2'},{id:'acc3',label:'Acc 3'},{id:'acc4',label:'Acc 4'}];
+var armorSlots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'back',label:'Back'},{id:'boots',label:'Boots'}];
 for(var i=0;i<armorSlots.length;i++){
 var slot=armorSlots[i];
 var itemName=(BUILD.armor||{})[slot.id];
 var item=itemName?findArmor(itemName):null;
+var imgPath=item?getItemImage(item,'armor'):null;
 html+='<div class="inv-slot'+(item?' filled':'')+'" onclick="switchTab(\'armor\')">';
-if(item&&item.local_image){html+='<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">';}
+if(imgPath){html+='<img src="'+escHtml(imgPath)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';}
 html+='<div class="inv-lbl">'+slot.label+'</div>';
 if(item){html+='<div class="inv-item">'+escHtml(item.name)+'</div>';}
 html+='</div>';
@@ -499,8 +560,9 @@ for(var j=0;j<weaponSlots.length;j++){
 var wslot=weaponSlots[j];
 var wName=(BUILD.weapons||{})[wslot.id];
 var wItem=wName?findWeapon(wName):null;
+var wImgPath=wItem?getItemImage(wItem,'weapon'):null;
 html+='<div class="inv-slot weapon'+(wItem?' filled':'')+'" onclick="switchTab(\'weapons\')">';
-if(wItem&&wItem.local_image){html+='<img src="'+escHtml(imgSrc(wItem.local_image))+'" loading="lazy">';}
+if(wImgPath){html+='<img src="'+escHtml(wImgPath)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';}
 html+='<div class="inv-lbl">'+wslot.label+'</div>';
 if(wItem){html+='<div class="inv-item">'+escHtml(wItem.name)+'</div>';}
 html+='</div>';
@@ -513,8 +575,9 @@ html+='<div class="quick-slots">';
 for(var q=0;q<4;q++){
 var qsName=(BUILD.quickSlots||[])[q];
 var qsItem=qsName?findConsumable(qsName):null;
+var qsImg=qsItem?getItemImage(qsItem,'consumable'):null;
 html+='<div class="quick-slot" onclick="switchTab(\'consumables\')">';
-if(qsItem&&qsItem.local_image){html+='<img src="'+escHtml(imgSrc(qsItem.local_image))+'" loading="lazy">';}
+if(qsImg){html+='<img src="'+escHtml(qsImg)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';}
 html+='<div class="inv-lbl">Slot '+(q+1)+'</div>';
 html+='</div>';
 }
@@ -550,7 +613,7 @@ if(BUILD.faction){for(var fi=0;fi<DATA.factions.length;fi++){if(DATA.factions[fi
 if(selFaction){
 html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDFF0</span><span class="sec-title">Faction</span></div><div class="sec-body">';
 html+='<div style="padding:6px 0"><div style="font-size:13px;color:var(--gold);font-weight:600">'+escHtml(selFaction.name)+'</div>';
-html+='<div style="font-size:11px;color:var(--dim);margin-top:4px;line-height:1.5">'+escHtml(selFaction.description||'')+'</div></div>';
+html+='<div style="font-size:11px;color:var(--dim);margin-top:4px;line-height:1.5">'+escHtml(cleanDesc(selFaction.description||''))+'</div></div>';
 html+='</div></div>';
 }
 
@@ -575,8 +638,9 @@ pane.innerHTML=html;
 
 function statRow(lbl,val,opts){opts=opts||{};var cls='sval';if(val>0&&!opts.noPlus)cls+=' pos';if(val<0)cls+=' neg';var d=(val>0&&!opts.noPlus?'+':'')+val+(opts.suffix||'');var dot=opts.dot?'<span class="sdot '+opts.dot+'"></span>':'';return '<div class="srow"><span class="sname">'+dot+lbl+'</span><span class="'+cls+'">'+d+'</span></div>';}
 function resistItem(dot,lbl,val){return '<div class="resist-item"><span class="resist-lbl"><span class="sdot '+dot+'"></span>'+lbl+'</span><span class="resist-val">'+val+'</span></div>';}
-function chipHtml(item){var img=item.local_image?'<img src="'+escHtml(imgSrc(item.local_image))+'" loading="lazy">':'';return '<span class="chip">'+img+escHtml(item.name)+'</span>';}
+function chipHtml(item){var imgPath=getItemImage(item,'skill');var img=imgPath?'<img src="'+escHtml(imgPath)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">':'';return '<span class="chip">'+img+escHtml(item.name)+'</span>';}
 
+// ARMOR TAB - FIXED SLOTS: head, chest, legs, back, boots
 function getArmorRarityClass(a){
 if(a.set_name)return 'rarity-set';
 var desc=(a.description||'').toLowerCase();
@@ -600,12 +664,11 @@ return 'Common';
 function renderArmorTab(pane){
 var html='';
 
-// Search
 html+='<input class="search-bar" placeholder="Search armor..." oninput="armorSearch(this.value)">';
 
-// Filters
+// Filters - FIXED SLOTS
 html+='<div class="filter-section"><div class="filter-label">Slot</div><div class="filter-pills">';
-var slots=['all','head','chest','legs','back','necklace','ring'];
+var slots=['all','head','chest','legs','back','boots'];
 for(var i=0;i<slots.length;i++){
 var s=slots[i];
 html+='<button class="pill'+(ARMOR_FILTER.slot===s?' active':'')+'" onclick="setArmorFilter(\'slot\',\''+s+'\')">'+(s==='all'?'All':s.charAt(0).toUpperCase()+s.slice(1))+'</button>';
@@ -620,7 +683,6 @@ html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" onclick="
 }
 html+='</div></div>';
 
-// Sort
 html+='<select class="sort-select" onchange="setArmorFilter(\'sort\',this.value)">';
 html+='<option value="name"'+(ARMOR_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
 html+='<option value="protection-desc"'+(ARMOR_FILTER.sort==='protection-desc'?' selected':'')+'>Protection (High to Low)</option>';
@@ -628,7 +690,6 @@ html+='<option value="protection-asc"'+(ARMOR_FILTER.sort==='protection-asc'?' s
 html+='<option value="weight"'+(ARMOR_FILTER.sort==='weight'?' selected':'')+'>Weight</option>';
 html+='</select>';
 
-// Items
 html+='<div id="armor-list"></div>';
 pane.innerHTML=html;
 renderArmorList();
@@ -636,7 +697,6 @@ renderArmorList();
 
 var ARMOR_SEARCH='';
 function armorSearch(val){ARMOR_SEARCH=val;renderArmorList();}
-
 function setArmorFilter(key,val){ARMOR_FILTER[key]=val;renderArmorList();}
 
 function renderArmorList(){
@@ -656,7 +716,6 @@ if(a.name.toLowerCase().indexOf(q)<0)return false;
 return true;
 });
 
-// Sort
 if(ARMOR_FILTER.sort==='protection-desc'){
 filtered.sort(function(a,b){return (b.protection||0)-(a.protection||0);});
 }else if(ARMOR_FILTER.sort==='protection-asc'){
@@ -673,10 +732,11 @@ var a=filtered[i];
 var rarityClass=getArmorRarityClass(a);
 var rarityName=getArmorRarityName(a);
 var isEquipped=Object.values(BUILD.armor||{}).indexOf(a.name)>=0;
+var imgPath=getItemImage(a,'armor');
 
 html+='<div class="item-card '+rarityClass+(isEquipped?' selected':'')+'">';
 html+='<div class="item-header">';
-if(a.local_image){html+='<img class="item-icon" src="'+escHtml(imgSrc(a.local_image))+'" loading="lazy">';}
+html+='<img class="item-icon" src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
 html+='<div class="item-title">';
 html+='<div class="item-name">'+escHtml(a.name)+'</div>';
 html+='<div class="item-type">'+escHtml(a.slot||'')+' | '+rarityName+'</div>';
@@ -698,19 +758,45 @@ html+='<div class="stat-line"><span class="stat-label">Impact</span><span class=
 html+='<div class="stat-line"><span class="stat-label">Weight</span><span class="stat-value">'+(a.weight||0)+'</span></div>';
 html+='</div>';
 
+// Set bonus
 if(a.set_name){
 html+='<div class="item-set">Set: '+escHtml(a.set_name)+'</div>';
 }
 
+// Description - CLEANED
 if(a.description){
-html+='<div class="item-desc">'+escHtml(a.description)+'</div>';
+html+='<div class="item-desc">'+escHtml(cleanDesc(a.description))+'</div>';
+}
+
+// Crafting recipe
+if(a.crafting_recipe&&a.crafting_recipe.length>0){
+html+='<div class="craft-section">';
+html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
+a.crafting_recipe.forEach(function(ing){
+html+='<div class="craft-ing">- '+escHtml(ing.item||ing.name||'Unknown')+' x'+(ing.qty||ing.quantity||1)+'</div>';
+});
+html+='</div>';
+}else if(a.source){
+// Source instead of "cannot be crafted"
+html+='<div class="source-section">';
+html+='<div class="source-title">\uD83D\uDCE6 Source:</div>';
+html+='<div class="source-text">'+escHtml(a.source)+'</div>';
+html+='</div>';
+}
+
+// Legacy upgrade (blacksmith)
+if(a.blacksmith_upgrade){
+html+='<div class="legacy-section">';
+html+='<div class="legacy-title">\uD83D\uDD04 Legacy Upgrade:</div>';
+html+='<div class="legacy-path">Upgrade at: '+escHtml(a.blacksmith_upgrade)+'</div>';
+html+='</div>';
 }
 
 html+='<div class="item-actions">';
 if(isEquipped){
 html+='<button class="equip-btn equipped" onclick="unequipArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">Unequip</button>';
 }else{
-html+='<button class="equip-btn" onclick="equipArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">Equip</button>';
+html+='<button class="equip-btn" onclick="equipArmor(\''+escHtml(a.name).replace(/'/g,"\\'")+'\')">Equip to '+escHtml(a.slot||'slot')+'</button>';
 }
 html+='</div></div>';
 }
@@ -845,10 +931,11 @@ var w=filtered[i];
 var rarityClass=getWeaponRarityClass(w);
 var rarityName=getWeaponRarityName(w);
 var isEquipped=Object.values(BUILD.weapons||{}).indexOf(w.name)>=0;
+var imgPath=getItemImage(w,'weapon');
 
 html+='<div class="item-card '+rarityClass+(isEquipped?' selected':'')+'">';
 html+='<div class="item-header">';
-if(w.local_image){html+='<img class="item-icon" src="'+escHtml(imgSrc(w.local_image))+'" loading="lazy">';}
+html+='<img class="item-icon" src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
 html+='<div class="item-title">';
 html+='<div class="item-name">'+escHtml(w.name)+'</div>';
 html+='<div class="item-type">'+escHtml(w.weapon_type||'')+' | '+(w.handedness||'')+' | '+rarityName+'</div>';
@@ -878,12 +965,49 @@ html+='<div class="stat-line"><span class="stat-label">Durability</span><span cl
 }
 html+='</div>';
 
-if(w.special_effects){
-html+='<div class="item-desc">'+escHtml(w.special_effects)+'</div>';
+// Special effects - DETAILED
+if(w.special_effects&&w.special_effects.length>0){
+html+='<div class="effects-section">';
+html+='<div class="effects-title">\u2694\uFE0F Effects on Hit:</div>';
+w.special_effects.forEach(function(fx){
+html+='<div class="effect-line">- '+escHtml(fx)+'</div>';
+});
+html+='</div>';
 }
 
+// Description - CLEANED
 if(w.description){
-html+='<div class="item-desc">'+escHtml(w.description)+'</div>';
+html+='<div class="item-desc">'+escHtml(cleanDesc(w.description))+'</div>';
+}
+
+// Crafting recipe
+if(w.crafting_recipe&&w.crafting_recipe.ingredients){
+html+='<div class="craft-section">';
+html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
+w.crafting_recipe.ingredients.forEach(function(ing){
+html+='<div class="craft-ing">- '+escHtml(ing)+'</div>';
+});
+if(w.crafting_recipe.station){
+html+='<div class="craft-station">Station: '+escHtml(w.crafting_recipe.station)+'</div>';
+}
+html+='</div>';
+}else if(w.source_category){
+// Source instead of "cannot be crafted"
+var sourceText=w.source_category==='loot_or_legacy'?'Loot or Legacy':w.source_category;
+html+='<div class="source-section">';
+html+='<div class="source-title">\uD83D\uDCE6 Source:</div>';
+html+='<div class="source-text">'+escHtml(sourceText)+'</div>';
+html+='</div>';
+}
+
+// Legacy upgrade
+if(w.upgrade_paths&&w.upgrade_paths.length>0){
+html+='<div class="legacy-section">';
+html+='<div class="legacy-title">\uD83D\uDD04 Legacy Upgrade:</div>';
+w.upgrade_paths.forEach(function(up){
+html+='<div class="legacy-path">'+escHtml(up.result||up.to||'Unknown')+' ('+escHtml(up.type||'upgrade')+')</div>';
+});
+html+='</div>';
 }
 
 html+='<div class="item-actions">';
@@ -905,7 +1029,6 @@ function equipWeapon(name){
 var w=findWeapon(name);
 if(!w)return;
 if(!BUILD.weapons)BUILD.weapons={};
-// Default to main hand, or off-hand if already equipped in main
 if(w.handedness==='2H'){
 BUILD.weapons['weapon_main']=name;
 delete BUILD.weapons['weapon_off'];
@@ -955,7 +1078,6 @@ function filterSkillsByClass(cls){SKILL_CLASS_FILTER=cls;var pills=document.quer
 function getSkillStatus(skill){
 var isSelected=(BUILD.skills||[]).indexOf(skill.name)>=0;
 if(isSelected)return 'selected';
-
 if(BUILD.theorycraft)return 'available';
 
 // Check if excluded by another selected skill
@@ -1001,7 +1123,6 @@ if(!byClass[s.parent_class])byClass[s.parent_class]=[];
 byClass[s.parent_class].push(s);
 });
 
-// Sort within classes by tier
 Object.keys(byClass).forEach(function(k){
 byClass[k].sort(function(a,b){
 var order=function(t){return t===0?4:t;};
@@ -1010,7 +1131,6 @@ return order(a.tier)-order(b.tier);
 });
 
 var html='';
-var btUsed=BUILD.breakthroughsUsed||0;
 
 for(var i=0;i<DATA.classes.length;i++){
 var cls=DATA.classes[i];
@@ -1019,7 +1139,8 @@ if(!skills||skills.length===0)continue;
 
 html+='<div class="class-section">';
 html+='<div class="class-header">';
-if(cls.local_image)html+='<img class="class-icon" src="'+escHtml(imgSrc(cls.local_image))+'">';
+var clsImg=getItemImage(cls,'skill');
+if(clsImg){html+='<img class="class-icon" src="'+escHtml(clsImg)+'" onerror="this.src=\''+FALLBACK_IMG+'\'">';}
 html+='<div class="class-info"><h3>'+escHtml(cls.name)+'</h3><p>'+escHtml(cls.teacher)+' \u2014 '+escHtml(cls.location)+'</p></div>';
 if(cls.is_dlc)html+='<span class="class-dlc">DLC</span>';
 html+='</div>';
@@ -1032,7 +1153,6 @@ if(!tiers[t])tiers[t]=[];
 tiers[t].push(s);
 });
 
-// Render tiers
 var tierNames={1:'Tier 1',2:'Tier 2 (Breakthrough)',3:'Tier 3',0:'Special'};
 [1,2,3,0].forEach(function(t){
 if(tiers[t].length===0)return;
@@ -1045,6 +1165,7 @@ var status=getSkillStatus(skill);
 var isSel=status==='selected';
 var isLocked=status.indexOf('requires:')===0||status.indexOf('excluded:')===0||status==='no-bt';
 var isBreakthrough=skill.costs_breakthrough;
+var skillImg=getItemImage(skill,'skill');
 
 var cardClass='skill-item';
 if(isSel)cardClass+=' selected';
@@ -1052,7 +1173,7 @@ if(isLocked)cardClass+=' locked';
 if(isBreakthrough&&isSel)cardClass+=' breakthrough';
 
 html+='<div class="'+cardClass+'" onclick="toggleSkill(\''+escHtml(skill.name).replace(/'/g,"\\'")+'\')">';
-if(skill.local_image)html+='<img src="'+escHtml(imgSrc(skill.local_image))+'" loading="lazy">';
+html+='<img src="'+escHtml(skillImg||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
 html+='<div class="skill-info">';
 html+='<div class="skill-name">'+escHtml(skill.name)+'</div>';
 
@@ -1067,20 +1188,34 @@ html+='<div class="skill-meta">'+escHtml(meta.join(' \u00B7 '))+'</div>';
 // Status messages
 if(status.indexOf('requires:')===0){
 var reqName=status.substring(9);
-html+='<div class="skill-req">Requires: '+escHtml(reqName)+'</div>';
+html+='<div class="skill-req">\u26A0\uFE0F Requires: '+escHtml(reqName)+'</div>';
 }else if(status.indexOf('excluded:')===0){
 var exclName=status.substring(9);
-html+='<div class="skill-excl">Excluded by: '+escHtml(exclName)+'</div>';
+html+='<div class="skill-excl">\uD83D\uDEAB Excluded by: '+escHtml(exclName)+'</div>';
 }else if(status==='no-bt'){
-html+='<div class="skill-excl">No breakthrough points left</div>';
+html+='<div class="skill-excl">\uD83D\uDEAB No breakthrough points left</div>';
 }
 
+// Full description - CLEANED
+if(skill.description){
+html+='<div class="skill-desc">'+escHtml(cleanDesc(skill.description))+'</div>';
+}
+
+// Effects
 if(skill.effects){
-html+='<div class="skill-meta" style="margin-top:4px">'+escHtml(skill.effects)+'</div>';
+html+='<div class="skill-desc" style="color:var(--gold)">'+escHtml(cleanDesc(skill.effects))+'</div>';
 }
 
+// Cost
 if(skill.cost){
-html+='<div class="skill-cost">Cost: '+escHtml(skill.cost)+'</div>';
+html+='<div class="skill-cost">\uD83D\uDCB0 Cost: '+escHtml(skill.cost)+'</div>';
+}
+
+// Trainer
+if(skill.trainer){
+html+='<div class="skill-meta" style="margin-top:4px">\uD83D\uDCCD '+escHtml(skill.trainer);
+if(skill.location)html+=' ('+escHtml(skill.location)+')';
+html+='</div>';
 }
 
 html+='</div>';
@@ -1103,7 +1238,6 @@ var skill=findSkill(name);
 var isBT=skill&&skill.costs_breakthrough;
 
 if(idx>=0){
-// Deselect
 BUILD.skills.splice(idx,1);
 if(isBT)BUILD.breakthroughsUsed=(BUILD.breakthroughsUsed||0)-1;
 
@@ -1126,7 +1260,6 @@ BUILD.skills.splice(rIdx,1);
 }
 });
 }else{
-// Select
 var status=getSkillStatus(skill);
 if(status.indexOf('requires:')===0||status.indexOf('excluded:')===0||status==='no-bt'){
 return;
@@ -1151,8 +1284,7 @@ for(var i=0;i<DATA.factions.length;i++){
 var f=DATA.factions[i];
 html+='<div class="faction-card" onclick="selectFaction(\''+f.id+'\')">';
 html+='<div class="faction-name">'+escHtml(f.name)+'</div>';
-html+='<div class="faction-desc">'+escHtml(f.description||'')+'</div>';
-if(f.local_image)html+='<img src="'+escHtml(imgSrc(f.local_image))+'" style="width:40px;height:40px;margin-top:8px;border-radius:6px">';
+html+='<div class="faction-desc">'+escHtml(cleanDesc(f.description||''))+'</div>';
 html+='</div>';
 }
 }else{
@@ -1164,7 +1296,7 @@ if(DATA.factions[j].id===BUILD.faction){selFaction=DATA.factions[j];break;}
 if(selFaction){
 html+='<div class="faction-card selected" onclick="selectFaction(\''+selFaction.id+'\')">';
 html+='<div class="faction-name">'+escHtml(selFaction.name)+' \u2713</div>';
-html+='<div class="faction-desc">'+escHtml(selFaction.description||'')+'</div>';
+html+='<div class="faction-desc">'+escHtml(cleanDesc(selFaction.description||''))+'</div>';
 html+='</div>';
 
 // Show quests
@@ -1196,12 +1328,11 @@ html+='<div style="color:var(--dim);padding:16px;text-align:center">No quests fo
 }
 }
 
-// Other factions
 html+='<div class="filter-label" style="margin-top:16px">Other Factions</div>';
 for(var k=0;k<DATA.factions.length;k++){
 if(DATA.factions[k].id!==BUILD.faction){
 html+='<div class="faction-card" onclick="selectFaction(\''+DATA.factions[k].id+'\')">';
-html+='<div class="faction-name" style="font-size:13px">'+escHtml(DATA.factions[k].name)+'</div>';
+html+='<div class="faction-name" style="font-size:14px">'+escHtml(DATA.factions[k].name)+'</div>';
 html+='</div>';
 }
 }
@@ -1215,27 +1346,34 @@ var html='<div class="quest-item">';
 html+='<div class="quest-name">'+escHtml(quest.name||'Unknown Quest')+'</div>';
 
 if(quest.description){
-html+='<div class="quest-desc">'+escHtml(quest.description)+'</div>';
+html+='<div class="quest-desc">'+escHtml(cleanDesc(quest.description))+'</div>';
 }
 
-// Rewards
+// Rewards - FIXED
 if(quest.rewards){
 html+='<div class="quest-rewards">';
 if(quest.rewards.silver){
-html+='<span class="reward-chip">'+quest.rewards.silver+' Silver</span>';
+html+='<span class="reward-chip">\uD83D\uDCB0 '+quest.rewards.silver+' Silver</span>';
 }
-if(quest.rewards.items){
+if(quest.rewards.items&&quest.rewards.items.length>0){
 quest.rewards.items.forEach(function(item){
-html+='<span class="reward-chip">'+escHtml(item)+'</span>';
+if(typeof item==='string'){
+html+='<span class="reward-chip">\uD83D\uDCE6 '+escHtml(item)+'</span>';
+}else if(item&&item.name){
+html+='<span class="reward-chip">\uD83D\uDCE6 '+escHtml(item.name)+(item.qty?' x'+item.qty:'')+'</span>';
+}
 });
 }
 if(quest.rewards.reputation){
-html+='<span class="reward-chip">Rep: '+quest.rewards.reputation+'</span>';
+html+='<span class="reward-chip">\u2B50 Reputation: +'+quest.rewards.reputation+'</span>';
+}
+if(quest.rewards.unlocks){
+html+='<span class="reward-chip">\uD83D\uDD13 Unlocks: '+escHtml(quest.rewards.unlocks)+'</span>';
 }
 html+='</div>';
 }
 
-// Outcomes (mutually exclusive choices)
+// Outcomes
 if(quest.outcomes&&quest.outcomes.length>1){
 html+='<div class="filter-label" style="margin-top:8px">Choose one:</div>';
 var selectedOutcome=QUEST_SELECTIONS[quest.name];
@@ -1247,11 +1385,17 @@ html+='<div class="outcome-name">'+escHtml(outcome.name)+'</div>';
 if(outcome.rewards){
 html+='<div style="font-size:10px;color:var(--gold);margin-top:4px">';
 if(outcome.rewards.silver)html+=outcome.rewards.silver+'s ';
-if(outcome.rewards.items)html+=outcome.rewards.items.join(', ');
+if(outcome.rewards.items){
+if(Array.isArray(outcome.rewards.items)){
+outcome.rewards.items.forEach(function(item){
+if(typeof item==='string')html+=escHtml(item)+' ';
+});
+}
+}
 html+='</div>';
 }
 if(outcome.locks){
-html+='<div class="outcome-locks">Locks: '+escHtml(outcome.locks.join(', '))+'</div>';
+html+='<div class="outcome-locks">\uD83D\uDD12 Locks: '+escHtml(outcome.locks.join(', '))+'</div>';
 }
 html+='</div>';
 }
@@ -1315,9 +1459,10 @@ var html='';
 for(var i=0;i<filtered.length;i++){
 var c=filtered[i];
 var isSel=(BUILD.consumables||[]).indexOf(c.name)>=0;
+var imgPath=getItemImage(c,'consumable');
 
 html+='<div class="cons-item'+(isSel?' selected':'')+'" onclick="toggleCons(\''+escHtml(c.name).replace(/'/g,"\\'")+'\')">';
-if(c.local_image)html+='<img src="'+escHtml(imgSrc(c.local_image))+'" loading="lazy">';
+html+='<img src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
 html+='<div class="cons-info">';
 html+='<div class="cons-name">'+escHtml(c.name)+'</div>';
 html+='<div class="cons-type">'+escHtml(c.consumable_type||'');
@@ -1326,31 +1471,27 @@ if(c.price)html+=' \u00B7 '+c.price+'s';
 html+='</div>';
 
 if(c.description){
-html+='<div class="cons-desc">'+escHtml(c.description)+'</div>';
+html+='<div class="cons-desc">'+escHtml(cleanDesc(c.description))+'</div>';
 }
 
 // Crafting recipe
 if(c.crafting_recipe){
 html+='<div class="craft-section">';
-html+='<div class="craft-title">Crafting Recipe</div>';
+html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
 if(c.crafting_recipe.ingredients){
-html+='<div class="craft-ingredients">';
-for(var ing=0;ing<c.crafting_recipe.ingredients.length;ing++){
-var ingredient=c.crafting_recipe.ingredients[ing];
-html+='<div>'+escHtml(ingredient.item||ingredient.name||ingredient)+' x'+(ingredient.quantity||ingredient.qty||1)+'</div>';
-}
-html+='</div>';
+c.crafting_recipe.ingredients.forEach(function(ing){
+html+='<div class="craft-ing">- '+escHtml(ing.item||ing.name||ing)+' x'+(ing.quantity||ing.qty||1)+'</div>';
+});
 }
 if(c.crafting_recipe.station){
 html+='<div class="craft-station">Station: '+escHtml(c.crafting_recipe.station)+'</div>';
 }
 html+='</div>';
-}else{
-html+='<div class="craft-section">';
-html+='<div class="craft-title" style="color:var(--dim)">Cannot be crafted</div>';
-if(c.source){
-html+='<div class="craft-station">Source: '+escHtml(c.source)+'</div>';
-}
+}else if(c.source){
+// Source instead of "cannot be crafted"
+html+='<div class="source-section">';
+html+='<div class="source-title">\uD83D\uDCE6 Source:</div>';
+html+='<div class="source-text">'+escHtml(c.source)+'</div>';
 html+='</div>';
 }
 
@@ -1364,7 +1505,6 @@ function toggleCons(name){
 var idx=(BUILD.consumables||[]).indexOf(name);
 if(idx>=0){
 BUILD.consumables.splice(idx,1);
-// Remove from quick slots
 if(BUILD.quickSlots){
 for(var i=0;i<BUILD.quickSlots.length;i++){
 if(BUILD.quickSlots[i]===name)BUILD.quickSlots[i]=null;
@@ -1372,7 +1512,6 @@ if(BUILD.quickSlots[i]===name)BUILD.quickSlots[i]=null;
 }
 }else{
 BUILD.consumables.push(name);
-// Add to first empty quick slot
 if(BUILD.quickSlots){
 for(var j=0;j<BUILD.quickSlots.length;j++){
 if(!BUILD.quickSlots[j]){
@@ -1413,11 +1552,13 @@ return true;
 var html='';
 for(var i=0;i<filtered.length;i++){
 var e=filtered[i];
+var imgPath=getItemImage(e,'effect');
+
 html+='<div class="effect-item">';
-if(e.local_image)html+='<img src="'+escHtml(imgSrc(e.local_image))+'" loading="lazy">';
+html+='<img src="'+escHtml(imgPath||FALLBACK_IMG)+'" onerror="this.src=\''+FALLBACK_IMG+'\'" loading="lazy">';
 html+='<div class="effect-info">';
 html+='<div class="effect-name">'+escHtml(e.name||'Unknown')+'</div>';
-if(e.description)html+='<div class="effect-desc">'+escHtml(e.description)+'</div>';
+if(e.description)html+='<div class="effect-desc">'+escHtml(cleanDesc(e.description))+'</div>';
 if(e.duration)html+='<div class="effect-desc">Duration: '+escHtml(e.duration)+'</div>';
 if(e.category)html+='<span class="effect-cat">'+escHtml(e.category)+'</span>';
 html+='</div></div>';
