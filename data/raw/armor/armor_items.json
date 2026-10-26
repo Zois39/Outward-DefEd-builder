@@ -11170,28 +11170,12 @@
     "local_image": "assets/images/armor/armor_Explorer_Lantern.png"
   },
   {
-    "name": "Ice-Flame Torch",
-    "slot": "lantern",
-    "weight": 0.4,
-    "buy": 20,
-    "sell": 6,
-    "local_image": "assets/images/armor/armor_Ice-Flame_Torch.png"
-  },
-  {
     "name": "Lantern of Souls",
     "slot": "lantern",
     "weight": 1.0,
     "buy": 0,
     "sell": 0,
     "local_image": "assets/images/armor/armor_Lantern_of_Souls.png"
-  },
-  {
-    "name": "Makeshift Torch",
-    "slot": "lantern",
-    "weight": 0.4,
-    "buy": 0,
-    "sell": 0,
-    "local_image": "assets/images/armor/armor_Makeshift_Torch.png"
   },
   {
     "name": "Old Lantern",
