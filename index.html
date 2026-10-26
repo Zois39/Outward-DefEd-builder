@@ -263,6 +263,18 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
   </div>
 </div>
 <script>
+window.onerror = function(msg, url, line, col, error) {
+  var errDiv = document.getElementById('loading-error');
+  var errBtn = document.getElementById('retry-btn');
+  if (errDiv) {
+    errDiv.textContent = 'Error: ' + msg + ' at line ' + line;
+    errDiv.style.display = 'block';
+  }
+  if (errBtn) errBtn.style.display = 'block';
+  console.error('Global error:', msg, 'at line', line);
+  return false;
+};
+
 var DATA=null;
 var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
 var CURRENT_TAB='stats';
