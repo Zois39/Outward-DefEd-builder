@@ -35,7 +35,15 @@
     "object_id": "3000020",
     "source_url": "https://outward.wiki.gg/wiki/Adventurer_Armor",
     "image_url": "https://outward.wiki.gg/images/Adventurer_Armor.png?7a1587",
-    "image_local": "assets/images/armor/armor_Adventurer_Armor.png"
+    "image_local": "assets/images/armor/armor_Adventurer_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "+5 Pouch",
+      "+6 Cold Protection",
+      "+10 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Adventurer Boots",
@@ -73,7 +81,13 @@
     "object_id": "3000022",
     "source_url": "https://outward.wiki.gg/wiki/Adventurer_Boots",
     "image_url": "https://outward.wiki.gg/images/Adventurer_Boots.png?c268f3",
-    "image_local": "assets/images/armor/armor_Adventurer_Boots.png"
+    "image_local": "assets/images/armor/armor_Adventurer_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "+3 Cold Protection",
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Adventurer's Helm",
@@ -111,7 +125,14 @@
     "object_id": "3000021",
     "source_url": "https://outward.wiki.gg/wiki/Adventurer%27s_Helm",
     "image_url": "https://outward.wiki.gg/images/Adventurer%27s_Helm.png?90c2cf",
-    "image_local": "assets/images/armor/armor_Adventurer_s_Helm.png"
+    "image_local": "assets/images/armor/armor_Adventurer_s_Helm.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "-15% Mana Cost",
+      "+3 Cold Protection",
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Ammolite Armor",
@@ -149,7 +170,12 @@
     "object_id": "3100130",
     "source_url": "https://outward.wiki.gg/wiki/Ammolite_Armor",
     "image_url": "https://outward.wiki.gg/images/Ammolite_Armor.png?5f85ee",
-    "image_local": "assets/images/armor/armor_Ammolite_Armor.png"
+    "image_local": "assets/images/armor/armor_Ammolite_Armor.png",
+    "special_effects": [
+      "-3% Stamina Cost",
+      "+10 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Ammolite Boots",
@@ -187,7 +213,12 @@
     "object_id": "3100132",
     "source_url": "https://outward.wiki.gg/wiki/Ammolite_Boots",
     "image_url": "https://outward.wiki.gg/images/Ammolite_Boots.png?556b15",
-    "image_local": "assets/images/armor/armor_Ammolite_Boots.png"
+    "image_local": "assets/images/armor/armor_Ammolite_Boots.png",
+    "special_effects": [
+      "-2% Stamina Cost",
+      "+5 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Ammolite Helm",
@@ -225,7 +256,13 @@
     "object_id": "3100131",
     "source_url": "https://outward.wiki.gg/wiki/Ammolite_Helm",
     "image_url": "https://outward.wiki.gg/images/Ammolite_Helm.png?749dce",
-    "image_local": "assets/images/armor/armor_Ammolite_Helm.png"
+    "image_local": "assets/images/armor/armor_Ammolite_Helm.png",
+    "special_effects": [
+      "-2% Stamina Cost",
+      "-15% Mana Cost",
+      "+5 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Antique Plate Boots",
@@ -272,7 +309,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Antique_Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Antique_Plate_Boots.png?60fc58",
-    "image_local": "assets/images/armor/armor_Antique_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Antique_Plate_Boots.png",
+    "special_effects": [
+      "+5 Cold Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Antique Plate Garb",
@@ -319,7 +360,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Antique_Plate_Garb",
     "image_url": "https://outward.wiki.gg/images/Antique_Plate_Garb.png?90c303",
-    "image_local": "assets/images/armor/armor_Antique_Plate_Garb.png"
+    "image_local": "assets/images/armor/armor_Antique_Plate_Garb.png",
+    "special_effects": [
+      "+15 Cold Protection",
+      "4 Protection"
+    ]
   },
   {
     "name": "Antique Plate Sallet",
@@ -366,7 +411,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Antique_Plate_Sallet",
     "image_url": "https://outward.wiki.gg/images/Antique_Plate_Sallet.png?97a06d",
-    "image_local": "assets/images/armor/armor_Antique_Plate_Sallet.png"
+    "image_local": "assets/images/armor/armor_Antique_Plate_Sallet.png",
+    "special_effects": [
+      "+10 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Arcane Hood",
@@ -404,7 +453,11 @@
     "object_id": "3000261",
     "source_url": "https://outward.wiki.gg/wiki/Arcane_Hood",
     "image_url": "https://outward.wiki.gg/images/Arcane_Hood.png?ac5399",
-    "image_local": "assets/images/armor/armor_Arcane_Hood.png"
+    "image_local": "assets/images/armor/armor_Arcane_Hood.png",
+    "special_effects": [
+      "+3 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Arcane Robe",
@@ -442,7 +495,10 @@
     "object_id": "3000260",
     "source_url": "https://outward.wiki.gg/wiki/Arcane_Robe",
     "image_url": "https://outward.wiki.gg/images/Arcane_Robe.png?48980e",
-    "image_local": "assets/images/armor/armor_Arcane_Robe.png"
+    "image_local": "assets/images/armor/armor_Arcane_Robe.png",
+    "special_effects": [
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Ash Armor",
@@ -480,7 +536,11 @@
     "object_id": "3000220",
     "source_url": "https://outward.wiki.gg/wiki/Ash_Armor",
     "image_url": "https://outward.wiki.gg/images/Ash_Armor.png?3bbcb1",
-    "image_local": "assets/images/armor/armor_Ash_Armor.png"
+    "image_local": "assets/images/armor/armor_Ash_Armor.png",
+    "special_effects": [
+      "+14 Cold Protection",
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Ash Boots",
@@ -518,7 +578,11 @@
     "object_id": "3000222",
     "source_url": "https://outward.wiki.gg/wiki/Ash_Boots",
     "image_url": "https://outward.wiki.gg/images/Ash_Boots.png?fc509a",
-    "image_local": "assets/images/armor/armor_Ash_Boots.png"
+    "image_local": "assets/images/armor/armor_Ash_Boots.png",
+    "special_effects": [
+      "+7 Cold Protection",
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Ash-Filter Mask",
@@ -556,7 +620,11 @@
     "object_id": "3000221",
     "source_url": "https://outward.wiki.gg/wiki/Ash-Filter_Mask",
     "image_url": "https://outward.wiki.gg/images/Ash-Filter_Mask.png?33471a",
-    "image_local": "assets/images/armor/armor_Ash-Filter_Mask.png"
+    "image_local": "assets/images/armor/armor_Ash-Filter_Mask.png",
+    "special_effects": [
+      "+7 Cold Protection",
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Barrier Armor",
@@ -594,7 +662,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Barrier_Armor",
     "image_url": "https://outward.wiki.gg/images/Barrier_Armor.png?998041",
-    "image_local": "assets/images/armor/armor_Barrier_Armor.png"
+    "image_local": "assets/images/armor/armor_Barrier_Armor.png",
+    "special_effects": [
+      "+10% Move Speed",
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Barrier Boots",
@@ -632,7 +704,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Barrier_Boots",
     "image_url": "https://outward.wiki.gg/images/Barrier_Boots.png?c30aae",
-    "image_local": "assets/images/armor/armor_Barrier_Boots.png"
+    "image_local": "assets/images/armor/armor_Barrier_Boots.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+4 Heat Protection"
+    ]
   },
   {
     "name": "Barrier Helm",
@@ -670,7 +746,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Barrier_Helm",
     "image_url": "https://outward.wiki.gg/images/Barrier_Helm.png?e96c68",
-    "image_local": "assets/images/armor/armor_Barrier_Helm.png"
+    "image_local": "assets/images/armor/armor_Barrier_Helm.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+4 Heat Protection"
+    ]
   },
   {
     "name": "Beige Garb",
@@ -708,7 +788,10 @@
     "object_id": "3000003",
     "source_url": "https://outward.wiki.gg/wiki/Beige_Garb",
     "image_url": "https://outward.wiki.gg/images/Beige_Garb.png?5324d0",
-    "image_local": "assets/images/armor/armor_Beige_Garb.png"
+    "image_local": "assets/images/armor/armor_Beige_Garb.png",
+    "special_effects": [
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Black Dancer Clothes",
@@ -746,7 +829,10 @@
     "object_id": "3000181",
     "source_url": "https://outward.wiki.gg/wiki/Black_Dancer_Clothes",
     "image_url": "https://outward.wiki.gg/images/Dancer_Clothes.png?e82a32",
-    "image_local": "assets/images/armor/armor_Black_Dancer_Clothes.png"
+    "image_local": "assets/images/armor/armor_Black_Dancer_Clothes.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Black Fur Armor",
@@ -784,7 +870,10 @@
     "object_id": "3000330",
     "source_url": "https://outward.wiki.gg/wiki/Black_Fur_Armor",
     "image_url": "https://outward.wiki.gg/images/Black_Fur_Armor.png?85a8b7",
-    "image_local": "assets/images/armor/armor_Black_Fur_Armor.png"
+    "image_local": "assets/images/armor/armor_Black_Fur_Armor.png",
+    "special_effects": [
+      "+24 Cold Protection"
+    ]
   },
   {
     "name": "Black Fur Boots",
@@ -822,7 +911,10 @@
     "object_id": "3000332",
     "source_url": "https://outward.wiki.gg/wiki/Black_Fur_Boots",
     "image_url": "https://outward.wiki.gg/images/Black_Fur_Boots.png?2230ad",
-    "image_local": "assets/images/armor/armor_Black_Fur_Boots.png"
+    "image_local": "assets/images/armor/armor_Black_Fur_Boots.png",
+    "special_effects": [
+      "+12 Cold Protection"
+    ]
   },
   {
     "name": "Black Fur Helmet",
@@ -860,7 +952,10 @@
     "object_id": "3000331",
     "source_url": "https://outward.wiki.gg/wiki/Black_Fur_Helmet",
     "image_url": "https://outward.wiki.gg/images/Black_Fur_Helmet.png?c9fbb3",
-    "image_local": "assets/images/armor/armor_Black_Fur_Helmet.png"
+    "image_local": "assets/images/armor/armor_Black_Fur_Helmet.png",
+    "special_effects": [
+      "+12 Cold Protection"
+    ]
   },
   {
     "name": "Black Pearlbird Mask",
@@ -898,7 +993,10 @@
     "object_id": "3000251",
     "source_url": "https://outward.wiki.gg/wiki/Black_Pearlbird_Mask",
     "image_url": "https://outward.wiki.gg/images/Black_Pearlbird_Mask.png?90f7d4",
-    "image_local": "assets/images/armor/armor_Black_Pearlbird_Mask.png"
+    "image_local": "assets/images/armor/armor_Black_Pearlbird_Mask.png",
+    "special_effects": [
+      "+17% Move Speed"
+    ]
   },
   {
     "name": "Black Plate Armor",
@@ -936,7 +1034,13 @@
     "object_id": "3100093",
     "source_url": "https://outward.wiki.gg/wiki/Black_Plate_Armor",
     "image_url": "https://outward.wiki.gg/images/Black_Plate_Armor.png?f8e645",
-    "image_local": "assets/images/armor/armor_Black_Plate_Armor.png"
+    "image_local": "assets/images/armor/armor_Black_Plate_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "+10 Cold Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Black Plate Boots",
@@ -974,7 +1078,13 @@
     "object_id": "3100095",
     "source_url": "https://outward.wiki.gg/wiki/Black_Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Black_Plate_Boots.png?c06741",
-    "image_local": "assets/images/armor/armor_Black_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Black_Plate_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "+5 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Black Plate Helm",
@@ -1012,7 +1122,14 @@
     "object_id": "3100094",
     "source_url": "https://outward.wiki.gg/wiki/Black_Plate_Helm",
     "image_url": "https://outward.wiki.gg/images/Black_Plate_Helm.png?baef54",
-    "image_local": "assets/images/armor/armor_Black_Plate_Helm.png"
+    "image_local": "assets/images/armor/armor_Black_Plate_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-40% Mana Cost",
+      "+5 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Black Worker Boots",
@@ -1050,7 +1167,10 @@
     "object_id": "3000084",
     "source_url": "https://outward.wiki.gg/wiki/Black_Worker_Boots",
     "image_url": "https://outward.wiki.gg/images/Black_Worker_Boots.png?1c0838",
-    "image_local": "assets/images/armor/armor_Black_Worker_Boots.png"
+    "image_local": "assets/images/armor/armor_Black_Worker_Boots.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Blue Light Clothes",
@@ -1088,7 +1208,10 @@
     "object_id": "3000170",
     "source_url": "https://outward.wiki.gg/wiki/Blue_Light_Clothes",
     "image_url": "https://outward.wiki.gg/images/Dancer_Clothes.png?e82a32",
-    "image_local": "assets/images/armor/armor_Blue_Light_Clothes.png"
+    "image_local": "assets/images/armor/armor_Blue_Light_Clothes.png",
+    "special_effects": [
+      "+15 Heat Protection"
+    ]
   },
   {
     "name": "Blue Sand Armor",
@@ -1135,7 +1258,12 @@
     "object_id": "3100080",
     "source_url": "https://outward.wiki.gg/wiki/Blue_Sand_Armor",
     "image_url": "https://outward.wiki.gg/images/Blue_Sand_Armor.png?a047c3",
-    "image_local": "assets/images/armor/armor_Blue_Sand_Armor.png"
+    "image_local": "assets/images/armor/armor_Blue_Sand_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Blue Sand Boots",
@@ -1182,7 +1310,12 @@
     "object_id": "3100082",
     "source_url": "https://outward.wiki.gg/wiki/Blue_Sand_Boots",
     "image_url": "https://outward.wiki.gg/images/Blue_Sand_Boots.png?9b1d53",
-    "image_local": "assets/images/armor/armor_Blue_Sand_Boots.png"
+    "image_local": "assets/images/armor/armor_Blue_Sand_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Blue Sand Helm",
@@ -1229,7 +1362,13 @@
     "object_id": "3100081",
     "source_url": "https://outward.wiki.gg/wiki/Blue_Sand_Helm",
     "image_url": "https://outward.wiki.gg/images/Blue_Sand_Helm.png?439ef0",
-    "image_local": "assets/images/armor/armor_Blue_Sand_Helm.png"
+    "image_local": "assets/images/armor/armor_Blue_Sand_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-10% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Brigand Coat",
@@ -1267,7 +1406,11 @@
     "object_id": "3000035",
     "source_url": "https://outward.wiki.gg/wiki/Brigand_Coat",
     "image_url": "https://outward.wiki.gg/images/Brigand_Coat.png?d444bb",
-    "image_local": "assets/images/armor/armor_Brigand_Coat.png"
+    "image_local": "assets/images/armor/armor_Brigand_Coat.png",
+    "special_effects": [
+      "+3 Pouch",
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Brigand's Hat",
@@ -1305,7 +1448,10 @@
     "object_id": "3000036",
     "source_url": "https://outward.wiki.gg/wiki/Brigand%27s_Hat",
     "image_url": "https://outward.wiki.gg/images/Brigand%27s_Hat.png?549b94",
-    "image_local": "assets/images/armor/armor_Brigand_s_Hat.png"
+    "image_local": "assets/images/armor/armor_Brigand_s_Hat.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Bright Nobleman Attire",
@@ -1343,7 +1489,10 @@
     "object_id": "3000110",
     "source_url": "https://outward.wiki.gg/wiki/Bright_Nobleman_Attire",
     "image_url": "https://outward.wiki.gg/images/Bright_Nobleman_Attire.png?49afe8",
-    "image_local": "assets/images/armor/armor_Bright_Nobleman_Attire.png"
+    "image_local": "assets/images/armor/armor_Bright_Nobleman_Attire.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Bright Nobleman Boots",
@@ -1381,7 +1530,10 @@
     "object_id": "3000116",
     "source_url": "https://outward.wiki.gg/wiki/Bright_Nobleman_Boots",
     "image_url": "https://outward.wiki.gg/images/Bright_Nobleman_Boots.png?9ce1dd",
-    "image_local": "assets/images/armor/armor_Bright_Nobleman_Boots.png"
+    "image_local": "assets/images/armor/armor_Bright_Nobleman_Boots.png",
+    "special_effects": [
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Bright Nobleman Hat",
@@ -1419,7 +1571,10 @@
     "object_id": "3000113",
     "source_url": "https://outward.wiki.gg/wiki/Bright_Nobleman_Hat",
     "image_url": "https://outward.wiki.gg/images/Bright_Nobleman_Hat.png?cf1b1e",
-    "image_local": "assets/images/armor/armor_Bright_Nobleman_Hat.png"
+    "image_local": "assets/images/armor/armor_Bright_Nobleman_Hat.png",
+    "special_effects": [
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Bright Rich Attire",
@@ -1457,7 +1612,10 @@
     "object_id": "3000120",
     "source_url": "https://outward.wiki.gg/wiki/Bright_Rich_Attire",
     "image_url": "https://outward.wiki.gg/images/Bright_Rich_Attire.png?711a09",
-    "image_local": "assets/images/armor/armor_Bright_Rich_Attire.png"
+    "image_local": "assets/images/armor/armor_Bright_Rich_Attire.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Bright Rich Hat",
@@ -1495,7 +1653,10 @@
     "object_id": "3000122",
     "source_url": "https://outward.wiki.gg/wiki/Bright_Rich_Hat",
     "image_url": "https://outward.wiki.gg/images/Bright_Rich_Hat.png?c0222c",
-    "image_local": "assets/images/armor/armor_Bright_Rich_Hat.png"
+    "image_local": "assets/images/armor/armor_Bright_Rich_Hat.png",
+    "special_effects": [
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Caged Armor Boots",
@@ -1533,7 +1694,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Caged_Armor_Boots",
     "image_url": "https://outward.wiki.gg/images/Caged_Armor_Boots.png?8aac7a",
-    "image_local": "assets/images/armor/armor_Caged_Armor_Boots.png"
+    "image_local": "assets/images/armor/armor_Caged_Armor_Boots.png",
+    "special_effects": [
+      "+10% Move Speed",
+      "-5% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Caged Armor Chestplate",
@@ -1571,7 +1737,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Caged_Armor_Chestplate",
     "image_url": "https://outward.wiki.gg/images/Caged_Armor_Chestplate.png?d7c3c7",
-    "image_local": "assets/images/armor/armor_Caged_Armor_Chestplate.png"
+    "image_local": "assets/images/armor/armor_Caged_Armor_Chestplate.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "-8% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Caged Armor Helm",
@@ -1609,7 +1780,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Caged_Armor_Helm",
     "image_url": "https://outward.wiki.gg/images/Caged_Armor_Helm.png?97799c",
-    "image_local": "assets/images/armor/armor_Caged_Armor_Helm.png"
+    "image_local": "assets/images/armor/armor_Caged_Armor_Helm.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "-5% Stamina Cost",
+      "-30% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Caldera Mail Armor",
@@ -1647,7 +1824,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Caldera_Mail_Armor",
     "image_url": "https://outward.wiki.gg/images/Caldera_Mail_Armor.png?b91ab5",
-    "image_local": "assets/images/armor/armor_Caldera_Mail_Armor.png"
+    "image_local": "assets/images/armor/armor_Caldera_Mail_Armor.png",
+    "special_effects": [
+      "3 Protection"
+    ]
   },
   {
     "name": "Caldera Mail Boots",
@@ -1685,7 +1865,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Caldera_Mail_Boots",
     "image_url": "https://outward.wiki.gg/images/Caldera_Mail_Boots.png?5cea65",
-    "image_local": "assets/images/armor/armor_Caldera_Mail_Boots.png"
+    "image_local": "assets/images/armor/armor_Caldera_Mail_Boots.png",
+    "special_effects": [
+      "2 Protection"
+    ]
   },
   {
     "name": "Caldera Mail Helm",
@@ -1723,7 +1906,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Caldera_Mail_Helm",
     "image_url": "https://outward.wiki.gg/images/Caldera_Mail_Helm.png?81b662",
-    "image_local": "assets/images/armor/armor_Caldera_Mail_Helm.png"
+    "image_local": "assets/images/armor/armor_Caldera_Mail_Helm.png",
+    "special_effects": [
+      "-7% Mana Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Candle Plate Armor",
@@ -1761,7 +1948,13 @@
     "object_id": "3100040",
     "source_url": "https://outward.wiki.gg/wiki/Candle_Plate_Armor",
     "image_url": "https://outward.wiki.gg/images/Candle_Plate_Armor.png?e05a9d",
-    "image_local": "assets/images/armor/armor_Candle_Plate_Armor.png"
+    "image_local": "assets/images/armor/armor_Candle_Plate_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "+6 Cold Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Candle Plate Boots",
@@ -1799,7 +1992,13 @@
     "object_id": "3100042",
     "source_url": "https://outward.wiki.gg/wiki/Candle_Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Candle_Plate_Boots.png?795e8d",
-    "image_local": "assets/images/armor/armor_Candle_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Candle_Plate_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "+3 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Candle Plate Helm",
@@ -1837,7 +2036,14 @@
     "object_id": "3100041",
     "source_url": "https://outward.wiki.gg/wiki/Candle_Plate_Helm",
     "image_url": "https://outward.wiki.gg/images/Candle_Plate_Helm.png?42c28b",
-    "image_local": "assets/images/armor/armor_Candle_Plate_Helm.png"
+    "image_local": "assets/images/armor/armor_Candle_Plate_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-15% Mana Cost",
+      "+3 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Cauldron Helm",
@@ -1875,7 +2081,12 @@
     "object_id": "3100050",
     "source_url": "https://outward.wiki.gg/wiki/Cauldron_Helm",
     "image_url": "https://outward.wiki.gg/images/Cauldron_Helm.png?7973e3",
-    "image_local": "assets/images/armor/armor_Cauldron_Helm.png"
+    "image_local": "assets/images/armor/armor_Cauldron_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-100% Mana Cost"
+    ]
   },
   {
     "name": "Chalcedony Armor",
@@ -1913,7 +2124,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Armor",
     "image_url": "https://outward.wiki.gg/images/Chalcedony_Armor.png?3b041d",
-    "image_local": "assets/images/armor/armor_Chalcedony_Armor.png"
+    "image_local": "assets/images/armor/armor_Chalcedony_Armor.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-6% Stamina Cost",
+      "6 Protection"
+    ]
   },
   {
     "name": "Chalcedony Boots",
@@ -1951,7 +2167,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Boots",
     "image_url": "https://outward.wiki.gg/images/Chalcedony_Boots.png?c27751",
-    "image_local": "assets/images/armor/armor_Chalcedony_Boots.png"
+    "image_local": "assets/images/armor/armor_Chalcedony_Boots.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-4% Stamina Cost",
+      "+10 Heat Protection",
+      "4 Protection"
+    ]
   },
   {
     "name": "Chalcedony Helmet",
@@ -1989,7 +2211,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Helmet",
     "image_url": "https://outward.wiki.gg/images/Chalcedony_Helmet.png?ea6d63",
-    "image_local": "assets/images/armor/armor_Chalcedony_Helmet.png"
+    "image_local": "assets/images/armor/armor_Chalcedony_Helmet.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-4% Stamina Cost",
+      "-15% Mana Cost",
+      "4 Protection"
+    ]
   },
   {
     "name": "Chitin Desert Tunic",
@@ -2027,7 +2255,10 @@
     "object_id": "3000201",
     "source_url": "https://outward.wiki.gg/wiki/Chitin_Desert_Tunic",
     "image_url": "https://outward.wiki.gg/images/Chitin_Desert_Tunic.png?3f5b82",
-    "image_local": "assets/images/armor/armor_Chitin_Desert_Tunic.png"
+    "image_local": "assets/images/armor/armor_Chitin_Desert_Tunic.png",
+    "special_effects": [
+      "+20 Heat Protection"
+    ]
   },
   {
     "name": "Clansage Robe",
@@ -2065,7 +2296,10 @@
     "object_id": "3000270",
     "source_url": "https://outward.wiki.gg/wiki/Clansage_Robe",
     "image_url": "https://outward.wiki.gg/images/Clansage_Robe.png?2eeeac",
-    "image_local": "assets/images/armor/armor_Clansage_Robe.png"
+    "image_local": "assets/images/armor/armor_Clansage_Robe.png",
+    "special_effects": [
+      "+15 Cold Protection"
+    ]
   },
   {
     "name": "Copal Armor",
@@ -2112,7 +2346,10 @@
     "object_id": "3000160",
     "source_url": "https://outward.wiki.gg/wiki/Copal_Armor",
     "image_url": "https://outward.wiki.gg/images/Copal_Armor.png?8b8f4a",
-    "image_local": "assets/images/armor/armor_Copal_Armor.png"
+    "image_local": "assets/images/armor/armor_Copal_Armor.png",
+    "special_effects": [
+      "3 Protection"
+    ]
   },
   {
     "name": "Copal Boots",
@@ -2159,7 +2396,10 @@
     "object_id": "3000162",
     "source_url": "https://outward.wiki.gg/wiki/Copal_Boots",
     "image_url": "https://outward.wiki.gg/images/Copal_Boots.png?c1458d",
-    "image_local": "assets/images/armor/armor_Copal_Boots.png"
+    "image_local": "assets/images/armor/armor_Copal_Boots.png",
+    "special_effects": [
+      "2 Protection"
+    ]
   },
   {
     "name": "Copal Helm",
@@ -2206,7 +2446,11 @@
     "object_id": "3000161",
     "source_url": "https://outward.wiki.gg/wiki/Copal_Helm",
     "image_url": "https://outward.wiki.gg/images/Copal_Helm.png?b784a7",
-    "image_local": "assets/images/armor/armor_Copal_Helm.png"
+    "image_local": "assets/images/armor/armor_Copal_Helm.png",
+    "special_effects": [
+      "-15% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Coralhorn Mask",
@@ -2244,7 +2488,8 @@
     "object_id": "3000100",
     "source_url": "https://outward.wiki.gg/wiki/Coralhorn_Mask",
     "image_url": "https://outward.wiki.gg/images/Coralhorn_Mask.png?be9b80",
-    "image_local": "assets/images/armor/armor_Coralhorn_Mask.png"
+    "image_local": "assets/images/armor/armor_Coralhorn_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Crimson Dancer Clothes",
@@ -2282,7 +2527,10 @@
     "object_id": "3000182",
     "source_url": "https://outward.wiki.gg/wiki/Crimson_Dancer_Clothes",
     "image_url": "https://outward.wiki.gg/images/Dancer_Clothes.png?e82a32",
-    "image_local": "assets/images/armor/armor_Crimson_Dancer_Clothes.png"
+    "image_local": "assets/images/armor/armor_Crimson_Dancer_Clothes.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Crimson Plate Armor",
@@ -2320,7 +2568,13 @@
     "object_id": "3100090",
     "source_url": "https://outward.wiki.gg/wiki/Crimson_Plate_Armor",
     "image_url": "https://outward.wiki.gg/images/Crimson_Plate_Armor.png?615c44",
-    "image_local": "assets/images/armor/armor_Crimson_Plate_Armor.png"
+    "image_local": "assets/images/armor/armor_Crimson_Plate_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "+14 Cold Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Crimson Plate Boots",
@@ -2358,7 +2612,13 @@
     "object_id": "3100092",
     "source_url": "https://outward.wiki.gg/wiki/Crimson_Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Crimson_Plate_Boots.png?f4a445",
-    "image_local": "assets/images/armor/armor_Crimson_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Crimson_Plate_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "+7 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Crimson Plate Mask",
@@ -2396,7 +2656,14 @@
     "object_id": "3100091",
     "source_url": "https://outward.wiki.gg/wiki/Crimson_Plate_Mask",
     "image_url": "https://outward.wiki.gg/images/Crimson_Plate_Mask.png?d39c27",
-    "image_local": "assets/images/armor/armor_Crimson_Plate_Mask.png"
+    "image_local": "assets/images/armor/armor_Crimson_Plate_Mask.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-20% Mana Cost",
+      "+7 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Dancer Leggings",
@@ -2434,7 +2701,10 @@
     "object_id": "3000184",
     "source_url": "https://outward.wiki.gg/wiki/Dancer_Leggings",
     "image_url": "https://outward.wiki.gg/images/Dancer_Leggings.png?5f1aa6",
-    "image_local": "assets/images/armor/armor_Dancer_Leggings.png"
+    "image_local": "assets/images/armor/armor_Dancer_Leggings.png",
+    "special_effects": [
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Dancer Mask",
@@ -2472,7 +2742,10 @@
     "object_id": "3000183",
     "source_url": "https://outward.wiki.gg/wiki/Dancer_Mask",
     "image_url": "https://outward.wiki.gg/images/Dancer_Mask.png?a510f0",
-    "image_local": "assets/images/armor/armor_Dancer_Mask.png"
+    "image_local": "assets/images/armor/armor_Dancer_Mask.png",
+    "special_effects": [
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Dark Green Garb",
@@ -2510,7 +2783,10 @@
     "object_id": "3000005",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Green_Garb",
     "image_url": "https://outward.wiki.gg/images/Dark_Green_Garb.png?76f24a",
-    "image_local": "assets/images/armor/armor_Dark_Green_Garb.png"
+    "image_local": "assets/images/armor/armor_Dark_Green_Garb.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Dark Nobleman Attire",
@@ -2548,7 +2824,10 @@
     "object_id": "3000111",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Nobleman_Attire",
     "image_url": "https://outward.wiki.gg/images/Dark_Nobleman_Attire.png?854864",
-    "image_local": "assets/images/armor/armor_Dark_Nobleman_Attire.png"
+    "image_local": "assets/images/armor/armor_Dark_Nobleman_Attire.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Dark Nobleman Boots",
@@ -2586,7 +2865,10 @@
     "object_id": "3000117",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Nobleman_Boots",
     "image_url": "https://outward.wiki.gg/images/Dark_Nobleman_Boots.png?8652b1",
-    "image_local": "assets/images/armor/armor_Dark_Nobleman_Boots.png"
+    "image_local": "assets/images/armor/armor_Dark_Nobleman_Boots.png",
+    "special_effects": [
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Dark Nobleman Hat",
@@ -2624,7 +2906,10 @@
     "object_id": "3000114",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Nobleman_Hat",
     "image_url": "https://outward.wiki.gg/images/Dark_Nobleman_Hat.png?b11c8e",
-    "image_local": "assets/images/armor/armor_Dark_Nobleman_Hat.png"
+    "image_local": "assets/images/armor/armor_Dark_Nobleman_Hat.png",
+    "special_effects": [
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Dark Red Garb",
@@ -2662,7 +2947,10 @@
     "object_id": "3000007",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Red_Garb",
     "image_url": "https://outward.wiki.gg/images/Dark_Red_Garb.png?ae4423",
-    "image_local": "assets/images/armor/armor_Dark_Red_Garb.png"
+    "image_local": "assets/images/armor/armor_Dark_Red_Garb.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Dark Rich Attire",
@@ -2700,7 +2988,10 @@
     "object_id": "3000121",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Rich_Attire",
     "image_url": "https://outward.wiki.gg/images/Dark_Rich_Attire.png?557c40",
-    "image_local": "assets/images/armor/armor_Dark_Rich_Attire.png"
+    "image_local": "assets/images/armor/armor_Dark_Rich_Attire.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Dark Rich Hat",
@@ -2738,7 +3029,10 @@
     "object_id": "3000123",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Rich_Hat",
     "image_url": "https://outward.wiki.gg/images/Dark_Rich_Hat.png?9c7630",
-    "image_local": "assets/images/armor/armor_Dark_Rich_Hat.png"
+    "image_local": "assets/images/armor/armor_Dark_Rich_Hat.png",
+    "special_effects": [
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Dark Worker Attire",
@@ -2776,7 +3070,10 @@
     "object_id": "3000080",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Worker_Attire",
     "image_url": "https://outward.wiki.gg/images/Dark_Worker_Attire.png?2b2ff1",
-    "image_local": "assets/images/armor/armor_Dark_Worker_Attire.png"
+    "image_local": "assets/images/armor/armor_Dark_Worker_Attire.png",
+    "special_effects": [
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Dark Worker Hood",
@@ -2814,7 +3111,11 @@
     "object_id": "3000085",
     "source_url": "https://outward.wiki.gg/wiki/Dark_Worker_Hood",
     "image_url": "https://outward.wiki.gg/images/Dark_Worker_Hood.png?7d9228",
-    "image_local": "assets/images/armor/armor_Dark_Worker_Hood.png"
+    "image_local": "assets/images/armor/armor_Dark_Worker_Hood.png",
+    "special_effects": [
+      "+3 Cold Protection",
+      "+1 Heat Protection"
+    ]
   },
   {
     "name": "Desert Boots",
@@ -2852,7 +3153,11 @@
     "object_id": "3000205",
     "source_url": "https://outward.wiki.gg/wiki/Desert_Boots",
     "image_url": "https://outward.wiki.gg/images/Desert_Boots.png?a744fe",
-    "image_local": "assets/images/armor/armor_Desert_Boots.png"
+    "image_local": "assets/images/armor/armor_Desert_Boots.png",
+    "special_effects": [
+      "+10% Move Speed",
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Desert Tunic",
@@ -2890,7 +3195,10 @@
     "object_id": "3000200",
     "source_url": "https://outward.wiki.gg/wiki/Desert_Tunic",
     "image_url": "https://outward.wiki.gg/images/Desert_Tunic.png?f1f095",
-    "image_local": "assets/images/armor/armor_Desert_Tunic.png"
+    "image_local": "assets/images/armor/armor_Desert_Tunic.png",
+    "special_effects": [
+      "+20 Heat Protection"
+    ]
   },
   {
     "name": "Desert Veil",
@@ -2928,7 +3236,10 @@
     "object_id": "3000203",
     "source_url": "https://outward.wiki.gg/wiki/Desert_Veil",
     "image_url": "https://outward.wiki.gg/images/Desert_Veil.png?d98b46",
-    "image_local": "assets/images/armor/armor_Desert_Veil.png"
+    "image_local": "assets/images/armor/armor_Desert_Veil.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Elite Desert Tunic",
@@ -2966,7 +3277,11 @@
     "object_id": "3000202",
     "source_url": "https://outward.wiki.gg/wiki/Elite_Desert_Tunic",
     "image_url": "https://outward.wiki.gg/images/Elite_Desert_Tunic.png?8b076b",
-    "image_local": "assets/images/armor/armor_Elite_Desert_Tunic.png"
+    "image_local": "assets/images/armor/armor_Elite_Desert_Tunic.png",
+    "special_effects": [
+      "+16 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Elite Desert Veil",
@@ -3004,7 +3319,12 @@
     "object_id": "3000204",
     "source_url": "https://outward.wiki.gg/wiki/Elite_Desert_Veil",
     "image_url": "https://outward.wiki.gg/images/Elite_Desert_Veil.png?382e7a",
-    "image_local": "assets/images/armor/armor_Elite_Desert_Veil.png"
+    "image_local": "assets/images/armor/armor_Elite_Desert_Veil.png",
+    "special_effects": [
+      "-5% Mana Cost",
+      "+8 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Elite Hood",
@@ -3042,7 +3362,11 @@
     "object_id": "3000037",
     "source_url": "https://outward.wiki.gg/wiki/Elite_Hood",
     "image_url": "https://outward.wiki.gg/images/Elite_Hood.png?87a401",
-    "image_local": "assets/images/armor/armor_Elite_Hood.png"
+    "image_local": "assets/images/armor/armor_Elite_Hood.png",
+    "special_effects": [
+      "+8 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Elite Plate Armor",
@@ -3080,7 +3404,13 @@
     "object_id": "3100000",
     "source_url": "https://outward.wiki.gg/wiki/Elite_Plate_Armor",
     "image_url": "https://outward.wiki.gg/images/Elite_Plate_Armor.png?10ac7b",
-    "image_local": "assets/images/armor/armor_Elite_Plate_Armor.png"
+    "image_local": "assets/images/armor/armor_Elite_Plate_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "+4 Pouch",
+      "3 Protection"
+    ]
   },
   {
     "name": "Elite Plate Boots",
@@ -3118,7 +3448,12 @@
     "object_id": "3100002",
     "source_url": "https://outward.wiki.gg/wiki/Elite_Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Elite_Plate_Boots.png?f6037c",
-    "image_local": "assets/images/armor/armor_Elite_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Elite_Plate_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Elite Plate Helm",
@@ -3156,7 +3491,13 @@
     "object_id": "3100001",
     "source_url": "https://outward.wiki.gg/wiki/Elite_Plate_Helm",
     "image_url": "https://outward.wiki.gg/images/Elite_Plate_Helm.png?fe69c4",
-    "image_local": "assets/images/armor/armor_Elite_Plate_Helm.png"
+    "image_local": "assets/images/armor/armor_Elite_Plate_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-50% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Entomber Armor",
@@ -3194,7 +3535,11 @@
     "object_id": "3000112",
     "source_url": "https://outward.wiki.gg/wiki/Entomber_Armor",
     "image_url": "https://outward.wiki.gg/images/Entomber_Armor.png?179dec",
-    "image_local": "assets/images/armor/armor_Entomber_Armor.png"
+    "image_local": "assets/images/armor/armor_Entomber_Armor.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+16 Heat Protection"
+    ]
   },
   {
     "name": "Entomber Boots",
@@ -3232,7 +3577,11 @@
     "object_id": "3000118",
     "source_url": "https://outward.wiki.gg/wiki/Entomber_Boots",
     "image_url": "https://outward.wiki.gg/images/Entomber_Boots.png?2d4b51",
-    "image_local": "assets/images/armor/armor_Entomber_Boots.png"
+    "image_local": "assets/images/armor/armor_Entomber_Boots.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Entomber Hat",
@@ -3270,7 +3619,11 @@
     "object_id": "3000115",
     "source_url": "https://outward.wiki.gg/wiki/Entomber_Hat",
     "image_url": "https://outward.wiki.gg/images/Entomber_Hat.png?f55d13",
-    "image_local": "assets/images/armor/armor_Entomber_Hat.png"
+    "image_local": "assets/images/armor/armor_Entomber_Hat.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Ergagr'Uk!",
@@ -3308,7 +3661,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Ergagr%27Uk%21",
     "image_url": "https://outward.wiki.gg/images/Ergagr%27Uk%21.png?42ff0c",
-    "image_local": "assets/images/armor/armor_Ergagr_Uk_.png"
+    "image_local": "assets/images/armor/armor_Ergagr_Uk_.png",
+    "special_effects": []
   },
   {
     "name": "Fur Armor",
@@ -3346,7 +3700,10 @@
     "object_id": "3000240",
     "source_url": "https://outward.wiki.gg/wiki/Fur_Armor",
     "image_url": "https://outward.wiki.gg/images/Fur_Armor.png?2de812",
-    "image_local": "assets/images/armor/armor_Fur_Armor.png"
+    "image_local": "assets/images/armor/armor_Fur_Armor.png",
+    "special_effects": [
+      "+20 Cold Protection"
+    ]
   },
   {
     "name": "Fur Boots",
@@ -3384,7 +3741,10 @@
     "object_id": "3000242",
     "source_url": "https://outward.wiki.gg/wiki/Fur_Boots",
     "image_url": "https://outward.wiki.gg/images/Fur_Boots.png?e195ea",
-    "image_local": "assets/images/armor/armor_Fur_Boots.png"
+    "image_local": "assets/images/armor/armor_Fur_Boots.png",
+    "special_effects": [
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Fur Helm",
@@ -3422,7 +3782,10 @@
     "object_id": "3000241",
     "source_url": "https://outward.wiki.gg/wiki/Fur_Helm",
     "image_url": "https://outward.wiki.gg/images/Fur_Helm.png?a1665e",
-    "image_local": "assets/images/armor/armor_Fur_Helm.png"
+    "image_local": "assets/images/armor/armor_Fur_Helm.png",
+    "special_effects": [
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Gar'Ga'Nak",
@@ -3460,7 +3823,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Gar%27Ga%27Nak",
     "image_url": "https://outward.wiki.gg/images/Gar%27Ga%27Nak.png?f2da2d",
-    "image_local": "assets/images/armor/armor_Gar_Ga_Nak.png"
+    "image_local": "assets/images/armor/armor_Gar_Ga_Nak.png",
+    "special_effects": []
   },
   {
     "name": "Gargargar!",
@@ -3498,7 +3862,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Gargargar%21",
     "image_url": "https://outward.wiki.gg/images/Gargargar%21.png?fe939d",
-    "image_local": "assets/images/armor/armor_Gargargar_.png"
+    "image_local": "assets/images/armor/armor_Gargargar_.png",
+    "special_effects": [
+      "+10 Pouch"
+    ]
   },
   {
     "name": "Go'gO",
@@ -3536,7 +3903,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Go%27gO",
     "image_url": "https://outward.wiki.gg/images/Go%27gO.png?ee3c96",
-    "image_local": "assets/images/armor/armor_Go_gO.png"
+    "image_local": "assets/images/armor/armor_Go_gO.png",
+    "special_effects": [
+      "+17% Move Speed",
+      "+5 Pouch"
+    ]
   },
   {
     "name": "Gold-Lich Armor",
@@ -3574,7 +3945,8 @@
     "object_id": "3000210",
     "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Armor",
     "image_url": "https://outward.wiki.gg/images/Gold-Lich_Armor.png?6d9db4",
-    "image_local": "assets/images/armor/armor_Gold-Lich_Armor.png"
+    "image_local": "assets/images/armor/armor_Gold-Lich_Armor.png",
+    "special_effects": []
   },
   {
     "name": "Gold-Lich Boots",
@@ -3612,7 +3984,8 @@
     "object_id": "3000212",
     "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Boots",
     "image_url": "https://outward.wiki.gg/images/Gold-Lich_Boots.png?3e45a3",
-    "image_local": "assets/images/armor/armor_Gold-Lich_Boots.png"
+    "image_local": "assets/images/armor/armor_Gold-Lich_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Gold-Lich Mask",
@@ -3650,7 +4023,8 @@
     "object_id": "3000211",
     "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Mask",
     "image_url": "https://outward.wiki.gg/images/Gold-Lich_Mask.png?c2ebe1",
-    "image_local": "assets/images/armor/armor_Gold-Lich_Mask.png"
+    "image_local": "assets/images/armor/armor_Gold-Lich_Mask.png",
+    "special_effects": []
   },
   {
     "name": "GorkKrog!",
@@ -3688,7 +4062,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/GorkKrog%21",
     "image_url": "https://outward.wiki.gg/images/GorkKrog%21.png?ab9b0a",
-    "image_local": "assets/images/armor/armor_GorkKrog_.png"
+    "image_local": "assets/images/armor/armor_GorkKrog_.png",
+    "special_effects": [
+      "10 Protection"
+    ]
   },
   {
     "name": "GoulgGalog!",
@@ -3726,7 +4103,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/GoulgGalog%21",
     "image_url": "https://outward.wiki.gg/images/GoulgGalog%21.png?64aeda",
-    "image_local": "assets/images/armor/armor_GoulgGalog_.png"
+    "image_local": "assets/images/armor/armor_GoulgGalog_.png",
+    "special_effects": [
+      "+15 Pouch"
+    ]
   },
   {
     "name": "Gray Garb",
@@ -3764,7 +4144,10 @@
     "object_id": "3000006",
     "source_url": "https://outward.wiki.gg/wiki/Gray_Garb",
     "image_url": "https://outward.wiki.gg/images/Gray_Garb.png?23c094",
-    "image_local": "assets/images/armor/armor_Gray_Garb.png"
+    "image_local": "assets/images/armor/armor_Gray_Garb.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Green Copal Armor",
@@ -3802,7 +4185,10 @@
     "object_id": "3000310",
     "source_url": "https://outward.wiki.gg/wiki/Green_Copal_Armor",
     "image_url": "https://outward.wiki.gg/images/Green_Copal_Armor.png?f96810",
-    "image_local": "assets/images/armor/armor_Green_Copal_Armor.png"
+    "image_local": "assets/images/armor/armor_Green_Copal_Armor.png",
+    "special_effects": [
+      "3 Protection"
+    ]
   },
   {
     "name": "Green Copal Boots",
@@ -3840,7 +4226,10 @@
     "object_id": "3000312",
     "source_url": "https://outward.wiki.gg/wiki/Green_Copal_Boots",
     "image_url": "https://outward.wiki.gg/images/Green_Copal_Boots.png?d3bf22",
-    "image_local": "assets/images/armor/armor_Green_Copal_Boots.png"
+    "image_local": "assets/images/armor/armor_Green_Copal_Boots.png",
+    "special_effects": [
+      "2 Protection"
+    ]
   },
   {
     "name": "Green Copal Helmet",
@@ -3878,7 +4267,11 @@
     "object_id": "3000311",
     "source_url": "https://outward.wiki.gg/wiki/Green_Copal_Helmet",
     "image_url": "https://outward.wiki.gg/images/Green_Copal_Helmet.png?dd8e44",
-    "image_local": "assets/images/armor/armor_Green_Copal_Helmet.png"
+    "image_local": "assets/images/armor/armor_Green_Copal_Helmet.png",
+    "special_effects": [
+      "-10% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Green Garb",
@@ -3916,7 +4309,10 @@
     "object_id": "3000008",
     "source_url": "https://outward.wiki.gg/wiki/Green_Garb",
     "image_url": "https://outward.wiki.gg/images/Green_Garb.png?2b8737",
-    "image_local": "assets/images/armor/armor_Green_Garb.png"
+    "image_local": "assets/images/armor/armor_Green_Garb.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Green Worker Attire",
@@ -3954,7 +4350,10 @@
     "object_id": "3000082",
     "source_url": "https://outward.wiki.gg/wiki/Green_Worker_Attire",
     "image_url": "https://outward.wiki.gg/images/Green_Worker_Attire.png?3f6942",
-    "image_local": "assets/images/armor/armor_Green_Worker_Attire.png"
+    "image_local": "assets/images/armor/armor_Green_Worker_Attire.png",
+    "special_effects": [
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Halfplate Armor",
@@ -3992,7 +4391,12 @@
     "object_id": "3100006",
     "source_url": "https://outward.wiki.gg/wiki/Halfplate_Armor",
     "image_url": "https://outward.wiki.gg/images/Halfplate_Armor.png?d02d18",
-    "image_local": "assets/images/armor/armor_Halfplate_Armor.png"
+    "image_local": "assets/images/armor/armor_Halfplate_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Halfplate Boots",
@@ -4030,7 +4434,12 @@
     "object_id": "3100008",
     "source_url": "https://outward.wiki.gg/wiki/Halfplate_Boots",
     "image_url": "https://outward.wiki.gg/images/Halfplate_Boots.png?e73189",
-    "image_local": "assets/images/armor/armor_Halfplate_Boots.png"
+    "image_local": "assets/images/armor/armor_Halfplate_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Halfplate Helm",
@@ -4068,7 +4477,13 @@
     "object_id": "3100007",
     "source_url": "https://outward.wiki.gg/wiki/Halfplate_Helm",
     "image_url": "https://outward.wiki.gg/images/Halfplate_Helm.png?c05ba4",
-    "image_local": "assets/images/armor/armor_Halfplate_Helm.png"
+    "image_local": "assets/images/armor/armor_Halfplate_Helm.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "-20% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Horror Armor",
@@ -4106,7 +4521,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Horror_Armor",
     "image_url": "https://outward.wiki.gg/images/Horror_Armor.png?d2ddb5",
-    "image_local": "assets/images/armor/armor_Horror_Armor.png"
+    "image_local": "assets/images/armor/armor_Horror_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Horror Greaves",
@@ -4144,7 +4564,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Horror_Greaves",
     "image_url": "https://outward.wiki.gg/images/Horror_Greaves.png?dabce9",
-    "image_local": "assets/images/armor/armor_Horror_Greaves.png"
+    "image_local": "assets/images/armor/armor_Horror_Greaves.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Horror Helm",
@@ -4182,7 +4607,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Horror_Helm",
     "image_url": "https://outward.wiki.gg/images/Horror_Helm.png?fe6872",
-    "image_local": "assets/images/armor/armor_Horror_Helm.png"
+    "image_local": "assets/images/armor/armor_Horror_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-30% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Hound Mask",
@@ -4220,7 +4651,8 @@
     "object_id": "3000103",
     "source_url": "https://outward.wiki.gg/wiki/Hound_Mask",
     "image_url": "https://outward.wiki.gg/images/Hound_Mask.png?fdb669",
-    "image_local": "assets/images/armor/armor_Hound_Mask.png"
+    "image_local": "assets/images/armor/armor_Hound_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Jade Acolyte Boots",
@@ -4258,7 +4690,8 @@
     "object_id": "3000046",
     "source_url": "https://outward.wiki.gg/wiki/Jade_Acolyte_Boots",
     "image_url": "https://outward.wiki.gg/images/Jade_Acolyte_Boots.png?19bcd4",
-    "image_local": "assets/images/armor/armor_Jade_Acolyte_Boots.png"
+    "image_local": "assets/images/armor/armor_Jade_Acolyte_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Jade Acolyte Cowl",
@@ -4296,7 +4729,8 @@
     "object_id": "3000045",
     "source_url": "https://outward.wiki.gg/wiki/Jade_Acolyte_Cowl",
     "image_url": "https://outward.wiki.gg/images/Jade_Acolyte_Cowl.png?fdd9f4",
-    "image_local": "assets/images/armor/armor_Jade_Acolyte_Cowl.png"
+    "image_local": "assets/images/armor/armor_Jade_Acolyte_Cowl.png",
+    "special_effects": []
   },
   {
     "name": "Jade Acolyte Robes",
@@ -4334,7 +4768,8 @@
     "object_id": "3000044",
     "source_url": "https://outward.wiki.gg/wiki/Jade_Acolyte_Robes",
     "image_url": "https://outward.wiki.gg/images/Jade_Acolyte_Robes.png?f53bd6",
-    "image_local": "assets/images/armor/armor_Jade_Acolyte_Robes.png"
+    "image_local": "assets/images/armor/armor_Jade_Acolyte_Robes.png",
+    "special_effects": []
   },
   {
     "name": "Jade-Lich Boots",
@@ -4372,7 +4807,8 @@
     "object_id": "3000043",
     "source_url": "https://outward.wiki.gg/wiki/Jade-Lich_Boots",
     "image_url": "https://outward.wiki.gg/images/Jade-Lich_Boots.png?947b10",
-    "image_local": "assets/images/armor/armor_Jade-Lich_Boots.png"
+    "image_local": "assets/images/armor/armor_Jade-Lich_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Jade-Lich Mask",
@@ -4410,7 +4846,8 @@
     "object_id": "3000041",
     "source_url": "https://outward.wiki.gg/wiki/Jade-Lich_Mask",
     "image_url": "https://outward.wiki.gg/images/Jade-Lich_Mask.png?e24c2d",
-    "image_local": "assets/images/armor/armor_Jade-Lich_Mask.png"
+    "image_local": "assets/images/armor/armor_Jade-Lich_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Jade-Lich Robes",
@@ -4448,7 +4885,8 @@
     "object_id": "3000040",
     "source_url": "https://outward.wiki.gg/wiki/Jade-Lich_Robes",
     "image_url": "https://outward.wiki.gg/images/Jade-Lich_Robes.png?82de9e",
-    "image_local": "assets/images/armor/armor_Jade-Lich_Robes.png"
+    "image_local": "assets/images/armor/armor_Jade-Lich_Robes.png",
+    "special_effects": []
   },
   {
     "name": "Jewel Bird Mask",
@@ -4486,7 +4924,10 @@
     "object_id": "3000252",
     "source_url": "https://outward.wiki.gg/wiki/Jewel_Bird_Mask",
     "image_url": "https://outward.wiki.gg/images/Jewel_Bird_Mask.png?b27578",
-    "image_local": "assets/images/armor/armor_Jewel_Bird_Mask.png"
+    "image_local": "assets/images/armor/armor_Jewel_Bird_Mask.png",
+    "special_effects": [
+      "+19% Move Speed"
+    ]
   },
   {
     "name": "Kazite Armor",
@@ -4524,7 +4965,8 @@
     "object_id": "3100110",
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Armor",
     "image_url": "https://outward.wiki.gg/images/Kazite_Armor.png?5958ae",
-    "image_local": "assets/images/armor/armor_Kazite_Armor.png"
+    "image_local": "assets/images/armor/armor_Kazite_Armor.png",
+    "special_effects": []
   },
   {
     "name": "Kazite Boots",
@@ -4562,7 +5004,8 @@
     "object_id": "3100114",
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Boots",
     "image_url": "https://outward.wiki.gg/images/Kazite_Boots.png?bc5cac",
-    "image_local": "assets/images/armor/armor_Kazite_Boots.png"
+    "image_local": "assets/images/armor/armor_Kazite_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Kazite Cat Mask",
@@ -4600,7 +5043,10 @@
     "object_id": "3100112",
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Cat_Mask",
     "image_url": "https://outward.wiki.gg/images/Kazite_Cat_Mask.png?8ee843",
-    "image_local": "assets/images/armor/armor_Kazite_Cat_Mask.png"
+    "image_local": "assets/images/armor/armor_Kazite_Cat_Mask.png",
+    "special_effects": [
+      "-15% Mana Cost"
+    ]
   },
   {
     "name": "Kazite Light Armor",
@@ -4638,7 +5084,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Light_Armor",
     "image_url": "https://outward.wiki.gg/images/Kazite_Light_Armor.png?c8cc71",
-    "image_local": "assets/images/armor/armor_Kazite_Light_Armor.png"
+    "image_local": "assets/images/armor/armor_Kazite_Light_Armor.png",
+    "special_effects": [
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Kazite Light Boots",
@@ -4676,7 +5125,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Light_Boots",
     "image_url": "https://outward.wiki.gg/images/Kazite_Light_Boots.png?655b5a",
-    "image_local": "assets/images/armor/armor_Kazite_Light_Boots.png"
+    "image_local": "assets/images/armor/armor_Kazite_Light_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Kazite Light Helmet",
@@ -4714,7 +5164,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Light_Helmet",
     "image_url": "https://outward.wiki.gg/images/Kazite_Light_Helmet.png?bf8f6c",
-    "image_local": "assets/images/armor/armor_Kazite_Light_Helmet.png"
+    "image_local": "assets/images/armor/armor_Kazite_Light_Helmet.png",
+    "special_effects": [
+      "-15% Mana Cost"
+    ]
   },
   {
     "name": "Kazite Mask",
@@ -4752,7 +5205,10 @@
     "object_id": "3100111",
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Mask",
     "image_url": "https://outward.wiki.gg/images/Kazite_Mask.png?ff5c03",
-    "image_local": "assets/images/armor/armor_Kazite_Mask.png"
+    "image_local": "assets/images/armor/armor_Kazite_Mask.png",
+    "special_effects": [
+      "-15% Mana Cost"
+    ]
   },
   {
     "name": "Kazite Oni Mask",
@@ -4790,7 +5246,10 @@
     "object_id": "3100113",
     "source_url": "https://outward.wiki.gg/wiki/Kazite_Oni_Mask",
     "image_url": "https://outward.wiki.gg/images/Kazite_Oni_Mask.png?6c44fa",
-    "image_local": "assets/images/armor/armor_Kazite_Oni_Mask.png"
+    "image_local": "assets/images/armor/armor_Kazite_Oni_Mask.png",
+    "special_effects": [
+      "-15% Mana Cost"
+    ]
   },
   {
     "name": "Kintsugi Armor",
@@ -4828,7 +5287,12 @@
     "object_id": "3100070",
     "source_url": "https://outward.wiki.gg/wiki/Kintsugi_Armor",
     "image_url": "https://outward.wiki.gg/images/Kintsugi_Armor.png?c29010",
-    "image_local": "assets/images/armor/armor_Kintsugi_Armor.png"
+    "image_local": "assets/images/armor/armor_Kintsugi_Armor.png",
+    "special_effects": [
+      "-11% Move Speed",
+      "-8% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Kintsugi Boots",
@@ -4866,7 +5330,12 @@
     "object_id": "3100072",
     "source_url": "https://outward.wiki.gg/wiki/Kintsugi_Boots",
     "image_url": "https://outward.wiki.gg/images/Kintsugi_Boots.png?89eb14",
-    "image_local": "assets/images/armor/armor_Kintsugi_Boots.png"
+    "image_local": "assets/images/armor/armor_Kintsugi_Boots.png",
+    "special_effects": [
+      "-9% Move Speed",
+      "-4% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Kintsugi Helm",
@@ -4904,7 +5373,13 @@
     "object_id": "3100071",
     "source_url": "https://outward.wiki.gg/wiki/Kintsugi_Helm",
     "image_url": "https://outward.wiki.gg/images/Kintsugi_Helm.png?5d4e38",
-    "image_local": "assets/images/armor/armor_Kintsugi_Helm.png"
+    "image_local": "assets/images/armor/armor_Kintsugi_Helm.png",
+    "special_effects": [
+      "-9% Move Speed",
+      "-4% Stamina Cost",
+      "-50% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Krypteia Armor",
@@ -4942,7 +5417,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Krypteia_Armor",
     "image_url": "https://outward.wiki.gg/images/Krypteia_Armor.png?265f2b",
-    "image_local": "assets/images/armor/armor_Krypteia_Armor.png"
+    "image_local": "assets/images/armor/armor_Krypteia_Armor.png",
+    "special_effects": []
   },
   {
     "name": "Krypteia Boots",
@@ -4980,7 +5456,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Krypteia_Boots",
     "image_url": "https://outward.wiki.gg/images/Krypteia_Boots.png?58977c",
-    "image_local": "assets/images/armor/armor_Krypteia_Boots.png"
+    "image_local": "assets/images/armor/armor_Krypteia_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Krypteia Mask",
@@ -5018,7 +5495,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Krypteia_Mask",
     "image_url": "https://outward.wiki.gg/images/Krypteia_Mask.png?bce078",
-    "image_local": "assets/images/armor/armor_Krypteia_Mask.png"
+    "image_local": "assets/images/armor/armor_Krypteia_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Light Kazite Shirt",
@@ -5056,7 +5534,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Light_Kazite_Shirt",
     "image_url": "https://outward.wiki.gg/images/Light_Kazite_Shirt.png?717c3a",
-    "image_local": "assets/images/armor/armor_Light_Kazite_Shirt.png"
+    "image_local": "assets/images/armor/armor_Light_Kazite_Shirt.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Looter Armor",
@@ -5094,7 +5575,10 @@
     "object_id": "3000038",
     "source_url": "https://outward.wiki.gg/wiki/Looter_Armor",
     "image_url": "https://outward.wiki.gg/images/Looter_Armor.png?eee16d",
-    "image_local": "assets/images/armor/armor_Looter_Armor.png"
+    "image_local": "assets/images/armor/armor_Looter_Armor.png",
+    "special_effects": [
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Looter Mask",
@@ -5132,7 +5616,10 @@
     "object_id": "3000039",
     "source_url": "https://outward.wiki.gg/wiki/Looter_Mask",
     "image_url": "https://outward.wiki.gg/images/Looter_Mask.png?26543a",
-    "image_local": "assets/images/armor/armor_Looter_Mask.png"
+    "image_local": "assets/images/armor/armor_Looter_Mask.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Makeshift Leather Attire",
@@ -5170,7 +5657,11 @@
     "object_id": "3000280",
     "source_url": "https://outward.wiki.gg/wiki/Makeshift_Leather_Attire",
     "image_url": "https://outward.wiki.gg/images/Makeshift_Leather_Attire.png?610b10",
-    "image_local": "assets/images/armor/armor_Makeshift_Leather_Attire.png"
+    "image_local": "assets/images/armor/armor_Makeshift_Leather_Attire.png",
+    "special_effects": [
+      "+5 Pouch",
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Makeshift Leather Boots",
@@ -5208,7 +5699,10 @@
     "object_id": "3000282",
     "source_url": "https://outward.wiki.gg/wiki/Makeshift_Leather_Boots",
     "image_url": "https://outward.wiki.gg/images/Makeshift_Leather_Boots.png?3699a8",
-    "image_local": "assets/images/armor/armor_Makeshift_Leather_Boots.png"
+    "image_local": "assets/images/armor/armor_Makeshift_Leather_Boots.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Makeshift Leather Hat",
@@ -5246,7 +5740,10 @@
     "object_id": "3000281",
     "source_url": "https://outward.wiki.gg/wiki/Makeshift_Leather_Hat",
     "image_url": "https://outward.wiki.gg/images/Makeshift_Leather_Hat.png?f7bc2c",
-    "image_local": "assets/images/armor/armor_Makeshift_Leather_Hat.png"
+    "image_local": "assets/images/armor/armor_Makeshift_Leather_Hat.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Manawall Armor",
@@ -5284,7 +5781,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Manawall_Armor",
     "image_url": "https://outward.wiki.gg/images/Manawall_Armor.png?159215",
-    "image_local": "assets/images/armor/armor_Manawall_Armor.png"
+    "image_local": "assets/images/armor/armor_Manawall_Armor.png",
+    "special_effects": [
+      "+10% Move Speed",
+      "+6 Heat Protection",
+      "4 Protection"
+    ]
   },
   {
     "name": "Manawall Boots",
@@ -5322,7 +5824,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Manawall_Boots",
     "image_url": "https://outward.wiki.gg/images/Manawall_Boots.png?7736b8",
-    "image_local": "assets/images/armor/armor_Manawall_Boots.png"
+    "image_local": "assets/images/armor/armor_Manawall_Boots.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+4 Heat Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Manawall Helm",
@@ -5360,7 +5867,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Manawall_Helm",
     "image_url": "https://outward.wiki.gg/images/Manawall_Helm.png?f3b860",
-    "image_local": "assets/images/armor/armor_Manawall_Helm.png"
+    "image_local": "assets/images/armor/armor_Manawall_Helm.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+4 Heat Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Master Desert Boots",
@@ -5398,7 +5910,12 @@
     "object_id": "3000322",
     "source_url": "https://outward.wiki.gg/wiki/Master_Desert_Boots",
     "image_url": "https://outward.wiki.gg/images/Master_Desert_Boots.png?a7f590",
-    "image_local": "assets/images/armor/armor_Master_Desert_Boots.png"
+    "image_local": "assets/images/armor/armor_Master_Desert_Boots.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+8 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Master Desert Tunic",
@@ -5436,7 +5953,12 @@
     "object_id": "3000320",
     "source_url": "https://outward.wiki.gg/wiki/Master_Desert_Tunic",
     "image_url": "https://outward.wiki.gg/images/Master_Desert_Tunic.png?7c60c4",
-    "image_local": "assets/images/armor/armor_Master_Desert_Tunic.png"
+    "image_local": "assets/images/armor/armor_Master_Desert_Tunic.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+16 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Master Desert Veil",
@@ -5474,7 +5996,12 @@
     "object_id": "3000321",
     "source_url": "https://outward.wiki.gg/wiki/Master_Desert_Veil",
     "image_url": "https://outward.wiki.gg/images/Master_Desert_Veil.png?d9597b",
-    "image_local": "assets/images/armor/armor_Master_Desert_Veil.png"
+    "image_local": "assets/images/armor/armor_Master_Desert_Veil.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+8 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Master Kazite Armor",
@@ -5512,7 +6039,10 @@
     "object_id": "3100190",
     "source_url": "https://outward.wiki.gg/wiki/Master_Kazite_Armor",
     "image_url": "https://outward.wiki.gg/images/Master_Kazite_Armor.png?321832",
-    "image_local": "assets/images/armor/armor_Master_Kazite_Armor.png"
+    "image_local": "assets/images/armor/armor_Master_Kazite_Armor.png",
+    "special_effects": [
+      "3 Protection"
+    ]
   },
   {
     "name": "Master Kazite Boots",
@@ -5550,7 +6080,10 @@
     "object_id": "3100192",
     "source_url": "https://outward.wiki.gg/wiki/Master_Kazite_Boots",
     "image_url": "https://outward.wiki.gg/images/Master_Kazite_Boots.png?5c3aa3",
-    "image_local": "assets/images/armor/armor_Master_Kazite_Boots.png"
+    "image_local": "assets/images/armor/armor_Master_Kazite_Boots.png",
+    "special_effects": [
+      "1 Protection"
+    ]
   },
   {
     "name": "Master Kazite Cat Mask",
@@ -5588,7 +6121,11 @@
     "object_id": "3100193",
     "source_url": "https://outward.wiki.gg/wiki/Master_Kazite_Cat_Mask",
     "image_url": "https://outward.wiki.gg/images/Master_Kazite_Cat_Mask.png?84b0ba",
-    "image_local": "assets/images/armor/armor_Master_Kazite_Cat_Mask.png"
+    "image_local": "assets/images/armor/armor_Master_Kazite_Cat_Mask.png",
+    "special_effects": [
+      "-10% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Master Kazite Mask",
@@ -5626,7 +6163,11 @@
     "object_id": "3100194",
     "source_url": "https://outward.wiki.gg/wiki/Master_Kazite_Mask",
     "image_url": "https://outward.wiki.gg/images/Master_Kazite_Mask.png?ff0ca5",
-    "image_local": "assets/images/armor/armor_Master_Kazite_Mask.png"
+    "image_local": "assets/images/armor/armor_Master_Kazite_Mask.png",
+    "special_effects": [
+      "-10% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Master Kazite Oni Mask",
@@ -5664,7 +6205,11 @@
     "object_id": "3100191",
     "source_url": "https://outward.wiki.gg/wiki/Master_Kazite_Oni_Mask",
     "image_url": "https://outward.wiki.gg/images/Master_Kazite_Oni_Mask.png?bdadce",
-    "image_local": "assets/images/armor/armor_Master_Kazite_Oni_Mask.png"
+    "image_local": "assets/images/armor/armor_Master_Kazite_Oni_Mask.png",
+    "special_effects": [
+      "-10% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Master Trader Boots",
@@ -5702,7 +6247,13 @@
     "object_id": "3000232",
     "source_url": "https://outward.wiki.gg/wiki/Master_Trader_Boots",
     "image_url": "https://outward.wiki.gg/images/Master_Trader_Boots.png?ced0b2",
-    "image_local": "assets/images/armor/armor_Master_Trader_Boots.png"
+    "image_local": "assets/images/armor/armor_Master_Trader_Boots.png",
+    "special_effects": [
+      "+15% Move Speed",
+      "+2 Pouch",
+      "+5 Cold Protection",
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Master Trader Garb",
@@ -5740,7 +6291,13 @@
     "object_id": "3000230",
     "source_url": "https://outward.wiki.gg/wiki/Master_Trader_Garb",
     "image_url": "https://outward.wiki.gg/images/Master_Trader_Garb.png?6346f2",
-    "image_local": "assets/images/armor/armor_Master_Trader_Garb.png"
+    "image_local": "assets/images/armor/armor_Master_Trader_Garb.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+8 Pouch",
+      "+10 Cold Protection",
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Master Trader Hat",
@@ -5778,7 +6335,13 @@
     "object_id": "3000231",
     "source_url": "https://outward.wiki.gg/wiki/Master_Trader_Hat",
     "image_url": "https://outward.wiki.gg/images/Master_Trader_Hat.png?8070da",
-    "image_local": "assets/images/armor/armor_Master_Trader_Hat.png"
+    "image_local": "assets/images/armor/armor_Master_Trader_Hat.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+2 Pouch",
+      "+5 Cold Protection",
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Merton's Ribcage",
@@ -5816,7 +6379,8 @@
     "object_id": "3200030",
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Ribcage",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Ribcage.png?e0e310",
-    "image_local": "assets/images/armor/armor_Merton_s_Ribcage.png"
+    "image_local": "assets/images/armor/armor_Merton_s_Ribcage.png",
+    "special_effects": []
   },
   {
     "name": "Merton's Shinbones",
@@ -5854,7 +6418,8 @@
     "object_id": "3200032",
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Shinbones",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Shinbones.png?94d0c9",
-    "image_local": "assets/images/armor/armor_Merton_s_Shinbones.png"
+    "image_local": "assets/images/armor/armor_Merton_s_Shinbones.png",
+    "special_effects": []
   },
   {
     "name": "Merton's Skull",
@@ -5892,7 +6457,8 @@
     "object_id": "3200031",
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Skull",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Skull.png?7b78e0",
-    "image_local": "assets/images/armor/armor_Merton_s_Skull.png"
+    "image_local": "assets/images/armor/armor_Merton_s_Skull.png",
+    "special_effects": []
   },
   {
     "name": "Militia Armor",
@@ -5930,7 +6496,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Militia_Armor",
     "image_url": "https://outward.wiki.gg/images/Militia_Armor.png?38a520",
-    "image_local": "assets/images/armor/armor_Militia_Armor.png"
+    "image_local": "assets/images/armor/armor_Militia_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "+10 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Militia Boots",
@@ -5968,7 +6540,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Militia_Boots",
     "image_url": "https://outward.wiki.gg/images/Militia_Boots.png?2d1435",
-    "image_local": "assets/images/armor/armor_Militia_Boots.png"
+    "image_local": "assets/images/armor/armor_Militia_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "+5 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Militia Helm",
@@ -6006,7 +6584,14 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Militia_Helm",
     "image_url": "https://outward.wiki.gg/images/Militia_Helm.png?33a16e",
-    "image_local": "assets/images/armor/armor_Militia_Helm.png"
+    "image_local": "assets/images/armor/armor_Militia_Helm.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "-5% Mana Cost",
+      "+5 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Miner Armor",
@@ -6044,7 +6629,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Miner_Armor",
     "image_url": "https://outward.wiki.gg/images/Miner_Armor.png?fdc964",
-    "image_local": "assets/images/armor/armor_Miner_Armor.png"
+    "image_local": "assets/images/armor/armor_Miner_Armor.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Miner Boots",
@@ -6082,7 +6670,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Miner_Boots",
     "image_url": "https://outward.wiki.gg/images/Miner_Boots.png?a4fe0d",
-    "image_local": "assets/images/armor/armor_Miner_Boots.png"
+    "image_local": "assets/images/armor/armor_Miner_Boots.png",
+    "special_effects": [
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Miner Helmet",
@@ -6120,7 +6711,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Miner_Helmet",
     "image_url": "https://outward.wiki.gg/images/Miner_Helmet.png?a02cc6",
-    "image_local": "assets/images/armor/armor_Miner_Helmet.png"
+    "image_local": "assets/images/armor/armor_Miner_Helmet.png",
+    "special_effects": [
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Noble Clothes",
@@ -6158,7 +6752,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Noble_Clothes",
     "image_url": "https://outward.wiki.gg/images/Noble_Clothes.png?f7c583",
-    "image_local": "assets/images/armor/armor_Noble_Clothes.png"
+    "image_local": "assets/images/armor/armor_Noble_Clothes.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+7 Heat Protection"
+    ]
   },
   {
     "name": "Noble Mask",
@@ -6196,7 +6794,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Noble_Mask",
     "image_url": "https://outward.wiki.gg/images/Noble_Mask.png?c13d0f",
-    "image_local": "assets/images/armor/armor_Noble_Mask.png"
+    "image_local": "assets/images/armor/armor_Noble_Mask.png",
+    "special_effects": [
+      "+4 Heat Protection"
+    ]
   },
   {
     "name": "Noble Shoes",
@@ -6234,7 +6835,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Noble_Shoes",
     "image_url": "https://outward.wiki.gg/images/Noble_Shoes.png?7c178a",
-    "image_local": "assets/images/armor/armor_Noble_Shoes.png"
+    "image_local": "assets/images/armor/armor_Noble_Shoes.png",
+    "special_effects": [
+      "+10% Move Speed",
+      "+4 Heat Protection"
+    ]
   },
   {
     "name": "Novice Hat",
@@ -6272,7 +6877,8 @@
     "object_id": "3000071",
     "source_url": "https://outward.wiki.gg/wiki/Novice_Hat",
     "image_url": "https://outward.wiki.gg/images/Novice_Hat.png?65efb3",
-    "image_local": "assets/images/armor/armor_Novice_Hat.png"
+    "image_local": "assets/images/armor/armor_Novice_Hat.png",
+    "special_effects": []
   },
   {
     "name": "Novice Robe",
@@ -6310,7 +6916,8 @@
     "object_id": "3000070",
     "source_url": "https://outward.wiki.gg/wiki/Novice_Robe",
     "image_url": "https://outward.wiki.gg/images/Novice_Robe.png?30f2b7",
-    "image_local": "assets/images/armor/armor_Novice_Robe.png"
+    "image_local": "assets/images/armor/armor_Novice_Robe.png",
+    "special_effects": []
   },
   {
     "name": "Orichalcum Armor",
@@ -6348,7 +6955,13 @@
     "object_id": "3100180",
     "source_url": "https://outward.wiki.gg/wiki/Orichalcum_Armor",
     "image_url": "https://outward.wiki.gg/images/Orichalcum_Armor.png?77ff33",
-    "image_local": "assets/images/armor/armor_Orichalcum_Armor.png"
+    "image_local": "assets/images/armor/armor_Orichalcum_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-5% Stamina Cost",
+      "+15 Cold Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Orichalcum Boots",
@@ -6386,7 +6999,13 @@
     "object_id": "3100182",
     "source_url": "https://outward.wiki.gg/wiki/Orichalcum_Boots",
     "image_url": "https://outward.wiki.gg/images/Orichalcum_Boots.png?7e04af",
-    "image_local": "assets/images/armor/armor_Orichalcum_Boots.png"
+    "image_local": "assets/images/armor/armor_Orichalcum_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-3% Stamina Cost",
+      "+10 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Orichalcum Helmet",
@@ -6424,7 +7043,14 @@
     "object_id": "3100181",
     "source_url": "https://outward.wiki.gg/wiki/Orichalcum_Helmet",
     "image_url": "https://outward.wiki.gg/images/Orichalcum_Helmet.png?47d09e",
-    "image_local": "assets/images/armor/armor_Orichalcum_Helmet.png"
+    "image_local": "assets/images/armor/armor_Orichalcum_Helmet.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-3% Stamina Cost",
+      "-30% Mana Cost",
+      "+10 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Padded Armor",
@@ -6462,7 +7088,10 @@
     "object_id": "3000010",
     "source_url": "https://outward.wiki.gg/wiki/Padded_Armor",
     "image_url": "https://outward.wiki.gg/images/Padded_Armor.png?1814e6",
-    "image_local": "assets/images/armor/armor_Padded_Armor.png"
+    "image_local": "assets/images/armor/armor_Padded_Armor.png",
+    "special_effects": [
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Padded Boots",
@@ -6500,7 +7129,10 @@
     "object_id": "3000012",
     "source_url": "https://outward.wiki.gg/wiki/Padded_Boots",
     "image_url": "https://outward.wiki.gg/images/Padded_Boots.png?f63e87",
-    "image_local": "assets/images/armor/armor_Padded_Boots.png"
+    "image_local": "assets/images/armor/armor_Padded_Boots.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Padded Helm",
@@ -6538,7 +7170,10 @@
     "object_id": "3000011",
     "source_url": "https://outward.wiki.gg/wiki/Padded_Helm",
     "image_url": "https://outward.wiki.gg/images/Padded_Helm.png?a65d59",
-    "image_local": "assets/images/armor/armor_Padded_Helm.png"
+    "image_local": "assets/images/armor/armor_Padded_Helm.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Pale Light Clothes",
@@ -6576,7 +7211,10 @@
     "object_id": "3000172",
     "source_url": "https://outward.wiki.gg/wiki/Pale_Light_Clothes",
     "image_url": "https://outward.wiki.gg/images/Dancer_Clothes.png?e82a32",
-    "image_local": "assets/images/armor/armor_Pale_Light_Clothes.png"
+    "image_local": "assets/images/armor/armor_Pale_Light_Clothes.png",
+    "special_effects": [
+      "+15 Heat Protection"
+    ]
   },
   {
     "name": "Pale Worker's Hood",
@@ -6614,7 +7252,11 @@
     "object_id": "3000087",
     "source_url": "https://outward.wiki.gg/wiki/Pale_Worker%27s_Hood",
     "image_url": "https://outward.wiki.gg/images/Pale_Worker%27s_Hood.png?c47150",
-    "image_local": "assets/images/armor/armor_Pale_Worker_s_Hood.png"
+    "image_local": "assets/images/armor/armor_Pale_Worker_s_Hood.png",
+    "special_effects": [
+      "+3 Cold Protection",
+      "+1 Heat Protection"
+    ]
   },
   {
     "name": "Palladium Armor",
@@ -6661,7 +7303,12 @@
     "object_id": "3100060",
     "source_url": "https://outward.wiki.gg/wiki/Palladium_Armor",
     "image_url": "https://outward.wiki.gg/images/Palladium_Armor.png?f30748",
-    "image_local": "assets/images/armor/armor_Palladium_Armor.png"
+    "image_local": "assets/images/armor/armor_Palladium_Armor.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Palladium Boots",
@@ -6708,7 +7355,12 @@
     "object_id": "3100062",
     "source_url": "https://outward.wiki.gg/wiki/Palladium_Boots",
     "image_url": "https://outward.wiki.gg/images/Palladium_Boots.png?26ead9",
-    "image_local": "assets/images/armor/armor_Palladium_Boots.png"
+    "image_local": "assets/images/armor/armor_Palladium_Boots.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-2% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Palladium Helm",
@@ -6755,7 +7407,13 @@
     "object_id": "3100061",
     "source_url": "https://outward.wiki.gg/wiki/Palladium_Helm",
     "image_url": "https://outward.wiki.gg/images/Palladium_Helm.png?79f32d",
-    "image_local": "assets/images/armor/armor_Palladium_Helm.png"
+    "image_local": "assets/images/armor/armor_Palladium_Helm.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-2% Stamina Cost",
+      "-30% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Pathfinder Armor",
@@ -6793,7 +7451,14 @@
     "object_id": "3000224",
     "source_url": "https://outward.wiki.gg/wiki/Pathfinder_Armor",
     "image_url": "https://outward.wiki.gg/images/Pathfinder_Armor.png?9ab49c",
-    "image_local": "assets/images/armor/armor_Pathfinder_Armor.png"
+    "image_local": "assets/images/armor/armor_Pathfinder_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "+12 Cold Protection",
+      "+12 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Pathfinder Boots",
@@ -6831,7 +7496,14 @@
     "object_id": "3000226",
     "source_url": "https://outward.wiki.gg/wiki/Pathfinder_Boots",
     "image_url": "https://outward.wiki.gg/images/Pathfinder_Boots.png?10d609",
-    "image_local": "assets/images/armor/armor_Pathfinder_Boots.png"
+    "image_local": "assets/images/armor/armor_Pathfinder_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "+6 Cold Protection",
+      "+6 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Pathfinder Mask",
@@ -6869,7 +7541,15 @@
     "object_id": "3000225",
     "source_url": "https://outward.wiki.gg/wiki/Pathfinder_Mask",
     "image_url": "https://outward.wiki.gg/images/Pathfinder_Mask.png?ef3b71",
-    "image_local": "assets/images/armor/armor_Pathfinder_Mask.png"
+    "image_local": "assets/images/armor/armor_Pathfinder_Mask.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "-15% Mana Cost",
+      "+6 Cold Protection",
+      "+6 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Patterned Worker Attire",
@@ -6907,7 +7587,10 @@
     "object_id": "3000081",
     "source_url": "https://outward.wiki.gg/wiki/Patterned_Worker_Attire",
     "image_url": "https://outward.wiki.gg/images/Patterned_Worker_Attire.png?53a63e",
-    "image_local": "assets/images/armor/armor_Patterned_Worker_Attire.png"
+    "image_local": "assets/images/armor/armor_Patterned_Worker_Attire.png",
+    "special_effects": [
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Patterned Worker Hood",
@@ -6945,7 +7628,11 @@
     "object_id": "3000086",
     "source_url": "https://outward.wiki.gg/wiki/Patterned_Worker_Hood",
     "image_url": "https://outward.wiki.gg/images/Patterned_Worker_Hood.png?cd4938",
-    "image_local": "assets/images/armor/armor_Patterned_Worker_Hood.png"
+    "image_local": "assets/images/armor/armor_Patterned_Worker_Hood.png",
+    "special_effects": [
+      "+3 Cold Protection",
+      "+1 Heat Protection"
+    ]
   },
   {
     "name": "Pearlbird Mask",
@@ -6983,7 +7670,10 @@
     "object_id": "3000250",
     "source_url": "https://outward.wiki.gg/wiki/Pearlbird_Mask",
     "image_url": "https://outward.wiki.gg/images/Pearlbird_Mask.png?4f26fe",
-    "image_local": "assets/images/armor/armor_Pearlbird_Mask.png"
+    "image_local": "assets/images/armor/armor_Pearlbird_Mask.png",
+    "special_effects": [
+      "+15% Move Speed"
+    ]
   },
   {
     "name": "Pearlescent Mail",
@@ -7021,7 +7711,10 @@
     "object_id": "3000150",
     "source_url": "https://outward.wiki.gg/wiki/Pearlescent_Mail",
     "image_url": "https://outward.wiki.gg/images/Pearlescent_Mail.png?b59a10",
-    "image_local": "assets/images/armor/armor_Pearlescent_Mail.png"
+    "image_local": "assets/images/armor/armor_Pearlescent_Mail.png",
+    "special_effects": [
+      "+8 Cold Protection"
+    ]
   },
   {
     "name": "Petrified Wood Armor",
@@ -7068,7 +7761,13 @@
     "object_id": "3100020",
     "source_url": "https://outward.wiki.gg/wiki/Petrified_Wood_Armor",
     "image_url": "https://outward.wiki.gg/images/Petrified_Wood_Armor.png?c97e85",
-    "image_local": "assets/images/armor/armor_Petrified_Wood_Armor.png"
+    "image_local": "assets/images/armor/armor_Petrified_Wood_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "+10 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Petrified Wood Boots",
@@ -7115,7 +7814,13 @@
     "object_id": "3100022",
     "source_url": "https://outward.wiki.gg/wiki/Petrified_Wood_Boots",
     "image_url": "https://outward.wiki.gg/images/Petrified_Wood_Boots.png?cb72bf",
-    "image_local": "assets/images/armor/armor_Petrified_Wood_Boots.png"
+    "image_local": "assets/images/armor/armor_Petrified_Wood_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "+5 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Petrified Wood Helm",
@@ -7162,7 +7867,14 @@
     "object_id": "3100021",
     "source_url": "https://outward.wiki.gg/wiki/Petrified_Wood_Helm",
     "image_url": "https://outward.wiki.gg/images/Petrified_Wood_Helm.png?61a06e",
-    "image_local": "assets/images/armor/armor_Petrified_Wood_Helm.png"
+    "image_local": "assets/images/armor/armor_Petrified_Wood_Helm.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "-10% Mana Cost",
+      "+5 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Pilgrim Armor",
@@ -7200,7 +7912,15 @@
     "object_id": "3100160",
     "source_url": "https://outward.wiki.gg/wiki/Pilgrim_Armor",
     "image_url": "https://outward.wiki.gg/images/Pilgrim_Armor.png?74a0ec",
-    "image_local": "assets/images/armor/armor_Pilgrim_Armor.png"
+    "image_local": "assets/images/armor/armor_Pilgrim_Armor.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-7% Stamina Cost",
+      "+10 Pouch",
+      "+10 Cold Protection",
+      "+10 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Pilgrim Boots",
@@ -7238,7 +7958,15 @@
     "object_id": "3100162",
     "source_url": "https://outward.wiki.gg/wiki/Pilgrim_Boots",
     "image_url": "https://outward.wiki.gg/images/Pilgrim_Boots.png?d9c97f",
-    "image_local": "assets/images/armor/armor_Pilgrim_Boots.png"
+    "image_local": "assets/images/armor/armor_Pilgrim_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-4% Stamina Cost",
+      "+5 Pouch",
+      "+8 Cold Protection",
+      "+8 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Pilgrim Helmet",
@@ -7276,7 +8004,16 @@
     "object_id": "3100161",
     "source_url": "https://outward.wiki.gg/wiki/Pilgrim_Helmet",
     "image_url": "https://outward.wiki.gg/images/Pilgrim_Helmet.png?5def23",
-    "image_local": "assets/images/armor/armor_Pilgrim_Helmet.png"
+    "image_local": "assets/images/armor/armor_Pilgrim_Helmet.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-4% Stamina Cost",
+      "-15% Mana Cost",
+      "+5 Pouch",
+      "+8 Cold Protection",
+      "+8 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Plate Armor",
@@ -7314,7 +8051,12 @@
     "object_id": "3100003",
     "source_url": "https://outward.wiki.gg/wiki/Plate_Armor",
     "image_url": "https://outward.wiki.gg/images/Plate_Armor.png?9a0361",
-    "image_local": "assets/images/armor/armor_Plate_Armor.png"
+    "image_local": "assets/images/armor/armor_Plate_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-6% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Plate Boots",
@@ -7352,7 +8094,12 @@
     "object_id": "3100005",
     "source_url": "https://outward.wiki.gg/wiki/Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Plate_Boots.png?572235",
-    "image_local": "assets/images/armor/armor_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Plate_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Plate Helm",
@@ -7390,7 +8137,13 @@
     "object_id": "3100004",
     "source_url": "https://outward.wiki.gg/wiki/Plate_Helm",
     "image_url": "https://outward.wiki.gg/images/Plate_Helm.png?d21741",
-    "image_local": "assets/images/armor/armor_Plate_Helm.png"
+    "image_local": "assets/images/armor/armor_Plate_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-50% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Purple Dancer Clothes",
@@ -7428,7 +8181,10 @@
     "object_id": "3000180",
     "source_url": "https://outward.wiki.gg/wiki/Purple_Dancer_Clothes",
     "image_url": "https://outward.wiki.gg/images/Purple_Dancer_Clothes.png?e82a32",
-    "image_local": "assets/images/armor/armor_Purple_Dancer_Clothes.png"
+    "image_local": "assets/images/armor/armor_Purple_Dancer_Clothes.png",
+    "special_effects": [
+      "+14 Heat Protection"
+    ]
   },
   {
     "name": "Purple Festive Attire",
@@ -7466,7 +8222,10 @@
     "object_id": "3000091",
     "source_url": "https://outward.wiki.gg/wiki/Purple_Festive_Attire",
     "image_url": "https://outward.wiki.gg/images/Purple_Festive_Attire.png?f75e70",
-    "image_local": "assets/images/armor/armor_Purple_Festive_Attire.png"
+    "image_local": "assets/images/armor/armor_Purple_Festive_Attire.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Purple Festive Hat",
@@ -7504,7 +8263,10 @@
     "object_id": "3000093",
     "source_url": "https://outward.wiki.gg/wiki/Purple_Festive_Hat",
     "image_url": "https://outward.wiki.gg/images/Purple_Festive_Hat.png?b510dd",
-    "image_local": "assets/images/armor/armor_Purple_Festive_Hat.png"
+    "image_local": "assets/images/armor/armor_Purple_Festive_Hat.png",
+    "special_effects": [
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Red Clansage Robe",
@@ -7542,7 +8304,10 @@
     "object_id": "3000350",
     "source_url": "https://outward.wiki.gg/wiki/Red_Clansage_Robe",
     "image_url": "https://outward.wiki.gg/images/Red_Clansage_Robe.png?2f9c0a",
-    "image_local": "assets/images/armor/armor_Red_Clansage_Robe.png"
+    "image_local": "assets/images/armor/armor_Red_Clansage_Robe.png",
+    "special_effects": [
+      "+15 Cold Protection"
+    ]
   },
   {
     "name": "Red Festive Attire",
@@ -7580,7 +8345,10 @@
     "object_id": "3000090",
     "source_url": "https://outward.wiki.gg/wiki/Red_Festive_Attire",
     "image_url": "https://outward.wiki.gg/images/Red_Festive_Attire.png?22710e",
-    "image_local": "assets/images/armor/armor_Red_Festive_Attire.png"
+    "image_local": "assets/images/armor/armor_Red_Festive_Attire.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Red Festive Hat",
@@ -7618,7 +8386,10 @@
     "object_id": "3000092",
     "source_url": "https://outward.wiki.gg/wiki/Red_Festive_Hat",
     "image_url": "https://outward.wiki.gg/images/Red_Festive_Hat.png?33e27b",
-    "image_local": "assets/images/armor/armor_Red_Festive_Hat.png"
+    "image_local": "assets/images/armor/armor_Red_Festive_Hat.png",
+    "special_effects": [
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Red Light Clothes",
@@ -7656,7 +8427,10 @@
     "object_id": "3000171",
     "source_url": "https://outward.wiki.gg/wiki/Red_Light_Clothes",
     "image_url": "https://outward.wiki.gg/images/Red_Light_Clothes.png?e82a32",
-    "image_local": "assets/images/armor/armor_Red_Light_Clothes.png"
+    "image_local": "assets/images/armor/armor_Red_Light_Clothes.png",
+    "special_effects": [
+      "+15 Heat Protection"
+    ]
   },
   {
     "name": "Red Wide Hat",
@@ -7694,7 +8468,10 @@
     "object_id": "3000302",
     "source_url": "https://outward.wiki.gg/wiki/Red_Wide_Hat",
     "image_url": "https://outward.wiki.gg/images/Red_Wide_Hat.png?1e387d",
-    "image_local": "assets/images/armor/armor_Red_Wide_Hat.png"
+    "image_local": "assets/images/armor/armor_Red_Wide_Hat.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Runic Armor",
@@ -7732,7 +8509,12 @@
     "object_id": "3100120",
     "source_url": "https://outward.wiki.gg/wiki/Runic_Armor",
     "image_url": "https://outward.wiki.gg/images/Runic_Armor.png?f68b03",
-    "image_local": "assets/images/armor/armor_Runic_Armor.png"
+    "image_local": "assets/images/armor/armor_Runic_Armor.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-11% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "Runic Boots",
@@ -7770,7 +8552,12 @@
     "object_id": "3100122",
     "source_url": "https://outward.wiki.gg/wiki/Runic_Boots",
     "image_url": "https://outward.wiki.gg/images/Runic_Boots.png?4c5e35",
-    "image_local": "assets/images/armor/armor_Runic_Boots.png"
+    "image_local": "assets/images/armor/armor_Runic_Boots.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-9% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Runic Helm",
@@ -7808,7 +8595,12 @@
     "object_id": "3100121",
     "source_url": "https://outward.wiki.gg/wiki/Runic_Helm",
     "image_url": "https://outward.wiki.gg/images/Runic_Helm.png?b7e297",
-    "image_local": "assets/images/armor/armor_Runic_Helm.png"
+    "image_local": "assets/images/armor/armor_Runic_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-9% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Rust Lich Armor",
@@ -7846,7 +8638,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Rust_Lich_Armor",
     "image_url": "https://outward.wiki.gg/images/Rust_Lich_Armor.png?7d5a56",
-    "image_local": "assets/images/armor/armor_Rust_Lich_Armor.png"
+    "image_local": "assets/images/armor/armor_Rust_Lich_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Rust Lich Boots",
@@ -7884,7 +8681,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Rust_Lich_Boots",
     "image_url": "https://outward.wiki.gg/images/Rust_Lich_Boots.png?5938d8",
-    "image_local": "assets/images/armor/armor_Rust_Lich_Boots.png"
+    "image_local": "assets/images/armor/armor_Rust_Lich_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Rust Lich Helmet",
@@ -7922,7 +8724,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Rust_Lich_Helmet",
     "image_url": "https://outward.wiki.gg/images/Rust_Lich_Helmet.png?60fc12",
-    "image_local": "assets/images/armor/armor_Rust_Lich_Helmet.png"
+    "image_local": "assets/images/armor/armor_Rust_Lich_Helmet.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Sandals",
@@ -7960,7 +8767,10 @@
     "object_id": "3000174",
     "source_url": "https://outward.wiki.gg/wiki/Sandals",
     "image_url": "https://outward.wiki.gg/images/Sandals.png?30b420",
-    "image_local": "assets/images/armor/armor_Sandals.png"
+    "image_local": "assets/images/armor/armor_Sandals.png",
+    "special_effects": [
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Scaled Leather Attire",
@@ -7998,7 +8808,10 @@
     "object_id": "3000290",
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Attire",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Attire.png?7c4d9c",
-    "image_local": "assets/images/armor/armor_Scaled_Leather_Attire.png"
+    "image_local": "assets/images/armor/armor_Scaled_Leather_Attire.png",
+    "special_effects": [
+      "+5 Pouch"
+    ]
   },
   {
     "name": "Scaled Leather Boots",
@@ -8036,7 +8849,8 @@
     "object_id": "3000292",
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Boots",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Boots.png?5ef732",
-    "image_local": "assets/images/armor/armor_Scaled_Leather_Boots.png"
+    "image_local": "assets/images/armor/armor_Scaled_Leather_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Scaled Leather Hat",
@@ -8074,7 +8888,8 @@
     "object_id": "3000291",
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Hat",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Hat.png?57ef2e",
-    "image_local": "assets/images/armor/armor_Scaled_Leather_Hat.png"
+    "image_local": "assets/images/armor/armor_Scaled_Leather_Hat.png",
+    "special_effects": []
   },
   {
     "name": "Scarab Mask",
@@ -8112,7 +8927,8 @@
     "object_id": "3000101",
     "source_url": "https://outward.wiki.gg/wiki/Scarab_Mask",
     "image_url": "https://outward.wiki.gg/images/Scarab_Mask.png?85b99f",
-    "image_local": "assets/images/armor/armor_Scarab_Mask.png"
+    "image_local": "assets/images/armor/armor_Scarab_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Scarlet Boots",
@@ -8150,7 +8966,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Boots",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Boots.png?9cb154",
-    "image_local": "assets/images/armor/armor_Scarlet_Boots.png"
+    "image_local": "assets/images/armor/armor_Scarlet_Boots.png",
+    "special_effects": []
   },
   {
     "name": "Scarlet Mask",
@@ -8188,7 +9005,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Mask",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Mask.png?cd6c6b",
-    "image_local": "assets/images/armor/armor_Scarlet_Mask.png"
+    "image_local": "assets/images/armor/armor_Scarlet_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Scarlet Robes",
@@ -8226,7 +9044,8 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Robes",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Robes.png?60e9d2",
-    "image_local": "assets/images/armor/armor_Scarlet_Robes.png"
+    "image_local": "assets/images/armor/armor_Scarlet_Robes.png",
+    "special_effects": []
   },
   {
     "name": "Scavenger Boots",
@@ -8264,7 +9083,10 @@
     "object_id": "3000034",
     "source_url": "https://outward.wiki.gg/wiki/Scavenger_Boots",
     "image_url": "https://outward.wiki.gg/images/Scavenger_Boots.png?3e818d",
-    "image_local": "assets/images/armor/armor_Scavenger_Boots.png"
+    "image_local": "assets/images/armor/armor_Scavenger_Boots.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Scavenger Coat",
@@ -8302,7 +9124,11 @@
     "object_id": "3000030",
     "source_url": "https://outward.wiki.gg/wiki/Scavenger_Coat",
     "image_url": "https://outward.wiki.gg/images/Scavenger_Coat.png?1eeb9c",
-    "image_local": "assets/images/armor/armor_Scavenger_Coat.png"
+    "image_local": "assets/images/armor/armor_Scavenger_Coat.png",
+    "special_effects": [
+      "+4 Pouch",
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Scavenger Hood",
@@ -8340,7 +9166,10 @@
     "object_id": "3000032",
     "source_url": "https://outward.wiki.gg/wiki/Scavenger_Hood",
     "image_url": "https://outward.wiki.gg/images/Scavenger_Hood.png?e9f76f",
-    "image_local": "assets/images/armor/armor_Scavenger_Hood.png"
+    "image_local": "assets/images/armor/armor_Scavenger_Hood.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Scavenger Mask",
@@ -8378,7 +9207,10 @@
     "object_id": "3000031",
     "source_url": "https://outward.wiki.gg/wiki/Scavenger_Mask",
     "image_url": "https://outward.wiki.gg/images/Scavenger_Mask.png?26b63f",
-    "image_local": "assets/images/armor/armor_Scavenger_Mask.png"
+    "image_local": "assets/images/armor/armor_Scavenger_Mask.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Scavenger Scarf",
@@ -8416,7 +9248,10 @@
     "object_id": "3000033",
     "source_url": "https://outward.wiki.gg/wiki/Scavenger_Scarf",
     "image_url": "https://outward.wiki.gg/images/Scavenger_Scarf.png?38009a",
-    "image_local": "assets/images/armor/armor_Scavenger_Scarf.png"
+    "image_local": "assets/images/armor/armor_Scavenger_Scarf.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Scholar Attire",
@@ -8454,7 +9289,11 @@
     "object_id": "3000190",
     "source_url": "https://outward.wiki.gg/wiki/Scholar_Attire",
     "image_url": "https://outward.wiki.gg/images/Scholar_Attire.png?d21f6e",
-    "image_local": "assets/images/armor/armor_Scholar_Attire.png"
+    "image_local": "assets/images/armor/armor_Scholar_Attire.png",
+    "special_effects": [
+      "+6 Cold Protection",
+      "+6 Heat Protection"
+    ]
   },
   {
     "name": "Scholar Boots",
@@ -8492,7 +9331,10 @@
     "object_id": "3000192",
     "source_url": "https://outward.wiki.gg/wiki/Scholar_Boots",
     "image_url": "https://outward.wiki.gg/images/Scholar_Boots.png?de7540",
-    "image_local": "assets/images/armor/armor_Scholar_Boots.png"
+    "image_local": "assets/images/armor/armor_Scholar_Boots.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Scholar Circlet",
@@ -8530,7 +9372,10 @@
     "object_id": "3000191",
     "source_url": "https://outward.wiki.gg/wiki/Scholar_Circlet",
     "image_url": "https://outward.wiki.gg/images/Scholar_Circlet.png?cfdcc5",
-    "image_local": "assets/images/armor/armor_Scholar_Circlet.png"
+    "image_local": "assets/images/armor/armor_Scholar_Circlet.png",
+    "special_effects": [
+      "+3 Heat Protection"
+    ]
   },
   {
     "name": "Shadow Kazite Light Armor",
@@ -8568,7 +9413,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Shadow_Kazite_Light_Armor",
     "image_url": "https://outward.wiki.gg/images/Shadow_Kazite_Light_Armor.png?8f5918",
-    "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Armor.png"
+    "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Armor.png",
+    "special_effects": [
+      "+12 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Shadow Kazite Light Boots",
@@ -8606,7 +9455,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Shadow_Kazite_Light_Boots",
     "image_url": "https://outward.wiki.gg/images/Shadow_Kazite_Light_Boots.png?1fed34",
-    "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Boots.png"
+    "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Boots.png",
+    "special_effects": [
+      "1 Protection"
+    ]
   },
   {
     "name": "Shadow Kazite Light Helmet",
@@ -8644,7 +9496,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Shadow_Kazite_Light_Helmet",
     "image_url": "https://outward.wiki.gg/images/Shadow_Kazite_Light_Helmet.png?34fc3e",
-    "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Helmet.png"
+    "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Helmet.png",
+    "special_effects": [
+      "-15% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Shadow Light Kazite Shirt",
@@ -8682,7 +9538,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Shadow_Light_Kazite_Shirt",
     "image_url": "https://outward.wiki.gg/images/Shadow_Light_Kazite_Shirt.png?8a115d",
-    "image_local": "assets/images/armor/armor_Shadow_Light_Kazite_Shirt.png"
+    "image_local": "assets/images/armor/armor_Shadow_Light_Kazite_Shirt.png",
+    "special_effects": [
+      "+12 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Shock Armor",
@@ -8720,7 +9580,11 @@
     "object_id": "3100170",
     "source_url": "https://outward.wiki.gg/wiki/Shock_Armor",
     "image_url": "https://outward.wiki.gg/images/Shock_Armor.png?759777",
-    "image_local": "assets/images/armor/armor_Shock_Armor.png"
+    "image_local": "assets/images/armor/armor_Shock_Armor.png",
+    "special_effects": [
+      "-5% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Shock Boots",
@@ -8758,7 +9622,11 @@
     "object_id": "3100172",
     "source_url": "https://outward.wiki.gg/wiki/Shock_Boots",
     "image_url": "https://outward.wiki.gg/images/Shock_Boots.png?d55259",
-    "image_local": "assets/images/armor/armor_Shock_Boots.png"
+    "image_local": "assets/images/armor/armor_Shock_Boots.png",
+    "special_effects": [
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Shock Helmet",
@@ -8796,7 +9664,12 @@
     "object_id": "3100171",
     "source_url": "https://outward.wiki.gg/wiki/Shock_Helmet",
     "image_url": "https://outward.wiki.gg/images/Shock_Helmet.png?1f8926",
-    "image_local": "assets/images/armor/armor_Shock_Helmet.png"
+    "image_local": "assets/images/armor/armor_Shock_Helmet.png",
+    "special_effects": [
+      "-4% Stamina Cost",
+      "-15% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Silver Armor",
@@ -8834,7 +9707,12 @@
     "object_id": "3100100",
     "source_url": "https://outward.wiki.gg/wiki/Silver_Armor",
     "image_url": "https://outward.wiki.gg/images/Silver_Armor.png?669771",
-    "image_local": "assets/images/armor/armor_Silver_Armor.png"
+    "image_local": "assets/images/armor/armor_Silver_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Silver Boots",
@@ -8872,7 +9750,12 @@
     "object_id": "3100102",
     "source_url": "https://outward.wiki.gg/wiki/Silver_Boots",
     "image_url": "https://outward.wiki.gg/images/Silver_Boots.png?31e947",
-    "image_local": "assets/images/armor/armor_Silver_Boots.png"
+    "image_local": "assets/images/armor/armor_Silver_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Silver Helm",
@@ -8910,7 +9793,13 @@
     "object_id": "3100101",
     "source_url": "https://outward.wiki.gg/wiki/Silver_Helm",
     "image_url": "https://outward.wiki.gg/images/Silver_Helm.png?ee72f1",
-    "image_local": "assets/images/armor/armor_Silver_Helm.png"
+    "image_local": "assets/images/armor/armor_Silver_Helm.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "-15% Mana Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Simple Shoes",
@@ -8948,7 +9837,10 @@
     "object_id": "3000004",
     "source_url": "https://outward.wiki.gg/wiki/Simple_Shoes",
     "image_url": "https://outward.wiki.gg/images/Simple_Shoes.png?195e25",
-    "image_local": "assets/images/armor/armor_Simple_Shoes.png"
+    "image_local": "assets/images/armor/armor_Simple_Shoes.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Slayer's Armor",
@@ -8986,7 +9878,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Slayer%27s_Armor",
     "image_url": "https://outward.wiki.gg/images/Slayer%27s_Armor.png?e29574",
-    "image_local": "assets/images/armor/armor_Slayer_s_Armor.png"
+    "image_local": "assets/images/armor/armor_Slayer_s_Armor.png",
+    "special_effects": [
+      "+8 Cold Protection",
+      "+8 Heat Protection"
+    ]
   },
   {
     "name": "Slayer's Boots",
@@ -9024,7 +9920,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Slayer%27s_Boots",
     "image_url": "https://outward.wiki.gg/images/Slayer%27s_Boots.png?7bb55a",
-    "image_local": "assets/images/armor/armor_Slayer_s_Boots.png"
+    "image_local": "assets/images/armor/armor_Slayer_s_Boots.png",
+    "special_effects": [
+      "+4 Cold Protection",
+      "+4 Heat Protection"
+    ]
   },
   {
     "name": "Slayer's Helmet",
@@ -9062,7 +9962,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Slayer%27s_Helmet",
     "image_url": "https://outward.wiki.gg/images/Slayer%27s_Helmet.png?45ef01",
-    "image_local": "assets/images/armor/armor_Slayer_s_Helmet.png"
+    "image_local": "assets/images/armor/armor_Slayer_s_Helmet.png",
+    "special_effects": [
+      "+4 Cold Protection",
+      "+4 Heat Protection"
+    ]
   },
   {
     "name": "Squire Attire",
@@ -9100,7 +10004,10 @@
     "object_id": "3100150",
     "source_url": "https://outward.wiki.gg/wiki/Squire_Attire",
     "image_url": "https://outward.wiki.gg/images/Squire_Attire.png?dd3b58",
-    "image_local": "assets/images/armor/armor_Squire_Attire.png"
+    "image_local": "assets/images/armor/armor_Squire_Attire.png",
+    "special_effects": [
+      "+5% Move Speed"
+    ]
   },
   {
     "name": "Squire Boots",
@@ -9138,7 +10045,12 @@
     "object_id": "3100152",
     "source_url": "https://outward.wiki.gg/wiki/Squire_Boots",
     "image_url": "https://outward.wiki.gg/images/Squire_Boots.png?162851",
-    "image_local": "assets/images/armor/armor_Squire_Boots.png"
+    "image_local": "assets/images/armor/armor_Squire_Boots.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+5 Cold Protection",
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Squire Headband",
@@ -9176,7 +10088,10 @@
     "object_id": "3100151",
     "source_url": "https://outward.wiki.gg/wiki/Squire_Headband",
     "image_url": "https://outward.wiki.gg/images/Squire_Headband.png?a4668a",
-    "image_local": "assets/images/armor/armor_Squire_Headband.png"
+    "image_local": "assets/images/armor/armor_Squire_Headband.png",
+    "special_effects": [
+      "+5% Move Speed"
+    ]
   },
   {
     "name": "Straw Hat",
@@ -9214,7 +10129,10 @@
     "object_id": "3000001",
     "source_url": "https://outward.wiki.gg/wiki/Straw_Hat",
     "image_url": "https://outward.wiki.gg/images/Straw_Hat.png?66ac44",
-    "image_local": "assets/images/armor/armor_Straw_Hat.png"
+    "image_local": "assets/images/armor/armor_Straw_Hat.png",
+    "special_effects": [
+      "+5 Heat Protection"
+    ]
   },
   {
     "name": "Striped Garb",
@@ -9252,7 +10170,10 @@
     "object_id": "3000009",
     "source_url": "https://outward.wiki.gg/wiki/Striped_Garb",
     "image_url": "https://outward.wiki.gg/images/Striped_Garb.png?5435fa",
-    "image_local": "assets/images/armor/armor_Striped_Garb.png"
+    "image_local": "assets/images/armor/armor_Striped_Garb.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Tattered Attire",
@@ -9290,7 +10211,11 @@
     "object_id": "3000130 <br> 3000131 <br> 3000132",
     "source_url": "https://outward.wiki.gg/wiki/Tattered_Attire",
     "image_url": "https://outward.wiki.gg/images/Tattered_Attire.png?7daed3",
-    "image_local": "assets/images/armor/armor_Tattered_Attire.png"
+    "image_local": "assets/images/armor/armor_Tattered_Attire.png",
+    "special_effects": [
+      "+2 Cold Protection",
+      "+2 Heat Protection"
+    ]
   },
   {
     "name": "Tattered Boots",
@@ -9328,7 +10253,11 @@
     "object_id": "3000136",
     "source_url": "https://outward.wiki.gg/wiki/Tattered_Boots",
     "image_url": "https://outward.wiki.gg/images/Tattered_Boots.png?526b96",
-    "image_local": "assets/images/armor/armor_Tattered_Boots.png"
+    "image_local": "assets/images/armor/armor_Tattered_Boots.png",
+    "special_effects": [
+      "+1 Cold Protection",
+      "+1 Heat Protection"
+    ]
   },
   {
     "name": "Tattered Hood",
@@ -9366,7 +10295,11 @@
     "object_id": "3000133 <br> 3000134 <br> 3000135",
     "source_url": "https://outward.wiki.gg/wiki/Tattered_Hood",
     "image_url": "https://outward.wiki.gg/images/Tattered_Hood.png?d24594",
-    "image_local": "assets/images/armor/armor_Tattered_Hood.png"
+    "image_local": "assets/images/armor/armor_Tattered_Hood.png",
+    "special_effects": [
+      "+1 Cold Protection",
+      "+1 Heat Protection"
+    ]
   },
   {
     "name": "Tenebrous Armor",
@@ -9409,7 +10342,10 @@
     "object_id": "3000140",
     "source_url": "https://outward.wiki.gg/wiki/Tenebrous_Armor",
     "image_url": "https://outward.wiki.gg/images/Tenebrous_Armor.png?83ac8f",
-    "image_local": "assets/images/armor/armor_Tenebrous_Armor.png"
+    "image_local": "assets/images/armor/armor_Tenebrous_Armor.png",
+    "special_effects": [
+      "+10 Cold Protection"
+    ]
   },
   {
     "name": "Tenebrous Boots",
@@ -9452,7 +10388,10 @@
     "object_id": "3000142",
     "source_url": "https://outward.wiki.gg/wiki/Tenebrous_Boots",
     "image_url": "https://outward.wiki.gg/images/Tenebrous_Boots.png?65978a",
-    "image_local": "assets/images/armor/armor_Tenebrous_Boots.png"
+    "image_local": "assets/images/armor/armor_Tenebrous_Boots.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Tenebrous Helm",
@@ -9495,7 +10434,10 @@
     "object_id": "3000141",
     "source_url": "https://outward.wiki.gg/wiki/Tenebrous_Helm",
     "image_url": "https://outward.wiki.gg/images/Tenebrous_Helm.png?e0ace1",
-    "image_local": "assets/images/armor/armor_Tenebrous_Helm.png"
+    "image_local": "assets/images/armor/armor_Tenebrous_Helm.png",
+    "special_effects": [
+      "+5 Cold Protection"
+    ]
   },
   {
     "name": "Trader Boots",
@@ -9533,7 +10475,10 @@
     "object_id": "3000002",
     "source_url": "https://outward.wiki.gg/wiki/Trader_Boots",
     "image_url": "https://outward.wiki.gg/images/Trader_Boots.png?a9b0a7",
-    "image_local": "assets/images/armor/armor_Trader_Boots.png"
+    "image_local": "assets/images/armor/armor_Trader_Boots.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Trader Garb",
@@ -9571,7 +10516,11 @@
     "object_id": "3000000",
     "source_url": "https://outward.wiki.gg/wiki/Trader_Garb",
     "image_url": "https://outward.wiki.gg/images/Trader_Garb.png?bf52d5",
-    "image_local": "assets/images/armor/armor_Trader_Garb.png"
+    "image_local": "assets/images/armor/armor_Trader_Garb.png",
+    "special_effects": [
+      "+8 Pouch",
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "Tsar Armor",
@@ -9609,7 +10558,13 @@
     "object_id": "3100140",
     "source_url": "https://outward.wiki.gg/wiki/Tsar_Armor",
     "image_url": "https://outward.wiki.gg/images/Tsar_Armor.png?97f62f",
-    "image_local": "assets/images/armor/armor_Tsar_Armor.png"
+    "image_local": "assets/images/armor/armor_Tsar_Armor.png",
+    "special_effects": [
+      "-11% Move Speed",
+      "-6% Stamina Cost",
+      "+10 Heat Protection",
+      "6 Protection"
+    ]
   },
   {
     "name": "Tsar Boots",
@@ -9656,7 +10611,13 @@
     "object_id": "3100142",
     "source_url": "https://outward.wiki.gg/wiki/Tsar_Boots",
     "image_url": "https://outward.wiki.gg/images/Tsar_Boots.png?c21395",
-    "image_local": "assets/images/armor/armor_Tsar_Boots.png"
+    "image_local": "assets/images/armor/armor_Tsar_Boots.png",
+    "special_effects": [
+      "-9% Move Speed",
+      "-4% Stamina Cost",
+      "+5 Heat Protection",
+      "4 Protection"
+    ]
   },
   {
     "name": "Tsar Helm",
@@ -9703,7 +10664,14 @@
     "object_id": "3100141",
     "source_url": "https://outward.wiki.gg/wiki/Tsar_Helm",
     "image_url": "https://outward.wiki.gg/images/Tsar_Helm.png?907168",
-    "image_local": "assets/images/armor/armor_Tsar_Helm.png"
+    "image_local": "assets/images/armor/armor_Tsar_Helm.png",
+    "special_effects": [
+      "-9% Move Speed",
+      "-4% Stamina Cost",
+      "-15% Mana Cost",
+      "+5 Heat Protection",
+      "4 Protection"
+    ]
   },
   {
     "name": "Tuanosaur Mask",
@@ -9741,7 +10709,8 @@
     "object_id": "3000102",
     "source_url": "https://outward.wiki.gg/wiki/Tuanosaur_Mask",
     "image_url": "https://outward.wiki.gg/images/Tuanosaur_Mask.png?e34845",
-    "image_local": "assets/images/armor/armor_Tuanosaur_Mask.png"
+    "image_local": "assets/images/armor/armor_Tuanosaur_Mask.png",
+    "special_effects": []
   },
   {
     "name": "Vigilante Armor",
@@ -9779,7 +10748,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Vigilante_Armor",
     "image_url": "https://outward.wiki.gg/images/Vigilante_Armor.png?a7a4c0",
-    "image_local": "assets/images/armor/armor_Vigilante_Armor.png"
+    "image_local": "assets/images/armor/armor_Vigilante_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-7% Stamina Cost",
+      "+10 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Vigilante Boots",
@@ -9817,7 +10792,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Vigilante_Boots",
     "image_url": "https://outward.wiki.gg/images/Vigilante_Boots.png?dcfb4b",
-    "image_local": "assets/images/armor/armor_Vigilante_Boots.png"
+    "image_local": "assets/images/armor/armor_Vigilante_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-5% Stamina Cost",
+      "+5 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Vigilante Helm",
@@ -9855,7 +10836,14 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Vigilante_Helm",
     "image_url": "https://outward.wiki.gg/images/Vigilante_Helm.png?3a7e4f",
-    "image_local": "assets/images/armor/armor_Vigilante_Helm.png"
+    "image_local": "assets/images/armor/armor_Vigilante_Helm.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-5% Stamina Cost",
+      "-5% Mana Cost",
+      "+5 Heat Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Virgin Armor",
@@ -9893,7 +10881,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Virgin_Armor",
     "image_url": "https://outward.wiki.gg/images/Virgin_Armor.png?d7f9e9",
-    "image_local": "assets/images/armor/armor_Virgin_Armor.png"
+    "image_local": "assets/images/armor/armor_Virgin_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "2 Protection"
+    ]
   },
   {
     "name": "Virgin Boots",
@@ -9931,7 +10923,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Virgin_Boots",
     "image_url": "https://outward.wiki.gg/images/Virgin_Boots.png?86f955",
-    "image_local": "assets/images/armor/armor_Virgin_Boots.png"
+    "image_local": "assets/images/armor/armor_Virgin_Boots.png",
+    "special_effects": [
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "Virgin Helmet",
@@ -9969,7 +10965,12 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Virgin_Helmet",
     "image_url": "https://outward.wiki.gg/images/Virgin_Helmet.png?6c63a9",
-    "image_local": "assets/images/armor/armor_Virgin_Helmet.png"
+    "image_local": "assets/images/armor/armor_Virgin_Helmet.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "1 Protection"
+    ]
   },
   {
     "name": "White Arcane Hood",
@@ -10007,7 +11008,11 @@
     "object_id": "3000341",
     "source_url": "https://outward.wiki.gg/wiki/White_Arcane_Hood",
     "image_url": "https://outward.wiki.gg/images/White_Arcane_Hood.png?cdb19b",
-    "image_local": "assets/images/armor/armor_White_Arcane_Hood.png"
+    "image_local": "assets/images/armor/armor_White_Arcane_Hood.png",
+    "special_effects": [
+      "+3 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "White Arcane Robe",
@@ -10045,7 +11050,10 @@
     "object_id": "3000340",
     "source_url": "https://outward.wiki.gg/wiki/White_Arcane_Robe",
     "image_url": "https://outward.wiki.gg/images/White_Arcane_Robe.png?7ac477",
-    "image_local": "assets/images/armor/armor_White_Arcane_Robe.png"
+    "image_local": "assets/images/armor/armor_White_Arcane_Robe.png",
+    "special_effects": [
+      "+6 Cold Protection"
+    ]
   },
   {
     "name": "White Kintsugi Armor",
@@ -10083,7 +11091,12 @@
     "object_id": "3100200",
     "source_url": "https://outward.wiki.gg/wiki/White_Kintsugi_Armor",
     "image_url": "https://outward.wiki.gg/images/White_Kintsugi_Armor.png?636b69",
-    "image_local": "assets/images/armor/armor_White_Kintsugi_Armor.png"
+    "image_local": "assets/images/armor/armor_White_Kintsugi_Armor.png",
+    "special_effects": [
+      "-7% Move Speed",
+      "-4% Stamina Cost",
+      "3 Protection"
+    ]
   },
   {
     "name": "White Kintsugi Boots",
@@ -10121,7 +11134,12 @@
     "object_id": "3100202",
     "source_url": "https://outward.wiki.gg/wiki/White_Kintsugi_Boots",
     "image_url": "https://outward.wiki.gg/images/White_Kintsugi_Boots.png?4135cc",
-    "image_local": "assets/images/armor/armor_White_Kintsugi_Boots.png"
+    "image_local": "assets/images/armor/armor_White_Kintsugi_Boots.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-2% Stamina Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "White Kintsugi Helmet",
@@ -10159,7 +11177,13 @@
     "object_id": "3100201",
     "source_url": "https://outward.wiki.gg/wiki/White_Kintsugi_Helmet",
     "image_url": "https://outward.wiki.gg/images/White_Kintsugi_Helmet.png?bd8771",
-    "image_local": "assets/images/armor/armor_White_Kintsugi_Helmet.png"
+    "image_local": "assets/images/armor/armor_White_Kintsugi_Helmet.png",
+    "special_effects": [
+      "-6% Move Speed",
+      "-2% Stamina Cost",
+      "-50% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "White Priest Boots",
@@ -10197,7 +11221,8 @@
     "object_id": "3000062",
     "source_url": "https://outward.wiki.gg/wiki/White_Priest_Boots",
     "image_url": "https://outward.wiki.gg/images/White_Priest_Boots.png?f35d32",
-    "image_local": "assets/images/armor/armor_White_Priest_Boots.png"
+    "image_local": "assets/images/armor/armor_White_Priest_Boots.png",
+    "special_effects": []
   },
   {
     "name": "White Priest Hood",
@@ -10235,7 +11260,8 @@
     "object_id": "3000063",
     "source_url": "https://outward.wiki.gg/wiki/White_Priest_Hood",
     "image_url": "https://outward.wiki.gg/images/White_Priest_Hood.png?913a1e",
-    "image_local": "assets/images/armor/armor_White_Priest_Hood.png"
+    "image_local": "assets/images/armor/armor_White_Priest_Hood.png",
+    "special_effects": []
   },
   {
     "name": "White Priest Mitre",
@@ -10273,7 +11299,8 @@
     "object_id": "3000061",
     "source_url": "https://outward.wiki.gg/wiki/White_Priest_Mitre",
     "image_url": "https://outward.wiki.gg/images/White_Priest_Mitre.png?f4ae89",
-    "image_local": "assets/images/armor/armor_White_Priest_Mitre.png"
+    "image_local": "assets/images/armor/armor_White_Priest_Mitre.png",
+    "special_effects": []
   },
   {
     "name": "White Priest Robes",
@@ -10311,7 +11338,8 @@
     "object_id": "3000060",
     "source_url": "https://outward.wiki.gg/wiki/White_Priest_Robes",
     "image_url": "https://outward.wiki.gg/images/White_Priest_Robes.png?8123e5",
-    "image_local": "assets/images/armor/armor_White_Priest_Robes.png"
+    "image_local": "assets/images/armor/armor_White_Priest_Robes.png",
+    "special_effects": []
   },
   {
     "name": "White Wide Hat",
@@ -10349,7 +11377,11 @@
     "object_id": "3000303",
     "source_url": "https://outward.wiki.gg/wiki/White_Wide_Hat",
     "image_url": "https://outward.wiki.gg/images/White_Wide_Hat.png?fe47f5",
-    "image_local": "assets/images/armor/armor_White_Wide_Hat.png"
+    "image_local": "assets/images/armor/armor_White_Wide_Hat.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Wide Black Hat",
@@ -10387,7 +11419,11 @@
     "object_id": "3000301",
     "source_url": "https://outward.wiki.gg/wiki/Wide_Black_Hat",
     "image_url": "https://outward.wiki.gg/images/Wide_Black_Hat.png?530dc6",
-    "image_local": "assets/images/armor/armor_Wide_Black_Hat.png"
+    "image_local": "assets/images/armor/armor_Wide_Black_Hat.png",
+    "special_effects": [
+      "+5% Move Speed",
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Wide Blue Hat",
@@ -10425,7 +11461,10 @@
     "object_id": "3000300",
     "source_url": "https://outward.wiki.gg/wiki/Wide_Blue_Hat",
     "image_url": "https://outward.wiki.gg/images/Wide_Blue_Hat.png?9e74ee",
-    "image_local": "assets/images/armor/armor_Wide_Blue_Hat.png"
+    "image_local": "assets/images/armor/armor_Wide_Blue_Hat.png",
+    "special_effects": [
+      "+10 Heat Protection"
+    ]
   },
   {
     "name": "Wolf Mage Armor",
@@ -10463,7 +11502,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Mage_Armor",
     "image_url": "https://outward.wiki.gg/images/Wolf_Mage_Armor.png?a9c409",
-    "image_local": "assets/images/armor/armor_Wolf_Mage_Armor.png"
+    "image_local": "assets/images/armor/armor_Wolf_Mage_Armor.png",
+    "special_effects": [
+      "+10 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Wolf Mage Boots",
@@ -10501,7 +11544,11 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Mage_Boots",
     "image_url": "https://outward.wiki.gg/images/Wolf_Mage_Boots.png?eb2fc5",
-    "image_local": "assets/images/armor/armor_Wolf_Mage_Boots.png"
+    "image_local": "assets/images/armor/armor_Wolf_Mage_Boots.png",
+    "special_effects": [
+      "+5 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Wolf Mage Helmet",
@@ -10539,7 +11586,10 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Mage_Helmet",
     "image_url": "https://outward.wiki.gg/images/Wolf_Mage_Helmet.png?613c1c",
-    "image_local": "assets/images/armor/armor_Wolf_Mage_Helmet.png"
+    "image_local": "assets/images/armor/armor_Wolf_Mage_Helmet.png",
+    "special_effects": [
+      "1 Protection"
+    ]
   },
   {
     "name": "Wolf Medic Armor",
@@ -10577,7 +11627,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Medic_Armor",
     "image_url": "https://outward.wiki.gg/images/Wolf_Medic_Armor.png?45eeb3",
-    "image_local": "assets/images/armor/armor_Wolf_Medic_Armor.png"
+    "image_local": "assets/images/armor/armor_Wolf_Medic_Armor.png",
+    "special_effects": [
+      "-3% Move Speed",
+      "-3% Stamina Cost",
+      "+10 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Wolf Medic Boots",
@@ -10615,7 +11671,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Medic_Boots",
     "image_url": "https://outward.wiki.gg/images/Wolf_Medic_Boots.png?ea4db8",
-    "image_local": "assets/images/armor/armor_Wolf_Medic_Boots.png"
+    "image_local": "assets/images/armor/armor_Wolf_Medic_Boots.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "+5 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Wolf Medic Helmet",
@@ -10653,7 +11715,13 @@
     "object_id": null,
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Medic_Helmet",
     "image_url": "https://outward.wiki.gg/images/Wolf_Medic_Helmet.png?e6b514",
-    "image_local": "assets/images/armor/armor_Wolf_Medic_Helmet.png"
+    "image_local": "assets/images/armor/armor_Wolf_Medic_Helmet.png",
+    "special_effects": [
+      "-2% Move Speed",
+      "-2% Stamina Cost",
+      "+5 Cold Protection",
+      "1 Protection"
+    ]
   },
   {
     "name": "Wolf Plate Armor",
@@ -10691,7 +11759,13 @@
     "object_id": "3100010",
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Plate_Armor",
     "image_url": "https://outward.wiki.gg/images/Wolf_Plate_Armor.png?2bc69b",
-    "image_local": "assets/images/armor/armor_Wolf_Plate_Armor.png"
+    "image_local": "assets/images/armor/armor_Wolf_Plate_Armor.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-6% Stamina Cost",
+      "+6 Cold Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Wolf Plate Boots",
@@ -10729,7 +11803,13 @@
     "object_id": "3100013",
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Plate_Boots",
     "image_url": "https://outward.wiki.gg/images/Wolf_Plate_Boots.png?8187a7",
-    "image_local": "assets/images/armor/armor_Wolf_Plate_Boots.png"
+    "image_local": "assets/images/armor/armor_Wolf_Plate_Boots.png",
+    "special_effects": [
+      "-1% Move Speed",
+      "-4% Stamina Cost",
+      "+3 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Wolf Plate Full-Helm",
@@ -10767,7 +11847,13 @@
     "object_id": "3100012",
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Plate_Full-Helm",
     "image_url": "https://outward.wiki.gg/images/Wolf_Plate_Full-Helm.png?68366d",
-    "image_local": "assets/images/armor/armor_Wolf_Plate_Full-Helm.png"
+    "image_local": "assets/images/armor/armor_Wolf_Plate_Full-Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-30% Mana Cost",
+      "2 Protection"
+    ]
   },
   {
     "name": "Wolf Plate Helm",
@@ -10805,7 +11891,14 @@
     "object_id": "3100011",
     "source_url": "https://outward.wiki.gg/wiki/Wolf_Plate_Helm",
     "image_url": "https://outward.wiki.gg/images/Wolf_Plate_Helm.png?fab08e",
-    "image_local": "assets/images/armor/armor_Wolf_Plate_Helm.png"
+    "image_local": "assets/images/armor/armor_Wolf_Plate_Helm.png",
+    "special_effects": [
+      "-4% Move Speed",
+      "-4% Stamina Cost",
+      "-15% Mana Cost",
+      "+3 Cold Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Worker Boots",
@@ -10843,7 +11936,10 @@
     "object_id": "3000083",
     "source_url": "https://outward.wiki.gg/wiki/Worker_Boots",
     "image_url": "https://outward.wiki.gg/images/Worker_Boots.png?2ea874",
-    "image_local": "assets/images/armor/armor_Worker_Boots.png"
+    "image_local": "assets/images/armor/armor_Worker_Boots.png",
+    "special_effects": [
+      "+3 Cold Protection"
+    ]
   },
   {
     "name": "Zagis' Armor",
@@ -10881,7 +11977,13 @@
     "object_id": "3100031",
     "source_url": "https://outward.wiki.gg/wiki/Zagis%27_Armor",
     "image_url": "https://outward.wiki.gg/images/Zagis%27_Armor.png?1dcc67",
-    "image_local": "assets/images/armor/armor_Zagis__Armor.png"
+    "image_local": "assets/images/armor/armor_Zagis__Armor.png",
+    "special_effects": [
+      "-8% Move Speed",
+      "-8% Stamina Cost",
+      "+14 Heat Protection",
+      "3 Protection"
+    ]
   },
   {
     "name": "Zagis' Boots",
@@ -10919,7 +12021,13 @@
     "object_id": "}}",
     "source_url": "https://outward.wiki.gg/wiki/Zagis%27_Boots",
     "image_url": "https://outward.wiki.gg/images/Zagis%27_Boots.png?3ef364",
-    "image_local": "assets/images/armor/armor_Zagis__Boots.png"
+    "image_local": "assets/images/armor/armor_Zagis__Boots.png",
+    "special_effects": [
+      "-5% Move Speed",
+      "-6% Stamina Cost",
+      "+8 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Zagis' Mask",
@@ -10957,7 +12065,14 @@
     "object_id": "3100030",
     "source_url": "https://outward.wiki.gg/wiki/Zagis%27_Mask",
     "image_url": "https://outward.wiki.gg/images/Zagis%27_Mask.png?5d0e31",
-    "image_local": "assets/images/armor/armor_Zagis__Mask.png"
+    "image_local": "assets/images/armor/armor_Zagis__Mask.png",
+    "special_effects": [
+      "-5% Move Speed",
+      "-6% Stamina Cost",
+      "-30% Mana Cost",
+      "+8 Heat Protection",
+      "2 Protection"
+    ]
   },
   {
     "name": "Adventurer Backpack",
@@ -10967,7 +12082,8 @@
     "sell": 18,
     "set": "Adventurer Set",
     "description": "Bag with small carrying capacity, specially made to not interfere with the dodge",
-    "local_image": "assets/images/armor/armor_Adventurer_Backpack.png"
+    "local_image": "assets/images/armor/armor_Adventurer_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Alchemist Backpack",
@@ -10976,7 +12092,8 @@
     "buy": 130,
     "sell": 39,
     "description": "Advanced bag that slows down the decay of the food it contains.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Alchemist_Backpack.png"
+    "local_image": "assets/images/armor/armor_Alchemist_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Boozu Hide Backpack",
@@ -10985,7 +12102,8 @@
     "buy": 100,
     "sell": 30,
     "description": "Does not interfere with the user's roll. Protects against Corruption.",
-    "local_image": "assets/images/armor/armor_Boozu_Hide_Backpack.png"
+    "local_image": "assets/images/armor/armor_Boozu_Hide_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Brass-Wolf Backpack",
@@ -10995,7 +12113,10 @@
     "buy": 200,
     "sell": 60,
     "description": "Exquisite bag, used by northern Wolf-Knights. It protects the items it carries and its wearer.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Brass-Wolf_Backpack.png"
+    "local_image": "assets/images/armor/armor_Brass-Wolf_Backpack.png",
+    "special_effects": [
+      "2 Protection"
+    ]
   },
   {
     "name": "Brigand's Backpack",
@@ -11004,7 +12125,8 @@
     "buy": 350,
     "sell": 105,
     "description": "Increases your Physical Damage by 15%.\nDoes not impede rolling.",
-    "local_image": "assets/images/armor/armor_Brigand's_Backpack.png"
+    "local_image": "assets/images/armor/armor_Brigand's_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Chalcedony Backpack",
@@ -11013,7 +12135,8 @@
     "buy": 350,
     "sell": 105,
     "description": "Provides 15 resistance to heat when worn.",
-    "local_image": "assets/images/armor/armor_Chalcedony_Backpack.png"
+    "local_image": "assets/images/armor/armor_Chalcedony_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Dusk Backpack",
@@ -11022,7 +12145,8 @@
     "buy": 300,
     "sell": 90,
     "description": "Provides 5 Barrier.",
-    "local_image": "assets/images/armor/armor_Dusk_Backpack.png"
+    "local_image": "assets/images/armor/armor_Dusk_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Glowstone Backpack",
@@ -11030,7 +12154,8 @@
     "weight": 2.0,
     "buy": 300,
     "sell": 90,
-    "local_image": "assets/images/armor/armor_Glowstone_Backpack.png"
+    "local_image": "assets/images/armor/armor_Glowstone_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Large Chalcedony Stone",
@@ -11039,7 +12164,8 @@
     "buy": 50,
     "sell": 15,
     "description": "Must be charged in the depths of a Volcano's basin. It's too heavy to carry inside another backpack!",
-    "local_image": "assets/images/armor/armor_Large_Chalcedony_Stone.png"
+    "local_image": "assets/images/armor/armor_Large_Chalcedony_Stone.png",
+    "special_effects": []
   },
   {
     "name": "Light Mender's Backpack",
@@ -11049,7 +12175,8 @@
     "sell": 60,
     "set": "Gold-Lich Set",
     "description": "Bag containing the arcane tailsmans collected long ago by an undead wizard.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Light_Mender's_Backpack.png"
+    "local_image": "assets/images/armor/armor_Light_Mender's_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Mefino's Trade Backpack",
@@ -11058,7 +12185,8 @@
     "buy": 85,
     "sell": 26,
     "description": "Needlessly ornate bag with an enormous carrying capacity, once used by the spice merchant Mefino.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Mefino's_Trade_Backpack.png"
+    "local_image": "assets/images/armor/armor_Mefino's_Trade_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Nomad Backpack",
@@ -11067,7 +12195,8 @@
     "buy": 25,
     "sell": 8,
     "description": "Balanced backpack commonly used by travelers.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Nomad_Backpack.png"
+    "local_image": "assets/images/armor/armor_Nomad_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Preservation Backpack",
@@ -11076,7 +12205,8 @@
     "buy": 200,
     "sell": 60,
     "description": "Elite bag that strongly slows down the decay of the food it contains.<br><br>Equipping this backpack slows your dodge and removes your dodge invincibility",
-    "local_image": "assets/images/armor/armor_Preservation_Backpack.png"
+    "local_image": "assets/images/armor/armor_Preservation_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Primitive Satchel",
@@ -11085,7 +12215,8 @@
     "buy": 30,
     "sell": 9,
     "description": "Basic craftable bag used to store items, though it lacks a spot to hang a lantern from.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Primitive_Satchel.png"
+    "local_image": "assets/images/armor/armor_Primitive_Satchel.png",
+    "special_effects": []
   },
   {
     "name": "Prospector Backpack",
@@ -11094,7 +12225,8 @@
     "buy": 100,
     "sell": 30,
     "description": "Large professional backpack used by explorers.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Prospector_Backpack.png"
+    "local_image": "assets/images/armor/armor_Prospector_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Scaled Satchel",
@@ -11104,7 +12236,8 @@
     "sell": 30,
     "set": "Scaled Leather Set",
     "description": "Craftable bag with improved carrying capacity, a lantern slot and which does not restrict your dodge.",
-    "local_image": "assets/images/armor/armor_Scaled_Satchel.png"
+    "local_image": "assets/images/armor/armor_Scaled_Satchel.png",
+    "special_effects": []
   },
   {
     "name": "Strongbox Backpack",
@@ -11114,7 +12247,10 @@
     "buy": 100,
     "sell": 30,
     "description": "Tough box that protect both the wearer and what's carried in it.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Strongbox_Backpack.png"
+    "local_image": "assets/images/armor/armor_Strongbox_Backpack.png",
+    "special_effects": [
+      "2 Protection"
+    ]
   },
   {
     "name": "Trader Backpack",
@@ -11124,7 +12260,8 @@
     "sell": 75,
     "set": "Trader Set",
     "description": "Cavernous bag with a large carrying capacty, but which slows you down.<br><br>'''Equipping this backpack slows your dodge.'''",
-    "local_image": "assets/images/armor/armor_Trader_Backpack.png"
+    "local_image": "assets/images/armor/armor_Trader_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Weaver's Backpack",
@@ -11132,7 +12269,8 @@
     "weight": 2.0,
     "buy": 300,
     "sell": 90,
-    "local_image": "assets/images/armor/armor_Weaver's_Backpack.png"
+    "local_image": "assets/images/armor/armor_Weaver's_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Zhorn's Hunting Backpack",
@@ -11141,7 +12279,8 @@
     "buy": 400,
     "sell": 120,
     "set": "Zhorn's Set",
-    "local_image": "assets/images/armor/armor_Zhorn's_Hunting_Backpack.png"
+    "local_image": "assets/images/armor/armor_Zhorn's_Hunting_Backpack.png",
+    "special_effects": []
   },
   {
     "name": "Coil Lantern",
@@ -11149,7 +12288,8 @@
     "weight": 1.0,
     "buy": 300,
     "sell": 90,
-    "local_image": "assets/images/armor/armor_Coil_Lantern.png"
+    "local_image": "assets/images/armor/armor_Coil_Lantern.png",
+    "special_effects": []
   },
   {
     "name": "Djinn's Lamp",
@@ -11158,7 +12298,8 @@
     "buy": 25,
     "sell": 7,
     "description": "When held in hand, helps protect the wielder from Status Ailments. Can be refilled with thick oil.",
-    "local_image": "assets/images/armor/armor_Djinn's_Lamp.png"
+    "local_image": "assets/images/armor/armor_Djinn's_Lamp.png",
+    "special_effects": []
   },
   {
     "name": "Explorer Lantern",
@@ -11167,7 +12308,8 @@
     "buy": 25,
     "sell": 8,
     "description": "Oil Lantern that shines brightly.",
-    "local_image": "assets/images/armor/armor_Explorer_Lantern.png"
+    "local_image": "assets/images/armor/armor_Explorer_Lantern.png",
+    "special_effects": []
   },
   {
     "name": "Lantern of Souls",
@@ -11175,7 +12317,8 @@
     "weight": 1.0,
     "buy": 0,
     "sell": 0,
-    "local_image": "assets/images/armor/armor_Lantern_of_Souls.png"
+    "local_image": "assets/images/armor/armor_Lantern_of_Souls.png",
+    "special_effects": []
   },
   {
     "name": "Old Lantern",
@@ -11183,7 +12326,8 @@
     "weight": 0.6,
     "buy": 15,
     "sell": 4,
-    "local_image": "assets/images/armor/armor_Old_Lantern.png"
+    "local_image": "assets/images/armor/armor_Old_Lantern.png",
+    "special_effects": []
   },
   {
     "name": "Virgin Lantern",
@@ -11193,6 +12337,7 @@
     "sell": 7,
     "set": "Virgin Set",
     "description": "A mage's enchantable lantern.",
-    "local_image": "assets/images/armor/armor_Virgin_Lantern.png"
+    "local_image": "assets/images/armor/armor_Virgin_Lantern.png",
+    "special_effects": []
   }
 ]
