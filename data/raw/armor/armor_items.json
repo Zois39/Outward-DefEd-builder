@@ -229,7 +229,7 @@
   },
   {
     "name": "Antique Plate Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Antique Plate Boots\n| image        = Antique Plate Boots.png\n| size         = \n| class        = Legs\n| protection   = 3\n| physical     = 8\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 6\n| effects      = \n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = 5\n| fireBonus      = 10\n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 195\n| set          = Antique Plate Set\n| crafting     = 1x Shield Golem Scraps <br> 200 {{s}}\n| blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 4\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100252 \n}}\nThe Antique Plate Boots are boots made from Shield Golem Scraps.",
+    "description": "blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 4\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100252 \n}}\nThe Antique Plate Boots are boots made from Shield Golem Scraps.",
     "slot": "legs",
     "resistances": {
       "physical": 8,
@@ -276,7 +276,7 @@
   },
   {
     "name": "Antique Plate Garb",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Antique Plate Garb\n| image        = Antique Plate Garb.png\n| size         = \n| class        = Body Armor\n| type         = \n| protection   = 4\n| physical     = 15\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 8\n| effects      = \n| coldresist   = 15\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = 10\n| fireBonus      = 15\n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 195\n| set          = Antique Plate Set\n| crafting     = 1x Shield Golem Scraps <br> 400 {{s}}\n| blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 8\n| buy          = 360\n| sell         = 108\n| related      = \n| object id    = 3100250 \n}}\nThe Antique Plate Garb is a chest piece made from Shield Golem Scraps.",
+    "description": "blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 8\n| buy          = 360\n| sell         = 108\n| related      = \n| object id    = 3100250 \n}}\nThe Antique Plate Garb is a chest piece made from Shield Golem Scraps.",
     "slot": "chest",
     "resistances": {
       "physical": 15,
@@ -323,7 +323,7 @@
   },
   {
     "name": "Antique Plate Sallet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Antique Plate Sallet\n| image        = Antique Plate Sallet.png\n| size         = \n| class        = Helmet\n| type         = \n| protection   = 2\n| physical     = 8\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 6\n| effects      = \n| coldresist   = 10\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = 5\n| fireBonus      = 10\n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -10\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 195\n| set          = Antique Plate Set\n| crafting     = 1x Shield Golem Scraps <br> 200 {{s}}\n| blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 3\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100251 \n}}\nThe Antique Plate Sallet is a helmet made from Shield Golem Scraps.",
+    "description": "blacksmith   = Howard Brock\n| location     = Harmattan\n| weight       = 3\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100251 \n}}\nThe Antique Plate Sallet is a helmet made from Shield Golem Scraps.",
     "slot": "head",
     "resistances": {
       "physical": 8,
@@ -560,7 +560,7 @@
   },
   {
     "name": "Barrier Armor",
-    "description": "{{Item armor\n| name         = Barrier Armor\n| image        = Barrier Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| barrier      = 5\n| statusResist = \n| physical     = 15\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 13\n| effects      = \n| coldresist   = \n| heatresist   = 6\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = 10\n| pouch        = \n| durability   = 600\n| corruptresist= \n| set          = Barrier Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 400\n| sell         = 120\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100440 \n}}\nBarrier Armor is a type of Equipment in Outward.",
+    "description": "Barrier Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 15,
@@ -598,7 +598,7 @@
   },
   {
     "name": "Barrier Boots",
-    "description": "{{Item armor\n| name         = Barrier Boots\n| image        = Barrier Boots.png\n| size         = \n| class        = Boots\n| type         = \n| protection   = \n| barrier      = 4\n| statusResist = \n| physical     = 8\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| coldresist   = \n| heatresist   = 4\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = 5\n| pouch        = \n| durability   = 600\n| corruptresist= \n| set          = Barrier Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 2\n| buy          = 250\n| sell         = 75\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100442 \n}}\nBarrier Boots is a type of Equipment in Outward.",
+    "description": "Barrier Boots is a type of Equipment in Outward.",
     "slot": "boots",
     "resistances": {
       "physical": 8,
@@ -636,7 +636,7 @@
   },
   {
     "name": "Barrier Helm",
-    "description": "{{Item armor\n| name         = Barrier Helm\n| image        = Barrier Helm.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = 4\n| statusResist = \n| physical     = 8\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| coldresist   = \n| heatresist   = 4\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = 5\n| pouch        = \n| durability   = 600\n| corruptresist= \n| set          = Barrier Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 250\n| sell         = 75\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100441 \n}}\nBarrier Helm is a type of Equipment in Outward.",
+    "description": "Barrier Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 8,
@@ -1499,7 +1499,7 @@
   },
   {
     "name": "Caged Armor Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Caged Armor Boots\n| image        = Caged Armor Boots.png\n| size         = \n| class = Boots\n| protection   = 2\n| physical     = 20\n| ethereal     = 5\n| fire         = \n| frost        = \n| lightning    = \n| decay        = 5\n| impact       = 13\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 5\n| movespeed    = 10\n| pouch        = \n| durability   = 425\n| set          = Caged Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 525\n| sell         = 157.5\n| related      = \n| object id    = 3100272 \n}}\nCaged Armor Boots is a type of Equipment in Outward.",
+    "description": "Caged Armor Boots is a type of Equipment in Outward.",
     "slot": "boots",
     "resistances": {
       "physical": 20,
@@ -1537,7 +1537,7 @@
   },
   {
     "name": "Caged Armor Chestplate",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Caged Armor Chestplate\n| image        = Caged Armor Chestplate.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 3\n| physical     = 28\n| ethereal     = 10\n| fire         = \n| frost        = \n| lightning    = \n| decay        = 10\n| impact       = 23\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 8\n| movespeed    = 5\n| pouch        = \n| durability   = 425\n| set          = Caged Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 18\n| buy          = 1050\n| sell         = 315\n| related      = \n| object id    = 3100270 \n}}\nCaged Armor Chestplate is a type of Equipment in Outward.",
+    "description": "Caged Armor Chestplate is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 28,
@@ -1575,7 +1575,7 @@
   },
   {
     "name": "Caged Armor Helm",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Caged Armor Helm\n| image        = Caged Armor Helm.png\n| size         = \n| class        = Helmet\n| type         = \n| protection   = 2\n| physical     = 20\n| ethereal     = 5\n| fire         = \n| frost        = \n| lightning    = \n| decay        = 5\n| impact       = 13\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 30\n| staminaCostReduction  = 5\n| movespeed    = 5\n| pouch        = \n| durability   = 425\n| set          = Caged Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 525\n| sell         = 157.5\n| related      = \n| object id    = 3100271 \n}}\nCaged Armor Helm is a type of Equipment in Outward.",
+    "description": "Caged Armor Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 20,
@@ -1613,7 +1613,7 @@
   },
   {
     "name": "Caldera Mail Armor",
-    "description": "{{Item armor\n| name         = Caldera Mail Armor\n| image        = Caldera Mail Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 3\n| barrier      = \n| statusResist = \n| physical     = 22\n| ethereal     = \n| fire         = \n| frost        = 14\n| lightning    = 14\n| decay        = \n| impact       = 17\n| effects      = Prevents Pain and Confusion by 50%\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 350\n| corruptresist= \n| set          = Caldera Mail Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 500\n| sell         = 150\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100450 \n}}\nCaldera Mail Armor is a type of Equipment in Outward.",
+    "description": "Caldera Mail Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 22,
@@ -1651,7 +1651,7 @@
   },
   {
     "name": "Caldera Mail Boots",
-    "description": "{{Item armor\n| name         = Caldera Mail Boots\n| image        = Caldera Mail Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 2\n| barrier      = \n| statusResist = \n| physical     = 10\n| ethereal     = \n| fire         = \n| frost        = 7\n| lightning    = 7\n| decay        = \n| impact       = 12\n| effects      = Prevents Pain and Confusion by 25%\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 350\n| corruptresist= \n| set          = Caldera Mail Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 300\n| sell         = 90\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100452 \n}}\nCaldera Mail Boots is a type of Equipment in Outward.",
+    "description": "Caldera Mail Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 10,
@@ -1689,7 +1689,7 @@
   },
   {
     "name": "Caldera Mail Helm",
-    "description": "{{Item armor\n| name         = Caldera Mail Helm\n| image        = Caldera Mail Helm.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 3\n| barrier      = \n| statusResist = \n| physical     = 11\n| ethereal     = \n| fire         = \n| frost        = 7\n| lightning    = 7\n| decay        = \n| impact       = 9\n| effects      = Prevents Pain and Confusion by 25%\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 7\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 350\n| corruptresist= \n| set          = Caldera Mail Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 3\n| buy          = 300\n| sell         = 90\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100451 \n}}\nCaldera Mail Helm is a type of Equipment in Outward.",
+    "description": "Caldera Mail Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 11,
@@ -1879,7 +1879,7 @@
   },
   {
     "name": "Chalcedony Armor",
-    "description": "{{Item armor\n| name         = Chalcedony Armor\n| image        = Chalcedony Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 6\n| barrier      = 4\n| statusResist = \n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 19\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 6\n| movespeed    = -4\n| pouch        = \n| durability   = 450\n| corruptresist= \n| set          = Chalcedony Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 21\n| buy          = 700\n| sell         = 210\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100400 \n}}\nChalcedony Armor is a type of Equipment in Outward.",
+    "description": "Chalcedony Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -1917,7 +1917,7 @@
   },
   {
     "name": "Chalcedony Boots",
-    "description": "{{Item armor\n| name         = Chalcedony Boots\n| image        = Chalcedony Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 4\n| barrier      = 2\n| statusResist = \n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 12\n| effects      = \n| coldresist   = \n| heatresist   = 10\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 4\n| movespeed    = -3\n| pouch        = \n| durability   = 450\n| corruptresist= \n| set          = Chalcedony Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 350\n| sell         = 105\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100402 \n}}\nChalcedony Boots is a type of Equipment in Outward.",
+    "description": "Chalcedony Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 14,
@@ -1955,7 +1955,7 @@
   },
   {
     "name": "Chalcedony Helmet",
-    "description": "{{Item armor\n| name         = Chalcedony Helmet\n| image        = Chalcedony Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 4\n| barrier      = 2\n| statusResist = \n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 15\n| staminaCostReduction  = 4\n| movespeed    = -3\n| pouch        = \n| durability   = 450\n| corruptresist= \n| set          = Chalcedony Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 10\n| buy          = 350\n| sell         = 105\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100401 \n}}\nChalcedony Helmet is a type of Equipment in Outward.",
+    "description": "Chalcedony Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 14,
@@ -4072,7 +4072,7 @@
   },
   {
     "name": "Horror Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Horror Armor\n| image        = Horror Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 3\n| physical     = 28\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = -5\n| decay        = \n| impact       = 23\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = 20\n| corruptresist = -5\n| manaCostReduction     = \n| staminaCostReduction  = 6\n| movespeed    = -6\n| pouch        = \n| durability   = 425\n| set          = Horror Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 18\n| buy          = 1050\n| sell         = 315\n| related      = \n| object id    = 3100230 \n}}\nHorror Armor is a type of Equipment in Outward.",
+    "description": "Horror Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 28,
@@ -4110,7 +4110,7 @@
   },
   {
     "name": "Horror Greaves",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Horror Greaves\n| image        = Horror Greaves.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 2\n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = -5\n| decay        = \n| impact       = 13\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = 10\n| manaCostReduction     = \n| staminaCostReduction  = 4\n| movespeed    = -4\n| pouch        = \n| durability   = 425\n| corruptresist= -5\n| set          = Horror Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 525\n| sell         = 157.5\n| related      = \n| object id    = 3100232 \n}}\nHorror Greaves is a type of Equipment in Outward.",
+    "description": "Horror Greaves is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 20,
@@ -4148,7 +4148,7 @@
   },
   {
     "name": "Horror Helm",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Horror Helm\n| image        = Horror Helm.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 2\n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = -5\n| decay        = \n| impact       = 13\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = 10\n| manaCostReduction     = 30\n| staminaCostReduction  = 4\n| movespeed    = -4\n| pouch        = \n| durability   = 425\n| corruptresist= -5\n| set          = Horror Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 525\n| sell         = 157.5\n| related      = \n| object id    = 3100231 \n}}\nHorror Helm is a type of Equipment in Outward.",
+    "description": "Horror Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 20,
@@ -4604,7 +4604,7 @@
   },
   {
     "name": "Kazite Light Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Kazite Light Armor\n| image        = Kazite Light Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| physical     = 16\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 12\n| effects      = \n| cooldown = 4\n| coldresist   = 10\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 240\n| corruptresist= \n| set          = Kazite Light Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 6\n| buy          = 275\n| sell         = 82.5\n| related      = \n| object id    = 3100240 \n}}\nKazite Light Armor is a type of Equipment in Outward.",
+    "description": "Kazite Light Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 16,
@@ -4642,7 +4642,7 @@
   },
   {
     "name": "Kazite Light Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Kazite Light Boots\n| image        = Kazite Light Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = \n| physical     = 10\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 8\n| effects      = \n| cooldown = 3\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 240\n| corruptresist= \n| set          = Kazite Light Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 150\n| sell         = 45\n| related      = \n| object id    = 3100242 \n}}\nKazite Light Boots is a type of Equipment in Outward.",
+    "description": "Kazite Light Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 10,
@@ -4680,7 +4680,7 @@
   },
   {
     "name": "Kazite Light Helmet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Kazite Light Helmet\n| image        = Kazite Light Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| physical     = 10\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 8\n| effects      = \n| cooldown = 3\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 15\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 240\n| corruptresist= \n| set          = Kazite Light Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 3\n| buy          = 150\n| sell         = 45\n| related      = \n| object id    = 3100241 \n}}\nKazite Light Helmet is a type of Equipment in Outward.",
+    "description": "Kazite Light Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 10,
@@ -4908,7 +4908,7 @@
   },
   {
     "name": "Krypteia Armor",
-    "description": "{{Item armor\n| name         = Krypteia Armor\n| image        = Krypteia Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 25\n| ethereal     = 13\n| fire         = 13\n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = Prevents Mild Petrification and Holy Blaze\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = 14\n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Krypteia Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 675\n| sell         = 202.5\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100470 \n}}\nKrypteia Armor is a type of Equipment in Outward.",
+    "description": "Krypteia Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 25,
@@ -4946,7 +4946,7 @@
   },
   {
     "name": "Krypteia Boots",
-    "description": "{{Item armor\n| name         = Krypteia Boots\n| image        = Krypteia Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 16\n| ethereal     = 6\n| fire         = 6\n| frost        = \n| lightning    = \n| decay        = \n| impact       = 8\n| effects      = Prevents Blaze\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = 7\n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Krypteia Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 375\n| sell         = 112\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100472 \n}}\nKrypteia Boots is a type of Equipment in Outward.",
+    "description": "Krypteia Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 16,
@@ -4984,7 +4984,7 @@
   },
   {
     "name": "Krypteia Mask",
-    "description": "{{Item armor\n| name         = Krypteia Mask\n| image        = Krypteia Mask.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 16\n| ethereal     = 6\n| fire         = 6\n| frost        = \n| lightning    = \n| decay        = \n| impact       = 8\n| effects      = Prevents Plague\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = 7\n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Krypteia Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 3\n| buy          = 375\n| sell         = 112\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100471 \n}}\nKrypteia Mask is a type of Equipment in Outward.",
+    "description": "Krypteia Mask is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 16,
@@ -5022,7 +5022,7 @@
   },
   {
     "name": "Light Kazite Shirt",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Light Kazite Shirt\n| image        = Light Kazite Shirt.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| physical     = 16\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 12\n| effects      = \n| cooldown = 4\n| coldresist   = \n| heatresist   = 10\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 240\n| corruptresist= \n| set          = Kazite Light Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 6\n| buy          = 275\n| sell         = 82.5\n| related      = \n| object id    = 3100246 \n}}\nLight Kazite Shirt is a type of Equipment in Outward.",
+    "description": "Light Kazite Shirt is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 16,
@@ -5250,7 +5250,7 @@
   },
   {
     "name": "Manawall Armor",
-    "description": "{{Item armor\n| name         = Manawall Armor\n| image        = Manawall Armor.png\n| size         = \n| class        =Chest\n| type         = \n| protection   = 4\n| barrier      = 5\n| statusResist = \n| physical     = 15\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 13\n| effects      = \n| coldresist   = \n| heatresist   = 6\n| physicalBonus  = \n| etherealBonus  = 10\n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = 10\n| pouch        = \n| durability   = 600\n| corruptresist= \n| set          = Manawall Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 525\n| sell         = 157.5\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100445 \n}}\nManawall Armor is a type of Equipment in Outward.",
+    "description": "Manawall Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 15,
@@ -5288,7 +5288,7 @@
   },
   {
     "name": "Manawall Boots",
-    "description": "{{Item armor\n| name         = Manawall Boots\n| image        = Manawall Boots.png\n| size         = \n| class        = Boots\n| type         = \n| protection   = 3\n| barrier      = 4\n| statusResist = \n| physical     = 8\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| coldresist   = \n| heatresist   = 4\n| physicalBonus  = \n| etherealBonus  = 10\n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = 5\n| pouch        = \n| durability   = 600\n| corruptresist= \n| set          = Manawall Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 2\n| buy          = 300\n| sell         = 90\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100447 \n}}\nManawall Boots is a type of Equipment in Outward.",
+    "description": "Manawall Boots is a type of Equipment in Outward.",
     "slot": "boots",
     "resistances": {
       "physical": 8,
@@ -5326,7 +5326,7 @@
   },
   {
     "name": "Manawall Helm",
-    "description": "{{Item armor\n| name         = Manawall Helm\n| image        = Manawall Helm.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 3\n| barrier      = 4\n| statusResist = \n| physical     = 8\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| coldresist   = \n| heatresist   = 4\n| physicalBonus  = \n| etherealBonus  = 10\n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = 5\n| pouch        = \n| durability   = 600\n| corruptresist= \n| set          = Manawall Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 300\n| sell         = 90\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100446 \n}}\nManawall Helm is a type of Equipment in Outward.",
+    "description": "Manawall Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 8,
@@ -5896,7 +5896,7 @@
   },
   {
     "name": "Militia Armor",
-    "description": "{{Item armor\n| name         = Militia Armor\n| image        = Militia Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 2\n| barrier      = \n| statusResist = \n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 14\n| effects      = Prevents Burning\n| coldresist   = \n| heatresist   = 10\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 3\n| movespeed    = -3\n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Militia Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 550\n| sell         = 165\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100460 \n}}\nMilitia Armor is a type of Equipment in Outward.",
+    "description": "Militia Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -5934,7 +5934,7 @@
   },
   {
     "name": "Militia Boots",
-    "description": "{{Item armor\n| name         = Militia Boots\n| image        = Militia Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 1\n| barrier      = \n| statusResist = \n| physical     = 13\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = Prevents Hampered\n| coldresist   = \n| heatresist   = 5\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Militia Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 300\n| sell         = 90\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100462 \n}}\nMilitia Boots is a type of Equipment in Outward.",
+    "description": "Militia Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 13,
@@ -5972,7 +5972,7 @@
   },
   {
     "name": "Militia Helm",
-    "description": "{{Item armor\n| name         = Militia Helm\n| image        = Militia Helm.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| barrier      = \n| statusResist = \n| physical     = 13\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = Prevents Confusion\n| coldresist   = \n| heatresist   = 5\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Militia Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 300\n| sell         = 90\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100461 \n}}\nMilitia Helm is a type of Equipment in Outward.",
+    "description": "Militia Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 13,
@@ -6010,7 +6010,7 @@
   },
   {
     "name": "Miner Armor",
-    "description": "{{Item armor\n| name         = Miner Armor\n| image        = Miner Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 10\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 11\n| effects      = Prevents Burning\n| coldresist   = \n| heatresist   = 10\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 120\n| corruptresist= \n| set          = Miner Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 17\n| sell         = 5.1\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100420 \n}}\nMiner Armor is a type of Equipment in Outward.",
+    "description": "Miner Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 10,
@@ -6048,7 +6048,7 @@
   },
   {
     "name": "Miner Boots",
-    "description": "{{Item armor\n| name         = Miner Boots\n| image        = Miner Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 5\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 7\n| effects      = Prevents Hampered.\n| coldresist   = \n| heatresist   = 5\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 120\n| corruptresist= \n| set          = Miner Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 2\n| buy          = 10\n| sell         = 3\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100422 \n}}\nMiner Boots is a type of Equipment in Outward.",
+    "description": "Miner Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 5,
@@ -6086,7 +6086,7 @@
   },
   {
     "name": "Miner Helmet",
-    "description": "{{Item armor\n| name         = Miner Helmet\n| image        = Miner Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 5\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 3\n| effects      = Prevents Confusion\n| coldresist   = \n| heatresist   = 5\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 120\n| corruptresist= \n| set          = Miner Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 10\n| sell         = 3\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100421 \n}}\nMiner Helmet is a type of Equipment in Outward.",
+    "description": "Miner Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 5,
@@ -6124,7 +6124,7 @@
   },
   {
     "name": "Noble Clothes",
-    "description": "{{Item armor\n| name         = Noble Clothes\n| image        = Noble Clothes.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 9\n| ethereal     = 20\n| fire         = 10\n| frost        = \n| lightning    = \n| decay        = 20\n| impact       = 5\n| effects      = \n| coldresist   = \n| heatresist   = 7\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -10\n| staminaCostReduction  = \n| movespeed    = 5\n| pouch        = \n| durability   = 250\n| corruptresist= \n| set          = Noble Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 400\n| sell         = 120\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100430 \n}}\nNoble Clothes is a type of Equipment in Outward.",
+    "description": "Noble Clothes is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 9,
@@ -6162,7 +6162,7 @@
   },
   {
     "name": "Noble Mask",
-    "description": "{{Item armor\n| name         = Noble Mask\n| image        = Noble Mask.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 4\n| ethereal     = 20\n| fire         = 10\n| frost        = \n| lightning    = \n| decay        = 10\n| impact       = 3\n| effects      = \n| coldresist   = \n| heatresist   = 4\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 250\n| corruptresist= \n| set          = Noble Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 250\n| sell         = 75\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100431 \n}}\nNoble Mask is a type of Equipment in Outward.",
+    "description": "Noble Mask is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 4,
@@ -6200,7 +6200,7 @@
   },
   {
     "name": "Noble Shoes",
-    "description": "{{Item armor\n| name         = Noble Shoes\n| image        = Noble Shoes.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = \n| barrier      = \n| statusResist = \n| physical     = 4\n| ethereal     = 10\n| fire         = 20\n| frost        = \n| lightning    = \n| decay        = 10\n| impact       = 3\n| effects      = \n| coldresist   = \n| heatresist   = 4\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = \n| movespeed    = 10\n| pouch        = \n| durability   = 250\n| corruptresist= \n| set          = Noble Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 2\n| buy          = 250\n| sell         = 75\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100432 \n}}\nNoble Shoes is a type of Equipment in Outward.",
+    "description": "Noble Shoes is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 4,
@@ -7812,7 +7812,7 @@
   },
   {
     "name": "Rust Lich Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Rust Lich Armor\n| image        = Rust Lich Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 2\n| physical     = 22\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 16\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = -30\n| etherealBonus  = \n| fireBonus      = 25\n| frostBonus     = \n| lightningBonus = \n| decayBonus     = 25\n| manaCostReduction     = -15\n| staminaCostReduction  = 3\n| movespeed    = -3\n| pouch        = \n| durability   = 340\n| corruptresist= \n| set          = Rust Lich Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 825\n| sell         = 247.5\n| related      = \n| object id    = 3000360 \n}}\nRust Lich Armor is a type of Equipment in Outward.",
+    "description": "Rust Lich Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 22,
@@ -7850,7 +7850,7 @@
   },
   {
     "name": "Rust Lich Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Rust Lich Boots\n| image        = Rust Lich Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 1\n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = -30\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = 25\n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -15\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 340\n| corruptresist= \n| set          = Rust Lich Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 450\n| sell         = 135\n| related      = \n| object id    = 3000362 \n}}\nRust Lich Boots is a type of Equipment in Outward.",
+    "description": "Rust Lich Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 14,
@@ -7888,7 +7888,7 @@
   },
   {
     "name": "Rust Lich Helmet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Rust Lich Helmet\n| image        = Rust Lich Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = -30\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = 25\n| decayBonus     = \n| manaCostReduction     = -15\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 340\n| corruptresist= \n| set          = Rust Lich Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 450\n| sell         = 135\n| related      = \n| object id    = 3000361 \n}}\nRust Lich Helmet is a type of Equipment in Outward.",
+    "description": "Rust Lich Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 14,
@@ -8116,7 +8116,7 @@
   },
   {
     "name": "Scarlet Boots",
-    "description": "{{Item armor\n| name         = Scarlet Boots\n| image        = Scarlet Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = \n| barrier      = \n| statusResist = -10\n| physical     = 4\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 4\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = 15\n| frostBonus     = \n| lightningBonus = 15\n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 290\n| corruptresist= \n| set          = Scarlet Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 2\n| buy          = 525\n| sell         = 157\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100482 \n}}\nScarlet Boots is a type of Equipment in Outward.",
+    "description": "Scarlet Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 4,
@@ -8154,7 +8154,7 @@
   },
   {
     "name": "Scarlet Mask",
-    "description": "{{Item armor\n| name         = Scarlet Mask\n| image        = Scarlet Mask.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = -10\n| physical     = 4\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 4\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = 15\n| fireBonus      = 15\n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 290\n| corruptresist= \n| set          = Scarlet Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 500\n| sell         = 150\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100481 \n}}\nScarlet Mask is a type of Equipment in Outward.",
+    "description": "Scarlet Mask is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 4,
@@ -8192,7 +8192,7 @@
   },
   {
     "name": "Scarlet Robes",
-    "description": "{{Item armor\n| name         = Scarlet Robes\n| image        = Scarlet Robes.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| barrier      = \n| statusResist = -15\n| physical     = 10\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 5\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = 15\n| frostBonus     = 15\n| lightningBonus = \n| decayBonus     = 15\n| manaCostReduction     = -20\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 290\n| corruptresist= \n| set          = Scarlet Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 1050\n| sell         = 315\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100480 \n}}\nScarlet Robes is a type of Equipment in Outward.",
+    "description": "Scarlet Robes is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 10,
@@ -8534,7 +8534,7 @@
   },
   {
     "name": "Shadow Kazite Light Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Shadow Kazite Light Armor\n| image        = Shadow Kazite Light Armor.png\n| size         = \n| class        = Body Armor\n| type         = \n| protection   = 2\n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 14\n| effects      = \n| cooldown = 10\n| coldresist   = 12\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set = Shadow Kazite Set\n| weight       = 6\n| buy          = 550\n| sell         = 165\n| related      = \n| object id    = 3100243 \n}}\nShadow Kazite Light Armor is a type of Equipment in Outward.",
+    "description": "Shadow Kazite Light Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -8572,7 +8572,7 @@
   },
   {
     "name": "Shadow Kazite Light Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Shadow Kazite Light Boots\n| image        = Shadow Kazite Light Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 1\n| physical     = 13\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| cooldown = 5\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Shadow Kazite Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100245 \n}}\nShadow Kazite Light Boots is a type of Equipment in Outward.",
+    "description": "Shadow Kazite Light Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 13,
@@ -8610,7 +8610,7 @@
   },
   {
     "name": "Shadow Kazite Light Helmet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Shadow Kazite Light Helmet\n| image        = Shadow Kazite Light Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| physical     = 13\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| cooldown = 5\n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 15\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Shadow Kazite Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 3\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100244 \n}}\nShadow Kazite Light Helmet is a type of Equipment in Outward.",
+    "description": "Shadow Kazite Light Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 13,
@@ -8648,7 +8648,7 @@
   },
   {
     "name": "Shadow Light Kazite Shirt",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Shadow Light Kazite Shirt\n| image        = Shadow Light Kazite Shirt.png\n| size         = \n| class        = Body Armor\n| type         = \n| protection   = 2\n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 14\n| effects      = \n| cooldown = 10\n| coldresist   = \n| heatresist   = 12\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Shadow Kazite Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 6\n| buy          = 550\n| sell         = 165\n| related      = \n| object id    = 3100247 \n}}\nShadow Light Kazite Shirt is a type of Equipment in Outward.",
+    "description": "Shadow Light Kazite Shirt is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -8952,7 +8952,7 @@
   },
   {
     "name": "Slayer's Armor",
-    "description": "{{Item armor\n| name         = Slayer's Armor\n| image        = Slayer's Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = \n| barrier      = \n| statusResist = 20\n| physical     = 22\n| ethereal     = \n| fire         = 10\n| frost        = 10\n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = \n| coldresist   = 8\n| heatresist   = 8\n| physicalBonus  = 12\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 250\n| corruptresist= \n| set          = Slayer's Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 450\n| sell         = 135\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100410 \n}}\nSlayer's Armor is a type of Equipment in Outward.",
+    "description": "Slayer's Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 22,
@@ -8990,7 +8990,7 @@
   },
   {
     "name": "Slayer's Boots",
-    "description": "{{Item armor\n| name         = Slayer's Boots\n| image        = Slayer's Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = \n| barrier      = \n| statusResist = 15\n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = 10\n| decay        = \n| impact       = 7\n| effects      = \n| coldresist   = 4\n| heatresist   = 4\n| physicalBonus  = 7\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 250\n| corruptresist= \n| set          = Slayer's Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 250\n| sell         = 75\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100412 \n}}\nSlayer's Boots is a type of Equipment in Outward.",
+    "description": "Slayer's Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 14,
@@ -9028,7 +9028,7 @@
   },
   {
     "name": "Slayer's Helmet",
-    "description": "{{Item armor\n| name         = Slayer's Helmet\n| image        = Slayer's Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = \n| barrier      = \n| statusResist = 15\n| physical     = 16\n| ethereal     = \n| fire         = 5\n| frost        = 5\n| lightning    = \n| decay        = \n| impact       = 7\n| effects      = \n| coldresist   = 4\n| heatresist   = 4\n| physicalBonus  = 7\n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 250\n| corruptresist= \n| set          = Slayer's Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 3\n| buy          = 250\n| sell         = 75\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100411 \n}}\nSlayer's Helmet is a type of Equipment in Outward.",
+    "description": "Slayer's Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 16,
@@ -9745,7 +9745,7 @@
   },
   {
     "name": "Vigilante Armor",
-    "description": "{{Item armor\n| name         = Vigilante Armor\n| image        = Vigilante Armor.png\n| size         = \n| class        = Chest\n| type         = \n| protection   = 2\n| barrier      = \n| statusResist = \n| physical     = 22\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 16\n| effects      = Prevents Burning\n| coldresist   = \n| heatresist   = 10\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 7\n| movespeed    = -3\n| pouch        = \n| durability   = 340\n| corruptresist= \n| set          = Vigilante Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 600\n| sell         = 180\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100465 \n}}\nVigilante Armor is a type of Equipment in Outward.",
+    "description": "Vigilante Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 22,
@@ -9783,7 +9783,7 @@
   },
   {
     "name": "Vigilante Boots",
-    "description": "{{Item armor\n| name         = Vigilante Boots\n| image        = Vigilante Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 1\n| barrier      = \n| statusResist = \n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = Prevents Hampered\n| coldresist   = \n| heatresist   = 5\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 5\n| movespeed    = -2\n| pouch        = \n| durability   = 340\n| corruptresist= \n| set          = Vigilante Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 450\n| sell         = 135\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100467 \n}}\nVigilante Boots is a type of Equipment in Outward.",
+    "description": "Vigilante Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 14,
@@ -9821,7 +9821,7 @@
   },
   {
     "name": "Vigilante Helm",
-    "description": "{{Item armor\n| name         = Vigilante Helm\n| image        = Vigilante Helm.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| barrier      = \n| statusResist = \n| physical     = 14\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = Prevents Confusion\n| coldresist   = \n| heatresist   = 5\n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = 5\n| staminaCostReduction  = 5\n| movespeed    = -2\n| pouch        = \n| durability   = 340\n| corruptresist= \n| set          = Vigilante Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 450\n| sell         = 135\n| related      = \n| DLC = The Three Brothers\n| object id    = 3100466 \n}}\nVigilante Helm is a type of Equipment in Outward.",
+    "description": "Vigilante Helm is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 14,
@@ -9859,7 +9859,7 @@
   },
   {
     "name": "Virgin Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Virgin Armor\n| image        = Virgin Armor.png\n| size         = \n| class        = Body Armor\n| type         = \n| protection   = 2\n| physical     = 18\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 16\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = \n| movespeed    = -3\n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Virgin Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 550\n| sell         = 165\n| related      = \n| object id    = 3100260 \n}}\nVirgin Armor is a type of Equipment in Outward.",
+    "description": "Virgin Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 18,
@@ -9897,7 +9897,7 @@
   },
   {
     "name": "Virgin Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Virgin Boots\n| image        = Virgin Boots.png\n| size         = \n| class        = Boots\n| type         = \n| protection   = 1\n| physical     = 12\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 2\n| movespeed    = \n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Virgin Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100262 \n}}\nVirgin Boots is a type of Equipment in Outward.",
+    "description": "Virgin Boots is a type of Equipment in Outward.",
     "slot": "boots",
     "resistances": {
       "physical": 12,
@@ -9935,7 +9935,7 @@
   },
   {
     "name": "Virgin Helmet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Virgin Helmet\n| image        = Virgin Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| physical     = 12\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 10\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = \n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= \n| set          = Virgin Set \n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100261 \n}}\nVirgin Helmet is a type of Equipment in Outward.",
+    "description": "Virgin Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 12,
@@ -10429,7 +10429,7 @@
   },
   {
     "name": "Wolf Mage Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Wolf Mage Armor\n| image        = Wolf Mage Armor.png\n| size         = \n| class        = Body Armor\n| type         = \n| protection   = 1\n| physical     = 9\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 20\n| effects      = \n| coldresist   = 10\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = 5\n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -10\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 225\n| corruptresist= \n| set          = Wolf Mage Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 4\n| buy          = 350\n| sell         = 105\n| related      = \n| object id    = 3100210 \n}}\nWolf Mage Armor is a type of Equipment in Outward.",
+    "description": "Wolf Mage Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 9,
@@ -10467,7 +10467,7 @@
   },
   {
     "name": "Wolf Mage Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Wolf Mage Boots\n| image        = Wolf Mage Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 1\n| physical     = 4\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 11\n| effects      = \n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -10\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 225\n| corruptresist= \n| set          =  Wolf Mage Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 2\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100212 \n}}\nWolf Mage Boots is a type of Equipment in Outward.",
+    "description": "Wolf Mage Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 4,
@@ -10505,7 +10505,7 @@
   },
   {
     "name": "Wolf Mage Helmet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Wolf Mage Helmet\n| image        = Wolf Mage Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| physical     = 4\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 11\n| effects      = \n| coldresist   = \n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -10\n| staminaCostReduction  = \n| movespeed    = \n| pouch        = \n| durability   = 225\n| corruptresist= 10\n| set          = Wolf Mage Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 1\n| buy          = 200\n| sell         = 60\n| related      = \n| object id    = 3100211 \n}}\nWolf Mage Helmet is a type of Equipment in Outward.",
+    "description": "Wolf Mage Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 4,
@@ -10543,7 +10543,7 @@
   },
   {
     "name": "Wolf Medic Armor",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Wolf Medic Armor\n| image        = Wolf Medic Armor.png\n| size         = \n| class        = Body Armor\n| type         = \n| protection   = 2\n| physical     = 20\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 14\n| effects      = Recover +0.1 {{health}} Health per second\n| coldresist   = 10\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 3\n| movespeed    = -3\n| pouch        = \n| durability   = 300\n| corruptresist= 16\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 550\n| sell         = 165\n| related      = \n| object id    = 3100220 \n}}\nWolf Medic Armor is a type of Equipment in Outward.",
+    "description": "Health per second\n| coldresist   = 10\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 3\n| movespeed    = -3\n| pouch        = \n| durability   = 300\n| corruptresist= 16\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 12\n| buy          = 550\n| sell         = 165\n| related      = \n| object id    = 3100220 \n}}\nWolf Medic Armor is a type of Equipment in Outward.",
     "slot": "chest",
     "resistances": {
       "physical": 20,
@@ -10581,7 +10581,7 @@
   },
   {
     "name": "Wolf Medic Boots",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Wolf Medic Boots\n| image        = Wolf Medic Boots.png\n| size         = \n| class        = Legs\n| type         = \n| protection   = 1\n| physical     = 13\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = Recover +0.05 {{health}} Health per second\n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= 7\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100222 \n}}\nWolf Medic Boots is a type of Equipment in Outward.",
+    "description": "Health per second\n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= 7\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 8\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100222 \n}}\nWolf Medic Boots is a type of Equipment in Outward.",
     "slot": "legs",
     "resistances": {
       "physical": 13,
@@ -10619,7 +10619,7 @@
   },
   {
     "name": "Wolf Medic Helmet",
-    "description": "{{Item armor\n|DLC = The Soroboreans\n| name         = Wolf Medic Helmet\n| image        = Wolf Medic Helmet.png\n| size         = \n| class        = Head\n| type         = \n| protection   = 1\n| physical     = 13\n| ethereal     = \n| fire         = \n| frost        = \n| lightning    = \n| decay        = \n| impact       = 9\n| effects      = Recover +0.05 {{health}} Health per second\n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= 7\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100221 \n}}\nWolf Medic Helmet is a type of Equipment in Outward.",
+    "description": "Health per second\n| coldresist   = 5\n| heatresist   = \n| physicalBonus  = \n| etherealBonus  = \n| fireBonus      = \n| frostBonus     = \n| lightningBonus = \n| decayBonus     = \n| manaCostReduction     = -5\n| staminaCostReduction  = 2\n| movespeed    = -2\n| pouch        = \n| durability   = 300\n| corruptresist= 7\n| set          = Wolf Medic Set\n| crafting     = \n| blacksmith   = \n| location     = \n| weight       = 5\n| buy          = 300\n| sell         = 90\n| related      = \n| object id    = 3100221 \n}}\nWolf Medic Helmet is a type of Equipment in Outward.",
     "slot": "head",
     "resistances": {
       "physical": 13,
