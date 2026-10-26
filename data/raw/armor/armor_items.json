@@ -996,7 +996,9 @@
     "image_local": "assets/images/armor/armor_Black_Pearlbird_Mask.png",
     "special_effects": [
       "+17% Move Speed"
-    ]
+    ],
+    "legacy_upgrade_from": "Pearlbird Mask",
+    "legacy_upgrade_to": "Jewel Bird Mask"
   },
   {
     "name": "Black Plate Armor",
@@ -4927,7 +4929,8 @@
     "image_local": "assets/images/armor/armor_Jewel_Bird_Mask.png",
     "special_effects": [
       "+19% Move Speed"
-    ]
+    ],
+    "legacy_upgrade_from": "Black Pearlbird Mask"
   },
   {
     "name": "Kazite Armor",
@@ -7673,7 +7676,8 @@
     "image_local": "assets/images/armor/armor_Pearlbird_Mask.png",
     "special_effects": [
       "+15% Move Speed"
-    ]
+    ],
+    "legacy_upgrade_to": "Black Pearlbird Mask"
   },
   {
     "name": "Pearlescent Mail",
