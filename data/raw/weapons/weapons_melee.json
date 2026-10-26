@@ -13553,6 +13553,75 @@
       "source_category": "skill_summon",
       "dlc": "",
       "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png"
+    },
+    {
+      "name": "Ice-Flame Torch",
+      "weapon_type": "torch",
+      "handedness": "off_handed",
+      "description": "Alchemical torch that cools the wielder even in sweltering temperatures. Provides light when held in off-hand.",
+      "special_effects": [
+        "Lowers Temperature by 1 stage",
+        "Decreases temperature delta by -14",
+        "Provides light",
+        "Must be held in off-hand"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 0
+        },
+        "impact": 0,
+        "attack_speed": 1.0,
+        "stamina_cost": 0
+      },
+      "durability": 500,
+      "weight": 0.4,
+      "buy": 20,
+      "sell": 6,
+      "crafting_recipe": {
+        "ingredients": [
+          "Makeshift Torch",
+          "Cold Stone",
+          "Iron Scrap"
+        ],
+        "station": "Alchemy Kit"
+      },
+      "source_category": "craftable",
+      "dlc": "",
+      "local_image": "assets/images/weapons/weapon_Ice-Flame_Torch.png"
+    },
+    {
+      "name": "Makeshift Torch",
+      "weapon_type": "torch",
+      "handedness": "off_handed",
+      "description": "Torch that shines weakly, held in the off hand. It burns out quickly, but warms up the wielder.",
+      "special_effects": [
+        "Raises Temperature by 1 stage",
+        "Increases temperature delta by +14",
+        "Provides light",
+        "Must be held in off-hand"
+      ],
+      "damage_stats": {
+        "base_damage": {
+          "physical": 0
+        },
+        "impact": 0,
+        "attack_speed": 1.0,
+        "stamina_cost": 0
+      },
+      "durability": 100,
+      "weight": 0.4,
+      "buy": 0,
+      "sell": 0,
+      "crafting_recipe": {
+        "ingredients": [
+          "Wood",
+          "Linen Cloth"
+        ],
+        "station": "Crafting"
+      },
+      "source_category": "craftable",
+      "dlc": "",
+      "local_image": "assets/images/weapons/weapon_Makeshift_Torch.png"
     }
   ]
 }
