@@ -383,9 +383,12 @@ function cleanDesc(text){
   text=text.replace(/File:[^\s|]+/g,'');
   // Remove wiki brackets
   text=text.replace(/\[\[|\]\]/g,'');
-  // Remove wiki template artifacts: } | key = value patterns (single or double })
-  text=text.replace(/\s*\}*\s*\|\s*\w+\s*=.*$/g,'');
-  // Remove trailing }} or {{
+  // Remove wiki template artifacts: find first } followed by | and remove everything from there
+  var templateMatch=text.match(/\}\s*\|/);
+  if(templateMatch){
+    text=text.substring(0,templateMatch.index);
+  }
+  // Also remove trailing }} or {{
   text=text.replace(/\s*\}\}\s*$/g,'');
   text=text.replace(/\s*\{\{\s*$/g,'');
   // Remove object id
