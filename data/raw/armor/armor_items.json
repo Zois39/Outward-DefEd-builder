@@ -12222,7 +12222,8 @@
     "description": "Increases your Physical Damage by 15%.\nDoes not impede rolling.",
     "local_image": "assets/images/armor/armor_Brigand's_Backpack.png",
     "special_effects": [
-      "No dodge interference, Cannot attach lanterns",
+      "No dodge interference",
+      "Cannot attach lanterns",
       "70 Capacity"
     ]
   },
@@ -12235,7 +12236,7 @@
     "description": "Provides 15 resistance to heat when worn.",
     "local_image": "assets/images/armor/armor_Chalcedony_Backpack.png",
     "special_effects": [
-      "+15 [[Weather",
+      "+15 Weather Resistance",
       "80 Capacity"
     ]
   },
@@ -12263,16 +12264,6 @@
       "Acts as a light source",
       "75 Capacity"
     ]
-  },
-  {
-    "name": "Large Chalcedony Stone",
-    "slot": "backpack",
-    "weight": 150.0,
-    "buy": 50,
-    "sell": 15,
-    "description": "Must be charged in the depths of a Volcano's basin. It's too heavy to carry inside another backpack!",
-    "local_image": "assets/images/armor/armor_Large_Chalcedony_Stone.png",
-    "special_effects": []
   },
   {
     "name": "Light Mender's Backpack",
@@ -12422,7 +12413,9 @@
     "sell": 90,
     "local_image": "assets/images/armor/armor_Coil_Lantern.png",
     "special_effects": [
-      "Provides light"
+      "Provides light",
+      "Requires Power Coil to recharge",
+      "Cannot be refueled with oil"
     ]
   },
   {
@@ -12434,7 +12427,9 @@
     "description": "When held in hand, helps protect the wielder from Status Ailments. Can be refilled with thick oil.",
     "local_image": "assets/images/armor/armor_Djinn's_Lamp.png",
     "special_effects": [
-      "+15 Status Resistance"
+      "Provides light",
+      "No fuel required",
+      "Cannot be extinguished"
     ]
   },
   {
@@ -12446,7 +12441,8 @@
     "description": "Oil Lantern that shines brightly.",
     "local_image": "assets/images/armor/armor_Explorer_Lantern.png",
     "special_effects": [
-      "Provides light"
+      "Provides light",
+      "Requires Oil to refuel"
     ]
   },
   {
@@ -12457,7 +12453,12 @@
     "sell": 0,
     "local_image": "assets/images/armor/armor_Lantern_of_Souls.png",
     "special_effects": [
-      "20 resistance, 10 resistance, 10 resistance, 10 resistance, 10 resistance"
+      "Provides light",
+      "+20 Ethereal Resistance",
+      "+10 Fire Resistance",
+      "+10 Frost Resistance",
+      "+10 Lightning Resistance",
+      "+10 Decay Resistance"
     ]
   },
   {
@@ -12468,7 +12469,8 @@
     "sell": 4,
     "local_image": "assets/images/armor/armor_Old_Lantern.png",
     "special_effects": [
-      "Provides light"
+      "Provides light",
+      "Requires Oil to refuel"
     ]
   },
   {
@@ -12481,7 +12483,9 @@
     "description": "A mage's enchantable lantern.",
     "local_image": "assets/images/armor/armor_Virgin_Lantern.png",
     "special_effects": [
-      "Passively regains Fuel over time when [[Enchantments"
+      "Provides light",
+      "Passively regains Fuel over time",
+      "Requires no fuel"
     ]
   }
 ]
