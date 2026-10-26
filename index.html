@@ -365,20 +365,38 @@ function escHtml(s){
 function cleanDesc(text){
   if(!text)return '';
   text=String(text);
+  // Remove HTML tags including unclosed
   text=text.replace(/<[^>]*>?/g,'');
+  // Remove JavaScript keywords
   text=text.replace(/\b(function|var|let|const|return|if|else|for|while|new|typeof)\b/gi,'');
+  // Remove JSON objects
   text=text.replace(/\{[^}]*\}/g,'');
+  // Remove CSS properties
   text=text.replace(/\w+\s*:\s*[^;{}]+;?/g,'');
+  // Remove file references
   text=text.replace(/\S+\.(png|jpg|jpeg|gif|svg|json|html|css|js|ts|tsx|jsx)/gi,'');
+  // Remove URLs
   text=text.replace(/https?:\/\/\S+/g,'');
+  // Remove wiki domain references
   text=text.replace(/outward\.wiki\.gg\S*/g,'');
+  // Remove File: references
   text=text.replace(/File:[^\s|]+/g,'');
+  // Remove wiki brackets
   text=text.replace(/\[\[|\]\]/g,'');
+  // Remove wiki template artifacts: everything from }} to end
+  text=text.replace(/\s*\}\}.*$/g,'');
+  // Remove pipe-separated key-value pairs at end
+  text=text.replace(/\s*\|\s*\w+\s*=.*$/g,'');
+  // Remove trailing {{ or }}
+  text=text.replace(/\s*\{\{\s*$/g,'');
+  // Remove object id
+  text=text.replace(/object\s+id\s*=\s*\d+/gi,'');
+  // Clean up extra whitespace
   text=text.replace(/\s+/g,' ').trim();
+  // Remove leading/trailing punctuation artifacts
   text=text.replace(/^[\s,;:|\-]+|[\s,;:|\-]+$/g,'');
   return text;
-}
-function loadData(){
+}function loadData(){
   hideError();
   setProgress(5,'Loading skills...');
   Promise.all([fetchJSON('skills/skills_tier1.json'),fetchJSON('skills/skills_tier2.json'),fetchJSON('skills/skills_tier3.json'),fetchJSON('skills/skills_special.json'),fetchJSON('skills/classes.json')]).then(function(r){
