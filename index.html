@@ -182,8 +182,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 (function(){
 'use strict';
 
-var DATA_BASE='https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/data/raw/';
-var IMG_BASE='https://raw.githubusercontent.com/Zois39/Outward-DefEd-builder/main/';
+var DATA_BASE='https://zois39.github.io/Outward-DefEd-builder/data/raw/';
+var IMG_BASE='https://zois39.github.io/Outward-DefEd-builder/';
 
 function fetchJSON(p){return fetch(DATA_BASE+p).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})}
 function imgSrc(p){return p?IMG_BASE+p:null}
