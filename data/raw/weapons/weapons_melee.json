@@ -9717,16 +9717,17 @@
       "source_category": "runic_summon",
       "summon_requirements": [
         {
-          "rune": "Rune of the Runic Blade",
-          "image": "assets/images/skills/skill_Rune_of_the_Runic_Blade.png"
+          "rune": "Shim",
+          "image": "assets/images/skills/skill_Shim.png"
         },
         {
-          "runic": "Runic Magic",
-          "image": "assets/images/skills/skill_Runic_Magic.png"
+          "rune": "Egoth",
+          "image": "assets/images/skills/skill_Egoth.png"
         }
       ],
       "dlc": "",
-      "local_image": "assets/images/weapons/weapon_Runic_Blade.png"
+      "local_image": "assets/images/weapons/weapon_Runic_Blade.png",
+      "rune_combination": "Shim + Egoth"
     },
     {
       "name": "Rusted Spear",
@@ -13547,16 +13548,22 @@
       "source_category": "runic_summon",
       "summon_requirements": [
         {
-          "rune": "Rune of the Great Runic Blade",
-          "image": "assets/images/skills/skill_Rune_of_the_Great_Runic_Blade.png"
+          "rune": "Runic Blade",
+          "image": "assets/images/skills/skill_Runic_Blade.png"
         },
         {
-          "rune": "Runic Magic",
-          "image": "assets/images/skills/skill_Runic_Magic.png"
+          "rune": "Shim",
+          "image": "assets/images/skills/skill_Shim.png"
+        },
+        {
+          "rune": "Egoth",
+          "image": "assets/images/skills/skill_Egoth.png"
         }
       ],
       "dlc": "",
-      "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png"
+      "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png",
+      "rune_combination": "Runic Blade + Shim + Egoth",
+      "prerequisite": "Arcane Syntax"
     },
     {
       "name": "Ice-Flame Torch",
