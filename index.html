@@ -762,7 +762,10 @@ function clearArmorFilters(){
 }
 
 function armorSearch(val){ARMOR_SEARCH=val;renderArmorList();}
-function setArmorFilter(key,val){ARMOR_FILTER[key]=val;renderArmorList();}
+function setArmorFilter(key,val){
+  ARMOR_FILTER[key]=val;
+  renderArmorTab(document.getElementById('pane-armor'));
+}
 
 function renderArmorList(){
   var container=document.getElementById('armor-list');
@@ -934,7 +937,10 @@ function clearWeaponFilters(){
 }
 
 function weaponSearch(val){WEAPON_SEARCH=val;renderWeaponList();}
-function setWeaponFilter(key,val){WEAPON_FILTER[key]=val;renderWeaponList();}
+function setWeaponFilter(key,val){
+  WEAPON_FILTER[key]=val;
+  renderWeaponsTab(document.getElementById('pane-weapons'));
+}
 
 function renderWeaponList(){
   var container=document.getElementById('weapon-list');
