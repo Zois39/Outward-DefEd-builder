@@ -720,11 +720,13 @@
     "image_local": "assets/images/armor/armor_Barrier_Armor.png",
     "special_effects": [
       "+10% Move Speed",
-      "+6 Heat Protection"
+      "+6 Heat Protection",
+      "+5 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 5
   },
   {
     "name": "Barrier Boots",
@@ -765,11 +767,13 @@
     "image_local": "assets/images/armor/armor_Barrier_Boots.png",
     "special_effects": [
       "+5% Move Speed",
-      "+4 Heat Protection"
+      "+4 Heat Protection",
+      "+4 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 4
   },
   {
     "name": "Barrier Helm",
@@ -810,11 +814,13 @@
     "image_local": "assets/images/armor/armor_Barrier_Helm.png",
     "special_effects": [
       "+5% Move Speed",
-      "+4 Heat Protection"
+      "+4 Heat Protection",
+      "+4 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 4
   },
   {
     "name": "Beige Garb",
@@ -2305,11 +2311,13 @@
     "special_effects": [
       "-4% Move Speed",
       "-6% Stamina Cost",
-      "6 Protection"
+      "6 Protection",
+      "+4 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 4
   },
   {
     "name": "Chalcedony Boots",
@@ -2352,11 +2360,13 @@
       "-3% Move Speed",
       "-4% Stamina Cost",
       "+10 Heat Protection",
-      "4 Protection"
+      "4 Protection",
+      "+2 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 2
   },
   {
     "name": "Chalcedony Helmet",
@@ -2399,11 +2409,13 @@
       "-3% Move Speed",
       "-4% Stamina Cost",
       "-15% Mana Cost",
-      "4 Protection"
+      "4 Protection",
+      "+2 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 2
   },
   {
     "name": "Chitin Desert Tunic",
@@ -6377,12 +6389,14 @@
     "special_effects": [
       "+10% Move Speed",
       "+6 Heat Protection",
-      "4 Protection"
+      "4 Protection",
+      "+5 Barrier"
     ],
     "rarity_tags": [
       "Set"
     ],
-    "ethereal_bonus": 10
+    "ethereal_bonus": 10,
+    "barrier": 5
   },
   {
     "name": "Manawall Boots",
@@ -6424,11 +6438,13 @@
     "special_effects": [
       "+5% Move Speed",
       "+4 Heat Protection",
-      "3 Protection"
+      "3 Protection",
+      "+4 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 4
   },
   {
     "name": "Manawall Helm",
@@ -6470,11 +6486,13 @@
     "special_effects": [
       "+5% Move Speed",
       "+4 Heat Protection",
-      "3 Protection"
+      "3 Protection",
+      "+4 Barrier"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 4
   },
   {
     "name": "Master Desert Boots",
@@ -10612,12 +10630,14 @@
     "special_effects": [
       "-3% Move Speed",
       "-3% Stamina Cost",
-      "2 Protection"
+      "2 Protection",
+      "+2 Barrier"
     ],
     "rarity_tags": [
       "Set",
       "Unique"
-    ]
+    ],
+    "barrier": 2
   },
   {
     "name": "Silver Boots",
@@ -10659,12 +10679,14 @@
     "special_effects": [
       "-2% Move Speed",
       "-2% Stamina Cost",
-      "1 Protection"
+      "1 Protection",
+      "+1 Barrier"
     ],
     "rarity_tags": [
       "Set",
       "Unique"
-    ]
+    ],
+    "barrier": 1
   },
   {
     "name": "Silver Helm",
@@ -10707,12 +10729,14 @@
       "-2% Move Speed",
       "-2% Stamina Cost",
       "-15% Mana Cost",
-      "1 Protection"
+      "1 Protection",
+      "+1 Barrier"
     ],
     "rarity_tags": [
       "Set",
       "Unique"
-    ]
+    ],
+    "barrier": 1
   },
   {
     "name": "Simple Shoes",
