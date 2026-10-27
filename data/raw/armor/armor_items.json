@@ -13226,7 +13226,8 @@
     ],
     "rarity_tags": [
       "Common"
-    ]
+    ],
+    "physical_bonus": 15
   },
   {
     "name": "Chalcedony Backpack",
@@ -13292,7 +13293,9 @@
     ],
     "rarity_tags": [
       "Common"
-    ]
+    ],
+    "lightning_bonus": 10,
+    "decay_bonus": 25
   },
   {
     "name": "Mefino's Trade Backpack",
