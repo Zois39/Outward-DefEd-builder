@@ -805,9 +805,16 @@ function renderArmorList(){
       if(a.special_effects){
         a.special_effects.forEach(function(e){
           var eLower=e.toLowerCase();
-          // Move Speed only matches positive values
-          if(filterName==='move speed'){
-            if(eLower.indexOf('move speed')>=0 && eLower.indexOf('+')>=0)hasEffect=true;
+
+          // Move Speed, Resists, Damage, Status Resistance - only positive
+          if(filterName==='move speed' || filterName==='status resistance' || 
+             (filterName.indexOf('resist')>=0 && filterName.indexOf('damage')<0) ||
+             (filterName.indexOf('damage')>=0 && filterName.indexOf('cost')<0)){
+            if(eLower.indexOf(filterName)>=0 && eLower.indexOf('+')>=0)hasEffect=true;
+          }
+          // Stamina/Mana Cost - only negative (reduction)
+          else if(filterName==='stamina cost' || filterName==='mana cost'){
+            if(eLower.indexOf(filterName)>=0 && eLower.indexOf('-')>=0)hasEffect=true;
           }
           // Other effects match normally
           else if(eLower.indexOf(filterName)>=0)hasEffect=true;
