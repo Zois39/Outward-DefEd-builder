@@ -956,15 +956,15 @@ function renderArmorList(){
     // Armor effects - ALL bonuses and resistances
     var allEffects = a.special_effects ? a.special_effects.slice() : [];
 
-    // Elemental resistances (from resistances field)
+    // Elemental resistances (from resistances field) - format as %
     if(a.resistances){
       ['physical','fire','frost','lightning','ethereal','decay'].forEach(function(dtype){
         var resist = a.resistances[dtype];
-        if(resist !== undefined && resist > 0){
+        if(resist !== undefined && resist !== null && resist > 0){
           // Check if already in effects
-          var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf(dtype) >= 0; });
+          var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf(dtype) >= 0 && e.toLowerCase().indexOf('resist') >= 0; });
           if(!exists){
-            allEffects.push(resist + ' ' + dtype.charAt(0).toUpperCase() + dtype.slice(1) + ' Resist');
+            allEffects.push(resist + '% ' + dtype.charAt(0).toUpperCase() + dtype.slice(1) + ' Resist');
           }
         }
       });
@@ -984,7 +984,7 @@ function renderArmorList(){
     });
 
     // Move Speed
-    if(a.move_speed !== undefined && a.move_speed !== 0){
+    if(a.move_speed !== undefined && a.move_speed !== null && a.move_speed !== 0){
       var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('move speed') >= 0; });
       if(!exists){
         var sign = a.move_speed > 0 ? '+' : '';
@@ -1038,8 +1038,8 @@ function renderArmorList(){
       }
     }
 
-    // Status Resistance
-    if(a.status_resistance !== undefined && a.status_resistance !== 0){
+    // Status Resistance - format as %
+    if(a.status_resistance !== undefined && a.status_resistance !== null && a.status_resistance !== 0){
       var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('status') >= 0; });
       if(!exists){
         var sign = a.status_resistance > 0 ? '+' : '';
