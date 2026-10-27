@@ -819,13 +819,25 @@ function renderArmorList(){
   if(!container)return;
   var filtered=DATA.armor.filter(function(a){
     if(ARMOR_FILTER.slot!=='all'&&a.slot!==ARMOR_FILTER.slot)return false;
-    if(ARMOR_FILTER.rarity!=='all'){
+
+    // Rarity filter (multi-select array)
+    if(ARMOR_FILTER.rarity.length>0 && ARMOR_FILTER.rarity.indexOf('all')<0){
       var tags=getArmorRarityName(a);
-      if(tags.indexOf(ARMOR_FILTER.rarity)<0)return false;
+      var hasRarity=false;
+      ARMOR_FILTER.rarity.forEach(function(r){
+        if(tags.indexOf(r)>=0)hasRarity=true;
+      });
+      if(!hasRarity)return false;
     }
-    if(ARMOR_FILTER.effect!=='all'){
-      var hasEffect=false;
-      var filterName=ARMOR_FILTER.effect.toLowerCase();
+
+    // Effect filter (multi-select array)
+    if(ARMOR_FILTER.effect.length>0 && ARMOR_FILTER.effect.indexOf('all')<0){
+      var hasAnyEffect=false;
+
+      ARMOR_FILTER.effect.forEach(function(filterName){
+        if(hasAnyEffect)return;
+        filterName=filterName.toLowerCase();
+        var hasEffect=false;
 
       // Check special_effects
       if(a.special_effects){
@@ -885,8 +897,12 @@ function renderArmorList(){
         });
       }
 
-      if(!hasEffect)return false;
+        if(hasEffect)hasAnyEffect=true;
+      });
+
+      if(!hasAnyEffect)return false;
     }
+
     if(ARMOR_FILTER.legacy && !a.legacy_upgrade_to && !a.legacy_upgrade_from)return false;
     if(ARMOR_SEARCH){var q=ARMOR_SEARCH.toLowerCase();if(a.name.toLowerCase().indexOf(q)<0)return false;}
     return true;
