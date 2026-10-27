@@ -266,7 +266,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 var DATA=null;
 var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
 var CURRENT_TAB='stats';
-var ARMOR_FILTER={slot:'all',rarity:'all',effect:'all',legacy:false,sort:'name'};
+var ARMOR_FILTER={slot:'all',rarity:[],effect:[],legacy:false,sort:'name'};
 var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
@@ -750,7 +750,8 @@ function renderArmorTab(pane){
   var rarities=['all','Common','Unique','Crafted','Legacy','Set','Quest'];
   for(var r=0;r<rarities.length;r++){
     var ra=rarities[r];
-    html+='<button class="pill'+(ARMOR_FILTER.rarity===ra?' active':'')+'" '+makeClick('setArmorFilter','rarity|'+ra)+'>'+ra+'</button>';
+    var isActive=ARMOR_FILTER.rarity.indexOf(ra)>=0;
+    html+='<button class="pill'+(isActive?' active':'')+'" '+makeClick('setArmorFilter','rarity|'+ra)+'>'+ra+'</button>';
   }
 
   html+='</div></div>';
@@ -759,7 +760,7 @@ function renderArmorTab(pane){
   var effectFilters=['all','Move Speed','Stamina Cost','Mana Cost','Pouch','Cold Protection','Heat Protection','Barrier','Status Resistance','Fire Damage','Frost Damage','Lightning Damage','Ethereal Damage','Decay Damage','Physical Damage','Fire Resist','Frost Resist','Lightning Resist','Ethereal Resist','Decay Resist','Physical Resist','Impact Resist'];
   for(var ef=0;ef<effectFilters.length;ef++){
     var eff=effectFilters[ef];
-    var isActive=ARMOR_FILTER.effect===eff;
+    var isActive=ARMOR_FILTER.effect.indexOf(eff)>=0;
     html+='<button class="pill'+(isActive?' active':'')+'" '+makeClick('setArmorFilter','effect|'+eff)+'>'+(eff==='all'?'All':eff)+'</button>';
   }
   html+='</div></div>';
@@ -784,7 +785,17 @@ function clearArmorFilters(){
 
 function armorSearch(val){ARMOR_SEARCH=val;renderArmorList();}
 function setArmorFilter(key,val){
-  ARMOR_FILTER[key]=val;
+  // Toggle value in array
+  if(key==='rarity' || key==='effect'){
+    var idx=ARMOR_FILTER[key].indexOf(val);
+    if(idx>=0){
+      ARMOR_FILTER[key].splice(idx,1); // Remove
+    }else{
+      ARMOR_FILTER[key].push(val); // Add
+    }
+  }else{
+    ARMOR_FILTER[key]=val;
+  }
   renderArmorTab(document.getElementById('pane-armor'));
 }
 
