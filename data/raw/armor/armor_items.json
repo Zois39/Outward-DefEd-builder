@@ -10821,12 +10821,14 @@
     "image_local": "assets/images/armor/armor_Slayer_s_Armor.png",
     "special_effects": [
       "+8 Cold Protection",
-      "+8 Heat Protection"
+      "+8 Heat Protection",
+      "+20% Status Resistance"
     ],
     "rarity_tags": [
       "Set"
     ],
-    "physical_bonus": 12
+    "physical_bonus": 12,
+    "status_resistance": 20
   },
   {
     "name": "Slayer's Boots",
@@ -10867,11 +10869,13 @@
     "image_local": "assets/images/armor/armor_Slayer_s_Boots.png",
     "special_effects": [
       "+4 Cold Protection",
-      "+4 Heat Protection"
+      "+4 Heat Protection",
+      "+15% Status Resistance"
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "status_resistance": 15
   },
   {
     "name": "Slayer's Helmet",
