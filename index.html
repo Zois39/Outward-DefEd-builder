@@ -266,7 +266,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 var DATA=null;
 var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
 var CURRENT_TAB='stats';
-var ARMOR_FILTER={slot:'all',rarity:'all',legacy:false,sort:'name'};
+var ARMOR_FILTER={slot:'all',rarity:'all',effect:'all',legacy:false,sort:'name'};
 var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
@@ -754,6 +754,16 @@ function renderArmorTab(pane){
   }
 
   html+='</div></div>';
+  // Effects filter
+  html+='<div class="filter-section"><div class="filter-label">Effects</div><div class="filter-pills">';
+  var effectFilters=['all','Move Speed','Stamina Cost','Mana Cost','Pouch','Cold Protection','Heat Protection','Barrier','Status Resistance','Fire Damage','Frost Damage','Lightning Damage','Ethereal Damage','Decay Damage','Physical Damage','Fire Resist','Frost Resist','Lightning Resist','Ethereal Resist','Decay Resist','Physical Resist','Impact Resist'];
+  for(var ef=0;ef<effectFilters.length;ef++){
+    var eff=effectFilters[ef];
+    var isActive=ARMOR_FILTER.effect===eff;
+    html+='<button class="pill'+(isActive?' active':'')+'" '+makeClick('setArmorFilter','effect|'+eff)+'>'+(eff==='all'?'All':eff)+'</button>';
+  }
+  html+='</div></div>';
+
   html+='<select class="sort-select" onchange="setArmorFilter(\'sort\',this.value)">';
   html+='<option value="name"'+(ARMOR_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
   html+='<option value="protection-desc"'+(ARMOR_FILTER.sort==='protection-desc'?' selected':'')+'>Protection (High to Low)</option>';
@@ -767,7 +777,7 @@ function renderArmorTab(pane){
 }
 
 function clearArmorFilters(){
-  ARMOR_FILTER={slot:'all',rarity:'all',legacy:false,sort:'name'};
+  ARMOR_FILTER={slot:'all',rarity:'all',effect:'all',legacy:false,sort:'name'};
   ARMOR_SEARCH='';
   renderArmorTab(document.getElementById('pane-armor'));
 }
@@ -786,6 +796,15 @@ function renderArmorList(){
     if(ARMOR_FILTER.rarity!=='all'){
       var tags=getArmorRarityName(a);
       if(tags.indexOf(ARMOR_FILTER.rarity)<0)return false;
+    }
+    if(ARMOR_FILTER.effect!=='all'){
+      var hasEffect=false;
+      if(a.special_effects){
+        a.special_effects.forEach(function(e){
+          if(e.toLowerCase().indexOf(ARMOR_FILTER.effect.toLowerCase())>=0)hasEffect=true;
+        });
+      }
+      if(!hasEffect)return false;
     }
     if(ARMOR_FILTER.legacy && !a.legacy_upgrade_to && !a.legacy_upgrade_from)return false;
     if(ARMOR_SEARCH){var q=ARMOR_SEARCH.toLowerCase();if(a.name.toLowerCase().indexOf(q)<0)return false;}
