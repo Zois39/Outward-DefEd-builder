@@ -839,6 +839,19 @@ function renderArmorList(){
         });
       }
 
+      // Check damage bonus fields (armor)
+      if(!hasEffect){
+        var dmgTypes=['physical','fire','frost','lightning','ethereal','decay'];
+        dmgTypes.forEach(function(dtype){
+          var bonus=a[dtype+'_bonus'];
+          if(bonus!==undefined && bonus!==0){
+            var dmgName=dtype+' damage';
+            if(dmgName.toLowerCase().indexOf(filterName)>=0)hasEffect=true;
+            if(filterName.indexOf(dtype)>=0 && filterName.indexOf('damage')>=0)hasEffect=true;
+          }
+        });
+      }
+
       if(!hasEffect)return false;
     }
     if(ARMOR_FILTER.legacy && !a.legacy_upgrade_to && !a.legacy_upgrade_from)return false;
