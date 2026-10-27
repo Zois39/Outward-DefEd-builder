@@ -9300,7 +9300,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 3
   },
   {
     "name": "Runic Boots",
@@ -9346,7 +9347,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 2
   },
   {
     "name": "Runic Helm",
@@ -9392,7 +9394,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "barrier": 2
   },
   {
     "name": "Rust Lich Armor",
@@ -13456,7 +13459,8 @@
     ],
     "rarity_tags": [
       "Common"
-    ]
+    ],
+    "status_resistance": 20
   },
   {
     "name": "Zhorn's Hunting Backpack",
