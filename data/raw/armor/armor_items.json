@@ -2796,13 +2796,15 @@
       "-6% Move Speed",
       "-6% Stamina Cost",
       "+14 Cold Protection",
-      "3 Protection"
+      "3 Protection",
+      "-10 Status Resistance"
     ],
     "rarity_tags": [
       "Set",
       "Unique"
     ],
-    "frost_bonus": 21
+    "frost_bonus": 21,
+    "status_resistance": -10
   },
   {
     "name": "Crimson Plate Boots",
@@ -2845,12 +2847,14 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "+7 Cold Protection",
-      "2 Protection"
+      "2 Protection",
+      "-10 Status Resistance"
     ],
     "rarity_tags": [
       "Set",
       "Unique"
-    ]
+    ],
+    "status_resistance": -10
   },
   {
     "name": "Crimson Plate Mask",
@@ -9888,14 +9892,16 @@
     "image_url": "https://outward.wiki.gg/images/Scarlet_Robes.png?60e9d2",
     "image_local": "assets/images/armor/armor_Scarlet_Robes.png",
     "special_effects": [
-      "-20% Mana Cost"
+      "-20% Mana Cost",
+      "-15 Status Resistance"
     ],
     "rarity_tags": [
       "Set"
     ],
     "fire_bonus": 15,
     "frost_bonus": 15,
-    "decay_bonus": 15
+    "decay_bonus": 15,
+    "status_resistance": -15
   },
   {
     "name": "Scavenger Boots",
