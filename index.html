@@ -266,7 +266,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 var DATA=null;
 var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
 var CURRENT_TAB='stats';
-var ARMOR_FILTER={slot:'all',rarity:[],effect:[],legacy:false,sort:'name'};
+var ARMOR_FILTER={slot:'all',rarity:['all'],effect:['all'],legacy:false,sort:'name'};
 var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
@@ -787,11 +787,26 @@ function armorSearch(val){ARMOR_SEARCH=val;renderArmorList();}
 function setArmorFilter(key,val){
   // Toggle value in array
   if(key==='rarity' || key==='effect'){
-    var idx=ARMOR_FILTER[key].indexOf(val);
-    if(idx>=0){
-      ARMOR_FILTER[key].splice(idx,1); // Remove
+    if(val==='all'){
+      // 'all' resets to only 'all'
+      ARMOR_FILTER[key]=['all'];
     }else{
-      ARMOR_FILTER[key].push(val); // Add
+      // Remove 'all' if present
+      var allIdx=ARMOR_FILTER[key].indexOf('all');
+      if(allIdx>=0)ARMOR_FILTER[key].splice(allIdx,1);
+
+      // Toggle the value
+      var idx=ARMOR_FILTER[key].indexOf(val);
+      if(idx>=0){
+        ARMOR_FILTER[key].splice(idx,1); // Remove
+      }else{
+        ARMOR_FILTER[key].push(val); // Add
+      }
+
+      // If empty, restore 'all'
+      if(ARMOR_FILTER[key].length===0){
+        ARMOR_FILTER[key]=['all'];
+      }
     }
   }else{
     ARMOR_FILTER[key]=val;
