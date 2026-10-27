@@ -799,11 +799,46 @@ function renderArmorList(){
     }
     if(ARMOR_FILTER.effect!=='all'){
       var hasEffect=false;
+      var filterName=ARMOR_FILTER.effect.toLowerCase();
+
+      // Check special_effects
       if(a.special_effects){
         a.special_effects.forEach(function(e){
-          if(e.toLowerCase().indexOf(ARMOR_FILTER.effect.toLowerCase())>=0)hasEffect=true;
+          var eLower=e.toLowerCase();
+          // Move Speed only matches positive values
+          if(filterName==='move speed'){
+            if(eLower.indexOf('move speed')>=0 && eLower.indexOf('+')>=0)hasEffect=true;
+          }
+          // Other effects match normally
+          else if(eLower.indexOf(filterName)>=0)hasEffect=true;
         });
       }
+
+      // Also check resistances from stats
+      if(!hasEffect && a.resistances){
+        Object.keys(a.resistances).forEach(function(k){
+          var v=a.resistances[k];
+          if(v>0){
+            var resistName=k+' resist';
+            if(resistName.toLowerCase().indexOf(filterName)>=0)hasEffect=true;
+            // Also match "Fire Resist" to "fire" key
+            if(filterName.indexOf(k)>=0 && filterName.indexOf('resist')>=0)hasEffect=true;
+          }
+        });
+      }
+
+      // Check damage stats for weapons (if applicable)
+      if(!hasEffect && a.damage_stats && a.damage_stats.base_damage){
+        Object.keys(a.damage_stats.base_damage).forEach(function(k){
+          var v=a.damage_stats.base_damage[k];
+          if(v>0){
+            var dmgName=k+' damage';
+            if(dmgName.toLowerCase().indexOf(filterName)>=0)hasEffect=true;
+            if(filterName.indexOf(k)>=0 && filterName.indexOf('damage')>=0)hasEffect=true;
+          }
+        });
+      }
+
       if(!hasEffect)return false;
     }
     if(ARMOR_FILTER.legacy && !a.legacy_upgrade_to && !a.legacy_upgrade_from)return false;
