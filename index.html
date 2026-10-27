@@ -927,7 +927,7 @@ function renderArmorList(){
     html+='</div></div>';
     html+='<div class="item-stats">';
     html+='<div class="stat-line"><span class="stat-label">Protection</span><span class="stat-value">'+(a.protection||0)+'</span></div>';
-    if(a.resistances){['physical','fire','frost','lightning','decay','ethereal'].forEach(function(k){var v=a.resistances[k]||0;if(v>0){html+='<div class="stat-line"><span class="stat-label">'+k.charAt(0).toUpperCase()+k.slice(1)+'</span><span class="stat-value">'+v+'</span></div>';}});if(a.resistances.impact){html+='<div class="stat-line"><span class="stat-label">Impact</span><span class="stat-value">'+a.resistances.impact+'</span></div>';}}
+    if(a.resistances && a.resistances.impact){html+='<div class="stat-line"><span class="stat-label">Impact</span><span class="stat-value">'+a.resistances.impact+'</span></div>';}
     html+='<div class="stat-line"><span class="stat-label">Weight</span><span class="stat-value">'+(a.weight||0)+'</span></div>';
     html+='</div>';
 
@@ -953,18 +953,99 @@ function renderArmorList(){
       html+='</div>';
     }
 
-    // Armor effects (like weapon effects)
+    // Armor effects - ALL bonuses and resistances
     var allEffects = a.special_effects ? a.special_effects.slice() : [];
 
-    // Add damage bonuses to effects
+    // Elemental resistances (from resistances field)
+    if(a.resistances){
+      ['physical','fire','frost','lightning','ethereal','decay'].forEach(function(dtype){
+        var resist = a.resistances[dtype];
+        if(resist !== undefined && resist > 0){
+          // Check if already in effects
+          var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf(dtype) >= 0; });
+          if(!exists){
+            allEffects.push(resist + ' ' + dtype.charAt(0).toUpperCase() + dtype.slice(1) + ' Resist');
+          }
+        }
+      });
+    }
+
+    // Damage bonuses
     var dmgTypes = ['physical', 'fire', 'frost', 'lightning', 'ethereal', 'decay'];
     dmgTypes.forEach(function(dtype){
       var bonus = a[dtype + '_bonus'];
       if (bonus !== undefined && bonus !== 0) {
         var sign = bonus > 0 ? '+' : '';
-        allEffects.push(sign + bonus + '% ' + dtype.charAt(0).toUpperCase() + dtype.slice(1) + ' Damage');
+        var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf(dtype + ' damage') >= 0; });
+        if(!exists){
+          allEffects.push(sign + bonus + '% ' + dtype.charAt(0).toUpperCase() + dtype.slice(1) + ' Damage');
+        }
       }
     });
+
+    // Move Speed
+    if(a.move_speed !== undefined && a.move_speed !== 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('move speed') >= 0; });
+      if(!exists){
+        var sign = a.move_speed > 0 ? '+' : '';
+        allEffects.push(sign + a.move_speed + '% Move Speed');
+      }
+    }
+
+    // Stamina Cost
+    if(a.stamina_cost_reduction !== undefined && a.stamina_cost_reduction > 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('stamina') >= 0; });
+      if(!exists){
+        allEffects.push('-' + a.stamina_cost_reduction + '% Stamina Cost');
+      }
+    }
+
+    // Mana Cost
+    if(a.mana_cost_reduction !== undefined && a.mana_cost_reduction > 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('mana') >= 0; });
+      if(!exists){
+        allEffects.push('-' + a.mana_cost_reduction + '% Mana Cost');
+      }
+    }
+
+    // Pouch
+    if(a.pouch !== undefined && a.pouch > 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('pouch') >= 0; });
+      if(!exists){
+        allEffects.push('+' + a.pouch + ' Pouch');
+      }
+    }
+
+    // Cold/Heat Protection
+    if(a.cold_resist !== undefined && a.cold_resist > 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('cold') >= 0; });
+      if(!exists){
+        allEffects.push('+' + a.cold_resist + ' Cold Protection');
+      }
+    }
+    if(a.heat_resist !== undefined && a.heat_resist > 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('heat') >= 0; });
+      if(!exists){
+        allEffects.push('+' + a.heat_resist + ' Heat Protection');
+      }
+    }
+
+    // Barrier
+    if(a.barrier !== undefined && a.barrier > 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('barrier') >= 0; });
+      if(!exists){
+        allEffects.push('+' + a.barrier + ' Barrier');
+      }
+    }
+
+    // Status Resistance
+    if(a.status_resistance !== undefined && a.status_resistance !== 0){
+      var exists = allEffects.some(function(e){ return e.toLowerCase().indexOf('status') >= 0; });
+      if(!exists){
+        var sign = a.status_resistance > 0 ? '+' : '';
+        allEffects.push(sign + a.status_resistance + '% Status Resistance');
+      }
+    }
 
     if(allEffects.length>0){
       html+='<div class="effects-section" style="background:rgba(39,174,96,.15);border:none">';
