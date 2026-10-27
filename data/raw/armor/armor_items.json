@@ -13571,7 +13571,7 @@
     "description": "When held in hand, helps protect the wielder from Status Ailments. Can be refilled with thick oil.",
     "local_image": "assets/images/armor/armor_Djinn's_Lamp.png",
     "special_effects": [
-      "Grants +15 Status Resistance"
+      "+15% Status Resistance"
     ],
     "rarity_tags": [
       "Common"
