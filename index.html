@@ -115,7 +115,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .item-icon{width:48px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;background:var(--bg)}
 .item-title{flex:1;min-width:0}
 .item-name{font-size:14px;font-weight:600;line-height:1.3}
-.item-type{font-size:10px;color:var(--dim);margin-top:2px}
+.item-type{font-size:10px;color:var(--dim);margin-top:2px;flex-wrap:wrap;word-break:break-word;line-height:1.4}
 .item-stats{display:flex;flex-direction:column;gap:4px;font-size:12px}
 .stat-line{display:flex;justify-content:space-between;padding:2px 0}
 .stat-label{color:var(--dim)}
@@ -807,7 +807,7 @@ function renderArmorList(){
     html+=imgHtml(imgPath,'item-icon');
     html+='<div class="item-title">';
     html+='<div class="item-name">'+escHtml(a.name)+'</div>';
-    html+='<div class="item-type">'+escHtml(a.slot||'')+' | '+rarityName+'</div>';
+    html+='<div class="item-type" style="flex-wrap:wrap;word-break:break-word">'+escHtml(a.slot||'')+(rarityName?' | '+rarityName:'')+'</div>';
     html+='</div></div>';
     html+='<div class="item-stats">';
     html+='<div class="stat-line"><span class="stat-label">Protection</span><span class="stat-value">'+(a.protection||0)+'</span></div>';
