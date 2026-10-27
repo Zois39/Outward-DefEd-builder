@@ -892,11 +892,23 @@ function renderArmorList(){
     }
 
     // Armor effects (like weapon effects)
-    if(a.special_effects && a.special_effects.length>0){
+    var allEffects = a.special_effects ? a.special_effects.slice() : [];
+
+    // Add damage bonuses to effects
+    var dmgTypes = ['physical', 'fire', 'frost', 'lightning', 'ethereal', 'decay'];
+    dmgTypes.forEach(function(dtype){
+      var bonus = a[dtype + '_bonus'];
+      if (bonus !== undefined && bonus !== 0) {
+        var sign = bonus > 0 ? '+' : '';
+        allEffects.push(sign + bonus + '% ' + dtype.charAt(0).toUpperCase() + dtype.slice(1) + ' Damage');
+      }
+    });
+
+    if(allEffects.length>0){
       html+='<div class="effects-section" style="background:rgba(39,174,96,.15);border:none">';
       html+='<div class="effects-title" style="color:#fff">Effects:</div>';
       html+='<div class="effect-tags">';
-      a.special_effects.forEach(function(fx){
+      allEffects.forEach(function(fx){
         html+='<span class="effect-tag" style="color:#fff">'+escHtml(fx)+'</span>';
       });
       html+='</div></div>';
