@@ -720,6 +720,11 @@ function getArmorRarityClass(a){
 }
 
 function getArmorRarityName(a){
+  // Use pre-calculated tags from data
+  if(a.rarity_tags && a.rarity_tags.length>0){
+    return a.rarity_tags;
+  }
+  // Fallback to calculation
   var tags=[];
   var desc=(a.description||'').toLowerCase();
   if(a.legacy_upgrade_to || a.legacy_upgrade_from)tags.push('Legacy');
