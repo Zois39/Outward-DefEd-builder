@@ -43,6 +43,9 @@
       "+6 Cold Protection",
       "+10 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -87,6 +90,9 @@
       "-2% Stamina Cost",
       "+3 Cold Protection",
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -132,6 +138,9 @@
       "-15% Mana Cost",
       "+3 Cold Protection",
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -175,6 +184,9 @@
       "-3% Stamina Cost",
       "+10 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -218,6 +230,9 @@
       "-2% Stamina Cost",
       "+5 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -262,6 +277,9 @@
       "-15% Mana Cost",
       "+5 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -313,6 +331,10 @@
     "special_effects": [
       "+5 Cold Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -364,6 +386,10 @@
     "special_effects": [
       "+15 Cold Protection",
       "4 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -415,6 +441,10 @@
     "special_effects": [
       "+10 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -458,7 +488,12 @@
       "+3 Cold Protection",
       "1 Protection"
     ],
-    "legacy_upgrade_to": "White Arcane Hood"
+    "legacy_upgrade_to": "White Arcane Hood",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Arcane Robe",
@@ -500,7 +535,12 @@
     "special_effects": [
       "+6 Cold Protection"
     ],
-    "legacy_upgrade_to": "White Arcane Robe"
+    "legacy_upgrade_to": "White Arcane Robe",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Ash Armor",
@@ -542,6 +582,9 @@
     "special_effects": [
       "+14 Cold Protection",
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -584,6 +627,9 @@
     "special_effects": [
       "+7 Cold Protection",
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -626,6 +672,9 @@
     "special_effects": [
       "+7 Cold Protection",
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -668,6 +717,9 @@
     "special_effects": [
       "+10% Move Speed",
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -710,6 +762,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+4 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -752,6 +807,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+4 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -793,6 +851,9 @@
     "image_local": "assets/images/armor/armor_Beige_Garb.png",
     "special_effects": [
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -834,6 +895,9 @@
     "image_local": "assets/images/armor/armor_Black_Dancer_Clothes.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -876,7 +940,11 @@
     "special_effects": [
       "+24 Cold Protection"
     ],
-    "legacy_upgrade_from": "Fur Armor"
+    "legacy_upgrade_from": "Fur Armor",
+    "rarity_tags": [
+      "Legacy",
+      "Set"
+    ]
   },
   {
     "name": "Black Fur Boots",
@@ -918,7 +986,11 @@
     "special_effects": [
       "+12 Cold Protection"
     ],
-    "legacy_upgrade_from": "Fur Boots"
+    "legacy_upgrade_from": "Fur Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Set"
+    ]
   },
   {
     "name": "Black Fur Helmet",
@@ -960,7 +1032,11 @@
     "special_effects": [
       "+12 Cold Protection"
     ],
-    "legacy_upgrade_from": "Fur Helmet"
+    "legacy_upgrade_from": "Fur Helmet",
+    "rarity_tags": [
+      "Legacy",
+      "Set"
+    ]
   },
   {
     "name": "Black Pearlbird Mask",
@@ -1003,7 +1079,10 @@
       "+17% Move Speed"
     ],
     "legacy_upgrade_from": "Pearlbird Mask",
-    "legacy_upgrade_to": "Jewel Bird Mask"
+    "legacy_upgrade_to": "Jewel Bird Mask",
+    "rarity_tags": [
+      "Legacy"
+    ]
   },
   {
     "name": "Black Plate Armor",
@@ -1048,7 +1127,12 @@
       "+10 Cold Protection",
       "3 Protection"
     ],
-    "legacy_upgrade_to": "Orichalcum Armor"
+    "legacy_upgrade_to": "Orichalcum Armor",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Black Plate Boots",
@@ -1093,7 +1177,12 @@
       "+5 Cold Protection",
       "2 Protection"
     ],
-    "legacy_upgrade_to": "Orichalcum Boots"
+    "legacy_upgrade_to": "Orichalcum Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Black Plate Helm",
@@ -1139,7 +1228,12 @@
       "+5 Cold Protection",
       "2 Protection"
     ],
-    "legacy_upgrade_to": "Orichalcum Helmet"
+    "legacy_upgrade_to": "Orichalcum Helmet",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Black Worker Boots",
@@ -1180,6 +1274,9 @@
     "image_local": "assets/images/armor/armor_Black_Worker_Boots.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1221,6 +1318,9 @@
     "image_local": "assets/images/armor/armor_Blue_Light_Clothes.png",
     "special_effects": [
       "+15 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1273,6 +1373,10 @@
       "-6% Move Speed",
       "-6% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -1325,6 +1429,10 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -1378,6 +1486,10 @@
       "-4% Stamina Cost",
       "-10% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -1420,6 +1532,9 @@
     "special_effects": [
       "+3 Pouch",
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1461,6 +1576,9 @@
     "image_local": "assets/images/armor/armor_Brigand_s_Hat.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1502,6 +1620,9 @@
     "image_local": "assets/images/armor/armor_Bright_Nobleman_Attire.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1543,6 +1664,9 @@
     "image_local": "assets/images/armor/armor_Bright_Nobleman_Boots.png",
     "special_effects": [
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1584,6 +1708,9 @@
     "image_local": "assets/images/armor/armor_Bright_Nobleman_Hat.png",
     "special_effects": [
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1625,6 +1752,9 @@
     "image_local": "assets/images/armor/armor_Bright_Rich_Attire.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1666,6 +1796,9 @@
     "image_local": "assets/images/armor/armor_Bright_Rich_Hat.png",
     "special_effects": [
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1709,6 +1842,9 @@
       "+10% Move Speed",
       "-5% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1752,6 +1888,9 @@
       "+5% Move Speed",
       "-8% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1796,6 +1935,9 @@
       "-5% Stamina Cost",
       "-30% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1837,6 +1979,9 @@
     "image_local": "assets/images/armor/armor_Caldera_Mail_Armor.png",
     "special_effects": [
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1878,6 +2023,9 @@
     "image_local": "assets/images/armor/armor_Caldera_Mail_Boots.png",
     "special_effects": [
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1920,6 +2068,9 @@
     "special_effects": [
       "-7% Mana Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -1964,6 +2115,9 @@
       "-6% Stamina Cost",
       "+6 Cold Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2008,6 +2162,9 @@
       "-4% Stamina Cost",
       "+3 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2053,6 +2210,9 @@
       "-15% Mana Cost",
       "+3 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2096,6 +2256,9 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "-100% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -2139,6 +2302,9 @@
       "-4% Move Speed",
       "-6% Stamina Cost",
       "6 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2183,6 +2349,9 @@
       "-4% Stamina Cost",
       "+10 Heat Protection",
       "4 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2227,6 +2396,9 @@
       "-4% Stamina Cost",
       "-15% Mana Cost",
       "4 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2268,6 +2440,9 @@
     "image_local": "assets/images/armor/armor_Chitin_Desert_Tunic.png",
     "special_effects": [
       "+20 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -2310,7 +2485,11 @@
     "special_effects": [
       "+15 Cold Protection"
     ],
-    "legacy_upgrade_to": "Red Clansage Robe"
+    "legacy_upgrade_to": "Red Clansage Robe",
+    "rarity_tags": [
+      "Legacy",
+      "Unique"
+    ]
   },
   {
     "name": "Copal Armor",
@@ -2361,7 +2540,13 @@
     "special_effects": [
       "3 Protection"
     ],
-    "legacy_upgrade_to": "Green Copal Armor"
+    "legacy_upgrade_to": "Green Copal Armor",
+    "rarity_tags": [
+      "Legacy",
+      "Crafted",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Copal Boots",
@@ -2412,7 +2597,13 @@
     "special_effects": [
       "2 Protection"
     ],
-    "legacy_upgrade_to": "Green Copal Boots"
+    "legacy_upgrade_to": "Green Copal Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Crafted",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Copal Helm",
@@ -2464,7 +2655,13 @@
       "-15% Mana Cost",
       "2 Protection"
     ],
-    "legacy_upgrade_to": "Green Copal Helmet"
+    "legacy_upgrade_to": "Green Copal Helmet",
+    "rarity_tags": [
+      "Legacy",
+      "Crafted",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Coralhorn Mask",
@@ -2505,6 +2702,9 @@
     "image_local": "assets/images/armor/armor_Coralhorn_Mask.png",
     "special_effects": [
       "-10% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -2546,6 +2746,9 @@
     "image_local": "assets/images/armor/armor_Crimson_Dancer_Clothes.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2590,6 +2793,10 @@
       "-6% Stamina Cost",
       "+14 Cold Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -2634,6 +2841,10 @@
       "-4% Stamina Cost",
       "+7 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -2679,6 +2890,9 @@
       "-20% Mana Cost",
       "+7 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2720,6 +2934,9 @@
     "image_local": "assets/images/armor/armor_Dancer_Leggings.png",
     "special_effects": [
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2761,6 +2978,9 @@
     "image_local": "assets/images/armor/armor_Dancer_Mask.png",
     "special_effects": [
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2802,6 +3022,9 @@
     "image_local": "assets/images/armor/armor_Dark_Green_Garb.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -2843,6 +3066,9 @@
     "image_local": "assets/images/armor/armor_Dark_Nobleman_Attire.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2884,6 +3110,9 @@
     "image_local": "assets/images/armor/armor_Dark_Nobleman_Boots.png",
     "special_effects": [
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2925,6 +3154,9 @@
     "image_local": "assets/images/armor/armor_Dark_Nobleman_Hat.png",
     "special_effects": [
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -2966,6 +3198,9 @@
     "image_local": "assets/images/armor/armor_Dark_Red_Garb.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -3007,6 +3242,9 @@
     "image_local": "assets/images/armor/armor_Dark_Rich_Attire.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3048,6 +3286,9 @@
     "image_local": "assets/images/armor/armor_Dark_Rich_Hat.png",
     "special_effects": [
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3089,6 +3330,9 @@
     "image_local": "assets/images/armor/armor_Dark_Worker_Attire.png",
     "special_effects": [
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3131,6 +3375,9 @@
     "special_effects": [
       "+3 Cold Protection",
       "+1 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3174,7 +3421,12 @@
       "+10% Move Speed",
       "+10 Heat Protection"
     ],
-    "legacy_upgrade_to": "Master Desert Boots"
+    "legacy_upgrade_to": "Master Desert Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Desert Tunic",
@@ -3215,6 +3467,9 @@
     "image_local": "assets/images/armor/armor_Desert_Tunic.png",
     "special_effects": [
       "+20 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3256,6 +3511,9 @@
     "image_local": "assets/images/armor/armor_Desert_Veil.png",
     "special_effects": [
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3299,7 +3557,12 @@
       "+16 Heat Protection",
       "2 Protection"
     ],
-    "legacy_upgrade_to": "Master Desert Tunic"
+    "legacy_upgrade_to": "Master Desert Tunic",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Elite Desert Veil",
@@ -3343,7 +3606,12 @@
       "+8 Heat Protection",
       "1 Protection"
     ],
-    "legacy_upgrade_to": "Master Desert Veil"
+    "legacy_upgrade_to": "Master Desert Veil",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Elite Hood",
@@ -3385,6 +3653,9 @@
     "special_effects": [
       "+8 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3429,6 +3700,9 @@
       "-6% Stamina Cost",
       "+4 Pouch",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3472,6 +3746,9 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3516,6 +3793,9 @@
       "-4% Stamina Cost",
       "-50% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3558,6 +3838,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+16 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3600,6 +3883,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3642,6 +3928,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -3683,6 +3972,9 @@
     "image_local": "assets/images/armor/armor_Ergagr_Uk_.png",
     "special_effects": [
       "+0.1 Mana restored per second"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -3725,7 +4017,12 @@
     "special_effects": [
       "+20 Cold Protection"
     ],
-    "legacy_upgrade_to": "Black Fur Armor"
+    "legacy_upgrade_to": "Black Fur Armor",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Fur Boots",
@@ -3767,7 +4064,12 @@
     "special_effects": [
       "+10 Cold Protection"
     ],
-    "legacy_upgrade_to": "Black Fur Boots"
+    "legacy_upgrade_to": "Black Fur Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Fur Helm",
@@ -3809,7 +4111,12 @@
     "special_effects": [
       "+10 Cold Protection"
     ],
-    "legacy_upgrade_to": "Black Fur Helmet"
+    "legacy_upgrade_to": "Black Fur Helmet",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Gar'Ga'Nak",
@@ -3850,6 +4157,9 @@
     "image_local": "assets/images/armor/armor_Gar_Ga_Nak.png",
     "special_effects": [
       "-35% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -3891,6 +4201,9 @@
     "image_local": "assets/images/armor/armor_Gargargar_.png",
     "special_effects": [
       "+10 Pouch"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -3933,6 +4246,9 @@
     "special_effects": [
       "+17% Move Speed",
       "+5 Pouch"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -3974,6 +4290,10 @@
     "image_local": "assets/images/armor/armor_Gold-Lich_Armor.png",
     "special_effects": [
       "-20% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -4015,6 +4335,10 @@
     "image_local": "assets/images/armor/armor_Gold-Lich_Boots.png",
     "special_effects": [
       "-15% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -4056,6 +4380,10 @@
     "image_local": "assets/images/armor/armor_Gold-Lich_Mask.png",
     "special_effects": [
       "-25% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -4097,6 +4425,9 @@
     "image_local": "assets/images/armor/armor_GorkKrog_.png",
     "special_effects": [
       "10 Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -4138,6 +4469,9 @@
     "image_local": "assets/images/armor/armor_GoulgGalog_.png",
     "special_effects": [
       "+15 Pouch"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -4179,6 +4513,9 @@
     "image_local": "assets/images/armor/armor_Gray_Garb.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -4220,6 +4557,9 @@
     "image_local": "assets/images/armor/armor_Green_Copal_Armor.png",
     "special_effects": [
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4261,6 +4601,9 @@
     "image_local": "assets/images/armor/armor_Green_Copal_Boots.png",
     "special_effects": [
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4303,6 +4646,9 @@
     "special_effects": [
       "-10% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4344,6 +4690,9 @@
     "image_local": "assets/images/armor/armor_Green_Garb.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -4385,6 +4734,9 @@
     "image_local": "assets/images/armor/armor_Green_Worker_Attire.png",
     "special_effects": [
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4428,6 +4780,9 @@
       "-3% Move Speed",
       "-3% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4471,6 +4826,9 @@
       "-2% Move Speed",
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4515,6 +4873,9 @@
       "-2% Stamina Cost",
       "-20% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4558,6 +4919,9 @@
       "-6% Move Speed",
       "-6% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4601,6 +4965,9 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4645,6 +5012,9 @@
       "-4% Stamina Cost",
       "-30% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4684,7 +5054,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Hound_Mask",
     "image_url": "https://outward.wiki.gg/images/Hound_Mask.png?fdb669",
     "image_local": "assets/images/armor/armor_Hound_Mask.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Common"
+    ]
   },
   {
     "name": "Jade Acolyte Boots",
@@ -4725,6 +5098,9 @@
     "image_local": "assets/images/armor/armor_Jade_Acolyte_Boots.png",
     "special_effects": [
       "-10% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4766,6 +5142,9 @@
     "image_local": "assets/images/armor/armor_Jade_Acolyte_Cowl.png",
     "special_effects": [
       "-10% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4807,6 +5186,9 @@
     "image_local": "assets/images/armor/armor_Jade_Acolyte_Robes.png",
     "special_effects": [
       "-10% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -4848,6 +5230,10 @@
     "image_local": "assets/images/armor/armor_Jade-Lich_Boots.png",
     "special_effects": [
       "-15% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -4889,6 +5275,10 @@
     "image_local": "assets/images/armor/armor_Jade-Lich_Mask.png",
     "special_effects": [
       "-25% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -4930,6 +5320,10 @@
     "image_local": "assets/images/armor/armor_Jade-Lich_Robes.png",
     "special_effects": [
       "-15% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -4972,7 +5366,10 @@
     "special_effects": [
       "+19% Move Speed"
     ],
-    "legacy_upgrade_from": "Black Pearlbird Mask"
+    "legacy_upgrade_from": "Black Pearlbird Mask",
+    "rarity_tags": [
+      "Legacy"
+    ]
   },
   {
     "name": "Kazite Armor",
@@ -5029,6 +5426,12 @@
         "outcome": "Unknown",
         "faction": "The Blue Chamber Collective"
       }
+    ],
+    "rarity_tags": [
+      "Legacy",
+      "Quest",
+      "Unique",
+      "Set"
     ]
   },
   {
@@ -5086,6 +5489,12 @@
         "outcome": "Unknown",
         "faction": "The Blue Chamber Collective"
       }
+    ],
+    "rarity_tags": [
+      "Legacy",
+      "Quest",
+      "Unique",
+      "Set"
     ]
   },
   {
@@ -5128,7 +5537,12 @@
     "special_effects": [
       "-15% Mana Cost"
     ],
-    "legacy_upgrade_to": "Master Kazite Cat Mask"
+    "legacy_upgrade_to": "Master Kazite Cat Mask",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kazite Light Armor",
@@ -5170,7 +5584,12 @@
     "special_effects": [
       "+10 Cold Protection"
     ],
-    "legacy_upgrade_to": "Shadow Kazite Light Armor"
+    "legacy_upgrade_to": "Shadow Kazite Light Armor",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kazite Light Boots",
@@ -5210,7 +5629,12 @@
     "image_url": "https://outward.wiki.gg/images/Kazite_Light_Boots.png?655b5a",
     "image_local": "assets/images/armor/armor_Kazite_Light_Boots.png",
     "special_effects": [],
-    "legacy_upgrade_to": "Shadow Kazite Light Boots"
+    "legacy_upgrade_to": "Shadow Kazite Light Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kazite Light Helmet",
@@ -5252,7 +5676,12 @@
     "special_effects": [
       "-15% Mana Cost"
     ],
-    "legacy_upgrade_to": "Shadow Kazite Light Helmet"
+    "legacy_upgrade_to": "Shadow Kazite Light Helmet",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kazite Mask",
@@ -5294,7 +5723,12 @@
     "special_effects": [
       "-15% Mana Cost"
     ],
-    "legacy_upgrade_to": "Master Kazite Mask"
+    "legacy_upgrade_to": "Master Kazite Mask",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kazite Oni Mask",
@@ -5336,7 +5770,12 @@
     "special_effects": [
       "-15% Mana Cost"
     ],
-    "legacy_upgrade_to": "Master Kazite Oni Mask"
+    "legacy_upgrade_to": "Master Kazite Oni Mask",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kintsugi Armor",
@@ -5380,7 +5819,12 @@
       "-8% Stamina Cost",
       "3 Protection"
     ],
-    "legacy_upgrade_to": "White Kintsugi Armor"
+    "legacy_upgrade_to": "White Kintsugi Armor",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kintsugi Boots",
@@ -5424,7 +5868,12 @@
       "-4% Stamina Cost",
       "2 Protection"
     ],
-    "legacy_upgrade_to": "White Kintsugi Boots"
+    "legacy_upgrade_to": "White Kintsugi Boots",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Kintsugi Helm",
@@ -5469,7 +5918,12 @@
       "-50% Mana Cost",
       "2 Protection"
     ],
-    "legacy_upgrade_to": "White Kintsugi Helmet"
+    "legacy_upgrade_to": "White Kintsugi Helmet",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Krypteia Armor",
@@ -5510,6 +5964,9 @@
     "image_local": "assets/images/armor/armor_Krypteia_Armor.png",
     "special_effects": [
       "Prevents Mild Petrification and Holy Blaze"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5551,6 +6008,9 @@
     "image_local": "assets/images/armor/armor_Krypteia_Boots.png",
     "special_effects": [
       "Prevents Blaze"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5592,6 +6052,9 @@
     "image_local": "assets/images/armor/armor_Krypteia_Mask.png",
     "special_effects": [
       "Prevents Plague"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5634,7 +6097,12 @@
     "special_effects": [
       "+10 Heat Protection"
     ],
-    "legacy_upgrade_to": "Shadow Light Kazite Shirt"
+    "legacy_upgrade_to": "Shadow Light Kazite Shirt",
+    "rarity_tags": [
+      "Legacy",
+      "Set",
+      "Unique"
+    ]
   },
   {
     "name": "Looter Armor",
@@ -5675,6 +6143,9 @@
     "image_local": "assets/images/armor/armor_Looter_Armor.png",
     "special_effects": [
       "+10 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5716,6 +6187,9 @@
     "image_local": "assets/images/armor/armor_Looter_Mask.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5758,6 +6232,9 @@
     "special_effects": [
       "+5 Pouch",
       "+10 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5799,6 +6276,9 @@
     "image_local": "assets/images/armor/armor_Makeshift_Leather_Boots.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5840,6 +6320,9 @@
     "image_local": "assets/images/armor/armor_Makeshift_Leather_Hat.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5883,6 +6366,9 @@
       "+10% Move Speed",
       "+6 Heat Protection",
       "4 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5926,6 +6412,9 @@
       "+5% Move Speed",
       "+4 Heat Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -5969,6 +6458,9 @@
       "+5% Move Speed",
       "+4 Heat Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6012,6 +6504,9 @@
       "+5% Move Speed",
       "+8 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6055,6 +6550,9 @@
       "+5% Move Speed",
       "+16 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6098,6 +6596,9 @@
       "+5% Move Speed",
       "+8 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6139,6 +6640,9 @@
     "image_local": "assets/images/armor/armor_Master_Kazite_Armor.png",
     "special_effects": [
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6180,6 +6684,9 @@
     "image_local": "assets/images/armor/armor_Master_Kazite_Boots.png",
     "special_effects": [
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6222,6 +6729,9 @@
     "special_effects": [
       "-10% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6264,6 +6774,9 @@
     "special_effects": [
       "-10% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6306,6 +6819,9 @@
     "special_effects": [
       "-10% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6350,6 +6866,9 @@
       "+2 Pouch",
       "+5 Cold Protection",
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6394,6 +6913,9 @@
       "+8 Pouch",
       "+10 Cold Protection",
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6438,6 +6960,9 @@
       "+2 Pouch",
       "+5 Cold Protection",
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6477,7 +7002,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Ribcage",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Ribcage.png?e0e310",
     "image_local": "assets/images/armor/armor_Merton_s_Ribcage.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Merton's Shinbones",
@@ -6516,7 +7044,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Shinbones",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Shinbones.png?94d0c9",
     "image_local": "assets/images/armor/armor_Merton_s_Shinbones.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Merton's Skull",
@@ -6555,7 +7086,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Skull",
     "image_url": "https://outward.wiki.gg/images/Merton%27s_Skull.png?7b78e0",
     "image_local": "assets/images/armor/armor_Merton_s_Skull.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Militia Armor",
@@ -6599,6 +7133,9 @@
       "-3% Stamina Cost",
       "+10 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6643,6 +7180,9 @@
       "-2% Stamina Cost",
       "+5 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6688,6 +7228,9 @@
       "-5% Mana Cost",
       "+5 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6729,6 +7272,9 @@
     "image_local": "assets/images/armor/armor_Miner_Armor.png",
     "special_effects": [
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6770,6 +7316,9 @@
     "image_local": "assets/images/armor/armor_Miner_Boots.png",
     "special_effects": [
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6811,6 +7360,9 @@
     "image_local": "assets/images/armor/armor_Miner_Helmet.png",
     "special_effects": [
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6853,6 +7405,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+7 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6894,6 +7449,9 @@
     "image_local": "assets/images/armor/armor_Noble_Mask.png",
     "special_effects": [
       "+4 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6936,6 +7494,9 @@
     "special_effects": [
       "+10% Move Speed",
       "+4 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -6978,6 +7539,9 @@
     "special_effects": [
       "-5% Mana Cost",
       "+10 Corruption Resistance"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7020,6 +7584,9 @@
     "special_effects": [
       "-5% Mana Cost",
       "+15 Corruption Resistance"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7064,6 +7631,9 @@
       "-5% Stamina Cost",
       "+15 Cold Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7108,6 +7678,9 @@
       "-3% Stamina Cost",
       "+10 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7153,6 +7726,9 @@
       "-30% Mana Cost",
       "+10 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7194,6 +7770,9 @@
     "image_local": "assets/images/armor/armor_Padded_Armor.png",
     "special_effects": [
       "+10 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7235,6 +7814,9 @@
     "image_local": "assets/images/armor/armor_Padded_Boots.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7276,6 +7858,9 @@
     "image_local": "assets/images/armor/armor_Padded_Helm.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7317,6 +7902,9 @@
     "image_local": "assets/images/armor/armor_Pale_Light_Clothes.png",
     "special_effects": [
       "+15 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7359,6 +7947,9 @@
     "special_effects": [
       "+3 Cold Protection",
       "+1 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7411,6 +8002,10 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -7463,6 +8058,10 @@
       "-3% Move Speed",
       "-2% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -7516,6 +8115,10 @@
       "-2% Stamina Cost",
       "-30% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -7561,6 +8164,9 @@
       "+12 Cold Protection",
       "+12 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7606,6 +8212,9 @@
       "+6 Cold Protection",
       "+6 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7652,6 +8261,9 @@
       "+6 Cold Protection",
       "+6 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7693,6 +8305,9 @@
     "image_local": "assets/images/armor/armor_Patterned_Worker_Attire.png",
     "special_effects": [
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7735,6 +8350,9 @@
     "special_effects": [
       "+3 Cold Protection",
       "+1 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -7777,7 +8395,11 @@
     "special_effects": [
       "+15% Move Speed"
     ],
-    "legacy_upgrade_to": "Black Pearlbird Mask"
+    "legacy_upgrade_to": "Black Pearlbird Mask",
+    "rarity_tags": [
+      "Legacy",
+      "Unique"
+    ]
   },
   {
     "name": "Pearlescent Mail",
@@ -7818,6 +8440,9 @@
     "image_local": "assets/images/armor/armor_Pearlescent_Mail.png",
     "special_effects": [
       "+8 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -7871,6 +8496,10 @@
       "-3% Stamina Cost",
       "+10 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -7924,6 +8553,10 @@
       "-2% Stamina Cost",
       "+5 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -7978,6 +8611,10 @@
       "-10% Mana Cost",
       "+5 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -8024,6 +8661,9 @@
       "+10 Cold Protection",
       "+10 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8070,6 +8710,9 @@
       "+8 Cold Protection",
       "+8 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8117,6 +8760,9 @@
       "+8 Cold Protection",
       "+8 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8160,6 +8806,9 @@
       "-6% Move Speed",
       "-6% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8203,6 +8852,9 @@
       "-4% Move Speed",
       "-4% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8247,6 +8899,9 @@
       "-4% Stamina Cost",
       "-50% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8288,6 +8943,9 @@
     "image_local": "assets/images/armor/armor_Purple_Dancer_Clothes.png",
     "special_effects": [
       "+14 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8329,6 +8987,9 @@
     "image_local": "assets/images/armor/armor_Purple_Festive_Attire.png",
     "special_effects": [
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8370,6 +9031,9 @@
     "image_local": "assets/images/armor/armor_Purple_Festive_Hat.png",
     "special_effects": [
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8411,6 +9075,9 @@
     "image_local": "assets/images/armor/armor_Red_Clansage_Robe.png",
     "special_effects": [
       "+15 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -8452,6 +9119,9 @@
     "image_local": "assets/images/armor/armor_Red_Festive_Attire.png",
     "special_effects": [
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8493,6 +9163,9 @@
     "image_local": "assets/images/armor/armor_Red_Festive_Hat.png",
     "special_effects": [
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8534,6 +9207,9 @@
     "image_local": "assets/images/armor/armor_Red_Light_Clothes.png",
     "special_effects": [
       "+15 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8575,6 +9251,9 @@
     "image_local": "assets/images/armor/armor_Red_Wide_Hat.png",
     "special_effects": [
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -8618,6 +9297,9 @@
       "-6% Move Speed",
       "-11% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8661,6 +9343,9 @@
       "-4% Move Speed",
       "-9% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8704,6 +9389,9 @@
       "-4% Move Speed",
       "-9% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8747,6 +9435,9 @@
       "-3% Move Speed",
       "-3% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8790,6 +9481,9 @@
       "-2% Move Speed",
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8833,6 +9527,9 @@
       "-2% Move Speed",
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8874,6 +9571,9 @@
     "image_local": "assets/images/armor/armor_Sandals.png",
     "special_effects": [
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8915,6 +9615,9 @@
     "image_local": "assets/images/armor/armor_Scaled_Leather_Attire.png",
     "special_effects": [
       "+5 Pouch"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -8954,7 +9657,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Boots",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Boots.png?5ef732",
     "image_local": "assets/images/armor/armor_Scaled_Leather_Boots.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Scaled Leather Hat",
@@ -8993,7 +9699,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Scaled_Leather_Hat",
     "image_url": "https://outward.wiki.gg/images/Scaled_Leather_Hat.png?57ef2e",
     "image_local": "assets/images/armor/armor_Scaled_Leather_Hat.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Scarab Mask",
@@ -9032,7 +9741,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Scarab_Mask",
     "image_url": "https://outward.wiki.gg/images/Scarab_Mask.png?85b99f",
     "image_local": "assets/images/armor/armor_Scarab_Mask.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Common"
+    ]
   },
   {
     "name": "Scarlet Boots",
@@ -9071,7 +9783,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Boots",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Boots.png?9cb154",
     "image_local": "assets/images/armor/armor_Scarlet_Boots.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Scarlet Mask",
@@ -9110,7 +9825,10 @@
     "source_url": "https://outward.wiki.gg/wiki/Scarlet_Mask",
     "image_url": "https://outward.wiki.gg/images/Scarlet_Mask.png?cd6c6b",
     "image_local": "assets/images/armor/armor_Scarlet_Mask.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "Scarlet Robes",
@@ -9151,6 +9869,9 @@
     "image_local": "assets/images/armor/armor_Scarlet_Robes.png",
     "special_effects": [
       "-20% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9192,6 +9913,9 @@
     "image_local": "assets/images/armor/armor_Scavenger_Boots.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9234,6 +9958,9 @@
     "special_effects": [
       "+4 Pouch",
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9275,6 +10002,9 @@
     "image_local": "assets/images/armor/armor_Scavenger_Hood.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9316,6 +10046,9 @@
     "image_local": "assets/images/armor/armor_Scavenger_Mask.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9357,6 +10090,9 @@
     "image_local": "assets/images/armor/armor_Scavenger_Scarf.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9399,6 +10135,9 @@
     "special_effects": [
       "+6 Cold Protection",
       "+6 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9440,6 +10179,9 @@
     "image_local": "assets/images/armor/armor_Scholar_Boots.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9481,6 +10223,9 @@
     "image_local": "assets/images/armor/armor_Scholar_Circlet.png",
     "special_effects": [
       "+3 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9523,6 +10268,9 @@
     "special_effects": [
       "+12 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9564,6 +10312,9 @@
     "image_local": "assets/images/armor/armor_Shadow_Kazite_Light_Boots.png",
     "special_effects": [
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9606,6 +10357,9 @@
     "special_effects": [
       "-15% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9648,6 +10402,9 @@
     "special_effects": [
       "+12 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9690,6 +10447,9 @@
     "special_effects": [
       "-5% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9732,6 +10492,9 @@
     "special_effects": [
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9775,6 +10538,9 @@
       "-4% Stamina Cost",
       "-15% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -9818,6 +10584,10 @@
       "-3% Move Speed",
       "-3% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -9861,6 +10631,10 @@
       "-2% Move Speed",
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -9905,6 +10679,10 @@
       "-2% Stamina Cost",
       "-15% Mana Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -9946,6 +10724,9 @@
     "image_local": "assets/images/armor/armor_Simple_Shoes.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -9988,6 +10769,9 @@
     "special_effects": [
       "+8 Cold Protection",
       "+8 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10030,6 +10814,9 @@
     "special_effects": [
       "+4 Cold Protection",
       "+4 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10072,6 +10859,9 @@
     "special_effects": [
       "+4 Cold Protection",
       "+4 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10113,6 +10903,9 @@
     "image_local": "assets/images/armor/armor_Squire_Attire.png",
     "special_effects": [
       "+5% Move Speed"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10156,6 +10949,9 @@
       "+5% Move Speed",
       "+5 Cold Protection",
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10197,6 +10993,9 @@
     "image_local": "assets/images/armor/armor_Squire_Headband.png",
     "special_effects": [
       "+5% Move Speed"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10238,6 +11037,9 @@
     "image_local": "assets/images/armor/armor_Straw_Hat.png",
     "special_effects": [
       "+5 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10279,6 +11081,9 @@
     "image_local": "assets/images/armor/armor_Striped_Garb.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -10321,6 +11126,9 @@
     "special_effects": [
       "+2 Cold Protection",
       "+2 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10363,6 +11171,9 @@
     "special_effects": [
       "+1 Cold Protection",
       "+1 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10405,6 +11216,9 @@
     "special_effects": [
       "+1 Cold Protection",
       "+1 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10451,6 +11265,10 @@
     "image_local": "assets/images/armor/armor_Tenebrous_Armor.png",
     "special_effects": [
       "+10 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -10497,6 +11315,10 @@
     "image_local": "assets/images/armor/armor_Tenebrous_Boots.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -10543,6 +11365,10 @@
     "image_local": "assets/images/armor/armor_Tenebrous_Helm.png",
     "special_effects": [
       "+5 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set"
     ]
   },
   {
@@ -10584,6 +11410,9 @@
     "image_local": "assets/images/armor/armor_Trader_Boots.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10626,6 +11455,9 @@
     "special_effects": [
       "+8 Pouch",
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10670,6 +11502,10 @@
       "-6% Stamina Cost",
       "+10 Heat Protection",
       "6 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -10723,6 +11559,11 @@
       "-4% Stamina Cost",
       "+5 Heat Protection",
       "4 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -10777,6 +11618,11 @@
       "-15% Mana Cost",
       "+5 Heat Protection",
       "4 Protection"
+    ],
+    "rarity_tags": [
+      "Crafted",
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -10818,6 +11664,9 @@
     "image_local": "assets/images/armor/armor_Tuanosaur_Mask.png",
     "special_effects": [
       "-10% Stamina Cost"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -10862,6 +11711,9 @@
       "-7% Stamina Cost",
       "+10 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10906,6 +11758,9 @@
       "-5% Stamina Cost",
       "+5 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10951,6 +11806,9 @@
       "-5% Mana Cost",
       "+5 Heat Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -10993,6 +11851,9 @@
     "special_effects": [
       "-3% Move Speed",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11035,6 +11896,9 @@
     "special_effects": [
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11078,6 +11942,9 @@
       "-2% Move Speed",
       "-2% Stamina Cost",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11120,6 +11987,9 @@
     "special_effects": [
       "+3 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11161,6 +12031,9 @@
     "image_local": "assets/images/armor/armor_White_Arcane_Robe.png",
     "special_effects": [
       "+6 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11204,6 +12077,9 @@
       "-7% Move Speed",
       "-4% Stamina Cost",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11247,6 +12123,9 @@
       "-6% Move Speed",
       "-2% Stamina Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11291,6 +12170,9 @@
       "-2% Stamina Cost",
       "-50% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11332,6 +12214,9 @@
     "image_local": "assets/images/armor/armor_White_Priest_Boots.png",
     "special_effects": [
       "-10% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11374,6 +12259,9 @@
     "special_effects": [
       "-10% Mana Cost",
       "+15 Corruption Resistance"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11413,7 +12301,10 @@
     "source_url": "https://outward.wiki.gg/wiki/White_Priest_Mitre",
     "image_url": "https://outward.wiki.gg/images/White_Priest_Mitre.png?f4ae89",
     "image_local": "assets/images/armor/armor_White_Priest_Mitre.png",
-    "special_effects": []
+    "special_effects": [],
+    "rarity_tags": [
+      "Set"
+    ]
   },
   {
     "name": "White Priest Robes",
@@ -11454,6 +12345,9 @@
     "image_local": "assets/images/armor/armor_White_Priest_Robes.png",
     "special_effects": [
       "-10% Mana Cost"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11496,6 +12390,9 @@
     "special_effects": [
       "+5% Move Speed",
       "+10 Heat Protection"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -11539,7 +12436,11 @@
       "+5% Move Speed",
       "+10 Heat Protection"
     ],
-    "legacy_upgrade_to": "White Wide Hat"
+    "legacy_upgrade_to": "White Wide Hat",
+    "rarity_tags": [
+      "Legacy",
+      "Unique"
+    ]
   },
   {
     "name": "Wide Blue Hat",
@@ -11581,7 +12482,11 @@
     "special_effects": [
       "+10 Heat Protection"
     ],
-    "legacy_upgrade_to": "Red Wide Hat"
+    "legacy_upgrade_to": "Red Wide Hat",
+    "rarity_tags": [
+      "Legacy",
+      "Unique"
+    ]
   },
   {
     "name": "Wolf Mage Armor",
@@ -11623,6 +12528,9 @@
     "special_effects": [
       "+10 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11665,6 +12573,9 @@
     "special_effects": [
       "+5 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11706,6 +12617,9 @@
     "image_local": "assets/images/armor/armor_Wolf_Mage_Helmet.png",
     "special_effects": [
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11750,6 +12664,9 @@
       "-3% Stamina Cost",
       "+10 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11794,6 +12711,9 @@
       "-2% Stamina Cost",
       "+5 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11838,6 +12758,9 @@
       "-2% Stamina Cost",
       "+5 Cold Protection",
       "1 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -11882,6 +12805,10 @@
       "-6% Stamina Cost",
       "+6 Cold Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -11926,6 +12853,10 @@
       "-4% Stamina Cost",
       "+3 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -11970,6 +12901,9 @@
       "-4% Stamina Cost",
       "-30% Mana Cost",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -12015,6 +12949,10 @@
       "-15% Mana Cost",
       "+3 Cold Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set",
+      "Unique"
     ]
   },
   {
@@ -12056,6 +12994,9 @@
     "image_local": "assets/images/armor/armor_Worker_Boots.png",
     "special_effects": [
       "+3 Cold Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -12100,6 +13041,9 @@
       "-8% Stamina Cost",
       "+14 Heat Protection",
       "3 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -12144,6 +13088,9 @@
       "-6% Stamina Cost",
       "+8 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -12189,6 +13136,9 @@
       "-30% Mana Cost",
       "+8 Heat Protection",
       "2 Protection"
+    ],
+    "rarity_tags": [
+      "Set"
     ]
   },
   {
@@ -12202,6 +13152,9 @@
     "local_image": "assets/images/armor/armor_Adventurer_Backpack.png",
     "special_effects": [
       "35 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12216,6 +13169,9 @@
       "Slows down the decay of perishable items by 75%.",
       "Provides 1 Protection to the Durability of items in the backpack when hit by enemies",
       "60 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12228,6 +13184,9 @@
     "local_image": "assets/images/armor/armor_Boozu_Hide_Backpack.png",
     "special_effects": [
       "75 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12243,6 +13202,9 @@
       "Provides 15 Protection to the Durability of items in the backpack when hit by enemies",
       "Provides 2 Protection, much like plate armor.",
       "75 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12258,6 +13220,9 @@
       "Unrestricted Dodge",
       "Not able to attach lanterns.",
       "70 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12271,6 +13236,9 @@
     "special_effects": [
       "+15 Hot Weather protection",
       "80 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12284,6 +13252,9 @@
     "special_effects": [
       "+5 Barrier",
       "80 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12295,6 +13266,9 @@
     "local_image": "assets/images/armor/armor_Glowstone_Backpack.png",
     "special_effects": [
       "75 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12312,6 +13286,9 @@
       "Slows down the decay of perishable items by 25%.",
       "Provides a small amount of protection to the Durability of items in the Backpack when hit by enemies",
       "75 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12325,6 +13302,9 @@
     "special_effects": [
       "Provides 3 Protection to the Durability of items in the backpack when hit by enemies",
       "110 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12339,6 +13319,9 @@
       "Slows down the decay of perishable items by 2%.",
       "Provides 1 Protection to the Durability of items in the backpack when hit by enemies",
       "50 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12368,6 +13351,10 @@
         "outcome": "Unknown",
         "faction": "The Blue Chamber Collective"
       }
+    ],
+    "rarity_tags": [
+      "Quest",
+      "Unique"
     ]
   },
   {
@@ -12380,6 +13367,9 @@
     "local_image": "assets/images/armor/armor_Primitive_Satchel.png",
     "special_effects": [
       "25 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12394,6 +13384,9 @@
       "Slows down the decay of perishable items by 4%.",
       "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "75 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12409,6 +13402,9 @@
       "No dodge interference",
       "Slows down the decay of perishable items by 4%.",
       "60 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12424,6 +13420,9 @@
       "Slows down the decay of perishable items by 4%.",
       "Provides 9 Protection to the Durability of items in the backpack when hit by enemies",
       "60 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12439,6 +13438,9 @@
       "Slows down the decay of perishable items by 6%.",
       "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "100 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12451,6 +13453,9 @@
     "special_effects": [
       "+20% Status Resistance",
       "80 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12466,6 +13471,9 @@
       "Slows down the decay of perishable items by 50%.",
       "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "85 Capacity"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12479,6 +13487,9 @@
       "Provides light",
       "Requires Power Coil to recharge",
       "Cannot be refueled with oil"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12491,6 +13502,9 @@
     "local_image": "assets/images/armor/armor_Djinn's_Lamp.png",
     "special_effects": [
       "Grants +15 Status Resistance"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12504,6 +13518,9 @@
     "special_effects": [
       "Provides light",
       "Requires Oil to refuel"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12520,6 +13537,9 @@
       "+10 Frost Resistance",
       "+10 Lightning Resistance",
       "+10 Decay Resistance"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12532,6 +13552,9 @@
     "special_effects": [
       "Provides light",
       "Requires Oil to refuel"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   },
   {
@@ -12547,6 +13570,9 @@
       "Passively gains Fuel over time when Enchanted",
       "Must be equipped in Hand or on Backpack",
       "Must not be lit"
+    ],
+    "rarity_tags": [
+      "Common"
     ]
   }
 ]
