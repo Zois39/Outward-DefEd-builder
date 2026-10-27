@@ -5014,7 +5014,22 @@
     "special_effects": [
       "-7% Stamina Cost"
     ],
-    "legacy_upgrade_to": "Master Kazite Armor"
+    "legacy_upgrade_to": "Master Kazite Armor",
+    "quest_reward": [
+      {
+        "quest": "Vendavel Quest",
+        "faction": "The Blue Chamber Collective"
+      },
+      {
+        "quest": "Vendavel Quest",
+        "faction": "The Blue Chamber Collective"
+      },
+      {
+        "quest": "Vendavel Quest",
+        "outcome": "Unknown",
+        "faction": "The Blue Chamber Collective"
+      }
+    ]
   },
   {
     "name": "Kazite Boots",
@@ -5056,7 +5071,22 @@
     "special_effects": [
       "-8% Stamina Cost"
     ],
-    "legacy_upgrade_to": "Master Kazite Boots"
+    "legacy_upgrade_to": "Master Kazite Boots",
+    "quest_reward": [
+      {
+        "quest": "Vendavel Quest",
+        "faction": "The Blue Chamber Collective"
+      },
+      {
+        "quest": "Vendavel Quest",
+        "faction": "The Blue Chamber Collective"
+      },
+      {
+        "quest": "Vendavel Quest",
+        "outcome": "Unknown",
+        "faction": "The Blue Chamber Collective"
+      }
+    ]
   },
   {
     "name": "Kazite Cat Mask",
@@ -12323,6 +12353,21 @@
       "Slows down the decay of perishable items by 75%",
       "Provides 2 Protection to the Durability of items in the backpack when hit by enemies",
       "75 Capacity"
+    ],
+    "quest_reward": [
+      {
+        "quest": "Vendavel Quest",
+        "faction": "The Blue Chamber Collective"
+      },
+      {
+        "quest": "Vendavel Quest",
+        "faction": "The Blue Chamber Collective"
+      },
+      {
+        "quest": "Vendavel Quest",
+        "outcome": "Unknown",
+        "faction": "The Blue Chamber Collective"
+      }
     ]
   },
   {
