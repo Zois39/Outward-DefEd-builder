@@ -807,7 +807,7 @@ function renderArmorList(){
     html+=imgHtml(imgPath,'item-icon');
     html+='<div class="item-title">';
     html+='<div class="item-name">'+escHtml(a.name)+'</div>';
-    html+='<div class="item-type" style="flex-wrap:wrap;word-break:break-word">'+escHtml(a.slot||'')+(rarityName?' | '+rarityName:'')+'</div>';
+    html+='<div class="item-type" style="flex-wrap:wrap;word-break:break-word">'+escHtml(a.slot||'')+(rarityName?' | '+(Array.isArray(rarityName)?rarityName.join(', '):rarityName):'')+'</div>';
     html+='</div></div>';
     html+='<div class="item-stats">';
     html+='<div class="stat-line"><span class="stat-label">Protection</span><span class="stat-value">'+(a.protection||0)+'</span></div>';
@@ -1050,7 +1050,7 @@ function renderWeaponList(){
     html+=imgHtml(imgPath,'item-icon');
     html+='<div class="item-title">';
     html+='<div class="item-name">'+escHtml(w.name)+'</div>';
-    html+='<div class="item-type">'+escHtml(w.weapon_type||'')+' | '+(w.handedness||'')+' | '+rarityName+'</div>';
+    html+='<div class="item-type" style="flex-wrap:wrap;word-break:break-word">'+escHtml(w.weapon_type||'')+' | '+(w.handedness||'')+' | '+(Array.isArray(rarityName)?rarityName.join(', '):rarityName)+'</div>';
     html+='</div></div>';
     html+='<div class="item-stats">';
     if(w.damage_stats&&w.damage_stats.base_damage){
