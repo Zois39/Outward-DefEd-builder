@@ -9457,7 +9457,8 @@
       "Set"
     ],
     "fire_bonus": 25,
-    "decay_bonus": 25
+    "decay_bonus": 25,
+    "physical_bonus": -30
   },
   {
     "name": "Rust Lich Boots",
