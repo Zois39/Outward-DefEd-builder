@@ -820,22 +820,22 @@ function renderArmorList(){
   var filtered=DATA.armor.filter(function(a){
     if(ARMOR_FILTER.slot!=='all'&&a.slot!==ARMOR_FILTER.slot)return false;
 
-    // Rarity filter (multi-select array)
+    // Rarity filter (multi-select array, AND logic)
     if(ARMOR_FILTER.rarity.length>0 && ARMOR_FILTER.rarity.indexOf('all')<0){
       var tags=getArmorRarityName(a);
-      var hasRarity=false;
+      var hasAllRarities=true;
       ARMOR_FILTER.rarity.forEach(function(r){
-        if(tags.indexOf(r)>=0)hasRarity=true;
+        if(tags.indexOf(r)<0)hasAllRarities=false;
       });
-      if(!hasRarity)return false;
+      if(!hasAllRarities)return false;
     }
 
-    // Effect filter (multi-select array)
+    // Effect filter (multi-select array, AND logic)
     if(ARMOR_FILTER.effect.length>0 && ARMOR_FILTER.effect.indexOf('all')<0){
-      var hasAnyEffect=false;
+      var hasAllEffects=true;
 
       ARMOR_FILTER.effect.forEach(function(filterName){
-        if(hasAnyEffect)return;
+        if(!hasAllEffects)return;
         filterName=filterName.toLowerCase();
         var hasEffect=false;
 
@@ -897,10 +897,10 @@ function renderArmorList(){
         });
       }
 
-        if(hasEffect)hasAnyEffect=true;
+        if(!hasEffect)hasAllEffects=false;
       });
 
-      if(!hasAnyEffect)return false;
+      if(!hasAllEffects)return false;
     }
 
     if(ARMOR_FILTER.legacy && !a.legacy_upgrade_to && !a.legacy_upgrade_from)return false;
