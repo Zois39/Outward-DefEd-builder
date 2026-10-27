@@ -187,7 +187,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "physical_bonus": 10
   },
   {
     "name": "Ammolite Boots",
@@ -390,7 +391,9 @@
     "rarity_tags": [
       "Crafted",
       "Set"
-    ]
+    ],
+    "fire_bonus": 15,
+    "ethereal_bonus": 10
   },
   {
     "name": "Antique Plate Sallet",
@@ -540,7 +543,8 @@
       "Legacy",
       "Set",
       "Unique"
-    ]
+    ],
+    "frost_bonus": 10
   },
   {
     "name": "Ash Armor",
@@ -2797,7 +2801,8 @@
     "rarity_tags": [
       "Set",
       "Unique"
-    ]
+    ],
+    "frost_bonus": 21
   },
   {
     "name": "Crimson Plate Boots",
@@ -4922,7 +4927,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "decay_bonus": 20
   },
   {
     "name": "Horror Greaves",
@@ -5324,7 +5330,9 @@
     "rarity_tags": [
       "Set",
       "Unique"
-    ]
+    ],
+    "fire_bonus": 10,
+    "decay_bonus": 15
   },
   {
     "name": "Jewel Bird Mask",
@@ -6369,7 +6377,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "ethereal_bonus": 10
   },
   {
     "name": "Manawall Boots",
@@ -8443,7 +8452,8 @@
     ],
     "rarity_tags": [
       "Common"
-    ]
+    ],
+    "physical_bonus": 15
   },
   {
     "name": "Petrified Wood Armor",
@@ -9078,7 +9088,9 @@
     ],
     "rarity_tags": [
       "Common"
-    ]
+    ],
+    "fire_bonus": 5,
+    "lightning_bonus": 5
   },
   {
     "name": "Red Festive Attire",
@@ -9301,7 +9313,9 @@
     "rarity_tags": [
       "Set"
     ],
-    "barrier": 3
+    "barrier": 3,
+    "lightning_bonus": 10,
+    "ethereal_bonus": 10
   },
   {
     "name": "Runic Boots",
@@ -9441,7 +9455,9 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "fire_bonus": 25,
+    "decay_bonus": 25
   },
   {
     "name": "Rust Lich Boots",
@@ -9875,7 +9891,10 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "fire_bonus": 15,
+    "frost_bonus": 15,
+    "decay_bonus": 15
   },
   {
     "name": "Scavenger Boots",
@@ -10775,7 +10794,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "physical_bonus": 12
   },
   {
     "name": "Slayer's Boots",
@@ -11272,7 +11292,9 @@
     "rarity_tags": [
       "Crafted",
       "Set"
-    ]
+    ],
+    "ethereal_bonus": 10,
+    "decay_bonus": 5
   },
   {
     "name": "Tenebrous Boots",
@@ -12037,7 +12059,10 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "fire_bonus": 5,
+    "frost_bonus": 5,
+    "decay_bonus": 5
   },
   {
     "name": "White Kintsugi Armor",
@@ -12083,7 +12108,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "fire_bonus": 10
   },
   {
     "name": "White Kintsugi Boots",
@@ -12534,7 +12560,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "ethereal_bonus": 5
   },
   {
     "name": "Wolf Mage Boots",
@@ -13047,7 +13074,8 @@
     ],
     "rarity_tags": [
       "Set"
-    ]
+    ],
+    "physical_bonus": 12
   },
   {
     "name": "Zagis' Boots",
