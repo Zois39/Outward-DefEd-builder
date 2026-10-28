@@ -1335,7 +1335,7 @@ function renderWeaponsTab(pane){
   }
   html+='</div></div>';
   html+='<div class="filter-section"><div class="filter-label">Handedness</div><div class="filter-pills">';
-  ['all','1H','2H'].forEach(function(h){
+  ['all','1H','2H','Off-H'].forEach(function(h){
     html+='<button class="pill'+(WEAPON_FILTER.hand===h?' active':'')+'" '+makeClick('setWeaponFilter','hand|'+h)+'>'+h+'</button>';
   });
   html+='</div></div>';
