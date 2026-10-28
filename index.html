@@ -211,6 +211,24 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .chip-empty{color:var(--dim2);font-size:11px;padding:8px 0;text-align:center;font-style:italic}
 @media(min-width:900px){.home-menu{max-width:340px}.builder-content{display:grid;grid-template-columns:280px 1fr 320px;gap:0;padding-bottom:0}.tab-pane{display:block!important;border-right:1px solid var(--brown);max-width:none}.tab-bar{display:none}}
 @media(max-width:380px){.home-title{font-size:20px;letter-spacing:3px}.hero-val{font-size:20px}.item-grid{grid-template-columns:1fr}.inventory-grid{grid-template-columns:repeat(2,1fr)}}
+
+.enchant-btn{width:100%;padding:12px;background:rgba(142,68,173,.2);border:1px solid var(--purple);border-radius:6px;color:var(--purple);font-size:13px;cursor:pointer;font-family:inherit;min-height:44px;margin-bottom:8px}
+.enchant-btn:hover{background:var(--purple);color:#fff}
+.enchant-btn.active{background:var(--purple);color:#fff}
+.enchant-section{margin-top:8px;padding:10px;background:rgba(142,68,173,.1);border-radius:6px;border:1px solid var(--purple)}
+.enchant-title{font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-weight:600}
+.enchant-name{font-size:13px;color:var(--purple);font-weight:600;margin-bottom:4px}
+.enchant-effects{font-size:11px;color:var(--text);line-height:1.4}
+.enchant-effects div{padding:2px 0}
+.enchant-modal .modal-title{color:var(--purple)}
+.enchant-option{padding:12px;margin-bottom:8px;background:var(--panel2);border:1px solid var(--brown);border-radius:8px;cursor:pointer}
+.enchant-option:hover{border-color:var(--purple)}
+.enchant-option.selected{border-color:var(--purple);background:rgba(142,68,173,.1)}
+.enchant-option-name{font-size:14px;color:var(--purple);font-weight:600;margin-bottom:4px}
+.enchant-option-type{font-size:10px;color:var(--dim);margin-bottom:4px}
+.enchant-option-effects{font-size:11px;color:var(--text);line-height:1.4}
+.enchant-option-effects div{padding:2px 0}
+
 </style>
 </head>
 <body>
@@ -264,7 +282,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 </div>
 <script>
 var DATA=null;
-var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
+var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null],enchantments:{}};
 var CURRENT_TAB='stats';
 var ARMOR_FILTER={slot:'all',rarity:['all'],effect:['all'],legacy:false,sort:'name'};
 var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
@@ -601,6 +619,56 @@ function renderStatsTab(pane){
   html+='<div class="pts-card"><div class="pts-ico">\uD83D\uDCAB</div><div class="pts-info"><h4>Breakthroughs</h4><div class="pts-val'+(btLeft<=0?' warn':'')+'">'+(BUILD.breakthroughsUsed||0)+' / 3</div></div></div>';
   html+='</div>';
   html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon">\uD83C\uDF92</span><span class="sec-title">Equipment</span></div><div class="sec-body">';
+
+  // Show equipped items with enchantments
+  var equippedItems=[];
+  Object.keys(BUILD.armor||{}).forEach(function(slot){
+    var name=BUILD.armor[slot];
+    if(name){
+      var item=findArmor(name);
+      if(item){
+        var ench=BUILD.enchantments[name];
+        var enchData=ench?DATA.enchantments.find(function(e){return e.name===ench;}):null;
+        equippedItems.push({slot:slot,item:item,enchant:enchData});
+      }
+    }
+  });
+  Object.keys(BUILD.weapons||{}).forEach(function(slot){
+    var name=BUILD.weapons[slot];
+    if(name){
+      var item=findWeapon(name);
+      if(item){
+        var ench=BUILD.enchantments[name];
+        var enchData=ench?DATA.enchantments.find(function(e){return e.name===ench;}):null;
+        equippedItems.push({slot:slot,item:item,enchant:enchData});
+      }
+    }
+  });
+
+  if(equippedItems.length>0){
+    html+='<div style="margin-bottom:12px">';
+    equippedItems.forEach(function(eq){
+      html+='<div style="padding:8px;background:var(--panel2);border-radius:6px;margin-bottom:6px">';
+      html+='<div style="display:flex;align-items:center;gap:8px">';
+      html+='<span style="color:var(--dim);font-size:10px;text-transform:uppercase">'+escHtml(eq.slot)+'</span>';
+      html+='<span style="color:var(--gold);font-weight:600">'+escHtml(eq.item.name)+'</span>';
+      html+='</div>';
+
+      // Show enchantment if present
+      if(eq.enchant){
+        html+='<div style="margin-top:6px;padding:6px;background:rgba(142,68,173,.1);border-radius:4px;border-left:3px solid var(--purple)">';
+        html+='<div style="font-size:11px;color:var(--purple);font-weight:600">🪄 '+escHtml(eq.enchant.name)+'</div>';
+        eq.enchant.effects.forEach(function(eff){
+          html+='<div style="font-size:10px;color:var(--text);padding-left:12px">• '+escHtml(eff)+'</div>';
+        });
+        html+='</div>';
+      }
+
+      html+='</div>';
+    });
+    html+='</div>';
+  }
+
   html+='<div class="inventory-grid">';
   var armorSlots=[{id:'head',label:'Head'},{id:'chest',label:'Chest'},{id:'legs',label:'Legs'},{id:'backpack',label:'Backpack'},{id:'lantern',label:'Lantern'}];
   for(var i=0;i<armorSlots.length;i++){
@@ -1857,7 +1925,7 @@ function toggleTheorycraft(){BUILD.theorycraft=!BUILD.theorycraft;saveBuild();re
 
 function newBuild(){
   if(confirm('Start new build? All selections will be cleared.')){
-    BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null]};
+    BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null],enchantments:{}};
     QUEST_SELECTIONS={};
     try{localStorage.removeItem('outward-build');}catch(e){}
     saveBuild();renderBuilder();
@@ -1896,6 +1964,109 @@ function importBuild(){
   };
   input.click();
 }
+
+
+// Enchantment modal
+var currentEnchantItem=null;
+var currentEnchantType=null;
+
+function openEnchantModal(typeAndName){
+  var parts=typeAndName.split('|');
+  currentEnchantType=parts[0];
+  currentEnchantItem=parts[1];
+  showEnchantModal();
+}
+
+function showEnchantModal(){
+  var overlay=document.createElement('div');
+  overlay.className='modal-overlay';
+  overlay.id='enchant-modal-overlay';
+  overlay.onclick=function(e){if(e.target===overlay)closeEnchantModal();};
+
+  var availableEnchants=DATA.enchantmentCompatibility[currentEnchantItem]||[];
+  var selectedEnch=BUILD.enchantments[currentEnchantItem];
+
+  var html='<div class="modal enchant-modal" onclick="event.stopPropagation()">';
+  html+='<div class="modal-hdr"><div class="modal-title">🪄 Зачарования — '+escHtml(currentEnchantItem)+'</div>';
+  html+='<button class="modal-close" onclick="closeEnchantModal()">✕</button></div>';
+  html+='<div class="modal-body">';
+
+  if(availableEnchants.length===0){
+    html+='<div style="color:var(--dim);padding:20px;text-align:center">Нет доступных зачарований</div>';
+  }else{
+    availableEnchants.forEach(function(enchName){
+      var ench=DATA.enchantments.find(function(e){return e.name===enchName;});
+      if(!ench)return;
+
+      var isSelected=selectedEnch===enchName;
+
+      html+='<div class="enchant-option'+(isSelected?' selected':'')+'" onclick="selectEnchantment(\''+escHtml(enchName)+'\')">';
+      html+='<div class="enchant-option-name">'+escHtml(enchName)+'</div>';
+      html+='<div class="enchant-option-type">'+escHtml(ench.type)+' | '+escHtml(ench.slots||'Any')+'</div>';
+      html+='<div class="enchant-option-effects">';
+      ench.effects.forEach(function(eff){
+        html+='<div>• '+escHtml(eff)+'</div>';
+      });
+      html+='</div></div>';
+    });
+  }
+
+  html+='</div></div>';
+  overlay.innerHTML=html;
+  document.body.appendChild(overlay);
+}
+
+function selectEnchantment(enchName){
+  BUILD.enchantments[currentEnchantItem]=enchName;
+  saveBuild();
+  closeEnchantModal();
+
+  // Refresh current tab
+  if(currentEnchantType==='armor'){
+    renderArmorTab(document.getElementById('pane-armor'));
+  }else if(currentEnchantType==='weapon'){
+    renderWeaponsTab(document.getElementById('pane-weapons'));
+  }
+  renderBuilder();
+}
+
+function disenchantItem(itemName){
+  delete BUILD.enchantments[itemName];
+  saveBuild();
+
+  // Refresh current tab
+  var pane=document.querySelector('.tab-pane.active');
+  if(pane){
+    var tabId=pane.id.replace('pane-','');
+    if(tabId==='armor'){
+      renderArmorTab(pane);
+    }else if(tabId==='weapons'){
+      renderWeaponsTab(pane);
+    }
+  }
+  renderBuilder();
+}
+
+function closeEnchantModal(){
+  var overlay=document.getElementById('enchant-modal-overlay');
+  if(overlay)overlay.parentNode.removeChild(overlay);
+}
+
+// Update handleClick to include new functions
+var originalHandleClick=handleClick;
+handleClick=function(e){
+  var el=e.target.closest('[data-fn]');
+  if(!el)return originalHandleClick(e);
+
+  var fn=el.getAttribute('data-fn');
+  var arg=decodeURIComponent(el.getAttribute('data-arg')||'');
+  e.stopPropagation();
+
+  if(fn==='openEnchantModal'){openEnchantModal(arg);return;}
+  if(fn==='disenchantItem'){disenchantItem(arg);return;}
+
+  return originalHandleClick(e);
+};
 
 loadData();
 </script>
