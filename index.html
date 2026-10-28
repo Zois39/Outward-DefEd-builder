@@ -447,6 +447,7 @@ function cleanDesc(text){
   return text;
 }function loadData(){
   hideError();
+  console.log('loadData started');
   setProgress(5,'Loading skills...');
   Promise.all([fetchJSON('skills/skills_tier1.json'),fetchJSON('skills/skills_tier2.json'),fetchJSON('skills/skills_tier3.json'),fetchJSON('skills/skills_special.json'),fetchJSON('skills/classes.json')]).then(function(r){
     setProgress(20,'Loading weapons...');
