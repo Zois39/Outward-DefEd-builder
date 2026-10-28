@@ -85,7 +85,7 @@
     },
     {
       "name": "Crimson Shield",
-      "description": "Blood-red shield used by the leaders of the northern tribes.; Its bold color makes it stand out in the snowy landscape.",
+      "description": "Blood-red shield used by the leaders of the northern tribes. Its bold color makes it stand out in the snowy landscape.",
       "weapon_type": "shield",
       "category_class": "shield",
       "handedness": "one_handed",
@@ -117,7 +117,7 @@
     },
     {
       "name": "Dragon Shield",
-      "description": "Shield depicting a fictional creature of great power; one that is common in street theatre and children's books. Inflicts burning on Shield Charge.",
+      "description": "Shield depicting a fictional creature of great power. one that is common in street theatre and children's books. Inflicts burning on Shield Charge.",
       "weapon_type": "shield",
       "category_class": "shield",
       "handedness": "one_handed",
@@ -739,7 +739,7 @@
     },
     {
       "name": "Plank Shield",
-      "description": "Hastily built from broken planks, it grants the ability to block arrows, at least.; ; This shield is unlikely to last long in a fight.",
+      "description": "Hastily built from broken planks, it grants the ability to block arrows, at least. This shield is unlikely to last long in a fight.",
       "weapon_type": "shield",
       "category_class": "shield",
       "handedness": "one_handed",
@@ -1147,7 +1147,7 @@
     },
     {
       "name": "Zhorn's Demon Shield",
-      "description": "An unusual possession of the ancient great hunter.; ; Whatever magic used to enchant this shield is long gone, though it retains its excellent craftsmanship.",
+      "description": "An unusual possession of the ancient great hunter. Whatever magic used to enchant this shield is long gone, though it retains its excellent craftsmanship.",
       "weapon_type": "shield",
       "category_class": "shield",
       "handedness": "one_handed",
