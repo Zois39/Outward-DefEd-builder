@@ -1156,10 +1156,35 @@ function renderArmorList(){
       html+=legacyHtml;
       html+='</div>';
     }
-    html+='<div class="item-actions">';
-    if(isEquipped){html+='<button class="equip-btn equipped" '+makeClick('unequipArmor',a.name)+'>Unequip</button>';}
-    else{html+='<button class="equip-btn" '+makeClick('equipArmor',a.name)+'>Equip to '+escHtml(a.slot||'slot')+'</button>';}
-    html+='</div></div>';
+    // Enchantment section
+  var itemEnchants=DATA.enchantmentCompatibility[a.name]||[];
+  var selectedEnch=BUILD.enchantments[a.name];
+
+  if(selectedEnch){
+    var enchData=DATA.enchantments.find(function(e){return e.name===selectedEnch;});
+    if(enchData){
+      html+='<div class="enchant-section">';
+      html+='<div class="enchant-title">🪄 Enchantment</div>';
+      html+='<div class="enchant-name">'+escHtml(selectedEnch)+'</div>';
+      html+='<div class="enchant-effects">';
+      enchData.effects.forEach(function(eff){
+        html+='<div>• '+escHtml(eff)+'</div>';
+      });
+      html+='</div></div>';
+    }
+  }
+
+  html+='<div class="item-actions">';
+  if(itemEnchants.length>0){
+    if(selectedEnch){
+      html+='<button class="enchant-btn active" '+makeClick('disenchantItem',a.name)+'>Разчаровать</button>';
+    }else{
+      html+='<button class="enchant-btn" '+makeClick('openEnchantModal','armor|'+a.name)+'>Зачарования</button>';
+    }
+  }
+  if(isEquipped){html+='<button class="equip-btn equipped" '+makeClick('unequipArmor',a.name)+'>Unequip</button>';}
+  else{html+='<button class="equip-btn" '+makeClick('equipArmor',a.name)+'>Equip to '+escHtml(a.slot||'slot')+'</button>';}
+  html+='</div></div>';
   }
   if(filtered.length===0){html+='<div style="color:var(--dim);padding:20px;text-align:center;grid-column:1/-1">No armor found</div>';}
   html+='</div>';
@@ -1421,10 +1446,35 @@ function renderWeaponList(){
       html+=legacyHtmlW;
       html+='</div>';
     }
-    html+='<div class="item-actions">';
-    if(isEquipped){html+='<button class="equip-btn equipped" '+makeClick('unequipWeapon',w.name)+'>Unequip</button>';}
-    else{html+='<button class="equip-btn" '+makeClick('equipWeapon',w.name)+'>Equip</button>';}
-    html+='</div></div>';
+    // Enchantment section
+  var itemEnchants=DATA.enchantmentCompatibility[w.name]||[];
+  var selectedEnch=BUILD.enchantments[w.name];
+
+  if(selectedEnch){
+    var enchData=DATA.enchantments.find(function(e){return e.name===selectedEnch;});
+    if(enchData){
+      html+='<div class="enchant-section">';
+      html+='<div class="enchant-title">🪄 Enchantment</div>';
+      html+='<div class="enchant-name">'+escHtml(selectedEnch)+'</div>';
+      html+='<div class="enchant-effects">';
+      enchData.effects.forEach(function(eff){
+        html+='<div>• '+escHtml(eff)+'</div>';
+      });
+      html+='</div></div>';
+    }
+  }
+
+  html+='<div class="item-actions">';
+  if(itemEnchants.length>0){
+    if(selectedEnch){
+      html+='<button class="enchant-btn active" '+makeClick('disenchantItem',w.name)+'>Разчаровать</button>';
+    }else{
+      html+='<button class="enchant-btn" '+makeClick('openEnchantModal','weapon|'+w.name)+'>Зачарования</button>';
+    }
+  }
+  if(isEquipped){html+='<button class="equip-btn equipped" '+makeClick('unequipWeapon',w.name)+'>Unequip</button>';}
+  else{html+='<button class="equip-btn" '+makeClick('equipWeapon',w.name)+'>Equip</button>';}
+  html+='</div></div>';
   }
   if(filtered.length===0){html+='<div style="color:var(--dim);padding:20px;text-align:center;grid-column:1/-1">No weapons found</div>';}
   html+='</div>';
