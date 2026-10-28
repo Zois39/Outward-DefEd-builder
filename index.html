@@ -2084,7 +2084,8 @@ function showEnchantModal(){
       html+='<div class="enchant-option-effects">';
 
       // Show only effects relevant to this item's slot
-      var itemSlot=currentEnchantItem.slot||'';
+      var itemObj=DATA.armor.find(function(a){return a.name===currentEnchantItem;})||DATA.weapons.find(function(w){return w.name===currentEnchantItem;});
+      var itemSlot=itemObj?itemObj.slot||'':'';
       ench.effects.forEach(function(eff){
         var effLower=eff.toLowerCase();
         var showEffect=false;
