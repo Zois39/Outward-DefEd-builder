@@ -348,6 +348,8 @@ function handleClick(e){
   else if(fn==='setWeaponFilter'){var p=arg.split('|');setWeaponFilter(p[0],p[1]);}
   else if(fn==='filterClass')filterSkillsByClass(arg==='null'?null:arg);
   else if(fn==='filterCons')filterConsByType(arg==='null'?null:arg);
+  else if(fn==='openEnchantModal')openEnchantModal(arg);
+  else if(fn==='disenchantItem')disenchantItem(arg);
 }
 
 function getItemImage(item,type){
@@ -1182,9 +1184,9 @@ function renderArmorList(){
   html+='<div class="item-actions">';
   if(itemEnchants.length>0){
     if(selectedEnch){
-      html+='<button class="enchant-btn active" '+makeClick('disenchantItem',a.name)+'>Разчаровать</button>';
+      html+='<button class="enchant-btn active" '+makeClick('disenchantItem',a.name)+'>Disenchant</button>';
     }else{
-      html+='<button class="enchant-btn" '+makeClick('openEnchantModal','armor|'+a.name)+'>Зачарования</button>';
+      html+='<button class="enchant-btn" '+makeClick('openEnchantModal','armor|'+a.name)+'>Enchant</button>';
     }
   }
   if(isEquipped){html+='<button class="equip-btn equipped" '+makeClick('unequipArmor',a.name)+'>Unequip</button>';}
@@ -1472,9 +1474,9 @@ function renderWeaponList(){
   html+='<div class="item-actions">';
   if(itemEnchants.length>0){
     if(selectedEnch){
-      html+='<button class="enchant-btn active" '+makeClick('disenchantItem',w.name)+'>Разчаровать</button>';
+      html+='<button class="enchant-btn active" '+makeClick('disenchantItem',w.name)+'>Disenchant</button>';
     }else{
-      html+='<button class="enchant-btn" '+makeClick('openEnchantModal','weapon|'+w.name)+'>Зачарования</button>';
+      html+='<button class="enchant-btn" '+makeClick('openEnchantModal','weapon|'+w.name)+'>Enchant</button>';
     }
   }
   if(isEquipped){html+='<button class="equip-btn equipped" '+makeClick('unequipWeapon',w.name)+'>Unequip</button>';}
@@ -2042,7 +2044,7 @@ function showEnchantModal(){
   var selectedEnch=BUILD.enchantments[currentEnchantItem];
 
   var html='<div class="modal enchant-modal" onclick="event.stopPropagation()">';
-  html+='<div class="modal-hdr"><div class="modal-title">🪄 Зачарования — '+escHtml(currentEnchantItem)+'</div>';
+  html+='<div class="modal-hdr"><div class="modal-title">🪄 Enchantments — '+escHtml(currentEnchantItem)+'</div>';
   html+='<button class="modal-close" onclick="closeEnchantModal()">✕</button></div>';
   html+='<div class="modal-body">';
 
@@ -2107,21 +2109,7 @@ function closeEnchantModal(){
   if(overlay)overlay.parentNode.removeChild(overlay);
 }
 
-// Update handleClick to include new functions
-var originalHandleClick=handleClick;
-handleClick=function(e){
-  var el=e.target.closest('[data-fn]');
-  if(!el)return originalHandleClick(e);
 
-  var fn=el.getAttribute('data-fn');
-  var arg=decodeURIComponent(el.getAttribute('data-arg')||'');
-  e.stopPropagation();
-
-  if(fn==='openEnchantModal'){openEnchantModal(arg);return;}
-  if(fn==='disenchantItem'){disenchantItem(arg);return;}
-
-  return originalHandleClick(e);
-};
 
 loadData();
 </script>
