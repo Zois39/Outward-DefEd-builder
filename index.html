@@ -1360,7 +1360,7 @@ function renderWeaponsTab(pane){
   }
   html+='</div></div>';
   html+='<div class="filter-section"><div class="filter-label">Effect</div><div class="filter-pills">';
-  var effects=['all','Poison','Bleeding','Burning','Blaze','Holy Blaze','Chill','Confusion','Cripple','Curse','Doomed','Elemental Vulnerability','Extreme Bleeding','Extreme Poison','Hampered','Haunted','Pain','Plague','Sapped','Scorched','Slow Down','Weaken','Aetherbomb','Discipline','Rage','Light Source','Temperature'];
+  var effects=['all','Poison','Bleeding','Burning','Blaze','Holy Blaze','Chill','Confusion','Cripple','Curse','Doomed','Elemental Vulnerability','Extreme Bleeding','Extreme Poison','Hampered','Haunted','Pain','Plague','Sapped','Scorched','Slow Down','Weaken','Aetherbomb'];
   for(var e=0;e<effects.length;e++){
     var ef=effects[e];
     html+='<button class="pill'+(WEAPON_FILTER.effect===ef?' active':'')+'" '+makeClick('setWeaponFilter','effect|'+ef)+'>'+ef+'</button>';
