@@ -11310,7 +11310,11 @@
     "pouch": null,
     "crafting_recipe": [
       {
-        "item": "Hackmanite<Br>200 silver",
+        "item": "Hackmanite",
+        "qty": 5
+      },
+      {
+        "item": "200 silver",
         "qty": 5
       }
     ],
@@ -11362,7 +11366,11 @@
     "pouch": null,
     "crafting_recipe": [
       {
-        "item": "Hackmanite<Br>100 silver",
+        "item": "Hackmanite",
+        "qty": 2
+      },
+      {
+        "item": "100 silver",
         "qty": 2
       }
     ],
@@ -11412,7 +11420,11 @@
     "pouch": null,
     "crafting_recipe": [
       {
-        "item": "Hackmanite<Br>100 silver",
+        "item": "Hackmanite",
+        "qty": 2
+      },
+      {
+        "item": "100 silver",
         "qty": 2
       }
     ],
