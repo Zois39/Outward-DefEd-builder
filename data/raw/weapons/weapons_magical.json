@@ -863,7 +863,7 @@
     },
     {
       "name": "Meteoric Chakram",
-      "description": "A glowing Obsidian Chakram passed down by your ancestors. Inflicts Holy Blaze on burning foes.; ; Chakram spells are necessary to use this off-hand weapon.",
+      "description": "A glowing Obsidian Chakram passed down by your ancestors. Inflicts Holy Blaze on burning foes. Chakram spells are necessary to use this off-hand weapon.",
       "weapon_type": "chakram",
       "category_class": "chakram",
       "handedness": "off_handed",
@@ -1281,7 +1281,7 @@
     },
     {
       "name": "Thorn Chakram",
-      "description": "Inflicts Bleeding on enemies.; ; Chakram spells are necessary to use this off-hand weapon.",
+      "description": "Inflicts Bleeding on enemies. Chakram spells are necessary to use this off-hand weapon.",
       "weapon_type": "chakram",
       "category_class": "chakram",
       "handedness": "off_handed",
