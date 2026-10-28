@@ -693,7 +693,8 @@
     "slots": "Weapon",
     "tags": "Main Weapon",
     "effects": [
-      "Converts 50% of the weapon's Physical physical damage into Raw damage and repairs the weapon at a rate of 0.5 durability per second"
+      "Converts 50% of Physical damage to Raw damage",
+      "Repairs weapon: +0.5 durability per second"
     ],
     "compatible_items": [
       "Any Main Weapon"
@@ -1221,7 +1222,7 @@
     "slots": "Weapon",
     "tags": "Main Weapon",
     "effects": [
-      "Increases the weapon's Physical physical damage by +10%"
+      "+10% Physical damage"
     ],
     "compatible_items": [
       "Any Main Weapon"
