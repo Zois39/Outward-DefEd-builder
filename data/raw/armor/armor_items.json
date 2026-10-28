@@ -11314,8 +11314,8 @@
         "qty": 5
       },
       {
-        "item": "200 silver",
-        "qty": 5
+        "item": "silver",
+        "qty": 200
       }
     ],
     "blacksmith_upgrade": "Tokuga",
@@ -11370,8 +11370,8 @@
         "qty": 2
       },
       {
-        "item": "100 silver",
-        "qty": 2
+        "item": "silver",
+        "qty": 100
       }
     ],
     "blacksmith_upgrade": "Tokuga",
@@ -11424,8 +11424,8 @@
         "qty": 2
       },
       {
-        "item": "100 silver",
-        "qty": 2
+        "item": "silver",
+        "qty": 100
       }
     ],
     "blacksmith_upgrade": "Tokuga",
