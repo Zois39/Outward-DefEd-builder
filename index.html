@@ -1144,7 +1144,12 @@ function renderArmorList(){
     if(a.crafting_recipe&&a.crafting_recipe.length>0){
       html+='<div class="craft-section">';
       html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
-      a.crafting_recipe.forEach(function(ing){html+='<div class="craft-ing">- '+escHtml(ing.item||ing.name||'Unknown')+' x'+(ing.qty||ing.quantity||1)+'</div>';});
+      a.crafting_recipe.forEach(function(ing){
+        var ingName=ing.item||ing.name||'Unknown';
+        // Clean up HTML tags like <Br>
+        ingName=ingName.replace(/<br\s*\/?>/gi,', ');
+        html+='<div class="craft-ing">- '+escHtml(ingName)+' x'+(ing.qty||ing.quantity||1)+'</div>';
+      });
       html+='</div>';
     }else if(a.source){
       html+='<div class="source-section">';
@@ -1400,7 +1405,12 @@ function renderWeaponList(){
     if(w.crafting_recipe&&w.crafting_recipe.ingredients){
       html+='<div class="craft-section">';
       html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
-      w.crafting_recipe.ingredients.forEach(function(ing){html+='<div class="craft-ing">- '+escHtml(ing)+'</div>';});
+      w.crafting_recipe.ingredients.forEach(function(ing){
+        var ingName=ing;
+        // Clean up HTML tags like <Br>
+        ingName=ingName.replace(/<br\s*\/?>/gi,', ');
+        html+='<div class="craft-ing">- '+escHtml(ingName)+'</div>';
+      });
       if(w.crafting_recipe.station){html+='<div class="craft-station">Station: '+escHtml(w.crafting_recipe.station)+'</div>';}
       html+='</div>';
     }else if(w.source_category){
@@ -1917,7 +1927,10 @@ function renderConsList(){
       html+='<div class="craft-title">\uD83D\uDD28 Crafting Recipe:</div>';
       if(c.crafting_recipe.ingredients){
         c.crafting_recipe.ingredients.forEach(function(ing){
-          html+='<div class="craft-ing">- '+escHtml(ing.item||ing.name||ing)+' x'+(ing.quantity||ing.qty||1)+'</div>';
+          var ingName=ing.item||ing.name||ing;
+          // Clean up HTML tags like <Br>
+          ingName=String(ingName).replace(/<br\s*\/?>/gi,', ');
+          html+='<div class="craft-ing">- '+escHtml(ingName)+' x'+(ing.quantity||ing.qty||1)+'</div>';
         });
       }
       if(c.crafting_recipe.station){html+='<div class="craft-station">Station: '+escHtml(c.crafting_recipe.station)+'</div>';}
