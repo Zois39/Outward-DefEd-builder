@@ -18,12 +18,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Sapped",
-        "Mild Petrification",
-        "Plague",
-        "Breathless"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Angler_Shield",
       "dlc": "The Three Brothers",
@@ -38,7 +32,16 @@
       "damage_stats": null,
       "image_url": "https://outward.wiki.gg/images/Angler_Shield.png?c3d636",
       "local_image": "assets/images/shields/shield_Angler_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Sapped"
+      ],
+      "passive_effects": [
+        "Immune to Mild Petrification",
+        "Immune to Plague",
+        "Immune to Breathless",
+        "Provides a light which does not lower Stealth."
+      ]
     },
     {
       "name": "Astral Shield",
@@ -63,10 +66,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Scorched",
-        "Curse"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Shield",
       "dlc": "The Three Brothers",
@@ -81,7 +80,11 @@
       "damage_stats": null,
       "image_url": "https://outward.wiki.gg/images/Astral_Shield.png?844788",
       "local_image": "assets/images/shields/shield_Astral_Shield.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched",
+        "Curse"
+      ]
     },
     {
       "name": "Crimson Shield",
@@ -100,7 +103,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Crimson_Shield",
       "dlc": null,
@@ -132,9 +134,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Dragon_Shield",
       "dlc": null,
@@ -171,9 +170,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Sapped"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Enchanting_Table_Shield",
       "dlc": "The Soroboreans",
@@ -205,9 +201,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fabulous_Palladium_Shield",
       "dlc": null,
@@ -251,9 +244,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Shield",
       "dlc": null,
@@ -285,9 +275,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Sapped"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Forged_Glass_Shield",
       "dlc": "The Three Brothers",
@@ -300,7 +287,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Forged_Glass_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Sapped"
+      ]
     },
     {
       "name": "Galvanic Shield",
@@ -327,9 +317,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Shield",
       "dlc": "The Soroboreans",
@@ -368,9 +355,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Shield",
       "dlc": null,
@@ -402,7 +386,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Golden_Shield",
       "dlc": null,
@@ -442,9 +425,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Shield",
       "dlc": null,
@@ -476,9 +456,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Inner_Marble_Shield",
       "dlc": null,
@@ -510,9 +487,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Scutum",
       "dlc": "The Soroboreans",
@@ -544,9 +518,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Marble_Shield",
       "dlc": null,
@@ -583,7 +554,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Militia_Shield",
       "dlc": "The Three Brothers",
@@ -620,9 +590,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Poisoned"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Mushroom_Shield",
       "dlc": null,
@@ -654,9 +621,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Old_Legion_Shield",
       "dlc": null,
@@ -688,9 +652,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Haunted"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Ornate_Bone_Shield",
       "dlc": null,
@@ -722,7 +683,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Palladium_Shield",
       "dlc": null,
@@ -766,7 +726,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Plank_Shield",
       "dlc": null,
@@ -798,7 +757,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Round_Shield",
       "dlc": null,
@@ -830,9 +788,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Shield",
       "dlc": null,
@@ -864,9 +819,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Sapped"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Slumbering_Shield",
       "dlc": "The Three Brothers",
@@ -879,7 +831,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Slumbering_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Sapped"
+      ]
     },
     {
       "name": "Smoke Shield",
@@ -898,9 +853,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Shield",
       "dlc": "The Three Brothers",
@@ -913,7 +865,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Smoke_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Spore Shield",
@@ -932,9 +887,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Spore_Shield",
       "dlc": null,
@@ -966,7 +918,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Steel_Shield",
       "dlc": null,
@@ -998,9 +949,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/The_Will_O_Wisp",
       "dlc": null,
@@ -1013,7 +961,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_The_Will_O_Wisp.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Tower Shield",
@@ -1032,7 +983,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Tower_Shield",
       "dlc": null,
@@ -1064,7 +1014,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Tsar_Shield",
       "dlc": null,
@@ -1096,7 +1045,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vigilante_Shield",
       "dlc": "The Three Brothers",
@@ -1128,9 +1076,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Shield",
       "dlc": null,
@@ -1162,7 +1107,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": null,
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Zhorn%27s_Demon_Shield",
       "dlc": null,
