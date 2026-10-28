@@ -485,7 +485,9 @@
     "slots": "Weapon",
     "tags": "Shield",
     "effects": [
-      "Requires Expanded Library upgradeShield gains +2 Protection and +2 Barrier"
+      "Requires Expanded Library upgrade",
+      "+2 Protection",
+      "+2 Barrier"
     ],
     "compatible_items": [
       "Any Shield"
@@ -614,7 +616,9 @@
     "slots": "Weapon",
     "tags": "Pistol",
     "effects": [
-      "Requires Expanded Library upgrade+5% Frost Damage Bonus-5% Mana Cost Mana Costs"
+      "Requires Expanded Library upgrade",
+      "+5% Frost Damage",
+      "-5% Mana Cost"
     ],
     "compatible_items": [
       "Any Pistol"
@@ -735,7 +739,8 @@
     "slots": "Weapon",
     "tags": "Shield",
     "effects": [
-      "Requires Expanded Library upgrade+10% Status Resistance Status Resistance"
+      "Requires Expanded Library upgrade",
+      "+10% Status Resistance"
     ],
     "compatible_items": [
       "Any Shield"
@@ -1025,7 +1030,8 @@
     "slots": "Weapon",
     "tags": "Chakram",
     "effects": [
-      "Requires Expanded Library upgradeWeapon inflicts Hampered (30% buildup)"
+      "Requires Expanded Library upgrade",
+      "Inflicts Hampered (30% buildup)"
     ],
     "compatible_items": [
       "Any Chakram"
