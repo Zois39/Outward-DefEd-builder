@@ -447,6 +447,11 @@ function cleanDesc(text){
   }).then(function(results){
     var r=results[0];var w=results[1];var a=results[2];var sets=results[3];var c=results[4];var f=results[5];var q=results[6];var em=results[7];var e=results[8];
     DATA={skills:r[0].concat(r[1],r[2],r[3]),classes:r[4],weapons:w[0].weapons.concat(w[1].weapons,w[2].weapons,w[3].weapons),armor:a,armorSets:sets,consumables:c.items||c,factions:f,quests:q,exclusivityMap:em,effects:e};
+    setProgress(95,'Loading enchantments...');
+    return Promise.all([Promise.resolve(r),Promise.resolve(w),Promise.resolve(a),Promise.resolve(sets),Promise.resolve(c),Promise.resolve(f),Promise.resolve(q),Promise.resolve(em),Promise.resolve(e),fetchJSON('enchantments.json'),fetchJSON('enchantment_compatibility.json')]);
+  }).then(function(results){
+    var r=results[0];var w=results[1];var a=results[2];var sets=results[3];var c=results[4];var f=results[5];var q=results[6];var em=results[7];var e=results[8];var ench=results[9];var compat=results[10];
+    DATA={skills:r[0].concat(r[1],r[2],r[3]),classes:r[4],weapons:w[0].weapons.concat(w[1].weapons,w[2].weapons,w[3].weapons),armor:a,armorSets:sets,consumables:c.items||c,factions:f,quests:q,exclusivityMap:em,effects:e,enchantments:ench,enchantmentCompatibility:compat};
     setProgress(100,'Ready!');
     try{localStorage.removeItem('outward-build');}catch(e){}
     setTimeout(function(){showScreen('home-screen');renderHome();},300);
