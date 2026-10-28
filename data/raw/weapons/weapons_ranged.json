@@ -507,7 +507,7 @@
     },
     {
       "name": "Flintlock Pistol",
-      "description": "Basic gun that needs the Fire/Reload skill to shoot.; ; Locking on enemies is vital to hit with pistols.",
+      "description": "Basic gun that needs the Fire/Reload skill to shoot. Locking on enemies is vital to hit with pistols.",
       "weapon_type": "pistol",
       "category_class": "pistol",
       "handedness": "off_handed",
