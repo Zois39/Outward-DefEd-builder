@@ -1387,6 +1387,7 @@ function renderWeaponList(){
       var filterHand=WEAPON_FILTER.hand;
       if(filterHand==='1H'&&(hand!=='one_handed'&&hand!=='1H'))return false;
       if(filterHand==='2H'&&(hand!=='two_handed'&&hand!=='2H'))return false;
+      if(filterHand==='Off-H'&&(hand!=='off_handed'&&hand!=='Off-H'))return false;
     }
     if(WEAPON_FILTER.dmg!=='all'){
       var hasDmg=false;
