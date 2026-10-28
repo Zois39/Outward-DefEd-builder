@@ -841,7 +841,7 @@
     },
     {
       "name": "Broad Dagger",
-      "description": "Dagger that inflicts Bleeding.; ; This off-hand weapon requires Dagger Skills to be used.",
+      "description": "Dagger that inflicts Bleeding. This off-hand weapon requires Dagger Skills to be used.",
       "weapon_type": "dagger",
       "category_class": "dagger",
       "handedness": "off_handed",
@@ -2348,7 +2348,7 @@
     },
     {
       "name": "Dreamer Halberd",
-      "description": "The Dusk Father's knowledge is universal; even lesser beings can learn what we have been taught.",
+      "description": "The Dusk Father's knowledge is universal. even lesser beings can learn what we have been taught.",
       "weapon_type": "halberd",
       "category_class": "polearm",
       "handedness": "one_handed",
@@ -6581,7 +6581,7 @@
     },
     {
       "name": "Manticore Dagger",
-      "description": "Craftable Dagger that inflicts Extreme Poison.; ; This off-hand weapon requires Dagger skills to be used.",
+      "description": "Craftable Dagger that inflicts Extreme Poison. This off-hand weapon requires Dagger skills to be used.",
       "weapon_type": "dagger",
       "category_class": "dagger",
       "handedness": "off_handed",
@@ -9588,7 +9588,7 @@
     },
     {
       "name": "Rondel Dagger",
-      "description": "Dagger with a nasty edge.; ; This off-hand weapon requires Dagger Skills to be used.",
+      "description": "Dagger with a nasty edge. This off-hand weapon requires Dagger Skills to be used.",
       "weapon_type": "dagger",
       "category_class": "dagger",
       "handedness": "off_handed",
@@ -10286,7 +10286,7 @@
     },
     {
       "name": "Shiv Dagger",
-      "description": "Improvised blade made from scrap.; ; This off-hand weapon requires Dagger Skills to be used.",
+      "description": "Improvised blade made from scrap. This off-hand weapon requires Dagger Skills to be used.",
       "weapon_type": "dagger",
       "category_class": "dagger",
       "handedness": "off_handed",
@@ -10401,7 +10401,7 @@
     },
     {
       "name": "Skycrown Mace",
-      "description": "The Dusk Father's knowledge made us all kings; we built our sky castles under the earth.",
+      "description": "The Dusk Father's knowledge made us all kings. we built our sky castles under the earth.",
       "weapon_type": "mace",
       "category_class": "mace",
       "handedness": "one_handed",
@@ -10844,7 +10844,7 @@
     },
     {
       "name": "Starchild Claymore",
-      "description": "The Dawn Weaver's knowledge showed us the way; He came from the stars, and to the stars we shall follow.",
+      "description": "The Dawn Weaver's knowledge showed us the way. He came from the stars, and to the stars we shall follow.",
       "weapon_type": "sword",
       "category_class": "sword",
       "handedness": "two_handed",
@@ -12898,7 +12898,7 @@
     },
     {
       "name": "Werlig Spear",
-      "description": "Artifact spear of the Cabal of Winds.; ; It was forged to slay horrors, who are weak to lightning.",
+      "description": "Artifact spear of the Cabal of Winds. It was forged to slay horrors, who are weak to lightning.",
       "weapon_type": "spear",
       "category_class": "spear",
       "handedness": "two_handed",
@@ -13376,7 +13376,7 @@
     },
     {
       "name": "Worldedge Greataxe",
-      "description": "The Dusk Father's knowledge is eternal; this world is but one stop in His travel across the great void.",
+      "description": "The Dusk Father's knowledge is eternal. this world is but one stop in His travel across the great void.",
       "weapon_type": "axe",
       "category_class": "axe",
       "handedness": "two_handed",
@@ -13452,7 +13452,7 @@
     },
     {
       "name": "Zagis' Saw",
-      "description": "Immense man-cutting saw of the bandit lord Zagis.; ; Inflicts Pain on enemies.",
+      "description": "Immense man-cutting saw of the bandit lord Zagis. Inflicts Pain on enemies.",
       "weapon_type": "sword",
       "category_class": "sword",
       "handedness": "two_handed",
