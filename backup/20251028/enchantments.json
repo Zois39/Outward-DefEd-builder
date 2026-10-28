@@ -1,0 +1,1246 @@
+[
+  {
+    "name": "Abomination",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Adds +80% of the existing weapon's Physical physical damage as Physical damageAdds +18 bonus 14px|link=Impact ImpactWeapon now inflicts Curse (35% buildup)"
+    ],
+    "compatible_items": [
+      "Cleaver Halberd",
+      "Sanguine Cleaver"
+    ],
+    "compatible_raw": "Cleaver Halberd, Sanguine Cleaver"
+  },
+  {
+    "name": "Abundance",
+    "type": "Helmet",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Hunger depletion rate -75%",
+      "Drink depletion rate -75%"
+    ],
+    "compatible_items": [
+      "Cauldron Helm"
+    ],
+    "compatible_raw": "Cauldron Helm"
+  },
+  {
+    "name": "Adrenaline",
+    "type": "Chest",
+    "slots": "Chest",
+    "tags": "Wolf",
+    "effects": [
+      "Grants 10% Cooldown Reduction"
+    ],
+    "compatible_items": [
+      "Wolf Plate Armor",
+      "Wolf Medic Armor",
+      "Wolf Mage Armor"
+    ],
+    "compatible_raw": "Wolf Plate Armor, Wolf Medic Armor, Wolf Mage Armor"
+  },
+  {
+    "name": "Aegis",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "",
+    "effects": [
+      "Body Armor: +2 Protection",
+      "Helmets/Boots: +1 Protection"
+    ],
+    "compatible_items": [
+      "Any Body Armor",
+      "Helmet or Boots"
+    ],
+    "compatible_raw": "Any Body Armor, Helmet or Boots"
+  },
+  {
+    "name": "Angel Light",
+    "type": "Lantern",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Changes the color of the lantern to white and effects of Flamethrower to Lightning. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "however it passively gains fuel when equipped but not lit."
+    ],
+    "compatible_items": [
+      "Virgin Lantern"
+    ],
+    "compatible_raw": "Virgin Lantern"
+  },
+  {
+    "name": "Arcane Unison",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Scholar,Virgin",
+    "effects": [
+      "Gain +5% Cooldown ReductionGain passive +0.1 Mana restoration per second"
+    ],
+    "compatible_items": [
+      "Scholar Set or Virgin Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Scholar Set or Virgin Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Assassin",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Virgin,Kazite",
+    "effects": [
+      "Gain +10% Physical damage bonus on Body Armor",
+      "and 5% Physical bonus on Helmet or BootsGain +10% 14px|link=Impact damage bonus on Body Armor",
+      "and 5% 14px|link=Impact bonus on Helmet or Boots"
+    ],
+    "compatible_items": [
+      "Virgin Set or Kazite Set",
+      "Master Kazite Set or Shadow Kazite Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Virgin Set or Kazite Set, Master Kazite Set or Shadow Kazite Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Beast of Burden",
+    "type": "Armor",
+    "slots": "Chest,Boots,Helmet",
+    "tags": "Makeshift,Scaled,Virgin",
+    "effects": [
+      "Adds +7 Pouch Bonus on Body Armor",
+      "and +3 Pouch Bonus on Helmets or BootsAdds +8% Physical resistance on Body Armor",
+      "and +5% on Helmets or Boots"
+    ],
+    "compatible_items": [
+      "Makeshift Leather Set",
+      "Scaled Leather Set or Virgin Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Makeshift Leather Set, Scaled Leather Set or Virgin Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Blaze Blue",
+    "type": "Lantern",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Changes the color of the lantern to blue and effects of Flamethrower to Frost. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "however it passively gains fuel when equipped but not lit."
+    ],
+    "compatible_items": [
+      "Virgin Lantern"
+    ],
+    "compatible_raw": "Virgin Lantern"
+  },
+  {
+    "name": "Calm Soul",
+    "type": "Armor",
+    "slots": "Helmet",
+    "tags": "",
+    "effects": [
+      "+100% Status Resistance Status Resistance to Panic"
+    ],
+    "compatible_items": [
+      "Any Helmet"
+    ],
+    "compatible_raw": "Any Helmet"
+  },
+  {
+    "name": "Castigation",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Palladium",
+    "effects": [
+      "Adds +33% of the existing weapon's Physical physical damage as Lightning damageWeapon now inflicts Sapped (35% buildup)"
+    ],
+    "compatible_items": [
+      "Any Palladium Weapon"
+    ],
+    "compatible_raw": "Any Palladium Weapon"
+  },
+  {
+    "name": "Chaos and Creativity",
+    "type": "Chest",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "+10% Move Speed",
+      "+10% Decay Damage"
+    ],
+    "compatible_items": [
+      "Tenebrous Armor or Runic Armor"
+    ],
+    "compatible_raw": "Tenebrous Armor or Runic Armor"
+  },
+  {
+    "name": "Cocoon",
+    "type": "Armor",
+    "slots": "Chest,Boots,Helmet",
+    "tags": "Ash,Pathfinder,Virgin",
+    "effects": [
+      "On Body Armor: +2 Protection",
+      "+6 Hot Weather Defense",
+      "+6 Cold Weather DefenseOn Helmets: +2 Protection",
+      "+4 Hot Weather Defense",
+      "+2 Cold Weather DefenseOn Boots: +2 Protection",
+      "+2 Hot Weather Defense",
+      "+4 Cold Weather Defense"
+    ],
+    "compatible_items": [
+      "Ash Set",
+      "Pathfinder Set or Virgin Set (Body Armor",
+      "Helmets or Boots)"
+    ],
+    "compatible_raw": "Ash Set, Pathfinder Set or Virgin Set (Body Armor, Helmets or Boots)"
+  },
+  {
+    "name": "Compass",
+    "type": "Boots",
+    "slots": "Boots",
+    "tags": "Kazite",
+    "effects": [
+      "Gain +20% Stability regeneration rate"
+    ],
+    "compatible_items": [
+      "Kazite Boots",
+      "Kazite Light Boots",
+      "Shadow Kazite Light Boots"
+    ],
+    "compatible_raw": "Kazite Boots, Kazite Light Boots, Shadow Kazite Light Boots"
+  },
+  {
+    "name": "Contagion",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Militia",
+    "effects": [
+      "Weapon inflicts Plague (20% buildup)"
+    ],
+    "compatible_items": [
+      "Any Militia or Vigilante Weapon"
+    ],
+    "compatible_raw": "Any Militia or Vigilante Weapon"
+  },
+  {
+    "name": "Copper Flame",
+    "type": "Lantern",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Changes the color of the lantern to green and effects of Flamethrower to Rust. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "however it passively gains fuel when equipped but not lit."
+    ],
+    "compatible_items": [
+      "Virgin Lantern"
+    ],
+    "compatible_raw": "Virgin Lantern"
+  },
+  {
+    "name": "Crumbling Anger",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Brutal",
+    "effects": [
+      "Adds +50% of the existing weapon's Physical physical damage as Physical damageWeapon inflicts Burning (30% buildup)",
+      "Poisoned (35% buildup) and Extreme Poison (20% buildup)"
+    ],
+    "compatible_items": [
+      "Any Brutal Weapon",
+      "Zagis' Saw",
+      "Cleaver Halberd or Sanguine Cleaver"
+    ],
+    "compatible_raw": "Any Brutal Weapon, Zagis' Saw, Cleaver Halberd or Sanguine Cleaver"
+  },
+  {
+    "name": "Desert&#39;s Sun",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Junk,Iron,Gold,Virgin",
+    "effects": [
+      "Adds +35% of the existing weapon's Physical physical damage as Fire damageWeapon now inflicts Burning (35% buildup)"
+    ],
+    "compatible_items": [
+      "Any Iron",
+      "Gold",
+      "Virgin or Junk Weapon"
+    ],
+    "compatible_raw": "Any Iron, Gold, Virgin or Junk Weapon"
+  },
+  {
+    "name": "Economy",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Virgin,Antique",
+    "effects": [
+      "Body Armor: Gain +15% Mana Cost Mana cost reduction (-15% mana costs)Helmet/Boots: Gain +10% Mana Cost Mana cost reduction (-10% mana costs)Any: Gain +10% Stamina Cost Stamina cost reduction (-10% stamina costs)"
+    ],
+    "compatible_items": [
+      "Virgin Set or Antique Plate Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Virgin Set or Antique Plate Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Elatt's Sanctity",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Candle,White Priest,Palladium",
+    "effects": [
+      "Body Armor: Gain +20 Corruption ResistanceHelmet/Boots: Gain +10 Corruption ResistanceAny: Gain +5% Lightning damage bonus"
+    ],
+    "compatible_items": [
+      "Candle Plate Set",
+      "White Priest Set",
+      "Palladium Set (Body Armor",
+      "Boots",
+      "Helmet)"
+    ],
+    "compatible_raw": "Candle Plate Set, White Priest Set, Palladium Set (Body Armor, Boots, Helmet)"
+  },
+  {
+    "name": "Enkindle",
+    "type": "Bow",
+    "slots": "Bow",
+    "tags": "",
+    "effects": [
+      "Weapon gains +5 flat Fire damageWeapon now inflicts Burning (25% buildup)"
+    ],
+    "compatible_items": [
+      "Any Bow"
+    ],
+    "compatible_raw": "Any Bow"
+  },
+  {
+    "name": "Etherwave",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Damascene",
+    "effects": [
+      "Weapon inflicts Elemental Vulnerability (20% buildup)"
+    ],
+    "compatible_items": [
+      "Any Damascene or Masterpiece Weapon"
+    ],
+    "compatible_raw": "Any Damascene or Masterpiece Weapon"
+  },
+  {
+    "name": "Favorable Wind",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Fang,Savage,Kazite",
+    "effects": [
+      "Adds +20% of the existing weapon's Physical physical damage as Ethereal damageWeapon gains +0.1 flat Attack Speed Attack Speed"
+    ],
+    "compatible_items": [
+      "Any Fang",
+      "Savage or Kazite weapon"
+    ],
+    "compatible_raw": "Any Fang, Savage or Kazite weapon"
+  },
+  {
+    "name": "Fechtbuch",
+    "type": "Lexicon",
+    "slots": "Lexicon",
+    "tags": "Lexicon",
+    "effects": [
+      "Requires Expanded Library upgrade+40% Physical Damage Bonus"
+    ],
+    "compatible_items": [
+      "Any Lexicon"
+    ],
+    "compatible_raw": "Any Lexicon"
+  },
+  {
+    "name": "Filter",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "",
+    "effects": [
+      "Body Armor: +10 Corruption Resistance",
+      "Helmets/Boots: +5 Corruption Resistance"
+    ],
+    "compatible_items": [
+      "Any Body Armor",
+      "Helmet or Boots"
+    ],
+    "compatible_raw": "Any Body Armor, Helmet or Boots"
+  },
+  {
+    "name": "Flux",
+    "type": "Boots",
+    "slots": "Boots",
+    "tags": "",
+    "effects": [
+      "Gain +3% Move Speed Movement Speed bonusGain +5% Lightning damage bonus"
+    ],
+    "compatible_items": [
+      "Any Boots"
+    ],
+    "compatible_raw": "Any Boots"
+  },
+  {
+    "name": "Foggy Memories",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Junk,Iron,Gold,Virgin",
+    "effects": [
+      "Adds +33% of the existing weapon's Physical physical damage as Ethereal damageWeapon now inflicts Sapped (35% buildup)"
+    ],
+    "compatible_items": [
+      "Any Iron",
+      "Gold",
+      "Virgin or Junk Weapon"
+    ],
+    "compatible_raw": "Any Iron, Gold, Virgin or Junk Weapon"
+  },
+  {
+    "name": "Forbidden Knowledge",
+    "type": "Lexicon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10% Decay damage bonus"
+    ],
+    "compatible_items": [
+      "Lexicon (not \"Any\" Lexicon)"
+    ],
+    "compatible_raw": "Lexicon (not \"Any\" Lexicon)"
+  },
+  {
+    "name": "Forge Fire",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Virgin",
+    "effects": [
+      "Weapon deals an AoE Fire \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and +5 flat 14px|link=Impact"
+    ],
+    "compatible_items": [
+      "Any Virgin Weapon"
+    ],
+    "compatible_raw": "Any Virgin Weapon"
+  },
+  {
+    "name": "Formless Material",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Virgin,Halfplate",
+    "effects": [
+      "Body Armors: +20% Fire and +20% Frost damage resistance",
+      "flat -7 Weight (of the item)Helmets: +10% Ethereal damage resistance",
+      "+10% 14px|link=Impact resistance",
+      "and flat -3 Weight (of the item)Boots: +20% Lightning and +20% Decay damage resistance",
+      "and flat -5 Weight (of the item)"
+    ],
+    "compatible_items": [
+      "Halfplate Set or Virgin Set (Body Armor",
+      "Boots or Helmet)"
+    ],
+    "compatible_raw": "Halfplate Set or Virgin Set (Body Armor, Boots or Helmet)"
+  },
+  {
+    "name": "Freedom",
+    "type": "Armor",
+    "slots": "Boots",
+    "tags": "",
+    "effects": [
+      "+50% Status Resistance Status Resistance to Slow Down",
+      "Crippled and Hampered."
+    ],
+    "compatible_items": [
+      "Any Boots"
+    ],
+    "compatible_raw": "Any Boots"
+  },
+  {
+    "name": "Fulmination",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Main Weapon",
+    "effects": [
+      "Weapon gains +5 flat Lightning damage"
+    ],
+    "compatible_items": [
+      "Any Main Weapon"
+    ],
+    "compatible_raw": "Any Main Weapon"
+  },
+  {
+    "name": "Guidance of Wind",
+    "type": "Boots",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +14% Move Speed Movement Speed"
+    ],
+    "compatible_items": [
+      "Black Plate Boots or Orichalcum Boots"
+    ],
+    "compatible_raw": "Black Plate Boots or Orichalcum Boots"
+  },
+  {
+    "name": "Guided Arm",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Shield",
+    "effects": [
+      "Requires Expanded Library upgradeShield gains +2 Protection and +2 Barrier"
+    ],
+    "compatible_items": [
+      "Any Shield"
+    ],
+    "compatible_raw": "Any Shield"
+  },
+  {
+    "name": "Humiliation",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Palladium",
+    "effects": [
+      "Adds +33% of the existing weapon's Physical physical damage as Decay damageWeapon now inflicts Weaken (35% buildup)"
+    ],
+    "compatible_items": [
+      "Any Palladium Weapon"
+    ],
+    "compatible_raw": "Any Palladium Weapon"
+  },
+  {
+    "name": "Inferno",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Obsidian",
+    "effects": [
+      "Weapon inflicts Blaze (25% buildup)"
+    ],
+    "compatible_items": [
+      "Any Obsidian or Meteoric Weapon"
+    ],
+    "compatible_raw": "Any Obsidian or Meteoric Weapon"
+  },
+  {
+    "name": "Inheritance of the Past",
+    "type": "Weapon",
+    "slots": "Weapon,Lexicon",
+    "tags": "Staff,Lexicon",
+    "effects": [
+      "Requires Expanded Library upgrade+3% Movement SpeedRestore +0.1 Mana per second"
+    ],
+    "compatible_items": [
+      "Any Staff or Lexicon"
+    ],
+    "compatible_raw": "Any Staff or Lexicon"
+  },
+  {
+    "name": "Inner Cool",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Virgin,Desert",
+    "effects": [
+      "Body Armor: +15% Frost damage bonusHelmet/Boots: +10% Frost damage bonusAny: -15% Lightning damage resistance"
+    ],
+    "compatible_items": [
+      "Virgin Set",
+      "Desert Set",
+      "Elite Desert Set",
+      "Master Desert Set (Body Armor",
+      "Helmet or Boots)",
+      "or Chitin Desert Tunic"
+    ],
+    "compatible_raw": "Virgin Set, Desert Set, Elite Desert Set, Master Desert Set (Body Armor, Helmet or Boots), or Chitin Desert Tunic"
+  },
+  {
+    "name": "Inner Warmth",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Virgin,Fur",
+    "effects": [
+      "Body Armor: +15% Fire damage bonusHelmet/Boots: +10% Fire damage bonusAny: -15% Ethereal damage resistance"
+    ],
+    "compatible_items": [
+      "Virgin Set",
+      "Fur Set or Black Fur Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Virgin Set, Fur Set or Black Fur Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Instinct",
+    "type": "Helmet",
+    "slots": "Helmet",
+    "tags": "Wolf",
+    "effects": [
+      "Gain +5% Cooldown Reduction"
+    ],
+    "compatible_items": [
+      "Wolf Plate Full-Helm",
+      "Wolf Plate Helm",
+      "Wolf Mage Helmet",
+      "Wolf Medic Helmet"
+    ],
+    "compatible_raw": "Wolf Plate Full-Helm, Wolf Plate Helm, Wolf Mage Helmet, Wolf Medic Helmet"
+  },
+  {
+    "name": "Irrepressible Anger",
+    "type": "Bow",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10 flat Decay damageWeapon now inflicts Extreme Poison (21% buildup)"
+    ],
+    "compatible_items": [
+      "Horror Bow"
+    ],
+    "compatible_raw": "Horror Bow"
+  },
+  {
+    "name": "Isolated Rumination",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10% Cooldown Reduction"
+    ],
+    "compatible_items": [
+      "Master's Staff",
+      "Ivory Master's Staff",
+      "Scholar's Staff"
+    ],
+    "compatible_raw": "Master's Staff, Ivory Master's Staff, Scholar's Staff"
+  },
+  {
+    "name": "Levantine Secret",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Pistol",
+    "effects": [
+      "Requires Expanded Library upgrade+5% Frost Damage Bonus-5% Mana Cost Mana Costs"
+    ],
+    "compatible_items": [
+      "Any Pistol"
+    ],
+    "compatible_raw": "Any Pistol"
+  },
+  {
+    "name": "Light as Wind",
+    "type": "Chest",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +11% Stamina Cost Stamina cost reduction (-11% Stamina costs)Reduces the Weight of this item by -9"
+    ],
+    "compatible_items": [
+      "Black Plate Armor",
+      "Orichalcum Armor"
+    ],
+    "compatible_raw": "Black Plate Armor, Orichalcum Armor"
+  },
+  {
+    "name": "Midnight Dance",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Dagger",
+    "effects": [
+      "Requires Expanded Library upgrade+10% Decay Damage Bonus"
+    ],
+    "compatible_items": [
+      "Any Dagger"
+    ],
+    "compatible_raw": "Any Dagger"
+  },
+  {
+    "name": "Molepig Sigh",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Main Weapon",
+    "effects": [
+      "Weapon gains +5 flat Ethereal damage"
+    ],
+    "compatible_items": [
+      "Any Main Weapon"
+    ],
+    "compatible_raw": "Any Main Weapon"
+  },
+  {
+    "name": "Musing of a Philosopher",
+    "type": "Chakram",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Weapon now inflicts Chill (40% buildup) and Scorched (40% buildup)Adds +4 flat Frost and +4 flat Fire damage"
+    ],
+    "compatible_items": [
+      "Kazite Chakram or Ornate Chakram"
+    ],
+    "compatible_raw": "Kazite Chakram or Ornate Chakram"
+  },
+  {
+    "name": "Order and Discipline",
+    "type": "Helmet",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10% Lightning damage bonusGain +10% Move Speed Movement Speed bonus"
+    ],
+    "compatible_items": [
+      "Tenebrous Helm or Runic Helm"
+    ],
+    "compatible_raw": "Tenebrous Helm or Runic Helm"
+  },
+  {
+    "name": "Poltergeist",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Main Weapon",
+    "effects": [
+      "Converts 50% of the weapon's Physical physical damage into Raw damage and repairs the weapon at a rate of 0.5 durability per second"
+    ],
+    "compatible_items": [
+      "Any Main Weapon"
+    ],
+    "compatible_raw": "Any Main Weapon"
+  },
+  {
+    "name": "Priest&#39;s Prayers",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Virgin",
+    "effects": [
+      "Weapon deals an AoE Lightning \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and +5 flat 14px|link=Impact"
+    ],
+    "compatible_items": [
+      "Any Virgin Weapon"
+    ],
+    "compatible_raw": "Any Virgin Weapon"
+  },
+  {
+    "name": "Primal Wind",
+    "type": "Helmet",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10% Ethereal damage bonusGain +10% 14px|link=Impact damage bonus"
+    ],
+    "compatible_items": [
+      "Black Plate Helm",
+      "Orichalcum Helmet"
+    ],
+    "compatible_raw": "Black Plate Helm, Orichalcum Helmet"
+  },
+  {
+    "name": "Protective Presence",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Shield",
+    "effects": [
+      "Requires Expanded Library upgrade+10% Status Resistance Status Resistance"
+    ],
+    "compatible_items": [
+      "Any Shield"
+    ],
+    "compatible_raw": "Any Shield"
+  },
+  {
+    "name": "Rain",
+    "type": "Helmet",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain passive +0.2 Mana regeneration per second"
+    ],
+    "compatible_items": [
+      "Scholar Circlet"
+    ],
+    "compatible_raw": "Scholar Circlet"
+  },
+  {
+    "name": "Rainbow Hex",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Weapon inflicts Scorched",
+      "Chill",
+      "Curse",
+      "Doom",
+      "Haunted",
+      "all with 21% buildupWeapon gains +0.1 flat Attack Speed Attack Speed"
+    ],
+    "compatible_items": [
+      "Steel Sabre",
+      "Cerulean Saber",
+      "Desert Khopesh"
+    ],
+    "compatible_raw": "Steel Sabre, Cerulean Saber, Desert Khopesh"
+  },
+  {
+    "name": "Rascal&#39;s Verve",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Brigand,Looter,Virgin",
+    "effects": [
+      "Body Armor: Gain +2 Protection",
+      "+10% link=Impact resistanceHelmet: Gain +1 Protection",
+      "+10% link=Impact resistanceBoots: Gain +1 Protection",
+      "+10% link=Impact resistance"
+    ],
+    "compatible_items": [
+      "Scavenger Set (not Scarf)",
+      "Brigand Set",
+      "Looter Set or Virgin Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Scavenger Set (not Scarf), Brigand Set, Looter Set or Virgin Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Redemption",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +20% Lightning damage bonusWeapon now inflicts Doomed (35% buildup) and Elemental Vulnerability (25% buildup)"
+    ],
+    "compatible_items": [
+      "Prayer Claymore",
+      "Sinner Claymore"
+    ],
+    "compatible_raw": "Prayer Claymore, Sinner Claymore"
+  },
+  {
+    "name": "Rot",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Virgin,Troglodyte",
+    "effects": [
+      "Adds +40% of the existing weapon's Physical physical damage as Decay damageWeapon now inflicts Poisoned (55% buildup)"
+    ],
+    "compatible_items": [
+      "Any Virgin or Troglodyte Weapon"
+    ],
+    "compatible_raw": "Any Virgin or Troglodyte Weapon"
+  },
+  {
+    "name": "Sang Froid",
+    "type": "Armor",
+    "slots": "Chest",
+    "tags": "",
+    "effects": [
+      "+100% Status Resistance to Burning"
+    ],
+    "compatible_items": [
+      "Any Body Armor"
+    ],
+    "compatible_raw": "Any Body Armor"
+  },
+  {
+    "name": "Sanguine Flame",
+    "type": "Lantern",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Changes the color of the lantern to Red and effects of Flamethrower to Decay. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "however it passively gains fuel when equipped but not lit."
+    ],
+    "compatible_items": [
+      "Virgin Lantern"
+    ],
+    "compatible_raw": "Virgin Lantern"
+  },
+  {
+    "name": "Scourge&#39;s Outbreak",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Virgin",
+    "effects": [
+      "Weapon deals an AoE Decay \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and +5 flat 14px|link=Impact"
+    ],
+    "compatible_items": [
+      "Any Virgin Weapon"
+    ],
+    "compatible_raw": "Any Virgin Weapon"
+  },
+  {
+    "name": "Shelter",
+    "type": "Armor",
+    "slots": "Chest,Boots,Helmet",
+    "tags": "",
+    "effects": [
+      "Body Armor: +2 Barrier",
+      "Helmets/Boots: +1 Barrier"
+    ],
+    "compatible_items": [
+      "Any Armor"
+    ],
+    "compatible_raw": "Any Armor"
+  },
+  {
+    "name": "Snow",
+    "type": "Bow",
+    "slots": "Bow",
+    "tags": "",
+    "effects": [
+      "Gain +5 flat Frost damageWeapon now inflicts Slow Down (25% buildup)"
+    ],
+    "compatible_items": [
+      "Any Bow"
+    ],
+    "compatible_raw": "Any Bow"
+  },
+  {
+    "name": "Specter&#39;s Wail",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Virgin",
+    "effects": [
+      "Weapon deals an AoE Ethereal \"Blast\" with 0.25x damage multiplier (based on the Weapon's total base damage)",
+      "and +5 flat 14px|link=Impact"
+    ],
+    "compatible_items": [
+      "Any Virgin weapon"
+    ],
+    "compatible_raw": "Any Virgin weapon"
+  },
+  {
+    "name": "Speed and Efficiency",
+    "type": "Boots",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +7% Move Speed Movement Speed bonusGain +5% Cooldown Reduction"
+    ],
+    "compatible_items": [
+      "Tenebrous Boots",
+      "Runic Boots"
+    ],
+    "compatible_raw": "Tenebrous Boots, Runic Boots"
+  },
+  {
+    "name": "Spirit of Berg",
+    "type": "Chest",
+    "slots": "Chest",
+    "tags": "Copal",
+    "effects": [
+      "Gain +10% Stamina Cost Stamina cost reduction (-10% Stamina costs)Gain +25% Ethereal damage bonus"
+    ],
+    "compatible_items": [
+      "Copal Armor or Green Copal Armor"
+    ],
+    "compatible_raw": "Copal Armor or Green Copal Armor"
+  },
+  {
+    "name": "Spirit of Cierzo",
+    "type": "Chest",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +15% Fire and +25% Frost damage bonus"
+    ],
+    "compatible_items": [
+      "Halfplate Armor",
+      "Adventurer Armor"
+    ],
+    "compatible_raw": "Halfplate Armor, Adventurer Armor"
+  },
+  {
+    "name": "Spirit of Harmattan",
+    "type": "Chest",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +5% Cooldown ReductionGain +25% Decay damage bonus"
+    ],
+    "compatible_items": [
+      "Antique Plate Garb"
+    ],
+    "compatible_raw": "Antique Plate Garb"
+  },
+  {
+    "name": "Spirit of Levant",
+    "type": "Chest",
+    "slots": "Chest",
+    "tags": "Desert",
+    "effects": [
+      "Gain +25% Fire damage bonus"
+    ],
+    "compatible_items": [
+      "Desert Tunic",
+      "Master Desert Tunic",
+      "Elite Desert Tunic",
+      "or Chitin Desert Tunic"
+    ],
+    "compatible_raw": "Desert Tunic, Master Desert Tunic, Elite Desert Tunic, or Chitin Desert Tunic"
+  },
+  {
+    "name": "Spirit of Monsoon",
+    "type": "Chest",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +15 Corruption resistanceGain +25% Lightning damage bonus"
+    ],
+    "compatible_items": [
+      "Silver Armor",
+      "Ash Armor"
+    ],
+    "compatible_raw": "Silver Armor, Ash Armor"
+  },
+  {
+    "name": "Stabilizing Forces",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Arcane,Clansage",
+    "effects": [
+      "Body Armors: Gain +3% Move Speed Movement Speed bonus",
+      "and +10% link=Mana|Mana Cost Mana cost reduction (-5% Mana costs)",
+      "and +5% 14px|link=Impact resistance"
+    ],
+    "compatible_items": [
+      "Arcane Set",
+      "White Arcane Set",
+      "Clansage Robe or Red Clansage Robe (Body Armor or Helmets)"
+    ],
+    "compatible_raw": "Arcane Set, White Arcane Set, Clansage Robe or Red Clansage Robe (Body Armor or Helmets)"
+  },
+  {
+    "name": "Storm",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Junk,Iron,Gold,Virgin",
+    "effects": [
+      "Adds +40% of the existing weapon's Physical physical damage as Lightning damageWeapon now inflicts Weaken (35% buildup)"
+    ],
+    "compatible_items": [
+      "Any Iron",
+      "Gold",
+      "Virgin or Junk Weapon"
+    ],
+    "compatible_raw": "Any Iron, Gold, Virgin or Junk Weapon"
+  },
+  {
+    "name": "Telekinesis",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Chakram",
+    "effects": [
+      "Requires Expanded Library upgradeWeapon inflicts Hampered (30% buildup)"
+    ],
+    "compatible_items": [
+      "Any Chakram"
+    ],
+    "compatible_raw": "Any Chakram"
+  },
+  {
+    "name": "The Good Moon",
+    "type": "Dagger",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +0.2x Mana Leech (damage dealt with the dagger will restore 0.2x the damage as Mana)"
+    ],
+    "compatible_items": [
+      "Shiv Dagger or Rondel Dagger"
+    ],
+    "compatible_raw": "Shiv Dagger or Rondel Dagger"
+  },
+  {
+    "name": "Thirst",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Iron",
+    "effects": [
+      "Weapon can become a Vampiric Weapon with a Blood Altar"
+    ],
+    "compatible_items": [
+      "Any Iron weapon",
+      "Rondel Dagger or a Recurve Bow"
+    ],
+    "compatible_raw": "Any Iron weapon, Rondel Dagger or a Recurve Bow"
+  },
+  {
+    "name": "Trauma",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Requires Expanded Library upgradeShot creates an AoE Fire explosion",
+      "dealing 0.29x Weapon base damage as Fire damage-23% Physical Damage Bonus"
+    ],
+    "compatible_items": [
+      "Ornate Pistol"
+    ],
+    "compatible_raw": "Ornate Pistol"
+  },
+  {
+    "name": "Tunnel&#39;s End",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Requires Expanded Library upgradeHits create an AoE Lightning blast which deals 0.603x (60.3%) Dagger's base damage-9% Lightning Damage Bonus"
+    ],
+    "compatible_items": [
+      "Zhorn's Glowstone Dagger"
+    ],
+    "compatible_raw": "Zhorn's Glowstone Dagger"
+  },
+  {
+    "name": "Twang",
+    "type": "Bow",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10 flat Lightning damageWeapon now inflicts Sapped (30% buildup)"
+    ],
+    "compatible_items": [
+      "Gold Bow"
+    ],
+    "compatible_raw": "Gold Bow"
+  },
+  {
+    "name": "Unassuming Ingenuity",
+    "type": "Helmet",
+    "slots": "Helmet",
+    "tags": "Tattered,Worker",
+    "effects": [
+      "Gain +5% Cooldown ReductionGain +5 Pouch Bonus"
+    ],
+    "compatible_items": [
+      "Straw Hat",
+      "Scavenger Scarf",
+      "Worker Hat or Tattered Hat."
+    ],
+    "compatible_raw": "Straw Hat, Scavenger Scarf, Worker Hat or Tattered Hat."
+  },
+  {
+    "name": "Unexpected Resilience",
+    "type": "Chest",
+    "slots": "Chest",
+    "tags": "Worker,Tattered,LightCloth,Garb",
+    "effects": [
+      "Gain +5 Protection ProtectionGain +0.1 passive Health regeneration per second"
+    ],
+    "compatible_items": [
+      "Worker",
+      "Tattered",
+      "\"Light\" or \"Garb\""
+    ],
+    "compatible_raw": "Worker, Tattered, \"Light\" or \"Garb\""
+  },
+  {
+    "name": "Unsuspected Strength",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Iron",
+    "effects": [
+      "Adds +150% of the existing weapon's Physical physical damage as Physical damageMakes the weapon Indestructible"
+    ],
+    "compatible_items": [
+      "Any Iron Weapon"
+    ],
+    "compatible_raw": "Any Iron Weapon"
+  },
+  {
+    "name": "Unwavering Determination",
+    "type": "Boots",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Gain +10% Stamina Cost Stamina cost reduction (-10% Stamina costs)Gain +12% 14px|link=Impact resistance"
+    ],
+    "compatible_items": [
+      "Worker Boots",
+      "Simple Shoes",
+      "Sandals",
+      "Tattered Boots"
+    ],
+    "compatible_raw": "Worker Boots, Simple Shoes, Sandals, Tattered Boots"
+  },
+  {
+    "name": "War Memento",
+    "type": "Weapon",
+    "slots": "",
+    "tags": "",
+    "effects": [
+      "Adds +35% of the existing weapon's Physical physical damage as Fire damageWeapon now inflicts Curse and Scorched (both 33% buildup)"
+    ],
+    "compatible_items": [
+      "Old Legion Gladius",
+      "Old Legion Spear",
+      "Desert Khopesh"
+    ],
+    "compatible_raw": "Old Legion Gladius, Old Legion Spear, Desert Khopesh"
+  },
+  {
+    "name": "Warmaster",
+    "type": "Armor",
+    "slots": "Chest,Helmet,Boots",
+    "tags": "Virgin",
+    "effects": [
+      "Body Armors: Gain +2 Protection and +10% Physical damage bonusHelmets/Boots: Gain +1 Protection and +5% Physical damage bonus"
+    ],
+    "compatible_items": [
+      "Plate Set",
+      "Elite Plate Set",
+      "Virgin Set (Body Armor",
+      "Helmet or Boots)"
+    ],
+    "compatible_raw": "Plate Set, Elite Plate Set, Virgin Set (Body Armor, Helmet or Boots)"
+  },
+  {
+    "name": "Weightless",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Marble",
+    "effects": [
+      "Gain +0.2 flat Attack Speed Attack SpeedReduces Weight by -50%"
+    ],
+    "compatible_items": [
+      "Any Marble Weapon"
+    ],
+    "compatible_raw": "Any Marble Weapon"
+  },
+  {
+    "name": "Wendigo&#39;s Breath",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Virgin",
+    "effects": [
+      "Weapon deals an AoE Frost \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and +5 flat 14px|link=Impact."
+    ],
+    "compatible_items": [
+      "Any Virgin weapon"
+    ],
+    "compatible_raw": "Any Virgin weapon"
+  },
+  {
+    "name": "Whiplash",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Main Weapon",
+    "effects": [
+      "Increases the weapon's Physical physical damage by +10%"
+    ],
+    "compatible_items": [
+      "Any Main Weapon"
+    ],
+    "compatible_raw": "Any Main Weapon"
+  },
+  {
+    "name": "Winter's Cruelty",
+    "type": "Weapon",
+    "slots": "Weapon",
+    "tags": "Junk,Iron,Gold,Virgin",
+    "effects": [
+      "Adds +40% of the existing weapon's Physical physical damage as Frost damageWeapon now inflicts Slow Down (35% buildup)"
+    ],
+    "compatible_items": [
+      "Any Iron",
+      "Gold",
+      "Virgin or Junk Weapon"
+    ],
+    "compatible_raw": "Any Iron, Gold, Virgin or Junk Weapon"
+  }
+]
