@@ -593,8 +593,20 @@ function adjustLeyline(stat,amount){
 function statRow(lbl,val,opts){
   opts=opts||{};
   var cls='sval';
-  if(val>0&&!opts.noPlus)cls+=' pos';
-  if(val<0)cls+=' neg';
+
+  // For Stamina/Mana Cost: negative is good (green), positive is bad (red)
+  var isCost=lbl.toLowerCase().indexOf('stamina cost')>=0||lbl.toLowerCase().indexOf('mana cost')>=0;
+
+  if(isCost){
+    // Inverted logic for costs
+    if(val<0)cls+=' pos'; // Negative cost = good = green
+    if(val>0)cls+=' neg'; // Positive cost = bad = red
+  }else{
+    // Normal logic for other stats
+    if(val>0&&!opts.noPlus)cls+=' pos';
+    if(val<0)cls+=' neg';
+  }
+
   var d=(val>0&&!opts.noPlus?'+':'')+val+(opts.suffix||'');
   var dot=opts.dot?'<span class="sdot '+opts.dot+'"></span>':'';
   return '<div class="srow"><span class="sname">'+dot+lbl+'</span><span class="'+cls+'">'+d+'</span></div>';
