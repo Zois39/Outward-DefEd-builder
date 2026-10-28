@@ -1,0 +1,4517 @@
+{
+  "Adventurer Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Cierzo"
+  ],
+  "Adventurer Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Adventurer's Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Ammolite Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Ammolite Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Ammolite Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Antique Plate Boots": [
+    "Aegis",
+    "Economy",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Antique Plate Garb": [
+    "Aegis",
+    "Economy",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Harmattan"
+  ],
+  "Antique Plate Sallet": [
+    "Aegis",
+    "Calm Soul",
+    "Economy",
+    "Filter",
+    "Shelter"
+  ],
+  "Arcane Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter",
+    "Stabilizing Forces"
+  ],
+  "Arcane Robe": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Stabilizing Forces"
+  ],
+  "Ash Armor": [
+    "Aegis",
+    "Cocoon",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Monsoon"
+  ],
+  "Ash Boots": [
+    "Aegis",
+    "Cocoon",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Ash-Filter Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Cocoon",
+    "Filter",
+    "Shelter"
+  ],
+  "Barrier Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Barrier Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Barrier Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Beige Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Black Dancer Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Black Fur Armor": [
+    "Aegis",
+    "Filter",
+    "Inner Warmth",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Black Fur Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Inner Warmth",
+    "Shelter"
+  ],
+  "Black Fur Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Inner Warmth",
+    "Shelter"
+  ],
+  "Black Pearlbird Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Black Plate Armor": [
+    "Aegis",
+    "Filter",
+    "Light as Wind",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Black Plate Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Guidance of Wind",
+    "Shelter"
+  ],
+  "Black Plate Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Primal Wind",
+    "Shelter"
+  ],
+  "Black Worker Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Blue Light Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Blue Sand Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Blue Sand Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Blue Sand Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Brigand Coat": [
+    "Aegis",
+    "Filter",
+    "Rascal&#39;s Verve",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Brigand's Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Rascal&#39;s Verve",
+    "Shelter"
+  ],
+  "Bright Nobleman Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Bright Nobleman Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Bright Nobleman Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Bright Rich Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Bright Rich Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Caged Armor Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Caged Armor Chestplate": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Caged Armor Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Caldera Mail Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Caldera Mail Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Caldera Mail Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Candle Plate Armor": [
+    "Aegis",
+    "Elatt's Sanctity",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Candle Plate Boots": [
+    "Aegis",
+    "Elatt's Sanctity",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Candle Plate Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Elatt's Sanctity",
+    "Filter",
+    "Shelter"
+  ],
+  "Cauldron Helm": [
+    "Abundance",
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Chalcedony Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Chalcedony Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Chalcedony Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Chitin Desert Tunic": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Clansage Robe": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Copal Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Berg"
+  ],
+  "Copal Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Copal Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Coralhorn Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Crimson Dancer Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Crimson Plate Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Crimson Plate Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Crimson Plate Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Dancer Leggings": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Dancer Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Dark Green Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Dark Nobleman Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Dark Nobleman Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Dark Nobleman Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Dark Red Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Dark Rich Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Dark Rich Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Dark Worker Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Dark Worker Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Desert Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Inner Cool",
+    "Shelter"
+  ],
+  "Desert Tunic": [
+    "Aegis",
+    "Filter",
+    "Inner Cool",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Levant"
+  ],
+  "Desert Veil": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Inner Cool",
+    "Shelter"
+  ],
+  "Elite Desert Tunic": [
+    "Aegis",
+    "Filter",
+    "Inner Cool",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Levant"
+  ],
+  "Elite Desert Veil": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Inner Cool",
+    "Shelter"
+  ],
+  "Elite Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Elite Plate Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Elite Plate Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Elite Plate Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Entomber Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Entomber Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Entomber Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Ergagr'Uk!": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Fur Armor": [
+    "Aegis",
+    "Filter",
+    "Inner Warmth",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Fur Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Inner Warmth",
+    "Shelter"
+  ],
+  "Fur Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Inner Warmth",
+    "Shelter"
+  ],
+  "Gar'Ga'Nak": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Gargargar!": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Go'gO": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Gold-Lich Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Gold-Lich Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Gold-Lich Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "GorkKrog!": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "GoulgGalog!": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Gray Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Green Copal Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Berg"
+  ],
+  "Green Copal Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Green Copal Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Green Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Green Worker Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Halfplate Armor": [
+    "Aegis",
+    "Filter",
+    "Formless Material",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Cierzo"
+  ],
+  "Halfplate Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Formless Material",
+    "Freedom",
+    "Shelter"
+  ],
+  "Halfplate Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Formless Material",
+    "Shelter"
+  ],
+  "Horror Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Horror Greaves": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Horror Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Hound Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Jade Acolyte Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Jade Acolyte Cowl": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Jade Acolyte Robes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Jade-Lich Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Jade-Lich Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Jade-Lich Robes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Jewel Bird Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Kazite Armor": [
+    "Aegis",
+    "Assassin",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Kazite Boots": [
+    "Aegis",
+    "Assassin",
+    "Compass",
+    "Filter",
+    "Flux",
+    "Freedom"
+  ],
+  "Kazite Cat Mask": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Kazite Light Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Kazite Light Boots": [
+    "Aegis",
+    "Compass",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Kazite Light Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Kazite Mask": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Kazite Oni Mask": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Kintsugi Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Kintsugi Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Kintsugi Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Krypteia Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Krypteia Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Krypteia Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Light Kazite Shirt": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Looter Armor": [
+    "Aegis",
+    "Filter",
+    "Rascal&#39;s Verve",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Looter Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Rascal&#39;s Verve",
+    "Shelter"
+  ],
+  "Makeshift Leather Attire": [
+    "Aegis",
+    "Beast of Burden",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Makeshift Leather Boots": [
+    "Aegis",
+    "Beast of Burden",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Makeshift Leather Hat": [
+    "Aegis",
+    "Beast of Burden",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Manawall Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Manawall Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Manawall Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Master Desert Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Inner Cool",
+    "Shelter"
+  ],
+  "Master Desert Tunic": [
+    "Aegis",
+    "Filter",
+    "Inner Cool",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Levant"
+  ],
+  "Master Desert Veil": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Inner Cool",
+    "Shelter"
+  ],
+  "Master Kazite Armor": [
+    "Aegis",
+    "Assassin",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Master Kazite Boots": [
+    "Aegis",
+    "Assassin",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Master Kazite Cat Mask": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Master Kazite Mask": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Master Kazite Oni Mask": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Master Trader Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Master Trader Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Master Trader Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Merton's Ribcage": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Merton's Shinbones": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Merton's Skull": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Militia Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Militia Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Militia Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Miner Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Miner Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Noble Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Noble Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Noble Shoes": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Novice Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Novice Robe": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Orichalcum Armor": [
+    "Aegis",
+    "Filter",
+    "Light as Wind",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Orichalcum Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Guidance of Wind",
+    "Shelter"
+  ],
+  "Orichalcum Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Primal Wind",
+    "Shelter"
+  ],
+  "Padded Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Padded Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Padded Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Pale Light Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Pale Worker's Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Palladium Armor": [
+    "Aegis",
+    "Castigation",
+    "Elatt's Sanctity",
+    "Filter",
+    "Humiliation",
+    "Sang Froid"
+  ],
+  "Palladium Boots": [
+    "Aegis",
+    "Castigation",
+    "Elatt's Sanctity",
+    "Filter",
+    "Flux",
+    "Freedom"
+  ],
+  "Palladium Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Castigation",
+    "Elatt's Sanctity",
+    "Filter",
+    "Humiliation"
+  ],
+  "Pathfinder Armor": [
+    "Aegis",
+    "Cocoon",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Pathfinder Boots": [
+    "Aegis",
+    "Cocoon",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Pathfinder Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Cocoon",
+    "Filter",
+    "Shelter"
+  ],
+  "Patterned Worker Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Patterned Worker Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Pearlbird Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Pearlescent Mail": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Petrified Wood Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Petrified Wood Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Petrified Wood Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Pilgrim Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Pilgrim Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Pilgrim Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Plate Armor": [
+    "Aegis",
+    "Economy",
+    "Elatt's Sanctity",
+    "Filter",
+    "Formless Material",
+    "Sang Froid"
+  ],
+  "Plate Boots": [
+    "Aegis",
+    "Economy",
+    "Elatt's Sanctity",
+    "Filter",
+    "Flux",
+    "Formless Material"
+  ],
+  "Plate Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Economy",
+    "Elatt's Sanctity",
+    "Filter",
+    "Formless Material"
+  ],
+  "Purple Dancer Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Purple Festive Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Purple Festive Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Red Clansage Robe": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Stabilizing Forces"
+  ],
+  "Red Festive Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Red Festive Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Red Light Clothes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Red Wide Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Runic Armor": [
+    "Aegis",
+    "Chaos and Creativity",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Runic Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter",
+    "Speed and Efficiency"
+  ],
+  "Runic Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Order and Discipline",
+    "Shelter"
+  ],
+  "Rust Lich Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Rust Lich Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Rust Lich Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Sandals": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter",
+    "Unwavering Determination"
+  ],
+  "Scaled Leather Attire": [
+    "Aegis",
+    "Beast of Burden",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Scaled Leather Boots": [
+    "Aegis",
+    "Beast of Burden",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Scaled Leather Hat": [
+    "Aegis",
+    "Beast of Burden",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Scarab Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Scarlet Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Scarlet Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Scarlet Robes": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Scavenger Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Scavenger Coat": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Scavenger Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Scavenger Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Scavenger Scarf": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter",
+    "Unassuming Ingenuity"
+  ],
+  "Scholar Attire": [
+    "Aegis",
+    "Arcane Unison",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Scholar Boots": [
+    "Aegis",
+    "Arcane Unison",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Scholar Circlet": [
+    "Aegis",
+    "Arcane Unison",
+    "Calm Soul",
+    "Filter",
+    "Rain",
+    "Shelter"
+  ],
+  "Shadow Kazite Light Armor": [
+    "Aegis",
+    "Assassin",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Shadow Kazite Light Boots": [
+    "Aegis",
+    "Assassin",
+    "Compass",
+    "Filter",
+    "Flux",
+    "Freedom"
+  ],
+  "Shadow Kazite Light Helmet": [
+    "Aegis",
+    "Assassin",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Shadow Light Kazite Shirt": [
+    "Aegis",
+    "Assassin",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Shock Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Shock Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Shock Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Silver Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Spirit of Monsoon"
+  ],
+  "Silver Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Silver Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Simple Shoes": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter",
+    "Unwavering Determination"
+  ],
+  "Slayer's Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Slayer's Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Slayer's Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Squire Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Squire Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Squire Headband": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Straw Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter",
+    "Unassuming Ingenuity"
+  ],
+  "Striped Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Tattered Attire": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Tattered Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter",
+    "Unwavering Determination"
+  ],
+  "Tattered Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Tenebrous Armor": [
+    "Aegis",
+    "Chaos and Creativity",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Tenebrous Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter",
+    "Speed and Efficiency"
+  ],
+  "Tenebrous Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Order and Discipline",
+    "Shelter"
+  ],
+  "Trader Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Trader Garb": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Tsar Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Tsar Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Tsar Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Tuanosaur Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Vigilante Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Vigilante Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Vigilante Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Virgin Armor": [
+    "Aegis",
+    "Arcane Unison",
+    "Assassin",
+    "Beast of Burden",
+    "Cocoon",
+    "Economy"
+  ],
+  "Virgin Boots": [
+    "Aegis",
+    "Arcane Unison",
+    "Assassin",
+    "Beast of Burden",
+    "Cocoon",
+    "Economy"
+  ],
+  "Virgin Helmet": [
+    "Aegis",
+    "Arcane Unison",
+    "Assassin",
+    "Beast of Burden",
+    "Calm Soul",
+    "Cocoon"
+  ],
+  "White Arcane Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter",
+    "Stabilizing Forces"
+  ],
+  "White Arcane Robe": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter",
+    "Stabilizing Forces"
+  ],
+  "White Kintsugi Armor": [
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "White Kintsugi Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "White Kintsugi Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "White Priest Boots": [
+    "Aegis",
+    "Elatt's Sanctity",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "White Priest Hood": [
+    "Aegis",
+    "Calm Soul",
+    "Elatt's Sanctity",
+    "Filter",
+    "Shelter"
+  ],
+  "White Priest Mitre": [
+    "Aegis",
+    "Calm Soul",
+    "Elatt's Sanctity",
+    "Filter",
+    "Shelter"
+  ],
+  "White Priest Robes": [
+    "Aegis",
+    "Elatt's Sanctity",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "White Wide Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Wide Black Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Wide Blue Hat": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Shelter"
+  ],
+  "Wolf Mage Armor": [
+    "Adrenaline",
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Wolf Mage Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Wolf Mage Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Instinct",
+    "Shelter"
+  ],
+  "Wolf Medic Armor": [
+    "Adrenaline",
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Wolf Medic Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Wolf Medic Helmet": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Instinct",
+    "Shelter"
+  ],
+  "Wolf Plate Armor": [
+    "Adrenaline",
+    "Aegis",
+    "Filter",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Wolf Plate Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter"
+  ],
+  "Wolf Plate Full-Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Instinct",
+    "Shelter"
+  ],
+  "Wolf Plate Helm": [
+    "Aegis",
+    "Calm Soul",
+    "Filter",
+    "Instinct",
+    "Shelter"
+  ],
+  "Worker Boots": [
+    "Aegis",
+    "Filter",
+    "Flux",
+    "Freedom",
+    "Shelter",
+    "Unwavering Determination"
+  ],
+  "Zagis' Armor": [
+    "Aegis",
+    "Desert&#39;s Sun",
+    "Filter",
+    "Foggy Memories",
+    "Sang Froid",
+    "Shelter"
+  ],
+  "Zagis' Mask": [
+    "Aegis",
+    "Calm Soul",
+    "Desert&#39;s Sun",
+    "Filter",
+    "Foggy Memories",
+    "Shelter"
+  ],
+  "Virgin Lantern": [
+    "Angel Light",
+    "Blaze Blue",
+    "Copper Flame",
+    "Forge Fire",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Ancient Calygrey Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Assassin Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Assassin Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Dagger": [
+    "Midnight Dance"
+  ],
+  "Astral Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Greatmace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Beast Golem Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Beast Golem Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Blacksmith's Vintage Hammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brand": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Broad Dagger": [
+    "Midnight Dance"
+  ],
+  "Broken Golem Rapier": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brutal Axe": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brutal Club": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brutal Greataxe": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brutal Greatmace": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brutal Knuckles": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Brutal Spear": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Butcher Cleaver": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Calygrey Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Cerulean Sabre": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Hammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Challenger Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Cleaver Halberd": [
+    "Abomination",
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Cloth Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Crescent Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Crescent Scythe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Axe": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Claymore": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Greataxe": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Halberd": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Hammer": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Knuckles": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Mace": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Spear": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Damascene Sword": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "De-powered Bludgeon": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Desert Khopesh": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Rainbow Hex",
+    "War Memento",
+    "Whiplash"
+  ],
+  "Dreamer Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Duty": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Axe": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Club": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Greataxe": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Greatclub": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Greatsword": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Halberd": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Knuckles": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Sword": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fang Trident": [
+    "Favorable Wind",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Felling Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fishing Harpoon": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Dagger": [
+    "Midnight Dance"
+  ],
+  "Forged Glass Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Greatmace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Forged Glass Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Fossilized Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Dagger": [
+    "Midnight Dance"
+  ],
+  "Galvanic Fists": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Greatmace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Galvanic Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gep's Blade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gep's Longblade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Ghost Parallel": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Ghost Reaper": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Giant Iron Key": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Giantkind Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Giantkind Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gilded Shiver of Tramontane": [
+    "Midnight Dance"
+  ],
+  "Gold Club": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Guisarme": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Harpoon": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Hatchet": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Machete": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Mining Pick": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold Pitchfork": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold-Lich Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold-Lich Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold-Lich Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold-Lich Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Gold-Lich Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Golden Iron Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Golden Junk Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Golem Rapier": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Griigmerk kÄramerk": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Grind": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Hatchet": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Fists": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Greatmace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Greatsword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Iron Axe": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Claymore": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Greataxe": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Greathammer": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Halberd": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Knuckles": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Mace": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Spear": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Iron Sword": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Storm"
+  ],
+  "Jade Scimitar": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Jade-Lich Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Junk Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Blade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Cestus": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Cleaver": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Greatblade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Greatcleaver": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Hammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Lance": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Partizan": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kelvin's Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Living Wood Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Mace of Seasons": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Machete": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Maelstrom Blade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Manticore Dagger": [
+    "Midnight Dance"
+  ],
+  "Manticore Greatmace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Mantis Greatpick": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Marble Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Fists": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Morningstar": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Marble Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Weightless",
+    "Whiplash"
+  ],
+  "Masterpiece Axe": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Claymore": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Greataxe": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Halberd": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Hammer": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Knuckles": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Mace": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Spear": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Masterpiece Sword": [
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Merton's Firepoker": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Axe": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Claymore": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Greataxe": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Halberd": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Hammer": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Knuckles": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Mace": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Spear": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Sword": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Axe": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Claymore": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Dagger": [
+    "Contagion",
+    "Midnight Dance"
+  ],
+  "Militia Greataxe": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Halberd": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Hammer": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Knuckles": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Mace": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Spear": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Militia Sword": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Mining Pick": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Mushroom Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Mysterious Blade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Mysterious Long Blade": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Axe": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Claymore": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Greataxe": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Greatmace": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Halberd": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Knuckles": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Mace": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Spear": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Obsidian Sword": [
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Old Legion Gladius": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "War Memento",
+    "Whiplash"
+  ],
+  "Old Legion Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "War Memento",
+    "Whiplash"
+  ],
+  "Pain in the Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Axe": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Claymore": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Greataxe": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Greathammer": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Halberd": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Knuckles": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Mace": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Spear": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Palladium Sword": [
+    "Castigation",
+    "Fulmination",
+    "Humiliation",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Pathfinder Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Phytosaur Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Pillar Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Pitchfork": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Porcelain Fists": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Prayer Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Redemption",
+    "Whiplash"
+  ],
+  "Primitive Club": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Pyrite Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Radiant Wolf Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Red Lady's Dagger": [
+    "Midnight Dance"
+  ],
+  "Rondel Dagger": [
+    "Desert&#39;s Sun",
+    "Foggy Memories",
+    "Midnight Dance",
+    "Storm",
+    "The Good Moon",
+    "Thirst"
+  ],
+  "Royal Great-Khopesh": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Ruined Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Rusted Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Sandrose": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Sanguine Cleaver": [
+    "Abomination",
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Club": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Fang Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Greatclub": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Greatsword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Savage Trident": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Scepter of the Cruel Priest": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Sealed Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Shiv Dagger": [
+    "Midnight Dance",
+    "The Good Moon"
+  ],
+  "Shriek": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Sinner Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Redemption",
+    "Whiplash"
+  ],
+  "Skycrown Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Dagger": [
+    "Midnight Dance"
+  ],
+  "Smoke Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Hammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Spore Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Starchild Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Steel Sabre": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Rainbow Hex",
+    "Whiplash"
+  ],
+  "Strange Rusted Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Sunfall Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Thermal Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Thorny Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Thorny Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Thrice-Wrought Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tokebakicit": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Troglodyte Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Troglodyte Pole Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Troglodyte Trident": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Fists": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tuanosaur Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tuanosaur Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Unusual Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Dagger": [
+    "Midnight Dance"
+  ],
+  "Vampiric Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Greatmace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Greatsword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vampiric Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Axe": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Claymore": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Dagger": [
+    "Contagion",
+    "Midnight Dance"
+  ],
+  "Vigilante Greataxe": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Halberd": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Hammer": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Knuckles": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Mace": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Spear": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Vigilante Sword": [
+    "Contagion",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Virgin Axe": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Greataxe": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Greatmace": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Greatsword": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Halberd": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Knuckles": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Mace": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Spear": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Virgin Sword": [
+    "Forge Fire",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Priest&#39;s Prayers",
+    "Rot"
+  ],
+  "Warm Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Werlig Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Withering Pole Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Withering Trident": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Axe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Claymore": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Dagger": [
+    "Midnight Dance"
+  ],
+  "Wolf Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Greathammer": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Halberd": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Knuckles": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Mace": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Spear": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Wolf Sword": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Worldedge Greataxe": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Worn Guisarme": [
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Zagis' Saw": [
+    "Crumbling Anger",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Zhorn's Glowstone Dagger": [
+    "Midnight Dance",
+    "Tunnel&#39;s End"
+  ],
+  "Astral Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Astral Pistol": [
+    "Levantine Secret"
+  ],
+  "Bone Pistol": [
+    "Levantine Secret"
+  ],
+  "Cage Pistol": [
+    "Levantine Secret"
+  ],
+  "Cannon Pistol": [
+    "Levantine Secret"
+  ],
+  "Ceremonial Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Chalcedony Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Chalcedony Pistol": [
+    "Levantine Secret"
+  ],
+  "Chimera Pistol": [
+    "Levantine Secret"
+  ],
+  "Coralhorn Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Damascene Bow": [
+    "Enkindle",
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Flintlock Pistol": [
+    "Levantine Secret"
+  ],
+  "Forged Glass Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Forged Glass Pistol": [
+    "Levantine Secret"
+  ],
+  "Galvanic Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Galvanic Pistol": [
+    "Levantine Secret"
+  ],
+  "Gold Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Twang"
+  ],
+  "Horror Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Irrepressible Anger",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Horror Pistol": [
+    "Levantine Secret"
+  ],
+  "Kazite Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Kazite Pistol": [
+    "Levantine Secret"
+  ],
+  "Masterpiece Bow": [
+    "Enkindle",
+    "Etherwave",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Meteoric Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Meteoric Pistol": [
+    "Inferno",
+    "Levantine Secret"
+  ],
+  "Militia Bow": [
+    "Contagion",
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Militia Pistol": [
+    "Contagion",
+    "Levantine Secret"
+  ],
+  "Murmure": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Obsidian Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Inferno",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Obsidian Pistol": [
+    "Inferno",
+    "Levantine Secret"
+  ],
+  "Ornate Pistol": [
+    "Levantine Secret",
+    "Trauma"
+  ],
+  "Recurve Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Simple Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Smoke Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Smoke Pistol": [
+    "Levantine Secret"
+  ],
+  "Tsar Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Vampiric Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Vigilante Bow": [
+    "Contagion",
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow"
+  ],
+  "Vigilante Pistol": [
+    "Contagion",
+    "Levantine Secret"
+  ],
+  "War Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Wolf Bow": [
+    "Enkindle",
+    "Fulmination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Snow",
+    "Whiplash"
+  ],
+  "Wolf Pistol": [
+    "Levantine Secret"
+  ],
+  "Ancient Calygrey Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Astral Chakram": [
+    "Telekinesis"
+  ],
+  "Astral Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Calygrey Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Chalcedony Chakram": [
+    "Telekinesis"
+  ],
+  "Compasswood Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Cracked Red Moon": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Crystal Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Distorted Experiment": [
+    "Telekinesis"
+  ],
+  "Experimental Chakram": [
+    "Telekinesis"
+  ],
+  "Forged Glass Chakram": [
+    "Telekinesis"
+  ],
+  "Frostburn Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Frozen Chakram": [
+    "Telekinesis"
+  ],
+  "Galvanic Chakram": [
+    "Telekinesis"
+  ],
+  "Gold Quarterstaff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Horror Chakram": [
+    "Telekinesis"
+  ],
+  "Ivory Master's Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Isolated Rumination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Jade-Lich Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Kazite Chakram": [
+    "Musing of a Philosopher",
+    "Telekinesis"
+  ],
+  "Mage's Poking Stick": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Master's Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Isolated Rumination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Meteoric Chakram": [
+    "Inferno",
+    "Telekinesis"
+  ],
+  "Militia Chakram": [
+    "Contagion",
+    "Telekinesis"
+  ],
+  "Mysterious Chakram": [
+    "Telekinesis"
+  ],
+  "Obsidian Chakram": [
+    "Inferno",
+    "Telekinesis"
+  ],
+  "Ornate Chakram": [
+    "Musing of a Philosopher",
+    "Telekinesis"
+  ],
+  "Quarterstaff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Revenant Moon": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Rotwood Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Scholar's Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Isolated Rumination",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Smoke Chakram": [
+    "Telekinesis"
+  ],
+  "Thorn Chakram": [
+    "Telekinesis"
+  ],
+  "Troglodyte Staff": [
+    "Fulmination",
+    "Inheritance of the Past",
+    "Molepig Sigh",
+    "Poltergeist",
+    "Whiplash"
+  ],
+  "Tsar Chakram": [
+    "Telekinesis"
+  ],
+  "Vigilante Chakram": [
+    "Contagion",
+    "Telekinesis"
+  ],
+  "Wolf Chakram": [
+    "Telekinesis"
+  ],
+  "Angler Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Astral Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Crimson Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Dragon Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Enchanting Table Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Fabulous Palladium Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Fang Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Forged Glass Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Galvanic Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Gold-Lich Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Golden Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Horror Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Inner Marble Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Kazite Scutum": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Marble Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Militia Shield": [
+    "Contagion",
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Mushroom Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Old Legion Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Ornate Bone Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Palladium Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Plank Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Round Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Savage Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Slumbering Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Smoke Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Spore Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Steel Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "The Will O Wisp": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Tower Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Tsar Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Vigilante Shield": [
+    "Contagion",
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Wolf Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ],
+  "Zhorn's Demon Shield": [
+    "Guided Arm",
+    "Protective Presence"
+  ]
+}
