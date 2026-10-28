@@ -13570,12 +13570,6 @@
       "weapon_type": "torch",
       "handedness": "off_handed",
       "description": "Alchemical torch that cools the wielder even in sweltering temperatures. Provides light when held in off-hand.",
-      "special_effects": [
-        "Lowers Temperature by 1 stage",
-        "Decreases temperature delta by -14",
-        "Provides light",
-        "Must be held in off-hand"
-      ],
       "damage_stats": {
         "base_damage": {
           "physical": 0
@@ -13598,19 +13592,19 @@
       },
       "source_category": "craftable",
       "dlc": "",
-      "local_image": "assets/images/weapons/weapon_Ice-Flame_Torch.png"
+      "local_image": "assets/images/weapons/weapon_Ice-Flame_Torch.png",
+      "passive_effects": [
+        "Lowers Temperature by 1 stage",
+        "Decreases temperature delta by -14",
+        "Provides light",
+        "Must be held in off-hand"
+      ]
     },
     {
       "name": "Makeshift Torch",
       "weapon_type": "torch",
       "handedness": "off_handed",
       "description": "Torch that shines weakly, held in the off hand. It burns out quickly, but warms up the wielder.",
-      "special_effects": [
-        "Raises Temperature by 1 stage",
-        "Increases temperature delta by +14",
-        "Provides light",
-        "Must be held in off-hand"
-      ],
       "damage_stats": {
         "base_damage": {
           "physical": 0
@@ -13632,7 +13626,13 @@
       },
       "source_category": "craftable",
       "dlc": "",
-      "local_image": "assets/images/weapons/weapon_Makeshift_Torch.png"
+      "local_image": "assets/images/weapons/weapon_Makeshift_Torch.png",
+      "passive_effects": [
+        "Raises Temperature by 1 stage",
+        "Increases temperature delta by +14",
+        "Provides light",
+        "Must be held in off-hand"
+      ]
     }
   ]
 }
