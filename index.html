@@ -673,8 +673,30 @@ function renderStatsTab(pane){
       if(eq.enchant){
         html+='<div style="margin-top:6px;padding:6px;background:rgba(142,68,173,.1);border-radius:4px;border-left:3px solid var(--purple)">';
         html+='<div style="font-size:11px;color:var(--purple);font-weight:600">🪄 '+escHtml(eq.enchant.name)+'</div>';
+        // Show only effects relevant to this item's slot
+        var itemSlot=eq.slot||'';
         eq.enchant.effects.forEach(function(eff){
-          html+='<div style="font-size:10px;color:var(--text);padding-left:12px">• '+escHtml(eff)+'</div>';
+          var effLower=eff.toLowerCase();
+          var showEffect=false;
+          var displayEff=eff;
+
+          if(effLower.indexOf('body armor')>=0){
+            if(itemSlot==='chest'){
+              showEffect=true;
+              displayEff=eff.replace(/^Body Armor:\s*/i,'');
+            }
+          }else if(effLower.indexOf('helmets/boots')>=0 || effLower.indexOf('helmet')>=0 || effLower.indexOf('boots')>=0){
+            if(itemSlot==='head' || itemSlot==='legs'){
+              showEffect=true;
+              displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');
+            }
+          }else{
+            showEffect=true;
+          }
+
+          if(showEffect){
+            html+='<div style="font-size:10px;color:var(--text);padding-left:12px">• '+escHtml(displayEff)+'</div>';
+          }
         });
         html+='</div>';
       }
@@ -1187,8 +1209,30 @@ function renderArmorList(){
       html+='<div class="enchant-title">🪄 Enchantment</div>';
       html+='<div class="enchant-name">'+escHtml(selectedEnch)+'</div>';
       html+='<div class="enchant-effects">';
+      // Show only effects relevant to this item's slot
+      var itemSlot=a.slot||'';
       enchData.effects.forEach(function(eff){
-        html+='<div>• '+escHtml(eff)+'</div>';
+        var effLower=eff.toLowerCase();
+        var showEffect=false;
+        var displayEff=eff;
+
+        if(effLower.indexOf('body armor')>=0){
+          if(itemSlot==='chest'){
+            showEffect=true;
+            displayEff=eff.replace(/^Body Armor:\s*/i,'');
+          }
+        }else if(effLower.indexOf('helmets/boots')>=0 || effLower.indexOf('helmet')>=0 || effLower.indexOf('boots')>=0){
+          if(itemSlot==='head' || itemSlot==='legs'){
+            showEffect=true;
+            displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');
+          }
+        }else{
+          showEffect=true;
+        }
+
+        if(showEffect){
+          html+='<div>• '+escHtml(displayEff)+'</div>';
+        }
       });
       html+='</div></div>';
     }
@@ -1482,8 +1526,30 @@ function renderWeaponList(){
       html+='<div class="enchant-title">🪄 Enchantment</div>';
       html+='<div class="enchant-name">'+escHtml(selectedEnch)+'</div>';
       html+='<div class="enchant-effects">';
+      // Show only effects relevant to this item's slot
+      var itemSlot=a.slot||'';
       enchData.effects.forEach(function(eff){
-        html+='<div>• '+escHtml(eff)+'</div>';
+        var effLower=eff.toLowerCase();
+        var showEffect=false;
+        var displayEff=eff;
+
+        if(effLower.indexOf('body armor')>=0){
+          if(itemSlot==='chest'){
+            showEffect=true;
+            displayEff=eff.replace(/^Body Armor:\s*/i,'');
+          }
+        }else if(effLower.indexOf('helmets/boots')>=0 || effLower.indexOf('helmet')>=0 || effLower.indexOf('boots')>=0){
+          if(itemSlot==='head' || itemSlot==='legs'){
+            showEffect=true;
+            displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');
+          }
+        }else{
+          showEffect=true;
+        }
+
+        if(showEffect){
+          html+='<div>• '+escHtml(displayEff)+'</div>';
+        }
       });
       html+='</div></div>';
     }
