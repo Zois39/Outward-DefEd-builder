@@ -2082,8 +2082,35 @@ function showEnchantModal(){
       html+='<div class="enchant-option-name">'+escHtml(enchName)+'</div>';
       html+='<div class="enchant-option-type">'+escHtml(ench.type)+' | '+escHtml(ench.slots||'Any')+'</div>';
       html+='<div class="enchant-option-effects">';
+
+      // Show only effects relevant to this item's slot
+      var itemSlot=currentEnchantItem.slot||'';
       ench.effects.forEach(function(eff){
-        html+='<div>• '+escHtml(eff)+'</div>';
+        var effLower=eff.toLowerCase();
+        var showEffect=false;
+        var displayEff=eff;
+
+        // Check if effect is slot-specific
+        if(effLower.indexOf('body armor')>=0){
+          // Body Armor effect - only show for chest
+          if(itemSlot==='chest'){
+            showEffect=true;
+            displayEff=eff.replace(/^Body Armor:\s*/i,'');
+          }
+        }else if(effLower.indexOf('helmets/boots')>=0 || effLower.indexOf('helmet')>=0 || effLower.indexOf('boots')>=0){
+          // Helmet/Boots effect - show for head/legs
+          if(itemSlot==='head' || itemSlot==='legs'){
+            showEffect=true;
+            displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');
+          }
+        }else{
+          // Generic effect - show for all
+          showEffect=true;
+        }
+
+        if(showEffect){
+          html+='<div>• '+escHtml(displayEff)+'</div>';
+        }
       });
       html+='</div></div>';
     });
