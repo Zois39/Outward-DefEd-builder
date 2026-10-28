@@ -1396,7 +1396,35 @@ function renderWeaponList(){
     }
     if(WEAPON_FILTER.effect!=='all'){
       var hasEffect=false;
-      if(w.special_effects&&w.special_effects.length>0){
+      // Passive Effects (like armor)
+    if(w.passive_effects&&w.passive_effects.length>0){
+      html+='<div class="effects-section" style="background:rgba(39,174,96,.15);border:none">';
+      html+='<div class="effects-title" style="color:#fff">Effects:</div>';
+      html+='<div class="effect-tags">';
+      w.passive_effects.forEach(function(fx){
+        html+='<span class="effect-tag" style="color:#fff">'+escHtml(fx)+'</span>';
+      });
+      html+='</div></div>';
+    }
+
+    // On-Hit Effects (like weapon)
+    if(w.on_hit_effects&&w.on_hit_effects.length>0){
+      html+='<div class="effects-section">';
+      html+='<div class="effects-title">Effects on Hit:</div>';
+      html+='<div class="effect-tags">';
+      w.on_hit_effects.forEach(function(fx){
+        var fxData=findEffectByName(fx);
+        var fxImg=fxData?getEffectImage(fxData):null;
+        html+='<span class="effect-tag">';
+        if(fxImg){html+='<img src="'+escHtml(fxImg)+'" loading="lazy" onerror="this.style.display='none'">';}
+        html+=escHtml(fx);
+        html+='</span>';
+      });
+      html+='</div></div>';
+    }
+
+    // Legacy special_effects support
+    if(w.special_effects&&w.special_effects.length>0){
         w.special_effects.forEach(function(fx){if(fx.toLowerCase().indexOf(WEAPON_FILTER.effect.toLowerCase())>=0)hasEffect=true;});
       }
       if(!hasEffect)return false;
