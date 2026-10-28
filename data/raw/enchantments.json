@@ -48,8 +48,8 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "",
     "effects": [
-      "Adds +2 Protection to Body Armor",
-      "and +1 Protection to Helmets or Boots"
+      "Body Armor: +2 Protection",
+      "Helmets/Boots: +1 Protection"
     ],
     "compatible_items": [
       "Any Body Armor",
@@ -165,7 +165,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +10% Move Speed Movement SpeedGain +10% Decay damage bonus"
+      "+10% Move Speed",
+      "+10% Decay Damage"
     ],
     "compatible_items": [
       "Tenebrous Armor or Runic Armor"
@@ -356,7 +357,8 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "",
     "effects": [
-      "Body Armors: Adds +10 Corruption resistanceHelmets/Boots: Adds +5 Corruption resistance"
+      "Body Armor: +10 Corruption Resistance",
+      "Helmets/Boots: +5 Corruption Resistance"
     ],
     "compatible_items": [
       "Any Body Armor",
@@ -824,7 +826,7 @@
     "slots": "Chest",
     "tags": "",
     "effects": [
-      "+100% Status Resistance Status Resistance to Burning"
+      "+100% Status Resistance to Burning"
     ],
     "compatible_items": [
       "Any Body Armor"
@@ -865,8 +867,8 @@
     "slots": "Chest,Boots,Helmet",
     "tags": "",
     "effects": [
-      "Adds +2 Barrier to Body Armor",
-      "and +1 Barrier to Helmets or Boots"
+      "Body Armor: +2 Barrier",
+      "Helmets/Boots: +1 Barrier"
     ],
     "compatible_items": [
       "Any Armor"
