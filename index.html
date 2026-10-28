@@ -1474,10 +1474,11 @@ function renderWeaponList(){
       html+='</div></div>';
     }
 
-    // On-Hit Effects
+    // On-Hit Effects (or just "Effects" for torches)
     if(w.on_hit_effects&&w.on_hit_effects.length>0){
-      html+='<div class="effects-section">';
-      html+='<div class="effects-title">Effects on Hit:</div>';
+      var isTorch=w.weapon_type==='torch';
+      html+='<div class="effects-section"'+(isTorch?' style="background:rgba(39,174,96,.15);border:none"':'')+'>';
+      html+='<div class="effects-title"'+(isTorch?' style="color:#fff"':'')+'>'+(isTorch?'Effects:':'Effects on Hit:')+'</div>';
       html+='<div class="effect-tags">';
       w.on_hit_effects.forEach(function(fx){
         var fxData=findEffectByName(fx);
