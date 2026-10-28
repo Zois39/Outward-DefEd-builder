@@ -1483,7 +1483,7 @@ function renderWeaponList(){
         var fxData=findEffectByName(fx);
         var fxImg=fxData?getEffectImage(fxData):null;
         html+='<span class="effect-tag">';
-        if(fxImg){html+='<img src="'+escHtml(fxImg)+'" loading="lazy" onerror="this.style.display='none'">';}
+        if(fxImg){html+='<img src="'+escHtml(fxImg)+'" loading="lazy" onerror="this.style.display=\'none\'">';}
         html+=escHtml(fx);
         html+='</span>';
       });
