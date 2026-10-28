@@ -83,7 +83,8 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Scorched",
-        "Curse"
+        "Curse",
+        "Scorched<br>Curse"
       ]
     },
     {
@@ -146,7 +147,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Dragon_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Enchanting Table Shield",
@@ -182,7 +186,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Enchanting_Table_Shield.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Sapped"
+      ]
     },
     {
       "name": "Fabulous Palladium Shield",
@@ -213,7 +220,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Fabulous_Palladium_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Fang Shield",
@@ -256,7 +266,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Fang_Shield.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Forged Glass Shield",
@@ -329,7 +342,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Galvanic_Shield.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Gold-Lich Shield",
@@ -367,7 +383,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Gold-Lich_Shield.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Golden Shield",
@@ -437,7 +456,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Horror_Shield.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Inner Marble Shield",
@@ -468,7 +490,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Inner_Marble_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Kazite Scutum",
@@ -499,7 +524,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Kazite_Scutum.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Marble Shield",
@@ -530,7 +558,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Marble_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Militia Shield",
@@ -602,7 +633,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Mushroom_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Poisoned"
+      ]
     },
     {
       "name": "Old Legion Shield",
@@ -633,7 +667,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Old_Legion_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Ornate Bone Shield",
@@ -664,7 +701,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Ornate_Bone_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Haunted"
+      ]
     },
     {
       "name": "Palladium Shield",
@@ -800,7 +840,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Savage_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Extreme Bleeding"
+      ]
     },
     {
       "name": "Slumbering Shield",
@@ -899,7 +942,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Spore_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Steel Shield",
@@ -1088,7 +1134,10 @@
       },
       "damage_stats": null,
       "local_image": "assets/images/shields/shield_Wolf_Shield.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Zhorn's Demon Shield",
