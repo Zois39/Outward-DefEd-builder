@@ -1431,7 +1431,12 @@ function renderWeaponList(){
     html+='<div class="item-type" style="flex-wrap:wrap;word-break:break-word">'+escHtml(w.weapon_type||'')+' | '+(w.handedness||'')+' | '+(Array.isArray(rarityName)?rarityName.join(', '):rarityName)+'</div>';
     html+='</div></div>';
     html+='<div class="item-stats">';
-    if(w.damage_stats&&w.damage_stats.base_damage){
+    // Check if shield (has block_stats instead of damage_stats)
+    if(w.block_stats){
+      if(w.block_stats.block_power){html+='<div class="stat-line"><span class="stat-label">Block Power</span><span class="stat-value">'+w.block_stats.block_power+'</span></div>';}
+      if(w.block_stats.impact){html+='<div class="stat-line"><span class="stat-label">Impact</span><span class="stat-value">'+w.block_stats.impact+'</span></div>';}
+      if(w.block_stats.impact_resistance){html+='<div class="stat-line"><span class="stat-label">Impact Resist</span><span class="stat-value">'+w.block_stats.impact_resistance+'</span></div>';}
+    }else if(w.damage_stats&&w.damage_stats.base_damage){
       Object.keys(w.damage_stats.base_damage).forEach(function(k){
         var v=w.damage_stats.base_damage[k];
         if(v>0){html+='<div class="stat-line"><span class="stat-label">'+k.charAt(0).toUpperCase()+k.slice(1)+'</span><span class="stat-value">'+v+'</span></div>';}
