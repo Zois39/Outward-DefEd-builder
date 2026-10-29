@@ -41,7 +41,10 @@
         "Immune to Plague",
         "Immune to Breathless",
         "Provides a light which does not lower Stealth."
-      ]
+      ],
+      "effect_buildup": {
+        "Sapped": 60
+      }
     },
     {
       "name": "Astral Shield",
@@ -84,7 +87,11 @@
       "on_hit_effects": [
         "Scorched",
         "Curse"
-      ]
+      ],
+      "effect_buildup": {
+        "Scorched": 60,
+        "Curse": 60
+      }
     },
     {
       "name": "Crimson Shield",
@@ -149,7 +156,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 60
+      }
     },
     {
       "name": "Enchanting Table Shield",
@@ -188,7 +198,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Sapped"
-      ]
+      ],
+      "effect_buildup": {
+        "Sapped": 60
+      }
     },
     {
       "name": "Fabulous Palladium Shield",
@@ -222,7 +235,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 60
+      }
     },
     {
       "name": "Fang Shield",
@@ -268,7 +284,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 60
+      }
     },
     {
       "name": "Forged Glass Shield",
@@ -302,7 +321,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Sapped"
-      ]
+      ],
+      "effect_buildup": {
+        "Sapped": 60
+      }
     },
     {
       "name": "Galvanic Shield",
@@ -344,7 +366,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 60
+      }
     },
     {
       "name": "Gold-Lich Shield",
@@ -385,7 +410,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 60
+      }
     },
     {
       "name": "Golden Shield",
@@ -458,7 +486,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 60
+      }
     },
     {
       "name": "Inner Marble Shield",
@@ -492,7 +523,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 60
+      }
     },
     {
       "name": "Kazite Scutum",
@@ -526,7 +560,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Marble Shield",
@@ -560,7 +597,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 60
+      }
     },
     {
       "name": "Militia Shield",
@@ -635,7 +675,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Poisoned"
-      ]
+      ],
+      "effect_buildup": {
+        "Poisoned": 60
+      }
     },
     {
       "name": "Old Legion Shield",
@@ -669,7 +712,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 60
+      }
     },
     {
       "name": "Ornate Bone Shield",
@@ -703,7 +749,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Haunted"
-      ]
+      ],
+      "effect_buildup": {
+        "Haunted": 60
+      }
     },
     {
       "name": "Palladium Shield",
@@ -842,7 +891,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Extreme Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Bleeding": 60
+      }
     },
     {
       "name": "Slumbering Shield",
@@ -876,7 +928,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Sapped"
-      ]
+      ],
+      "effect_buildup": {
+        "Sapped": 60
+      }
     },
     {
       "name": "Smoke Shield",
@@ -910,7 +965,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 45
+      }
     },
     {
       "name": "Spore Shield",
@@ -944,7 +1002,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 60
+      }
     },
     {
       "name": "Steel Shield",
@@ -1009,7 +1070,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Tower Shield",
@@ -1136,7 +1200,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Zhorn's Demon Shield",
