@@ -1374,7 +1374,6 @@ function renderWeaponsTab(pane){
     html+='<button class="pill'+(WEAPON_FILTER.posEffect===pef?' active':'')+'" '+makeClick('setWeaponFilter','posEffect|'+pef)+'>'+pef+'</button>';
   }
   html+='</div></div>';
-html+='</div></div>';
   html+='<select class="sort-select" onchange="setWeaponFilter(\'sort\',this.value)">';
   html+='<option value="name"'+(WEAPON_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
   html+='<option value="damage"'+(WEAPON_FILTER.sort==='damage'?' selected':'')+'>Damage</option>';
@@ -1416,6 +1415,34 @@ function renderWeaponList(){
       if(w.damage_stats&&w.damage_stats.base_damage){if(w.damage_stats.base_damage[WEAPON_FILTER.dmg]>0)hasDmg=true;}
       if(!hasDmg)return false;
     }
+    // Positive effect filter
+    if(WEAPON_FILTER.posEffect!=='all'){
+      var hasPosEffect=false;
+      var posFilter=WEAPON_FILTER.posEffect.toLowerCase();
+
+      // Check damage bonuses
+      if(posFilter.indexOf('damage')>=0){
+        ['physical','fire','frost','lightning','ethereal','decay'].forEach(function(dtype){
+          var bonus=w[dtype+'_bonus'];
+          if(bonus && bonus>0){
+            if(posFilter.indexOf(dtype)>=0){
+              hasPosEffect=true;
+            }
+          }
+        });
+      }
+
+      // Check cost reductions (negative values are good)
+      if(posFilter==='mana cost'){
+        if(w.mana_cost_reduction && w.mana_cost_reduction<0)hasPosEffect=true;
+      }
+      if(posFilter==='stamina cost'){
+        if(w.stamina_cost_reduction && w.stamina_cost_reduction<0)hasPosEffect=true;
+      }
+
+      if(!hasPosEffect)return false;
+    }
+
     if(WEAPON_FILTER.effect!=='all'){
       var hasEffect=false;
       if(w.special_effects&&w.special_effects.length>0){
