@@ -1464,11 +1464,29 @@ function renderWeaponList(){
     html+='</div>';
 
     // Passive Effects (like armor)
-    if(w.passive_effects&&w.passive_effects.length>0){
+    var passiveEffects = w.passive_effects ? w.passive_effects.slice() : [];
+
+    // Add damage bonuses
+    ['physical','fire','frost','lightning','ethereal','decay'].forEach(function(dtype){
+      var bonus = w[dtype+'_bonus'];
+      if(bonus && bonus > 0){
+        passiveEffects.push('+'+bonus+'% '+dtype.charAt(0).toUpperCase()+dtype.slice(1)+' Damage');
+      }
+    });
+
+    // Add mana/stamina cost reduction
+    if(w.mana_cost_reduction && w.mana_cost_reduction > 0){
+      passiveEffects.push('-'+w.mana_cost_reduction+'% Mana Cost');
+    }
+    if(w.stamina_cost_reduction && w.stamina_cost_reduction > 0){
+      passiveEffects.push('-'+w.stamina_cost_reduction+'% Stamina Cost');
+    }
+
+    if(passiveEffects.length>0){
       html+='<div class="effects-section" style="background:rgba(39,174,96,.15);border:none">';
       html+='<div class="effects-title" style="color:#fff">Effects:</div>';
       html+='<div class="effect-tags">';
-      w.passive_effects.forEach(function(fx){
+      passiveEffects.forEach(function(fx){
         html+='<span class="effect-tag" style="color:#fff">'+escHtml(fx)+'</span>';
       });
       html+='</div></div>';
