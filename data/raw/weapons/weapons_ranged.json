@@ -25,10 +25,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Scorched",
-        "Curse"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Bow",
       "dlc": "The Three Brothers",
@@ -53,7 +49,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Bow.png?bd1acb",
       "local_image": "assets/images/weapons/weapon_Astral_Bow.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched",
+        "Curse"
+      ]
     },
     {
       "name": "Astral Pistol",
@@ -78,10 +78,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Scorched",
-        "Chill"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Pistol",
       "dlc": "The Three Brothers",
@@ -104,7 +100,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Pistol.png?f2c0ed",
       "local_image": "assets/images/weapons/weapon_Astral_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched",
+        "Chill"
+      ]
     },
     {
       "name": "Bone Pistol",
@@ -130,9 +130,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Haunted"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Bone_Pistol",
       "dlc": null,
@@ -154,7 +151,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Bone_Pistol.png?31653d",
       "local_image": "assets/images/weapons/weapon_Bone_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Haunted"
+      ]
     },
     {
       "name": "Cage Pistol",
@@ -180,10 +180,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken",
-        "Sapped"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Cage_Pistol",
       "dlc": "The Soroboreans",
@@ -201,7 +197,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Cage_Pistol.png?af4926",
       "local_image": "assets/images/weapons/weapon_Cage_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Weaken",
+        "Sapped"
+      ]
     },
     {
       "name": "Cannon Pistol",
@@ -219,9 +219,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Cannon_Pistol",
       "dlc": null,
@@ -242,7 +239,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Cannon_Pistol.png?4df859",
       "local_image": "assets/images/weapons/weapon_Cannon_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Ceremonial Bow",
@@ -304,9 +304,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Chill"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Bow",
       "dlc": "The Three Brothers",
@@ -325,7 +322,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Bow.png?42b189",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Bow.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Chill"
+      ]
     },
     {
       "name": "Chalcedony Pistol",
@@ -350,9 +350,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Pistol",
       "dlc": "The Three Brothers",
@@ -371,7 +368,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Pistol.png?4830e2",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chimera Pistol",
@@ -389,9 +389,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chimera_Pistol",
       "dlc": null,
@@ -412,7 +409,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chimera_Pistol.png?fd24d3",
       "local_image": "assets/images/weapons/weapon_Chimera_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Coralhorn Bow",
@@ -438,9 +438,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Coralhorn_Bow",
       "dlc": null,
@@ -461,7 +458,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Coralhorn_Bow.png?92f1f7",
       "local_image": "assets/images/weapons/weapon_Coralhorn_Bow.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Damascene Bow",
@@ -485,9 +485,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Bow",
       "dlc": "The Three Brothers",
@@ -503,7 +500,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Flintlock Pistol",
@@ -635,9 +635,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Bow",
       "dlc": "The Soroboreans",
@@ -653,7 +650,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Bow.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Pistol",
@@ -680,9 +680,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Pistol",
       "dlc": "The Soroboreans",
@@ -698,7 +695,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Gold Bow",
@@ -757,9 +757,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Hailfrost_Pistol",
       "dlc": "The Three Brothers",
@@ -776,7 +773,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Hailfrost_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Horror Bow",
@@ -803,9 +803,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Poisoned"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Bow",
       "dlc": null,
@@ -821,7 +818,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Horror_Bow.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Poisoned"
+      ]
     },
     {
       "name": "Horror Pistol",
@@ -840,9 +840,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Pistol",
       "dlc": "The Soroboreans",
@@ -859,7 +856,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Horror_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Kazite Bow",
@@ -878,9 +878,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Bow",
       "dlc": "The Soroboreans",
@@ -896,7 +893,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Pistol",
@@ -915,9 +915,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Pistol",
       "dlc": "The Soroboreans",
@@ -933,7 +930,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Masterpiece Bow",
@@ -952,9 +952,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Bow",
       "dlc": "The Three Brothers",
@@ -970,7 +967,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Meteoric Bow",
@@ -989,9 +989,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Bow",
       "dlc": "The Three Brothers",
@@ -1008,7 +1005,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Pistol",
@@ -1027,9 +1027,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Pistol",
       "dlc": "The Three Brothers",
@@ -1046,7 +1043,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Militia Bow",
@@ -1110,9 +1110,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Militia_Pistol",
       "dlc": "The Three Brothers",
@@ -1128,7 +1125,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Militia_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Murmure",
@@ -1153,10 +1153,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "-15%  Stamina costs",
-        "-15% Physical resistance on Player"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Murmure",
       "dlc": "The Three Brothers",
@@ -1172,7 +1168,11 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Murmure.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "passive_effects": [
+        "-15%  Stamina costs",
+        "-15% Physical resistance on Player"
+      ]
     },
     {
       "name": "Obsidian Bow",
@@ -1204,9 +1204,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Scorched"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Bow",
       "dlc": "The Three Brothers",
@@ -1223,7 +1220,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Bow.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched"
+      ]
     },
     {
       "name": "Obsidian Pistol",
@@ -1255,9 +1255,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Pistol",
       "dlc": null,
@@ -1274,7 +1271,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Pistol.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Ornate Pistol",
@@ -1328,9 +1328,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Recurve_Bow",
       "dlc": null,
@@ -1346,7 +1343,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Recurve_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Simple Bow",
@@ -1405,9 +1405,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Bow",
       "dlc": "The Three Brothers",
@@ -1423,7 +1420,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Pistol",
@@ -1442,9 +1442,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Pistol",
       "dlc": "The Three Brothers",
@@ -1460,7 +1457,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Tsar Bow",
@@ -1514,9 +1514,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Bow",
       "dlc": "The Soroboreans",
@@ -1532,7 +1529,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vigilante Bow",
@@ -1586,9 +1586,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vigilante_Pistol",
       "dlc": "The Three Brothers",
@@ -1604,7 +1601,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Vigilante_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "War Bow",
@@ -1623,9 +1623,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/War_Bow",
       "dlc": null,
@@ -1641,7 +1638,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_War_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Wolf Bow",
@@ -1660,9 +1660,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Bow",
       "dlc": "The Soroboreans",
@@ -1678,7 +1675,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Bow.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Pistol",
@@ -1697,9 +1697,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Pistol",
       "dlc": "The Soroboreans",
@@ -1715,7 +1712,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Pistol.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     }
   ]
 }
