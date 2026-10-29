@@ -118,9 +118,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Staff",
       "dlc": "The Three Brothers",
@@ -143,7 +140,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Staff.png?b32f0b",
       "local_image": "assets/images/weapons/weapon_Astral_Staff.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Calygrey Staff",
@@ -297,9 +297,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Cracked_Red_Moon",
       "dlc": "The Three Brothers",
@@ -320,7 +317,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Cracked_Red_Moon.png?1fa536",
       "local_image": "assets/images/weapons/weapon_Cracked_Red_Moon.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Crystal Staff",
@@ -1132,9 +1132,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Revenant_Moon",
       "dlc": "The Three Brothers",
@@ -1154,7 +1151,10 @@
         "mana_cost_reduction": 20.0
       },
       "local_image": "assets/images/weapons/weapon_Revenant_Moon.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Rotwood Staff",
