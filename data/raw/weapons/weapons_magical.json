@@ -69,10 +69,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed",
-        "Curse"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Chakram",
       "dlc": "The Three Brothers",
@@ -95,7 +91,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Chakram.png?721ba8",
       "local_image": "assets/images/weapons/weapon_Astral_Chakram.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed",
+        "Curse"
+      ]
     },
     {
       "name": "Astral Staff",
@@ -219,9 +219,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Chakram",
       "dlc": "The Three Brothers",
@@ -240,7 +237,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Chakram.png?7e78f7",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Chakram.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Compasswood Staff",
@@ -383,9 +383,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "-10%  Status Resistance"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Distorted_Experiment",
       "dlc": "The Three Brothers",
@@ -405,7 +402,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Distorted_Experiment.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "passive_effects": [
+        "-10%  Status Resistance"
+      ]
     },
     {
       "name": "Experimental Chakram",
@@ -544,9 +544,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Frozen_Chakram",
       "dlc": null,
@@ -563,7 +560,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Frozen_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Galvanic Chakram",
@@ -582,9 +582,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Chakram",
       "dlc": "The Soroboreans",
@@ -600,7 +597,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Gold Quarterstaff",
@@ -661,9 +661,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Chakram",
       "dlc": "The Soroboreans",
@@ -680,7 +677,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Horror_Chakram.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Ivory Master's Staff",
@@ -886,9 +886,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Chakram",
       "dlc": "The Three Brothers",
@@ -905,7 +902,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Militia Chakram",
@@ -1012,9 +1012,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Chakram",
       "dlc": "The Three Brothers",
@@ -1031,7 +1028,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Chakram.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Ornate Chakram",
@@ -1050,9 +1050,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Glowing (Light Source)"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Ornate_Chakram",
       "dlc": null,
@@ -1068,7 +1065,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Ornate_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Glowing (Light Source)"
+      ]
     },
     {
       "name": "Quarterstaff",
@@ -1269,9 +1269,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Chakram",
       "dlc": "The Three Brothers",
@@ -1287,7 +1284,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Thorn Chakram",
@@ -1306,9 +1306,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Thorn_Chakram",
       "dlc": null,
@@ -1324,7 +1321,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Thorn_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Troglodyte Staff",
@@ -1455,9 +1455,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Chakram",
       "dlc": "The Soroboreans",
@@ -1473,7 +1470,10 @@
         "reach": null
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Chakram.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     }
   ]
 }
