@@ -1434,10 +1434,10 @@ function renderWeaponList(){
 
       // Check cost reductions (negative values are good)
       if(posFilter==='mana cost'){
-        if(w.mana_cost_reduction && w.mana_cost_reduction<0)hasPosEffect=true;
+        if(w.mana_cost_reduction && w.mana_cost_reduction>0)hasPosEffect=true;
       }
       if(posFilter==='stamina cost'){
-        if(w.stamina_cost_reduction && w.stamina_cost_reduction<0)hasPosEffect=true;
+        if(w.stamina_cost_reduction && w.stamina_cost_reduction>0)hasPosEffect=true;
       }
 
       if(!hasPosEffect)return false;
