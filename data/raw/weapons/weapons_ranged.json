@@ -53,7 +53,11 @@
       "on_hit_effects": [
         "Scorched",
         "Curse"
-      ]
+      ],
+      "effect_buildup": {
+        "Scorched": 33,
+        "Curse": 33
+      }
     },
     {
       "name": "Astral Pistol",
@@ -104,7 +108,11 @@
       "on_hit_effects": [
         "Scorched",
         "Chill"
-      ]
+      ],
+      "effect_buildup": {
+        "Scorched": 66,
+        "Chill": 66
+      }
     },
     {
       "name": "Bone Pistol",
@@ -154,7 +162,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Haunted"
-      ]
+      ],
+      "effect_buildup": {
+        "Haunted": 100
+      }
     },
     {
       "name": "Cage Pistol",
@@ -201,7 +212,11 @@
       "on_hit_effects": [
         "Weaken",
         "Sapped"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 90,
+        "Sapped": 100
+      }
     },
     {
       "name": "Cannon Pistol",
@@ -242,7 +257,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 100
+      }
     },
     {
       "name": "Ceremonial Bow",
@@ -325,7 +343,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Chill"
-      ]
+      ],
+      "effect_buildup": {
+        "Chill": 33
+      }
     },
     {
       "name": "Chalcedony Pistol",
@@ -371,7 +392,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chimera Pistol",
@@ -412,7 +436,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 100
+      }
     },
     {
       "name": "Coralhorn Bow",
@@ -461,7 +488,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Damascene Bow",
@@ -653,7 +683,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Galvanic Pistol",
@@ -698,7 +731,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 90
+      }
     },
     {
       "name": "Gold Bow",
@@ -776,7 +812,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Horror Bow",
@@ -821,7 +860,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Poisoned"
-      ]
+      ],
+      "effect_buildup": {
+        "Poisoned": 45
+      }
     },
     {
       "name": "Horror Pistol",
@@ -859,7 +901,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 90
+      }
     },
     {
       "name": "Kazite Bow",
@@ -896,7 +941,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 45
+      }
     },
     {
       "name": "Kazite Pistol",
@@ -933,7 +981,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 100
+      }
     },
     {
       "name": "Masterpiece Bow",
@@ -1008,7 +1059,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Pistol",
@@ -1046,7 +1100,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 66
+      }
     },
     {
       "name": "Militia Bow",
@@ -1128,7 +1185,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Murmure",
@@ -1223,7 +1283,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Scorched"
-      ]
+      ],
+      "effect_buildup": {
+        "Scorched": 33
+      }
     },
     {
       "name": "Obsidian Pistol",
@@ -1274,7 +1337,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 100
+      }
     },
     {
       "name": "Ornate Pistol",
@@ -1346,7 +1412,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 45
+      }
     },
     {
       "name": "Simple Bow",
@@ -1423,7 +1492,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Pistol",
@@ -1460,7 +1532,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 66
+      }
     },
     {
       "name": "Tsar Bow",
@@ -1604,7 +1679,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "War Bow",
@@ -1641,7 +1719,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 45
+      }
     },
     {
       "name": "Wolf Bow",
@@ -1678,7 +1759,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 45
+      }
     },
     {
       "name": "Wolf Pistol",
@@ -1715,7 +1799,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     }
   ]
 }
