@@ -95,7 +95,11 @@
       "on_hit_effects": [
         "Doomed",
         "Curse"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 33,
+        "Curse": 33
+      }
     },
     {
       "name": "Astral Staff",
@@ -147,7 +151,10 @@
         "Doomed"
       ],
       "ethereal_bonus": 14,
-      "mana_cost_reduction": 20
+      "mana_cost_reduction": 20,
+      "effect_buildup": {
+        "Doomed": 33
+      }
     },
     {
       "name": "Calygrey Staff",
@@ -240,7 +247,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Compasswood Staff",
@@ -327,7 +337,10 @@
       "on_hit_effects": [
         "Blaze"
       ],
-      "fire_bonus": 15
+      "fire_bonus": 15,
+      "effect_buildup": {
+        "Blaze": 25
+      }
     },
     {
       "name": "Crystal Staff",
@@ -563,7 +576,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 40
+      }
     },
     {
       "name": "Galvanic Chakram",
@@ -600,7 +616,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Gold Quarterstaff",
@@ -680,7 +699,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 60
+      }
     },
     {
       "name": "Ivory Master's Staff",
@@ -905,7 +927,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Militia Chakram",
@@ -1031,7 +1056,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Ornate Chakram",
@@ -1162,7 +1190,10 @@
       "on_hit_effects": [
         "Blaze"
       ],
-      "fire_bonus": 35
+      "fire_bonus": 35,
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Rotwood Staff",
@@ -1287,7 +1318,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Thorn Chakram",
@@ -1324,7 +1358,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 60
+      }
     },
     {
       "name": "Troglodyte Staff",
@@ -1473,7 +1510,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     }
   ]
 }
