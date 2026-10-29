@@ -4700,9 +4700,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Reduces player's Decay resistance by -15%"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Grind",
       "dlc": "The Three Brothers",
@@ -4722,7 +4719,10 @@
         }
       },
       "local_image": "assets/images/weapons/weapon_Grind.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "passive_effects": [
+        "Reduces player's Decay resistance by -15%"
+      ]
     },
     {
       "name": "Hailfrost Axe",
