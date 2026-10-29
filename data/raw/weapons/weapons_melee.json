@@ -63,10 +63,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down",
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Assassin_Claymore",
       "dlc": null,
@@ -88,7 +84,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Assassin_Claymore.png?cc1cb0",
       "local_image": "assets/images/weapons/weapon_Assassin_Claymore.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down",
+        "Bleeding"
+      ]
     },
     {
       "name": "Assassin Sword",
@@ -113,10 +113,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down",
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Assassin_Sword",
       "dlc": null,
@@ -138,7 +134,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Assassin_Sword.png?2b0358",
       "local_image": "assets/images/weapons/weapon_Assassin_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down",
+        "Bleeding"
+      ]
     },
     {
       "name": "Astral Axe",
@@ -163,10 +163,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Scorched",
-        "Curse"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Axe",
       "dlc": "The Three Brothers",
@@ -189,7 +185,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Axe.png?627a17",
       "local_image": "assets/images/weapons/weapon_Astral_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched",
+        "Curse"
+      ]
     },
     {
       "name": "Astral Claymore",
@@ -214,10 +214,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Haunted",
-        "Scorched"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Claymore",
       "dlc": "The Three Brothers",
@@ -240,7 +236,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Claymore.png?e6174b",
       "local_image": "assets/images/weapons/weapon_Astral_Claymore.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Haunted",
+        "Scorched"
+      ]
     },
     {
       "name": "Astral Dagger",
@@ -265,10 +265,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Haunted",
-        "Scorched"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Dagger",
       "dlc": "The Three Brothers",
@@ -291,7 +287,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Dagger.png?3341fb",
       "local_image": "assets/images/weapons/weapon_Astral_Dagger.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Haunted",
+        "Scorched"
+      ]
     },
     {
       "name": "Astral Greataxe",
@@ -316,10 +316,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Scorched",
-        "Chill"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Greataxe",
       "dlc": "The Three Brothers",
@@ -342,7 +338,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Greataxe.png?a76c11",
       "local_image": "assets/images/weapons/weapon_Astral_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched",
+        "Chill"
+      ]
     },
     {
       "name": "Astral Greatmace",
@@ -367,10 +367,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed",
-        "Haunted"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Greatmace",
       "dlc": "The Three Brothers",
@@ -393,7 +389,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Greatmace.png?65ec23",
       "local_image": "assets/images/weapons/weapon_Astral_Greatmace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed",
+        "Haunted"
+      ]
     },
     {
       "name": "Astral Halberd",
@@ -418,10 +418,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Curse",
-        "Haunted"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Halberd",
       "dlc": "The Three Brothers",
@@ -444,7 +440,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Halberd.png?f741f6",
       "local_image": "assets/images/weapons/weapon_Astral_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Curse",
+        "Haunted"
+      ]
     },
     {
       "name": "Astral Knuckles",
@@ -469,10 +469,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Scorched",
-        "Haunted"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Knuckles",
       "dlc": "The Three Brothers",
@@ -495,7 +491,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Knuckles.png?988f80",
       "local_image": "assets/images/weapons/weapon_Astral_Knuckles.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Scorched",
+        "Haunted"
+      ]
     },
     {
       "name": "Astral Mace",
@@ -520,10 +520,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Chill",
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Mace",
       "dlc": "The Three Brothers",
@@ -546,7 +542,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Mace.png?f646c9",
       "local_image": "assets/images/weapons/weapon_Astral_Mace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Chill",
+        "Doomed"
+      ]
     },
     {
       "name": "Astral Spear",
@@ -571,10 +571,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed",
-        "Chill"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Spear",
       "dlc": "The Three Brothers",
@@ -597,7 +593,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Spear.png?87f3de",
       "local_image": "assets/images/weapons/weapon_Astral_Spear.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed",
+        "Chill"
+      ]
     },
     {
       "name": "Astral Sword",
@@ -622,10 +622,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Haunted",
-        "Curse"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Astral_Sword",
       "dlc": "The Three Brothers",
@@ -648,7 +644,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Astral_Sword.png?ea8c0d",
       "local_image": "assets/images/weapons/weapon_Astral_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Haunted",
+        "Curse"
+      ]
     },
     {
       "name": "Beast Golem Axe",
@@ -673,9 +673,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Beast_Golem_Axe",
       "dlc": null,
@@ -696,7 +693,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Beast_Golem_Axe.png?877965",
       "local_image": "assets/images/weapons/weapon_Beast_Golem_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Beast Golem Halberd",
@@ -722,9 +722,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Beast_Golem_Halberd",
       "dlc": null,
@@ -745,7 +742,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Beast_Golem_Halberd.png?1402f5",
       "local_image": "assets/images/weapons/weapon_Beast_Golem_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Blacksmith's Vintage Hammer",
@@ -763,9 +763,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Blacksmith%27s_Vintage_Hammer",
       "dlc": null,
@@ -786,7 +783,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Blacksmith%27s_Vintage_Hammer.png?30cdfc",
       "local_image": "assets/images/weapons/weapon_Blacksmith_s_Vintage_Hammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Brand",
@@ -812,10 +812,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Chill",
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Brand",
       "dlc": null,
@@ -837,7 +833,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Brand.png?156677",
       "local_image": "assets/images/weapons/weapon_Brand.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Chill",
+        "Pain"
+      ]
     },
     {
       "name": "Broad Dagger",
@@ -855,9 +855,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Broad_Dagger",
       "dlc": null,
@@ -875,7 +872,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Broad_Dagger.png?aa2bc6",
       "local_image": "assets/images/weapons/weapon_Broad_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Broken Golem Rapier",
@@ -965,9 +965,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Brutal_Club",
       "dlc": null,
@@ -985,7 +982,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Brutal_Club.png?8df557",
       "local_image": "assets/images/weapons/weapon_Brutal_Club.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Brutal Greataxe",
@@ -1075,9 +1075,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Brutal_Knuckles",
       "dlc": "The Soroboreans",
@@ -1095,7 +1092,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Brutal_Knuckles.png?ab749a",
       "local_image": "assets/images/weapons/weapon_Brutal_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Brutal Spear",
@@ -1278,9 +1278,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Axe",
       "dlc": "The Three Brothers",
@@ -1299,7 +1296,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Axe.png?98a285",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Claymore",
@@ -1325,9 +1325,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Claymore",
       "dlc": "The Three Brothers",
@@ -1346,7 +1343,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Claymore.png?a207b7",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Claymore.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Greataxe",
@@ -1372,9 +1372,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Greataxe",
       "dlc": "The Three Brothers",
@@ -1393,7 +1390,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Greataxe.png?efe256",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Halberd",
@@ -1419,9 +1419,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Halberd",
       "dlc": "The Three Brothers",
@@ -1440,7 +1437,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Halberd.png?713764",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Hammer",
@@ -1466,9 +1466,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Hammer",
       "dlc": "The Three Brothers",
@@ -1487,7 +1484,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Hammer.png?56379c",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Hammer.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Knuckles",
@@ -1513,9 +1513,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Knuckles",
       "dlc": "The Three Brothers",
@@ -1534,7 +1531,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Knuckles.png?2f4792",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Knuckles.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Mace",
@@ -1560,9 +1560,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Mace",
       "dlc": "The Three Brothers",
@@ -1581,7 +1578,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Mace.png?d51125",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Mace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Spear",
@@ -1607,9 +1607,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Spear",
       "dlc": "The Three Brothers",
@@ -1628,7 +1625,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Spear.png?cd845e",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Spear.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Chalcedony Sword",
@@ -1653,9 +1653,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Chalcedony_Sword",
       "dlc": "The Three Brothers",
@@ -1674,7 +1671,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Chalcedony_Sword.png?71d6ef",
       "local_image": "assets/images/weapons/weapon_Chalcedony_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Challenger Greathammer",
@@ -1692,10 +1692,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Rage",
-        "Discipline"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Challenger_Greathammer",
       "dlc": null,
@@ -1716,7 +1712,11 @@
       },
       "image_url": "https://outward.wiki.gg/images/Challenger_Greathammer.png?4560f4",
       "local_image": "assets/images/weapons/weapon_Challenger_Greathammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Rage",
+        "Discipline"
+      ]
     },
     {
       "name": "Cleaver Halberd",
@@ -1829,9 +1829,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Crescent_Greataxe",
       "dlc": null,
@@ -1850,7 +1847,10 @@
       },
       "image_url": "https://outward.wiki.gg/images/Crescent_Greataxe.png?e58efa",
       "local_image": "assets/images/weapons/weapon_Crescent_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Crescent Scythe",
@@ -1877,9 +1877,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Crescent_Scythe",
       "dlc": null,
@@ -1896,7 +1893,10 @@
         "reach": 2.017002
       },
       "local_image": "assets/images/weapons/weapon_Crescent_Scythe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Damascene Axe",
@@ -1920,9 +1920,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Axe",
       "dlc": "The Three Brothers",
@@ -1938,7 +1935,10 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Claymore",
@@ -1962,9 +1962,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Claymore",
       "dlc": "The Three Brothers",
@@ -1980,7 +1977,10 @@
         "reach": 2.055
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Greataxe",
@@ -2004,9 +2004,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Greataxe",
       "dlc": "The Three Brothers",
@@ -2022,7 +2019,10 @@
         "reach": 1.509003
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Halberd",
@@ -2046,9 +2046,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Halberd",
       "dlc": "The Three Brothers",
@@ -2064,7 +2061,10 @@
         "reach": 2.086002
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Hammer",
@@ -2088,9 +2088,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Hammer",
       "dlc": "The Three Brothers",
@@ -2106,7 +2103,10 @@
         "reach": 1.496003
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Hammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Knuckles",
@@ -2130,9 +2130,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Knuckles",
       "dlc": "The Three Brothers",
@@ -2148,7 +2145,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Mace",
@@ -2172,9 +2172,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Mace",
       "dlc": "The Three Brothers",
@@ -2190,7 +2187,10 @@
         "reach": 0.979
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Spear",
@@ -2214,9 +2214,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Spear",
       "dlc": "The Three Brothers",
@@ -2232,7 +2229,10 @@
         "reach": 2.202002
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Damascene Sword",
@@ -2256,9 +2256,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Damascene_Sword",
       "dlc": "The Three Brothers",
@@ -2274,7 +2271,10 @@
         "reach": 1.035
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "De-powered Bludgeon",
@@ -2399,11 +2399,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Burning",
-        "Holy Blaze",
-        "-10% Stamina recovery rate"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Duty",
       "dlc": "The Three Brothers",
@@ -2421,7 +2416,12 @@
         "reach": 2.086002
       },
       "local_image": "assets/images/weapons/weapon_Duty.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Burning",
+        "Holy Blaze",
+        "-10% Stamina recovery rate"
+      ]
     },
     {
       "name": "Fang Axe",
@@ -2452,9 +2452,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Axe",
       "dlc": null,
@@ -2470,7 +2467,10 @@
         "reach": 0.9
       },
       "local_image": "assets/images/weapons/weapon_Fang_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Club",
@@ -2501,9 +2501,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Club",
       "dlc": null,
@@ -2519,7 +2516,10 @@
         "reach": 0.868
       },
       "local_image": "assets/images/weapons/weapon_Fang_Club.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Greataxe",
@@ -2551,9 +2551,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Greataxe",
       "dlc": null,
@@ -2569,7 +2566,10 @@
         "reach": 1.527003
       },
       "local_image": "assets/images/weapons/weapon_Fang_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Greatclub",
@@ -2601,9 +2601,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Greatclub",
       "dlc": null,
@@ -2619,7 +2616,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Fang_Greatclub.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Greatsword",
@@ -2651,9 +2651,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Greatsword",
       "dlc": null,
@@ -2669,7 +2666,10 @@
         "reach": 1.448
       },
       "local_image": "assets/images/weapons/weapon_Fang_Greatsword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Halberd",
@@ -2701,9 +2701,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Halberd",
       "dlc": null,
@@ -2719,7 +2716,10 @@
         "reach": 2.208002
       },
       "local_image": "assets/images/weapons/weapon_Fang_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Knuckles",
@@ -2751,9 +2751,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Knuckles",
       "dlc": "The Soroboreans",
@@ -2769,7 +2766,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Fang_Knuckles.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Sword",
@@ -2800,9 +2800,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Sword",
       "dlc": null,
@@ -2818,7 +2815,10 @@
         "reach": 0.9948
       },
       "local_image": "assets/images/weapons/weapon_Fang_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Fang Trident",
@@ -2850,9 +2850,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Fang_Trident",
       "dlc": null,
@@ -2868,7 +2865,10 @@
         "reach": 2.393002
       },
       "local_image": "assets/images/weapons/weapon_Fang_Trident.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Felling Greataxe",
@@ -3360,9 +3360,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Axe",
       "dlc": "The Soroboreans",
@@ -3378,7 +3375,10 @@
         "reach": 0.909
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Dagger",
@@ -3405,9 +3405,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Dagger",
       "dlc": "The Soroboreans",
@@ -3423,7 +3420,10 @@
         "reach": 0.61
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Dagger.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Fists",
@@ -3450,9 +3450,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Fists",
       "dlc": "The Soroboreans",
@@ -3468,7 +3465,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Fists.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Greataxe",
@@ -3495,9 +3495,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Greataxe",
       "dlc": "The Soroboreans",
@@ -3513,7 +3510,10 @@
         "reach": 1.472003
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Greatmace",
@@ -3540,9 +3540,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Greatmace",
       "dlc": "The Soroboreans",
@@ -3558,7 +3555,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Greatmace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Halberd",
@@ -3585,9 +3585,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Halberd",
       "dlc": "The Soroboreans",
@@ -3603,7 +3600,10 @@
         "reach": 2.208002
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Mace",
@@ -3630,9 +3630,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Mace",
       "dlc": "The Soroboreans",
@@ -3648,7 +3645,10 @@
         "reach": 0.832
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Mace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Galvanic Spear",
@@ -3675,9 +3675,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Galvanic_Spear",
       "dlc": "The Soroboreans",
@@ -3693,7 +3690,10 @@
         "reach": 2.635002
       },
       "local_image": "assets/images/weapons/weapon_Galvanic_Spear.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Gep's Blade",
@@ -3720,10 +3720,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "AoE  Ethereal blast with 22 damage on hit",
-        "-30%  Ethereal resistance"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gep%27s_Blade",
       "dlc": "The Three Brothers",
@@ -3739,7 +3735,13 @@
         "reach": 1.035
       },
       "local_image": "assets/images/weapons/weapon_Gep_s_Blade.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "AoE  Ethereal blast with 22 damage on hit"
+      ],
+      "passive_effects": [
+        "-30%  Ethereal resistance"
+      ]
     },
     {
       "name": "Gep's Longblade",
@@ -3766,10 +3768,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "AoE  Ethereal blast with 25 damage on hit",
-        "-30%  Ethereal resistance"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gep%27s_Longblade",
       "dlc": "The Three Brothers",
@@ -3785,7 +3783,13 @@
         "reach": 1.663
       },
       "local_image": "assets/images/weapons/weapon_Gep_s_Longblade.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "AoE  Ethereal blast with 25 damage on hit"
+      ],
+      "passive_effects": [
+        "-30%  Ethereal resistance"
+      ]
     },
     {
       "name": "Ghost Parallel",
@@ -3811,10 +3815,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Aetherbomb",
-        "-15%  Physical resistance"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Ghost_Parallel",
       "dlc": "The Three Brothers",
@@ -3831,7 +3831,13 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Ghost_Parallel.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Aetherbomb"
+      ],
+      "passive_effects": [
+        "-15%  Physical resistance"
+      ]
     },
     {
       "name": "Ghost Reaper",
@@ -3850,9 +3856,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Haunted"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Ghost_Reaper",
       "dlc": null,
@@ -3870,7 +3873,10 @@
         "mana_cost_reduction": -15.0
       },
       "local_image": "assets/images/weapons/weapon_Ghost_Reaper.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Haunted"
+      ]
     },
     {
       "name": "Giant Iron Key",
@@ -4002,13 +4008,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down",
-        "Cripple",
-        "Hampered",
-        "-15%  Fire resistance",
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gilded_Shiver_of_Tramontane",
       "dlc": "The Three Brothers",
@@ -4024,7 +4023,16 @@
         "reach": 0.589
       },
       "local_image": "assets/images/weapons/weapon_Gilded_Shiver_of_Tramontane.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down",
+        "Cripple",
+        "Hampered",
+        "Crippled"
+      ],
+      "passive_effects": [
+        "-15%  Fire resistance"
+      ]
     },
     {
       "name": "Gold Club",
@@ -4331,9 +4339,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Claymore",
       "dlc": null,
@@ -4350,7 +4355,10 @@
         "reach": 1.986
       },
       "local_image": "assets/images/weapons/weapon_Gold-Lich_Claymore.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Gold-Lich Knuckles",
@@ -4377,9 +4385,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Knuckles",
       "dlc": "The Soroboreans",
@@ -4396,7 +4401,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Gold-Lich_Knuckles.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Gold-Lich Mace",
@@ -4422,9 +4430,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Mace",
       "dlc": null,
@@ -4441,7 +4446,10 @@
         "reach": 1.177
       },
       "local_image": "assets/images/weapons/weapon_Gold-Lich_Mace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Gold-Lich Spear",
@@ -4468,9 +4476,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Spear",
       "dlc": null,
@@ -4487,7 +4492,10 @@
         "reach": 2.958002
       },
       "local_image": "assets/images/weapons/weapon_Gold-Lich_Spear.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Gold-Lich Sword",
@@ -4513,9 +4521,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Doomed"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Gold-Lich_Sword",
       "dlc": null,
@@ -4532,7 +4537,10 @@
         "reach": 1.441
       },
       "local_image": "assets/images/weapons/weapon_Gold-Lich_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Doomed"
+      ]
     },
     {
       "name": "Golden Iron Knuckles",
@@ -4835,9 +4843,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Hailfrost_Dagger",
       "dlc": "The Three Brothers",
@@ -4857,7 +4862,10 @@
         }
       },
       "local_image": "assets/images/weapons/weapon_Hailfrost_Dagger.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Hailfrost Greataxe",
@@ -5226,9 +5234,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Axe",
       "dlc": null,
@@ -5245,7 +5250,10 @@
         "reach": 1.203357
       },
       "local_image": "assets/images/weapons/weapon_Horror_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Fists",
@@ -5272,9 +5280,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Fists",
       "dlc": "The Soroboreans",
@@ -5291,7 +5296,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Horror_Fists.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Greataxe",
@@ -5318,9 +5326,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Greataxe",
       "dlc": "The Soroboreans",
@@ -5337,7 +5342,10 @@
         "reach": 1.472003
       },
       "local_image": "assets/images/weapons/weapon_Horror_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Greatmace",
@@ -5364,9 +5372,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Greatmace",
       "dlc": "The Soroboreans",
@@ -5383,7 +5388,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Horror_Greatmace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Greatsword",
@@ -5410,9 +5418,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Greatsword",
       "dlc": "The Soroboreans",
@@ -5429,7 +5434,10 @@
         "reach": 1.743
       },
       "local_image": "assets/images/weapons/weapon_Horror_Greatsword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Halberd",
@@ -5456,9 +5464,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Halberd",
       "dlc": "The Soroboreans",
@@ -5475,7 +5480,10 @@
         "reach": 2.208002
       },
       "local_image": "assets/images/weapons/weapon_Horror_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Mace",
@@ -5502,9 +5510,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Mace",
       "dlc": "The Soroboreans",
@@ -5521,7 +5526,10 @@
         "reach": 0.832
       },
       "local_image": "assets/images/weapons/weapon_Horror_Mace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Spear",
@@ -5548,9 +5556,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Spear",
       "dlc": "The Soroboreans",
@@ -5567,7 +5572,10 @@
         "reach": 2.607002
       },
       "local_image": "assets/images/weapons/weapon_Horror_Spear.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Horror Sword",
@@ -5594,9 +5602,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Horror_Sword",
       "dlc": "The Soroboreans",
@@ -5613,7 +5618,10 @@
         "reach": 1.101
       },
       "local_image": "assets/images/weapons/weapon_Horror_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Iron Axe",
@@ -6074,9 +6082,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Blade",
       "dlc": "The Soroboreans",
@@ -6092,7 +6097,10 @@
         "reach": 0.971
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Blade.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Cestus",
@@ -6111,9 +6119,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Cestus",
       "dlc": "The Soroboreans",
@@ -6129,7 +6134,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Cestus.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Cleaver",
@@ -6148,9 +6156,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Cleaver",
       "dlc": "The Soroboreans",
@@ -6166,7 +6171,10 @@
         "reach": 0.845
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Cleaver.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Greatblade",
@@ -6185,9 +6193,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Greatblade",
       "dlc": "The Soroboreans",
@@ -6203,7 +6208,10 @@
         "reach": 1.272
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Greatblade.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Greatcleaver",
@@ -6222,9 +6230,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Greatcleaver",
       "dlc": "The Soroboreans",
@@ -6240,7 +6245,10 @@
         "reach": 1.472003
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Greatcleaver.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Greathammer",
@@ -6259,9 +6267,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Greathammer",
       "dlc": "The Soroboreans",
@@ -6277,7 +6282,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Greathammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Hammer",
@@ -6296,9 +6304,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Hammer",
       "dlc": "The Soroboreans",
@@ -6314,7 +6319,10 @@
         "reach": 0.832
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Hammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Lance",
@@ -6333,9 +6341,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Lance",
       "dlc": "The Soroboreans",
@@ -6351,7 +6356,10 @@
         "reach": 2.499202
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Lance.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kazite Partizan",
@@ -6370,9 +6378,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kazite_Partizan",
       "dlc": "The Soroboreans",
@@ -6388,7 +6393,10 @@
         "reach": 2.077002
       },
       "local_image": "assets/images/weapons/weapon_Kazite_Partizan.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Weaken"
+      ]
     },
     {
       "name": "Kelvin's Greataxe",
@@ -6407,9 +6415,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Kelvin%27s_Greataxe",
       "dlc": null,
@@ -6426,7 +6431,10 @@
         "reach": 1.597
       },
       "local_image": "assets/images/weapons/weapon_Kelvin_s_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Slow Down"
+      ]
     },
     {
       "name": "Living Wood Axe",
@@ -6482,9 +6490,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Mace_of_Seasons",
       "dlc": null,
@@ -6500,7 +6505,10 @@
         "reach": 0.8850001
       },
       "local_image": "assets/images/weapons/weapon_Mace_of_Seasons.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Machete",
@@ -6559,9 +6567,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Maelstrom_Blade",
       "dlc": null,
@@ -6577,7 +6582,10 @@
         "reach": 1.487
       },
       "local_image": "assets/images/weapons/weapon_Maelstrom_Blade.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Manticore Dagger",
@@ -6603,9 +6611,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Manticore_Dagger",
       "dlc": null,
@@ -6622,7 +6627,10 @@
         "reach": 0.677
       },
       "local_image": "assets/images/weapons/weapon_Manticore_Dagger.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Manticore Greatmace",
@@ -6649,9 +6657,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Manticore_Greatmace",
       "dlc": null,
@@ -6668,7 +6673,10 @@
         "reach": 1.809003
       },
       "local_image": "assets/images/weapons/weapon_Manticore_Greatmace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Poison"
+      ]
     },
     {
       "name": "Mantis Greatpick",
@@ -6695,9 +6703,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Mantis_Greatpick",
       "dlc": null,
@@ -6713,7 +6718,10 @@
         "reach": 1.745003
       },
       "local_image": "assets/images/weapons/weapon_Mantis_Greatpick.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Marble Axe",
@@ -6802,9 +6810,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Marble_Fists",
       "dlc": "The Soroboreans",
@@ -6820,7 +6825,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Marble_Fists.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Marble Greataxe",
@@ -6944,9 +6952,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Marble_Morningstar",
       "dlc": null,
@@ -6962,7 +6967,10 @@
         "reach": 1.079
       },
       "local_image": "assets/images/weapons/weapon_Marble_Morningstar.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Marble Spear",
@@ -7051,9 +7059,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Axe",
       "dlc": "The Three Brothers",
@@ -7069,7 +7074,10 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Claymore",
@@ -7088,9 +7096,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Claymore",
       "dlc": "The Three Brothers",
@@ -7106,7 +7111,10 @@
         "reach": 2.055
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Greataxe",
@@ -7125,9 +7133,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Greataxe",
       "dlc": "The Three Brothers",
@@ -7143,7 +7148,10 @@
         "reach": 1.509003
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Halberd",
@@ -7162,9 +7170,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Halberd",
       "dlc": "The Three Brothers",
@@ -7180,7 +7185,10 @@
         "reach": 2.086002
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Hammer",
@@ -7199,9 +7207,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Hammer",
       "dlc": "The Three Brothers",
@@ -7217,7 +7222,10 @@
         "reach": 1.496003
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Hammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Knuckles",
@@ -7236,9 +7244,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Knuckles",
       "dlc": "The Three Brothers",
@@ -7254,7 +7259,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Mace",
@@ -7273,9 +7281,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Mace",
       "dlc": "The Three Brothers",
@@ -7291,7 +7296,10 @@
         "reach": 0.979
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Spear",
@@ -7310,9 +7318,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Spear",
       "dlc": "The Three Brothers",
@@ -7328,7 +7333,10 @@
         "reach": 2.202002
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Masterpiece Sword",
@@ -7347,9 +7355,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Increases the damage of weapon skills"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Masterpiece_Sword",
       "dlc": "The Three Brothers",
@@ -7365,7 +7370,10 @@
         "reach": 1.035
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Increases the damage of weapon skills"
+      ]
     },
     {
       "name": "Merton's Firepoker",
@@ -7384,9 +7392,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Merton%27s_Firepoker",
       "dlc": null,
@@ -7403,7 +7408,10 @@
         "reach": 1.115
       },
       "local_image": "assets/images/weapons/weapon_Merton_s_Firepoker.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Meteoric Axe",
@@ -7422,9 +7430,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Axe",
       "dlc": "The Three Brothers",
@@ -7441,7 +7446,10 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Claymore",
@@ -7460,9 +7468,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Claymore",
       "dlc": "The Three Brothers",
@@ -7479,7 +7484,10 @@
         "reach": 1.473
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Greataxe",
@@ -7498,9 +7506,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Greataxe",
       "dlc": "The Three Brothers",
@@ -7517,7 +7522,10 @@
         "reach": 1.509003
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Halberd",
@@ -7536,9 +7544,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Halberd",
       "dlc": "The Three Brothers",
@@ -7555,7 +7560,10 @@
         "reach": 2.086002
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Hammer",
@@ -7574,9 +7582,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Hammer",
       "dlc": "The Three Brothers",
@@ -7593,7 +7598,10 @@
         "reach": 1.536003
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Hammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Knuckles",
@@ -7612,9 +7620,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Knuckles",
       "dlc": "The Three Brothers",
@@ -7631,7 +7636,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Mace",
@@ -7650,9 +7658,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Mace",
       "dlc": "The Three Brothers",
@@ -7669,7 +7674,10 @@
         "reach": 0.832
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Spear",
@@ -7688,9 +7696,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Spear",
       "dlc": "The Three Brothers",
@@ -7707,7 +7712,10 @@
         "reach": 2.499202
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Meteoric Sword",
@@ -7726,9 +7734,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Holy Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Meteoric_Sword",
       "dlc": "The Three Brothers",
@@ -7745,7 +7750,10 @@
         "reach": 1.035
       },
       "local_image": "assets/images/weapons/weapon_Meteoric_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Holy Blaze"
+      ]
     },
     {
       "name": "Militia Axe",
@@ -7849,9 +7857,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Militia_Dagger",
       "dlc": "The Three Brothers",
@@ -7867,7 +7872,10 @@
         "reach": 0.61
       },
       "local_image": "assets/images/weapons/weapon_Militia_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Militia Greataxe",
@@ -8211,9 +8219,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Mushroom_Halberd",
       "dlc": null,
@@ -8229,7 +8234,10 @@
         "reach": 2.326002
       },
       "local_image": "assets/images/weapons/weapon_Mushroom_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Poison"
+      ]
     },
     {
       "name": "Mysterious Blade",
@@ -8342,9 +8350,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Axe",
       "dlc": "The Three Brothers",
@@ -8361,7 +8366,10 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Claymore",
@@ -8393,9 +8401,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Claymore",
       "dlc": "The Three Brothers",
@@ -8412,7 +8417,10 @@
         "reach": 1.473
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Claymore.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Greataxe",
@@ -8444,9 +8452,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Greataxe",
       "dlc": "The Three Brothers",
@@ -8463,7 +8468,10 @@
         "reach": 1.509003
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Greatmace",
@@ -8495,9 +8503,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Greatmace",
       "dlc": null,
@@ -8514,7 +8519,10 @@
         "reach": 1.536003
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Greatmace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Halberd",
@@ -8546,9 +8554,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Halberd",
       "dlc": "The Three Brothers",
@@ -8565,7 +8570,10 @@
         "reach": 2.086002
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Halberd.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Knuckles",
@@ -8597,9 +8605,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Knuckles",
       "dlc": "The Three Brothers",
@@ -8616,7 +8621,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Knuckles.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Mace",
@@ -8647,9 +8655,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Mace",
       "dlc": null,
@@ -8666,7 +8671,10 @@
         "reach": 0.832
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Mace.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Spear",
@@ -8698,9 +8706,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Spear",
       "dlc": "The Three Brothers",
@@ -8717,7 +8722,10 @@
         "reach": 2.499202
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Spear.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Obsidian Sword",
@@ -8748,9 +8756,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Obsidian_Sword",
       "dlc": "The Three Brothers",
@@ -8767,7 +8772,10 @@
         "reach": 1.035
       },
       "local_image": "assets/images/weapons/weapon_Obsidian_Sword.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Old Legion Gladius",
@@ -8856,9 +8864,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Pain_in_the_Axe",
       "dlc": null,
@@ -8874,7 +8879,10 @@
         "reach": 0.8340001
       },
       "local_image": "assets/images/weapons/weapon_Pain_in_the_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Palladium Axe",
@@ -9073,9 +9081,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Palladium_Knuckles",
       "dlc": "The Soroboreans",
@@ -9092,7 +9097,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Palladium_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Palladium Mace",
@@ -9219,9 +9227,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Pathfinder_Claymore",
       "dlc": null,
@@ -9238,7 +9243,10 @@
         "reach": 1.804
       },
       "local_image": "assets/images/weapons/weapon_Pathfinder_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Phytosaur Spear",
@@ -9257,9 +9265,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Poison"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Phytosaur_Spear",
       "dlc": null,
@@ -9275,7 +9280,10 @@
         "reach": 3.080001
       },
       "local_image": "assets/images/weapons/weapon_Phytosaur_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Poison"
+      ]
     },
     {
       "name": "Pillar Greathammer",
@@ -9370,10 +9378,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Sapped",
-        "Weaken"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Porcelain_Fists",
       "dlc": "The Soroboreans",
@@ -9389,7 +9393,11 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Porcelain_Fists.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Sapped",
+        "Weaken"
+      ]
     },
     {
       "name": "Prayer Claymore",
@@ -9494,9 +9502,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Pyrite_Greathammer",
       "dlc": null,
@@ -9513,7 +9518,10 @@
         "reach": 1.758003
       },
       "local_image": "assets/images/weapons/weapon_Pyrite_Greathammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Radiant Wolf Sword",
@@ -9638,9 +9646,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Royal_Great-Khopesh",
       "dlc": null,
@@ -9656,7 +9661,10 @@
         "reach": 1.829692
       },
       "local_image": "assets/images/weapons/weapon_Royal_Great-Khopesh.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Ruined Halberd",
@@ -9707,10 +9715,6 @@
         "reach": 1.09
       },
       "description": "Summoned magical sword that lasts for a limited amount of time. Acts as a Lexicon when held.",
-      "special_effects": [
-        "Acts as a Lexicon",
-        "Temporary summon (180 seconds)"
-      ],
       "weight": 0.0,
       "buy": 0,
       "sell": 0,
@@ -9727,7 +9731,11 @@
       ],
       "dlc": "",
       "local_image": "assets/images/weapons/weapon_Runic_Blade.png",
-      "rune_combination": "Shim + Egoth"
+      "rune_combination": "Shim + Egoth",
+      "on_hit_effects": [
+        "Acts as a Lexicon",
+        "Temporary summon (180 seconds)"
+      ]
     },
     {
       "name": "Rusted Spear",
@@ -9782,10 +9790,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze",
-        "-30%  Frost resistance"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Sandrose",
       "dlc": "The Three Brothers",
@@ -9801,7 +9805,13 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Sandrose.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ],
+      "passive_effects": [
+        "-30%  Frost resistance"
+      ]
     },
     {
       "name": "Sanguine Cleaver",
@@ -9820,9 +9830,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Sanguine_Cleaver",
       "dlc": null,
@@ -9838,7 +9845,10 @@
         "reach": 1.985002
       },
       "local_image": "assets/images/weapons/weapon_Sanguine_Cleaver.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Extreme Bleeding"
+      ]
     },
     {
       "name": "Savage Axe",
@@ -9857,9 +9867,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Axe",
       "dlc": null,
@@ -9875,7 +9882,10 @@
         "reach": 0.9
       },
       "local_image": "assets/images/weapons/weapon_Savage_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Club",
@@ -9894,9 +9904,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Club",
       "dlc": null,
@@ -9912,7 +9919,10 @@
         "reach": 0.868
       },
       "local_image": "assets/images/weapons/weapon_Savage_Club.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Fang Knuckles",
@@ -9931,9 +9941,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Fang_Knuckles",
       "dlc": "The Soroboreans",
@@ -9949,7 +9956,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Savage_Fang_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Greataxe",
@@ -9968,9 +9978,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Greataxe",
       "dlc": null,
@@ -9986,7 +9993,10 @@
         "reach": 1.527003
       },
       "local_image": "assets/images/weapons/weapon_Savage_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Greatclub",
@@ -10005,9 +10015,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Greatclub",
       "dlc": null,
@@ -10023,7 +10030,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Savage_Greatclub.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Greatsword",
@@ -10042,9 +10052,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Greatsword",
       "dlc": null,
@@ -10060,7 +10067,10 @@
         "reach": 1.448
       },
       "local_image": "assets/images/weapons/weapon_Savage_Greatsword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Halberd",
@@ -10079,9 +10089,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Halberd",
       "dlc": null,
@@ -10097,7 +10104,10 @@
         "reach": 2.208002
       },
       "local_image": "assets/images/weapons/weapon_Savage_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Sword",
@@ -10116,9 +10126,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Sword",
       "dlc": null,
@@ -10134,7 +10141,10 @@
         "reach": 0.9948
       },
       "local_image": "assets/images/weapons/weapon_Savage_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Savage Trident",
@@ -10153,9 +10163,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Savage_Trident",
       "dlc": null,
@@ -10171,7 +10178,10 @@
         "reach": 2.393002
       },
       "local_image": "assets/images/weapons/weapon_Savage_Trident.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Bleeding"
+      ]
     },
     {
       "name": "Scarred Dagger",
@@ -10190,9 +10200,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Scarred_Dagger",
       "dlc": "The Three Brothers",
@@ -10208,7 +10215,10 @@
         "reach": 0.589
       },
       "local_image": "assets/images/weapons/weapon_Scarred_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Scepter of the Cruel Priest",
@@ -10342,10 +10352,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Plague",
-        "Poisoned"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Shriek",
       "dlc": "The Three Brothers",
@@ -10362,7 +10368,11 @@
         "reach": 2.499202
       },
       "local_image": "assets/images/weapons/weapon_Shriek.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Plague",
+        "Poisoned"
+      ]
     },
     {
       "name": "Sinner Claymore",
@@ -10452,9 +10462,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Axe",
       "dlc": "The Three Brothers",
@@ -10470,7 +10477,10 @@
         "reach": 0.901
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Claymore",
@@ -10489,9 +10499,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Claymore",
       "dlc": "The Three Brothers",
@@ -10507,7 +10514,10 @@
         "reach": 1.857
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Dagger",
@@ -10526,9 +10536,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Dagger",
       "dlc": "The Three Brothers",
@@ -10544,7 +10551,10 @@
         "reach": 0.61
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Greataxe",
@@ -10563,9 +10573,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Greataxe",
       "dlc": "The Three Brothers",
@@ -10581,7 +10588,10 @@
         "reach": 1.509003
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Halberd",
@@ -10600,9 +10610,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Halberd",
       "dlc": "The Three Brothers",
@@ -10618,7 +10625,10 @@
         "reach": 2.169002
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Hammer",
@@ -10637,9 +10647,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Hammer",
       "dlc": "The Three Brothers",
@@ -10655,7 +10662,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Hammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Knuckles",
@@ -10674,9 +10684,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Knuckles",
       "dlc": "The Three Brothers",
@@ -10692,7 +10699,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Mace",
@@ -10711,9 +10721,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Mace",
       "dlc": "The Three Brothers",
@@ -10729,7 +10736,10 @@
         "reach": 0.947
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Spear",
@@ -10748,9 +10758,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Spear",
       "dlc": "The Three Brothers",
@@ -10766,7 +10773,10 @@
         "reach": 2.373002
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Smoke Sword",
@@ -10785,9 +10795,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Blaze"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Smoke_Sword",
       "dlc": "The Three Brothers",
@@ -10803,7 +10810,10 @@
         "reach": 1.092
       },
       "local_image": "assets/images/weapons/weapon_Smoke_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Blaze"
+      ]
     },
     {
       "name": "Spore Halberd",
@@ -10822,9 +10832,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Poisoned"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Spore_Halberd",
       "dlc": null,
@@ -10840,7 +10847,10 @@
         "reach": 2.326002
       },
       "local_image": "assets/images/weapons/weapon_Spore_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Poisoned"
+      ]
     },
     {
       "name": "Starchild Claymore",
@@ -10935,9 +10945,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Elemental Vulnerability"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Strange_Rusted_Sword",
       "dlc": null,
@@ -10953,7 +10960,10 @@
         "reach": 1.130004
       },
       "local_image": "assets/images/weapons/weapon_Strange_Rusted_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Elemental Vulnerability"
+      ]
     },
     {
       "name": "Sunfall Axe",
@@ -10972,9 +10982,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Burning"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Sunfall_Axe",
       "dlc": null,
@@ -10991,7 +10998,10 @@
         "reach": 0.883
       },
       "local_image": "assets/images/weapons/weapon_Sunfall_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Burning"
+      ]
     },
     {
       "name": "Thermal Claymore",
@@ -11010,9 +11020,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Thermal_Claymore",
       "dlc": null,
@@ -11032,7 +11039,10 @@
         }
       },
       "local_image": "assets/images/weapons/weapon_Thermal_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Thorny Claymore",
@@ -11182,10 +11192,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Slow Down",
-        "Chill"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Tokebakicit",
       "dlc": "The Three Brothers",
@@ -11202,7 +11208,11 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Tokebakicit.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Slow Down",
+        "Chill"
+      ]
     },
     {
       "name": "Troglodyte Halberd",
@@ -11261,9 +11271,6 @@
         }
       ],
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Troglodyte_Pole_Mace",
       "dlc": null,
@@ -11279,7 +11286,10 @@
         "reach": 2.376002
       },
       "local_image": "assets/images/weapons/weapon_Troglodyte_Pole_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Troglodyte Trident",
@@ -11660,9 +11670,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Tuanosaur_Axe",
       "dlc": null,
@@ -11678,7 +11685,10 @@
         "reach": 0.705
       },
       "local_image": "assets/images/weapons/weapon_Tuanosaur_Axe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Bleeding"
+      ]
     },
     {
       "name": "Tuanosaur Greataxe",
@@ -11705,9 +11715,6 @@
       },
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Extreme Bleeding"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Tuanosaur_Greataxe",
       "dlc": null,
@@ -11723,7 +11730,10 @@
         "reach": 1.424136
       },
       "local_image": "assets/images/weapons/weapon_Tuanosaur_Greataxe.png",
-      "source_category": "craftable"
+      "source_category": "craftable",
+      "on_hit_effects": [
+        "Extreme Bleeding"
+      ]
     },
     {
       "name": "Unusual Knuckles",
@@ -11777,9 +11787,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Axe",
       "dlc": "The Soroboreans",
@@ -11795,7 +11802,10 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Dagger",
@@ -11814,9 +11824,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Dagger",
       "dlc": "The Soroboreans",
@@ -11832,7 +11839,10 @@
         "reach": 0.61
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Greataxe",
@@ -11851,9 +11861,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Greataxe",
       "dlc": "The Soroboreans",
@@ -11869,7 +11876,10 @@
         "reach": 1.472003
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Greatmace",
@@ -11888,9 +11898,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Greatmace",
       "dlc": "The Soroboreans",
@@ -11906,7 +11913,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Greatmace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Greatsword",
@@ -11925,9 +11935,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Greatsword",
       "dlc": "The Soroboreans",
@@ -11943,7 +11950,10 @@
         "reach": 1.743
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Greatsword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Halberd",
@@ -11962,9 +11972,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Halberd",
       "dlc": "The Soroboreans",
@@ -11980,7 +11987,10 @@
         "reach": 2.145002
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Knuckles",
@@ -11999,9 +12009,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Knuckles",
       "dlc": "The Soroboreans",
@@ -12017,7 +12024,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Mace",
@@ -12036,9 +12046,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Mace",
       "dlc": "The Soroboreans",
@@ -12054,7 +12061,10 @@
         "reach": 0.734
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Spear",
@@ -12073,9 +12083,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Spear",
       "dlc": "The Soroboreans",
@@ -12091,7 +12098,10 @@
         "reach": 2.699002
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vampiric Sword",
@@ -12110,9 +12120,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Leeches health on hit"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vampiric_Sword",
       "dlc": "The Soroboreans",
@@ -12128,7 +12135,10 @@
         "reach": 1.045
       },
       "local_image": "assets/images/weapons/weapon_Vampiric_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Leeches health on hit"
+      ]
     },
     {
       "name": "Vigilante Axe",
@@ -12217,9 +12227,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Vigilante_Dagger",
       "dlc": "The Three Brothers",
@@ -12235,7 +12242,10 @@
         "reach": 0.61
       },
       "local_image": "assets/images/weapons/weapon_Vigilante_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Vigilante Greataxe",
@@ -12949,9 +12959,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Confusion"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Withering_Pole_Mace",
       "dlc": null,
@@ -12967,7 +12974,10 @@
         "reach": 2.376002
       },
       "local_image": "assets/images/weapons/weapon_Withering_Pole_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Confusion"
+      ]
     },
     {
       "name": "Withering Trident",
@@ -13021,9 +13031,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Axe",
       "dlc": "The Soroboreans",
@@ -13039,7 +13046,10 @@
         "reach": 0.858
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Axe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Claymore",
@@ -13058,9 +13068,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Claymore",
       "dlc": null,
@@ -13076,7 +13083,10 @@
         "reach": 1.668
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Claymore.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Dagger",
@@ -13095,9 +13105,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Dagger",
       "dlc": "The Soroboreans",
@@ -13113,7 +13120,10 @@
         "reach": 0.61
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Greataxe",
@@ -13132,9 +13142,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Greataxe",
       "dlc": "The Soroboreans",
@@ -13150,7 +13157,10 @@
         "reach": 1.509003
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Greataxe.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Greathammer",
@@ -13169,9 +13179,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Greathammer",
       "dlc": null,
@@ -13187,7 +13194,10 @@
         "reach": 1.613003
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Greathammer.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Halberd",
@@ -13206,9 +13216,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Halberd",
       "dlc": "The Soroboreans",
@@ -13224,7 +13231,10 @@
         "reach": 2.086002
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Halberd.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Knuckles",
@@ -13243,9 +13253,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Knuckles",
       "dlc": "The Soroboreans",
@@ -13261,7 +13268,10 @@
         "reach": 0.693
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Knuckles.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Mace",
@@ -13280,9 +13290,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Mace",
       "dlc": "The Soroboreans",
@@ -13298,7 +13305,10 @@
         "reach": 0.979
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Mace.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Spear",
@@ -13317,9 +13327,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Spear",
       "dlc": "The Soroboreans",
@@ -13335,7 +13342,10 @@
         "reach": 2.499202
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Spear.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Wolf Sword",
@@ -13354,9 +13364,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Crippled"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Wolf_Sword",
       "dlc": null,
@@ -13372,7 +13379,10 @@
         "reach": 1.263
       },
       "local_image": "assets/images/weapons/weapon_Wolf_Sword.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Crippled"
+      ]
     },
     {
       "name": "Worldedge Greataxe",
@@ -13467,9 +13477,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Pain"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Zagis%27_Saw",
       "dlc": null,
@@ -13485,7 +13492,10 @@
         "reach": 1.5549
       },
       "local_image": "assets/images/weapons/weapon_Zagis__Saw.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Pain"
+      ]
     },
     {
       "name": "Zhorn's Glowstone Dagger",
@@ -13504,9 +13514,6 @@
       "crafting_recipe": null,
       "upgrade_paths": null,
       "requirements": null,
-      "special_effects": [
-        "Glowing (Light Source)"
-      ],
       "source": null,
       "source_url": "https://outward.wiki.gg/wiki/Zhorn%27s_Glowstone_Dagger",
       "dlc": null,
@@ -13523,7 +13530,10 @@
         "reach": 0.661
       },
       "local_image": "assets/images/weapons/weapon_Zhorn_s_Glowstone_Dagger.png",
-      "source_category": "loot_or_legacy"
+      "source_category": "loot_or_legacy",
+      "on_hit_effects": [
+        "Glowing (Light Source)"
+      ]
     },
     {
       "name": "Great Runic Blade",
@@ -13538,10 +13548,6 @@
         "stamina_cost": 6.3
       },
       "description": "Summoned magical sword that lasts for a limited amount of time. Acts as a Lexicon when held.",
-      "special_effects": [
-        "Acts as a Lexicon",
-        "Temporary summon (180 seconds)"
-      ],
       "weight": 0.0,
       "buy": 0,
       "sell": 0,
@@ -13563,7 +13569,11 @@
       "dlc": "",
       "local_image": "assets/images/weapons/weapon_Great_Runic_Blade.png",
       "rune_combination": "Runic Blade + Shim + Egoth",
-      "prerequisite": "Arcane Syntax"
+      "prerequisite": "Arcane Syntax",
+      "on_hit_effects": [
+        "Acts as a Lexicon",
+        "Temporary summon (180 seconds)"
+      ]
     },
     {
       "name": "Ice-Flame Torch",
