@@ -83,8 +83,7 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Scorched",
-        "Curse",
-        "Scorched<br>Curse"
+        "Curse"
       ]
     },
     {
