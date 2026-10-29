@@ -88,7 +88,11 @@
       "on_hit_effects": [
         "Slow Down",
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 45,
+        "Bleeding": 33
+      }
     },
     {
       "name": "Assassin Sword",
@@ -138,7 +142,11 @@
       "on_hit_effects": [
         "Slow Down",
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 45,
+        "Bleeding": 33
+      }
     },
     {
       "name": "Astral Axe",
@@ -189,7 +197,11 @@
       "on_hit_effects": [
         "Scorched",
         "Curse"
-      ]
+      ],
+      "effect_buildup": {
+        "Scorched": 33,
+        "Curse": 33
+      }
     },
     {
       "name": "Astral Claymore",
@@ -240,7 +252,11 @@
       "on_hit_effects": [
         "Haunted",
         "Scorched"
-      ]
+      ],
+      "effect_buildup": {
+        "Haunted": 33,
+        "Scorched": 33
+      }
     },
     {
       "name": "Astral Dagger",
@@ -291,7 +307,11 @@
       "on_hit_effects": [
         "Haunted",
         "Scorched"
-      ]
+      ],
+      "effect_buildup": {
+        "Haunted": 66,
+        "Scorched": 66
+      }
     },
     {
       "name": "Astral Greataxe",
@@ -342,7 +362,11 @@
       "on_hit_effects": [
         "Scorched",
         "Chill"
-      ]
+      ],
+      "effect_buildup": {
+        "Chill": 33,
+        "Scorched": 33
+      }
     },
     {
       "name": "Astral Greatmace",
@@ -393,7 +417,11 @@
       "on_hit_effects": [
         "Doomed",
         "Haunted"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 33,
+        "Haunted": 33
+      }
     },
     {
       "name": "Astral Halberd",
@@ -444,7 +472,11 @@
       "on_hit_effects": [
         "Curse",
         "Haunted"
-      ]
+      ],
+      "effect_buildup": {
+        "Curse": 33,
+        "Haunted": 33
+      }
     },
     {
       "name": "Astral Knuckles",
@@ -495,7 +527,11 @@
       "on_hit_effects": [
         "Scorched",
         "Haunted"
-      ]
+      ],
+      "effect_buildup": {
+        "Scorched": 33,
+        "Haunted": 33
+      }
     },
     {
       "name": "Astral Mace",
@@ -546,7 +582,11 @@
       "on_hit_effects": [
         "Chill",
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Chill": 33,
+        "Doomed": 33
+      }
     },
     {
       "name": "Astral Spear",
@@ -597,7 +637,11 @@
       "on_hit_effects": [
         "Doomed",
         "Chill"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 33,
+        "Chill": 33
+      }
     },
     {
       "name": "Astral Sword",
@@ -648,7 +692,11 @@
       "on_hit_effects": [
         "Haunted",
         "Curse"
-      ]
+      ],
+      "effect_buildup": {
+        "Haunted": 33,
+        "Curse": 33
+      }
     },
     {
       "name": "Beast Golem Axe",
@@ -696,7 +744,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Beast Golem Halberd",
@@ -745,7 +796,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Blacksmith's Vintage Hammer",
@@ -786,7 +840,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 45
+      }
     },
     {
       "name": "Brand",
@@ -837,7 +894,11 @@
       "on_hit_effects": [
         "Chill",
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45,
+        "Chill": 45
+      }
     },
     {
       "name": "Broad Dagger",
@@ -875,7 +936,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 66
+      }
     },
     {
       "name": "Broken Golem Rapier",
@@ -985,7 +1049,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 45
+      }
     },
     {
       "name": "Brutal Greataxe",
@@ -1095,7 +1162,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 22
+      }
     },
     {
       "name": "Brutal Spear",
@@ -1299,7 +1369,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Claymore",
@@ -1346,7 +1419,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Greataxe",
@@ -1393,7 +1469,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Halberd",
@@ -1440,7 +1519,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Hammer",
@@ -1487,7 +1569,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Knuckles",
@@ -1534,7 +1619,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Mace",
@@ -1581,7 +1669,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Spear",
@@ -1628,7 +1719,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Chalcedony Sword",
@@ -1674,7 +1768,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 33
+      }
     },
     {
       "name": "Challenger Greathammer",
@@ -1716,7 +1813,11 @@
       "on_hit_effects": [
         "Rage",
         "Discipline"
-      ]
+      ],
+      "effect_buildup": {
+        "Rage": 45,
+        "Discipline": 45
+      }
     },
     {
       "name": "Cleaver Halberd",
@@ -1850,7 +1951,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 45
+      }
     },
     {
       "name": "Crescent Scythe",
@@ -1896,7 +2000,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 45
+      }
     },
     {
       "name": "Damascene Axe",
@@ -2421,7 +2528,11 @@
         "Burning",
         "Holy Blaze",
         "-10% Stamina recovery rate"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 40,
+        "Holy Blaze": 18
+      }
     },
     {
       "name": "Fang Axe",
@@ -2470,7 +2581,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Club",
@@ -2519,7 +2633,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Greataxe",
@@ -2569,7 +2686,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Greatclub",
@@ -2619,7 +2739,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Greatsword",
@@ -2669,7 +2792,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Halberd",
@@ -2719,7 +2845,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Knuckles",
@@ -2769,7 +2898,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 22
+      }
     },
     {
       "name": "Fang Sword",
@@ -2818,7 +2950,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Fang Trident",
@@ -2868,7 +3003,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Felling Greataxe",
@@ -3378,7 +3516,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Galvanic Dagger",
@@ -3423,7 +3564,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 60
+      }
     },
     {
       "name": "Galvanic Fists",
@@ -3468,7 +3612,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 22
+      }
     },
     {
       "name": "Galvanic Greataxe",
@@ -3513,7 +3660,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 60
+      }
     },
     {
       "name": "Galvanic Greatmace",
@@ -3558,7 +3708,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Galvanic Halberd",
@@ -3603,7 +3756,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Galvanic Mace",
@@ -3648,7 +3804,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Galvanic Spear",
@@ -3693,7 +3852,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Gep's Blade",
@@ -3837,7 +3999,10 @@
       ],
       "passive_effects": [
         "-15%  Physical resistance"
-      ]
+      ],
+      "effect_buildup": {
+        "Aetherbomb": 40
+      }
     },
     {
       "name": "Ghost Reaper",
@@ -3876,7 +4041,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Haunted"
-      ]
+      ],
+      "effect_buildup": {
+        "Haunted": 60
+      }
     },
     {
       "name": "Giant Iron Key",
@@ -4032,7 +4200,12 @@
       ],
       "passive_effects": [
         "-15%  Fire resistance"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 60,
+        "Crippled": 45,
+        "Hampered": 35
+      }
     },
     {
       "name": "Gold Club",
@@ -4358,7 +4531,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 45
+      }
     },
     {
       "name": "Gold-Lich Knuckles",
@@ -4404,7 +4580,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 22
+      }
     },
     {
       "name": "Gold-Lich Mace",
@@ -4449,7 +4628,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 45
+      }
     },
     {
       "name": "Gold-Lich Spear",
@@ -4495,7 +4677,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 45
+      }
     },
     {
       "name": "Gold-Lich Sword",
@@ -4540,7 +4725,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Doomed"
-      ]
+      ],
+      "effect_buildup": {
+        "Doomed": 45
+      }
     },
     {
       "name": "Golden Iron Knuckles",
@@ -4865,7 +5053,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Hailfrost Greataxe",
@@ -5253,7 +5444,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Fists",
@@ -5299,7 +5493,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 22
+      }
     },
     {
       "name": "Horror Greataxe",
@@ -5345,7 +5542,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Greatmace",
@@ -5391,7 +5591,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Greatsword",
@@ -5437,7 +5640,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Halberd",
@@ -5483,7 +5689,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Mace",
@@ -5529,7 +5738,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Spear",
@@ -5575,7 +5787,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Horror Sword",
@@ -5621,7 +5836,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Iron Axe",
@@ -6100,7 +6318,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Cestus",
@@ -6137,7 +6358,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 30
+      }
     },
     {
       "name": "Kazite Cleaver",
@@ -6174,7 +6398,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Greatblade",
@@ -6211,7 +6438,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Greatcleaver",
@@ -6248,7 +6478,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Greathammer",
@@ -6285,7 +6518,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Hammer",
@@ -6322,7 +6558,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Lance",
@@ -6359,7 +6598,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kazite Partizan",
@@ -6396,7 +6638,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Weaken": 60
+      }
     },
     {
       "name": "Kelvin's Greataxe",
@@ -6434,7 +6679,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Slow Down"
-      ]
+      ],
+      "effect_buildup": {
+        "Slow Down": 45
+      }
     },
     {
       "name": "Living Wood Axe",
@@ -6508,7 +6756,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 45
+      }
     },
     {
       "name": "Machete",
@@ -6585,7 +6836,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 45
+      }
     },
     {
       "name": "Manticore Dagger",
@@ -6630,7 +6884,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 66
+      }
     },
     {
       "name": "Manticore Greatmace",
@@ -6676,7 +6933,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Poison": 45
+      }
     },
     {
       "name": "Mantis Greatpick",
@@ -6721,7 +6981,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Marble Axe",
@@ -6828,7 +7091,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 60
+      }
     },
     {
       "name": "Marble Greataxe",
@@ -6970,7 +7236,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 45
+      }
     },
     {
       "name": "Marble Spear",
@@ -7411,7 +7680,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 40
+      }
     },
     {
       "name": "Meteoric Axe",
@@ -7449,7 +7721,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Claymore",
@@ -7487,7 +7762,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Greataxe",
@@ -7525,7 +7803,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Halberd",
@@ -7563,7 +7844,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Hammer",
@@ -7601,7 +7885,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Knuckles",
@@ -7639,7 +7926,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 17
+      }
     },
     {
       "name": "Meteoric Mace",
@@ -7677,7 +7967,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Spear",
@@ -7715,7 +8008,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Meteoric Sword",
@@ -7753,7 +8049,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Holy Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Holy Blaze": 35
+      }
     },
     {
       "name": "Militia Axe",
@@ -7875,7 +8174,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Militia Greataxe",
@@ -8237,7 +8539,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Poisoned": 45
+      }
     },
     {
       "name": "Mysterious Blade",
@@ -8369,7 +8674,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Obsidian Claymore",
@@ -8420,7 +8728,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Obsidian Greataxe",
@@ -8471,7 +8782,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Obsidian Greatmace",
@@ -8522,7 +8836,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 60
+      }
     },
     {
       "name": "Obsidian Halberd",
@@ -8573,7 +8890,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Obsidian Knuckles",
@@ -8624,7 +8944,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Obsidian Mace",
@@ -8674,7 +8997,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 60
+      }
     },
     {
       "name": "Obsidian Spear",
@@ -8725,7 +9051,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Obsidian Sword",
@@ -8775,7 +9104,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 33
+      }
     },
     {
       "name": "Old Legion Gladius",
@@ -8882,7 +9214,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Palladium Axe",
@@ -9100,7 +9435,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 60
+      }
     },
     {
       "name": "Palladium Mace",
@@ -9246,7 +9584,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 45
+      }
     },
     {
       "name": "Phytosaur Spear",
@@ -9283,7 +9624,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Poison"
-      ]
+      ],
+      "effect_buildup": {
+        "Poisoned": 45
+      }
     },
     {
       "name": "Pillar Greathammer",
@@ -9397,7 +9741,11 @@
       "on_hit_effects": [
         "Sapped",
         "Weaken"
-      ]
+      ],
+      "effect_buildup": {
+        "Sapped": 22,
+        "Weaken": 22
+      }
     },
     {
       "name": "Prayer Claymore",
@@ -9521,7 +9869,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 100
+      }
     },
     {
       "name": "Radiant Wolf Sword",
@@ -9664,7 +10015,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 45
+      }
     },
     {
       "name": "Ruined Halberd",
@@ -9811,7 +10165,10 @@
       ],
       "passive_effects": [
         "-30%  Frost resistance"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 40
+      }
     },
     {
       "name": "Sanguine Cleaver",
@@ -9848,7 +10205,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Extreme Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Bleeding": 45
+      }
     },
     {
       "name": "Savage Axe",
@@ -9885,7 +10245,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Club",
@@ -9922,7 +10285,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Fang Knuckles",
@@ -9959,7 +10325,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 22
+      }
     },
     {
       "name": "Savage Greataxe",
@@ -9996,7 +10365,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Greatclub",
@@ -10033,7 +10405,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Greatsword",
@@ -10070,7 +10445,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Halberd",
@@ -10107,7 +10485,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Sword",
@@ -10144,7 +10525,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Savage Trident",
@@ -10181,7 +10565,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Bleeding": 45
+      }
     },
     {
       "name": "Scarred Dagger",
@@ -10218,7 +10605,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Scepter of the Cruel Priest",
@@ -10372,7 +10762,10 @@
       "on_hit_effects": [
         "Plague",
         "Poisoned"
-      ]
+      ],
+      "effect_buildup": {
+        "Plague": 30
+      }
     },
     {
       "name": "Sinner Claymore",
@@ -10480,7 +10873,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Claymore",
@@ -10517,7 +10913,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Dagger",
@@ -10554,7 +10953,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Greataxe",
@@ -10591,7 +10993,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Halberd",
@@ -10628,7 +11033,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Hammer",
@@ -10665,7 +11073,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Knuckles",
@@ -10702,7 +11113,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Mace",
@@ -10739,7 +11153,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Smoke Spear",
@@ -10776,7 +11193,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 12
+      }
     },
     {
       "name": "Smoke Sword",
@@ -10813,7 +11233,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Blaze"
-      ]
+      ],
+      "effect_buildup": {
+        "Blaze": 33
+      }
     },
     {
       "name": "Spore Halberd",
@@ -10850,7 +11273,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Poisoned"
-      ]
+      ],
+      "effect_buildup": {
+        "Poisoned": 60
+      }
     },
     {
       "name": "Starchild Claymore",
@@ -10963,7 +11389,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Elemental Vulnerability"
-      ]
+      ],
+      "effect_buildup": {
+        "Elemental Vulnerability": 45
+      }
     },
     {
       "name": "Sunfall Axe",
@@ -11001,7 +11430,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Burning"
-      ]
+      ],
+      "effect_buildup": {
+        "Burning": 45
+      }
     },
     {
       "name": "Thermal Claymore",
@@ -11042,7 +11474,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 60
+      }
     },
     {
       "name": "Thorny Claymore",
@@ -11212,7 +11647,11 @@
       "on_hit_effects": [
         "Slow Down",
         "Chill"
-      ]
+      ],
+      "effect_buildup": {
+        "Chill": 40,
+        "Slow Down": 25
+      }
     },
     {
       "name": "Troglodyte Halberd",
@@ -11289,7 +11728,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 45
+      }
     },
     {
       "name": "Troglodyte Trident",
@@ -11688,7 +12130,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Bleeding": 45
+      }
     },
     {
       "name": "Tuanosaur Greataxe",
@@ -11733,7 +12178,10 @@
       "source_category": "craftable",
       "on_hit_effects": [
         "Extreme Bleeding"
-      ]
+      ],
+      "effect_buildup": {
+        "Extreme Bleeding": 45
+      }
     },
     {
       "name": "Unusual Knuckles",
@@ -12245,7 +12693,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Vigilante Greataxe",
@@ -12977,7 +13428,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Confusion"
-      ]
+      ],
+      "effect_buildup": {
+        "Confusion": 45
+      }
     },
     {
       "name": "Withering Trident",
@@ -13049,7 +13503,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 25
+      }
     },
     {
       "name": "Wolf Claymore",
@@ -13086,7 +13543,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 40
+      }
     },
     {
       "name": "Wolf Dagger",
@@ -13123,7 +13583,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 60
+      }
     },
     {
       "name": "Wolf Greataxe",
@@ -13160,7 +13623,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 40
+      }
     },
     {
       "name": "Wolf Greathammer",
@@ -13197,7 +13663,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 40
+      }
     },
     {
       "name": "Wolf Halberd",
@@ -13234,7 +13703,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 40
+      }
     },
     {
       "name": "Wolf Knuckles",
@@ -13271,7 +13743,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 25
+      }
     },
     {
       "name": "Wolf Mace",
@@ -13308,7 +13783,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 25
+      }
     },
     {
       "name": "Wolf Spear",
@@ -13345,7 +13823,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 25
+      }
     },
     {
       "name": "Wolf Sword",
@@ -13382,7 +13863,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Crippled"
-      ]
+      ],
+      "effect_buildup": {
+        "Crippled": 25
+      }
     },
     {
       "name": "Worldedge Greataxe",
@@ -13495,7 +13979,10 @@
       "source_category": "loot_or_legacy",
       "on_hit_effects": [
         "Pain"
-      ]
+      ],
+      "effect_buildup": {
+        "Pain": 100
+      }
     },
     {
       "name": "Zhorn's Glowstone Dagger",
