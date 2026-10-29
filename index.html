@@ -306,7 +306,7 @@ var DATA=null;
 var BUILD={name:'New Build',theorycraft:false,skills:[],armor:{},weapons:{},consumables:[],faction:null,breakthroughsUsed:0,leylines:{health:100,mana:20},quickSlots:[null,null,null,null],enchantments:{}};
 var CURRENT_TAB='stats';
 var ARMOR_FILTER={slot:'all',rarity:['all'],effect:['all'],legacy:false,sort:'name'};
-var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',sort:'name'};
+var WEAPON_FILTER={type:'all',hand:'all',dmg:'all',effect:'all',posEffect:'all',sort:'name'};
 var SKILL_SEARCH='';
 var SKILL_CLASS_FILTER=null;
 var CONS_SEARCH='';
@@ -1359,13 +1359,22 @@ function renderWeaponsTab(pane){
     html+='<button class="pill'+(WEAPON_FILTER.dmg===dt?' active':'')+'" '+makeClick('setWeaponFilter','dmg|'+dt)+'>'+(dt==='all'?'All':dt.charAt(0).toUpperCase()+dt.slice(1))+'</button>';
   }
   html+='</div></div>';
-  html+='<div class="filter-section"><div class="filter-label">Effect</div><div class="filter-pills">';
+  html+='<div class="filter-section"><div class="filter-label">Effect on Hit</div><div class="filter-pills">';
   var effects=['all','Poison','Bleeding','Burning','Blaze','Holy Blaze','Chill','Confusion','Cripple','Curse','Doomed','Elemental Vulnerability','Extreme Bleeding','Extreme Poison','Hampered','Haunted','Pain','Plague','Sapped','Scorched','Slow Down','Weaken','Aetherbomb'];
   for(var e=0;e<effects.length;e++){
     var ef=effects[e];
     html+='<button class="pill'+(WEAPON_FILTER.effect===ef?' active':'')+'" '+makeClick('setWeaponFilter','effect|'+ef)+'>'+ef+'</button>';
   }
+  
+  // Effect (positive bonuses)
+  html+='<div class="filter-section"><div class="filter-label">Effect</div><div class="filter-pills">';
+  var posEffects=['all','Fire Damage','Frost Damage','Lightning Damage','Ethereal Damage','Decay Damage','Physical Damage','Mana Cost','Stamina Cost'];
+  for(var pe=0;pe<posEffects.length;pe++){
+    var pef=posEffects[pe];
+    html+='<button class="pill'+(WEAPON_FILTER.posEffect===pef?' active':'')+'" '+makeClick('setWeaponFilter','posEffect|'+pef)+'>'+pef+'</button>';
+  }
   html+='</div></div>';
+html+='</div></div>';
   html+='<select class="sort-select" onchange="setWeaponFilter(\'sort\',this.value)">';
   html+='<option value="name"'+(WEAPON_FILTER.sort==='name'?' selected':'')+'>Sort by Name</option>';
   html+='<option value="damage"'+(WEAPON_FILTER.sort==='damage'?' selected':'')+'>Damage</option>';
