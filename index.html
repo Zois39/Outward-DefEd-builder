@@ -1748,6 +1748,27 @@ function hasExclusion(skill){
   return skill.excludes_skill && skill.excludes_skill !== 'None' && skill.excludes_skill !== null && skill.excludes_skill !== '';
 }
 
+function requirementSatisfied(reqStr){
+  if(!reqStr)return true;
+  var orParts=reqStr.split(/\s+or\s+/i);
+  return orParts.some(function(orPart){
+    var andParts=orPart.split(/[,;]/).map(function(s){return s.trim();}).filter(Boolean);
+    if(andParts.length===0)return true;
+    return andParts.every(function(p){
+      if((BUILD.skills||[]).indexOf(p)>=0)return true;
+      if(findSkill(p))return false;
+      return true; // unknown requirement (quest etc.) - informational only
+    });
+  });
+}
+
+function requiresSkillNamed(reqStr,name){
+  if(!reqStr)return false;
+  return reqStr.split(/\s+or\s+/i).some(function(orPart){
+    return orPart.split(/[,;]/).some(function(q){return q.trim()===name;});
+  });
+}
+
 function getSkillStatus(skill){
   var isSelected=(BUILD.skills||[]).indexOf(skill.name)>=0;
   if(isSelected)return 'selected';
@@ -1757,8 +1778,7 @@ function getSkillStatus(skill){
     if(selSkill&&hasExclusion(selSkill)&&selSkill.excludes_skill===skill.name){return 'excluded:'+selSkill.name;}
   }
   if(hasRequirement(skill)){
-    var reqIdx=(BUILD.skills||[]).indexOf(skill.requires_skill);
-    if(reqIdx<0){return 'requires:'+skill.requires_skill;}
+    if(!requirementSatisfied(skill.requires_skill)){return 'requires:'+skill.requires_skill;}
   }
   // Tier 2 does NOT require Tier 1 - they are independent choices
   if(skill.tier===3){
@@ -1840,6 +1860,7 @@ function renderSkillsList(){
         if(skill.stamina_cost)meta.push(skill.stamina_cost+' Stam');
         if(skill.cooldown)meta.push('CD '+skill.cooldown);
         html+='<div class="skill-meta">'+escHtml(meta.join(' \u00B7 '))+'</div>';
+        if(skill.weapon_requirement){html+='<div class="skill-req" style="color:var(--blue)">\u2694\uFE0F Weapon: '+escHtml(skill.weapon_requirement)+'</div>';}
         if(status.indexOf('requires:')===0){
           var reqName=status.substring(9);
           html+='<div class="skill-req">\u26A0\uFE0F Requires: '+escHtml(reqName)+'</div>';
@@ -1881,7 +1902,7 @@ function toggleSkill(name){
     var toRemove=[];
     (BUILD.skills||[]).forEach(function(sName){
       var s=findSkill(sName);
-      if(s&&hasRequirement(s)&&s.requires_skill===name){toRemove.push(sName);}
+      if(s&&hasRequirement(s)&&requiresSkillNamed(s.requires_skill,name)&&!requirementSatisfied(s.requires_skill)){toRemove.push(sName);}
     });
     toRemove.forEach(function(sName){
       var rIdx=BUILD.skills.indexOf(sName);
