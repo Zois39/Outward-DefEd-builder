@@ -2,8 +2,8 @@
  {
   "name": "Shamanic Resonance",
   "page_title": "Shamanic Resonance",
-  "description": "The effects of boons on you are increased. For example, a boon that increases your Fire Resistance by 20 would increase it by 30 instead.",
-  "effects": "| class=\"wikitable\" !Boon !Amplified Effects |- |frameless|60x60px; Rage | +35% all Impact |- |frameless|60x60px; Discipline | +30% Physical damage |- |frameless|60x60px; Mist | +30% Ethereal damage and resistance |- |frameless|60x60px; Possessed | +30% Decay damage and resistance |- |frameless|60x60px; Blessed | +30% Lightning damage and resistance |- |frameless|60x60px; Cool | +30% Frost damage and resistance +16 hot resistance |- |frameless|60x60px; Warm | +30% Fire damage and resistance +16 cold resistance | *Boons that are increased by this effect will have \"Amplified\" added to their name in the Status Effects menu.",
+  "description": "Passive: the effects of Boons on you are increased (each Boon's effect is raised to its amplified value — see the list below).",
+  "effects": "Breakthrough passive of the Cabal Hermit tree. While learned, all Boons affecting you are amplified (amplified boons show the \"Amplified\" prefix in the Status Effects menu):\n• Rage — +35% Impact (base boon: +25%)\n• Discipline — +30% Physical damage (base boon: +15%)\n• Mist — +30% Ethereal damage and resistance (base boon: +20%)\n• Possessed — +30% Decay damage and resistance (base boon: +20%)\n• Blessed — +30% Lightning damage and resistance (base boon: +20%)\n• Cool — +30% Frost damage and resistance, +16 Hot Weather Defense (base boon: +20%, +8)\n• Warm — +30% Fire damage and resistance, +16 Cold Weather Defense (base boon: +20%, +8)\nExample: a boon that increases your Fire Resistance by 20 would increase it by 30 instead.",
   "tier": 2,
   "tier_label": "Tier 2 (Breakthrough)",
   "parent_class": "Cabal Hermit",

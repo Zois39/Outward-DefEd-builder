@@ -3,7 +3,7 @@
   "name": "Call to Elements",
   "page_title": "Call to Elements",
   "description": "Grants you a boon that varies according to your location when casting this spell.",
-  "effects": "Grants a Boon depending on the location where the spell is cast:\n• Chersonese — grants Cool outside (Voltaic Hatchery grants Blessed, most other locations grant Rage)\n• Enmerkar Forest — grants Mist outside (Face of the Ancients grants Warm, other locations grant Rage)\n• Hallowed Marsh — grants Blessed outside (Giants' Village grants Warm, Dark Ziggurat and Dead Roots grant Possessed, other dungeons grant Discipline)\n• Abrassar — grants Warm outside (Electric Lab grants Blessed)\nLocations with no associated boon grant Rage by default.",
+  "effects": "Grants a Boon depending on the location where the spell is cast:\n• Chersonese — grants Cool outside (Voltaic Hatchery grants Blessed, most other locations grant Rage)\n• Enmerkar Forest — grants Mist outside (Face of the Ancients grants Warm, other locations grant Rage)\n• Hallowed Marsh — grants Blessed outside (Giants' Village grants Warm, Dark Ziggurat and Dead Roots grant Possessed, other dungeons grant Discipline)\n• Abrassar — grants Warm outside (Electric Lab grants Blessed)\nLocations with no associated boon grant Rage by default.\n\nGranted boons also provide:\n• Element Boons (Warm, Cool, Blessed, Mist, Possessed) — +20% damage and resistance of their element (amplified by Shamanic Resonance: +30%)\n• Rage — +25% Impact (amplified: +35%)\n• Discipline — +15% Physical damage (amplified: +30%)",
   "tier": 1,
   "tier_label": "Tier 1 (Basic)",
   "parent_class": "Cabal Hermit",
@@ -402,7 +402,8 @@
   "unlock_requirement": "",
   "requires_skill": "Shatter Bullet",
   "local_image": "assets/images/skills/skill_Frost_Bullet.png",
-  "weapon_requirement": "Pistol"
+  "weapon_requirement": "Pistol",
+  "consumes_boon": "Cool"
  },
  {
   "name": "Shatter Bullet",
@@ -466,7 +467,8 @@
   "unlock_requirement": "",
   "requires_skill": "Chakram Pierce",
   "local_image": "assets/images/skills/skill_Chakram_Arc.png",
-  "weapon_requirement": "Chakram"
+  "weapon_requirement": "Chakram",
+  "consumes_boon": "Discipline"
  },
  {
   "name": "Chakram Pierce",
@@ -498,7 +500,8 @@
   "unlock_requirement": "",
   "requires_skill": null,
   "local_image": "assets/images/skills/skill_Chakram_Pierce.png",
-  "weapon_requirement": "Chakram"
+  "weapon_requirement": "Chakram",
+  "consumes_boon": "Discipline"
  },
  {
   "name": "Mana Ward",
@@ -1188,7 +1191,7 @@
   "name": "Brace",
   "page_title": "Brace",
   "description": "Blocks an attack, restoring your stability and giving you the Discipline boon. All nearby enemies are knocked back.",
-  "effects": "Blocks an attack (can be melee, magic or ranged). If successful: * Restores Stability * Nearby enemies are knocked back, and the attacker's Stability is reduced to 50% The effects of Brace only apply if an attack was successfully countered. If no attack was blocked, Brace goes on cooldown and no effects are gained.",
+  "effects": "Blocks an attack (can be melee, magic or ranged). If successful: * Restores Stability * Nearby enemies are knocked back, and the attacker's Stability is reduced to 50% The effects of Brace only apply if an attack was successfully countered. If no attack was blocked, Brace goes on cooldown and no effects are gained.\n\nAlso grants the Discipline boon: +15% Physical damage (amplified by Shamanic Resonance: +30%).",
   "tier": 1,
   "tier_label": "Tier 1 (Basic)",
   "parent_class": "Warrior Monk",
@@ -1219,7 +1222,7 @@
   "name": "Focus",
   "page_title": "Focus",
   "description": "Grants the discipline boon, which increases the physical damage of your attacks. Using this skill burns a bit of your maximum stamina until the next time you sleep. Certain skills require this boon to be active.",
-  "effects": "",
+  "effects": "Grants the Discipline boon: +15% Physical damage (amplified by Shamanic Resonance: +30%).",
   "tier": 1,
   "tier_label": "Tier 1 (Basic)",
   "parent_class": "Warrior Monk",
@@ -1339,7 +1342,8 @@
   "unlock_requirement": "",
   "requires_skill": null,
   "local_image": "assets/images/skills/skill_Dispersion.png",
-  "weapon_requirement": "One-Handed Mace"
+  "weapon_requirement": "One-Handed Mace",
+  "requires_infusion": "melee imbue (enhances the shockwave)"
  },
  {
   "name": "Moment of Truth",
@@ -1435,7 +1439,8 @@
   "unlock_requirement": "",
   "requires_skill": null,
   "local_image": "assets/images/skills/skill_Splitter.png",
-  "weapon_requirement": "Polearm"
+  "weapon_requirement": "Polearm",
+  "requires_infusion": "melee imbue (enhances the strike)"
  },
  {
   "name": "Strafing Run",
@@ -1601,7 +1606,7 @@
   "name": "Enrage",
   "page_title": "Enrage",
   "description": "Grants the Rage boon, which increases the Impact of your attacks. Using this skill burns a bit of your maximum health until the next time you sleep. Certain skills require this boon to be active.",
-  "effects": "",
+  "effects": "Grants the Rage boon: +25% Impact bonus damage (amplified by Shamanic Resonance: +35%).",
   "tier": 1,
   "tier_label": "Tier 1 (Basic)",
   "parent_class": "Wild Hunter",

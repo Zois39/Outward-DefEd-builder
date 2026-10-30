@@ -34,7 +34,7 @@
   "name": "Infuse Wind",
   "page_title": "Infuse Wind",
   "description": "Required: Activated Wind Altar. Increases the Impact and Attack Speed of your melee weapon for 3 minutes. Your stamina burn increases more quickly, however.",
-  "effects": "",
+  "effects": "Wind Imbue on your melee weapon, lasting 180 seconds:\n• +20% attack speed\n• +50% weapon Impact damage\n• Stamina Burn doubled (more tiring to swing)\nNote: unlike elemental imbues, adds no elemental damage. Requires an activated Wind Altar.",
   "tier": 3,
   "tier_label": "Tier 3 (Advanced)",
   "parent_class": "Cabal Hermit",
@@ -250,7 +250,9 @@
   "unlock_requirement": "Requires Tier 2 (Breakthrough) in the Kazite Spellblade tree",
   "requires_skill": "Infuse Frost or Infuse Fire",
   "local_image": "assets/images/skills/skill_Elemental_Discharge.png",
-  "excludes_skill": "Gong Strike"
+  "excludes_skill": "Gong Strike",
+  "requires_infusion": "any elemental infusion",
+  "consumes_infusion": "the weapon infusion"
  },
  {
   "name": "Gong Strike",
@@ -283,13 +285,15 @@
   "requires_skill": "Infuse Frost or Infuse Fire",
   "local_image": "assets/images/skills/skill_Gong_Strike.png",
   "excludes_skill": "Elemental Discharge",
-  "weapon_requirement": "Shield"
+  "weapon_requirement": "Shield",
+  "requires_infusion": "any active weapon infusion",
+  "consumes_infusion": "the weapon infusion"
  },
  {
   "name": "Infuse Fire",
   "page_title": "Infuse Fire",
   "description": "Temporarily adds fire damage to your melee weapon and inflicts Burning on enemies. Consumes your Warm boon.",
-  "effects": "",
+  "effects": "Mystic Fire Imbue on your melee weapon, lasting 180 seconds:\n• +25% of weapon damage dealt as Fire, plus +7 flat Fire damage\n• Inflicts Burning (49% buildup)\n• Raises your Temperature Stage by 1 (+14 hot in neutral environments)\n• Each hit consumes 1 extra durability",
   "tier": 3,
   "tier_label": "Tier 3 (Advanced)",
   "parent_class": "Kazite Spellblade",
@@ -315,13 +319,14 @@
   "unlock_requirement": "Requires Tier 2 (Breakthrough) in the Kazite Spellblade tree",
   "requires_skill": "Spellblade's Awakening",
   "local_image": "assets/images/skills/skill_Infuse_Fire.png",
-  "excludes_skill": "Infuse Frost"
+  "excludes_skill": "Infuse Frost",
+  "consumes_boon": "Warm"
  },
  {
   "name": "Infuse Frost",
   "page_title": "Infuse Frost",
   "description": "Temporarily adds ice damage to your melee weapon and inflicts Slow Down on enemies. Consumes your Cool boon.",
-  "effects": "",
+  "effects": "Mystic Frost Imbue on your melee weapon, lasting 180 seconds:\n• +25% of weapon damage dealt as Frost, plus +10 flat Frost damage\n• Inflicts Slow Down (49% buildup)\n• Each hit consumes 1 extra durability",
   "tier": 3,
   "tier_label": "Tier 3 (Advanced)",
   "parent_class": "Kazite Spellblade",
@@ -347,7 +352,8 @@
   "unlock_requirement": "Requires Tier 2 (Breakthrough) in the Kazite Spellblade tree",
   "requires_skill": "Spellblade's Awakening",
   "local_image": "assets/images/skills/skill_Infuse_Frost.png",
-  "excludes_skill": "Infuse Fire"
+  "excludes_skill": "Infuse Fire",
+  "consumes_boon": "Cool"
  },
  {
   "name": "Blood Bullet",
@@ -476,7 +482,8 @@
   "unlock_requirement": "Requires Tier 2 (Breakthrough) in the Philosopher tree",
   "requires_skill": "Leyline Connection, Chakram Arc",
   "local_image": "assets/images/skills/skill_Chakram_Dance.png",
-  "weapon_requirement": "Chakram"
+  "weapon_requirement": "Chakram",
+  "consumes_boon": "Discipline"
  },
  {
   "name": "Fire Affinity",
@@ -1047,13 +1054,14 @@
   "unlock_requirement": "Requires Tier 2 (Breakthrough) in the Warrior Monk tree",
   "requires_skill": "Perfect Strike or Master of Motion",
   "local_image": "assets/images/skills/skill_Flash_Onslaught.png",
-  "excludes_skill": "Counterstrike"
+  "excludes_skill": "Counterstrike",
+  "consumes_boon": "Discipline"
  },
  {
   "name": "Master of Motion",
   "page_title": "Master of Motion",
   "description": "Active Discipline grants:; +10 Impact Resistance; +10 All Damage resistance",
-  "effects": "While the Discipline boon is active, you receive: * +10 resistance to all elements * +10 impact resistance Has no interaction with Shamanic Resonance.",
+  "effects": "While the Discipline boon is active, you receive: * +10 resistance to all elements * +10 impact resistance Has no interaction with Shamanic Resonance.\n\nActive Discipline boon: +15% Physical damage (amplified by Shamanic Resonance: +30%).",
   "tier": 3,
   "tier_label": "Tier 3 (Advanced)",
   "parent_class": "Warrior Monk",

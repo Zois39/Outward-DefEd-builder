@@ -1861,6 +1861,10 @@ function renderSkillsList(){
         if(skill.cooldown)meta.push('CD '+skill.cooldown);
         html+='<div class="skill-meta">'+escHtml(meta.join(' \u00B7 '))+'</div>';
         if(skill.weapon_requirement){html+='<div class="skill-req" style="color:var(--blue)">\u2694\uFE0F Weapon: '+escHtml(skill.weapon_requirement)+'</div>';}
+        if(skill.consumes_boon){html+='<div class="skill-req" style="color:#e67e22">\u26A0\uFE0F Consumes boon: '+escHtml(skill.consumes_boon)+'</div>';}
+        if(skill.requires_boon){html+='<div class="skill-req" style="color:var(--gold)">\u26A0\uFE0F Requires boon: '+escHtml(skill.requires_boon)+'</div>';}
+        if(skill.consumes_infusion){html+='<div class="skill-req" style="color:#e67e22">\u26A0\uFE0F Consumes infusion: '+escHtml(skill.consumes_infusion)+'</div>';}
+        if(skill.requires_infusion){html+='<div class="skill-req" style="color:var(--gold)">\u26A0\uFE0F Requires infusion: '+escHtml(skill.requires_infusion)+'</div>';}
         if(status.indexOf('requires:')===0){
           var reqName=status.substring(9);
           html+='<div class="skill-req">\u26A0\uFE0F Requires: '+escHtml(reqName)+'</div>';
