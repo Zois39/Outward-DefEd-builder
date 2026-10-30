@@ -1983,7 +1983,7 @@
  },
  {
   "name": "Hive Infestation",
-  "description": "Acute === * Status Effect Resistance -30% * Health burn rate +200% (health burns more quickly) * Stamina burn rate +200% (stamina burns more quickly)",
+  "description": "Acute — * Status Effect Resistance -30% * Health burn rate +200% (health burns more quickly) * Stamina burn rate +200% (stamina burns more quickly)",
   "icon_url": "https://outward.wiki.gg/images/Hive_Infestation_1.png?6c1c29",
   "icon_file": null,
   "effect_type": "disease",
@@ -2345,7 +2345,7 @@
  },
  {
   "name": "Leywilt",
-  "description": "Receding === * +20% Mana Costs * Barrier +3",
+  "description": "Receding — * +20% Mana Costs * Barrier +3",
   "icon_url": "https://outward.wiki.gg/images/Leywilt_1.png?9ca4f3",
   "icon_file": null,
   "effect_type": "disease",
@@ -2572,7 +2572,7 @@
  },
  {
   "name": "Meeka Fever",
-  "description": "Acute === * Weather protection -15 * Thirst deplete rate +200% (you become thirsty more quickly)",
+  "description": "Acute — * Weather protection -15 * Thirst deplete rate +200% (you become thirsty more quickly)",
   "icon_url": "https://outward.wiki.gg/images/Meeka_Fever_1.png?2597f3",
   "icon_file": "Meeka Fever 1.png",
   "effect_type": "disease",
@@ -3960,7 +3960,7 @@
  },
  {
   "name": "The Hunch",
-  "description": "Acute Hunch=== * -15% Physical damage bonus * -15% Physical resistance",
+  "description": "Acute Hunch — * -15% Physical damage bonus * -15% Physical resistance",
   "icon_url": "https://outward.wiki.gg/images/The_Hunch_1.png?c7d9a3",
   "icon_file": null,
   "effect_type": "disease",
