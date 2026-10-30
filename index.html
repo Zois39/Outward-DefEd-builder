@@ -1235,7 +1235,7 @@ function renderArmorList(){
       html+='<div class="enchant-name">'+escHtml(selectedEnch)+'</div>';
       html+='<div class="enchant-effects">';
       // Show only effects relevant to this item's slot
-      var itemSlot=a.slot||'';
+      var itemSlot=w.weapon_type||'';
       enchData.effects.forEach(function(eff){
         var effLower=eff.toLowerCase();
         var showEffect=false;
@@ -1648,7 +1648,7 @@ function renderWeaponList(){
       html+='<div class="enchant-name">'+escHtml(selectedEnch)+'</div>';
       html+='<div class="enchant-effects">';
       // Show only effects relevant to this item's slot
-      var itemSlot=a.slot||'';
+      var itemSlot=w.weapon_type||'';
       enchData.effects.forEach(function(eff){
         var effLower=eff.toLowerCase();
         var showEffect=false;
