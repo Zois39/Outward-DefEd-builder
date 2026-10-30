@@ -548,7 +548,7 @@
  {
   "name": "Fire and Reload",
   "page_title": "Fire and Reload",
-  "description": "name=Fire / Reload|Required: Pistol, Bullet Load the equipped pistol with a bullet, or fires if it is already loaded. Some abilities load special bullets into your pistol, which are fired using this skill.",
+  "description": "name=Fire / Reload Required: Pistol, Bullet Load the equipped pistol with a bullet, or fires if it is already loaded. Some abilities load special bullets into your pistol, which are fired using this skill.",
   "effects": "If the pistol is unloaded, this skill will try to load a bullet, should the player have one. Loading a pistol takes a few seconds, and the player cannot move while doing so. If a bullet or imbued bullet is loaded, it will fire at the targeted enemy. The standard bullet will deal the damage from your equipped Pistol. See also: *Blood Bullet *Frost Bullet *Shatter Bullet\nCombinations:\n• Sigil of Wind → Lightning Bullet: shot deals 1.6x damage converted to lightning",
   "tier": "special",
   "tier_label": "Special / Quest / Trainer",
