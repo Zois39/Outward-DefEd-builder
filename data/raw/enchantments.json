@@ -5,7 +5,10 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Adds +80% of the existing weapon's Physical physical damage as Physical damageAdds +18 bonus 14px|link=Impact ImpactWeapon now inflicts Curse (35% buildup)"
+      "Adds +80% of the existing weapon's Physical physical damage as Physical damage",
+      "Adds +18 bonus 14px",
+      "link=Impact Impact",
+      "Weapon now inflicts Curse (35% buildup)"
     ],
     "compatible_items": [
       "Cleaver Halberd",
@@ -19,8 +22,10 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Hunger depletion rate -75%",
-      "Drink depletion rate -75%"
+      "Hunger depletion rate",
+      "-75%",
+      "Drink depletion rate",
+      "-75%"
     ],
     "compatible_items": [
       "Cauldron Helm"
@@ -48,8 +53,10 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "",
     "effects": [
-      "Body Armor: +2 Protection",
-      "Helmets/Boots: +1 Protection"
+      "Body Armor:",
+      "+2 Protection",
+      "Helmets/Boots:",
+      "+1 Protection"
     ],
     "compatible_items": [
       "Any Body Armor",
@@ -63,7 +70,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Changes the color of the lantern to white and effects of Flamethrower to Lightning. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "Changes the color of the lantern to white and effects of Flamethrower to Lightning. See Flamethrower article for more details",
+      "Lantern can no longer be refueled",
       "however it passively gains fuel when equipped but not lit."
     ],
     "compatible_items": [
@@ -77,7 +85,9 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Scholar,Virgin",
     "effects": [
-      "Gain +5% Cooldown ReductionGain passive +0.1 Mana restoration per second"
+      "Gain +5% Cooldown Reduction",
+      "Gain passive",
+      "+0.1 Mana restoration per second"
     ],
     "compatible_items": [
       "Scholar Set or Virgin Set (Body Armor",
@@ -92,8 +102,11 @@
     "tags": "Virgin,Kazite",
     "effects": [
       "Gain +10% Physical damage bonus on Body Armor",
-      "and 5% Physical bonus on Helmet or BootsGain +10% 14px|link=Impact damage bonus on Body Armor",
-      "and 5% 14px|link=Impact bonus on Helmet or Boots"
+      "and 5% Physical bonus on Helmet or Boots",
+      "Gain +10% 14px",
+      "link=Impact damage bonus on Body Armor",
+      "and 5% 14px",
+      "link=Impact bonus on Helmet or Boots"
     ],
     "compatible_items": [
       "Virgin Set or Kazite Set",
@@ -109,8 +122,11 @@
     "tags": "Makeshift,Scaled,Virgin",
     "effects": [
       "Adds +7 Pouch Bonus on Body Armor",
-      "and +3 Pouch Bonus on Helmets or BootsAdds +8% Physical resistance on Body Armor",
-      "and +5% on Helmets or Boots"
+      "and",
+      "+3 Pouch Bonus on Helmets or Boots",
+      "Adds +8% Physical resistance on Body Armor",
+      "and",
+      "+5% on Helmets or Boots"
     ],
     "compatible_items": [
       "Makeshift Leather Set",
@@ -125,7 +141,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Changes the color of the lantern to blue and effects of Flamethrower to Frost. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "Changes the color of the lantern to blue and effects of Flamethrower to Frost. See Flamethrower article for more details",
+      "Lantern can no longer be refueled",
       "however it passively gains fuel when equipped but not lit."
     ],
     "compatible_items": [
@@ -152,7 +169,8 @@
     "slots": "Weapon",
     "tags": "Palladium",
     "effects": [
-      "Adds +33% of the existing weapon's Physical physical damage as Lightning damageWeapon now inflicts Sapped (35% buildup)"
+      "Adds +33% of the existing weapon's Physical physical damage as Lightning damage",
+      "Weapon now inflicts Sapped (35% buildup)"
     ],
     "compatible_items": [
       "Any Palladium Weapon"
@@ -179,11 +197,16 @@
     "slots": "Chest,Boots,Helmet",
     "tags": "Ash,Pathfinder,Virgin",
     "effects": [
-      "On Body Armor: +2 Protection",
+      "On Body Armor:",
+      "+2 Protection",
       "+6 Hot Weather Defense",
-      "+6 Cold Weather DefenseOn Helmets: +2 Protection",
+      "+6 Cold Weather Defense",
+      "On Helmets:",
+      "+2 Protection",
       "+4 Hot Weather Defense",
-      "+2 Cold Weather DefenseOn Boots: +2 Protection",
+      "+2 Cold Weather Defense",
+      "On Boots:",
+      "+2 Protection",
       "+2 Hot Weather Defense",
       "+4 Cold Weather Defense"
     ],
@@ -228,7 +251,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Changes the color of the lantern to green and effects of Flamethrower to Rust. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "Changes the color of the lantern to green and effects of Flamethrower to Rust. See Flamethrower article for more details",
+      "Lantern can no longer be refueled",
       "however it passively gains fuel when equipped but not lit."
     ],
     "compatible_items": [
@@ -242,7 +266,8 @@
     "slots": "Weapon",
     "tags": "Brutal",
     "effects": [
-      "Adds +50% of the existing weapon's Physical physical damage as Physical damageWeapon inflicts Burning (30% buildup)",
+      "Adds +50% of the existing weapon's Physical physical damage as Physical damage",
+      "Weapon inflicts Burning (30% buildup)",
       "Poisoned (35% buildup) and Extreme Poison (20% buildup)"
     ],
     "compatible_items": [
@@ -258,7 +283,8 @@
     "slots": "Weapon",
     "tags": "Junk,Iron,Gold,Virgin",
     "effects": [
-      "Adds +35% of the existing weapon's Physical physical damage as Fire damageWeapon now inflicts Burning (35% buildup)"
+      "Adds +35% of the existing weapon's Physical physical damage as Fire damage",
+      "Weapon now inflicts Burning (35% buildup)"
     ],
     "compatible_items": [
       "Any Iron",
@@ -273,7 +299,10 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Virgin,Antique",
     "effects": [
-      "Body Armor: Gain +15% Mana Cost Mana cost reduction (-15% mana costs)Helmet/Boots: Gain +10% Mana Cost Mana cost reduction (-10% mana costs)Any: Gain +10% Stamina Cost Stamina cost reduction (-10% stamina costs)"
+      "Body Armor: Gain +15% Mana Cost Mana cost reduction (",
+      "-15% mana costs)Helmet/Boots: Gain +10% Mana Cost Mana cost reduction (",
+      "-10% mana costs)Any: Gain +10% Stamina Cost Stamina cost reduction (",
+      "-10% stamina costs)"
     ],
     "compatible_items": [
       "Virgin Set or Antique Plate Set (Body Armor",
@@ -287,7 +316,9 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Candle,White Priest,Palladium",
     "effects": [
-      "Body Armor: Gain +20 Corruption ResistanceHelmet/Boots: Gain +10 Corruption ResistanceAny: Gain +5% Lightning damage bonus"
+      "Body Armor: Gain +20 Corruption Resistance",
+      "Helmet/Boots: Gain +10 Corruption Resistance",
+      "Any: Gain +5% Lightning damage bonus"
     ],
     "compatible_items": [
       "Candle Plate Set",
@@ -304,7 +335,9 @@
     "slots": "Bow",
     "tags": "",
     "effects": [
-      "Weapon gains +5 flat Fire damageWeapon now inflicts Burning (25% buildup)"
+      "Weapon gains",
+      "+5 flat Fire damage",
+      "Weapon now inflicts Burning (25% buildup)"
     ],
     "compatible_items": [
       "Any Bow"
@@ -330,7 +363,9 @@
     "slots": "Weapon",
     "tags": "Fang,Savage,Kazite",
     "effects": [
-      "Adds +20% of the existing weapon's Physical physical damage as Ethereal damageWeapon gains +0.1 flat Attack Speed Attack Speed"
+      "Adds +20% of the existing weapon's Physical physical damage as Ethereal damage",
+      "Weapon gains",
+      "+0.1 flat Attack Speed Attack Speed"
     ],
     "compatible_items": [
       "Any Fang",
@@ -344,7 +379,8 @@
     "slots": "Lexicon",
     "tags": "Lexicon",
     "effects": [
-      "Requires Expanded Library upgrade+40% Physical Damage Bonus"
+      "Requires Expanded Library upgrade",
+      "+40% Physical Damage Bonus"
     ],
     "compatible_items": [
       "Any Lexicon"
@@ -357,8 +393,10 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "",
     "effects": [
-      "Body Armor: +10 Corruption Resistance",
-      "Helmets/Boots: +5 Corruption Resistance"
+      "Body Armor:",
+      "+10 Corruption Resistance",
+      "Helmets/Boots:",
+      "+5 Corruption Resistance"
     ],
     "compatible_items": [
       "Any Body Armor",
@@ -372,7 +410,8 @@
     "slots": "Boots",
     "tags": "",
     "effects": [
-      "Gain +3% Move Speed Movement Speed bonusGain +5% Lightning damage bonus"
+      "Gain +3% Move Speed Movement Speed bonus",
+      "Gain +5% Lightning damage bonus"
     ],
     "compatible_items": [
       "Any Boots"
@@ -385,7 +424,8 @@
     "slots": "Weapon",
     "tags": "Junk,Iron,Gold,Virgin",
     "effects": [
-      "Adds +33% of the existing weapon's Physical physical damage as Ethereal damageWeapon now inflicts Sapped (35% buildup)"
+      "Adds +33% of the existing weapon's Physical physical damage as Ethereal damage",
+      "Weapon now inflicts Sapped (35% buildup)"
     ],
     "compatible_items": [
       "Any Iron",
@@ -413,8 +453,11 @@
     "slots": "Weapon",
     "tags": "Virgin",
     "effects": [
-      "Weapon deals an AoE Fire \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
-      "and +5 flat 14px|link=Impact"
+      "Weapon deals an Ao",
+      "E Fire \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and",
+      "+5 flat 14px",
+      "link=Impact"
     ],
     "compatible_items": [
       "Any Virgin Weapon"
@@ -427,11 +470,20 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Virgin,Halfplate",
     "effects": [
-      "Body Armors: +20% Fire and +20% Frost damage resistance",
-      "flat -7 Weight (of the item)Helmets: +10% Ethereal damage resistance",
-      "+10% 14px|link=Impact resistance",
-      "and flat -3 Weight (of the item)Boots: +20% Lightning and +20% Decay damage resistance",
-      "and flat -5 Weight (of the item)"
+      "Body Armors:",
+      "+20% Fire and",
+      "+20% Frost damage resistance",
+      "flat",
+      "-7 Weight (of the item)Helmets:",
+      "+10% Ethereal damage resistance",
+      "+10% 14px",
+      "link=Impact resistance",
+      "and flat",
+      "-3 Weight (of the item)Boots:",
+      "+20% Lightning and",
+      "+20% Decay damage resistance",
+      "and flat",
+      "-5 Weight (of the item)"
     ],
     "compatible_items": [
       "Halfplate Set or Virgin Set (Body Armor",
@@ -459,7 +511,8 @@
     "slots": "Weapon",
     "tags": "Main Weapon",
     "effects": [
-      "Weapon gains +5 flat Lightning damage"
+      "Weapon gains",
+      "+5 flat Lightning damage"
     ],
     "compatible_items": [
       "Any Main Weapon"
@@ -500,7 +553,8 @@
     "slots": "Weapon",
     "tags": "Palladium",
     "effects": [
-      "Adds +33% of the existing weapon's Physical physical damage as Decay damageWeapon now inflicts Weaken (35% buildup)"
+      "Adds +33% of the existing weapon's Physical physical damage as Decay damage",
+      "Weapon now inflicts Weaken (35% buildup)"
     ],
     "compatible_items": [
       "Any Palladium Weapon"
@@ -526,7 +580,9 @@
     "slots": "Weapon,Lexicon",
     "tags": "Staff,Lexicon",
     "effects": [
-      "Requires Expanded Library upgrade+3% Movement SpeedRestore +0.1 Mana per second"
+      "Requires Expanded Library upgrade",
+      "+3% Movement Speed",
+      "Restore +0.1 Mana per second"
     ],
     "compatible_items": [
       "Any Staff or Lexicon"
@@ -539,7 +595,12 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Virgin,Desert",
     "effects": [
-      "Body Armor: +15% Frost damage bonusHelmet/Boots: +10% Frost damage bonusAny: -15% Lightning damage resistance"
+      "Body Armor:",
+      "+15% Frost damage bonus",
+      "Helmet/Boots:",
+      "+10% Frost damage bonus",
+      "Any:",
+      "-15% Lightning damage resistance"
     ],
     "compatible_items": [
       "Virgin Set",
@@ -557,7 +618,12 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Virgin,Fur",
     "effects": [
-      "Body Armor: +15% Fire damage bonusHelmet/Boots: +10% Fire damage bonusAny: -15% Ethereal damage resistance"
+      "Body Armor:",
+      "+15% Fire damage bonus",
+      "Helmet/Boots:",
+      "+10% Fire damage bonus",
+      "Any:",
+      "-15% Ethereal damage resistance"
     ],
     "compatible_items": [
       "Virgin Set",
@@ -588,7 +654,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +10 flat Decay damageWeapon now inflicts Extreme Poison (21% buildup)"
+      "Gain +10 flat Decay damage",
+      "Weapon now inflicts Extreme Poison (21% buildup)"
     ],
     "compatible_items": [
       "Horror Bow"
@@ -631,7 +698,9 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +11% Stamina Cost Stamina cost reduction (-11% Stamina costs)Reduces the Weight of this item by -9"
+      "Gain +11% Stamina Cost Stamina cost reduction (",
+      "-11% Stamina costs)Reduces the Weight of this item by",
+      "-9"
     ],
     "compatible_items": [
       "Black Plate Armor",
@@ -645,7 +714,8 @@
     "slots": "Weapon",
     "tags": "Dagger",
     "effects": [
-      "Requires Expanded Library upgrade+10% Decay Damage Bonus"
+      "Requires Expanded Library upgrade",
+      "+10% Decay Damage Bonus"
     ],
     "compatible_items": [
       "Any Dagger"
@@ -658,7 +728,8 @@
     "slots": "Weapon",
     "tags": "Main Weapon",
     "effects": [
-      "Weapon gains +5 flat Ethereal damage"
+      "Weapon gains",
+      "+5 flat Ethereal damage"
     ],
     "compatible_items": [
       "Any Main Weapon"
@@ -671,7 +742,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Weapon now inflicts Chill (40% buildup) and Scorched (40% buildup)Adds +4 flat Frost and +4 flat Fire damage"
+      "Weapon now inflicts Chill (40% buildup) and Scorched (40% buildup)Adds +4 flat Frost and",
+      "+4 flat Fire damage"
     ],
     "compatible_items": [
       "Kazite Chakram or Ornate Chakram"
@@ -684,7 +756,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +10% Lightning damage bonusGain +10% Move Speed Movement Speed bonus"
+      "Gain +10% Lightning damage bonus",
+      "Gain +10% Move Speed Movement Speed bonus"
     ],
     "compatible_items": [
       "Tenebrous Helm or Runic Helm"
@@ -698,7 +771,8 @@
     "tags": "Main Weapon",
     "effects": [
       "Converts 50% of Physical damage to Raw damage",
-      "Repairs weapon: +0.5 durability per second"
+      "Repairs weapon:",
+      "+0.5 durability per second"
     ],
     "compatible_items": [
       "Any Main Weapon"
@@ -711,8 +785,11 @@
     "slots": "Weapon",
     "tags": "Virgin",
     "effects": [
-      "Weapon deals an AoE Lightning \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
-      "and +5 flat 14px|link=Impact"
+      "Weapon deals an Ao",
+      "E Lightning \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and",
+      "+5 flat 14px",
+      "link=Impact"
     ],
     "compatible_items": [
       "Any Virgin Weapon"
@@ -725,7 +802,9 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +10% Ethereal damage bonusGain +10% 14px|link=Impact damage bonus"
+      "Gain +10% Ethereal damage bonus",
+      "Gain +10% 14px",
+      "link=Impact damage bonus"
     ],
     "compatible_items": [
       "Black Plate Helm",
@@ -753,7 +832,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain passive +0.2 Mana regeneration per second"
+      "Gain passive",
+      "+0.2 Mana regeneration per second"
     ],
     "compatible_items": [
       "Scholar Circlet"
@@ -771,7 +851,9 @@
       "Curse",
       "Doom",
       "Haunted",
-      "all with 21% buildupWeapon gains +0.1 flat Attack Speed Attack Speed"
+      "all with 21% buildup",
+      "Weapon gains",
+      "+0.1 flat Attack Speed Attack Speed"
     ],
     "compatible_items": [
       "Steel Sabre",
@@ -787,8 +869,10 @@
     "tags": "Brigand,Looter,Virgin",
     "effects": [
       "Body Armor: Gain +2 Protection",
-      "+10% link=Impact resistanceHelmet: Gain +1 Protection",
-      "+10% link=Impact resistanceBoots: Gain +1 Protection",
+      "+10% link=Impact resistance",
+      "Helmet: Gain +1 Protection",
+      "+10% link=Impact resistance",
+      "Boots: Gain +1 Protection",
       "+10% link=Impact resistance"
     ],
     "compatible_items": [
@@ -805,7 +889,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +20% Lightning damage bonusWeapon now inflicts Doomed (35% buildup) and Elemental Vulnerability (25% buildup)"
+      "Gain +20% Lightning damage bonus",
+      "Weapon now inflicts Doomed (35% buildup) and Elemental Vulnerability (25% buildup)"
     ],
     "compatible_items": [
       "Prayer Claymore",
@@ -819,7 +904,8 @@
     "slots": "Weapon",
     "tags": "Virgin,Troglodyte",
     "effects": [
-      "Adds +40% of the existing weapon's Physical physical damage as Decay damageWeapon now inflicts Poisoned (55% buildup)"
+      "Adds +40% of the existing weapon's Physical physical damage as Decay damage",
+      "Weapon now inflicts Poisoned (55% buildup)"
     ],
     "compatible_items": [
       "Any Virgin or Troglodyte Weapon"
@@ -845,7 +931,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Changes the color of the lantern to Red and effects of Flamethrower to Decay. See Flamethrower article for more detailsLantern can no longer be refueled",
+      "Changes the color of the lantern to Red and effects of Flamethrower to Decay. See Flamethrower article for more details",
+      "Lantern can no longer be refueled",
       "however it passively gains fuel when equipped but not lit."
     ],
     "compatible_items": [
@@ -859,8 +946,11 @@
     "slots": "Weapon",
     "tags": "Virgin",
     "effects": [
-      "Weapon deals an AoE Decay \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
-      "and +5 flat 14px|link=Impact"
+      "Weapon deals an Ao",
+      "E Decay \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and",
+      "+5 flat 14px",
+      "link=Impact"
     ],
     "compatible_items": [
       "Any Virgin Weapon"
@@ -873,8 +963,10 @@
     "slots": "Chest,Boots,Helmet",
     "tags": "",
     "effects": [
-      "Body Armor: +2 Barrier",
-      "Helmets/Boots: +1 Barrier"
+      "Body Armor:",
+      "+2 Barrier",
+      "Helmets/Boots:",
+      "+1 Barrier"
     ],
     "compatible_items": [
       "Any Armor"
@@ -887,7 +979,8 @@
     "slots": "Bow",
     "tags": "",
     "effects": [
-      "Gain +5 flat Frost damageWeapon now inflicts Slow Down (25% buildup)"
+      "Gain +5 flat Frost damage",
+      "Weapon now inflicts Slow Down (25% buildup)"
     ],
     "compatible_items": [
       "Any Bow"
@@ -900,8 +993,11 @@
     "slots": "Weapon",
     "tags": "Virgin",
     "effects": [
-      "Weapon deals an AoE Ethereal \"Blast\" with 0.25x damage multiplier (based on the Weapon's total base damage)",
-      "and +5 flat 14px|link=Impact"
+      "Weapon deals an Ao",
+      "E Ethereal \"Blast\" with 0.25x damage multiplier (based on the Weapon's total base damage)",
+      "and",
+      "+5 flat 14px",
+      "link=Impact"
     ],
     "compatible_items": [
       "Any Virgin weapon"
@@ -914,7 +1010,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +7% Move Speed Movement Speed bonusGain +5% Cooldown Reduction"
+      "Gain +7% Move Speed Movement Speed bonus",
+      "Gain +5% Cooldown Reduction"
     ],
     "compatible_items": [
       "Tenebrous Boots",
@@ -928,7 +1025,8 @@
     "slots": "Chest",
     "tags": "Copal",
     "effects": [
-      "Gain +10% Stamina Cost Stamina cost reduction (-10% Stamina costs)Gain +25% Ethereal damage bonus"
+      "Gain +10% Stamina Cost Stamina cost reduction (",
+      "-10% Stamina costs)Gain +25% Ethereal damage bonus"
     ],
     "compatible_items": [
       "Copal Armor or Green Copal Armor"
@@ -941,7 +1039,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +15% Fire and +25% Frost damage bonus"
+      "Gain +15% Fire and",
+      "+25% Frost damage bonus"
     ],
     "compatible_items": [
       "Halfplate Armor",
@@ -955,7 +1054,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +5% Cooldown ReductionGain +25% Decay damage bonus"
+      "Gain +5% Cooldown Reduction",
+      "Gain +25% Decay damage bonus"
     ],
     "compatible_items": [
       "Antique Plate Garb"
@@ -984,7 +1084,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +15 Corruption resistanceGain +25% Lightning damage bonus"
+      "Gain +15 Corruption resistance",
+      "Gain +25% Lightning damage bonus"
     ],
     "compatible_items": [
       "Silver Armor",
@@ -999,8 +1100,13 @@
     "tags": "Arcane,Clansage",
     "effects": [
       "Body Armors: Gain +3% Move Speed Movement Speed bonus",
-      "and +10% link=Mana|Mana Cost Mana cost reduction (-5% Mana costs)",
-      "and +5% 14px|link=Impact resistance"
+      "and",
+      "+10% link=Mana",
+      "Mana Cost Mana cost reduction (",
+      "-5% Mana costs)",
+      "and",
+      "+5% 14px",
+      "link=Impact resistance"
     ],
     "compatible_items": [
       "Arcane Set",
@@ -1015,7 +1121,8 @@
     "slots": "Weapon",
     "tags": "Junk,Iron,Gold,Virgin",
     "effects": [
-      "Adds +40% of the existing weapon's Physical physical damage as Lightning damageWeapon now inflicts Weaken (35% buildup)"
+      "Adds +40% of the existing weapon's Physical physical damage as Lightning damage",
+      "Weapon now inflicts Weaken (35% buildup)"
     ],
     "compatible_items": [
       "Any Iron",
@@ -1071,8 +1178,11 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Requires Expanded Library upgradeShot creates an AoE Fire explosion",
-      "dealing 0.29x Weapon base damage as Fire damage-23% Physical Damage Bonus"
+      "Requires Expanded Library upgrade",
+      "Shot creates an Ao",
+      "E Fire explosion",
+      "dealing 0.29x Weapon base damage as Fire damage",
+      "-23% Physical Damage Bonus"
     ],
     "compatible_items": [
       "Ornate Pistol"
@@ -1085,7 +1195,10 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Requires Expanded Library upgradeHits create an AoE Lightning blast which deals 0.603x (60.3%) Dagger's base damage-9% Lightning Damage Bonus"
+      "Requires Expanded Library upgrade",
+      "Hits create an Ao",
+      "E Lightning blast which deals 0.603x (60.3%) Dagger's base damage",
+      "-9% Lightning Damage Bonus"
     ],
     "compatible_items": [
       "Zhorn's Glowstone Dagger"
@@ -1098,7 +1211,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +10 flat Lightning damageWeapon now inflicts Sapped (30% buildup)"
+      "Gain +10 flat Lightning damage",
+      "Weapon now inflicts Sapped (30% buildup)"
     ],
     "compatible_items": [
       "Gold Bow"
@@ -1111,7 +1225,8 @@
     "slots": "Helmet",
     "tags": "Tattered,Worker",
     "effects": [
-      "Gain +5% Cooldown ReductionGain +5 Pouch Bonus"
+      "Gain +5% Cooldown Reduction",
+      "Gain +5 Pouch Bonus"
     ],
     "compatible_items": [
       "Straw Hat",
@@ -1126,7 +1241,8 @@
     "slots": "Chest",
     "tags": "Worker,Tattered,LightCloth,Garb",
     "effects": [
-      "Gain +5 Protection ProtectionGain +0.1 passive Health regeneration per second"
+      "Gain +5 Protection Protection",
+      "Gain +0.1 passive Health regeneration per second"
     ],
     "compatible_items": [
       "Worker",
@@ -1141,7 +1257,8 @@
     "slots": "Weapon",
     "tags": "Iron",
     "effects": [
-      "Adds +150% of the existing weapon's Physical physical damage as Physical damageMakes the weapon Indestructible"
+      "Adds +150% of the existing weapon's Physical physical damage as Physical damage",
+      "Makes the weapon Indestructible"
     ],
     "compatible_items": [
       "Any Iron Weapon"
@@ -1154,7 +1271,9 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Gain +10% Stamina Cost Stamina cost reduction (-10% Stamina costs)Gain +12% 14px|link=Impact resistance"
+      "Gain +10% Stamina Cost Stamina cost reduction (",
+      "-10% Stamina costs)Gain +12% 14px",
+      "link=Impact resistance"
     ],
     "compatible_items": [
       "Worker Boots",
@@ -1170,7 +1289,8 @@
     "slots": "",
     "tags": "",
     "effects": [
-      "Adds +35% of the existing weapon's Physical physical damage as Fire damageWeapon now inflicts Curse and Scorched (both 33% buildup)"
+      "Adds +35% of the existing weapon's Physical physical damage as Fire damage",
+      "Weapon now inflicts Curse and Scorched (both 33% buildup)"
     ],
     "compatible_items": [
       "Old Legion Gladius",
@@ -1185,7 +1305,10 @@
     "slots": "Chest,Helmet,Boots",
     "tags": "Virgin",
     "effects": [
-      "Body Armors: Gain +2 Protection and +10% Physical damage bonusHelmets/Boots: Gain +1 Protection and +5% Physical damage bonus"
+      "Body Armors: Gain +2 Protection and",
+      "+10% Physical damage bonus",
+      "Helmets/Boots: Gain +1 Protection and",
+      "+5% Physical damage bonus"
     ],
     "compatible_items": [
       "Plate Set",
@@ -1201,7 +1324,9 @@
     "slots": "Weapon",
     "tags": "Marble",
     "effects": [
-      "Gain +0.2 flat Attack Speed Attack SpeedReduces Weight by -50%"
+      "Gain +0.2 flat Attack Speed Attack Speed",
+      "Reduces Weight by",
+      "-50%"
     ],
     "compatible_items": [
       "Any Marble Weapon"
@@ -1214,8 +1339,11 @@
     "slots": "Weapon",
     "tags": "Virgin",
     "effects": [
-      "Weapon deals an AoE Frost \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
-      "and +5 flat 14px|link=Impact."
+      "Weapon deals an Ao",
+      "E Frost \"Blast\" with 0.33x damage multiplier (based on the Weapon's total base damage)",
+      "and",
+      "+5 flat 14px",
+      "link=Impact."
     ],
     "compatible_items": [
       "Any Virgin weapon"
@@ -1241,7 +1369,8 @@
     "slots": "Weapon",
     "tags": "Junk,Iron,Gold,Virgin",
     "effects": [
-      "Adds +40% of the existing weapon's Physical physical damage as Frost damageWeapon now inflicts Slow Down (35% buildup)"
+      "Adds +40% of the existing weapon's Physical physical damage as Frost damage",
+      "Weapon now inflicts Slow Down (35% buildup)"
     ],
     "compatible_items": [
       "Any Iron",
