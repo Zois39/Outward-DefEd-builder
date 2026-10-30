@@ -1528,7 +1528,7 @@ function renderWeaponList(){
       html+='</div></div>';
     }
 
-    // On-Hit Effects (or just "Effects" for torches)
+    // On-Hit Effects with buildup percentages
     if(w.on_hit_effects&&w.on_hit_effects.length>0){
       var isTorch=w.weapon_type==='torch';
       html+='<div class="effects-section"'+(isTorch?' style="background:rgba(39,174,96,.15);border:none"':'')+'>';
@@ -1537,9 +1537,14 @@ function renderWeaponList(){
       w.on_hit_effects.forEach(function(fx){
         var fxData=findEffectByName(fx);
         var fxImg=fxData?getEffectImage(fxData):null;
+
+        // Get buildup percentage
+        var buildup=w.effect_buildup?w.effect_buildup[fx]:null;
+        var buildupText=buildup?' ('+buildup+'%)':'';
+
         html+='<span class="effect-tag">';
         if(fxImg){html+='<img src="'+escHtml(fxImg)+'" loading="lazy" onerror="this.style.display=\'none\'">';}
-        html+=escHtml(fx);
+        html+=escHtml(fx)+buildupText;
         html+='</span>';
       });
       html+='</div></div>';
