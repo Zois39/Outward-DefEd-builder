@@ -2043,7 +2043,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Axe.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2085,7 +2085,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Claymore.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2127,7 +2127,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Greataxe.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2169,7 +2169,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Halberd.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2211,7 +2211,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Hammer.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2253,7 +2253,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Knuckles.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2295,7 +2295,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Mace.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2337,7 +2337,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Spear.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -2379,7 +2379,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Sword.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7344,7 +7344,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Axe.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7381,7 +7381,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Claymore.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7418,7 +7418,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Greataxe.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7455,7 +7455,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Halberd.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7492,7 +7492,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Hammer.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7529,7 +7529,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Knuckles.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7566,7 +7566,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Mace.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7603,7 +7603,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Spear.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -7640,7 +7640,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Sword.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
