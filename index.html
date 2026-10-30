@@ -1965,6 +1965,23 @@ function renderRewardLine(r){
   if(r.reputation)for(var city in r.reputation)parts.push(city+': '+r.reputation[city]+' rep');
   return parts.join(' \u00B7 ');
 }
+function renderRewardCards(r){
+  if(!r)return '';
+  var cards='';
+  if(r.skills&&r.skills.length)r.skills.forEach(function(sk){
+    var s=findSkill(sk);
+    var icon=s?(s.local_image||''):'';
+    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(sk)+'</span>';
+  });
+  var all=(r.items||[]).concat(r.unique_items||[]);
+  all.forEach(function(it){
+    var m=findWeapon(it)||findArmor(it)||findConsumable(it);
+    var icon=m?(m.local_image||''):'';
+    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(it)+'</span>';
+  });
+  (r.other||[]).forEach(function(o){cards+='<span style="font-size:12px;margin-right:8px;color:var(--dim)">'+escHtml(o)+'</span>';});
+  return cards;
+}
 function renderFactionsTab(pane){
   if(!BUILD.quests)BUILD.quests={faction:BUILD.faction||null,selected:{}};
   var html='';
