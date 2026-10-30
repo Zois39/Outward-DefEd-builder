@@ -441,7 +441,7 @@ function cleanDesc(text){
   // Remove object id
   text=text.replace(/object\s+id\s*=\s*\d+/gi,'');
   // Clean up extra whitespace
-  text=text.replace(/\s+/g,' ').trim();
+  text=text.replace(/[^\S\n]+/g,' ').trim();
   // Remove leading/trailing punctuation artifacts
   text=text.replace(/^[\s,;:|\-]+|[\s,;:|\-]+$/g,'');
   return text;
@@ -1874,7 +1874,7 @@ function renderSkillsList(){
           html+='<div class="skill-excl">\uD83D\uDEAB No breakthrough points left</div>';
         }
         if(skill.description){html+='<div class="skill-desc">'+escHtml(cleanDesc(skill.description))+'</div>';}
-        if(skill.effects){html+='<div class="skill-desc" style="color:var(--gold)">'+escHtml(cleanDesc(skill.effects))+'</div>';}
+        if(skill.effects){var effHtml=cleanDesc(skill.effects).split('\n').map(function(l){return l.trim();}).filter(Boolean).join('<br>');html+='<div class="skill-desc" style="color:var(--gold)">'+effHtml+'</div>';}
         if(skill.cost){html+='<div class="skill-cost">\uD83D\uDCB0 Cost: '+escHtml(skill.cost)+'</div>';}
         if(skill.trainer){
           html+='<div class="skill-meta" style="margin-top:4px">\uD83D\uDCCD '+escHtml(skill.trainer);
