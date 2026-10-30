@@ -422,7 +422,7 @@ function cleanDesc(text){
   // Remove JSON objects
   text=text.replace(/\{[^}]*\}/g,'');
   // Remove CSS properties
-  text=text.replace(/\w+\s*:\s*[^;{}]+;?/g,'');
+  text=text.replace(/\w+\s*:\s*[^;:{}]+;/g,''); // require trailing ';' so 'Name: description' text is not eaten
   // Remove file references
   text=text.replace(/\S+\.(png|jpg|jpeg|gif|svg|json|html|css|js|ts|tsx|jsx)/gi,'');
   // Remove URLs
