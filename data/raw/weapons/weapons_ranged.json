@@ -531,7 +531,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Damascene_Bow.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
@@ -1019,7 +1019,7 @@
       },
       "local_image": "assets/images/weapons/weapon_Masterpiece_Bow.png",
       "source_category": "loot_or_legacy",
-      "on_hit_effects": [
+      "passive_effects": [
         "Increases the damage of weapon skills"
       ]
     },
