@@ -1445,8 +1445,9 @@ function renderWeaponList(){
 
     if(WEAPON_FILTER.effect!=='all'){
       var hasEffect=false;
-      if(w.special_effects&&w.special_effects.length>0){
-        w.special_effects.forEach(function(fx){if(fx.toLowerCase().indexOf(WEAPON_FILTER.effect.toLowerCase())>=0)hasEffect=true;});
+      var filterName=WEAPON_FILTER.effect.toLowerCase();
+      if(w.on_hit_effects&&w.on_hit_effects.length>0){
+        w.on_hit_effects.forEach(function(fx){if(fx.toLowerCase().indexOf(filterName)>=0)hasEffect=true;});
       }
       if(!hasEffect)return false;
     }
