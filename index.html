@@ -418,7 +418,7 @@ function cleanDesc(text){
   // Remove HTML tags including unclosed
   text=text.replace(/<[^>]*>?/g,'');
   // Remove JavaScript keywords
-  text=text.replace(/\b(function|var|let|const|return|if|else|for|while|new|typeof)\b/gi,'');
+  text=text.replace(/(^|[\s=;{])(function|var|let|const|return|if|else|for|while|new|typeof)\b[\s]*[({;=]/gi,'$1');
   // Remove JSON objects
   text=text.replace(/\{[^}]*\}/g,'');
   // Remove CSS properties
