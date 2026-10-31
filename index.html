@@ -1975,9 +1975,12 @@ function renderRewardCards(r){
   });
   var all=(r.items||[]).concat(r.unique_items||[]);
   all.forEach(function(it){
-    var m=findWeapon(it)||findArmor(it)||findConsumable(it);
+    var nm=(typeof it==='object'&&it!==null)?(it.name||''):it;
+    var qty=(typeof it==='object'&&it!==null)?(it.quantity||1):1;
+    if(!nm)return;
+    var m=findWeapon(nm)||findArmor(nm)||findConsumable(nm);
     var icon=m?(m.local_image||''):'';
-    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(it)+'</span>';
+    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(nm)+(qty>1?' \u00D7'+qty:'')+'</span>';
   });
   (r.other||[]).forEach(function(o){cards+='<span style="font-size:12px;margin-right:8px;color:var(--dim)">'+escHtml(o)+'</span>';});
   return cards;
@@ -1991,6 +1994,7 @@ function renderFactionsTab(pane){
     var isSel=BUILD.quests.faction===f.id;
     html+='<div class="faction-card" style="'+(isSel?'outline:2px solid var(--gold);':'opacity:'+(BUILD.quests.faction&&!isSel?'0.35':'1')+';cursor:pointer')+'" '+(BUILD.quests.faction&&!isSel?'title="Mutually exclusive"':'')+' onclick="selectFaction(\''+f.id+'\')">';
     if(f.local_image)html+=imgHtml(f.local_image,'',60);
+    if(BUILD.quests.faction&&!isSel)html+='<div style="font-size:11px;color:#e67e22">\u26D4 Mutually exclusive</div>';
     html+='<div class="faction-name">'+escHtml(f.name)+'</div>';
     if(f.headquarters)html+='<div class="faction-desc">HQ: '+escHtml(f.headquarters)+'</div>';
     if(f.key_npcs&&f.key_npcs.length)html+='<div class="faction-desc">NPCs: '+escHtml(f.key_npcs.slice(0,3).join(', '))+'</div>';
@@ -2000,6 +2004,7 @@ function renderFactionsTab(pane){
   var isCommon=BUILD.quests.faction==='common';
   html+='<div class="faction-card" style="'+(isCommon?'outline:2px solid var(--gold);':'cursor:pointer')+'" onclick="selectFaction(\'common\')"><div class="faction-name">Common Quests</div><div class="faction-desc">Quests not tied to any faction</div></div>';
   html+='</div>';
+  if(BUILD.quests.faction)html+='<div style="margin:-6px 0 10px"><button onclick="selectFaction(\''+BUILD.quests.faction+'\')" style="padding:2px 10px;border-radius:6px;border:1px solid var(--panel2);background:transparent;color:var(--dim);cursor:pointer;font-size:12px">Clear faction selection</button></div>';
   var fid=BUILD.quests.faction;
   if(!fid){
     html+='<div class="panel-note">Select a faction above to browse its quests, rewards and choices.</div>';
@@ -2014,7 +2019,7 @@ function renderFactionsTab(pane){
     groups.forEach(function(g){
       var gl=topoSortQuests(list.filter(function(q){return (q.quest_type||'side')===g[0];}));
       if(!gl.length)return;
-      html+='<div class="filter-label">'+g[1]+' ('+gl.length+')</div>';
+      var selN=gl.filter(function(qq){return (BUILD.quests.selected||{})[qq.name]!==undefined&&(BUILD.quests.selected||{})[qq.name]!==null;}).length;html+='<div class="filter-label">'+g[1]+' \u2014 '+selN+'/'+gl.length+' selected</div>';
       gl.forEach(function(q){html+=renderQuestCardNew(q);});
     });
   }
@@ -2033,16 +2038,19 @@ function renderQuestCardNew(q){
   html+='<div style="display:flex;gap:10px;align-items:flex-start">';
   if(icon)html+=imgHtml(icon,'',48);
   html+='<div style="flex:1">';
-  html+='<div class="quest-name" style="cursor:pointer" onclick="toggleQuestDone(\''+q.name.replace(/'/g,"\\'")+'\')">'+escHtml(q.name)+(isSel?' \u2705':'')+'</div>';
+  var nm=q.name.replace(/'/g,"\\'");
+  var btn=st==='locked'?'<span style="color:#e74c3c;font-size:12px;white-space:nowrap">\u26D4 Locked</span>':'<button onclick="toggleQuestDone(\''+nm+'\')" style="white-space:nowrap;padding:2px 10px;border-radius:6px;border:1px solid var(--gold);background:'+(isSel?'var(--gold)':'transparent')+';color:'+(isSel?'#000':'var(--gold)')+';cursor:pointer;font-size:12px">'+(isSel?'Selected \u2713':'Select')+'</button>';
+  html+='<div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><div class="quest-name">'+escHtml(q.name)+'</div>'+btn+'</div>';
   var meta=[];
   if(q.quest_giver)meta.push('From: '+q.quest_giver);
   if(q.locations&&q.locations.length)meta.push(q.locations.slice(0,3).join(', '));
   html+='<div class="quest-meta" style="color:var(--dim);font-size:12px">'+escHtml(meta.join(' \u00B7 '))+'</div>';
-  if(q.time_limit)html+='<div class="quest-req" style="color:#e67e22">\u23F1 Time-limited: '+escHtml(cleanDesc(q.time_limit.description).slice(0,140))+'</div>';
+  if(q.time_limit)html+='<div class="quest-req" style="color:#e67e22">\u23F1 Time-limited: '+escHtml(cleanDesc(q.time_limit.description))+'</div>';
   if(q.requirements&&q.requirements.length)html+='<div class="quest-req" style="color:var(--gold)">\u26A0\uFE0F Requires: '+escHtml(q.requirements.join(', '))+'</div>';
   if(lock)html+='<div class="quest-req" style="color:#e74c3c">\u26D4 '+escHtml(lock)+'</div>';
   if(st!=='locked'){
-    html+='<div class="quest-desc" style="margin-top:4px">'+escHtml(cleanDesc(q.description||'').slice(0,220))+(q.source_url?' <a href="'+q.source_url+'" target="_blank" style="color:var(--blue)">Wiki \u2197</a>':'')+'</div>';
+    var d=cleanDesc(q.description||'');
+    html+='<div class="quest-desc" style="margin-top:4px;font-size:12px">'+escHtml(d.slice(0,180))+(d.length>180?' <details style="display:inline"><summary style="cursor:pointer;color:var(--blue);display:inline">...more</summary><span>'+escHtml(d.slice(180))+'</span></details>':'')+(q.source_url?' <a href="'+q.source_url+'" target="_blank" style="color:var(--blue)">Wiki \u2197</a>':'')+'</div>';
     var outs=q.outcomes||[];
     if(outs.length>1){
       outs.forEach(function(o,idx){
@@ -2079,7 +2087,8 @@ function renderQuestSummary(){
     (r.skills||[]).forEach(function(x){skills[x]=1;});
     (o.locks_quests||[]).forEach(function(l){warn.push('Choice in "'+name+'" locks quest: '+l);});
   }
-  var html='<div class="filter-label" style="margin-top:14px">Summary</div><div class="quest-item" style="padding:8px;border:1px solid var(--panel2);border-radius:8px">';
+  var kSel=0;for(var kn in sel)if(sel[kn]!==null&&sel[kn]!==undefined)kSel++;
+  var html='<div class="filter-label" style="margin-top:14px">Summary \u2014 '+kSel+' quest(s) selected</div><div class="quest-item" style="padding:8px;border:1px solid var(--panel2);border-radius:8px">';
   html+='<div>Silver: <b>'+silver+'</b> \u00B7 Experience: <b>'+xp+'</b> \u00B7 Time-limited selected: <b>'+tl+'</b></div>';
   var ik=Object.keys(items);if(ik.length)html+='<div style="font-size:12px;margin-top:4px">Items: '+escHtml(ik.slice(0,12).join(', '))+(ik.length>12?' +'+(ik.length-12):'')+'</div>';
   var sk=Object.keys(skills);if(sk.length)html+='<div style="font-size:12px;margin-top:2px">Skills: '+escHtml(sk.join(', '))+'</div>';
