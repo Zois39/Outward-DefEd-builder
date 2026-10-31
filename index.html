@@ -1971,7 +1971,9 @@ function renderRewardCards(r){
   if(r.skills&&r.skills.length)r.skills.forEach(function(sk){
     var s=findSkill(sk);
     var icon=s?(s.local_image||''):'';
-    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(sk)+'</span>';
+    var st=s?((s.skill_type||'')+(s.subtype?' / '+s.subtype:'')):'';
+    var badge=st?' <span style="color:var(--dim);font-size:10px">('+escHtml(st)+')</span>':'';
+    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(sk)+badge+'</span>';
   });
   var all=(r.items||[]).concat(r.unique_items||[]);
   all.forEach(function(it){
