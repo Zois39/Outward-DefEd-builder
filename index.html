@@ -1982,7 +1982,8 @@ function renderRewardCards(r){
     if(!nm)return;
     var m=findWeapon(nm)||findArmor(nm)||findConsumable(nm);
     var icon=m?(m.local_image||''):'';
-    cards+='<span style="display:inline-flex;align-items:center;gap:4px;margin-right:8px;font-size:12px">'+(icon?imgHtml(icon,'',20):'')+escHtml(nm)+(qty>1?' \u00D7'+qty:'')+'</span>';
+    var note=it.note||'';
+    cards+='<span style="display:inline-flex;align-items:flex-start;gap:4px;margin-right:10px;font-size:12px;max-width:260px">'+(icon?imgHtml(icon,'',20):'')+'<span>'+escHtml(nm)+(qty>1?' \u00D7'+qty:'')+(note?'<br><span style="color:var(--dim);font-size:10px">'+escHtml(note)+'</span>':'')+'</span></span>';
   });
   (r.other||[]).forEach(function(o){cards+='<span style="font-size:12px;margin-right:8px;color:var(--dim)">'+escHtml(o)+'</span>';});
   return cards;
@@ -2064,7 +2065,11 @@ function renderQuestCardNew(q){
     if(o){
       var rl=renderRewardLine(o.rewards||{});
       if(rl)html+='<div style="font-size:12px;color:var(--gold);margin-top:2px">'+escHtml(rl)+'</div>';
-      var rc=renderRewardCards(o.rewards||{});
+      var rw=o.rewards||{};
+      if(o.reward_notes){
+        rw=Object.assign({},rw,{unique_items:(rw.unique_items||[]).map(function(u){return o.reward_notes[u]?{name:u,note:o.reward_notes[u]}:u;})});
+      }
+      var rc=renderRewardCards(rw);
       if(rc)html+='<div style="margin-top:4px">'+rc+'</div>';
       if(o.unique_consequences)html+='<div style="font-size:12px;color:#e67e22;margin-top:2px">Consequence: '+escHtml(cleanDesc(o.unique_consequences))+'</div>';
     }
@@ -2074,7 +2079,7 @@ function renderQuestCardNew(q){
 }
 function renderQuestSummary(){
   var sel=BUILD.quests.selected||{};
-  var silver=0,xp=0,items={},skills={},tl=0,warn=[];
+  var silver=0,xp=0,items={},itemNotes={},skills={},tl=0,warn=[];
   for(var name in sel){
     if(sel[name]===null||sel[name]===undefined)continue;
     var q=null;for(var i=0;i<DATA.quests.length;i++)if(DATA.quests[i].name===name)q=DATA.quests[i];
@@ -2084,8 +2089,9 @@ function renderQuestSummary(){
     var r=o.rewards||{};
     if(r.silver)silver+=r.silver;
     if(r.experience)xp+=r.experience;
-    (r.unique_items||[]).forEach(function(x){items[x]=1;});
-    (r.items||[]).forEach(function(x){items[x]=1;});
+    (r.unique_items||[]).forEach(function(x){var k=(typeof x==='object'&&x!==null)?x.name:x;if(k)items[k]=1;});
+    if(o.reward_notes)for(var nmn in o.reward_notes)itemNotes[nmn]=o.reward_notes[nmn];
+    (r.items||[]).forEach(function(x){var k=(typeof x==='object'&&x!==null)?x.name:x;if(k)items[k]=1;});
     (r.skills||[]).forEach(function(x){skills[x]=1;});
     (o.locks_quests||[]).forEach(function(l){warn.push('Choice in "'+name+'" locks quest: '+l);});
   }
@@ -2093,6 +2099,7 @@ function renderQuestSummary(){
   var html='<div class="filter-label" style="margin-top:14px">Summary \u2014 '+kSel+' quest(s) selected</div><div class="quest-item" style="padding:8px;border:1px solid var(--panel2);border-radius:8px">';
   html+='<div>Silver: <b>'+silver+'</b> \u00B7 Experience: <b>'+xp+'</b> \u00B7 Time-limited selected: <b>'+tl+'</b></div>';
   var ik=Object.keys(items);if(ik.length)html+='<div style="font-size:12px;margin-top:4px">Items: '+escHtml(ik.slice(0,12).join(', '))+(ik.length>12?' +'+(ik.length-12):'')+'</div>';
+  var ink=Object.keys(itemNotes);if(ink.length)html+='<div style="font-size:11px;color:var(--dim);margin-top:2px">'+ink.slice(0,6).map(function(n){return escHtml(n)+': '+escHtml(itemNotes[n].slice(0,90));}).join('<br>')+'</div>';
   var sk=Object.keys(skills);if(sk.length)html+='<div style="font-size:12px;margin-top:2px">Skills: '+escHtml(sk.join(', '))+'</div>';
   warn.forEach(function(w){html+='<div style="font-size:12px;color:#e74c3c;margin-top:2px">\u26A0 '+escHtml(w)+'</div>';});
   return html+'</div>';
