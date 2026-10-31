@@ -1965,6 +1965,7 @@ function renderRewardLine(r){
   if(r.reputation)for(var city in r.reputation)parts.push(city+': '+r.reputation[city]+' rep');
   return parts.join(' \u00B7 ');
 }
+window.REWARD_IMGS={'Kazite Armor':'assets/images/quests/rewards/kazite_armor.png','Kazite Boots':'assets/images/quests/rewards/kazite_boots.png','Wolf Medic Armor':'assets/images/quests/rewards/wolf_medic_armor.png','Fur Tent':'assets/images/quests/rewards/fur_tent.png',"Ghost's Eye":"assets/images/quests/rewards/ghost_s_eye.png",'Giant-Heart Garnet':'assets/images/quests/rewards/giant_heart_garnet.png','Gold Ingot':'assets/images/quests/rewards/gold_ingot.png','Iron Wristband':'assets/images/quests/rewards/iron_wristband.png','Large Emerald':'assets/images/quests/rewards/large_emerald.png','Medium Ruby':'assets/images/quests/rewards/medium_ruby.png','Occult Remains':'assets/images/quests/rewards/occult_remains.png','Ornate Chest':'assets/images/quests/rewards/ornate_chest.png','Palladium Scrap':'assets/images/quests/rewards/palladium_scrap.png','Pot-au-Feu':'assets/images/quests/rewards/pot_au_feu.png','Power Coil':'assets/images/quests/rewards/power_coil.png','Stingleaf':'assets/images/quests/rewards/stingleaf.png','Tsar Stone':'assets/images/quests/rewards/tsar_stone.png','Peacemaker Elixir':'assets/images/quests/rewards/peacemaker_elixir.png','Tsar Bow':'assets/images/quests/rewards/tsar_bow.png','Tsar Chakram':'assets/images/quests/rewards/tsar_chakram.png','Royal Great-Khopesh':'assets/images/quests/rewards/royal_great_khopesh.png','Radiant Wolf Sword':'assets/images/quests/rewards/radiant_wolf_sword.png','Brutal Axe':'assets/images/quests/rewards/brutal_axe.png','Desert Khopesh':'assets/images/quests/rewards/desert_khopesh.png','Lantern of Souls':'assets/images/quests/rewards/lantern_of_souls.png','Coralhorn Bow':'assets/images/quests/rewards/coralhorn_bow.png'};
 function renderRewardCards(r){
   if(!r)return '';
   var cards='';
@@ -1982,7 +1983,8 @@ function renderRewardCards(r){
     if(!nm)return;
     var m=findWeapon(nm)||findArmor(nm)||findConsumable(nm);
     var icon=m?(m.local_image||''):'';
-    var note=it.note||'';
+    if(!icon)icon=(window.REWARD_IMGS||{})[nm]||'';
+    var note=(typeof it==='object'&&it!==null)?(it.note||''):'';
     cards+='<span style="display:inline-flex;align-items:flex-start;gap:4px;margin-right:10px;font-size:12px;max-width:260px">'+(icon?imgHtml(icon,'',20):'')+'<span>'+escHtml(nm)+(qty>1?' \u00D7'+qty:'')+(note?'<br><span style="color:var(--dim);font-size:10px">'+escHtml(note)+'</span>':'')+'</span></span>';
   });
   (r.other||[]).forEach(function(o){cards+='<span style="font-size:12px;margin-right:8px;color:var(--dim)">'+escHtml(o)+'</span>';});
@@ -2032,16 +2034,17 @@ function renderFactionsTab(pane){
 function renderQuestCardNew(q){
   var sel=BUILD.quests.selected||{};
   var chosen=(sel[q.name]===undefined)?null:sel[q.name];
-  var isSel=chosen!==null;
+  var isSel=(chosen!==undefined&&chosen!==null);
+  var hasPick=isSel&&chosen>=0;
   var lock=questLockReason(q);
   var st=lock?'locked':(isSel?'selected':'available');
+  var nm=q.name.replace(/'/g,"\\'");
   var html='<div class="quest-item" data-state="'+st+'" style="'+(st==='locked'?'opacity:0.45;':'')+(st==='selected'?'outline:1px solid var(--gold);':'')+'margin-bottom:8px;padding:8px;border:1px solid var(--panel2);border-radius:8px">';
   var icon=q.local_image||'';
   if(!icon){var fq=questFactionOf(q);icon=fq&&fq.local_image?fq.local_image:'';}
   html+='<div style="display:flex;gap:10px;align-items:flex-start">';
   if(icon)html+=imgHtml(icon,'',48);
   html+='<div style="flex:1">';
-  var nm=q.name.replace(/'/g,"\\'");
   var btn=st==='locked'?'<span style="color:#e74c3c;font-size:12px;white-space:nowrap">\u26D4 Locked</span>':'<button onclick="toggleQuestDone(\''+nm+'\')" style="white-space:nowrap;padding:2px 10px;border-radius:6px;border:1px solid var(--gold);background:'+(isSel?'var(--gold)':'transparent')+';color:'+(isSel?'#000':'var(--gold)')+';cursor:pointer;font-size:12px">'+(isSel?'Selected \u2713':'Select')+'</button>';
   html+='<div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><div class="quest-name">'+escHtml(q.name)+'</div>'+btn+'</div>';
   var meta=[];
@@ -2054,24 +2057,31 @@ function renderQuestCardNew(q){
   if(st!=='locked'){
     var d=cleanDesc(q.description||'');
     html+='<div class="quest-desc" style="margin-top:4px;font-size:12px">'+escHtml(d.slice(0,180))+(d.length>180?' <details style="display:inline"><summary style="cursor:pointer;color:var(--blue);display:inline">...more</summary><span>'+escHtml(d.slice(180))+'</span></details>':'')+(q.source_url?' <a href="'+q.source_url+'" target="_blank" style="color:var(--blue)">Wiki \u2197</a>':'')+'</div>';
-    var outs=q.outcomes||[];
-    if(outs.length>1){
-      outs.forEach(function(o,idx){
-        var on=chosen===idx;
-        html+='<label style="display:block;margin:3px 0;cursor:pointer;color:'+(on?'var(--gold)':'var(--text)')+'"><input type="radio" name="out_'+q.name.replace(/[^a-z0-9]/gi,'_')+'" '+(on?'checked':'')+' onclick="selectOutcome(\''+q.name.replace(/'/g,"\\'")+'\','+idx+')"> '+escHtml(o.outcome_name||('Option '+(idx+1)))+(o.outcome_verified===false?' <span style="color:var(--dim);font-size:11px">(unverified)</span>':'')+'</label>';
-      });
-    }
-    var o=outs[chosen===null?0:chosen];
-    if(o){
-      var rl=renderRewardLine(o.rewards||{});
-      if(rl)html+='<div style="font-size:12px;color:var(--gold);margin-top:2px">'+escHtml(rl)+'</div>';
-      var rw=o.rewards||{};
-      if(o.reward_notes){
-        rw=Object.assign({},rw,{unique_items:(rw.unique_items||[]).map(function(u){return o.reward_notes[u]?{name:u,note:o.reward_notes[u]}:u;})});
+    if(isSel){
+      var outs=q.outcomes||[];
+      if(outs.length>1){
+        html+='<div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:6px">';
+        outs.forEach(function(o,idx){
+          var on=chosen===idx;
+          html+='<button onclick="selectOutcome(\''+nm+'\','+idx+')" style="padding:3px 10px;border-radius:12px;border:1px solid '+(on?'var(--gold)':'var(--panel2)')+';background:'+(on?'var(--gold)':'transparent')+';color:'+(on?'#000':'var(--text)')+';cursor:pointer;font-size:11px" title="'+escHtml(o.description||'')+'">'+escHtml(o.outcome_name||('Option '+(idx+1)))+(o.outcome_verified===false?' ?':'')+'</button>';
+        });
+        html+='</div>';
       }
-      var rc=renderRewardCards(rw);
-      if(rc)html+='<div style="margin-top:4px">'+rc+'</div>';
-      if(o.unique_consequences)html+='<div style="font-size:12px;color:#e67e22;margin-top:2px">Consequence: '+escHtml(cleanDesc(o.unique_consequences))+'</div>';
+      var o=hasPick?outs[chosen]:null;
+      if(o){
+        html+='<div style="margin-top:6px;padding:6px;border-left:3px solid var(--gold);background:var(--panel);border-radius:0 6px 6px 0">';
+        if(outs.length>1)html+='<div style="font-size:11px;color:var(--dim)">'+escHtml(o.outcome_name)+'</div>';
+        var rl=renderRewardLine(o.rewards||{});
+        if(rl)html+='<div style="font-size:12px;color:var(--gold)">'+escHtml(rl)+'</div>';
+        var rw=o.rewards||{};
+        if(o.reward_notes){
+          rw=Object.assign({},rw,{unique_items:(rw.unique_items||[]).map(function(u){return o.reward_notes[u]?{name:u,note:o.reward_notes[u]}:u;})});
+        }
+        var rc=renderRewardCards(rw);
+        if(rc)html+='<div style="margin-top:4px">'+rc+'</div>';
+        if(o.unique_consequences)html+='<div style="font-size:12px;color:#e67e22;margin-top:2px">Consequence: '+escHtml(cleanDesc(o.unique_consequences))+'</div>';
+        html+='</div>';
+      }
     }
   }
   html+='</div></div></div>';
@@ -2081,7 +2091,7 @@ function renderQuestSummary(){
   var sel=BUILD.quests.selected||{};
   var silver=0,xp=0,items={},itemNotes={},skills={},tl=0,warn=[];
   for(var name in sel){
-    if(sel[name]===null||sel[name]===undefined)continue;
+    if(sel[name]===null||sel[name]===undefined||sel[name]<0)continue;
     var q=null;for(var i=0;i<DATA.quests.length;i++)if(DATA.quests[i].name===name)q=DATA.quests[i];
     if(!q)continue;
     if(q.time_limit)tl++;
@@ -2095,7 +2105,7 @@ function renderQuestSummary(){
     (r.skills||[]).forEach(function(x){skills[x]=1;});
     (o.locks_quests||[]).forEach(function(l){warn.push('Choice in "'+name+'" locks quest: '+l);});
   }
-  var kSel=0;for(var kn in sel)if(sel[kn]!==null&&sel[kn]!==undefined)kSel++;
+  var kSel=0;for(var kn in sel)if(sel[kn]!==null&&sel[kn]!==undefined&&sel[kn]>=0)kSel++;
   var html='<div class="filter-label" style="margin-top:14px">Summary \u2014 '+kSel+' quest(s) selected</div><div class="quest-item" style="padding:8px;border:1px solid var(--panel2);border-radius:8px">';
   html+='<div>Silver: <b>'+silver+'</b> \u00B7 Experience: <b>'+xp+'</b> \u00B7 Time-limited selected: <b>'+tl+'</b></div>';
   var ik=Object.keys(items);if(ik.length)html+='<div style="font-size:12px;margin-top:4px">Items: '+escHtml(ik.slice(0,12).join(', '))+(ik.length>12?' +'+(ik.length-12):'')+'</div>';
@@ -2112,7 +2122,10 @@ function selectOutcome(name,idx){
 function toggleQuestDone(name){
   if(!BUILD.quests)BUILD.quests={faction:BUILD.faction||null,selected:{}};
   var cur=BUILD.quests.selected[name];
-  BUILD.quests.selected[name]=(cur===undefined||cur===null)?0:null;
+  var q=null;for(var i=0;i<DATA.quests.length;i++)if(DATA.quests[i].name===name)q=DATA.quests[i];
+  var multi=q&&(q.outcomes||[]).length>1;
+  if(cur===undefined||cur===null){BUILD.quests.selected[name]=multi?-1:0;}
+  else{BUILD.quests.selected[name]=null;}
   saveBuild();renderTab('factions');renderBuilder();
 }
 function selectFaction(fid){
