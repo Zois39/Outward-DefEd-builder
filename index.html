@@ -2471,7 +2471,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_'+hash;
+  var key='build_analysis_v4_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
@@ -2600,7 +2600,7 @@ function guessBuildRole(){
 function renderAnalysisMd(text){
   var esc=escHtml(text);
   var ls=esc.split('\n');
-  var html='';var listType=null;var seen={};
+  var html='';var listType=null;var seen={};var secNum=0;
   function closeList(){if(listType){html+='</'+listType+'>';listType=null;}}
   for(var i=0;i<ls.length;i++){
     var t=ls[i].trim();
@@ -2608,6 +2608,8 @@ function renderAnalysisMd(text){
     var dk=t.toLowerCase();
     if(seen[dk])continue; // дедупликация: повтор строки не выводим
     seen[dk]=1;
+    var sh=t.match(/^\d+[.)]\s+((?:сильные|слабости|конкретные|улучшения|strengths|weaknesses|concrete)[^]*)$/i);
+    if(sh){secNum++;closeList();html+='<h3>'+secNum+'. '+sh[1].replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')+'</h3>';continue;}
     var bold=function(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');};
     if(/^(-{3,}|\*{3,})$/.test(t)){closeList();continue;}
     var hm=t.match(/^(#{1,3})\s+(.*)$/);
@@ -2650,24 +2652,32 @@ function stripOrphanPunct(html){
 function renderAnalysis(data){
   var res=document.getElementById('build-analysis-result');
   res.className='visible';
-  var html=renderAnalysisMd(data.analysis||t9n('empty'));
   var nameMap={};
   Object.keys(data.index||{}).forEach(function(k){
     var e=data.index[k];if(e&&e.name)nameMap[e.name.toLowerCase()]=e;
   });
-  if(/\[\[(item|skill|quest):[^\]]+\]\]/.test(html)){
-    html=html.replace(/\[\[(item|skill|quest):([^\]]+)\]\]/g,function(m,t,n){
-      var e=nameMap[n.trim().toLowerCase()];
-      return (e&&e.name)?analysisCardHtml(e):m;
-    });
-  }else{
-    // fallback: модель не вставила токены — подставляем карточки по упоминанию имён из базы
-    Object.keys(data.index||{}).forEach(function(k){
-      var e=data.index[k];if(!e||!e.name||e.name.length<4)return;
-      var idx=html.indexOf(e.name);
-      if(idx>=0){html=html.slice(0,idx)+analysisCardHtml(e)+html.slice(idx+e.name.length);}
-    });
-  }
+  // 1) чистый текст: токены (переносы/пробелы допустимы) -> плейсхолдеры; неизвестное имя -> чистое имя
+  var text=String(data.analysis||t9n('empty'));
+  text=text.replace(/\[\[(item|skill|quest):\s*([^\]]+?)\s*\]\]/g,function(m,t,n){
+    var e=nameMap[n.trim().toLowerCase()];
+    return e?('@@CARD:'+t+':'+e.name+'@@END'):n.trim();
+  });
+  // 2) fallback по именам — в чистом тексте; вхождения внутри плейсхолдеров пропускаем
+  Object.keys(data.index||{}).forEach(function(k){
+    var e=data.index[k];if(!e||!e.name||e.name.length<4)return;
+    var idx=text.indexOf(e.name);
+    if(idx<0)return;
+    var beforeText=text.slice(0,idx);
+    if(beforeText.lastIndexOf('@@CARD:')>beforeText.lastIndexOf('@@END'))return; // уже в плейсхолдере
+    text=text.slice(0,idx)+'@@CARD:'+e.type+':'+e.name+'@@END'+text.slice(idx+e.name.length);
+  });
+  // 3) markdown-рендер (плейсхолдеры не трогает escHtml)
+  var html=renderAnalysisMd(text);
+  // 4) плейсхолдеры -> карточки
+  html=html.replace(/@@CARD:(item|skill|quest):([^@]+)@@END/g,function(m,t,n){
+    var e=nameMap[n.toLowerCase()];
+    return (e&&e.name)?analysisCardHtml(e):escHtml(n);
+  });
   html=stripOrphanPunct(html);
   res.innerHTML=html+(data.model?'<div class="analysis-meta">Модель: '+escHtml(data.model)+'</div>':'');
 }
