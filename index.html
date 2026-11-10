@@ -2449,6 +2449,7 @@ function closeEnchantModal(){
 
 
 const WORKER_URL='https://outward-build-analyzer.outward-analyzer-4f2a.workers.dev';
+const UI_LANG='en'; // 'en' — язык интерфейса; переключатель RU/EN меняет эту константу
 
 function analyzeBuild(){
   var res=document.getElementById('build-analysis-result');
@@ -2463,7 +2464,7 @@ function analyzeBuild(){
   res.className='visible';
   res.innerHTML='<div class="analysis-loading">Анализируем билд…</div>';
   btn.disabled=true;
-  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({build:payload})})
+  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({build:payload,lang:UI_LANG})})
   .then(function(r){return r.json();})
   .then(function(data){
     btn.disabled=false;
@@ -2592,17 +2593,30 @@ function renderAnalysisMd(text){
   return html;
 }
 
+function analysisCardHtml(e){
+  var img=e.img?'<img src="'+escHtml(e.img)+'" alt="">':'';
+  var sub=e.slot?e.slot:e.type_name?e.type_name:(e.tier?'T'+e.tier:'');
+  return '<div class="analysis-card">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
+}
+
 function renderAnalysis(data){
   var res=document.getElementById('build-analysis-result');
   res.className='visible';
   var html=renderAnalysisMd(data.analysis||'Пустой ответ.');
-  html=html.replace(/\[\[(item|skill):(\d+)\]\]/g,function(m,t,n){
-    var e=(data.index||{})[t+':'+n];
-    if(!e||!e.name)return m;
-    var img=e.img?'<img src="'+escHtml(e.img)+'" alt="">':'';
-    var sub=e.slot?e.slot:e.type_name?e.type_name:(e.tier?'T'+e.tier:'');
-    return '<div class="analysis-card">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
-  });
+  if(/\[\[(item|skill):(\d+)\]\]/.test(html)){
+    html=html.replace(/\[\[(item|skill):(\d+)\]\]/g,function(m,t,n){
+      var e=(data.index||{})[t+':'+n];
+      if(!e||!e.name)return m;
+      return analysisCardHtml(e);
+    });
+  }else{
+    // fallback: модель не вставила токены — подставляем карточки по упоминанию имён из базы
+    Object.keys(data.index||{}).forEach(function(k){
+      var e=data.index[k];if(!e||!e.name||e.name.length<4)return;
+      var idx=html.indexOf(e.name);
+      if(idx>=0){html=html.slice(0,idx)+analysisCardHtml(e)+html.slice(idx+e.name.length);}
+    });
+  }
   res.innerHTML=html+(data.model?'<div class="analysis-meta">Модель: '+escHtml(data.model)+'</div>':'');
 }
 
