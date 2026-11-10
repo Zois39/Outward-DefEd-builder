@@ -2454,7 +2454,15 @@ function closeEnchantModal(){
 
 
 const WORKER_URL='https://outward-build-analyzer.outward-analyzer-4f2a.workers.dev';
-const UI_LANG='en'; // 'en' — язык интерфейса; переключатель RU/EN меняет эту константу
+const UI_LANG='en'; // 'en' — язык интерфейса; переключатель RU/EN меняет эту константу и вызывает setAnalysisLang()
+
+const ANALYSIS_I18N={
+  en:{btn:'Analyze Build',loading:'Analyzing build…',empty:'Empty response.',offline:'Cannot reach analysis server. Try again later.',server:'Analysis server is unavailable. Try again later.'},
+  ru:{btn:'Анализ билда',loading:'Анализируем билд…',empty:'Пустой ответ.',offline:'Нет соединения с сервером анализа. Попробуйте позже.',server:'Сервер анализа недоступен. Попробуйте позже.'}
+};
+function t9n(key){var d=ANALYSIS_I18N[UI_LANG]||ANALYSIS_I18N.en;return d[key]||ANALYSIS_I18N.en[key]||key;}
+function setAnalysisLang(){var b=document.getElementById('btn-analyze-build');if(b)b.textContent=t9n('btn');}
+setAnalysisLang();
 
 function analyzeBuild(){
   var res=document.getElementById('build-analysis-result');
@@ -2467,18 +2475,18 @@ function analyzeBuild(){
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
-  res.innerHTML='<div class="analysis-loading">Анализируем билд…</div>';
+  res.innerHTML='<div class="analysis-loading">'+t9n('loading')+'</div>';
   btn.disabled=true;
   fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({build:payload,lang:UI_LANG})})
   .then(function(r){return r.json();})
   .then(function(data){
     btn.disabled=false;
-    if(!data||data.error){showAnalysisError((data&&data.error)||'Сервер анализа недоступен. Попробуйте позже.');return;}
+    if(!data||data.error){showAnalysisError((data&&data.error)||t9n('server'));return;}
     data.index=payload.index;
     try{localStorage.setItem(key,JSON.stringify(data));}catch(e){}
     renderAnalysis(data);
   })
-  .catch(function(){btn.disabled=false;showAnalysisError('Нет соединения с сервером анализа. Попробуйте позже.');});
+  .catch(function(){btn.disabled=false;showAnalysisError(t9n('offline'));});
 }
 
 function showAnalysisError(msg){
@@ -2592,11 +2600,14 @@ function guessBuildRole(){
 function renderAnalysisMd(text){
   var esc=escHtml(text);
   var ls=esc.split('\n');
-  var html='';var listType=null;
+  var html='';var listType=null;var seen={};
   function closeList(){if(listType){html+='</'+listType+'>';listType=null;}}
   for(var i=0;i<ls.length;i++){
     var t=ls[i].trim();
     if(!t){closeList();continue;}
+    var dk=t.toLowerCase();
+    if(seen[dk])continue; // дедупликация: повтор строки не выводим
+    seen[dk]=1;
     var bold=function(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');};
     if(/^(-{3,}|\*{3,})$/.test(t)){closeList();continue;}
     var hm=t.match(/^(#{1,3})\s+(.*)$/);
@@ -2620,19 +2631,17 @@ function analysisCardHtml(e){
   return '<div class="analysis-card analysis-card-clickable" data-type="'+escHtml(e.type||'')+'" data-name="'+escHtml(e.name||'')+'" onclick="openAnalysisTarget(\''+t+'\',\''+n+'\')">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
 }
 
-// Сиротская пунктуация вокруг карточек: "( карточка )", ", карточка", "карточка,".
+// Сиротская пунктуация вокруг карточек: "( карточка )", ", карточка", "карточка,", "/карточка".
 function stripOrphanPunct(html){
-  var CARD='<div class="analysis-card';
-  var TAIL='</div></div>';
   for(var pass=0;pass<5;pass++){
     var before=html;
-    // пара: ( карточка )
     html=html.replace(/\(\s*(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\)/g,'$1');
-    // одиночные скобки/запятые у карточки
     html=html.replace(/\(\s*(?=<div class="analysis-card)/g,'');
     html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\)/g,'$1');
     html=html.replace(/,\s*(?=<div class="analysis-card)/g,'');
     html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*,/g,'$1 ');
+    html=html.replace(/\/\s*(?=<div class="analysis-card)/g,'');
+    html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\//g,'$1 ');
     if(html===before)break;
   }
   return html;
@@ -2641,12 +2650,15 @@ function stripOrphanPunct(html){
 function renderAnalysis(data){
   var res=document.getElementById('build-analysis-result');
   res.className='visible';
-  var html=renderAnalysisMd(data.analysis||'Пустой ответ.');
-  if(/\[\[(item|skill|quest):(\d+)\]\]/.test(html)){
-    html=html.replace(/\[\[(item|skill|quest):(\d+)\]\]/g,function(m,t,n){
-      var e=(data.index||{})[t+':'+n];
-      if(!e||!e.name)return m;
-      return analysisCardHtml(e);
+  var html=renderAnalysisMd(data.analysis||t9n('empty'));
+  var nameMap={};
+  Object.keys(data.index||{}).forEach(function(k){
+    var e=data.index[k];if(e&&e.name)nameMap[e.name.toLowerCase()]=e;
+  });
+  if(/\[\[(item|skill|quest):[^\]]+\]\]/.test(html)){
+    html=html.replace(/\[\[(item|skill|quest):([^\]]+)\]\]/g,function(m,t,n){
+      var e=nameMap[n.trim().toLowerCase()];
+      return (e&&e.name)?analysisCardHtml(e):m;
     });
   }else{
     // fallback: модель не вставила токены — подставляем карточки по упоминанию имён из базы
