@@ -237,6 +237,23 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .modal-close{width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--panel2);border:1px solid var(--brown);border-radius:4px;cursor:pointer;color:var(--text);font-size:11px}
 .modal-body{flex:1;overflow-y:auto;padding:0 8px 8px}
 
+
+#build-analysis{max-width:500px;margin:0 auto;padding:10px 10px 16px}
+.analyze-btn{width:100%;padding:12px;margin-bottom:8px;background:var(--panel);border:1px solid var(--brown);border-radius:10px;color:var(--gold);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+.analyze-btn:hover{background:var(--panel2)}
+.analyze-btn:disabled{opacity:.6;cursor:default}
+#build-analysis-result{display:none;background:var(--panel);border:1px solid var(--brown);border-radius:12px;padding:14px;font-size:13px;line-height:1.55}
+#build-analysis-result.visible{display:block}
+#build-analysis-result .analysis-loading{color:var(--dim);font-style:italic}
+#build-analysis-result .analysis-error{color:var(--orange)}
+#build-analysis-result p{margin:0 0 8px}
+#build-analysis-result ul,#build-analysis-result ol{margin:4px 0 10px 18px;padding:0}
+#build-analysis-result li{margin:2px 0}
+.analysis-card{display:flex;gap:8px;align-items:center;background:var(--panel2);border:1px solid var(--brown);border-radius:8px;padding:5px 8px;margin:3px 0;max-width:360px}
+.analysis-card img{width:32px;height:40px;object-fit:cover;border-radius:4px;background:var(--bg);flex-shrink:0}
+.analysis-card-name{font-size:12px;font-weight:600}
+.analysis-card-sub{font-size:10px;color:var(--dim)}
+.analysis-meta{font-size:10px;color:var(--dim);margin-top:8px;border-top:1px solid var(--brown);padding-top:6px}
 </style>
 </head>
 <body>
@@ -284,6 +301,10 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       <div class="tab-pane" id="pane-factions"></div>
       <div class="tab-pane" id="pane-consumables"></div>
       <div class="tab-pane" id="pane-effects"></div>
+    </div>
+    <div id="build-analysis">
+      <button class="analyze-btn" id="btn-analyze-build" onclick="analyzeBuild()">Анализ билда</button>
+      <div id="build-analysis-result"></div>
     </div>
     <div class="tab-bar" id="tab-bar"></div>
   </div>
@@ -2426,6 +2447,164 @@ function closeEnchantModal(){
   if(overlay)overlay.parentNode.removeChild(overlay);
 }
 
+
+const WORKER_URL='https://outward-build-analyzer.outward-analyzer-4f2a.workers.dev';
+
+function analyzeBuild(){
+  var res=document.getElementById('build-analysis-result');
+  var btn=document.getElementById('btn-analyze-build');
+  if(!DATA||!BUILD){return;}
+  var payload=collectAnalysisData();
+  var s=JSON.stringify(payload);
+  var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
+  var key='build_analysis_'+hash;
+  var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
+  if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
+  res.className='visible';
+  res.innerHTML='<div class="analysis-loading">Анализируем билд…</div>';
+  btn.disabled=true;
+  fetch(WORKER_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({build:payload})})
+  .then(function(r){return r.json();})
+  .then(function(data){
+    btn.disabled=false;
+    if(!data||data.error){showAnalysisError((data&&data.error)||'Сервер анализа недоступен. Попробуйте позже.');return;}
+    data.index=payload.index;
+    try{localStorage.setItem(key,JSON.stringify(data));}catch(e){}
+    renderAnalysis(data);
+  })
+  .catch(function(){btn.disabled=false;showAnalysisError('Нет соединения с сервером анализа. Попробуйте позже.');});
+}
+
+function showAnalysisError(msg){
+  var res=document.getElementById('build-analysis-result');
+  res.className='visible';
+  res.innerHTML='<div class="analysis-error">'+escHtml(msg)+'</div>';
+}
+
+function truncStr(s,n){s=String(s||'');return s.length>n?s.slice(0,n)+'…':s;}
+
+function itemEffects(o){
+  var out=[];
+  ['on_hit_effects','passive_effects','special_effects','effects'].forEach(function(f){
+    var v=o[f];if(!v)return;
+    if(Array.isArray(v))v.forEach(function(e){if(e)out.push(e.name||String(e));});
+    else if(typeof v==='string')out.push(v);
+  });
+  return out.slice(0,6);
+}
+
+function collectAnalysisData(){
+  var skills=(BUILD.skills||[]).map(function(name,i){
+    var s=findSkill(name)||{};
+    return {idx:i+1,name:name,tier:s.tier||null,cost:s.cost||null,costs_breakthrough:!!s.costs_breakthrough,
+      requires_skill:s.requires_skill||null,excludes_skill:s.excludes_skill||null,
+      description:truncStr(s.description,350),img:s.image||s.local_image||null};
+  });
+  var equipment=[];
+  function eqBase(o,slotName){
+    return {idx:equipment.length+1,slot:slotName,name:o.name,
+      type_name:o.weapon_type||o.category_class||null,
+      protection:o.protection||null,
+      damage:(o.damage_stats&&(o.damage_stats.physical||o.damage_stats.damage))||null,
+      effects:itemEffects(o),img:o.local_image||null};
+  }
+  Object.keys(BUILD.armor||{}).forEach(function(slot){
+    var a=findArmor(BUILD.armor[slot]);if(a)equipment.push(eqBase(a,slot));
+  });
+  Object.keys(BUILD.weapons||{}).forEach(function(slot){
+    var w=findWeapon(BUILD.weapons[slot]);if(w)equipment.push(eqBase(w,slot));
+  });
+  var candidates=collectAnalysisCandidates();
+  var st=calculateStats();
+  var index={};
+  skills.forEach(function(s){index['skill:'+s.idx]=s;});
+  equipment.forEach(function(e2){index['item:'+e2.idx]=e2;});
+  candidates.forEach(function(c){index[c.type+':'+c.idx]=c;});
+  return {skills:skills,equipment:equipment,candidates:candidates,
+    stats:{health:st.health,stamina:st.stamina,mana:st.mana,protection:st.protection},
+    role:guessBuildRole(),index:index};
+}
+
+function collectAnalysisCandidates(){
+  var out=[];var seen={};
+  function add(type,o){
+    if(!o||!o.name||seen[o.name]||out.length>=15)return;
+    seen[o.name]=1;
+    var c={idx:out.length+1,type:type,name:o.name,img:o.local_image||o.image||null};
+    if(type==='skill'){
+      c.tier=o.tier||null;c.cost=o.cost||null;c.requires_skill=o.requires_skill||null;
+    }else{
+      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.protection=o.protection||null;
+    }
+    out.push(c);
+  }
+  var equippedW=[];var equippedA=[];
+  Object.keys(BUILD.weapons||{}).forEach(function(sl){var w=findWeapon(BUILD.weapons[sl]);if(w)equippedW.push(w);});
+  Object.keys(BUILD.armor||{}).forEach(function(sl){var a=findArmor(BUILD.armor[sl]);if(a)equippedA.push(a);});
+  if(equippedW.length){
+    (DATA.weapons||[]).forEach(function(w){
+      if(equippedW.some(function(e){return (e.weapon_type||'')===(w.weapon_type||'')&&(e.handedness||'')===(w.handedness||'');}))add('item',w);
+    });
+  }
+  if(equippedA.length){
+    (DATA.armor||[]).forEach(function(a){
+      if(equippedA.some(function(e){return e.slot===a.slot;}))add('item',a);
+    });
+  }
+  var tiers={};
+  (BUILD.skills||[]).forEach(function(n){var s=findSkill(n);if(s&&s.tier)tiers[s.tier]=1;});
+  var sel=BUILD.skills||[];
+  (DATA.skills||[]).forEach(function(s){
+    if(s.tier&&tiers[s.tier]&&sel.indexOf(s.name)<0)add('skill',s);
+  });
+  return out.slice(0,15);
+}
+
+function guessBuildRole(){
+  var mana=BUILD.leylines?BUILD.leylines.mana||0:0;
+  var magical=0;
+  Object.keys(BUILD.weapons||{}).forEach(function(sl){
+    var w=findWeapon(BUILD.weapons[sl]);
+    if(w&&/magical|staff|wand|chakram/i.test(JSON.stringify(w)))magical++;
+  });
+  if(magical>0||mana>=40)return 'magic';
+  if(mana>20)return 'hybrid';
+  return 'melee';
+}
+
+function renderAnalysisMd(text){
+  var esc=escHtml(text);
+  var ls=esc.split('\n');
+  var html='';var listType=null;
+  function closeList(){if(listType){html+='</'+listType+'>';listType=null;}}
+  for(var i=0;i<ls.length;i++){
+    var t=ls[i].trim();
+    if(!t){closeList();continue;}
+    var bold=function(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');};
+    var um=t.match(/^[-*•]\s+(.*)$/);
+    var om=t.match(/^\d+[.)]\s+(.*)$/);
+    if(um){if(listType!=='ul'){closeList();html+='<ul>';listType='ul';}html+='<li>'+bold(um[1])+'</li>';continue;}
+    if(om){if(listType!=='ol'){closeList();html+='<ol>';listType='ol';}html+='<li>'+bold(om[1])+'</li>';continue;}
+    closeList();
+    html+='<p>'+bold(t)+'</p>';
+  }
+  closeList();
+  return html;
+}
+
+function renderAnalysis(data){
+  var res=document.getElementById('build-analysis-result');
+  res.className='visible';
+  var html=renderAnalysisMd(data.analysis||'Пустой ответ.');
+  html=html.replace(/\[\[(item|skill):(\d+)\]\]/g,function(m,t,n){
+    var e=(data.index||{})[t+':'+n];
+    if(!e||!e.name)return m;
+    var img=e.img?'<img src="'+escHtml(e.img)+'" alt="">':'';
+    var sub=e.slot?e.slot:e.type_name?e.type_name:(e.tier?'T'+e.tier:'');
+    return '<div class="analysis-card">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
+  });
+  res.innerHTML=html+(data.model?'<div class="analysis-meta">Модель: '+escHtml(data.model)+'</div>':'');
+}
 
 
 loadData();
