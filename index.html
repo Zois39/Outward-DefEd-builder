@@ -2471,7 +2471,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_v5_'+hash;
+  var key='build_analysis_v6_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
@@ -2518,6 +2518,7 @@ function collectAnalysisData(){
   function eqBase(o,slotName){
     return {idx:equipment.length+1,type:'item',slot:slotName,name:o.name,
       type_name:o.weapon_type||o.category_class||null,
+      handedness:o.handedness||null,
       protection:o.protection||null,
       damage:(o.damage_stats&&(o.damage_stats.physical||o.damage_stats.damage))||null,
       effects:itemEffects(o),img:o.local_image||null};
@@ -2538,14 +2539,25 @@ function collectAnalysisData(){
       rewards:(q.rewards||[]).slice(0,4).map(function(r){return r&&r.name?r.name:String(r);}),
       description:truncStr(cleanDesc(q.description||''),200),img:q.local_image||null});
   });
+  var enchants=[];
+  Object.keys(BUILD.enchantments||{}).forEach(function(slot){
+    var ename=BUILD.enchantments[slot];if(!ename)return;
+    var en=null;(DATA.enchantments||[]).forEach(function(x){if(x.name===ename)en=x;});
+    if(!en)return;
+    enchants.push({idx:enchants.length+1,type:'enchant',slot:slot,name:en.name,
+      effect:en.effect?{name:en.effect.name||null,stats:en.effect.stats||null}:null,
+      description:truncStr(typeof cleanDesc==='function'?cleanDesc(en.description||''):(en.description||''),200),
+      img:en.local_image||null});
+  });
   var candidates=collectAnalysisCandidates();
   var st=calculateStats();
   var index={};
   skills.forEach(function(s){index['skill:'+s.idx]=s;});
   equipment.forEach(function(e2){index['item:'+e2.idx]=e2;});
   quests.forEach(function(q){index['quest:'+q.idx]=q;});
+  enchants.forEach(function(q){index['enchant:'+q.idx]=q;});
   candidates.forEach(function(c){index[c.type+':'+c.idx]=c;});
-  return {skills:skills,equipment:equipment,quests:quests,candidates:candidates,
+  return {skills:skills,equipment:equipment,quests:quests,enchantments:enchants,candidates:candidates,
     stats:{health:st.health,stamina:st.stamina,mana:st.mana,protection:st.protection},
     breakthroughs:{used:BUILD.breakthroughsUsed||0,max:3},
     role:guessBuildRole(),index:index};
@@ -2560,7 +2572,7 @@ function collectAnalysisCandidates(){
     if(type==='skill'){
       c.tier=o.tier||null;c.cost=o.cost||null;c.requires_skill=o.requires_skill||null;
     }else{
-      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.protection=o.protection||null;
+      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.handedness=o.handedness||null;c.protection=o.protection||null;
     }
     out.push(c);
   }
@@ -2664,7 +2676,7 @@ function renderAnalysis(data){
   });
   // 1) чистый текст: токены (переносы/пробелы допустимы) -> плейсхолдеры; неизвестное имя -> чистое имя
   var text=String(data.analysis||t9n('empty'));
-  text=text.replace(/\[\[(item|skill|quest):\s*([^\]]+?)\s*\]\]/g,function(m,t,n){
+  text=text.replace(/\[\[(item|skill|quest|enchant):\s*([^\]]+?)\s*\]\]/g,function(m,t,n){
     var e=nameMap[n.trim().toLowerCase()];
     return e?('@@CARD:'+t+':'+e.name+'@@END'):n.trim();
   });
@@ -2680,7 +2692,7 @@ function renderAnalysis(data){
   // 3) markdown-рендер (плейсхолдеры не трогает escHtml)
   var html=renderAnalysisMd(text);
   // 4) плейсхолдеры -> карточки
-  html=html.replace(/@@CARD:(item|skill|quest):([^@]+)@@END/g,function(m,t,n){
+  html=html.replace(/@@CARD:(item|skill|quest|enchant):([^@]+)@@END/g,function(m,t,n){
     var e=nameMap[n.toLowerCase()];
     return (e&&e.name)?analysisCardHtml(e):escHtml(n);
   });
@@ -2693,6 +2705,7 @@ function openAnalysisTarget(type,name){
   var tabId='consumables';
   if(type==='skill'){tabId='skills';}
   else if(type==='quest'){tabId='factions';}
+  else if(type==='enchant'){tabId='effects';}
   else{
     var w=null;(DATA.weapons||[]).forEach(function(x){if(x.name===name)w=x;});
     var a=null;if(!w)(DATA.armor||[]).forEach(function(x){if(x.name===name)a=x;});
