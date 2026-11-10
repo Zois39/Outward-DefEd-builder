@@ -2471,7 +2471,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_v4_'+hash;
+  var key='build_analysis_v5_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
@@ -2547,6 +2547,7 @@ function collectAnalysisData(){
   candidates.forEach(function(c){index[c.type+':'+c.idx]=c;});
   return {skills:skills,equipment:equipment,quests:quests,candidates:candidates,
     stats:{health:st.health,stamina:st.stamina,mana:st.mana,protection:st.protection},
+    breakthroughs:{used:BUILD.breakthroughsUsed||0,max:3},
     role:guessBuildRole(),index:index};
 }
 
@@ -2587,16 +2588,20 @@ function collectAnalysisCandidates(){
 
 function guessBuildRole(){
   var mana=BUILD.leylines?BUILD.leylines.mana||0:0;
-  var magical=0;
+  var types={};
   Object.keys(BUILD.weapons||{}).forEach(function(sl){
     var w=findWeapon(BUILD.weapons[sl]);
-    if(w&&/magical|staff|wand|chakram/i.test(JSON.stringify(w)))magical++;
+    if(w&&w.weapon_type)types[w.weapon_type]=1;
   });
-  if(magical>0||mana>=40)return 'magic';
-  if(mana>20)return 'hybrid';
+  var t=Object.keys(types);
+  var ranged=t.some(function(x){return /bow|crossbow|pistol/i.test(x);});
+  var magic=t.some(function(x){return /staff|wand|chakram/i.test(x);});
+  var melee=t.some(function(x){return !/bow|crossbow|pistol|staff|wand|chakram/i.test(x);});
+  if((ranged&&melee)||(magic&&melee))return 'hybrid';
+  if(magic||mana>=40)return 'magic';
+  if(ranged)return 'ranged';
   return 'melee';
 }
-
 function renderAnalysisMd(text){
   var esc=escHtml(text);
   var ls=esc.split('\n');
@@ -2644,6 +2649,7 @@ function stripOrphanPunct(html){
     html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*,/g,'$1 ');
     html=html.replace(/\/\s*(?=<div class="analysis-card)/g,'');
     html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\//g,'$1 ');
+    html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\.\s*/g,'$1');
     if(html===before)break;
   }
   return html;
