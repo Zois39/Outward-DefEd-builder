@@ -254,6 +254,11 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .analysis-card-name{font-size:12px;font-weight:600}
 .analysis-card-sub{font-size:10px;color:var(--dim)}
 .analysis-meta{font-size:10px;color:var(--dim);margin-top:8px;border-top:1px solid var(--brown);padding-top:6px}
+.analysis-card-clickable{cursor:pointer}
+.analysis-card-clickable:hover{border-color:var(--gold)}
+@keyframes analysis-hl{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}50%{box-shadow:0 0 12px 3px rgba(201,168,76,.75)}}
+.analysis-highlight{animation:analysis-hl 1s ease-in-out 2;border-color:var(--gold)!important}
+
 </style>
 </head>
 <body>
@@ -2497,13 +2502,13 @@ function itemEffects(o){
 function collectAnalysisData(){
   var skills=(BUILD.skills||[]).map(function(name,i){
     var s=findSkill(name)||{};
-    return {idx:i+1,name:name,tier:s.tier||null,cost:s.cost||null,costs_breakthrough:!!s.costs_breakthrough,
+    return {idx:i+1,type:'skill',name:name,tier:s.tier||null,cost:s.cost||null,costs_breakthrough:!!s.costs_breakthrough,
       requires_skill:s.requires_skill||null,excludes_skill:s.excludes_skill||null,
       description:truncStr(s.description,350),img:s.image||s.local_image||null};
   });
   var equipment=[];
   function eqBase(o,slotName){
-    return {idx:equipment.length+1,slot:slotName,name:o.name,
+    return {idx:equipment.length+1,type:'item',slot:slotName,name:o.name,
       type_name:o.weapon_type||o.category_class||null,
       protection:o.protection||null,
       damage:(o.damage_stats&&(o.damage_stats.physical||o.damage_stats.damage))||null,
@@ -2515,13 +2520,24 @@ function collectAnalysisData(){
   Object.keys(BUILD.weapons||{}).forEach(function(slot){
     var w=findWeapon(BUILD.weapons[slot]);if(w)equipment.push(eqBase(w,slot));
   });
+  var quests=[];
+  Object.keys((BUILD.quests&&BUILD.quests.selected)||{}).forEach(function(qname){
+    var q=null;(DATA.quests||[]).forEach(function(x){if(x.name===qname)q=x;});
+    if(!q)return;
+    quests.push({idx:quests.length+1,type:'quest',name:q.name,quest_type:q.quest_type||null,
+      quest_giver:q.quest_giver||null,locations:(q.locations||[]).slice(0,3),
+      requirements:(q.requirements||[]).slice(0,4).map(function(r){return r&&r.name?r.name:String(r);}),
+      rewards:(q.rewards||[]).slice(0,4).map(function(r){return r&&r.name?r.name:String(r);}),
+      description:truncStr(cleanDesc(q.description||''),200),img:q.local_image||null});
+  });
   var candidates=collectAnalysisCandidates();
   var st=calculateStats();
   var index={};
   skills.forEach(function(s){index['skill:'+s.idx]=s;});
   equipment.forEach(function(e2){index['item:'+e2.idx]=e2;});
+  quests.forEach(function(q){index['quest:'+q.idx]=q;});
   candidates.forEach(function(c){index[c.type+':'+c.idx]=c;});
-  return {skills:skills,equipment:equipment,candidates:candidates,
+  return {skills:skills,equipment:equipment,quests:quests,candidates:candidates,
     stats:{health:st.health,stamina:st.stamina,mana:st.mana,protection:st.protection},
     role:guessBuildRole(),index:index};
 }
@@ -2582,6 +2598,9 @@ function renderAnalysisMd(text){
     var t=ls[i].trim();
     if(!t){closeList();continue;}
     var bold=function(s){return s.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');};
+    if(/^(-{3,}|\*{3,})$/.test(t)){closeList();continue;}
+    var hm=t.match(/^(#{1,3})\s+(.*)$/);
+    if(hm){closeList();var tag=hm[1].length===3?'h4':'h3';html+='<'+tag+'>'+bold(hm[2])+'</'+tag+'>';continue;}
     var um=t.match(/^[-*•]\s+(.*)$/);
     var om=t.match(/^\d+[.)]\s+(.*)$/);
     if(um){if(listType!=='ul'){closeList();html+='<ul>';listType='ul';}html+='<li>'+bold(um[1])+'</li>';continue;}
@@ -2596,15 +2615,35 @@ function renderAnalysisMd(text){
 function analysisCardHtml(e){
   var img=e.img?'<img src="'+escHtml(e.img)+'" alt="">':'';
   var sub=e.slot?e.slot:e.type_name?e.type_name:(e.tier?'T'+e.tier:'');
-  return '<div class="analysis-card">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
+  var t=String(e.type||'').replace(/'/g,"\\'");
+  var n=String(e.name||'').replace(/'/g,"\\'");
+  return '<div class="analysis-card analysis-card-clickable" data-type="'+escHtml(e.type||'')+'" data-name="'+escHtml(e.name||'')+'" onclick="openAnalysisTarget(\''+t+'\',\''+n+'\')">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
+}
+
+// Сиротская пунктуация вокруг карточек: "( карточка )", ", карточка", "карточка,".
+function stripOrphanPunct(html){
+  var CARD='<div class="analysis-card';
+  var TAIL='</div></div>';
+  for(var pass=0;pass<5;pass++){
+    var before=html;
+    // пара: ( карточка )
+    html=html.replace(/\(\s*(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\)/g,'$1');
+    // одиночные скобки/запятые у карточки
+    html=html.replace(/\(\s*(?=<div class="analysis-card)/g,'');
+    html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*\)/g,'$1');
+    html=html.replace(/,\s*(?=<div class="analysis-card)/g,'');
+    html=html.replace(/(<div class="analysis-card[\s\S]*?<\/div><\/div>)\s*,/g,'$1 ');
+    if(html===before)break;
+  }
+  return html;
 }
 
 function renderAnalysis(data){
   var res=document.getElementById('build-analysis-result');
   res.className='visible';
   var html=renderAnalysisMd(data.analysis||'Пустой ответ.');
-  if(/\[\[(item|skill):(\d+)\]\]/.test(html)){
-    html=html.replace(/\[\[(item|skill):(\d+)\]\]/g,function(m,t,n){
+  if(/\[\[(item|skill|quest):(\d+)\]\]/.test(html)){
+    html=html.replace(/\[\[(item|skill|quest):(\d+)\]\]/g,function(m,t,n){
       var e=(data.index||{})[t+':'+n];
       if(!e||!e.name)return m;
       return analysisCardHtml(e);
@@ -2617,9 +2656,55 @@ function renderAnalysis(data){
       if(idx>=0){html=html.slice(0,idx)+analysisCardHtml(e)+html.slice(idx+e.name.length);}
     });
   }
+  html=stripOrphanPunct(html);
   res.innerHTML=html+(data.model?'<div class="analysis-meta">Модель: '+escHtml(data.model)+'</div>':'');
 }
 
+function openAnalysisTarget(type,name){
+  if(!name||!DATA)return;
+  var tabId='consumables';
+  if(type==='skill'){tabId='skills';}
+  else if(type==='quest'){tabId='factions';}
+  else{
+    var w=null;(DATA.weapons||[]).forEach(function(x){if(x.name===name)w=x;});
+    var a=null;if(!w)(DATA.armor||[]).forEach(function(x){if(x.name===name)a=x;});
+    if(w)tabId='weapons';else if(a)tabId='armor';
+  }
+  if(type==='quest'&&typeof questFactionOf==='function'){
+    var q=null;(DATA.quests||[]).forEach(function(x){if(x.name===name)q=x;});
+    if(q){
+      var fq=questFactionOf(q);
+      var fid=fq?fq.id:'common';
+      if(!BUILD.quests)BUILD.quests={faction:null,selected:{}};
+      if(BUILD.quests.faction!==fid)BUILD.quests.faction=fid;
+    }
+  }
+  showScreen('builder-screen');
+  switchTab(tabId);
+  setTimeout(function(){
+    var pane=document.getElementById('pane-'+tabId);
+    if(!pane||!pane.querySelectorAll)return;
+    var sel=type==='quest'?'.quest-name':'.item-name';
+    var names=pane.querySelectorAll(sel);
+    var lower=name.toLowerCase();var found=null;
+    for(var i=0;i<names.length;i++){
+      if((names[i].textContent||'').trim().toLowerCase()===lower){found=names[i];break;}
+    }
+    if(!found)return;
+    var card=found;
+    while(card&&card.parentElement){
+      var cn=String(card.className||'');
+      if(cn.indexOf('item-card')>=0||cn.indexOf('quest-item')>=0)break;
+      card=card.parentElement;
+    }
+    var target=(card&&card!==found)?card:found;
+    if(target.scrollIntoView)target.scrollIntoView({behavior:'smooth',block:'center'});
+    if(target.classList){
+      target.classList.add('analysis-highlight');
+      setTimeout(function(){target.classList.remove('analysis-highlight');},2500);
+    }
+  },120);
+}
 
 loadData();
 </script>
