@@ -254,6 +254,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .analysis-card-name{font-size:12px;font-weight:600}
 .analysis-card-sub{font-size:10px;color:var(--dim)}
 .analysis-meta{font-size:10px;color:var(--dim);margin-top:8px;border-top:1px solid var(--brown);padding-top:6px}
+.inv-slot.ghost2h{opacity:.45}
+.inv-slot.ghost2h img{filter:grayscale(.6)}
 .analysis-card-clickable{cursor:pointer}
 .analysis-card-clickable:hover{border-color:var(--gold)}
 @keyframes analysis-hl{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}50%{box-shadow:0 0 12px 3px rgba(201,168,76,.75)}}
@@ -725,6 +727,16 @@ function renderStatsTab(pane){
         html+='<div style="font-size:11px;color:var(--purple);font-weight:600">🪄 '+escHtml(eq.enchant.name)+'</div>';
         // Show only effects relevant to this item's slot
         var itemSlot=eq.slot||'';
+        var enchStats=eq.enchant.effect&&eq.enchant.effect.stats;
+        if(enchStats&&typeof enchStats==='object'&&Object.keys(enchStats).length){
+          var partMap={armor:'Chest',head:'Head',legs:'Legs',hands:'Hands',boots:'Legs'};
+          Object.keys(enchStats).forEach(function(k){
+            var v=enchStats[k];if(v===null||v===undefined||v==='')return;
+            var part=partMap[k]||k;
+            var show=(k==='armor'&&itemSlot==='chest')||(k==='head'&&itemSlot==='head')||((k==='legs'||k==='boots')&&itemSlot==='legs')||(!partMap[k]);
+            if(show)html+='<div style="font-size:10px;color:var(--text);padding-left:12px">• +'+escHtml(String(v))+' '+escHtml(part)+'</div>';
+          });
+        }else{
         eq.enchant.effects.forEach(function(eff){
           var effLower=eff.toLowerCase();
           var showEffect=false;
@@ -748,6 +760,7 @@ function renderStatsTab(pane){
             html+='<div style="font-size:10px;color:var(--text);padding-left:12px">• '+escHtml(displayEff)+'</div>';
           }
         });
+        }
         html+='</div>';
       }
 
@@ -776,8 +789,13 @@ function renderStatsTab(pane){
     var wslot=weaponSlots[j];
     var wName=(BUILD.weapons||{})[wslot.id];
     var wItem=wName?findWeapon(wName):null;
+    var ghost2h=false;
+    if(!wItem&&wslot.id==='weapon_off'){
+      var mIt=(BUILD.weapons||{}).weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
+      if(mIt&&/2h/i.test(mIt.handedness||'')){wItem=mIt;ghost2h=true;}
+    }
     var wImgPath=wItem?getItemImage(wItem,'weapon'):null;
-    html+='<div class="inv-slot weapon'+(wItem?' filled':'')+'" '+makeClick('switchTab','weapons')+'>';
+    html+='<div class="inv-slot weapon'+(wItem?' filled':'')+(ghost2h?' ghost2h':'')+'" '+makeClick('switchTab','weapons')+'>';
     html+=imgHtml(wImgPath,'');
     html+='<div class="inv-lbl">'+wslot.label+'</div>';
     if(wItem){html+='<div class="inv-item">'+escHtml(wItem.name)+'</div>';}
@@ -1722,17 +1740,24 @@ function equipWeapon(name){
   var w=findWeapon(name);
   if(!w)return;
   if(!BUILD.weapons)BUILD.weapons={};
-  if(w.handedness==='2H'){
+  var is2h=/2h/i.test(w.handedness||'');
+  if(is2h){
+    // двуручник: всегда в основную руку, offhand освобождается (ghost рисуется в renderBuilder)
     BUILD.weapons['weapon_main']=name;
     delete BUILD.weapons['weapon_off'];
   }else{
+    // если в main стоит двуручник — разэкипировать его, освободив оба слота
+    var mainW=BUILD.weapons['weapon_main']?findWeapon(BUILD.weapons['weapon_main']):null;
+    if(mainW&&/2h/i.test(mainW.handedness||'')){
+      delete BUILD.weapons['weapon_main'];
+      delete BUILD.weapons['weapon_off'];
+    }
     if(!BUILD.weapons['weapon_main']){BUILD.weapons['weapon_main']=name;}
     else if(!BUILD.weapons['weapon_off']){BUILD.weapons['weapon_off']=name;}
     else{BUILD.weapons['weapon_main']=name;}
   }
   saveBuild();renderWeaponList();renderBuilder();
 }
-
 function unequipWeapon(name){
   Object.keys(BUILD.weapons||{}).forEach(function(slot){
     if(BUILD.weapons[slot]===name){delete BUILD.weapons[slot];}
@@ -2471,7 +2496,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_v6_'+hash;
+  var key='build_analysis_v7_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
@@ -2521,6 +2546,7 @@ function collectAnalysisData(){
       handedness:o.handedness||null,
       protection:o.protection||null,
       damage:(o.damage_stats&&(o.damage_stats.physical||o.damage_stats.damage))||null,
+      compatible_enchantments:(DATA.enchantmentCompatibility&&DATA.enchantmentCompatibility[o.name])||[],
       effects:itemEffects(o),img:o.local_image||null};
   }
   Object.keys(BUILD.armor||{}).forEach(function(slot){
@@ -2540,11 +2566,14 @@ function collectAnalysisData(){
       description:truncStr(cleanDesc(q.description||''),200),img:q.local_image||null});
   });
   var enchants=[];
-  Object.keys(BUILD.enchantments||{}).forEach(function(slot){
-    var ename=BUILD.enchantments[slot];if(!ename)return;
+  Object.keys(BUILD.enchantments||{}).forEach(function(itemName){
+    var ename=BUILD.enchantments[itemName];if(!ename)return;
     var en=null;(DATA.enchantments||[]).forEach(function(x){if(x.name===ename)en=x;});
     if(!en)return;
-    enchants.push({idx:enchants.length+1,type:'enchant',slot:slot,name:en.name,
+    var slot=null;
+    var it=findWeapon(itemName)||findArmor(itemName);
+    if(it)slot=it.slot||null;
+    enchants.push({idx:enchants.length+1,type:'enchant',slot:slot,item:itemName,name:en.name,
       effect:en.effect?{name:en.effect.name||null,stats:en.effect.stats||null}:null,
       description:truncStr(typeof cleanDesc==='function'?cleanDesc(en.description||''):(en.description||''),200),
       img:en.local_image||null});
@@ -2572,7 +2601,7 @@ function collectAnalysisCandidates(){
     if(type==='skill'){
       c.tier=o.tier||null;c.cost=o.cost||null;c.requires_skill=o.requires_skill||null;
     }else{
-      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.handedness=o.handedness||null;c.protection=o.protection||null;
+      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.handedness=o.handedness||null;c.protection=o.protection||null;c.compatible_enchantments=(DATA.enchantmentCompatibility&&DATA.enchantmentCompatibility[o.name])||[];
     }
     out.push(c);
   }
