@@ -794,7 +794,7 @@ function renderStatsTab(pane){
     var ghost2h=false;
     if(!wItem&&wslot.id==='weapon_off'){
       var mIt=(BUILD.weapons||{}).weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
-      if(mIt&&/2h/i.test(mIt.handedness||'')){wItem=mIt;ghost2h=true;}
+      if(mIt&&/two_handed|2h/i.test(mIt.handedness||'')){wItem=mIt;ghost2h=true;}
     }
     var wImgPath=wItem?getItemImage(wItem,'weapon'):null;
     html+='<div class="inv-slot weapon'+(wItem?' filled':'')+(ghost2h?' ghost2h':'')+'" '+makeClick('switchTab','weapons')+'>';
@@ -1740,37 +1740,43 @@ function renderWeaponList(){
 
 function normalizeWeaponSlots(){
   if(!BUILD.weapons)BUILD.weapons={};
-  var is2h=function(w){return w&&/2h/i.test(w.handedness||'');};
+  var is2h=function(w){return w&&/two_handed|2h/i.test(w.handedness||'');};
+  var isOff=function(w){return w&&(/off_handed|offhand/i.test(w.handedness||'')||/shield/i.test(w.weapon_type||''));};
   var off=BUILD.weapons.weapon_off?findWeapon(BUILD.weapons.weapon_off):null;
   if(is2h(off)){
-    // двуручник застрял во второй руке (старый баг) — переносим в основную руку
     delete BUILD.weapons.weapon_off;
     var main=BUILD.weapons.weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
     if(!is2h(main))BUILD.weapons.weapon_main=off.name;
   }
   var main2=BUILD.weapons.weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
   if(is2h(main2))delete BUILD.weapons.weapon_off;
+  if(isOff(main2)&&!BUILD.weapons.weapon_off){
+    // offhand-предмет застрял в основной руке — переносим
+    BUILD.weapons.weapon_off=main2.name;
+    delete BUILD.weapons.weapon_main;
+  }
 }
 
 function equipWeapon(name){
   var w=findWeapon(name);
   if(!w)return;
   if(!BUILD.weapons)BUILD.weapons={};
-  var is2h=/2h/i.test(w.handedness||'');
+  var hd=w.handedness||'';
+  var is2h=/two_handed|2h/i.test(hd);
+  var isOff=/off_handed|offhand/i.test(hd)||/shield/i.test(w.weapon_type||'');
   if(is2h){
-    // двуручник: всегда в основную руку, offhand освобождается (ghost рисуется в renderBuilder)
-    BUILD.weapons['weapon_main']=name;
-    delete BUILD.weapons['weapon_off'];
+    BUILD.weapons.weapon_main=name;
+    delete BUILD.weapons.weapon_off;
   }else{
-    // если в main стоит двуручник — разэкипировать его, освободив оба слота
-    var mainW=BUILD.weapons['weapon_main']?findWeapon(BUILD.weapons['weapon_main']):null;
-    if(mainW&&/2h/i.test(mainW.handedness||'')){
-      delete BUILD.weapons['weapon_main'];
-      delete BUILD.weapons['weapon_off'];
+    var mainW=BUILD.weapons.weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
+    if(mainW&&/two_handed|2h/i.test(mainW.handedness||'')){
+      delete BUILD.weapons.weapon_main;
+      delete BUILD.weapons.weapon_off;
     }
-    if(!BUILD.weapons['weapon_main']){BUILD.weapons['weapon_main']=name;}
-    else if(!BUILD.weapons['weapon_off']){BUILD.weapons['weapon_off']=name;}
-    else{BUILD.weapons['weapon_main']=name;}
+    if(isOff){BUILD.weapons.weapon_off=name;}
+    else if(!BUILD.weapons.weapon_main){BUILD.weapons.weapon_main=name;}
+    else if(!BUILD.weapons.weapon_off){BUILD.weapons.weapon_off=name;}
+    else{BUILD.weapons.weapon_main=name;}
   }
   saveBuild();renderWeaponList();renderBuilder();
 }
@@ -2523,7 +2529,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_v7_'+hash;
+  var key='build_analysis_v8_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
@@ -2559,6 +2565,36 @@ function itemEffects(o){
   return out.slice(0,6);
 }
 
+function enchantEffectText(en,itemSlot){
+  var fx=en.effects||[];var pick=null;
+  for(var i=0;i<fx.length;i++){
+    var el=String(fx[i]).toLowerCase();
+    if(el.indexOf('body armor')===0){
+      if(itemSlot==='chest'){pick=fx[i].split(':').slice(1).join(':').trim();break;}
+    }else if(el.indexOf('helmets/boots')===0){
+      if(itemSlot==='head'||itemSlot==='legs'){pick=fx[i].split(':').slice(1).join(':').trim();break;}
+    }else if(/^helmets?:/.test(el)){
+      if(itemSlot==='head'){pick=fx[i].split(':').slice(1).join(':').trim();break;}
+    }else if(/^boots:/.test(el)){
+      if(itemSlot==='legs'){pick=fx[i].split(':').slice(1).join(':').trim();break;}
+    }else if(!pick){pick=fx[i];}
+  }
+  if(!pick&&en.effect){
+    if(en.effect.name)pick=en.effect.name;
+    else if(en.effect.stats){
+      var ks=Object.keys(en.effect.stats);
+      pick=ks.map(function(k){return '+'+en.effect.stats[k]+' '+k;}).join(', ');
+    }
+  }
+  return truncStr(pick||'',80);
+}
+
+function enchantCardByName(name,itemSlot){
+  var en=null;(DATA.enchantments||[]).forEach(function(x){if(x.name===name)en=x;});
+  if(!en)return null;
+  return {name:en.name,slots:en.slots||null,effect_text:enchantEffectText(en,itemSlot)};
+}
+
 function collectAnalysisData(){
   var skills=(BUILD.skills||[]).map(function(name,i){
     var s=findSkill(name)||{};
@@ -2573,7 +2609,7 @@ function collectAnalysisData(){
       handedness:o.handedness||null,
       protection:o.protection||null,
       damage:(o.damage_stats&&(o.damage_stats.physical||o.damage_stats.damage))||null,
-      compatible_enchantments:(DATA.enchantmentCompatibility&&DATA.enchantmentCompatibility[o.name])||[],
+      compatible_enchantments:((DATA.enchantmentCompatibility&&DATA.enchantmentCompatibility[o.name])||[]).map(function(n){return enchantCardByName(n,slotName);}).filter(function(x){return !!x;}).slice(0,8),
       effects:itemEffects(o),img:o.local_image||null};
   }
   Object.keys(BUILD.armor||{}).forEach(function(slot){
@@ -2601,6 +2637,7 @@ function collectAnalysisData(){
     var it=findWeapon(itemName)||findArmor(itemName);
     if(it)slot=it.slot||null;
     enchants.push({idx:enchants.length+1,type:'enchant',slot:slot,item:itemName,name:en.name,
+      slots:en.slots||null,effect_text:enchantEffectText(en,slot),
       effect:en.effect?{name:en.effect.name||null,stats:en.effect.stats||null}:null,
       description:truncStr(typeof cleanDesc==='function'?cleanDesc(en.description||''):(en.description||''),200),
       img:en.local_image||null});
@@ -2613,6 +2650,19 @@ function collectAnalysisData(){
   quests.forEach(function(q){index['quest:'+q.idx]=q;});
   enchants.forEach(function(q){index['enchant:'+q.idx]=q;});
   candidates.forEach(function(c){index[c.type+':'+c.idx]=c;});
+  var encSeen={};
+  enchants.forEach(function(q){encSeen[q.name.toLowerCase()]=1;});
+  [equipment,candidates].forEach(function(list){
+    (list||[]).forEach(function(it2){
+      (it2.compatible_enchantments||[]).forEach(function(card){
+        if(!card||!card.name||encSeen[card.name.toLowerCase()])return;
+        encSeen[card.name.toLowerCase()]=1;
+        card.idx=Object.keys(index).length+1;
+        card.type='enchant';
+        index['enchant:'+card.idx]=card;
+      });
+    });
+  });
   return {skills:skills,equipment:equipment,quests:quests,enchantments:enchants,candidates:candidates,
     stats:{health:st.health,stamina:st.stamina,mana:st.mana,protection:st.protection},
     breakthroughs:{used:BUILD.breakthroughsUsed||0,max:3},
@@ -2628,7 +2678,7 @@ function collectAnalysisCandidates(){
     if(type==='skill'){
       c.tier=o.tier||null;c.cost=o.cost||null;c.requires_skill=o.requires_skill||null;
     }else{
-      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.handedness=o.handedness||null;c.protection=o.protection||null;c.compatible_enchantments=(DATA.enchantmentCompatibility&&DATA.enchantmentCompatibility[o.name])||[];
+      c.slot=o.slot||null;c.type_name=o.weapon_type||o.category_class||null;c.handedness=o.handedness||null;c.protection=o.protection||null;c.compatible_enchantments=((DATA.enchantmentCompatibility&&DATA.enchantmentCompatibility[o.name])||[]).map(function(n){return enchantCardByName(n,o.slot);}).filter(function(x){return !!x;}).slice(0,8);
     }
     out.push(c);
   }
@@ -2700,7 +2750,7 @@ function renderAnalysisMd(text){
 
 function analysisCardHtml(e){
   var img=e.img?'<img src="'+escHtml(e.img)+'" alt="">':'';
-  var sub=e.slot?e.slot:e.type_name?e.type_name:(e.tier?'T'+e.tier:'');
+  var sub=e.type==='enchant'&&e.effect_text?e.effect_text:(e.slot?e.slot:e.type_name?e.type_name:(e.tier?'T'+e.tier:''));
   var t=String(e.type||'').replace(/'/g,"\\'");
   var n=String(e.name||'').replace(/'/g,"\\'");
   return '<div class="analysis-card analysis-card-clickable" data-type="'+escHtml(e.type||'')+'" data-name="'+escHtml(e.name||'')+'" onclick="openAnalysisTarget(\''+t+'\',\''+n+'\')">'+img+'<div><div class="analysis-card-name">'+escHtml(e.name)+'</div><div class="analysis-card-sub">'+escHtml(sub)+'</div></div></div>';
