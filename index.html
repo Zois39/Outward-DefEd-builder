@@ -559,7 +559,7 @@ function renderBuilder(){normalizeWeaponSlots();
   for(var i=0;i<tabs.length;i++){
     var btn=document.createElement('button');
     btn.className='tab-btn'+(CURRENT_TAB===tabs[i].id?' active':'');
-    var tabExt={stats:'.svg',consumables:'.svg'};var icoSrc='assets/images/ui/tabs/'+tabs[i].id+(tabExt[tabs[i].id]||'.png');btn.innerHTML='<img class="tab-icon-img" src="'+icoSrc+'" alt="">'+'<span>'+tabs[i].label+'</span>';
+    var icoSrc='assets/images/ui/tabs/'+tabs[i].id+'.png';btn.innerHTML='<img class="tab-icon-img" src="'+icoSrc+'" alt="">'+'<span>'+tabs[i].label+'</span>';
     btn.onclick=(function(tabId){return function(){switchTab(tabId);};})(tabs[i].id);
     tabBar.appendChild(btn);
   }
@@ -677,8 +677,8 @@ function statRow(lbl,val,opts){
 }
 
 function resistItem(dot,lbl,val){
-  var icoMap={fire:1,frost:1,lightning:1,decay:1};var icoExt={physical:'.svg',ethereal:'.svg'};
-  var ico=icoMap[dot]?'<img class="resist-ico" src="assets/images/ui/'+dot+(icoExt[dot]||'.png')+'" alt="">':'<span class="sdot '+dot+'"></span>';
+  var icoMap={fire:1,frost:1,lightning:1,decay:1,physical:1,ethereal:1};
+  var ico=icoMap[dot]?'<img class="resist-ico" src="assets/images/ui/'+dot+'.png" alt="">':'<span class="sdot '+dot+'"></span>';
   return '<div class="resist-item"><span class="resist-lbl">'+ico+lbl+'</span><span class="resist-val">'+val+'</span></div>';
 }
 
@@ -711,7 +711,7 @@ function renderStatsTab(pane){
   html+='<div class="pts-card"><div class="pts-ico"><img class="pts-ico-img" src="assets/images/ui/coin.png" alt=""></div><div class="pts-info"><h4>Total Cost</h4><div class="pts-val">'+totalCost+'s</div></div></div>';
   html+='<div class="pts-card"><div class="pts-ico"><img class="pts-ico-img" src="assets/images/ui/breakthrough.png" alt=""></div><div class="pts-info"><h4>Breakthroughs</h4><div class="pts-val'+(btLeft<=0?' warn':'')+'">'+(BUILD.breakthroughsUsed||0)+' / 3</div></div></div>';
   html+='</div>';
-  html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon"><img class="sec-ico-img" src="assets/images/ui/backpack.svg" alt=""></span><span class="sec-title">Equipment</span></div><div class="sec-body">';
+  html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon"><img class="sec-ico-img" src="assets/images/ui/backpack.png" alt=""></span><span class="sec-title">Equipment</span></div><div class="sec-body">';
 
   // Show equipped items with enchantments
   var equippedItems=[];
@@ -853,7 +853,7 @@ function renderStatsTab(pane){
   html+=resistItem('decay','Decay',stats.resistances.decay||0);
   html+=resistItem('ethereal','Ethereal',stats.resistances.ethereal||0);
   html+='</div></div></div>';
-  html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon"><img class="sec-ico-img" src="assets/images/ui/gear.svg" alt=""></span><span class="sec-title">Modifiers</span></div><div class="sec-body">';
+  html+='<div class="sec-card"><div class="sec-hdr"><span class="sec-icon"><img class="sec-ico-img" src="assets/images/ui/gear.png" alt=""></span><span class="sec-title">Modifiers</span></div><div class="sec-body">';
   html+=statRow('Stamina Cost',-stats.staminaCost,{suffix:'%'});
   html+=statRow('Mana Cost',-stats.manaCost,{suffix:'%'});
   html+=statRow('Move Speed',stats.moveSpeed,{suffix:'%'});
