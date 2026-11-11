@@ -12,7 +12,7 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior-y:none}
 #app{min-height:100vh;min-height:100dvh}
-.screen{display:none;min-height:100vh;min-height:100dvh}
+.screen{display:none;height:100vh;height:100dvh}
 .screen.active{display:block}
 ::-webkit-scrollbar{width:0;height:0}
 .loading-screen{background:linear-gradient(160deg,#1a1410,#241c12,#1a1410);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
@@ -42,14 +42,14 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .menu-content p{font-size:10px;color:var(--dim)}
 .menu-arrow{color:var(--brown);font-size:15px}
 .home-footer{text-align:center;padding:14px;padding-bottom:calc(14px + var(--sab));font-size:9px;color:var(--dim2)}
-#builder-screen{background:var(--bg);display:flex;flex-direction:column}
+#builder-screen{background:var(--bg);display:flex;flex-direction:column;position:fixed;inset:0;height:100vh;height:100dvh;z-index:10}
 .builder-header{display:flex;align-items:center;gap:4px;padding:6px 8px;padding-top:calc(6px + var(--sat));background:var(--bg2);border-bottom:1px solid var(--brown);position:sticky;top:0;z-index:50}
 .header-btn{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--brown);border-radius:5px;cursor:pointer;color:var(--text);font-size:12px;flex-shrink:0}
 .header-title{flex:1;font-size:12px;color:var(--gold);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .silver-display{padding:3px 8px;background:var(--panel);border:1px solid var(--gold);border-radius:4px;color:var(--gold);font-size:10px;font-weight:600}
 .theory-btn{padding:3px 5px;background:var(--panel);border:1px solid var(--brown);border-radius:4px;color:var(--dim);font-size:8px;cursor:pointer;font-family:inherit;white-space:nowrap}
 .theory-btn.active{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:600}
-.builder-content{flex:1;padding-bottom:calc(58px + var(--sab))}
+.builder-content{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:calc(58px + var(--sab))}
 .tab-bar{position:fixed;bottom:0;left:0;right:0;display:flex;background:rgba(26,20,16,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--brown);padding:2px 0 calc(2px + var(--sab));z-index:100}
 .tab-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:3px 1px;background:none;border:none;cursor:pointer;color:var(--dim);font-family:inherit;font-size:6px;border-radius:3px}
 .tab-btn.active{color:var(--gold);background:rgba(201,162,39,.12)}
@@ -308,10 +308,13 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       <div class="tab-pane" id="pane-factions"></div>
       <div class="tab-pane" id="pane-consumables"></div>
       <div class="tab-pane" id="pane-effects"></div>
-    </div>
-    <div id="build-analysis">
+      <div class="tab-pane" id="pane-analysis">
+        <div id="build-analysis">
       <button class="analyze-btn" id="btn-analyze-build" onclick="analyzeBuild()">Анализ билда</button>
       <div id="build-analysis-result"></div>
+        </div>
+
+      </div>
     </div>
     <div class="tab-bar" id="tab-bar"></div>
   </div>
@@ -516,6 +519,7 @@ function showScreen(id){
   for(var i=0;i<screens.length;i++){screens[i].classList.remove('active');}
   var el=document.getElementById(id);
   if(el)el.classList.add('active');
+  document.body.style.overflow=(id==='builder-screen')?'hidden':'';
 }
 
 function renderHome(){
@@ -529,7 +533,7 @@ function renderBuilder(){normalizeWeaponSlots();
   document.getElementById('build-name').textContent=BUILD.name||'New Build';
   document.getElementById('theory-btn').className='theory-btn'+(BUILD.theorycraft?' active':'');
   document.getElementById('silver-display').textContent=calculateTotalCost()+'s';
-  var tabs=[{id:'stats',icon:'\uD83D\uDCCA',label:'Stats'},{id:'armor',icon:'\uD83D\uDEE1\uFE0F',label:'Armor'},{id:'weapons',icon:'\u2694\uFE0F',label:'Weapons'},{id:'skills',icon:'\u26A1',label:'Skills'},{id:'factions',icon:'\uD83C\uDFF0',label:'Quests'},{id:'consumables',icon:'\uD83E\uDDEA',label:'Items'},{id:'effects',icon:'\uD83D\uDCD6',label:'Effects'}];
+  var tabs=[{id:'stats',icon:'\uD83D\uDCCA',label:'Stats'},{id:'armor',icon:'\uD83D\uDEE1\uFE0F',label:'Armor'},{id:'weapons',icon:'\u2694\uFE0F',label:'Weapons'},{id:'skills',icon:'\u26A1',label:'Skills'},{id:'factions',icon:'\uD83C\uDFF0',label:'Quests'},{id:'consumables',icon:'\uD83E\uDDEA',label:'Items'},{id:'effects',icon:'\uD83D\uDCD6',label:'Effects'},{id:'analysis',icon:'\uD83D\uDD0D',label:'Analysis'}];
   var tabBar=document.getElementById('tab-bar');
   tabBar.innerHTML='';
   for(var i=0;i<tabs.length;i++){
@@ -554,7 +558,7 @@ function calculateTotalCost(){
 function switchTab(tabId){
   CURRENT_TAB=tabId;
   var btns=document.querySelectorAll('.tab-btn');
-  var tabs=['stats','armor','weapons','skills','factions','consumables','effects'];
+  var tabs=['stats','armor','weapons','skills','factions','consumables','effects','analysis'];
   for(var i=0;i<btns.length;i++){btns[i].className='tab-btn'+(tabs[i]===tabId?' active':'');}
   renderTab(tabId);
 }
