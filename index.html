@@ -747,11 +747,13 @@ function renderStatsTab(pane){
               showEffect=true;
               displayEff=eff.replace(/^Body Armor:\s*/i,'');
             }
-          }else if(effLower.indexOf('helmets/boots')>=0 || effLower.indexOf('helmet')>=0 || effLower.indexOf('boots')>=0){
-            if(itemSlot==='head' || itemSlot==='legs'){
-              showEffect=true;
-              displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');
-            }
+          }
+          else if(/^helmets\/boots/i.test(eff)){
+            if(itemSlot==='head' || itemSlot==='legs'){showEffect=true;displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');}
+          }else if(/^helmets?\b/i.test(eff)){
+            if(itemSlot==='head'){showEffect=true;displayEff=eff.replace(/^Helmets?:\s*/i,'');}
+          }else if(/^boots\b/i.test(eff)){
+            if(itemSlot==='legs'){showEffect=true;displayEff=eff.replace(/^Boots:\s*/i,'');}
           }else{
             showEffect=true;
           }
