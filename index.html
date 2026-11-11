@@ -524,7 +524,7 @@ function renderHome(){
   stats.innerHTML='<div class="home-stat-pill"><div class="home-stat-num">'+DATA.skills.length+'</div><div class="home-stat-lbl">Skills</div></div><div class="home-stat-pill"><div class="home-stat-num">'+DATA.weapons.length+'</div><div class="home-stat-lbl">Weapons</div></div><div class="home-stat-pill"><div class="home-stat-num">'+DATA.armor.length+'</div><div class="home-stat-lbl">Armor</div></div><div class="home-stat-pill"><div class="home-stat-num">'+DATA.consumables.length+'</div><div class="home-stat-lbl">Items</div></div>';
 }
 
-function renderBuilder(){
+function renderBuilder(){normalizeWeaponSlots();
   if(!DATA)return;
   document.getElementById('build-name').textContent=BUILD.name||'New Build';
   document.getElementById('theory-btn').className='theory-btn'+(BUILD.theorycraft?' active':'');
@@ -1736,6 +1736,20 @@ function renderWeaponList(){
   container.innerHTML=html;
 }
 
+function normalizeWeaponSlots(){
+  if(!BUILD.weapons)BUILD.weapons={};
+  var is2h=function(w){return w&&/2h/i.test(w.handedness||'');};
+  var off=BUILD.weapons.weapon_off?findWeapon(BUILD.weapons.weapon_off):null;
+  if(is2h(off)){
+    // двуручник застрял во второй руке (старый баг) — переносим в основную руку
+    delete BUILD.weapons.weapon_off;
+    var main=BUILD.weapons.weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
+    if(!is2h(main))BUILD.weapons.weapon_main=off.name;
+  }
+  var main2=BUILD.weapons.weapon_main?findWeapon(BUILD.weapons.weapon_main):null;
+  if(is2h(main2))delete BUILD.weapons.weapon_off;
+}
+
 function equipWeapon(name){
   var w=findWeapon(name);
   if(!w)return;
@@ -2405,33 +2419,44 @@ function showEnchantModal(){
       // Show only effects relevant to this item's slot
       var itemObj=DATA.armor.find(function(a){return a.name===currentEnchantItem;})||DATA.weapons.find(function(w){return w.name===currentEnchantItem;});
       var itemSlot=itemObj?itemObj.slot||'':'';
-      ench.effects.forEach(function(eff){
-        var effLower=eff.toLowerCase();
-        var showEffect=false;
-        var displayEff=eff;
-
-        // Check if effect is slot-specific
-        if(effLower.indexOf('body armor')>=0){
-          // Body Armor effect - only show for chest
-          if(itemSlot==='chest'){
-            showEffect=true;
-            displayEff=eff.replace(/^Body Armor:\s*/i,'');
-          }
-        }else if(effLower.indexOf('helmets/boots')>=0 || effLower.indexOf('helmet')>=0 || effLower.indexOf('boots')>=0){
-          // Helmet/Boots effect - show for head/legs
-          if(itemSlot==='head' || itemSlot==='legs'){
-            showEffect=true;
-            displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');
-          }
-        }else{
-          // Generic effect - show for all
-          showEffect=true;
+      var enchStats=ench.effect&&ench.effect.stats;
+      if(enchStats&&typeof enchStats==='object'&&Object.keys(enchStats).length){
+        // stats-формат: один бонус, соответствующий части брони предмета
+        var val=null;
+        if(itemSlot==='chest')val=enchStats.armor;
+        else if(itemSlot==='head')val=enchStats.head;
+        else if(itemSlot==='legs')val=(enchStats.legs!==undefined?enchStats.legs:(enchStats.boots!==undefined?enchStats.boots:enchStats.hands));
+        if(val!==null&&val!==undefined&&val!==''){
+          html+='<div>• +'+escHtml(String(val))+' Protection</div>';
+        }else if(!itemSlot){
+          // оружие/прочее — показать все значения
+          Object.keys(enchStats).forEach(function(k){
+            var vv=enchStats[k];if(vv===null||vv===undefined||vv==='')return;
+            html+='<div>• +'+escHtml(String(vv))+' '+escHtml(k)+'</div>';
+          });
         }
-
-        if(showEffect){
-          html+='<div>• '+escHtml(displayEff)+'</div>';
-        }
-      });
+      }else{
+        ench.effects.forEach(function(eff){
+          if(!eff||!eff.trim())return;
+          var effLower=eff.toLowerCase();
+          var showEffect=false;
+          var displayEff=eff;
+          if(effLower.indexOf('body armor')>=0){
+            if(itemSlot==='chest'){showEffect=true;displayEff=eff.replace(/^Body Armor:\s*/i,'');}
+          }else if(/^helmets\/boots/i.test(eff)){
+            if(itemSlot==='head' || itemSlot==='legs'){showEffect=true;displayEff=eff.replace(/^Helmets\/Boots:\s*/i,'');}
+          }else if(/^helmets?\b/i.test(eff)){
+            if(itemSlot==='head'){showEffect=true;displayEff=eff.replace(/^Helmets?:\s*/i,'');}
+          }else if(/^boots\b/i.test(eff)){
+            if(itemSlot==='legs'){showEffect=true;displayEff=eff.replace(/^Boots:\s*/i,'');}
+          }else{
+            showEffect=true;
+          }
+          if(showEffect){
+            html+='<div style="font-size:11px;padding:1px 0">• '+escHtml(displayEff)+'</div>';
+          }
+        });
+      }
       html+='</div></div>';
     });
   }
