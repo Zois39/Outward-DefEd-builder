@@ -2529,7 +2529,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_v8_'+hash;
+  var key='build_analysis_v9_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
@@ -2556,13 +2556,19 @@ function showAnalysisError(msg){
 function truncStr(s,n){s=String(s||'');return s.length>n?s.slice(0,n)+'…':s;}
 
 function itemEffects(o){
-  var out=[];
-  ['on_hit_effects','passive_effects','special_effects','effects'].forEach(function(f){
-    var v=o[f];if(!v)return;
-    if(Array.isArray(v))v.forEach(function(e){if(e)out.push(e.name||String(e));});
-    else if(typeof v==='string')out.push(v);
-  });
-  return out.slice(0,6);
+  var on_hit=[];var passive=[];
+  var onhit=(o.on_hit_effects||[]).map(function(e){return e&&e.name?e.name:String(e);});
+  var spec=(o.special_effects||[]).map(function(e){
+    var s=e&&e.name?e.name:String(e);
+    return /buildup|%\)/i.test(s)?s:null;
+  }).filter(function(x){return !!x;});
+  var pas=(o.passive_effects||[]).map(function(e){return e&&e.name?e.name:String(e);});
+  var other=(o.effects||[]);
+  if(typeof other==='string')other=[other];
+  other=(other||[]).map(function(e){return e&&e.name?e.name:String(e);});
+  on_hit=on_hit.concat(onhit).concat(spec).slice(0,6);
+  passive=pas.concat(other).slice(0,6);
+  return {on_hit:on_hit,passive:passive};
 }
 
 function enchantEffectText(en,itemSlot){
@@ -2780,24 +2786,32 @@ function renderAnalysis(data){
   Object.keys(data.index||{}).forEach(function(k){
     var e=data.index[k];if(e&&e.name)nameMap[e.name.toLowerCase()]=e;
   });
-  // 1) чистый текст: токены (переносы/пробелы допустимы) -> плейсхолдеры; неизвестное имя -> чистое имя
   var text=String(data.analysis||t9n('empty'));
-  text=text.replace(/\[\[(item|skill|quest|enchant):\s*([^\]]+?)\s*\]\]/g,function(m,t,n){
-    var e=nameMap[n.trim().toLowerCase()];
-    return e?('@@CARD:'+t+':'+e.name+'@@END'):n.trim();
+  // разбивка на секции по заголовкам "N."
+  var parts=text.split(/^(?=\d+[.)]\s)/m);
+  var out='';
+  parts.forEach(function(part){
+    if(!part.trim())return;
+    var isRecs=/^\s*3[.)]\s/.test(part);
+    if(isRecs){
+      // подстановка токенов -> плейсхолдеры
+      part=part.replace(/\[\[(item|skill|quest|enchant):\s*([^\]]+?)\s*\]\]/g,function(m,t,n){
+        var e=nameMap[n.trim().toLowerCase()];
+        return e?('@@CARD:'+t+':'+e.name+'@@END'):n.trim();
+      });
+      // fallback по именам — только в разделе рекомендаций
+      Object.keys(data.index||{}).forEach(function(k){
+        var e=data.index[k];if(!e||!e.name||e.name.length<4)return;
+        var idx=part.indexOf(e.name);
+        if(idx<0)return;
+        var beforeText=part.slice(0,idx);
+        if(beforeText.lastIndexOf('@@CARD:')>beforeText.lastIndexOf('@@END'))return;
+        part=part.slice(0,idx)+'@@CARD:'+e.type+':'+e.name+'@@END'+part.slice(idx+e.name.length);
+      });
+    }
+    out+=part;
   });
-  // 2) fallback по именам — в чистом тексте; вхождения внутри плейсхолдеров пропускаем
-  Object.keys(data.index||{}).forEach(function(k){
-    var e=data.index[k];if(!e||!e.name||e.name.length<4)return;
-    var idx=text.indexOf(e.name);
-    if(idx<0)return;
-    var beforeText=text.slice(0,idx);
-    if(beforeText.lastIndexOf('@@CARD:')>beforeText.lastIndexOf('@@END'))return; // уже в плейсхолдере
-    text=text.slice(0,idx)+'@@CARD:'+e.type+':'+e.name+'@@END'+text.slice(idx+e.name.length);
-  });
-  // 3) markdown-рендер (плейсхолдеры не трогает escHtml)
-  var html=renderAnalysisMd(text);
-  // 4) плейсхолдеры -> карточки
+  var html=renderAnalysisMd(out);
   html=html.replace(/@@CARD:(item|skill|quest|enchant):([^@]+)@@END/g,function(m,t,n){
     var e=nameMap[n.toLowerCase()];
     return (e&&e.name)?analysisCardHtml(e):escHtml(n);
@@ -2805,7 +2819,6 @@ function renderAnalysis(data){
   html=stripOrphanPunct(html);
   res.innerHTML=html+(data.model?'<div class="analysis-meta">Модель: '+escHtml(data.model)+'</div>':'');
 }
-
 function openAnalysisTarget(type,name){
   if(!name||!DATA)return;
   var tabId='consumables';
