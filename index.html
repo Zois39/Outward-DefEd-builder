@@ -2529,7 +2529,7 @@ function analyzeBuild(){
   var payload=collectAnalysisData();
   var s=JSON.stringify(payload);
   var hash=0;for(var i=0;i<s.length;i++){hash=(hash*31+s.charCodeAt(i))>>>0;}
-  var key='build_analysis_v9_'+hash;
+  var key='build_analysis_v10_'+hash;
   var cached=null;try{cached=localStorage.getItem(key);}catch(e){}
   if(cached){try{renderAnalysis(JSON.parse(cached));return;}catch(e){}}
   res.className='visible';
